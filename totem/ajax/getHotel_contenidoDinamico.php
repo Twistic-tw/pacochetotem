@@ -1,4 +1,8 @@
 <?php
+// Debug no intrusivo: activar con &debug=1 para registrar sin romper JSON
+if (isset($_GET['debug']) && $_GET['debug']) {
+    error_log("[getHotel_contenidoDinamico] params=".json_encode($_GET));
+}
 
 $contenidoId = $_GET['contenidoId'];
 $forceDisplay = isset($_GET['force'])? $_GET['force'] : 0;
@@ -16,11 +20,15 @@ if ($contenidoId) {
         registrarLog("hotel", $contenidoId, false, "Se esta accediendo al conteido general de la categoria");
         $contenido = totem_getContenido($contenidoId); //pido los datos 
     }
+    if (isset($_GET['debug']) && $_GET['debug']) {
+        $cnt = is_array($contenido) ? count($contenido) : 0;
+        error_log("[getHotel_contenidoDinamico] contenidoId=$contenidoId force=$forceDisplay filas=$cnt");
+    }
         
     /*Si el tamaño de contenido es 1 significa que sólamente tiene contenido por sí mismo o que posee
     * un solo hijo por lo tanto lo muestre 
     */
-    if ( count($contenido) == 1) 
+    if ( is_array($contenido) && count($contenido) == 1) 
     { 
         $tpl_hotel_contenido_dinamico = new TemplatePower("plantillas/seccion_hotel_contenido_dinamico.html", T_BYFILE);
         $tpl_hotel_contenido_dinamico->prepare();
@@ -83,6 +91,18 @@ if ($contenidoId) {
     else
     {
         //Aquí me llega un array que se convertirá en bloques de menú
+        if (!is_array($contenido) || count($contenido) == 0) {
+            $resultado = array(
+                'error' => true,
+                'mensaje' => 'Sin resultados para la categoría/contenido solicitado',
+            );
+            if (isset($_GET['debug']) && $_GET['debug']) {
+                error_log("[getHotel_contenidoDinamico] sin resultados contenidoId=$contenidoId force=$forceDisplay");
+            }
+            header('Content-Type: application/json; charset=utf-8');
+            echo json_encode($resultado);
+            exit;
+        }
         
         $tpl_hotel_contenido_dinamico = new TemplatePower("plantillas/pagina_hotel.html", T_BYFILE);
         $tpl_hotel_contenido_dinamico->prepare();
@@ -134,6 +154,7 @@ if ($contenidoId) {
 
     $resultado['datos'] = $tpl_hotel_contenido_dinamico->getOutputContent();
     
+    header('Content-Type: application/json; charset=utf-8');
     echo json_encode($resultado);
 }
 ?>
