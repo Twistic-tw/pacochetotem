@@ -1,4 +1,5 @@
 <?php
+
 $contenidoId = $_GET['contenidoId'];
 $forceDisplay = isset($_GET['force'])? $_GET['force'] : 0;
 if (isset($_GET['debug']) && $_GET['debug']) {
@@ -156,6 +157,5 @@ if ($contenidoId) {
     
 
     echo json_encode($resultado);
-    exit;
 }
 ?>
