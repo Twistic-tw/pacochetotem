@@ -1,24 +1,19 @@
 <?php
 
+
 $contenidoId = $_GET['contenidoId'];
 $forceDisplay = isset($_GET['force'])? $_GET['force'] : 0;
-if (isset($_GET['debug']) && $_GET['debug']) {
-    ghcd_log('session id_centro='.(isset($_SESSION['id_centro'])?$_SESSION['id_centro']:'null').' idioma='.(isset($_SESSION['idioma'])?$_SESSION['idioma']:'null'));
-    ghcd_log('parsed params contenidoId='.$contenidoId.' force='.$forceDisplay);
-}
 
 if ($contenidoId) {
     
     
     if ( $forceDisplay )
     {
-        if (isset($_GET['debug']) && $_GET['debug']) { ghcd_log('CALL totem_getContenidoEspecifico('.$contenidoId.')'); }
         registrarLog("hotel", false, $contenidoId, "Se esta accediendo al contenido propio de la categoria");
         $contenido = totem_getContenidoEspecifico($contenidoId);    //pillo solo los datos del contenido concreto.
     }
     else 
     {
-        if (isset($_GET['debug']) && $_GET['debug']) { ghcd_log('CALL totem_getContenido('.$contenidoId.')'); }
         registrarLog("hotel", $contenidoId, false, "Se esta accediendo al conteido general de la categoria");
         $contenido = totem_getContenido($contenidoId); //pido los datos 
     }
@@ -28,15 +23,8 @@ if ($contenidoId) {
     */
     if ( count($contenido) == 1) 
     { 
-        if (isset($_GET['debug']) && $_GET['debug']) {
-            ghcd_log('branch=UNICO_CONTENIDO');
-            ghcd_log('class_exists(TemplatePower)='.(class_exists('TemplatePower')?'1':'0'));
-            $seccionTpl = __DIR__ . "/plantillas/seccion_hotel_contenido_dinamico.html";
-            ghcd_log('tpl path seccion_hotel_contenido_dinamico='. $seccionTpl .' exists='.(file_exists($seccionTpl)?'1':'0'));
-        }
         $tpl_hotel_contenido_dinamico = new TemplatePower("plantillas/seccion_hotel_contenido_dinamico.html", T_BYFILE);
         $tpl_hotel_contenido_dinamico->prepare();
-        if (isset($_GET['debug']) && $_GET['debug']) { ghcd_log('template seccion prepared'); }
         $tpl_hotel_contenido_dinamico->assign("informacion_title", $contenido[0]['nombre']);
         $tpl_hotel_contenido_dinamico->assign("lang_atras", LANG_GLOBAL_ATRAS);
 
@@ -92,20 +80,13 @@ if ($contenidoId) {
         $idCentro = $_SESSION['id_centro'];
         $dir = "../../../contenido_proyectos/pacoche/centro_$idCentro/imagenes/cabecera/";
         $resultado['banner_superior'] = $dir . $contenido[0]['foto_cabecera'];
-        if (isset($_GET['debug']) && $_GET['debug']) { ghcd_log('banner path='.$resultado['banner_superior']); }
     }
     else
     {
         //Aquí me llega un array que se convertirá en bloques de menú
         
-        if (isset($_GET['debug']) && $_GET['debug']) {
-            ghcd_log('branch=LISTADO_CONTENIDOS');
-            $paginaTpl = __DIR__ . "/plantillas/pagina_hotel.html";
-            ghcd_log('tpl path pagina_hotel='. $paginaTpl .' exists='.(file_exists($paginaTpl)?'1':'0'));
-        }
         $tpl_hotel_contenido_dinamico = new TemplatePower("plantillas/pagina_hotel.html", T_BYFILE);
         $tpl_hotel_contenido_dinamico->prepare();
-        if (isset($_GET['debug']) && $_GET['debug']) { ghcd_log('template pagina prepared'); }
         $tpl_hotel_contenido_dinamico->assign("hotel_title", $contenido[0]['nombre_padre']);
         $tpl_hotel_contenido_dinamico->assign("extraClass", "closeWrapper");
         $tpl_hotel_contenido_dinamico->newBlock("back");
@@ -153,7 +134,6 @@ if ($contenidoId) {
     }
 
     $resultado['datos'] = $tpl_hotel_contenido_dinamico->getOutputContent();
-    if (isset($_GET['debug']) && $_GET['debug']) { ghcd_log('HTML datos length='.strlen($resultado['datos'])); }
     
 
     echo json_encode($resultado);

@@ -273,9 +273,6 @@ function totem_listado_actividades_agenda_json()
 
     /*    echo $sql;
     exit();*/
-    if (isset($_GET['debug']) && $_GET['debug']) {
-        $GLOBALS['__ghcd_sql'][] = $sql;
-    }
     $consulta = $db->consulta($sql);
 
     $fechas = array();
@@ -531,9 +528,6 @@ function totem_listado_actividades_info($fecha, $idioma = 1)
                     AND t3.hora_fin IS NOT NULL                 
                     GROUP BY t3.id  ORDER BY t3.hora_ini ASC";
 
-    if (isset($_GET['debug']) && $_GET['debug']) {
-        $GLOBALS['__ghcd_sql'][] = $sql;
-    }
     $consulta = $db->consulta($sql);
 
 
@@ -594,9 +588,6 @@ function totem_listado_actividades_info_OLD($fecha, $idioma = 1)
     // echo $sql;
 
 
-    if (isset($_GET['debug']) && $_GET['debug']) {
-        $GLOBALS['__ghcd_sql'][] = $sql;
-    }
     $consulta = $db->consulta($sql);
     $fechas = array();
 
