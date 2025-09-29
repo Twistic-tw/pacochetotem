@@ -270,9 +270,6 @@ $(window).ready(function() {
             var href = $(this).data("accion");
 
             var urlAjaxRequest = "index.php?ajax=" + href;
-            if (window.__debugAjax) {
-                urlAjaxRequest += (urlAjaxRequest.indexOf("&") > -1 ? "&" : "&") + "debug=1";
-            }
             var object = $(this);
 
             console.log(urlAjaxRequest);
@@ -2201,40 +2198,18 @@ $("body").on("click", ".js_destroy_isotope", function(event) {
             var urlAjaxRequest = "index.php?ajax=" + href;
             var object = $(this);
 
-            try { if (window.__debugAjax) console.log("[DEBUG] .loadAjax click", { href: href, href_base: href_base, url: urlAjaxRequest }); } catch(e) {}
-
             $.get(urlAjaxRequest, function(data) {
                 verificar_actualizacion(data);
 				
                 try{
-                    try { if (window.__debugAjax) console.log("[DEBUG] response typeof", (typeof data), "length", (String(data).length), "preview", String(data).slice(0,300)); } catch(e) {}
-                    var normalizedData = (typeof data === "string") ? data : JSON.stringify(data);
-                    datost = JSON.parse(normalizedData);
+
+                    datost = JSON.parse(data);
+
                 }
                 catch(e) {
                     lockForAnimation = false;
                     removeOverlayContentLoadingGif();
-                    try { console.error("[DEBUG] JSON.parse error in loadAjax response", e, { url: urlAjaxRequest, typeof: typeof data, preview: String(data).slice(0,300) }); } catch(_e) {}
-                    // Retry once with debug=1 if response is empty to help diagnose server issues
-                    try {
-                        var isEmpty = !data || String(data).trim().length === 0;
-                        var hasDebug = /[?&]debug=1(?:&|$)/.test(urlAjaxRequest);
-                        if (isEmpty && !hasDebug) {
-                            var retryUrl = urlAjaxRequest + "&debug=1";
-                            console.warn("[DEBUG] Empty response. Retrying once with:", retryUrl);
-                            $.get(retryUrl, function(resp2){
-                                try { console.log("[DEBUG] Retry response preview:", String(resp2).slice(0,300)); } catch(__e) {}
-                            }).always(function(){
-                                $("body").append("<div id='overlayLoadingContent' class='loadingBg closeWrapper back'><span class='back'>Sin conexión</span></div>");
-                                setTimeout(function(){
-                                    $("#overlayLoadingContent").fadeOut("200", function(){
-                                        $(this).find(".back").click();
-                                    });
-                                }, 2000);
-                            });
-                            return;
-                        }
-                    } catch(__e) {}
+
                     $("body").append("<div id='overlayLoadingContent' class='loadingBg closeWrapper back'><span class='back'>Sin conexión</span></div>");
 
                     setTimeout(function() {
@@ -2259,20 +2234,15 @@ $("body").on("click", ".js_destroy_isotope", function(event) {
                     removeOverlayContentLoadingGif();
                 }
                 
-                try { if (window.__debugAjax) console.log("[DEBUG] calling handler", 'handler_' + href_base); } catch(e) {}
-                // Ensure handler receives JSON string as originally expected
-                var handlerPayload = (typeof data === "string") ? data : JSON.stringify(data);
-                window['handler_' + href_base](handlerPayload, object);
+
+                window['handler_' + href_base](data, object);
                 
                 if (href == "getHotel_contenidoDinamico&contenidoId=36") {
                     rotar_fotos_galeria();
                 }
-            }).fail(function(jqXHR, textStatus, errorThrown){
+            }).fail(function(){
                 lockForAnimation = false;
                 removeOverlayContentLoadingGif();
-                try {
-                    console.error("[DEBUG] AJAX fail in .loadAjax", { url: urlAjaxRequest, status: jqXHR && jqXHR.status, textStatus: textStatus, errorThrown: errorThrown, responseText: jqXHR && String(jqXHR.responseText).slice(0,300) });
-                } catch(_e) {}
                 $("body").append("<div id='overlayLoadingContent' class='loadingBg closeWrapper back'><span class='back'>Sin conexión</span></div>");
                 
                 setTimeout( function(){

@@ -1556,17 +1556,10 @@ function totem_getContenido($contenidoId)
     //$sql = "SELECT * FROM `contenidos` WHERE id_categoria=$contenidoId AND id_centro=$id_centro AND id_idioma=$id_idioma";
     //echo $sql;
     $consulta = $db->consulta($sql);
-    if (isset($_GET['debug']) && $_GET['debug']) {
-        error_log("[totem_getContenido] contenidoId=".$contenidoId." id_centro=".$id_centro." id_idioma=".$id_idioma);
-    }
 
     $datos;
     while ($tArray = $db->fetch_array($consulta)) {
         $datos[] = $tArray;
-    }
-    if (isset($_GET['debug']) && $_GET['debug']) {
-        $cnt = is_array($datos) ? count($datos) : 0;
-        error_log("[totem_getContenido] filas=".$cnt);
     }
 
     return $datos;
@@ -1593,17 +1586,10 @@ function totem_getContenidoEspecifico($contenidoId)
     //$sql = "SELECT * FROM `contenidos` WHERE id_categoria=$contenidoId AND id_centro=$id_centro AND id_idioma=$id_idioma";
     //echo $sql;
     $consulta = $db->consulta($sql);
-    if (isset($_GET['debug']) && $_GET['debug']) {
-        error_log("[totem_getContenidoEspecifico] contenidoId=".$contenidoId." id_centro=".$id_centro." id_idioma=".$id_idioma);
-    }
 
     $datos;
     while ($tArray = $db->fetch_array($consulta)) {
         $datos[] = $tArray;
-    }
-    if (isset($_GET['debug']) && $_GET['debug']) {
-        $cnt = is_array($datos) ? count($datos) : 0;
-        error_log("[totem_getContenidoEspecifico] filas=".$cnt);
     }
 
     return $datos;
@@ -1629,17 +1615,10 @@ function totem_getContenidoEspecifico_nuevo($contenidoId)
     //$sql = "SELECT * FROM `contenidos` WHERE id_categoria=$contenidoId AND id_centro=$id_centro AND id_idioma=$id_idioma";
     //echo $sql;
     $consulta = $db->consulta($sql);
-    if (isset($_GET['debug']) && $_GET['debug']) {
-        error_log("[totem_getContenidoEspecifico_nuevo] contenidoId=".$contenidoId." id_centro=".$id_centro." id_idioma=".$id_idioma);
-    }
 
     $datos;
     while ($tArray = $db->fetch_array($consulta)) {
         $datos[] = $tArray;
-    }
-    if (isset($_GET['debug']) && $_GET['debug']) {
-        $cnt = is_array($datos) ? count($datos) : 0;
-        error_log("[totem_getContenidoEspecifico_nuevo] filas=".$cnt);
     }
 
     return $datos;

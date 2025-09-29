@@ -1,51 +1,4 @@
 <?php
-ob_start();
-// Log fatal errors on shutdown to understand empty outputs
-register_shutdown_function(function(){
-    $e = error_get_last();
-    if ($e && in_array($e['type'], array(E_ERROR, E_PARSE, E_CORE_ERROR, E_COMPILE_ERROR))) {
-        error_log('[getHotel_contenidoDinamico][FATAL] '. $e['message'] .' in '. $e['file'] .':'. $e['line']);
-    }
-    $len = ob_get_length();
-    if ($len === 0) {
-        $payload = array('error' => true, 'mensaje' => 'Salida vacía del endpoint', 'fatal' => $e ? $e['message'] : null);
-        if (isset($_GET['debug']) && $_GET['debug']) {
-            $payload['debug'] = array(
-                'php_errors' => isset($GLOBALS['__ghcd_errors']) ? $GLOBALS['__ghcd_errors'] : array(),
-                'sql' => isset($GLOBALS['__ghcd_sql']) ? $GLOBALS['__ghcd_sql'] : array(),
-            );
-        }
-        header('Content-Type: application/json; charset=utf-8');
-        echo json_encode($payload);
-    }
-});
-
-// Capture warnings/notices to include in debug payload when requested
-$__ghcd_errors = array();
-set_error_handler(function($severity, $message, $file, $line) use (&$__ghcd_errors) {
-    // Respect @ operator
-    if (!(error_reporting() & $severity)) {
-        return false;
-    }
-    $entry = '['. $severity .'] '. $message .' in '. $file .':'. $line;
-    $GLOBALS['__ghcd_errors'][] = $entry;
-    error_log('[getHotel_contenidoDinamico][PHP] '. $entry);
-    return false; // allow normal handling too
-});
-// Helper para logueo consistente
-if (!function_exists('ghcd_log')) {
-    function ghcd_log($msg) {
-        error_log('[getHotel_contenidoDinamico] ' . $msg);
-    }
-}
-if (isset($_GET['debug']) && $_GET['debug']) {
-    ghcd_log('ENTER file='.__FILE__.' dir='.__DIR__.' cwd='.(function_exists('getcwd')?getcwd():'n/a'));
-}
-// Debug no intrusivo: activar con &debug=1 para registrar sin romper JSON
-if (isset($_GET['debug']) && $_GET['debug']) {
-    ghcd_log('params='.json_encode($_GET));
-}
-
 $contenidoId = $_GET['contenidoId'];
 $forceDisplay = isset($_GET['force'])? $_GET['force'] : 0;
 if (isset($_GET['debug']) && $_GET['debug']) {
@@ -68,19 +21,11 @@ if ($contenidoId) {
         registrarLog("hotel", $contenidoId, false, "Se esta accediendo al conteido general de la categoria");
         $contenido = totem_getContenido($contenidoId); //pido los datos 
     }
-    if (isset($_GET['debug']) && $_GET['debug']) {
-        $cnt = is_array($contenido) ? count($contenido) : 0;
-        ghcd_log("datos recibidos filas=$cnt");
-        if ($cnt>0) {
-            $sample = $contenido[0];
-            ghcd_log('primer registro keys='.implode(',', array_keys($sample)));
-        }
-    }
-        
+
     /*Si el tamaño de contenido es 1 significa que sólamente tiene contenido por sí mismo o que posee
     * un solo hijo por lo tanto lo muestre 
     */
-    if ( is_array($contenido) && count($contenido) == 1) 
+    if ( count($contenido) == 1) 
     { 
         if (isset($_GET['debug']) && $_GET['debug']) {
             ghcd_log('branch=UNICO_CONTENIDO');
@@ -151,18 +96,6 @@ if ($contenidoId) {
     else
     {
         //Aquí me llega un array que se convertirá en bloques de menú
-        if (!is_array($contenido) || count($contenido) == 0) {
-            $resultado = array(
-                'error' => true,
-                'mensaje' => 'Sin resultados para la categoría/contenido solicitado',
-            );
-            if (isset($_GET['debug']) && $_GET['debug']) {
-                error_log("[getHotel_contenidoDinamico] sin resultados contenidoId=$contenidoId force=$forceDisplay");
-            }
-            header('Content-Type: application/json; charset=utf-8');
-            echo json_encode($resultado);
-            exit;
-        }
         
         if (isset($_GET['debug']) && $_GET['debug']) {
             ghcd_log('branch=LISTADO_CONTENIDOS');
@@ -221,29 +154,7 @@ if ($contenidoId) {
     $resultado['datos'] = $tpl_hotel_contenido_dinamico->getOutputContent();
     if (isset($_GET['debug']) && $_GET['debug']) { ghcd_log('HTML datos length='.strlen($resultado['datos'])); }
     
-    if (isset($_GET['debug']) && $_GET['debug']) {
-        $resultado['debug'] = array(
-            'contenido_count' => is_array($contenido) ? count($contenido) : 0,
-            'force' => (int)$forceDisplay,
-            'id_centro' => isset($_SESSION['id_centro']) ? $_SESSION['id_centro'] : null,
-            'idioma' => isset($_SESSION['idioma']) ? $_SESSION['idioma'] : null,
-            'php_errors' => isset($GLOBALS['__ghcd_errors']) ? $GLOBALS['__ghcd_errors'] : array(),
-            'sql' => isset($GLOBALS['__ghcd_sql']) ? $GLOBALS['__ghcd_sql'] : array(),
-        );
-    }
-    $jsonOut = json_encode($resultado);
-    if (isset($_GET['debug']) && $_GET['debug']) { ghcd_log('JSON length='.strlen($jsonOut).' preview='.substr($jsonOut,0,300)); }
-    header('Content-Type: application/json; charset=utf-8');
-    echo $jsonOut;
-    exit;
-}
-else {
-    $resultado = array('error' => true, 'mensaje' => 'contenidoId requerido');
-    if (isset($_GET['debug']) && $_GET['debug']) {
-        $resultado['debug'] = array('php_errors' => isset($GLOBALS['__ghcd_errors']) ? $GLOBALS['__ghcd_errors'] : array());
-        error_log('[getHotel_contenidoDinamico] falta contenidoId');
-    }
-    header('Content-Type: application/json; charset=utf-8');
+
     echo json_encode($resultado);
     exit;
 }
