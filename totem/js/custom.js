@@ -2207,13 +2207,14 @@ $("body").on("click", ".js_destroy_isotope", function(event) {
                 verificar_actualizacion(data);
 				
                 try{
-                    try { if (window.__debugAjax) console.log("[DEBUG] response raw length", (data && data.length), "preview", String(data).slice(0,300)); } catch(e) {}
-                    datost = JSON.parse(data);
+                    try { if (window.__debugAjax) console.log("[DEBUG] response typeof", (typeof data), "length", (String(data).length), "preview", String(data).slice(0,300)); } catch(e) {}
+                    var normalizedData = (typeof data === "string") ? data : JSON.stringify(data);
+                    datost = JSON.parse(normalizedData);
                 }
                 catch(e) {
                     lockForAnimation = false;
                     removeOverlayContentLoadingGif();
-                    try { console.error("[DEBUG] JSON.parse error in loadAjax response", e, { url: urlAjaxRequest, preview: String(data).slice(0,300) }); } catch(_e) {}
+                    try { console.error("[DEBUG] JSON.parse error in loadAjax response", e, { url: urlAjaxRequest, typeof: typeof data, preview: String(data).slice(0,300) }); } catch(_e) {}
                     // Retry once with debug=1 if response is empty to help diagnose server issues
                     try {
                         var isEmpty = !data || String(data).trim().length === 0;
@@ -2259,7 +2260,9 @@ $("body").on("click", ".js_destroy_isotope", function(event) {
                 }
                 
                 try { if (window.__debugAjax) console.log("[DEBUG] calling handler", 'handler_' + href_base); } catch(e) {}
-                window['handler_' + href_base](data, object);
+                // Ensure handler receives JSON string as originally expected
+                var handlerPayload = (typeof data === "string") ? data : JSON.stringify(data);
+                window['handler_' + href_base](handlerPayload, object);
                 
                 if (href == "getHotel_contenidoDinamico&contenidoId=36") {
                     rotar_fotos_galeria();
