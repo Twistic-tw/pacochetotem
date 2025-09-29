@@ -126,7 +126,7 @@ foreach ($datos_vuelos as $aeropuerto_codigo => $datos_tipo_vuelo) {
 }       
 
 $datos['datos'] = $tplVuelos->getOutputContent();
-$datos['banner_superior'] = "../../../contenido_proyectos/vistaflor/centro_$id_centro/imagenes/cabecera/$imagen" ;
+$datos['banner_superior'] = "../../../contenido_proyectos/pacoche/centro_$id_centro/imagenes/cabecera/$imagen" ;
 
 echo json_encode($datos);
 

@@ -102,7 +102,7 @@ foreach ($secciones as $seccionDetail) {
 //     $tpl_queHacer->assign("nombre", $rutasDetail['nombre']);
 //     $tpl_queHacer->assign("direccion", $rutasDetail['direccion']);
 //     $tpl_queHacer->assign("descripcion", $rutasDetail['descripcion']);
-//     $tpl_queHacer->assign("imagen", '../../../contenido_proyectos/vistaflor/_general/conoce_sitios/'.$rutasDetail['id'].'/'.$rutasDetail['imagen']);
+//     $tpl_queHacer->assign("imagen", '../../../contenido_proyectos/pacoche/_general/conoce_sitios/'.$rutasDetail['id'].'/'.$rutasDetail['imagen']);
 
 //     if ($rutasDetail['tipo'] == 'ruta'){ $tpl_queHacer->assign("info", '+ info'); }
 // }

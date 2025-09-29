@@ -122,42 +122,42 @@ if ($screensaver_info['screensaver_activo'] != 0 && isset($screensaver_info['scr
     $tpl_index->assign("screensaver_time", $screensaver_info['screensaver_time']);  
     $tpl_index->assign("screensaver_time_duration", $screensaver_info['screensaver_time_duration']);         
     $tpl_index->newBlock("video");                                      //para asignarle un video como salvapantalla
-    $tpl_index->assign("video_source", "../../../contenido_proyectos/vistaflor/centro_$id_centro/".$screensaver_info['screensaver']);//indicamos la ruta
+    $tpl_index->assign("video_source", "../../../contenido_proyectos/pacoche/centro_$id_centro/".$screensaver_info['screensaver']);//indicamos la ruta
 
-    if(file_exists("../../../contenido_proyectos/vistaflor/centro_".$id_centro."/tematico_miercoles.webm") && date('N') == 3){
-        $tpl_index->assign("video_source", "../../../contenido_proyectos/vistaflor/centro_".$id_centro."/tematico_miercoles.webm");//indicamos la ruta
+    if(file_exists("../../../contenido_proyectos/pacoche/centro_".$id_centro."/tematico_miercoles.webm") && date('N') == 3){
+        $tpl_index->assign("video_source", "../../../contenido_proyectos/pacoche/centro_".$id_centro."/tematico_miercoles.webm");//indicamos la ruta
     }
 
-    if(file_exists("../../../contenido_proyectos/vistaflor/centro_".$id_centro."/tematico_sabado.webm") && date('N') == 6){
-        $tpl_index->assign("video_source", "../../../contenido_proyectos/vistaflor/centro_".$id_centro."/tematico_sabado.webm");//indicamos la ruta
+    if(file_exists("../../../contenido_proyectos/pacoche/centro_".$id_centro."/tematico_sabado.webm") && date('N') == 6){
+        $tpl_index->assign("video_source", "../../../contenido_proyectos/pacoche/centro_".$id_centro."/tematico_sabado.webm");//indicamos la ruta
     }
 
-    if(file_exists("../../../contenido_proyectos/vistaflor/centro_".$id_centro."/29_05.webm") && date('Y-m-d') == '2024-05-29'){
-        $tpl_index->assign("video_source", "../../../contenido_proyectos/vistaflor/centro_".$id_centro."/29_05.webm");//indicamos la ruta
+    if(file_exists("../../../contenido_proyectos/pacoche/centro_".$id_centro."/29_05.webm") && date('Y-m-d') == '2024-05-29'){
+        $tpl_index->assign("video_source", "../../../contenido_proyectos/pacoche/centro_".$id_centro."/29_05.webm");//indicamos la ruta
     }
     
-    if(file_exists("../../../contenido_proyectos/vistaflor/centro_".$id_centro."/30_05.webm") && date('Y-m-d') == '2024-05-30'){
-        $tpl_index->assign("video_source", "../../../contenido_proyectos/vistaflor/centro_".$id_centro."/30_05.webm");//indicamos la ruta
+    if(file_exists("../../../contenido_proyectos/pacoche/centro_".$id_centro."/30_05.webm") && date('Y-m-d') == '2024-05-30'){
+        $tpl_index->assign("video_source", "../../../contenido_proyectos/pacoche/centro_".$id_centro."/30_05.webm");//indicamos la ruta
     }
         
-    if(file_exists("../../../contenido_proyectos/vistaflor/centro_".$id_centro."/31_05.webm") && date('Y-m-d') == '2024-05-31'){
-        $tpl_index->assign("video_source", "../../../contenido_proyectos/vistaflor/centro_".$id_centro."/31_05.webm");//indicamos la ruta
+    if(file_exists("../../../contenido_proyectos/pacoche/centro_".$id_centro."/31_05.webm") && date('Y-m-d') == '2024-05-31'){
+        $tpl_index->assign("video_source", "../../../contenido_proyectos/pacoche/centro_".$id_centro."/31_05.webm");//indicamos la ruta
     }
         
-    if(file_exists("../../../contenido_proyectos/vistaflor/centro_".$id_centro."/01_06.webm") && date('Y-m-d') == '2024-06-01'){
-        $tpl_index->assign("video_source", "../../../contenido_proyectos/vistaflor/centro_".$id_centro."/01_06.webm");//indicamos la ruta
+    if(file_exists("../../../contenido_proyectos/pacoche/centro_".$id_centro."/01_06.webm") && date('Y-m-d') == '2024-06-01'){
+        $tpl_index->assign("video_source", "../../../contenido_proyectos/pacoche/centro_".$id_centro."/01_06.webm");//indicamos la ruta
     }
         
-    if(file_exists("../../../contenido_proyectos/vistaflor/centro_".$id_centro."/02_06.webm") && date('Y-m-d') == '2024-06-02'){
-        $tpl_index->assign("video_source", "../../../contenido_proyectos/vistaflor/centro_".$id_centro."/02_06.webm");//indicamos la ruta
+    if(file_exists("../../../contenido_proyectos/pacoche/centro_".$id_centro."/02_06.webm") && date('Y-m-d') == '2024-06-02'){
+        $tpl_index->assign("video_source", "../../../contenido_proyectos/pacoche/centro_".$id_centro."/02_06.webm");//indicamos la ruta
     }
          
-    if(file_exists("../../../contenido_proyectos/vistaflor/centro_".$id_centro."/timbachata2905_0306.webm") && date('Y-m-d') == '2024-06-03'){
-        $tpl_index->assign("video_source", "../../../contenido_proyectos/vistaflor/centro_".$id_centro."/timbachata2905_0306.webm");//indicamos la ruta
+    if(file_exists("../../../contenido_proyectos/pacoche/centro_".$id_centro."/timbachata2905_0306.webm") && date('Y-m-d') == '2024-06-03'){
+        $tpl_index->assign("video_source", "../../../contenido_proyectos/pacoche/centro_".$id_centro."/timbachata2905_0306.webm");//indicamos la ruta
     }
       
-    if(file_exists("../../../contenido_proyectos/vistaflor/centro_".$id_centro."/imagen_festival.webm") && date('Y-m-d') <= '2025-06-29'){
-        $tpl_index->assign("video_source", "../../../contenido_proyectos/vistaflor/centro_".$id_centro."/imagen_festival.webm");//indicamos la ruta
+    if(file_exists("../../../contenido_proyectos/pacoche/centro_".$id_centro."/imagen_festival.webm") && date('Y-m-d') <= '2025-06-29'){
+        $tpl_index->assign("video_source", "../../../contenido_proyectos/pacoche/centro_".$id_centro."/imagen_festival.webm");//indicamos la ruta
     }
 }
 
@@ -192,7 +192,7 @@ if ($banner_superior[0]['tipo_banner']=="video")
 else
     $tpl_index->newBlock("hotelBannerSuperiorImagen"); 
 
-$tpl_index->assign("contenido", "../../../contenido_proyectos/vistaflor/centro_$id_centro/banner_header/".$banner_superior[0]['file']);      
+$tpl_index->assign("contenido", "../../../contenido_proyectos/pacoche/centro_$id_centro/banner_header/".$banner_superior[0]['file']);      
 
 /******************************************************************
  *  Bloques de contenido.                                      ****/
@@ -385,7 +385,7 @@ foreach ($banners_inferiores as $banner) {
     $tpl_index->assign("slider_elmement_href", $banner['enlace']);      //enlace del elemento
     $tpl_index->assign("slider_element_title_class", ""); //clase para el elemento titulo
     $tpl_index->assign("slider_element_title", "");       //en caso de que deseemos que el elemento del slider tenga un texto
-    $tpl_index->assign("slider_img_src", "../../../contenido_proyectos/vistaflor/centro_$id_centro/banner_footer/".$banner["file"]);
+    $tpl_index->assign("slider_img_src", "../../../contenido_proyectos/pacoche/centro_$id_centro/banner_footer/".$banner["file"]);
 
     if ( $banner['path'] != "" ) {
         $tpl_index->assign("data_path", "data-path='" . $banner['path'] . "'");
@@ -400,7 +400,7 @@ foreach ($banners_inferiores as $banner) {
 //if ($id_centro == '1901') {
 //    crear_imagen_piscina('piscinas_dinamico_'.$idioma_actual.'.jpg', $id_centro);
 //    $tpl_index->newBlock("slider_element");               //vamos añadiendo imagenes
-//    $tpl_index->assign("slider_img_src", '../../../contenido_proyectos/vistaflor/centro_'.$id_centro.'/banner_footer/final_piscinas_dinamico_'.$idioma_actual.'.jpg');
+//    $tpl_index->assign("slider_img_src", '../../../contenido_proyectos/pacoche/centro_'.$id_centro.'/banner_footer/final_piscinas_dinamico_'.$idioma_actual.'.jpg');
 //
 //}
 
@@ -417,7 +417,7 @@ $tpl_index->assign("lang_tiempo", LANG_TOTEM_TIEMPO);
 $tpl_index->assign("fuente", "");       //de donde salen los datos
 
 
-$ruta_icono_widget = '../../../contenido_proyectos/vistaflor/_general/tiempo/icono/';
+$ruta_icono_widget = '../../../contenido_proyectos/pacoche/_general/tiempo/icono/';
 
 $codLocalidad = $_SESSION['id_localidad'];
 
@@ -539,7 +539,7 @@ $tpl_index->assign("id_idioma_actual", $idioma_actual);                        /
 //listado de idiomas
 $tpl_index->newBlock("idioma");
 $tpl_index->assign("idioma", "ES");              //bandera del idioma
-$tpl_index->assign("idioma_icono_src", "../../../contenido_proyectos/vistaflor/_general/iconos/idiomas/es.svg");
+$tpl_index->assign("idioma_icono_src", "../../../contenido_proyectos/pacoche/_general/iconos/idiomas/es.svg");
 //$tpl_index->assign("idioma", "Español");                        //nombre del idioma
 $tpl_index->assign("id_idioma", "1");                        //id del idioma
 if ($idioma_actual==1)
@@ -549,7 +549,7 @@ if ($idioma_actual==1)
 
 $tpl_index->newBlock("idioma");
 $tpl_index->assign("idioma", "EN");              //bandera del idioma
-$tpl_index->assign("idioma_icono_src", "../../../contenido_proyectos/vistaflor/_general/iconos/idiomas/en.svg");
+$tpl_index->assign("idioma_icono_src", "../../../contenido_proyectos/pacoche/_general/iconos/idiomas/en.svg");
 $tpl_index->assign("id_idioma", "2");                        //id del idioma
 //$tpl_index->assign("idioma", "English");                       //nombre del idioma
 if ($idioma_actual==2)

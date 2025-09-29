@@ -79,7 +79,7 @@ foreach ($arrayVideos as $videos) {
 
     if (in_array($dia, $programacion_semanal)) {
 
-        $src = '../../../contenido_proyectos/vistaflor/centro_'.$id_centro.'/feelchannel/videos/'.$videos['contenido'];
+        $src = '../../../contenido_proyectos/pacoche/centro_'.$id_centro.'/feelchannel/videos/'.$videos['contenido'];
 
         $file = $getID3->analyze($src);
 
@@ -130,7 +130,7 @@ foreach ($arrayImagenes as $imagenes) {
     if (in_array($dia, $programacion_semanal_imagenes)) {
 
         $tpl_index->newBlock("imagenes");
-        $lista_imagenes = "../../../contenido_proyectos/vistaflor/centro_".$id_centro."/feelchannel/banner_lateral/".$imagenes['contenido'];
+        $lista_imagenes = "../../../contenido_proyectos/pacoche/centro_".$id_centro."/feelchannel/banner_lateral/".$imagenes['contenido'];
         $tpl_index->assign('lista_imagenes', $lista_imagenes);
         $tpl_index->assign('duracion', $imagenes['duracion']);
         $tpl_index->assign('id_hidden', $contador);
@@ -150,7 +150,7 @@ foreach ($array_carteles as $carteles) {
     if ($carteles['foto'] != null) {
         $tpl_index->newBlock("imagenes_carteles");
 
-        $lista_imagenes = "../../../contenido_proyectos/vistaflor/centro_".$id_centro."/imagenes/agenda/".$carteles['foto'];
+        $lista_imagenes = "../../../contenido_proyectos/pacoche/centro_".$id_centro."/imagenes/agenda/".$carteles['foto'];
         $tpl_index->assign('lista_imagenes', $lista_imagenes);
         $tpl_index->assign('estilo_cartel', "css_imagen_cartel");
 

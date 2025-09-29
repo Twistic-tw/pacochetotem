@@ -231,7 +231,7 @@ if(isset($_GET['url'])) {
             $texto = str_replace("-15:00", hora_correcta_partido_iframe("15:00", $diferencia_horaria), $texto);
             $texto = str_replace("-21:00", hora_correcta_partido_iframe("21:00", $diferencia_horaria), $texto);
             $texto = str_replace("-16:00", hora_correcta_partido_iframe("16:00", $diferencia_horaria), $texto);
-            $texto = str_replace("//as01.epimg.net/img/comunes/fotos/fichas/paises/svg/", '/../../../contenido_proyectos/vistaflor/_general/eurocopa/iconos-paises/', $texto);
+            $texto = str_replace("//as01.epimg.net/img/comunes/fotos/fichas/paises/svg/", '/../../../contenido_proyectos/pacoche/_general/eurocopa/iconos-paises/', $texto);
             $texto = str_replace("http://as01.epimg.net/img/", '../img/escudos/', $texto);
             $texto = str_replace("http://as01.epimg.net/img/carrusel/escudos/banderas/21_24/", '../img/escudos/', $texto);//
             $texto = str_replace('src="', 'src="..', $texto);

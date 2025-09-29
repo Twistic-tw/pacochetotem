@@ -31,7 +31,7 @@ if ($seccionId)
                 if ( !empty($comercioDetail['logo']) )
                 {
                     $tpl_actividad_contenido_dinamico->newBlock("logo2");
-                    $tpl_actividad_contenido_dinamico->assign("comercio_logo", "../../../contenido_proyectos/vistaflor/_comercios/".$comercioDetail['logo']);
+                    $tpl_actividad_contenido_dinamico->assign("comercio_logo", "../../../contenido_proyectos/pacoche/_comercios/".$comercioDetail['logo']);
                 }
                 else
                 {
@@ -51,7 +51,7 @@ if ($seccionId)
                 if ( !empty($comercioDetail['logo']) )
                 {
                     $tpl_actividad_contenido_dinamico->newBlock("logo");
-                    $tpl_actividad_contenido_dinamico->assign("comercio_logo", "../../../contenido_proyectos/vistaflor/_comercios/".$comercioDetail['logo']);
+                    $tpl_actividad_contenido_dinamico->assign("comercio_logo", "../../../contenido_proyectos/pacoche/_comercios/".$comercioDetail['logo']);
                 }
                 else
                 {

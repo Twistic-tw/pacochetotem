@@ -26,8 +26,8 @@ function initialize(hotel_longitud,hotel_latitud,JSON_posicion_farmacia, mapa) {
 
     //***************
     //variables para imagenes
-    var image = new google.maps.MarkerImage('../../../contenido_proyectos/vistaflor/_general/iconos/atm_marcador.png', new google.maps.Size(32, 36), new google.maps.Point(0, 0));
-    var image_here = new google.maps.MarkerImage('../../../contenido_proyectos/vistaflor/_general/iconos/aqui.png', new google.maps.Size(32, 36), new google.maps.Point(0, 0));
+    var image = new google.maps.MarkerImage('../../../contenido_proyectos/pacoche/_general/iconos/atm_marcador.png', new google.maps.Size(32, 36), new google.maps.Point(0, 0));
+    var image_here = new google.maps.MarkerImage('../../../contenido_proyectos/pacoche/_general/iconos/aqui.png', new google.maps.Size(32, 36), new google.maps.Point(0, 0));
     var EscalaGris = [
         {
             featureType: "poi",

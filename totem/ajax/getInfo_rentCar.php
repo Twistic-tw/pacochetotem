@@ -34,8 +34,8 @@ switch ($_SESSION['idioma']) {
 $tpl_info_rentCar->assign("rentCar_desc", $desc);
 
 
-$tpl_info_rentCar->assign("rentCar_logoSrc", "../../../contenido_proyectos/vistaflor/centro_$id_centro/imagenes/logoNamcar.gif");
-$tpl_info_rentCar->assign("rentCar_imgSrc", "../../../contenido_proyectos/vistaflor/centro_$id_centro/imagenes/imgNamcar.jpg");
+$tpl_info_rentCar->assign("rentCar_logoSrc", "../../../contenido_proyectos/pacoche/centro_$id_centro/imagenes/logoNamcar.gif");
+$tpl_info_rentCar->assign("rentCar_imgSrc", "../../../contenido_proyectos/pacoche/centro_$id_centro/imagenes/imgNamcar.jpg");
 
 $tpl_info_rentCar->assign("lang_atras", LANG_GLOBAL_ATRAS);
 
@@ -43,7 +43,7 @@ $resultado['datos'] = $tpl_info_rentCar->getOutputContent();
 
 
 $imagen = "rent_a_car.jpg";
-$resultado['banner_superior'] = "../../../contenido_proyectos/vistaflor/centro_$id_centro/imagenes/cabecera/$imagen" ;
+$resultado['banner_superior'] = "../../../contenido_proyectos/pacoche/centro_$id_centro/imagenes/cabecera/$imagen" ;
 
 
 echo json_encode($resultado);

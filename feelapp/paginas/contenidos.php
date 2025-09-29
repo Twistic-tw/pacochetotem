@@ -16,7 +16,7 @@ if($_SESSION['proyecto'] == 'oasis'){
 }
 
 
-//<img src="../../../contenido_proyectos/vistaflor/centro_21/imagenes/cabecera/mapa_hd.jpg">
+//<img src="../../../contenido_proyectos/pacoche/centro_21/imagenes/cabecera/mapa_hd.jpg">
 
 if( $restaurantes[0]['foto_cabecera'] == 'mapa_hd.jpg' || $restaurantes[0]['foto_cabecera'] == 'mapa.jpg' || $restaurantes[0]['foto_cabecera'] == 'MAPA_ALTAMAR.jpg'){
     $tpl_portada->assign('include_img',"<img style='width: 100%; margin-bottom: 30px' src='http://admin.twisticdigital.com/contenido_proyectos/dunas/contenido/centro_" . $_SESSION['id_centro'] . "/imagenes/cabecera/" . $restaurantes[0]['foto_cabecera'] . "'>");
@@ -45,7 +45,7 @@ if(strpos($texto_restaurantes, 'safe_planet.jpg')){
 
 
 if($restaurantes[0]['foto_cabecera']){
-    $tpl_portada->assign('foto_cabecera','../../../contenido_proyectos/vistaflor/centro_' . $_SESSION['id_centro'] . '/imagenes/cabecera/' . $restaurantes[0]['foto_cabecera']);
+    $tpl_portada->assign('foto_cabecera','../../../contenido_proyectos/pacoche/centro_' . $_SESSION['id_centro'] . '/imagenes/cabecera/' . $restaurantes[0]['foto_cabecera']);
 }else{
     $tpl_portada->assign('foto_cabecera','../images/cabecera/calendario.jpg');
 }

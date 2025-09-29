@@ -76,7 +76,7 @@ function comprobarHoraScreensaver() {
 
         if (nombre_video_destacado != "screensaver.webm") {
 
-            var ruta_screensaver = "../../../contenido_proyectos/vistaflor/centro_1901/feelchannel/videos/screensaver.webm";
+            var ruta_screensaver = "../../../contenido_proyectos/pacoche/centro_1901/feelchannel/videos/screensaver.webm";
 
             setTimeout(function () {
                 $("#idle_video").attr("src", ruta_screensaver);

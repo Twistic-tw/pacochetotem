@@ -17,7 +17,7 @@ $tpl_info_general->assign("informacion", $informacion[0]['contenido']);
 
 $id_centro = $_SESSION['id_centro'];
 $imagen = "misas.jpg";
-$resultado['banner_superior'] = "../../../contenido_proyectos/vistaflor/centro_$id_centro/imagenes/cabecera/$imagen" ;
+$resultado['banner_superior'] = "../../../contenido_proyectos/pacoche/centro_$id_centro/imagenes/cabecera/$imagen" ;
 
 
 $resultado['datos'] = $tpl_info_general->getOutputContent();

@@ -252,7 +252,7 @@ function insertarVideosDb()
 
     $db = new MySQL();
 
-    $videos_header = scandir("../../../contenido_proyectos/vistaflor/centro_".$_SESSION['id_centro']."/feelchannel/videos/");
+    $videos_header = scandir("../../../contenido_proyectos/pacoche/centro_".$_SESSION['id_centro']."/feelchannel/videos/");
     unset($videos_header[0], $videos_header[1]);
 //print_r($videos_header); die;
 
@@ -277,7 +277,7 @@ function insertarBannersDb()
 
     $db = new MySQL();
 
-    $imagenes_header = scandir("../../../contenido_proyectos/vistaflor/centro_".$_SESSION['id_centro']."/feelchannel/banner_lateral/");
+    $imagenes_header = scandir("../../../contenido_proyectos/pacoche/centro_".$_SESSION['id_centro']."/feelchannel/banner_lateral/");
     unset($imagenes_header[0], $imagenes_header[1]);
 //print_r($videos_header); die;
 

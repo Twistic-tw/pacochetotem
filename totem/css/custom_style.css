@@ -177,7 +177,7 @@ body div.closeIframe {
 }*/
 /*
 .close, .cerrar_popup {
-    background: white url("../../../../contenido_proyectos/vistaflor/_general/iconos/x(n).png") no-repeat scroll center center / 40% 50%;
+    background: white url("../../../../contenido_proyectos/pacoche/_general/iconos/x(n).png") no-repeat scroll center center / 40% 50%;
     border: 3px solid #e97f02;
     border-radius: 30px;
     height: 30px;
@@ -188,7 +188,7 @@ body div.closeIframe {
 } */
 
 .close, .cerrar_popup {
-    background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/x(n).png") no-repeat scroll center center / 40% 50%;
+    background: url("../../../../contenido_proyectos/pacoche/_general/iconos/x(n).png") no-repeat scroll center center / 40% 50%;
     height: 50px;
     position: absolute;
     right: -8px;
@@ -199,7 +199,7 @@ body div.closeIframe {
 /*El close del aviso legal*/
 
 .close2 {
-    background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/x.png") no-repeat scroll center center / 40% 50% #181818;
+    background: url("../../../../contenido_proyectos/pacoche/_general/iconos/x.png") no-repeat scroll center center / 40% 50% #181818;
     border: 1px solid #FFFFFF;
     border-radius: 30px;
     height: 30px;
@@ -360,7 +360,7 @@ body .ui-keyboard-space{
 
 .buttonsRight {
 /*    background-color: rgba(0, 0, 0, 0);
-    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/buttons.svg");
+    background-image: url("../../../../contenido_proyectos/pacoche/_general/iconos/buttons.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;*/
     bottom: -14px;
@@ -375,7 +375,7 @@ body .ui-keyboard-space{
 
 .buttonsCenter{
 /*    background-color: rgba(0, 0, 0, 0);
-    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/buttons.svg");
+    background-image: url("../../../../contenido_proyectos/pacoche/_general/iconos/buttons.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;*/
     bottom: 14px;
@@ -580,7 +580,7 @@ table.std_table tr td, table.std_table tr th {
  *   07.   mainBlockWrapper
  ****************************************/
 #mainBlockWrapper {
-/*    background-image: url("../../../../contenido_proyectos/vistaflor/_general/imagenes/bg.png");
+/*    background-image: url("../../../../contenido_proyectos/pacoche/_general/imagenes/bg.png");
     background-position: 0 center;
     background-repeat: no-repeat;
     background-size: 100% auto;*/
@@ -768,32 +768,32 @@ table.std_table tr td, table.std_table tr th {
 
 
 /*Icono para HD concreto - para el general lleva un 61%*/
-.iconoHotel{ background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/hotel.svg") no-repeat center center / 100% auto; }                /* estas clases definen el background */
+.iconoHotel{ background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/circulos/hotel.svg") no-repeat center center / 100% auto; }                /* estas clases definen el background */
 /***********************************/
-.iconoAgenda{ background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/animacion.svg") no-repeat center center / 100% auto; }                /* en funcion de la posicion dentro del*/
-.iconoCheking { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/general/icon_timbre.svg") no-repeat center center / 95% auto; }                /* sprite de imagenes */
-.iconoInformacion { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/info.svg") no-repeat center center / auto 100%; }
-.iconomapa { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/mapa.svg") no-repeat center center / auto 100%; }
-.iconoConoce { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/lugar.svg") no-repeat center center / 95% auto; }
-.iconoOcioComer { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/general/icon_ocio_comer.svg") no-repeat center center / auto 85%;}
-.iconoActividades { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/que_hacer.svg") no-repeat center center / 95% auto; }
-.iconoCompras { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/general/icon_compras.svg") no-repeat center center / 80% auto; }
-.iconoDestinos { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/lugar.svg") no-repeat center center / 100% auto; }
-.iconoEurocopa { background: url("../../../../contenido_proyectos/vistaflor/_general/eurocopa/copa-mundial.svg") no-repeat center center / 100% auto; }
+.iconoAgenda{ background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/circulos/animacion.svg") no-repeat center center / 100% auto; }                /* en funcion de la posicion dentro del*/
+.iconoCheking { background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/general/icon_timbre.svg") no-repeat center center / 95% auto; }                /* sprite de imagenes */
+.iconoInformacion { background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/circulos/info.svg") no-repeat center center / auto 100%; }
+.iconomapa { background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/circulos/mapa.svg") no-repeat center center / auto 100%; }
+.iconoConoce { background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/circulos/lugar.svg") no-repeat center center / 95% auto; }
+.iconoOcioComer { background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/general/icon_ocio_comer.svg") no-repeat center center / auto 85%;}
+.iconoActividades { background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/circulos/que_hacer.svg") no-repeat center center / 95% auto; }
+.iconoCompras { background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/general/icon_compras.svg") no-repeat center center / 80% auto; }
+.iconoDestinos { background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/circulos/lugar.svg") no-repeat center center / 100% auto; }
+.iconoEurocopa { background: url("../../../../contenido_proyectos/pacoche/_general/eurocopa/copa-mundial.svg") no-repeat center center / 100% auto; }
 
-.iconoSpa { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/spa.svg") no-repeat center center / 100% auto; }
+.iconoSpa { background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/circulos/spa.svg") no-repeat center center / 100% auto; }
 
-.iconogardendirect { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/direct.svg") no-repeat center center / 100% auto; }
+.iconogardendirect { background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/circulos/direct.svg") no-repeat center center / 100% auto; }
 
-.iconogardeneco { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/eco.svg") no-repeat center center / 100% auto; }
+.iconogardeneco { background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/circulos/eco.svg") no-repeat center center / 100% auto; }
 
-.iconosultan { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/icon_sultan.png") no-repeat center center / 100% auto; }
+.iconosultan { background: url("../../../../contenido_proyectos/pacoche/_general/iconos/icon_sultan.png") no-repeat center center / 100% auto; }
 
-.iconoSostenibilidad { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/general/icon_sostenibilidad.svg") no-repeat center center / 100% auto; }
-.iconogiardino { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/giardino.svg") no-repeat center center / 100% auto; }
+.iconoSostenibilidad { background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/general/icon_sostenibilidad.svg") no-repeat center center / 100% auto; }
+.iconogiardino { background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/circulos/giardino.svg") no-repeat center center / 100% auto; }
 
-.iconogrupodunas { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/dunas_club.svg") no-repeat center center / 100% auto; }
-.iconodunashotel { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/dunas_hotel.svg") no-repeat center center / 100% auto; }
+.iconogrupodunas { background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/circulos/dunas_club.svg") no-repeat center center / 100% auto; }
+.iconodunashotel { background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/circulos/dunas_hotel.svg") no-repeat center center / 100% auto; }
 
 /*.iconoCheking {background-position: -7px 0;}*/
 
@@ -823,7 +823,7 @@ table.std_table tr td, table.std_table tr th {
     overflow: hidden;
     color: white;
     font-family: RalewayRegular;
-    //background: url("../../../../contenido_proyectos/vistaflor/_general/imagenes/background_effect_2.png") no-repeat scroll center top #2F3031;
+    //background: url("../../../../contenido_proyectos/pacoche/_general/imagenes/background_effect_2.png") no-repeat scroll center top #2F3031;
     background: no-repeat scroll center top / 100% 100% rgba(46, 47, 48, 0.8);
     background-size: 100% 100%;
 }*/
@@ -959,7 +959,7 @@ table.std_table tr td, table.std_table tr th {
  *   11.1   Tiempo
  ****************************************/
 /*#meteoWrapper {*/
-    /*background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/icono_tiempo.svg");*/
+    /*background-image: url("../../../../contenido_proyectos/pacoche/_general/iconos/icono_tiempo.svg");*/
     /*background-repeat: no-repeat;*/
     /*background-size: 100% auto;*/
     /*left: 40px;*/
@@ -1274,7 +1274,7 @@ table.std_table tr td, table.std_table tr th {
  *   11.2   Nav
  ****************************************/
 #navMenu {
-    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/white-home-icon.png");
+    background-image: url("../../../../contenido_proyectos/pacoche/_general/iconos/white-home-icon.png");
 
     background-position: center top;
     background-repeat: no-repeat;
@@ -1388,7 +1388,7 @@ table.std_table tr td, table.std_table tr th {
     width: 100%;
     overflow: hidden;
     /*padding-bottom: 20px;*/
-    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/flecha_down2.svg");
+    background-image: url("../../../../contenido_proyectos/pacoche/_general/iconos/flecha_down2.svg");
     background-position: 10px bottom;
     background-repeat: no-repeat;
 }
@@ -2064,7 +2064,7 @@ li.municipio_element.active{
     top: 23px;
 }
 .atrasIcon {
-    background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/atras_icono.png") no-repeat scroll 7px 8px / 42% auto #97bf0d;
+    background: url("../../../../contenido_proyectos/pacoche/_general/iconos/atras_icono.png") no-repeat scroll 7px 8px / 42% auto #97bf0d;
     display: inline-block;
     height: 30px;
     margin-right: 7px;
@@ -2072,7 +2072,7 @@ li.municipio_element.active{
     border-radius: 30px;
 }
 .back .atrasIcon {
-  background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/atras_icono.png") no-repeat scroll 6px 6px / 42% auto #97bf0d;
+  background: url("../../../../contenido_proyectos/pacoche/_general/iconos/atras_icono.png") no-repeat scroll 6px 6px / 42% auto #97bf0d;
   height: 24px;
   left: 3px;
   position: absolute;
@@ -2769,7 +2769,7 @@ margin-left: 3%;
 
 .destacada .tarjeta_destacado{
   background-color:#e8c817;
-/*    background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/general/icon_canoa.svg") no-repeat scroll center center / 95% auto rgba(0, 0, 0, 0);
+/*    background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/general/icon_canoa.svg") no-repeat scroll center center / 95% auto rgba(0, 0, 0, 0);
 */}
 
 
@@ -3009,7 +3009,7 @@ background-color: #fbc99d;
 /********************************************RUTAS*/
 
 .background_rutas{
-  background-image: url('../../../../contenido_proyectos/vistaflor/_general/conoce_sitios/rutas_fondo.png');
+  background-image: url('../../../../contenido_proyectos/pacoche/_general/conoce_sitios/rutas_fondo.png');
   background-repeat:no-repeat;
   text-align: center;
     font-family: OpenSans;
@@ -3076,7 +3076,7 @@ font-size: 24px;
 .menu_ruta_contenido_boton {
     width: 110px;
     height: 110px;
-    background-image: url('../../../../contenido_proyectos/vistaflor/_general/conoce_sitios/rutas_icono.png');
+    background-image: url('../../../../contenido_proyectos/pacoche/_general/conoce_sitios/rutas_icono.png');
     color: white;
     vertical-align: middle;
     background-repeat: none;
@@ -3138,10 +3138,10 @@ font-size: 24px;
 
 #owl-galeria.owl-carousel{height: 100%;}
 #owl-galeria.owl-carousel > .owl-wrapper-outer{height: 94%;}
-.informacion_wrapper { background-image: url("../../../../contenido_proyectos/vistaflor/_general/conoce_sitios/info_icono.png");}
-.hacer_wrapper { background-image: url("../../../../contenido_proyectos/vistaflor/_general/conoce_sitios/que_hacer_icono.png");}
-.galeria_wrapper { background-image: url("../../../../contenido_proyectos/vistaflor/_general/conoce_sitios/galeria_icono.png");}
-.sitios_wrapper { background-image: url("../../../../contenido_proyectos/vistaflor/_general/conoce_sitios/sitios_icono.png");}
+.informacion_wrapper { background-image: url("../../../../contenido_proyectos/pacoche/_general/conoce_sitios/info_icono.png");}
+.hacer_wrapper { background-image: url("../../../../contenido_proyectos/pacoche/_general/conoce_sitios/que_hacer_icono.png");}
+.galeria_wrapper { background-image: url("../../../../contenido_proyectos/pacoche/_general/conoce_sitios/galeria_icono.png");}
+.sitios_wrapper { background-image: url("../../../../contenido_proyectos/pacoche/_general/conoce_sitios/sitios_icono.png");}
 
 .informacion_wrapper,.hacer_wrapper,.galeria_wrapper,.sitios_wrapper,.listado_zonas_wrapper{display:inline-table;}
 .sub-menu-elmt.active:before {
@@ -3175,7 +3175,7 @@ font-size: 24px;
     width: 50px;
     float: left;
     z-index: 999;
-    background-image: url('../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/icon_mapa.svg');
+    background-image: url('../../../contenido_proyectos/pacoche/_general/conoce_sitios/iconos/icon_mapa.svg');
     height: 50px;
     background-color: red;
     left: 5px;
@@ -3486,7 +3486,7 @@ margin-left: 13% !important;
     100% { top: 580px; }
 }
 .bubble{
-    background-image: url("../../../../contenido_proyectos/vistaflor/_general/imagenes/bubble.png");
+    background-image: url("../../../../contenido_proyectos/pacoche/_general/imagenes/bubble.png");
     position: absolute;
     background-size: cover;
 }
@@ -3784,25 +3784,25 @@ margin-left: 13% !important;
 }
 
 /*.demo_wrapper_estilo_1 .elemento_wrapper.deporte .elemento:nth-child(1) {
-    background: url("../../../../contenido_proyectos/vistaflor/centro_1/imagenes/icon_sp_tenis.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
+    background: url("../../../../contenido_proyectos/pacoche/centro_1/imagenes/icon_sp_tenis.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
 }
 .demo_wrapper_estilo_1 .elemento_wrapper.deporte .elemento:nth-child(2) {
-    background: url("../../../../contenido_proyectos/vistaflor/centro_1/imagenes/icon_sp_multideporte.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
+    background: url("../../../../contenido_proyectos/pacoche/centro_1/imagenes/icon_sp_multideporte.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
 }
 
 .demo_wrapper_estilo_1 .elemento_wrapper.deporte .elemento:nth-child(3) {
-    background: url("../../../../contenido_proyectos/vistaflor/centro_1/imagenes/icon_sp_interior.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
+    background: url("../../../../contenido_proyectos/pacoche/centro_1/imagenes/icon_sp_interior.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
 }
 
 .demo_wrapper_estilo_1 .elemento_wrapper.deporte .elemento:nth-child(4) {
-    background: url("../../../../contenido_proyectos/vistaflor/centro_1/imagenes/icon_sp_exterior.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
+    background: url("../../../../contenido_proyectos/pacoche/centro_1/imagenes/icon_sp_exterior.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
 }
 
 .demo_wrapper_estilo_1 .elemento_wrapper.piscina .elemento:nth-child(1) {
-    background: url("../../../../contenido_proyectos/vistaflor/centro_1/imagenes/icon_ps_infantil.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
+    background: url("../../../../contenido_proyectos/pacoche/centro_1/imagenes/icon_ps_infantil.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
 }
 .demo_wrapper_estilo_1 .elemento_wrapper.piscina .elemento:nth-child(2) {
-    background: url("../../../../contenido_proyectos/vistaflor/centro_1/imagenes/icon_ps_adulto.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
+    background: url("../../../../contenido_proyectos/pacoche/centro_1/imagenes/icon_ps_adulto.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
 }
 */
 
@@ -3954,19 +3954,19 @@ margin-left: 13% !important;
 
 
 .icono_habitacion{
- background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/contenido/icon_habitacion_45.svg") no-repeat scroll center center / 85% auto rgba(0, 0, 0, 0);   
+ background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/contenido/icon_habitacion_45.svg") no-repeat scroll center center / 85% auto rgba(0, 0, 0, 0);   
 }
 
 .icono_tick{
- background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/contenido/icon_tick_verde.svg") no-repeat scroll center center / 85% auto rgba(0, 0, 0, 0);   
+ background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/contenido/icon_tick_verde.svg") no-repeat scroll center center / 85% auto rgba(0, 0, 0, 0);   
 }
 
 .icono_cross{
- background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/contenido/icon_cross_roja.svg") no-repeat scroll center center / 85% auto rgba(0, 0, 0, 0);   
+ background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/contenido/icon_cross_roja.svg") no-repeat scroll center center / 85% auto rgba(0, 0, 0, 0);   
 }
 
 .icono_lapiz{
- background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/contenido/icon_lapiz.svg") no-repeat scroll center center / 85% auto rgba(0, 0, 0, 0);   
+ background: url("../../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/contenido/icon_lapiz.svg") no-repeat scroll center center / 85% auto rgba(0, 0, 0, 0);   
 }
 
 .valorar_agenda{
@@ -4069,7 +4069,7 @@ margin-left: 13% !important;
   margin-bottom: 23px;
 }
 
-.listados_zonas_wrapper { background-image: url("../../../../contenido_proyectos/vistaflor/_general/conoce_sitios/sitios_icono.png");}
+.listados_zonas_wrapper { background-image: url("../../../../contenido_proyectos/pacoche/_general/conoce_sitios/sitios_icono.png");}
 
 .full_contenido_listado_zona_wrapper {
     clear: both;
@@ -5281,7 +5281,7 @@ abbr[title] {
     margin-left: 31px;
     margin-top: 30px;
     width: 600px;
-    background-image: url("../../../../contenido_proyectos/vistaflor/_general/hoteles/fondo_video.jpg");
+    background-image: url("../../../../contenido_proyectos/pacoche/_general/hoteles/fondo_video.jpg");
 }
 
 .css_cuadro_anexo_video{

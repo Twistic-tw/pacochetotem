@@ -176,9 +176,9 @@ function get_actividades3($dias = 1, $ids_categorias = null)
 
     $riu_party = false;
 
-    $ruta_videos = '../../../contenido_proyectos/vistaflor/centro_' . $_SESSION['id_centro'] . '/videos/';
-    $ruta_videos_general = '../../../contenido_proyectos/vistaflor/_general/banner_header_general/';
-    $ruta_img = '../../../contenido_proyectos/vistaflor/centro_' . $_SESSION['id_centro'] . '/imagenes/agenda/';
+    $ruta_videos = '../../../contenido_proyectos/pacoche/centro_' . $_SESSION['id_centro'] . '/videos/';
+    $ruta_videos_general = '../../../contenido_proyectos/pacoche/_general/banner_header_general/';
+    $ruta_img = '../../../contenido_proyectos/pacoche/centro_' . $_SESSION['id_centro'] . '/imagenes/agenda/';
 
     while ($fila = $db->fetch_assoc($query)) {
 
@@ -385,9 +385,9 @@ function get_actividades_hoy($dias = 1)
 
     $query = $db->consulta($queryString);
 
-    $ruta_videos = '../../../contenido_proyectos/vistaflor/centro_' . $_SESSION['id_centro'] . '/videos/';
-    $ruta_videos_general = '../../../contenido_proyectos/vistaflor/_general/banner_header_general/';
-    $ruta_img = '../../../contenido_proyectos/vistaflor/centro_' . $_SESSION['id_centro'] . '/imagenes/agenda/';
+    $ruta_videos = '../../../contenido_proyectos/pacoche/centro_' . $_SESSION['id_centro'] . '/videos/';
+    $ruta_videos_general = '../../../contenido_proyectos/pacoche/_general/banner_header_general/';
+    $ruta_img = '../../../contenido_proyectos/pacoche/centro_' . $_SESSION['id_centro'] . '/imagenes/agenda/';
 
     while ($fila = $db->fetch_assoc($query)) {
 

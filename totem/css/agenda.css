@@ -61,7 +61,7 @@ ul.actividadesList .masInfoWrapper {
 #agendaCalendario .ui-datepicker .ui-datepicker-next{right: 6px;}
 #agendaCalendario .ui-datepicker .ui-datepicker-prev span,
 .ui-datepicker .ui-datepicker-next span {
-    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/spriteFlechasNav3.svg");
+    background-image: url("../../../../contenido_proyectos/pacoche/_general/iconos/spriteFlechasNav3.svg");
     background-repeat: no-repeat;
     background-size: 45px auto;
     height: 30px;
@@ -257,7 +257,7 @@ ul.actividadesList .masInfoWrapper {
     width: 50%;
 }
 #agendaActividades ul.actividadesList li.active{
-    background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/flecha.png") no-repeat scroll 6px 33px transparent;
+    background: url("../../../../contenido_proyectos/pacoche/_general/iconos/flecha.png") no-repeat scroll 6px 33px transparent;
 
 }
 
@@ -408,7 +408,7 @@ ul.actividadesList li span.actividadDesc {
 }
 
 .ficl_promo {
-     background-image: url("../../../../contenido_proyectos/vistaflor/centro_218/mas_info/ironman.jpg");;
+     background-image: url("../../../../contenido_proyectos/pacoche/centro_218/mas_info/ironman.jpg");;
      bottom: 17px;
      height: 45px;
      left: 35px;

@@ -99,7 +99,7 @@ body{
 
 .calendario-dias .weekdays, .tit-modulo {
     /*background: #c01d1d !important;*/
-    background-image: url('../../../../contenido_proyectos/vistaflor/_general/eurocopa/fondo-prueba.jpg') !important;
+    background-image: url('../../../../contenido_proyectos/pacoche/_general/eurocopa/fondo-prueba.jpg') !important;
 }
 
 .calendario-dias .weekdays th:first-child, .calendario-dias td:last-child, .calendario-dias th:last-child {
@@ -169,5 +169,5 @@ body{
 
 
 /*
-    background-image: url('../../../../contenido_proyectos/vistaflor/_general/eurocopa/fondo_azul.jpg');
+    background-image: url('../../../../contenido_proyectos/pacoche/_general/eurocopa/fondo_azul.jpg');
 */

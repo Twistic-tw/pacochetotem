@@ -227,7 +227,7 @@ body .ui-keyboard-space{
 
 .buttonsRight {
     background-color: rgba(0, 0, 0, 0);
-    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/buttons.svg");
+    background-image: url("../../../../contenido_proyectos/pacoche/_general/iconos/buttons.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border: 0 none;
@@ -242,7 +242,7 @@ body .ui-keyboard-space{
 }
 .buttonsLeft{
     background-color: rgba(0, 0, 0, 0);
-    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/buttons.svg");
+    background-image: url("../../../../contenido_proyectos/pacoche/_general/iconos/buttons.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border: 0 none;
@@ -257,7 +257,7 @@ body .ui-keyboard-space{
 }
 .buttonsCenter{
     background-color: rgba(0, 0, 0, 0);
-    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/buttons.svg");
+    background-image: url("../../../../contenido_proyectos/pacoche/_general/iconos/buttons.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border: 0 none;
@@ -414,7 +414,7 @@ table.std_table tr td, table.std_table tr th {
  *   07.   mainBlockWrapper
  ****************************************/
 #mainBlockWrapper {
-    background-image: url("../../../../contenido_proyectos/vistaflor/_general/imagenes/bg.png");
+    background-image: url("../../../../contenido_proyectos/pacoche/_general/imagenes/bg.png");
     background-position: 0 center;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -599,7 +599,7 @@ table.std_table tr td, table.std_table tr th {
 .menuContentHeader{                 /* la flecha superior */
     height: 22px;
     width: 100%;
-    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/flecha_up2.svg"); 
+    background-image: url("../../../../contenido_proyectos/pacoche/_general/iconos/flecha_up2.svg"); 
     background-repeat: no-repeat;
     margin-top: 3px;
 }
@@ -615,7 +615,7 @@ table.std_table tr td, table.std_table tr th {
     overflow: hidden;
     color: white;
     font-family: robotocondensed;
-    background: url("../../../../contenido_proyectos/vistaflor/_general/imagenes/background_effect_2.png") no-repeat scroll center top #2F3031;
+    background: url("../../../../contenido_proyectos/pacoche/_general/imagenes/background_effect_2.png") no-repeat scroll center top #2F3031;
     background-size: 100% 100%;
 }
 .menuContent > div{
@@ -755,7 +755,7 @@ table.std_table tr td, table.std_table tr th {
  *   11.1   Tiempo
  ****************************************/
 #meteoWrapper {
-    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/icono_tiempo.svg");
+    background-image: url("../../../../contenido_proyectos/pacoche/_general/iconos/icono_tiempo.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     left: 40px;
@@ -977,7 +977,7 @@ table.std_table tr td, table.std_table tr th {
  *   11.2   Nav
  ****************************************/
 #navMenu {
-    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/home.svg");
+    background-image: url("../../../../contenido_proyectos/pacoche/_general/iconos/home.svg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -1000,7 +1000,7 @@ table.std_table tr td, table.std_table tr th {
  ****************************************/
 
 #langSwitch {
-    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/icono_idioma.svg");
+    background-image: url("../../../../contenido_proyectos/pacoche/_general/iconos/icono_idioma.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     right: 40px;
@@ -1032,7 +1032,7 @@ table.std_table tr td, table.std_table tr th {
     width: 100%;
     overflow: hidden;
     /*padding-bottom: 20px;*/
-    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/flecha_down2.svg");
+    background-image: url("../../../../contenido_proyectos/pacoche/_general/iconos/flecha_down2.svg");
     background-position: 10px bottom;
     background-repeat: no-repeat;
 }

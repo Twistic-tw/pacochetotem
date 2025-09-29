@@ -38,7 +38,7 @@
 
 #agendaCalendario .ui-datepicker .ui-widget-header{
     background-color: transparent;
-    background-image: url("../../../../contenido_proyectos/vistaflor/_general/imagenes/calendarioHeader.png");
+    background-image: url("../../../../contenido_proyectos/pacoche/_general/imagenes/calendarioHeader.png");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -53,7 +53,7 @@
 #agendaCalendario .ui-datepicker .ui-datepicker-next{right: 6px;}
 #agendaCalendario .ui-datepicker .ui-datepicker-prev span,
 .ui-datepicker .ui-datepicker-next span {
-    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/spriteFlechasNav3.svg");
+    background-image: url("../../../../contenido_proyectos/pacoche/_general/iconos/spriteFlechasNav3.svg");
     background-repeat: no-repeat;
     background-size: 45px auto;
     height: 30px;
@@ -234,7 +234,7 @@
     width: 50%;
 }
 #agendaActividades ul.actividadesList li.active{
-    background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/arrowRight.png") no-repeat scroll 4px 19px transparent;
+    background: url("../../../../contenido_proyectos/pacoche/_general/iconos/arrowRight.png") no-repeat scroll 4px 19px transparent;
     border: 1px solid #e77607;
 }
 

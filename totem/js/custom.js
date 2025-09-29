@@ -171,7 +171,7 @@ $(window).ready(function() {
         if ( $(".loadingBg").size()>0){
             return true;
         }
-        $("body").append("<div id='overlayLoadingContent' class='loadingBg'><img style='background: none repeat scroll 0 0 #232323;height: auto;margin-left: 144px;margin-top: 206px;padding: 10px;width: auto;' src='../../../contenido_proyectos/vistaflor/_general/imagenes/reservas_proximamente.png'></div>");
+        $("body").append("<div id='overlayLoadingContent' class='loadingBg'><img style='background: none repeat scroll 0 0 #232323;height: auto;margin-left: 144px;margin-top: 206px;padding: 10px;width: auto;' src='../../../contenido_proyectos/pacoche/_general/imagenes/reservas_proximamente.png'></div>");
         
         setTimeout( function() {
             $("#overlayLoadingContent").fadeOut("300", function(){
@@ -199,7 +199,7 @@ $(window).ready(function() {
         }
         $("body").append(" + <div class='loadingBg flex_center'>" +
             "<div class='flex_baseline' style='height: 1500px;overflow-y: scroll;'>" +
-            "<img style='width:990px; height:auto; margin-top:200px;' class='zoom-in'  src='../../../contenido_proyectos/vistaflor/centro_"+id_centro+"/imagenes/contenidos/"+foto+"_"+idioma+".jpg'>" +
+            "<img style='width:990px; height:auto; margin-top:200px;' class='zoom-in'  src='../../../contenido_proyectos/pacoche/centro_"+id_centro+"/imagenes/contenidos/"+foto+"_"+idioma+".jpg'>" +
             "</div>" +
             "</div>");
 
@@ -235,7 +235,7 @@ $(window).ready(function() {
         }
         $("body").append(" + <div class='loadingBg'>" +
             "<div id='' style='height:1285px; width:900px; margin-left: 85px; margin-top: 280px; overflow-y: scroll;'>" +
-            "<img style='900px;height:auto'  src='../../../contenido_proyectos/vistaflor/centro_"+id_centro+"/imagenes/contenidos/"+foto+"_"+idioma+".jpg'>" +
+            "<img style='900px;height:auto'  src='../../../contenido_proyectos/pacoche/centro_"+id_centro+"/imagenes/contenidos/"+foto+"_"+idioma+".jpg'>" +
             "</div>" +
             "</div>");
 
@@ -370,7 +370,7 @@ $(window).ready(function() {
         $(this).parents(".content").popup({
             title: title,
             titleClass: "eventoDetailTitle",
-            contenido: "<img src='../../../contenido_proyectos/vistaflor/centro_"+id_centro+"/guaguas/"+linea+".png'>",
+            contenido: "<img src='../../../contenido_proyectos/pacoche/centro_"+id_centro+"/guaguas/"+linea+".png'>",
             contenidoClass: "eventoDetailContent",
             contenedorClass: "overlayWrapper popup-element demo_popup",
             renderCallback: function(){
@@ -435,7 +435,7 @@ $(window).ready(function() {
         $(this).parents(".content").popup({
             title: title,
             titleClass: "eventoDetailTitle",
-            contenido: "<img src='../../../contenido_proyectos/vistaflor/centro_"+id_centro+"/mas_info/"+imagen+".png'>",
+            contenido: "<img src='../../../contenido_proyectos/pacoche/centro_"+id_centro+"/mas_info/"+imagen+".png'>",
             contenidoClass: "eventoDetailContent",
             contenedorClass: "overlayWrapper popup-element demo_popup",
             renderCallback: function(){
@@ -466,7 +466,7 @@ $(window).ready(function() {
         $(this).parents(".content").popup({
             title: title,
             titleClass: "eventoDetailTitle",
-            contenido: "<img src='../../../contenido_proyectos/vistaflor/centro_"+id_centro+"/mas_info/"+imagen+"_"+idioma+".png'>",
+            contenido: "<img src='../../../contenido_proyectos/pacoche/centro_"+id_centro+"/mas_info/"+imagen+"_"+idioma+".png'>",
             contenidoClass: "eventoDetailContent",
             contenedorClass: "overlayWrapper popup-element demo_popup",
             renderCallback: function(){
@@ -497,7 +497,7 @@ $(window).ready(function() {
         $(this).parents(".content").popup({
             title: title,
             titleClass: "eventoDetailTitle",
-            contenido: "<img src='../../../contenido_proyectos/vistaflor/centro_"+id_centro+"/mas_info/"+imagen+".png'>",
+            contenido: "<img src='../../../contenido_proyectos/pacoche/centro_"+id_centro+"/mas_info/"+imagen+".png'>",
             contenidoClass: "eventoDetailContent2",
             contenedorClass: "overlayWrapper2 popup-element demo_popup",
             renderCallback: function(){
@@ -531,7 +531,7 @@ $(window).ready(function() {
         $(this).parents(".content").popup({
             title: '',
             titleClass: "",
-            contenido: "<img src='../../../contenido_proyectos/vistaflor/centro_"+id_centro+"/mas_info/"+imagen+".jpg'>",
+            contenido: "<img src='../../../contenido_proyectos/pacoche/centro_"+id_centro+"/mas_info/"+imagen+".jpg'>",
             contenidoClass: "eventoDetailContent",
             contenedorClass: "overlayWrapper popup-element mapa_popup",
             renderCallback: function(){
@@ -564,7 +564,7 @@ $(window).ready(function() {
         $(this).parents(".content").popup({
             title: title,
             titleClass: "eventoDetailTitle",
-            contenido: "<img src='../../../contenido_proyectos/vistaflor/centro_"+id_centro+"/mas_info/"+imagen+".jpg?"+timestamp+"'>",
+            contenido: "<img src='../../../contenido_proyectos/pacoche/centro_"+id_centro+"/mas_info/"+imagen+".jpg?"+timestamp+"'>",
             contenidoClass: "eventoDetailContent",
             contenedorClass: "overlayWrapper popup-element demo_popup css_contenidos_masinfo_jpg",
             renderCallback: function(){
@@ -596,7 +596,7 @@ $(window).ready(function() {
         $(this).parents(".content").popup({
             title: title,
             titleClass: "eventoDetailTitle",
-            contenido: "<img src='../../../contenido_proyectos/vistaflor/centro_"+id_centro+"/mas_info/"+imagen+"_"+idioma+".png'>",
+            contenido: "<img src='../../../contenido_proyectos/pacoche/centro_"+id_centro+"/mas_info/"+imagen+"_"+idioma+".png'>",
             contenidoClass: "eventoDetailContent",
             contenedorClass: "overlayWrapper popup-element demo_popup popup_agenda",
             renderCallback: function(){
@@ -626,7 +626,7 @@ $(window).ready(function() {
         $(this).parents(".content").popup({
             title: title,
             titleClass: "eventoDetailTitle",
-            contenido: "<img src='../../../contenido_proyectos/vistaflor/centro_"+id_centro+"/mas_info/"+imagen+".jpg'>",
+            contenido: "<img src='../../../contenido_proyectos/pacoche/centro_"+id_centro+"/mas_info/"+imagen+".jpg'>",
             contenidoClass: "eventoDetailContent",
             contenedorClass: "overlayWrapper popup-element demo_popup popup_agenda",
             renderCallback: function(){
@@ -1008,7 +1008,7 @@ $(window).ready(function() {
         $(this).parents(".content").popup({
             title: title,
             titleClass: "eventoDetailTitle",
-            contenido: "<img src='../../../contenido_proyectos/vistaflor/centro_1/imagenes/reserva.png'>",
+            contenido: "<img src='../../../contenido_proyectos/pacoche/centro_1/imagenes/reserva.png'>",
             contenidoClass: "eventoDetailContent",
             contenedorClass: "overlayWrapper popup-element demo_popup",
             renderCallback: function(){
@@ -1039,7 +1039,7 @@ $(window).ready(function() {
         $(this).parents(".content").popup({
             title: title,
             titleClass: "eventoDetailTitle",
-            contenido: "<img src='../../../contenido_proyectos/vistaflor/centro_"+id_centro+"/imagenes/restaurante/carta_kristal_"+idioma+".PNG'>",
+            contenido: "<img src='../../../contenido_proyectos/pacoche/centro_"+id_centro+"/imagenes/restaurante/carta_kristal_"+idioma+".PNG'>",
             contenidoClass: "eventoDetailContent",
             contenedorClass: "overlayWrapper popup-element demo_popup",
             renderCallback: function(){
@@ -1070,7 +1070,7 @@ $(window).ready(function() {
         $(this).parents(".content").popup({
             title: title,
             titleClass: "eventoDetailTitle",
-            contenido: "<img src='../../../contenido_proyectos/vistaflor/centro_"+id_centro+"/imagenes/restaurante/carta_ocean_"+idioma+".PNG'>",
+            contenido: "<img src='../../../contenido_proyectos/pacoche/centro_"+id_centro+"/imagenes/restaurante/carta_ocean_"+idioma+".PNG'>",
             contenidoClass: "eventoDetailContent",
             contenedorClass: "overlayWrapper popup-element demo_popup",
             renderCallback: function(){
@@ -2594,7 +2594,7 @@ $("body").on("click", ".js_destroy_isotope", function(event) {
                     $(".bandera_checkin").click(function(){
 
                         //Url donde estan todas la banderas
-                        var path_img = "../../../contenido_proyectos/vistaflor/_general/iconos/iconos-bandera-flat/"; 
+                        var path_img = "../../../contenido_proyectos/pacoche/_general/iconos/iconos-bandera-flat/"; 
 
                         //Actualizo la bandera sseleccioanda en la caja
                         $(".bandera_checkin").removeClass("bandera_active");
@@ -2666,13 +2666,13 @@ function setOverlayContentLoadingGif( ) {
         
         //$("body").append("<div id='overlayLoadingContent' class='loadingBg'><div id='loadingGifWrapper'></div></div>");
 
-        $("body").append("<div id='overlayLoadingContent' class='loadingBg'><div class='nueva_carga'> <img src='../../../contenido_proyectos/vistaflor/_general/imagenes/animacion_wait_white.gif'> </div></div>");
+        $("body").append("<div id='overlayLoadingContent' class='loadingBg'><div class='nueva_carga'> <img src='../../../contenido_proyectos/pacoche/_general/imagenes/animacion_wait_white.gif'> </div></div>");
 
 
         //The following code starts the animation
         //new imageLoader(cImageSrc, 'startAnimation()');
 
-        //$("body").append("<div class='nueva_carga'> <img src='../../../contenido_proyectos/vistaflor/_general/imagenes/animacion_totem02.gif'> </div>");
+        //$("body").append("<div class='nueva_carga'> <img src='../../../contenido_proyectos/pacoche/_general/imagenes/animacion_totem02.gif'> </div>");
 
     }, overlayLoadingDelay);    
 
@@ -2786,8 +2786,8 @@ function initializeKeyboardListeners(clickListener){
     
     
         $(".ui-keyboard").hide().draggable();
-        $('.ui-keyboard').prepend("<div class='arrastre_izquierda'><img src='../../../contenido_proyectos/vistaflor/_general/iconos/mano.png'/></div>");
-        $('.ui-keyboard').prepend("<div class='arrastre_derecha'><img src='../../../contenido_proyectos/vistaflor/_general/iconos/mano.png'/></div>");
+        $('.ui-keyboard').prepend("<div class='arrastre_izquierda'><img src='../../../contenido_proyectos/pacoche/_general/iconos/mano.png'/></div>");
+        $('.ui-keyboard').prepend("<div class='arrastre_derecha'><img src='../../../contenido_proyectos/pacoche/_general/iconos/mano.png'/></div>");
     }
 
 }
@@ -3115,7 +3115,7 @@ function generarGraficaMeteorologica(municipio, callback) {
                 }
                 //cuadrado superior con los iconos para las temperaturas de 6h, 12h y 18h
                 //icono
-                $(".resumen_iconNubosidad img", $(this)).attr("src", "../../../contenido_proyectos/vistaflor/_general/tiempo/" + datosMeteo.hoy.iconos[index]);
+                $(".resumen_iconNubosidad img", $(this)).attr("src", "../../../contenido_proyectos/pacoche/_general/tiempo/" + datosMeteo.hoy.iconos[index]);
 
                 //viento
                 $(".viento", $(this)).html(datosMeteo.hoy["viento_vel_" + i + "_" + (index + 6) ]);
@@ -3140,7 +3140,7 @@ function generarGraficaMeteorologica(municipio, callback) {
                     day = "pasado";
                 }
                 //icono
-                $(".meteoInfo_estimacionImgWrapper img", $(this)).attr("src", "../../../contenido_proyectos/vistaflor/_general/tiempo/" + datosMeteo[day].iconos[index]);
+                $(".meteoInfo_estimacionImgWrapper img", $(this)).attr("src", "../../../contenido_proyectos/pacoche/_general/tiempo/" + datosMeteo[day].iconos[index]);
                 //hora
                 $(".time", $(this)).html(index + ":00 H");
                 index += 6;
@@ -3578,7 +3578,7 @@ $.fn.setPositionsForSection = function(callback) {
     
     if ( $(this).hasClass("no_disponible") ){
         $(this).find(".content").addClass("filter1");
-        $(this).append("<div class='img_overlay'><img src='../../../contenido_proyectos/vistaflor/_general/imagenes/out_"+idioma+".png'></div>");
+        $(this).append("<div class='img_overlay'><img src='../../../contenido_proyectos/pacoche/_general/imagenes/out_"+idioma+".png'></div>");
     }
 }
 
@@ -3604,8 +3604,8 @@ $.fn.generateMapaForComercio = function(latitud, longitud){
     
     //***************
     //variables para imagenes
-    var image = '../../../contenido_proyectos/vistaflor/_general/iconos/hotel.png';
-    var image_here = '../../../contenido_proyectos/vistaflor/_general/iconos/aqui.png';
+    var image = '../../../contenido_proyectos/pacoche/_general/iconos/hotel.png';
+    var image_here = '../../../contenido_proyectos/pacoche/_general/iconos/aqui.png';
     
     var EscalaGris = [
         {
@@ -5952,7 +5952,7 @@ function click_banner (imagen,titulo){
     $('.js_click_banner').parents(".content").popup({
         title: titulo,
         titleClass: "eventoDetailTitle",
-        contenido: "<img src='../../../contenido_proyectos/vistaflor/centro_"+id_centro+"/mas_info/"+imagen+".png'>",
+        contenido: "<img src='../../../contenido_proyectos/pacoche/centro_"+id_centro+"/mas_info/"+imagen+".png'>",
         contenidoClass: "eventoDetailContent",
         contenedorClass: "overlayWrapper popup-element demo_popup ",
         renderCallback: function(){

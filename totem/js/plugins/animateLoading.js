@@ -6,7 +6,7 @@ var cHeight = 148;
 
 var cTotalFrames = 18;
 var cFrameWidth = 128;
-var cImageSrc = '../../../contenido_proyectos/vistaflor/_general/imagenes/animateSprites.png';
+var cImageSrc = '../../../contenido_proyectos/pacoche/_general/imagenes/animateSprites.png';
 
 var cImageTimeout = false;
 var cIndex = 0;

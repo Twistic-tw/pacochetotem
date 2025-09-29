@@ -13,7 +13,7 @@ $db = new MySQL();
 $tpl_galeria->assign("title", LANG_GALERIA_TITLE);
 $tpl_galeria->assign("lang_atras", LANG_GLOBAL_ATRAS);
 
-$dirPath = "../../../contenido_proyectos/vistaflor/centro_$id_centro/galeria/";
+$dirPath = "../../../contenido_proyectos/pacoche/centro_$id_centro/galeria/";
 
 if (is_dir($dirPath) )
 {

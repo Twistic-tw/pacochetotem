@@ -14,7 +14,7 @@ $rutas_datos = totem_getRutas( NULL, $rutaId );
 foreach ( $rutas_datos as $rutas_datosDetail )
 {
 
-    $tpl_conoce->assign( 'imagen', '../../../contenido_proyectos/vistaflor/_general/conoce_sitios/' . $rutas_datosDetail[ 'id' ] . '/' . $rutas_datosDetail[ 'imagen' ] );
+    $tpl_conoce->assign( 'imagen', '../../../contenido_proyectos/pacoche/_general/conoce_sitios/' . $rutas_datosDetail[ 'id' ] . '/' . $rutas_datosDetail[ 'imagen' ] );
     $tpl_conoce->assign( "nombre", $rutas_datosDetail[ 'nombre' ] );
     $tpl_conoce->assign( "cerrar", LANG_CONOCE_ATRAS );
     $tpl_conoce->assign( "sitios_label", LANG_CONOCE_INTERES );
@@ -80,7 +80,7 @@ $tpl_conoce->newBlock( "blq_galeria_full" );
 
 //  while ($datos = $db->fetch_assoc($result))
 //{
-$dirPath = '../../../contenido_proyectos/vistaflor/_general/conoce_sitios/' . $rutas_datosDetail[ 'id' ] . '/';
+$dirPath = '../../../contenido_proyectos/pacoche/_general/conoce_sitios/' . $rutas_datosDetail[ 'id' ] . '/';
 
 if ( is_dir( $dirPath ) )
 {

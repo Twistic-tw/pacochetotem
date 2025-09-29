@@ -100,7 +100,7 @@ $tplIndex->prepare();
 
 
 
-$directorio = '../../../contenido_proyectos/vistaflor/centro_' . $_SESSION['id_centro'] . "/imagenes/agenda/";
+$directorio = '../../../contenido_proyectos/pacoche/centro_' . $_SESSION['id_centro'] . "/imagenes/agenda/";
 $files  = scandir($directorio);
 $imagenes = array_values($files);
 
@@ -168,7 +168,7 @@ $screensaver_config = get_screensavers_config('ACTIVIDADES')[0];
 // print_r($screensaver_config);
 // die;
 
-$ruta_screensaver = '../../../contenido_proyectos/vistaflor/centro_' . $id_centro . "/screensaver/actividades/";
+$ruta_screensaver = '../../../contenido_proyectos/pacoche/centro_' . $id_centro . "/screensaver/actividades/";
 
 if (file_exists($ruta_screensaver . $screensavers['nombre']) && !empty($screensavers['nombre'])) {
     $tplIndex->newBlock('screensaver');

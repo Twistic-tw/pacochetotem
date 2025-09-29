@@ -52,12 +52,12 @@ $(document).ready(function() {
 
         // Añadir qR
         var qr = $('.qr').children('img');
-        qr.attr("src", "../../../contenido_proyectos/vistaflor/centro_"+centro+"/farmacias_qr/"+id+".png");
+        qr.attr("src", "../../../contenido_proyectos/pacoche/centro_"+centro+"/farmacias_qr/"+id+".png");
 
 
         // Añadir imagen
         var foto_farmacia = $('.foto').children('img');
-        foto_farmacia.attr("src", "../../../contenido_proyectos/vistaflor/centro_"+centro+"/imagenes/farmacias/"+centro_cod_prov+"/"+id+".png");
+        foto_farmacia.attr("src", "../../../contenido_proyectos/pacoche/centro_"+centro+"/imagenes/farmacias/"+centro_cod_prov+"/"+id+".png");
 
 
         // Se calcula la ruta
@@ -84,8 +84,8 @@ function initialize(hotel_longitud,hotel_latitud,JSON_posicion_farmacia) {
     
     //***************
     //variables para imagenes
-    var image = new google.maps.MarkerImage('../../../contenido_proyectos/vistaflor/_general/iconos/farmacias.png', new google.maps.Size(32, 36), new google.maps.Point(0, 0));
-    var image_here = new google.maps.MarkerImage('../../../contenido_proyectos/vistaflor/_general/iconos/aqui.png', new google.maps.Size(32, 36), new google.maps.Point(0, 0));
+    var image = new google.maps.MarkerImage('../../../contenido_proyectos/pacoche/_general/iconos/farmacias.png', new google.maps.Size(32, 36), new google.maps.Point(0, 0));
+    var image_here = new google.maps.MarkerImage('../../../contenido_proyectos/pacoche/_general/iconos/aqui.png', new google.maps.Size(32, 36), new google.maps.Point(0, 0));
     var EscalaGris = [
         {
             featureType: "poi",

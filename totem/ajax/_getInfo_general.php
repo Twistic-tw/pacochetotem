@@ -16,7 +16,7 @@ $resultado['datos'] = $tpl_info_general->getOutputContent();
 
 $id_centro = $_SESSION['id_centro'];
 $imagen = "telefonos_de_interes.jpg";
-$resultado['banner_superior'] = "../../../contenido_proyectos/vistaflor/centro_$id_centro/imagenes/cabecera/$imagen" ;
+$resultado['banner_superior'] = "../../../contenido_proyectos/pacoche/centro_$id_centro/imagenes/cabecera/$imagen" ;
 
 echo json_encode($resultado);
 ?>

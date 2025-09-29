@@ -90,7 +90,7 @@ $resultado['datos'] = $tpl_sugerencia->getOutputContent();
 
 $id_centro = $_SESSION['id_centro'];
 $imagen = "cuestionario_calidad.jpg";
-$resultado['banner_superior'] = "../../../contenido_proyectos/vistaflor/centro_$id_centro/imagenes/cabecera/$imagen" ;
+$resultado['banner_superior'] = "../../../contenido_proyectos/pacoche/centro_$id_centro/imagenes/cabecera/$imagen" ;
 
 
 echo json_encode($resultado);

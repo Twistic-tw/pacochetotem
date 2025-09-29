@@ -77,7 +77,7 @@ if ($contenidoId) {
 
 //        $dir = "http://192.168.251.3/itourism_servidor/administracion/images/contenidos/cabecera/";
         $idCentro = $_SESSION['id_centro'];
-        $dir = "../../../contenido_proyectos/vistaflor/centro_$idCentro/imagenes/cabecera/";
+        $dir = "../../../contenido_proyectos/pacoche/centro_$idCentro/imagenes/cabecera/";
         $resultado['banner_superior'] = $dir . $contenido[0]['foto_cabecera'];
     }
     else

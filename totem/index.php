@@ -49,7 +49,7 @@ require_once '../../../config/MySQL.php';
 require_once '../../../config/MySQL_local.php';
 require_once '../../../config/MySQL_comun.php';
 
-require_once '../../../contenido_proyectos/vistaflor/_comun/lib_php/libreria.php';
+require_once '../../../contenido_proyectos/pacoche/_comun/lib_php/libreria.php';
 
 include_once 'lib/qr/qrlib.php';
 include_once 'lib/config.php';

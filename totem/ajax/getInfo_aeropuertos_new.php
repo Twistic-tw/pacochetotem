@@ -72,7 +72,7 @@ $tplVuelos->assign("double_size", "double_size");
 $id_centro = $_SESSION['id_centro'];
 
 $imagen = "aeropuerto.jpg";
-$resultado['banner_superior'] = "../../../contenido_proyectos/vistaflor/centro_$id_centro/imagenes/cabecera/$imagen" ;
+$resultado['banner_superior'] = "../../../contenido_proyectos/pacoche/centro_$id_centro/imagenes/cabecera/$imagen" ;
 
 
 $resultado['datos'] = $tplVuelos->getOutputContent();

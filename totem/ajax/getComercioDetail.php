@@ -102,8 +102,8 @@ if ($distancia_totem_comercio != 0){
 
     $tpl_compras_contenido_dinamico->newBlock("mapa");
     $qr = "http://maps.google.es/maps?saddr=" . $_SESSION['centroLatitud'] . "," . $_SESSION['centroLongitud'] . "&daddr=" . $datos['latitud'] . "," . $datos['longitud'];
-    QRcode::png($qr, '../../../contenido_proyectos/vistaflor/centro_' . $_SESSION['id_centro'] . '/comercios_qr/' . $comercioId . '.png', 'L', 5); //generacion de k QR
-    $tpl_compras_contenido_dinamico->assign("qr_ruta", '../../../contenido_proyectos/vistaflor/centro_' . $_SESSION['id_centro'] . '/comercios_qr/' . $comercioId . '.png');
+    QRcode::png($qr, '../../../contenido_proyectos/pacoche/centro_' . $_SESSION['id_centro'] . '/comercios_qr/' . $comercioId . '.png', 'L', 5); //generacion de k QR
+    $tpl_compras_contenido_dinamico->assign("qr_ruta", '../../../contenido_proyectos/pacoche/centro_' . $_SESSION['id_centro'] . '/comercios_qr/' . $comercioId . '.png');
 
     $tpl_compras_contenido_dinamico->assign("qrMsg", LANG_GLOBAL_QRMSG);
 }
@@ -112,7 +112,7 @@ else {
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////
-//    ../../../contenido_proyectos/vistaflor/_comercios/".$comercioId.'/'.$datos['banner']
+//    ../../../contenido_proyectos/pacoche/_comercios/".$comercioId.'/'.$datos['banner']
 
 $tpl_compras_contenido_dinamico->gotoBlock(TP_ROOTBLOCK);
 $tpl_compras_contenido_dinamico->assign("comercio_fachada", "$url_comercios$comercioId/$datos[imagen_fachada]");

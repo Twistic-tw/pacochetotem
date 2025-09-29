@@ -32,7 +32,7 @@ $tpl_postales->assign("lang_atras", LANG_GLOBAL_ATRAS);
 $tpl_postales->assign("lang_introducirEmail", LANG_GLOBAL_INTRODUCIREMAIL);
 $tpl_postales->assign("lang_enviar", LANG_GLOBAL_ENVIAR);
 
-$dirPath = "../../../contenido_proyectos/vistaflor/centro_$id_centro/postales_contenido/";
+$dirPath = "../../../contenido_proyectos/pacoche/centro_$id_centro/postales_contenido/";
 
 $resultado['dir'] = $dirPath;
 if (is_dir($dirPath."fondos/") )
@@ -42,7 +42,7 @@ if (is_dir($dirPath."fondos/") )
     {
         if( $file != "." && $file != ".." && $file != "Thumbs.db" && is_file( $dirPath . "fondos/" . $file ) ){
             $tpl_postales->newBlock("fondo_imagen");
-            $tpl_postales->assign("imgSrc", "../../../contenido_proyectos/vistaflor/centro_$id_centro/postales_contenido/fondos/$file"); 
+            $tpl_postales->assign("imgSrc", "../../../contenido_proyectos/pacoche/centro_$id_centro/postales_contenido/fondos/$file"); 
         }
     }
 }
@@ -54,7 +54,7 @@ if (is_dir($dirPath."fotos/") )
     {
         if( $file != "." && $file != ".." && $file != "Thumbs.db" && is_file( $dirPath . "fotos/" . $file ) ){
             $tpl_postales->newBlock("foto_imagen");
-            $tpl_postales->assign("imgSrc", "../../../contenido_proyectos/vistaflor/centro_$id_centro/postales_contenido/fotos/$file"); 
+            $tpl_postales->assign("imgSrc", "../../../contenido_proyectos/pacoche/centro_$id_centro/postales_contenido/fotos/$file"); 
         }
     }
 }
@@ -66,11 +66,11 @@ $logoInfSrc = "";
 $claseExtra = "";
 
 //obtenemos el logo en fncion del id del centro
-$filePath = "../../../contenido_proyectos/vistaflor/centro_$id_centro/logos/sello.jpg";
+$filePath = "../../../contenido_proyectos/pacoche/centro_$id_centro/logos/sello.jpg";
 if (is_file($filePath))
 {
     
-    $logoSrc = "../../../contenido_proyectos/vistaflor/centro_$id_centro/logos/sello.jpg";
+    $logoSrc = "../../../contenido_proyectos/pacoche/centro_$id_centro/logos/sello.jpg";
     //comprobamos a ver si el alto o el ancho es mayor.
     $datosImg = getimagesize($filePath);
     if ($datosImg['height'] > $datosImg['width'])
@@ -84,18 +84,18 @@ if (is_file($filePath))
 }
 
 //obtenemos el logo inferior.
-$filePath = "../../../contenido_proyectos/vistaflor/centro_$id_centro/logos/logo_postal.png";
+$filePath = "../../../contenido_proyectos/pacoche/centro_$id_centro/logos/logo_postal.png";
 if (is_file($filePath))
 {
-    $logoInfSrc = "../../../contenido_proyectos/vistaflor/centro_$id_centro/logos/logo_postal.png";
+    $logoInfSrc = "../../../contenido_proyectos/pacoche/centro_$id_centro/logos/logo_postal.png";
 }
 
 $postalesDesingHTML = "
 <div id='postalesDesignWrapper' class='overlayBannerHeader hidden'>
     <div id='postal'>
-        <div id='sello' class=''><img src='../../../contenido_proyectos/vistaflor/_general/imagenes/postal_sello.png'/></div> 
+        <div id='sello' class=''><img src='../../../contenido_proyectos/pacoche/_general/imagenes/postal_sello.png'/></div> 
         $imagenLogoCentro
-        <div id='cuño' class=''><img src='../../../contenido_proyectos/vistaflor/_general/imagenes/postal_cuño.png'/></div> 
+        <div id='cuño' class=''><img src='../../../contenido_proyectos/pacoche/_general/imagenes/postal_cuño.png'/></div> 
         <div id='logoCentro' class=''><img src='$logoInfSrc'/></div>
         <div id='fotoWrapper' class='elemento'><img/></div> 
         <div id='fondoWrapper' class='elemento'><img/></div>

@@ -130,7 +130,7 @@ if ($id_destino == '0') {
             //En el caso de que no tengamos el telefono no muestra el icono del telefono
             if (  ($hoteles['telefono'] != '') ||  ($hoteles['telefono'] != NULL)  ){
 
-                $tpl_destinos->assign("bloque_telefono", '<img src="../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/telefono.svg">');
+                $tpl_destinos->assign("bloque_telefono", '<img src="../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/telefono.svg">');
             }
 
             $tpl_destinos->assign( "telefono_hotel", $hoteles['telefono']);

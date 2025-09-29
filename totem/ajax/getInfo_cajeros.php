@@ -53,7 +53,7 @@ $tpl_info_cajero->assign("lang_farmacias_text", LANG_INFO_GASOLINERAS_TITLE);
 $tpl_info_cajero->assignGlobal("lang_atras", LANG_GLOBAL_ATRAS);
 $tpl_info_cajero->assignGlobal("qr_mensaje", LANG_GLOBAL_QRMSG);
 
-//    $resultado['banner_superior'] = "../../../contenido_proyectos/vistaflor/centro_$id_centro/imagenes/cabecera/$imagen" ;
+//    $resultado['banner_superior'] = "../../../contenido_proyectos/pacoche/centro_$id_centro/imagenes/cabecera/$imagen" ;
 
 
     $resultado['datos'] = $tpl_info_cajero->getOutputContent();

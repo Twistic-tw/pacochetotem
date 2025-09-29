@@ -2,9 +2,9 @@
 function crear_imagen_piscina($imagen, $id_centro)
 {
 
-    unlink('../../../contenido_proyectos/vistaflor/centro_'.$id_centro.'/banner_footer/final_'.$imagen);
+    unlink('../../../contenido_proyectos/pacoche/centro_'.$id_centro.'/banner_footer/final_'.$imagen);
 
-    $imagen_final = '../../../contenido_proyectos/vistaflor/centro_'.$id_centro.'/banner_footer/'.$imagen;
+    $imagen_final = '../../../contenido_proyectos/pacoche/centro_'.$id_centro.'/banner_footer/'.$imagen;
 
     $img = @imagecreatefromjpeg($imagen_final);
 // Comun
@@ -29,7 +29,7 @@ function crear_imagen_piscina($imagen, $id_centro)
 
     }
 
-    imagejpeg($img, '../../../contenido_proyectos/vistaflor/centro_'.$id_centro.'/banner_footer/final_'.$imagen, 100);
+    imagejpeg($img, '../../../contenido_proyectos/pacoche/centro_'.$id_centro.'/banner_footer/final_'.$imagen, 100);
 
 
 }

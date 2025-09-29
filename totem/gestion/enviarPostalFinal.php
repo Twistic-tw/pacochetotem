@@ -39,7 +39,7 @@ $num = rand();
 $filePath = "/var/www/html/twistic/postales/$centro/";
 
 //Esto es para local
-//$filePath = "../../../../contenido_proyectos/vistaflor/centro_$centro/postales_creadas/";
+//$filePath = "../../../../contenido_proyectos/pacoche/centro_$centro/postales_creadas/";
 
 if ( !is_dir($filePath) )
 {

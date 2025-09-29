@@ -167,7 +167,7 @@ elseif ($action == "actividades")
 
             $tpl_actividades_lista_hotel->assign("id_evento", $evento_destacado['hotel'][$i]['id']);
 
-            $url_imagen = '../../../contenido_proyectos/vistaflor/centro_'.$id_centro.'/imagenes/agenda/';
+            $url_imagen = '../../../contenido_proyectos/pacoche/centro_'.$id_centro.'/imagenes/agenda/';
             $tpl_actividades_lista_hotel->assign("imagen_destacada", $url_imagen.$evento_destacado['hotel'][$i]['foto_evento']);
 
             if ($i == 0) {
@@ -190,7 +190,7 @@ elseif ($action == "actividades")
 
                 $tpl_actividades_lista_hotel->assign("id_evento", $evento_destacado['hotel'][$i]['id']);
 
-                $url_imagen = '../../../contenido_proyectos/vistaflor/centro_'.$id_centro.'/imagenes/agenda/';
+                $url_imagen = '../../../contenido_proyectos/pacoche/centro_'.$id_centro.'/imagenes/agenda/';
                 $tpl_actividades_lista_hotel->assign("imagen_destacada", $url_imagen.$evento_destacado['hotel'][$i]['foto_evento']);
 
 //                if ($i == 0) {

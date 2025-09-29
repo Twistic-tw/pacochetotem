@@ -5,7 +5,7 @@ $id_centro = $_SESSION['id_centro'];
 
 $tipo = $_GET['tipo'];
 
-$url_base = '../../../contenido_proyectos/vistaflor/_general/hoteles/';
+$url_base = '../../../contenido_proyectos/pacoche/_general/hoteles/';
 
 switch ($tipo) {
 

@@ -3,7 +3,7 @@ $idioma = $_SESSION['idioma'];
 
 $id_centro = $_SESSION['id_centro'];
 
-$url_base = '../../../contenido_proyectos/vistaflor/_general/hoteles/';
+$url_base = '../../../contenido_proyectos/pacoche/_general/hoteles/';
 
 $tpl_sostenibilidad = new TemplatePower("plantillas/seccion_hoteles_principal.html", T_BYFILE);
 $tpl_sostenibilidad->prepare();

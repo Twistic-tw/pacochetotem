@@ -74,7 +74,7 @@ if ( $accion == "galeria" )
     
     while ($datos = $db->fetch_assoc($result))
     {
-        $dirPath = "../../../contenido_proyectos/vistaflor/_general/conoce_imagenes/".$datos['cod_local']."/";
+        $dirPath = "../../../contenido_proyectos/pacoche/_general/conoce_imagenes/".$datos['cod_local']."/";
         $numero_imagenes = 0;
 
         if (is_dir($dirPath) )
@@ -149,7 +149,7 @@ elseif ( $accion == "sitios")
         $tpl_conoce->assign("nombre", $rutasDetail['nombre']);
         $tpl_conoce->assign("direccion", $rutasDetail['direccion']);
         $tpl_conoce->assign("descripcion", $rutasDetail['descripcion']);
-        $tpl_conoce->assign("imagen", '../../../contenido_proyectos/vistaflor/_general/conoce_sitios/'.$rutasDetail['id'].'/'.$rutasDetail['imagen']);
+        $tpl_conoce->assign("imagen", '../../../contenido_proyectos/pacoche/_general/conoce_sitios/'.$rutasDetail['id'].'/'.$rutasDetail['imagen']);
 
         if ($rutasDetail['tipo'] == 'ruta'){
             $tpl_conoce->assign("info", '+ info');
@@ -252,7 +252,7 @@ foreach ($sitiosInteresArray as $sitioDetail) {
 
 //falta la galeria de fotos. /totem/img/conoce_imagenes/[codigo]/
 
-$dirPath = "../../../contenido_proyectos/vistaflor/_general/conoce_imagenes/".$municipioCodigo."/";
+$dirPath = "../../../contenido_proyectos/pacoche/_general/conoce_imagenes/".$municipioCodigo."/";
 
 if (is_dir($dirPath) )
 {

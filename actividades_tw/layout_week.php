@@ -249,8 +249,8 @@ foreach ($categorias as $clave => $categoria) {
     $categoria['title'] = '<p class="text-[' . $categoria['color'] . ']">' . $categoria['title'] . '</p>';
     $categoria['hora_ini'] = '<img class="w-16 h-auto absolute top-2 right-5" src="' . $logo_src . '">';
 
-    if (file_exists("../../../contenido_proyectos/vistaflor/_general/videos_animacion/" . $categoria['archivo']) && !empty($categoria['archivo'])) {
-        $categoria['video_evento'] = "../../../contenido_proyectos/vistaflor/_general/videos_animacion/" . $categoria['archivo'];
+    if (file_exists("../../../contenido_proyectos/pacoche/_general/videos_animacion/" . $categoria['archivo']) && !empty($categoria['archivo'])) {
+        $categoria['video_evento'] = "../../../contenido_proyectos/pacoche/_general/videos_animacion/" . $categoria['archivo'];
     }
 
 

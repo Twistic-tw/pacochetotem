@@ -8,7 +8,7 @@
 
 $id_centro = $_SESSION['id_centro'];
 $imagen = "mareas.png";
-$url_imagen_tipo = '../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/';
+$url_imagen_tipo = '../../../contenido_proyectos/pacoche/_general/iconos/iconos_svg/';
 
 // Obtengo las mareas de la bd bd_feeltourist_comun.mareas_totem
 $info_mareas = get_mareas($id_centro);
@@ -65,7 +65,7 @@ foreach ($array_info_mareas['extremes'] as $marea){
 
 
 $datos['datos'] = $tpl_info_mareas->getOutputContent();
-$datos['banner_superior'] = "../../../contenido_proyectos/vistaflor/centro_$id_centro/imagenes/cabecera/$imagen" ;
+$datos['banner_superior'] = "../../../contenido_proyectos/pacoche/centro_$id_centro/imagenes/cabecera/$imagen" ;
 
 echo json_encode($datos);
 

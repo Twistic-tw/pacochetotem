@@ -16,7 +16,7 @@ $tpl_cuestionario->prepare();
 
 
 // Ruta para las imagenes
-$path = "../../../contenido_proyectos/vistaflor/_general/cuestionario/";
+$path = "../../../contenido_proyectos/pacoche/_general/cuestionario/";
 
 // Obtener todas las secciones del cuestionario
 $array_secciones = get_secciones_cuestionario($id_idioma);

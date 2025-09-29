@@ -47,7 +47,7 @@
     }
 
     #mainBlockWrapper {
-        background-image: url("../../../../contenido_proyectos/vistaflor/_general/imagenes/bg.png");
+        background-image: url("../../../../contenido_proyectos/pacoche/_general/imagenes/bg.png");
         background-position: 0 center;
         background-repeat: no-repeat;
         background-size: 100% auto;
@@ -143,7 +143,7 @@
         padding: 9px 10px 0;
         position: relative;
         width: 95%;
-        background: url("../../../../contenido_proyectos/vistaflor/_general/imagenes/background_effect_horisontal.png") no-repeat scroll center top / 100% auto #2F3031;
+        background: url("../../../../contenido_proyectos/pacoche/_general/imagenes/background_effect_horisontal.png") no-repeat scroll center top / 100% auto #2F3031;
     }
     .menuContent .content {
         border-bottom: 6px solid;
@@ -177,7 +177,7 @@
         background: none repeat scroll 0 0 #2F3031;
     }
     #navMenu {
-        background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/home_alone.svg");
+        background-image: url("../../../../contenido_proyectos/pacoche/_general/iconos/home_alone.svg");
         background-size: auto 50%;
         left: -20px;
         top: 15px;

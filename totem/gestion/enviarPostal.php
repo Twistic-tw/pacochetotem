@@ -37,7 +37,7 @@ $context  = stream_context_create($opts);
 //$url = "http://localhost/twistic/contenido_proyectos/riucanarias/totem/gestion/enviarPostalFinal.php";
 
 //esto es para alemania
-$url = "https://visor.twisticdigital.com/vistaflor/totem/gestion/enviarPostalFinal.php";
+$url = "https://visor.twisticdigital.com/pacoche/totem/gestion/enviarPostalFinal.php";
 
 
 $result = file_get_contents($url,false,$context);

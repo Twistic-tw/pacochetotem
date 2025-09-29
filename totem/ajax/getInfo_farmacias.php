@@ -102,7 +102,7 @@ if ($id_centro == '22' || $id_centro == '266' || $id_centro == '267')
         //***********************************
         //Apartado QR code Generacion de la foto Qr Code
         $qr = "http://maps.google.es/maps?saddr=" . $coordenadas_hotel['0']['latitud'] . "," . $coordenadas_hotel['0']['longitud'] . "&daddr=" . $farmacias['ObertesResult']['Farmacies']['Farmacia'][$i]['Latitud'] . "," . $farmacias['ObertesResult']['Farmacies']['Farmacia'][$i]['Longitud'];
-        QRcode::png($qr, '../../../contenido_proyectos/vistaflor/centro_' . $id_centro . '/farmacias_qr/' . $farmacias['ObertesResult']['Farmacies']['Farmacia'][$i]['Telefon'] . '.png', 'L', 5); //generacion de k QR
+        QRcode::png($qr, '../../../contenido_proyectos/pacoche/centro_' . $id_centro . '/farmacias_qr/' . $farmacias['ObertesResult']['Farmacies']['Farmacia'][$i]['Telefon'] . '.png', 'L', 5); //generacion de k QR
        
 
         //***********************************
@@ -132,7 +132,7 @@ if ($id_centro == '22' || $id_centro == '266' || $id_centro == '267')
     $id_centro = $_SESSION['id_centro'];
     $imagen = "farmacias.jpg";
 
-    $resultado['banner_superior'] = "../../../contenido_proyectos/vistaflor/centro_$id_centro/imagenes/cabecera/$imagen" ;
+    $resultado['banner_superior'] = "../../../contenido_proyectos/pacoche/centro_$id_centro/imagenes/cabecera/$imagen" ;
     $resultado['datos'] = $tpl_info_farmacia->getOutputContent();
 
     echo json_encode($resultado);
@@ -263,7 +263,7 @@ elseif ($id_lugar != '47' and $id_centro != 2999){
         //***********************************
         //Apartado QR code Generacion de la foto Qr Code
         $qr = "http://maps.google.es/maps?saddr=" . $coordenadas_hotel['0']['latitud'] . "," . $coordenadas_hotel['0']['longitud'] . "&daddr=" . $farmacias["cercanas"][$i]["latitud"] . "," . $farmacias["cercanas"][$i]["longitud"];
-        QRcode::png($qr, '../../../contenido_proyectos/vistaflor/centro_' . $id_centro . '/farmacias_qr/' . $farmacias["cercanas"][$i]["id"] . '.png', 'L', 5); //generacion de k QR
+        QRcode::png($qr, '../../../contenido_proyectos/pacoche/centro_' . $id_centro . '/farmacias_qr/' . $farmacias["cercanas"][$i]["id"] . '.png', 'L', 5); //generacion de k QR
        
 
         //***********************************
@@ -301,7 +301,7 @@ elseif ($id_lugar != '47' and $id_centro != 2999){
         //***********************************
         //Apartado QR code Generacion de la foto Qr Code
         $qr = "http://maps.google.es/maps?saddr=" . $coordenadas_hotel['0']['latitud'] . "," . $coordenadas_hotel['0']['longitud'] . "&daddr=" . $farmacias["guardias"][$i]["latitud"] . "," . $farmacias["guardias"][$i]["longitud"];
-        QRcode::png($qr, '../../../contenido_proyectos/vistaflor/centro_' . $id_centro . '/farmacias_qr/' . $farmacias["guardias"][$i]["id"] . '.png', 'L', 5); //generacion de k QR
+        QRcode::png($qr, '../../../contenido_proyectos/pacoche/centro_' . $id_centro . '/farmacias_qr/' . $farmacias["guardias"][$i]["id"] . '.png', 'L', 5); //generacion de k QR
           
 
     }
@@ -331,7 +331,7 @@ elseif ($id_lugar != '47' and $id_centro != 2999){
 
     $imagen = "farmacias.jpg";
 
-    $resultado['banner_superior'] = "../../../contenido_proyectos/vistaflor/centro_$id_centro/imagenes/cabecera/$imagen" ;
+    $resultado['banner_superior'] = "../../../contenido_proyectos/pacoche/centro_$id_centro/imagenes/cabecera/$imagen" ;
     $resultado['datos'] = $tpl_info_farmacia->getOutputContent();
 
     echo json_encode($resultado);
@@ -364,7 +364,7 @@ elseif ($id_lugar != '47' and $id_centro != 2999){
     $tpl_info_cajero->assignGlobal("lang_atras", LANG_GLOBAL_ATRAS);
     $tpl_info_cajero->assignGlobal("qr_mensaje", LANG_GLOBAL_QRMSG);
 
-//    $resultado['banner_superior'] = "../../../contenido_proyectos/vistaflor/centro_$id_centro/imagenes/cabecera/$imagen" ;
+//    $resultado['banner_superior'] = "../../../contenido_proyectos/pacoche/centro_$id_centro/imagenes/cabecera/$imagen" ;
 
 
     $resultado['datos'] = $tpl_info_cajero->getOutputContent();

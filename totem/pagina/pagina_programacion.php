@@ -19,7 +19,7 @@ $datos = totem_getActividades7dias($_SESSION['id_centro'],$fecha, $_SESSION['idi
 $tpl_programacion->assign('LANG_AGENDA_NO',LANG_AGENDA_NO);
 if ($datos)  $tpl_programacion->assign('displayNone','displayNone');
 
-$url= '../../../contenido_proyectos/vistaflor/centro_'.$_SESSION['id_centro'].'/imagenes/agenda/';
+$url= '../../../contenido_proyectos/pacoche/centro_'.$_SESSION['id_centro'].'/imagenes/agenda/';
 
 foreach ($datos as $tipo) {
 

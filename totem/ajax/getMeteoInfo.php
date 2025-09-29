@@ -178,8 +178,8 @@ $tpl_meteoHtml->assign('dia_pasado', ucfirst(getFecha3_no_year(true)));
 
 
 //Carpeta de los iconos y el fondo
-$url_icono = "../../../contenido_proyectos/vistaflor/_general/tiempo/icono/";
-$url_fondo = "../../../contenido_proyectos/vistaflor/_general/tiempo/fondo/";
+$url_icono = "../../../contenido_proyectos/pacoche/_general/tiempo/icono/";
+$url_fondo = "../../../contenido_proyectos/pacoche/_general/tiempo/fondo/";
 
 
 ////Hora actual
@@ -295,7 +295,7 @@ $tpl_meteoHtml->assign('hoy_icono', $url_icono . $actual_icono);
 //Imagen de fondo de hoy en la hora actual
 $fondo = $url_fondo . substr($actual_icono, 0, -3) . "jpg";
 
-//$fondo = '../../../contenido_proyectos/vistaflor/_general/tiempo/fondo/nublado_parcial_noche.jpg' ;
+//$fondo = '../../../contenido_proyectos/pacoche/_general/tiempo/fondo/nublado_parcial_noche.jpg' ;
 
 $tpl_meteoHtml->assign('imagen-fondo',$fondo);
 
@@ -518,7 +518,7 @@ $tpl_meteoHtml->assign('tomorrowicono24', $url_icono .  $dia1n->icono);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 $fondo1 = $url_fondo . substr($dia1->icono, 0, -3) . "jpg";
-//$fondo1 = '../../../contenido_proyectos/vistaflor/_general/tiempo/fondo/soleado.jpg' ;
+//$fondo1 = '../../../contenido_proyectos/pacoche/_general/tiempo/fondo/soleado.jpg' ;
 $tpl_meteoHtml->assign('imagen-fondo1',$fondo1);
 /////////////////////////////////////////////////////////////////////////////
 
@@ -589,7 +589,7 @@ $tpl_meteoHtml->assign( 'ver_zona', LANG_VERZONA );
 
 
 
-$tpl_meteoHtml->assign( 'img_sitio_hotel', '../../../contenido_proyectos/vistaflor/centro_'.$id_centro.'/logos/lugar_hotel.png' );
+$tpl_meteoHtml->assign( 'img_sitio_hotel', '../../../contenido_proyectos/pacoche/centro_'.$id_centro.'/logos/lugar_hotel.png' );
 
 /////////////////todos los municipios
 

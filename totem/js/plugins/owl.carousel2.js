@@ -942,7 +942,7 @@ if (typeof Object.create !== "function") {
                     $('.background_tiempo').css('background-image','none');
 
                     setTimeout(function() {
-                         $('.background_tiempo').css('background-image','url("../../../contenido_proyectos/vistaflor/_general/tiempo/fondo/lluvioso.jpg")')
+                         $('.background_tiempo').css('background-image','url("../../../contenido_proyectos/pacoche/_general/tiempo/fondo/lluvioso.jpg")')
                          $('.background_tiempo').fadeIn(550);
 
                     }, 750);*/
