@@ -2205,6 +2205,7 @@ $("body").on("click", ".js_destroy_isotope", function(event) {
 
                     datost = JSON.parse(data);
 
+
                 }
                 catch(e) {
                     lockForAnimation = false;
