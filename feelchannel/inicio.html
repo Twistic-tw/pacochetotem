@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+
+    <title>FEEL CHANNEL</title>
+
+    <link href="css/{nombre_css}.css?v={id_cache}" rel="stylesheet">
+    <link href="../totem/css/fonts/roboto.css" rel="stylesheet">
+
+    <script type="text/javascript" src="../totem/js/plugins/jquery-1.10.1.min.js"></script>
+    <script src="js/custom.js?v={id_cache}" type="text/javascript"></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+
+
+</head>
+
+
+<body>
+
+<audio src="../../../contenido_proyectos/vistaflor/centro_{id_centro}/feelchannel/musica/musica.mp3" autoplay loop></audio>
+
+<input type="hidden" id="id_centro" value="{id_centro}">
+
+<div id="videos">
+    <!-- START BLOCK : videos -->
+    <!--<input type="hidden" id="lista-videos-banner" value="{lista_videos}"/>-->
+    <input type="hidden" id="nombre_video_destacado" value="{nombre_destacado}"/>
+    <input type="hidden" id="contenido_videos" value='{contenido_videos}'/>
+
+    <!--<div id="etiqueta" style="position: absolute; z-index: 999; color: white; background-color: black;padding: 14px;width: 285px;height: 71px;top: 660px;right: 492px;">-->
+        <!--<div id="etq_izq" style="float:left; border-right: 2px solid white;padding-right: 20px;text-align: center; width: 50%;">-->
+            <!--<h3>POOL BIKES</h3>-->
+            <!--<h4>15.00h</h4>-->
+        <!--</div>-->
+        <!--<div id="etq_der" style="float:left;padding: 15px;width: 50%;">-->
+            <!--<p style="text-align: center;">Martes y miércoles</p>-->
+            <!--<p style="text-align: center;">Tuesday & Wednesday</p>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+
+    <video id="idle_video" class="{destacado}" autoplay muted width="100%" onended="onVideoEnded();">
+        <!-- <source src="../../../contenido_proyectos/vistaflor/centro_{id_centro}/landing/video/{nombre_video}" type="video/webm"> -->
+
+    </video>
+    <img id='imagen_central' src="" style="display:none"/>
+
+    <!-- END BLOCK : videos -->
+
+</div>
+
+
+<div id="fotos">
+
+    <!-- START BLOCK : imagenes -->
+    <div class="slider" style="background-image:url('{lista_imagenes}');"></div>
+    <input type="hidden" id="{id_hidden}" value="{duracion}">
+    <!-- END BLOCK : imagenes -->
+
+
+    <!-- START BLOCK : imagenes_carteles -->
+    <div class="slider">
+        <img src="{lista_imagenes}" class="{estilo_cartel}" style="height: 100%; width: 100%;">
+        <div id='infoShow'>
+            <div>{fecha_hora}</div>
+            <div id="nombreShow"> {nombre_show}</div>
+        </div>
+    </div>
+    <!-- END BLOCK : imagenes_carteles -->
+
+</div>
+
+
+<div id="logo">
+    <img src="../../../contenido_proyectos/vistaflor/centro_{id_centro}/logos/logo.jpg">
+</div>
+
+
+<div id="animacion">
+
+    <!--<p class="texto_animacion" style="text-align: center">  ANIMACIÓN</p>-->
+    <div id="animacion_icono">
+        <img src="../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/animacion_calendario.svg">
+    </div>
+
+    <!-- START BLOCK : contenedor_animacion -->
+
+    <div id="contenedorIdiomas" class="programa_animacion idioma-{id_idioma}">
+
+        <!--<div style="color: white; margin-bottom: 15px;">HOY/HEUTE/TODAY</div>-->
+
+        <!-- START BLOCK : animacion -->
+
+        <p class="texto_animacion">{fecha}<strong>{hora_inicio}</strong> - {hora_final} {nombre_animacion}</p><br>
+        <!-- END BLOCK : animacion -->
+    </div>
+    <!-- END BLOCK : contenedor_animacion -->
+
+    <input id="idioma_actual" type="hidden" value="{idiomaActual}"/>
+
+</div>
+
+<div id="normas" style="display: none">
+    <p class="texto_normas">Normas</p>
+</div>
+
+
+<div id="tiempo">
+
+
+    <!-- START BLOCK : tiempo -->
+    <div class="divImagenTiempo"><img src="../../../contenido_proyectos/vistaflor/_general/tiempo/icono/{icono}"></div>
+    <div class="texto_tiempo"><strong>{temperatura_maxima}ºC</strong> / {temperatura_minima}ºC</div>
+    <div class="texto_valores_tiempo">
+        <img src="../../../contenido_proyectos/vistaflor/_general/tiempo/icono/humedad.png">{humedad}% &nbsp;
+        <img src="../../../contenido_proyectos/vistaflor/_general/tiempo/icono/viento.png">{viento}KM/H
+    </div>
+    <!-- END BLOCK : tiempo -->
+
+</div>
+
+</body>
+</html>
+
+

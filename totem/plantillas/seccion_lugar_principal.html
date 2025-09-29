@@ -1,0 +1,157 @@
+
+<div class="closeWrapper full_screen listado_zonas_wrapper">
+    <div class="background_tiempo alineado_izquierda" style="background-image:url('../../../contenido_proyectos/vistaflor/_general/imagenes/{imagen-fondo}');">
+        <div class="imagen_logo_arriba_listado_zonas">
+            <img src="{imagen_arriba}">
+        </div>
+
+        <div class="lugar_principal_nombre_zona">{nombre_dato}</div>
+
+        <div class="menu_listado_zonas">
+            <div class="menu_tiempo_volver ">
+                <div class="menu_tiempo_volver_texto back js_back_lugares_destroy">
+                    <div class="menu_tiempo_volver_transparencia">
+                        <img class="menu_tiempo_volver_icono" src="img/volver.svg"/>
+                        <div class="menu_tiempo_contenido_texto">{cerrar}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu_tiempo_contenido">
+
+
+                <div class="load_ajax_lugar listados_zonas_wrapper sub-menu-elmt sin_margenes_derecha active" data-accion="getLugar_info&tipo=1&lugar={id_lugar}"style="background-image:url('{url_base_lugares}info2.jpg');">
+                    <div class=" menu_tiempo_contenido_transparencia active " >
+                        <img class="menu_zonas_contenido_icono" src="{url_base_lugares}icon_info.svg"/>
+                        <div class="menu_tiempo_contenido_texto padding_laterales_3">{info_label}</div>
+                    </div>
+                </div>
+
+                {no_sitios_interes}
+                <div class=" js_destroy_isotope load_ajax_lugar listados_zonas_wrapper sub-menu-elmt sin_margenes_derecha " data-accion="getLugar_info&tipo=2&lugar={id_lugar}" style="background-image:url('{url_base_lugares}fondo_dunas.jpg');">
+                    <div class=" menu_tiempo_contenido_transparencia  " >
+                        <img class="menu_zonas_contenido_icono" src="{url_base_lugares}ancla.png"/>
+                        <div class="menu_tiempo_contenido_texto padding_laterales_3">{interes_label}</div>
+                    </div>
+                </div>
+                {no_sitios_interes_cerrar}
+
+                <div class="load_ajax_lugar listados_zonas_wrapper sub-menu-elmt sin_margenes_derecha seccion_lugar_galeria " data-accion="getLugar_info&tipo=3&lugar={id_lugar}" style="background-image:url('{url_base_lugares}galeria_icono.png');">
+                    <div class=" menu_tiempo_contenido_transparencia  " >
+                        <img class="menu_zonas_contenido_icono" src="{url_base_lugares}icon_galeria.svg"/>
+                        <div class="menu_tiempo_contenido_texto padding_laterales_3">{galeria_label}</div>
+                    </div>
+                </div>
+
+                {no_que_hacer}
+                <div class=" js_destroy_isotope load_ajax_lugar listados_zonas_wrapper sub-menu-elmt sin_margenes_derecha " data-accion="getLugar_info&tipo=4&lugar={id_lugar}" style="background-image:url('{url_base_lugares}que_hacer_icono.png');">
+                    <div class=" menu_tiempo_contenido_transparencia  " >
+                        <img class="menu_zonas_contenido_icono" src="{url_base_lugares}icon_que_hacer.svg"/>
+                        <div class="menu_tiempo_contenido_texto padding_laterales_3">{que_hacer_label}</div>
+                    </div>
+                </div>
+                {no_que_hacer_cerrar}
+
+                <div class=" js_destroy_isotope load_ajax_lugar listados_zonas_wrapper sub-menu-elmt sin_margenes_derecha " data-accion="getLugar_info&tipo=5&lugar={id_lugar}" style="background-image:url('{url_base_lugares}mercadillos.jpg');">
+                    <div class=" menu_tiempo_contenido_transparencia  " >
+                        <img class="menu_zonas_contenido_icono" src="{url_base_lugares}bolsa.png"/>
+                        <div class="menu_tiempo_contenido_texto padding_laterales_3">{mercadillos_label}</div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div> 
+
+        <div id="lugar-wrapper">
+
+            <div class="full_contenido_listado_zona_wrapper width_96">
+                    
+                    <div class="tarjeta_lugares_info_general">
+                        <div class="tarjeta_lugares_info_general_titulo">{datos_pais}</div>
+                          <div class="tarjeta_lugares_info_general_contenido">
+                            
+                            <ul>
+                                <li> <img src="../../../contenido_proyectos/vistaflor/_general/iconos/iconos-bandera-flat/{bandera_pais}"> <strong>{pais}:</strong> {pais_dato} </li>
+
+                                <li> <img src="{url_base_lugares}zona_horaria.svg"> <strong>{zona_horaria}:</strong> {zona_horaria_dato} </li>
+                                
+                                <li> <img src="{url_base_lugares}capital.svg"><strong>{capital}:</strong> {capital_dato}</li>
+                                
+                                <li> <img src="{url_base_lugares}idiomas.svg"><strong>{idiomas}:</strong> {idiomas_dato}</li>
+
+                            </ul>
+
+                          
+                          </div>
+
+                    </div>
+
+                    <div class="tarjeta_lugares_info_general">
+                        <div class="tarjeta_lugares_info_general_titulo">{datos_geo}</div>
+                          <div class="tarjeta_lugares_info_general_contenido">
+                            
+                            <ul>
+                                <li> <img src="{url_base_lugares}superficie.svg"> <strong>{superficie}:</strong> {superficie_dato} </li>
+
+                                <li> <img src="{url_base_lugares}pto_alto.svg"> <strong>{pto_alto}:</strong> {pto_alto_dato} </li>
+                                
+                                <li> <img src="{url_base_lugares}temperatura_v.svg"><strong>{t_verano}:</strong> {t_verano_dato}</li>
+                                
+                                <li> <img src="{url_base_lugares}temperatura_i.svg"><strong>{t_invierno}:</strong> {t_invierno_dato}</li>
+
+                            </ul>
+
+                          
+                          </div>
+
+                    </div>
+
+                    <div class="tarjeta_lugares_info_general">
+                        <div class="tarjeta_lugares_info_general_titulo">{demografia}</div>
+                          <div class="tarjeta_lugares_info_general_contenido">
+                            
+                            <ul>
+                                <li> <img src="{url_base_lugares}poblacion.svg"> <strong>{poblacion}:</strong> {poblacion_dato} </li>
+
+                                <li> <img src="{url_base_lugares}densidad.svg"> <strong>{densidad}:</strong> {densidad_dato} </li>
+                                
+                                <li> <img src="{url_base_lugares}gentilicio.svg"><strong>{gentilicio}:</strong> {gentilicio_dato}</li>
+                                
+                                
+
+                            </ul>
+
+                          
+                          </div>
+
+                    </div>
+
+                    <div class="tarjeta_lugares_info_general">
+                        <div class="tarjeta_lugares_info_general_titulo">{info_util}</div>
+                          <div class="tarjeta_lugares_info_general_contenido">
+                            
+                            <ul>
+                                <li> <img src="{url_base_lugares}moneda.svg"> <div class="tarjeta_lugares_info_general_info"><strong>{moneda}:</strong> {moneda_dato} </div></li>
+
+                                <li> <img src="{url_base_lugares}electricidad.svg"> <div class="tarjeta_lugares_info_general_info"><strong>{electricidad}:</strong> {electricidad_dato} </div></li>
+                                
+                                <li> <img src="{url_base_lugares}enchufe.svg"><strong>{enchufe}:</strong> {enchufe_dato}</li>
+                                
+                                <li> <img src="{url_base_lugares}vacunas.svg"><strong>{vacunas}:</strong> {vacunas_dato}</li>
+
+                            </ul>
+
+                          
+                          </div>
+
+
+
+                    </div>
+            </div>
+      </div>
+
+
+    </div>
+    
+</div>

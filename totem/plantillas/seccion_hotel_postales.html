@@ -1,0 +1,68 @@
+
+<div id='postalesWrapper' class="closeWrapper  content_width">     <!-- Wrapper interno para el contenido -->
+    
+    <div id='psotalesTitle' class='contentHeader'> <!-- header, titulo de la secion -->
+        {title}
+    </div>
+
+    <div class='content tabs_ draw_border'>
+        <ul>
+            <li><a href="#texto">{lang_textoText}</a></li>
+            <li><a href="#fondo">{lang_fondoText}</a></li>
+            <li><a href="#foto">{lang_fotoText}</a></li>
+        </ul>
+        <div id="fondo"  class="postales_section">
+            <!-- START BLOCK : fondo_imagen -->
+            <div class="contenedor-imagen-galeria-inferior2 postal_component">
+                <img src="{imgSrc}" />
+            </div>
+            <!-- END BLOCK : fondo_imagen -->
+        </div>
+
+        <div id="foto"  class="postales_section">
+            <!-- START BLOCK : foto_imagen -->
+            <div class="contenedor-imagen-galeria-inferior2 postal_component">
+                <img src="{imgSrc}" />
+            </div>
+            <!-- END BLOCK : foto_imagen -->
+        </div>
+
+        <div id="texto" class="postales_section">
+            <div id="textArea">
+                <h4 class="">{lang_textoMostrar}</h4>
+                <textarea cols="122" rows="10" class="key"></textarea>
+            </div>
+            <div id="textoEstiloWrapper">
+                <h4 class="">{lang_textoPersonalize}</h4>
+                <div id="textoEstilo_fuente">
+                    <div class="fuente fuente1">Hola!</div>
+                    <div class="fuente fuente2">Hola!</div>
+                    <div class="fuente fuente3">Hola!</div>
+                    <div class="fuente fuente4">Hola!</div>
+                </div>
+                <div id="textoEstilo_orientacion">
+                    <div class="orientacion textAlign-justify"><img src="../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/align_justify.svg"></div>
+                    <div class="orientacion textAlign-left"><img src="../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/align_izquierda.svg"></div>
+                    <div class="orientacion textAlign-right"><img src="../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/align_derecha.svg"></div>
+                    <div class="orientacion textAlign-center"><img src="../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/align_center.svg"></div>
+                </div>
+                <div id="textoEstilo_size">
+                    <div>{lang_textoTamaño}</div>
+                    <span class='size mas'>+</span>
+                    <span class='size menos'>-</span>
+                </div>
+            </div>
+        </div>
+
+        <form id='enviarPostal' method='post' action='index.php?gestion=enviarPostal'>
+            <input id='canvasDeLaPostal' type='text' name='foto' class='displayNone'>
+            <input type='text' id="email_postal" name='email' autocomplete="off" placeholder='{lang_introducirEmail}'>
+            <input type='submit' class='buttonsRight' value='{lang_enviar}'>
+
+        </form>
+    </div>
+
+    <div class="back buttonsLeft">
+        <span class="atrasIcon"></span> {lang_atras}
+    </div>
+</div>

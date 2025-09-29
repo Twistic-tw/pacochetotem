@@ -1,0 +1,173 @@
+.header-seccion{
+    display: none !important;
+}
+
+.enjuego_body, #enjuego_body, .headerAs, .nav-seccion, .banner_sup, .ftr-sup, footer, .ftr-inter, #pie-comun9, .version-k, .ftr-inf, .tit-decoration2{
+    display: none !important;
+}
+
+body{
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.container{
+    background-color: rgba(0,0,0,0) !important;
+    font-family: roboto !important;
+}
+
+.cont-botones, .sep-bottom, .cont-banderas, .ext-info{
+    display: none !important;
+}
+
+.resultados .equipo-local, .resultados .equipo-visitante{
+    width: 28% !important;
+}
+
+.resultados .info-evento{
+    width: 24% !important;
+}
+
+.resultados .info-evento-int > ul > li{
+    width: 100% !important;
+}
+
+.cont-modulo .tit-modulo {
+    margin-top: 7px !important;
+}
+
+.cont-modulo.resultados > .tit-modulo{
+    margin-top: 0px !important;
+}
+
+.cont-modulo.resultados{
+    margin-top: -22px !important;
+}
+
+.resultados .cont-resultados li:last-child span.fecha{
+    border-bottom: 0px !important;
+}
+
+.cont-modulo {
+    border: 0px solid black !important;
+    padding: 0px !important;
+}
+
+.cruces-octavos{
+    /*display: none !important;*/
+}
+
+.cont-modulo, .calendario-dias, .resultado-cruce .equipo{
+    background: rgba(30,30,30,0.9) !important;
+    color: #ffffff !important;
+}
+
+.nombre-equipo, .fecha{
+    color: white !important;
+}
+
+.resultados .equipo-local, .resultados .equipo-visitante{
+    border-bottom: 0px !important;
+}
+
+.as-icon-tv, .cont-tv{
+    display: none !important;
+}
+
+.nombre-equipo, .hora{
+    /*color: #0470B0 !important;*/
+    color: #ffffff !important;
+}
+
+.time-zone{
+    display: none;
+}
+
+.calendario-dias td{
+    /*border: 1px solid #0470B0 !important;*/
+    border: 1px solid #c01d1d !important;
+}
+
+/* Color de fondo de la tabla del calendario */
+
+.cont-clasificacion thead > tr > th, .cont-clasificacion tbody > tr > th, .cont-clasificacion tfoot > tr > th, .cont-clasificacion thead > tr > td, .cont-clasificacion tbody > tr > td {
+    border: 1px solid #c01d1d !important;
+}
+
+.cont-modulo, .pos, .calendario-dias .fase, .fase, .date {
+    color: #ffffff !important;
+}
+
+.calendario-dias .weekdays, .tit-modulo {
+    /*background: #c01d1d !important;*/
+    background-image: url('../../../../contenido_proyectos/vistaflor/_general/eurocopa/fondo-prueba.jpg') !important;
+}
+
+.calendario-dias .weekdays th:first-child, .calendario-dias td:last-child, .calendario-dias th:last-child {
+    border-left: 0px solid #ddd !important;
+    border-right: 1px solid #c01d1d !important;
+}
+
+.cont-modulo .tit-modulo{
+    border-bottom: 0px solid !important;
+}
+
+.calendario-dias .other-month {
+    background: transparent !important;
+}
+
+.tit-modulo, .tit-modulo > a{
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.tit-subtitle-info{
+    color: #cccccc !important;
+}
+
+.tit-subtitle-info::before, .cont-modulo .tit-modulo .fecha-evento::before {
+    background-color: transparent !important;
+}
+
+.cont-modulo .tit-modulo::before {
+    border: 0px !important;
+}
+
+/* Tipo de letra */
+
+.fase{
+    text-transform: uppercase !important;
+    font-family: roboto !important;
+    font-size: 10px !important;
+}
+
+.grupo, .bg-cuadro-futbol-mundial-2018 p.fases-cruces, .calendario-dias .weekdays th{
+    text-transform: uppercase !important;
+    font-family: roboto !important;
+}
+
+.resultados .cont-resultados ul .list-resultado{
+    border-bottom: 0px !important;
+}
+
+.resultados .equipo-local, .resultados .equipo-visitante {
+    padding-bottom: 2px !important;
+}
+
+.calendario-dias .cont-resultados {
+    background: rgba(255,255,255,0.9) !important;
+}
+
+.calendario-dias .grupo{
+    font-size: 12px !important;
+}
+
+/*.cont-modulo .tit-modulo{
+    margin-top: 0px !important;
+}*/
+
+
+
+
+/*
+    background-image: url('../../../../contenido_proyectos/vistaflor/_general/eurocopa/fondo_azul.jpg');
+*/

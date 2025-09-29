@@ -1,0 +1,304 @@
+    .csel-agenda {display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex; width: 100%;background: #f2f2f2;}  
+    
+    .csel-agenda .patrocinio {display: inline-block;padding: 6px 7px 0 15px;}
+    .csel-agenda .patrocinio .txt {display: block;width: 100%;padding-bottom: 2px;font: 10px/12px 'sourcesans', sans-serif;color:#666;text-align: left;}
+    .csel-agenda .patrocinio img {display: inline-block;height: 32px;width: auto;}
+    
+    .csel-agenda .buscador {padding: 5px 9px 5px 15px;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;-webkit-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;-ms-flex-align: center;-webkit-box-align: center;align-items: center;}
+    .csel-agenda .buscador .caja-desplegable {/*margin-bottom: 5px;margin-right: 0;float: none;*/position: relative;}
+    .csel-agenda .buscador .form-control {width: 150px;padding: 0 26px 0 7px;height: 34px;line-height: 34px;overflow: hidden;white-space: nowrap;text-overflow:ellipsis;font-weight: bold;font-size: 13px }
+    .csel-agenda .buscador .desplegable {top: 31px;overflow: auto;width: 102%;}
+    
+/*content*/
+    .csel-agenda .csel-wrap {position: relative;-webkit-box-flex:1;-ms-flex:1 1 auto;-webkit-flex:1 1 auto;flex:1 1 auto;overflow: hidden;}
+    .csel-agenda .csel-content {z-index: 1;padding: 0 24px;}
+    .csel-agenda .csel-content.no-arrows {padding: 0;}
+    .csel-agenda .csel-agrup {height: 70px;float: left;}
+    .csel-agenda .csel-content .csel-item {overflow: hidden;font: 12px/21px 'sourcesans', sans-serif;color: #333;background: #fff;position: relative;}
+    .csel-agenda .csel-content .csel-item.title {color: #323232;font: 16px/1 'sourcesansbold',sans-serif;text-transform: uppercase;}
+    .csel-agenda .csel-content .csel-item.title .title {display: inline-block;vertical-align: middle;position: relative;z-index: 1;}
+    .csel-agenda .csel-content .csel-item .item-content {display: block;height: 100%;color:#4a4a4a;}
+    .csel-agenda .csel-content .csel-item .item-info + .item-content {height: 50px;}
+    
+    .csel-agenda .csel-agrup .csel-item.title::before {font-family: 'as-icons';speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;line-height: 1;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;color: #dfdfdf;font-size: 58px;position: absolute;right: -14px;top: 38px;}
+    .csel-agenda .csel-agrup.futbol .csel-item.title::before {content: "\e629";}
+    .csel-agenda .csel-agrup.motor .csel-item.title::before {content: "\e604";}
+    .csel-agenda .csel-agrup.ciclismo .csel-item.title::before {content: "\e603";}
+    .csel-agenda .csel-agrup.tenis .csel-item.title::before {content: "\e607";}
+    .csel-agenda .csel-agrup.baloncesto .csel-item.title::before {content: "\e601";}
+    .csel-agenda .csel-agrup.motor.motos .csel-item.title::before {content: "\e606";font-size: 61px;right: -25px;top: 18px;-webkit-transform: scaleX(-1);-moz-transform: scaleX(-1);transform: scaleX(-1);filter: FlipH;-ms-filter: "FlipH";}
+    
+    .csel-agenda .csel-content .csel-item .equipo {padding: 0px 6px 0px;}
+    .csel-agenda .csel-content .csel-item .equipo-escudo {float: left;height: 21px;max-width: 22px;margin-top: -1px;}
+    .csel-agenda .csel-content .csel-item .equipo-bandera {float: left;width: 22px;height:16px;border: 1px solid #ddd;padding: 0px;margin: 2px 0;}
+    .csel-agenda .csel-content .csel-item .equipo .equipo-nom {cursor: pointer;border-bottom: 0 none;margin-left: 7px;position: relative;font-size: 14px;}
+    .csel-agenda .csel-content .csel-item .equipo .equipo-nom.large{display: none;}
+    .csel-agenda .csel-content .csel-item .equipo .dato {font-size: 17px;font-family: 'sourceblack';padding: 0 4px;float: right;color:#323232;}
+    .csel-agenda .csel-content .csel-item.directo .item-info .tiempo,
+    .csel-agenda .csel-content .csel-item.directo .item-info .hora,
+    .csel-agenda .csel-content .csel-item.directo .equipo .dato {color:#ce0000;}
+    .csel-agenda .csel-content .csel-item .equipo.ganador{font-family: 'sourcesansbold';position: relative;color:#323232;}
+    .csel-agenda .csel-content .csel-item .equipo.ganador::after{content: "";position: absolute;right: 0px;margin-top: -6px;top: 50%;bottom: 50%;border: 4px solid transparent;border-right-color: #323232;}
+    .csel-agenda .csel-content .csel-item .equipo .dato .gol-penal {font-size: 10px;margin-left: 2px;}
+    .csel-agenda .csel-content .csel-item .item-info {font-size: 11px ;color:#999999;padding:0 8px;line-height: 20px;height: 20px;text-align: right;}
+    .csel-agenda .csel-content .csel-item.previo .item-info .hora,
+    .csel-agenda .csel-content .csel-item.previo .item-info .tiempo {color: #F9A300;}
+    .csel-agenda .csel-content .csel-item.directo .item-info .tiempo,
+    .csel-agenda .csel-content .csel-item.finalizado .item-info .tiempo {display: inline-block;padding: 0 4px;margin-right: -6px;}
+    
+/*tenis*/
+    .csel-agenda .csel-content .tenis .csel-item {}
+    .csel-agenda .csel-content .tenis .csel-item.previo, .csel-agenda .csel-content .tenis .csel-item.directo, .csel-agenda .csel-content .tenis .csel-item.finalizado {width: auto;}
+    .csel-agenda .csel-content .tenis .csel-item .equipo {margin:0 5px;padding: 1px;position: relative;height: 50%;}
+    .csel-agenda .csel-content .tenis .csel-item .equipo.ganador::after{content: "";position: absolute;right: -5px;margin-top: -6px;top: 50%;bottom: 50%;border: 4px solid transparent;border-right-color: #414141;}
+    .csel-agenda .csel-content .tenis .csel-item .equipo .dato-group {float: right;margin-left: 30px;}
+    .csel-agenda .csel-content .tenis .csel-item .equipo .equipo {font-size: 12px;}
+    .csel-agenda .csel-content .tenis .csel-item .equipo .equipo-nom {float: left;display: block;}
+    .csel-agenda .csel-content .tenis .csel-item .equipo.perdido .equipo-nom {font-weight: normal;color:#848484;}
+    .csel-agenda .csel-content .tenis .csel-item .equipo.pos .equipo-nom:before {content: "\e607";font-family: 'as-icons';color: #FCA400;position: absolute;right: -15px;font-size: 10px;}
+    .csel-agenda .csel-content .tenis .csel-item .equipo .dato {font-size: 16px;float: left;}
+    .csel-agenda .csel-content .tenis .csel-item.previo .equipo .dato-group {margin: 0 2px 0 8px;}
+    .csel-agenda .csel-content .99900 .csel-item .equipo .dato:only-child {font-weight: normal;font-size: 14px;font-family: sourcesans, sans-serif;color: #999999;}
+    .csel-agenda .csel-content .tenis .csel-item .equipo.perdido .dato {font-weight: bold;}
+    .csel-agenda .csel-content .tenis .csel-item .equipo .dato.ganado {color:#323232;}
+    .csel-agenda .csel-content .tenis .csel-item .equipo .dato.perdido {color:#323232;}
+    
+/*motor*/
+    .f1-equipo-color {display: block;width: 6px;height: 16px;background: #f00;-webkit-transform: skewX(-15deg);transform: skewX(-15deg);}
+    .csel-agenda .csel-content .motor .csel-item.previo,
+    .csel-agenda .csel-content .motor .csel-item.directo, 
+    .csel-agenda .csel-content .motor .csel-item.finalizado {width: auto;}
+    .csel-agenda .csel-content .motor .csel-item .carrera, 
+    .csel-agenda .csel-content .motor .csel-item .equipo {float: left;padding:0;height:100%;position: relative;}
+    .csel-agenda .csel-content .motor .csel-item .carrera {width: 140px;}
+    .csel-agenda .csel-content .motor .csel-item .equipo {width: 102px;}
+    .csel-agenda .csel-content .motor .csel-item .equipo {border-right: 2px solid #f2f2f2;}
+    .csel-agenda .csel-content .motor .csel-item .equipo .equipo-info {height: 24px;padding: 7px 0 0;}
+    .csel-agenda .csel-content .motor .csel-item .equipo .equipo-info .pos {float: left;padding: 0 7px;margin-right: 4px;color: #9a9a9a;font: 13px/19px 'sourcesansbold';}
+    .csel-agenda .csel-content .motor .csel-item .equipo .equipo-info .pos.destacado {color: #ce0000;}
+    .csel-agenda .csel-content .motor .csel-item .equipo .f1-equipo-color {position: absolute;left: 10px;top: 33px;}
+    .csel-agenda .csel-content .motor .csel-item .carrera .carrera-info {z-index: 2;position: absolute;bottom: 5px;right: 5px;height: 21px;text-align: right;}
+    .csel-agenda .csel-content .motor .csel-item .carrera .carrera-info .hora, 
+    .csel-agenda .csel-content .motor .csel-item .carrera .carrera-info .tiempo, 
+    .csel-agenda .csel-content .motor .csel-item .carrera .carrera-info .fecha {color: #999999;font-size: 11px;padding: 0 4px;line-height: 14px;vertical-align: text-bottom;vertical-align: bottom;}
+    .csel-agenda .csel-content .motor .csel-item.directo .carrera .carrera-info .tiempo {font-size: 14px;line-height: 16px;vertical-align: bottom;display: inline-block;}
+    .csel-agenda .csel-content .motor .csel-item.directo .carrera .carrera-info .tiempo strong {color: #ce0000;font-size: 16px;}
+    .csel-agenda .csel-content .motor .csel-item.previo .carrera .carrera-info .hora, .csel-agenda .csel-content .motor .csel-item.previo .carrera .carrera-info .tiempo {color:#F9A300;}
+    .csel-agenda .csel-content .motor .csel-item .equipo .equipo-info .tiempo {float: left;color:#999999;font-size: 13px;}
+    .csel-agenda .csel-content .motor .csel-item .img-bandera {width: 32px;height: 32px;border-radius: 50%;overflow: hidden;position: relative;margin: 10px 0 4px 9px;float: left;position: absolute;}
+    .csel-agenda .csel-content .motor .csel-item .img-bandera img {height: 100%;width: auto;position: absolute;left: 50%;-webkit-transform: translate(-50%);transform: translate(-50%);}
+    .csel-agenda .csel-content .csel-item .carrera-nom{font: 14px/15px 'sourcesansbold';padding: 0px 2px;display: table;margin-top: 13px;margin-left: 47px;float: left;height: 30px;}
+    .csel-agenda .csel-content .csel-item .carrera-nom>span{vertical-align: middle;display: table-cell;}
+    .csel-agenda .csel-content .csel-item .equipo .piloto, .csel-agenda .csel-content .csel-item .equipo .equipo-piloto {font: 14px/12px 'sourcesansbold';color:#4a4a4a;text-align: center;padding: 0 5px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+    .csel-agenda .csel-content .csel-item .equipo .equipo-piloto {font-weight: normal;margin-top: 3px;text-align: left;padding-left: 24px;font: 13px/12px 'sourcesans';}
+    .csel-agenda .csel-content .csel-item .equipo .piloto {margin-top: 10px;text-align: left;padding-left: 24px;}
+    .csel-agenda .csel-content .csel-item .equipo .piloto:last-child {margin-top: 0;padding-left: 5px;text-align: center;}
+    .f1-equipo-color.ferrari {background: #FF1C00;}
+    .f1-equipo-color.mclaren {background: #F8A700;}
+    .f1-equipo-color.tororosso {background: #3247F3;}
+    .f1-equipo-color.redbull {background: #363361;}
+    .f1-equipo-color.mercedes {background: #32A7B0;}
+
+/* motociclismo */
+
+/* ciclismo */
+    .csel-agenda .csel-content .ciclismo .csel-item {}
+    .csel-agenda .csel-content .ciclismo .csel-item.previo, .csel-agenda .csel-content .ciclismo .csel-item.directo, .csel-agenda .csel-content .ciclismo .csel-item.finalizado {width:auto;}
+    .csel-agenda .csel-content .ciclismo .csel-item .item-info {float: right;}
+    .csel-agenda .csel-content .ciclismo .csel-item .etapa {float: left;min-width: 255px;height: 100%;position: relative;}
+    .csel-agenda .csel-content .ciclismo .csel-item .etapa-info {float: left;z-index: 2;position: relative;}
+    .csel-agenda .csel-content .ciclismo .csel-item .etapa-info .nom-etapa {font: bold 13px/normal sans-serif;display: block;color:#4a4a4a;text-align: center;padding: 3px 5px 0px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+    .csel-agenda .csel-content .ciclismo .csel-item .etapa-info .km-ameta {display: block;font-weight: normal;font-size: 13px;line-height: normal;color:#999999;padding-left: 5px;}
+    .csel-agenda .csel-content .ciclismo .csel-item .etapa-img {position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow: hidden;}
+    .csel-agenda .csel-content .ciclismo .csel-item .etapa-img img {width: 255px;height: auto;position: absolute;bottom: 0;left: 0;}
+    .csel-agenda .csel-content .ciclismo .csel-item .progreso {width: 0%;height: 100%;background: rgba(242, 242, 242, 0.5);position: absolute;bottom: 0;left: 0;z-index: 1;}
+    
+/*ciclismo clasificacion*/
+    .csel-agenda .csel-content .ciclismo .csel-item .clasificacion-etapa {float: left;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-align-items: center;-ms-flex-align: center;align-items: center;height: 100%;}
+    .csel-agenda .csel-content .ciclismo .csel-item .csel-tabla-clasif thead {display: none;}
+    .csel-agenda .csel-content .ciclismo .csel-item .csel-tabla-clasif td {padding: 1px 8px;text-align: left;font-size: 13px;border: none;}
+    .csel-agenda .csel-content .ciclismo .csel-item .csel-tabla-clasif td.cont-nombre .nombre{width: 145px;color: #4a4a4a;}
+    .csel-agenda .csel-content .ciclismo .csel-item .csel-tabla-clasif tr:first-child td.cont-nombre {font-weight: bold;}
+    .csel-agenda .csel-content .ciclismo .csel-item .csel-tabla-clasif td.cont-tiempos {text-align: right;color: #999999;}
+    .csel-agenda .csel-content .ciclismo .csel-item .equipo-bandera {margin: 0 4px 0 0;}
+
+/* actualidad */
+    .csel-agenda .csel-content .actualidad .csel-item {max-width: 160px;width: auto;}
+    .csel-agenda .csel-content .actualidad .csel-item .item-info {text-align: left;padding: 3px 12px 0px;}
+    .csel-agenda .csel-content .actualidad .csel-item.directo .item-info .tiempo, .csel-agenda .csel-content .csel-item.finalizado .item-info .tiempo{padding: 0;}
+    .csel-agenda .csel-content .actualidad .csel-item .item-content .txt {font: 14px/16px 'sourcesans', sans-serif;padding: 2px 12px 0px;color: #323232;}
+    .csel-agenda .csel-content .actualidad .csel-item .item-content:hover .txt{color: #E68C12 ;}
+    
+/*more info */
+    .csel-agenda .csel-content .csel-item:hover .item-mas {top:0px;opacity: 1;}
+    .csel-agenda .csel-content .csel-item .item-mas {font: 13px/14px 'sourcesans', sans-serif;color:#fff;border-right: 1px solid #f2f2f2;padding:8px 10px 5px;display: -ms-flexbox;display: -webkit-flex;display: -webkit-box;display: flex;-ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-items:center;-ms-flex-align:center;align-items:center;background: rgba(206, 0, 0, 0.9);height: 100%;width: 100%;position: absolute;left: 0;top:70px;-webkit-transition: all .33s ease-in-out;transition:all .33s ease-in-out;z-index: 15;opacity: 0;}
+    .csel-agenda .csel-content .csel-item .item-mas .mas-ops {color: #fff;-webkit-box-flex:1;-ms-flex:1 1 100%;-webkit-flex:1 1 100%;flex:1 1 100%;}
+    .csel-agenda .csel-content .csel-item .item-mas .mas-ops a {display: block;color: inherit;position: relative;border: 1px solid #f2c3c3;border-radius: 1px;padding: 4px 5px;margin: 2px auto 6px;text-align: center;}
+    .csel-agenda .csel-content .csel-item .item-mas .mas-ops a:hover {background-color: #fff;color: #ce0000;border-color:#fff;}
+    .csel-agenda .csel-content .csel-item .item-mas .mas-tv a {color: inherit;display: block;}
+    .csel-agenda .csel-content .csel-item .item-mas .mas-tv .mas-hora {color: #F49400;font-weight: bold;font-size: 11px;}
+    
+/*ciclismo directo + finalizado*/
+    .csel-agenda .csel-content .ciclismo .csel-item.directo .item-mas .mas-ops, 
+    .csel-agenda .csel-content .ciclismo .csel-item.finalizado .item-mas .mas-ops {display: -ms-flexbox;display: -webkit-flex;display: -webkit-box;display: flex;-ms-flex-wrap:wrap;flex-wrap:wrap;}
+    .csel-agenda .csel-content .ciclismo .csel-item.directo .item-mas .mas-ops li, 
+    .csel-agenda .csel-content .ciclismo .csel-item.finalizado .item-mas .mas-ops li {-ms-flex: 1 1 50%;-webkit-box-flex: 1;flex: 1 1 50%;padding-right: 5px;}
+    .csel-agenda .csel-content .ciclismo .csel-item.directo .item-mas .mas-ops a, 
+    .csel-agenda .csel-content .ciclismo .csel-item.finalizado .item-mas .mas-ops a {}
+    
+/*flechas carrusel*/ 
+    .csel-agenda .csel-arrows {}
+    .csel-agenda .csel-arrow:before {content: '';position: absolute;top: 50%;height: 30px;margin-top: -15px;width: 24px;background-color: #ce0000;cursor: pointer;}
+    .csel-agenda .csel-arrow.arrow-left:before{right: -3px;border-right: 3px solid #b31111;}
+    .csel-agenda .csel-arrow.arrow-right:before{left: -3px;border-left: 3px solid #b31111;}
+    .csel-agenda .csel-arrow {width: 24px;height: 30px;position: absolute;top: 0;z-index: 2;height: 100%;cursor: auto;}
+    .csel-agenda .csel-arrow.arrow-left::after {right:6px;}
+    .csel-agenda .csel-arrow.arrow-right::after {left:6px;}
+    .csel-agenda .csel-arrow:after {content: '';position: absolute;top: 50%;height: 16px;margin-top: -8px;width: 16px;border: 8px solid transparent;border-right-color: #fff;cursor: pointer;}
+    .csel-agenda .csel-arrow.arrow-left, .csel-agenda .slick-prev {left:0;border-right: 3px solid #cacaca;background-color: #f2f2f2;}
+    .csel-agenda .csel-arrow.arrow-left:hover::before, .csel-agenda .csel-arrow.arrow-right:hover::before {background-color: #333;border-color: #333;}
+    .csel-agenda .csel-arrow.arrow-right, .csel-agenda .slick-next {right:0;border-left: 3px solid #cacaca;background-color: #f2f2f2;}
+    .csel-agenda .csel-arrow.arrow-right:after, .csel-agenda .slick-next:after {border-right-color: transparent;border-left-color: #fff;left: 6px;}
+/* dentro de container >articulo */
+    .container .csel-agenda .csel-content {border: 1px solid #f2f2f2;}
+
+@media (min-width: 768px) {
+
+    .menu-principal{position: relative;}
+    .menu-principal.fixed-menu {z-index: 10000000;position: fixed;}
+
+    .csel-agenda { display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;width: 100%; z-index: 1000000;position: relative; border-bottom: 1px solid #fff; height: 71px; }
+
+/* elementos */
+    .csel-agenda .buscador .desplegable {width: 108%;}
+
+    .csel-agenda .csel-wrap {margin-left: 5px;margin-right: 10px;}
+    .csel-agenda .csel-content{white-space: nowrap;float: none;position: absolute;font-size: 0;}
+    .csel-agenda .csel-content {cursor: move;cursor: grab;cursor: -moz-grab;cursor: -webkit-grab;}
+    .csel-agenda .csel-agrup{display: inline-block;white-space: nowrap;float: none;font-size: 0;}
+    .csel-agenda .csel-content .csel-item{display: inline-block;font-size: 0;float: none;white-space: normal!important;vertical-align: top;border-right: 2px solid #f2f2f2 ;width: 110px;height: 100%;display: table-cell;height: 70px;}
+    .csel-agenda .csel-content .csel-item.title .title{max-height: 60px;}
+    .csel-agenda .csel-content .csel-item.title{width: 114px;font-size: 13px;line-height: 50px;padding: 7px 8px;background-color: #f2f2f2;border-right: 0;text-align: center;padding: 7px 8px 0;}
+    .csel-agenda .csel-content .csel-item.title .title{line-height: 15px;}
+    .csel-agenda .csel-content .csel-item .item-info .fecha {padding-right: 3px;}
+    .csel-agenda .csel-content .csel-item:last-child {border-right: 0;}
+
+    .csel-agenda .csel-content .tenis .csel-item .equipo:first-child::before {content: '';position: absolute;right: 0;bottom: 0;height: 1px;width: calc(100% - 31px);background: #ddd;}    
+    .csel-agenda .csel-content .ciclismo .csel-item .csel-tabla-clasif td.cont-equipo{display: none;}
+/* hammer*/
+    .csel-agenda .csel-content:not(.topeLeft):not(.topeRight).is-animating {-webkit-transition: -webkit-transform 400ms cubic-bezier(0.5, 0, 0.5, 1);transition: -webkit-transform 400ms cubic-bezier(0.5, 0, 0.5, 1), transform 400ms cubic-bezier(0.5, 0, 0.5, 1);}
+/* animacion*/
+    .csel-agenda .csel-content{margin-left: 0px;transition: margin-left 300ms ease;}
+    .csel-agenda .csel-content.topeLeft {margin-left: 30px;transition: margin-left 150ms ease-out ;}
+    .csel-agenda .csel-content.topeRight {margin-left: -55px;transition: margin-left 150ms ease-out ;}
+}
+
+@media (min-width: 992px) {
+    .csel-agenda .buscador{width: 12%; min-width: 175px; max-width: 240px; margin-right: 0.7%; }
+    .csel-agenda .buscador .form-control, .csel-agenda .buscador .caja-desplegable{ width: 100%; }
+}
+
+
+@media (max-width: 767px) {
+    body.agDespeglada.con-smartapp .smartapp{display: none;}
+    .agDespeglada.con-smartapp.con-smartapp-top .menu-principal, .agDespeglada.con-smartapp.con-smartapp-top .header-home .menu-principal.fixed-menu {top: 0;}    
+    .csel-agenda .csel-arrow, .csel-agenda .csel-content .csel-item.directo .item-mas, .csel-agenda .csel-content .csel-item.previo .item-mas, .csel-agenda .csel-content .csel-item.finalizado .item-mas {display: none;}
+   
+    .csel-agenda { -ms-flex-direction: column;-webkit-box-orient: vertical;-webkit-box-direction: normal;flex-direction: column; position: fixed; height: 0; top:48px; overflow: hidden; z-index: 99900;} 
+    .agDespeglada .csel-agenda:not(.cerrado){height: calc(100% - 48px); animation-duration: 0.5s;animation-fill-mode: forwards;-webkit-animation-fill-mode: forwards;animation-name: aniAgenda;}
+        @keyframes aniAgenda { from {transform: translateY(-48px) ;} to {transform: translateY(0px) ;} }  /*desplegado*/
+
+    .csel-agenda .csel-wrap {overflow-y: auto;padding: 0 0 10px;}
+    .csel-agenda .csel-content {position: relative;padding: 0px;}
+    
+    .csel-agenda .patrocinio{display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;justify-content: flex-end;-webkit-box-flex: 1;-ms-flex: 1 0 auto;flex: 1 0 auto;align-items: center;padding: 11px 11px 6px 0;}
+    .csel-agenda .patrocinio .txt{padding: 3px 10px 0 0;text-align: right;width: 60px;}
+    .csel-agenda .patrocinio img {height: 28px;padding: 0;}
+    .csel-agenda .buscador {padding: 10px;-ms-flex-direction: column;-webkit-box-orient: vertical;-webkit-box-direction: normal;flex-direction: column;-ms-flex-align:stretch;-webkit-box-align:stretch;-ms-grid-row-align:stretch;align-items:stretch;border-right: none;}
+    .csel-agenda .buscador .caja-desplegable {float: none;margin-right: 0;margin-bottom: 10px;}
+    .csel-agenda .buscador .form-control {width: 100%;}
+    
+    .csel-agenda .csel-agrup {height: auto;float: none;border-right:none;;margin-right: 0px;}
+    .csel-agenda .csel-content .csel-item {width: 100%;height: auto;float: none;border-right: none;padding: 9px 10px 6px;}
+    .csel-agenda .csel-content .csel-item .item-info {position: absolute;}
+    .csel-agenda .csel-content :not(.motor) .csel-item.previo::after, .csel-agenda .csel-content .csel-item.directo::after, .csel-agenda .csel-content .csel-item.finalizado::after, .csel-agenda .csel-content .motor .csel-item .equipo::after {content: '';position: absolute;margin: auto;left: 0;right: 0;bottom: 0;height: 1px;width: calc(100% - 20px);background: #ddd;}
+    .csel-agenda .csel-content .csel-item:last-child::after, .csel-agenda .csel-content .csel-item:only-child::after, .csel-agenda .csel-content .motor .csel-item.directo + .directo::after, .csel-agenda .csel-content .motor .csel-item .equipo:last-child::after {display: none;}
+
+    .csel-agenda .csel-content .csel-item.title {width: 100%;padding: 22px 5px 5px 11px;text-align: left;height: 50px;background-color: #f2f2f2;border-top: 1px solid #dddddd;border-bottom: 1px solid #dddddd;}
+    .csel-agenda .csel-content .csel-item.title .btn-item {position: relative;float: right;left: auto;bottom: auto;}
+    .csel-agenda .csel-agrup .csel-item.title::before{color: #686868;top: 16px;}
+    .csel-agenda .csel-agrup.motor.motos .csel-item.title::before{top:1px;}
+    .csel-agenda .csel-content .csel-item .item-content .equipo{padding: 1px 6px 1px 1px;max-width: 330px;min-width: 205px;}
+    .csel-agenda .csel-content .csel-item .equipo .equipo-nom{display: none;}
+    .csel-agenda .csel-content .csel-item .equipo .equipo-nom.large{display: inline;vertical-align: middle;font-size: 15px;}
+    .csel-agenda .csel-content .csel-item .equipo.ganador::before {margin-top: -4px;}
+    .csel-agenda .csel-content .csel-item.previo .item-info .hora, .csel-agenda .csel-content .csel-item.previo .item-info .tiempo, .csel-agenda .csel-content .csel-item.directo .item-info .tiempo, .csel-agenda .csel-content .csel-item.finalizado .item-info .tiempo {margin-right: 0;}
+    .csel-agenda .csel-content .csel-item .item-content{*zoom: 1;}
+    .csel-agenda .csel-content .csel-item .item-content:after{content: " ";display: table;clear: both;}
+    .csel-agenda .csel-content .csel-item .item-content:before{content: " ";display: table;}
+    .csel-agenda .csel-content .csel-item .item-content:active{background-color: rgba(255, 197, 0, 0.5);}
+    
+/*futbol + basket*/
+    .csel-agenda .csel-content .futbol .csel-item .item-content, .csel-agenda .csel-content .baloncesto .csel-item .item-content {padding-right: 23%;width: 100%;position: relative;height: auto;}
+    .csel-agenda .csel-content .futbol .csel-item .item-info, .csel-agenda .csel-content .baloncesto .csel-item .item-info {top: 0;right: 0;display: -ms-flexbox;display: -webkit-flex;display: -webkit-box;display: flex;-ms-flex-align: center;-webkit-box-align: center;align-items: center;height: 100%;width: 90px;line-height: 17px;justify-content: flex-end;padding-right: 10px;}
+    .csel-agenda .csel-content .futbol .csel-item .equipo .dato, .csel-agenda .csel-content .baloncesto .csel-item .equipo .dato {font-size: 18px;}
+    .csel-agenda .csel-content .motor .csel-item .carrera .carrera-info {position: absolute;}
+    .csel-agenda .csel-content .motor .csel-item .carrera {float: none;width: 100%;text-align: left;border-right: none;border-bottom: 1px solid #f2f2f2;}
+    .csel-agenda .csel-content .motor .csel-item .carrera {height: 49px;}
+    .csel-agenda .csel-content .motor .csel-item .equipo {width: 100%;padding: 0 80px 0 35px;min-height: 40px;border-right:0;}
+    .csel-agenda .csel-content .motor .csel-item .img-bandera {width: 32px;height: 32px;float: left;margin: 8px 5px;position: relative;}
+    .csel-agenda .csel-content .csel-item .equipo .piloto{text-align: left;line-height: 40px;float: left;width: 50%;}
+    .csel-agenda .csel-content .csel-item .equipo .equipo-piloto {text-align: right;line-height: 40px;float: right;padding-left: 0;padding-right: 10px;margin-top: 0;width: 40%;}
+    .csel-agenda .csel-content .motor .csel-item .carrera-nom {width: calc(100% - 155px);height: 100%;margin-top: 0;float: none;}
+    .csel-agenda .csel-content .csel-item .equipo .piloto, .csel-agenda .csel-content .csel-item .equipo .piloto:last-child {padding: 0;margin-top: 0;}
+    .csel-agenda .csel-content .motor .csel-item .equipo .equipo-info .tiempo {line-height: 40px;float: right;text-align: right;padding-right: 8px;}
+    .csel-agenda .csel-content .motor .csel-item .equipo .equipo-info {height: 100%;position: absolute;width: 100%;right: 0;padding: 0;}
+    .csel-agenda .csel-content .motor .csel-item .equipo .equipo-info .pos {float: left;padding: 0;line-height: 40px;width: 30px;margin-right: 10px;text-align: center;}
+    .csel-agenda .csel-content .csel-item .equipo .img-coche {float: right;height: 30px;width: auto;margin: 0;padding: 7px 10px;}
+    
+/*motor*/
+    .csel-agenda .csel-content .motor .csel-item {width: auto;}
+    .csel-agenda .csel-content .motor .csel-item.previo, .csel-agenda .csel-content .motor .csel-item.directo, .csel-agenda .csel-content .motor .csel-item.finalizado {padding: 0;}
+    .csel-agenda .csel-content .motor .csel-item .carrera:last-child {border-bottom: none;}
+    .csel-agenda .csel-content .motor .csel-item .carrera .carrera-info, .csel-agenda .csel-content .motor .csel-item.previo .carrera .carrera-info {top: 0;right: 0;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-ms-flex-align: center;-webkit-box-align: center;align-items: center;height: 100%;width: 90px;line-height: 16px;justify-content: flex-end;float: right;position: static;margin-top: 0;padding-right: 10px;}
+    .csel-agenda .csel-content .motor .csel-item .carrera .carrera-info .tiempo, .csel-agenda .csel-content .motor .csel-item .carrera .carrera-info .fecha, .csel-agenda .csel-content .motor .csel-item .carrera .carrera-info .hora {margin-right: 0;padding-right: 0;}
+    .csel-agenda .csel-content .motor .csel-item .carrera .carrera-info .fecha {display: block;padding: 0;}
+    .csel-agenda .csel-content .motor .csel-item .carrera:after {display: none;}
+    .csel-agenda .csel-content .csel-item .equipo .equipo-piloto {text-align: left;}
+    .csel-agenda .csel-content .motor .csel-item .equipo .f1-equipo-color {float: right;position: relative;left: auto;top: 11px;margin-right: 10px;}
+/*tenis*/
+    .csel-agenda .csel-content .tenis .csel-item.previo, .csel-agenda .csel-content .tenis .csel-item.directo, .csel-agenda .csel-content .tenis .csel-item.finalizado {max-width: 100%;margin: 0;}
+    .csel-agenda .csel-content .tenis .csel-item .item-content {padding-right: 23%;width: 100%;position: relative;height: auto;}
+    .csel-agenda .csel-content .tenis .csel-item .equipo {height: 25px;margin: 0;padding: 1px 1px 1px 1px;max-width: 330px;}
+    .csel-agenda .csel-content .tenis .csel-item .equipo .dato-group{margin-left: 0px;}
+    .csel-agenda .csel-content .tenis .csel-item .item-info {top: 0;right: 0;display: -ms-flexbox;display: -webkit-flex;display: -webkit-box;display: flex;-ms-flex-align: center;-webkit-box-align: center;align-items: center;height: 100%;width: 90px;line-height: 17px;justify-content: flex-end;padding-right: 10px;}
+    .csel-agenda .csel-content .tenis .csel-item .equipo .equipo-nom.large {max-width: 46%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+    .csel-agenda .csel-content .tenis .csel-item .equipo .dato {font-size: 18px;}
+    .csel-agenda .csel-content .tenis .csel-item .equipo.pos .equipo-nom.large {padding-right: 14px;}
+    .csel-agenda .csel-content .tenis .csel-item .equipo.pos .equipo-nom:before {right: 1px;}
+/*ciclismo*/
+    .csel-agenda .csel-content .ciclismo .csel-item:not(.title) {padding: 0;}
+    .csel-agenda .csel-content .ciclismo .csel-item .etapa {width: 100%;padding-top: 4px;}
+    .csel-agenda .csel-content .ciclismo .csel-item .clasificacion-etapa {width: 100%;}
+    .csel-agenda .csel-content .ciclismo .csel-item .etapa-img {position: relative;top: -35px;margin-bottom: -35px;}
+    .csel-agenda .csel-content .ciclismo .csel-item .etapa-img img {position: relative;width: 100%;height: auto;}
+    .csel-agenda .csel-content .ciclismo .csel-item .item-info {position: relative;}
+    .csel-agenda .csel-content .ciclismo .csel-item .csel-tabla-clasif td:nth-child(1){padding: 13px 10px 11px;font-size: 14px;}
+    .csel-agenda .csel-content .ciclismo .csel-item .csel-tabla-clasif td:nth-child(2){padding: 13px 10px 11px;}
+    .csel-agenda .csel-content .ciclismo .csel-item .csel-tabla-clasif tr{position: relative;display: table;width: 100%;}
+    .csel-agenda .csel-content .ciclismo .csel-item .csel-tabla-clasif tr::after {content: '';position: absolute;margin: auto;left: 0;right: 0;bottom: 0;height: 1px;width: calc(100% - 20px);background: #ddd;}
+    .csel-agenda .csel-content .ciclismo .csel-item .csel-tabla-clasif tr:last-child::after {display: none;}
+    .csel-agenda .csel-content .ciclismo .csel-item .csel-tabla-clasif .tiempos{white-space: nowrap;display: inline-block;}
+/*AS today*/
+    .csel-agenda .csel-content .actualidad .csel-item:first-child{border-top: 1px solid #dddddd;}
+    .csel-agenda .csel-content .actualidad .csel-item {min-width: 100%;padding: 16px 10px 20px;}
+    .csel-agenda .csel-content .actualidad .csel-item .item-content{height: auto;}
+    .csel-agenda .csel-content .actualidad .csel-item .item-content .txt {padding: 0;font-weight: bold;line-height: 17px;}
+    .csel-agenda .csel-content .actualidad .csel-item .item-info {padding: 0;position: static;line-height: normal;height: 17px;}
+    .csel-agenda .csel-content .ciclismo .csel-item.directo::after{display: none;}
+}
+
+@media (max-width: 320px) {
+    .csel-agenda .csel-content .csel-item.motor .equipo .equipo-info .tiempo {min-width: 60px;}
+    .csel-agenda .csel-content .csel-item .equipo .piloto, .csel-agenda .csel-content .csel-item .equipo .piloto:last-child {max-width: 90px;}
+}

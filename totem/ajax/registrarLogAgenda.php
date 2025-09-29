@@ -1,0 +1,3 @@
+<?php
+
+registrarLog("agenda", "", false, "");

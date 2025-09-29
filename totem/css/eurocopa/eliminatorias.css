@@ -1,0 +1,18 @@
+.cont-modulo.resultados{
+    display: none !important;
+}
+
+.resultado-cruce .resultado a, .resultado-cruce .resultado span{
+    color: #c01d1d !important;
+}
+
+.cont-modulo, .calendario-dias, .resultado-cruce .equipo{
+    /*background: #c01d1d !important;*/
+    /*background-image: url('../../../../../contenido_proyectos/vistaflor/_general/eurocopa/fondo-prueba.jpg') !important;*/
+    background: rgba(30,30,30,0.9) !important;
+}
+
+.bg-cuadro-futbol-mundial-2018 p.fases-cruces, .tit-final {
+    /*background: #c01d1d !important;*/
+    background-image: url('../../../../../contenido_proyectos/vistaflor/_general/eurocopa/fondo-prueba.jpg') !important;
+}

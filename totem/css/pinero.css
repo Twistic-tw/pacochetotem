@@ -1,0 +1,279 @@
+
+/** Hoja de estilo para la sección de la agenda */
+
+
+.margen_contenido{
+    margin-top: 10px;
+}
+
+.margen_contenido_abajo{
+    margin-bottom: 20px;
+}
+
+.letra_azul_pinero
+{
+    color: #97bf0d !important;
+}
+
+.letra_gris_pinero
+{
+    color: #202021 !important;
+}
+
+.titulo_pinero {
+    /*font-family: OpenSans;*/
+    font-size: 30px;
+    /*font-style: italic;*/
+    margin-bottom: 20px;
+    margin-top: 14px;
+    color: #97bf0d;
+
+}
+
+.imagen_habitaciones_pinero {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    height: 241px;
+    width: 40%;
+}
+
+.texto_corporativo_pinero {
+    background-color: #f3f3f4 !important;
+    color: #ffffff;
+    float: left;
+    height: 205px;
+    line-height: 17px;
+    padding: 18px 27px;
+    width: 54%;
+}
+
+.li_icono {
+    margin-top: -26px;
+    margin-left: 33px;
+}
+
+.li_icono_restaurante {
+    margin-left: 35px;
+    margin-top: -26px;
+}
+
+.tamano_icono {
+    height: 25px !important;
+    width: 25px !important;
+}
+
+.margen_li_icono {
+    margin-top: 10px;
+    text-align: justify;
+    font-family: OpenSans;
+}
+
+.margen_li_restaurante {
+    margin-top: 17px;
+}
+
+.imagen_restaurante_pinero {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    height: 236px;
+    width: 29%;
+}
+
+.texto_corporativo_restaurante_pinero {
+    background-color: #f3f3f4 !important;
+    color: #ffffff;
+    float: left;
+    height: 218px;
+    line-height: 17px;
+    padding: 9px 0 9px 12px;
+    width: 42%;
+}
+
+.texto_corporativo_restaurante_pinero2 {
+    background-color: #f3f3f4 !important;
+    border-left: 2px solid #d0d1d2;
+    color: #ffffff;
+    float: left;
+    font-size: 13px !important;
+    height: 218px;
+    line-height: 17px;
+    padding: 8px 18px 10px 13px;
+    width: 24%;
+}
+
+.icono_linea > img {
+    width: 45px;
+}
+
+
+.texto_corporativo_restaurante_medio {
+    background-color: #f3f3f4 !important;
+    border-left: 2px solid #d0d1d2;
+    color: #ffffff;
+    float: left;
+    font-size: 13px !important;
+    height: 184px;
+    line-height: 17px;
+    padding: 8px 18px 10px 13px;
+    width: 24%;
+}
+
+.linea_icono {
+    border-top: 1px solid #97bf0d;
+    float: left;
+    height: 29px;
+    margin-top: 34px;
+    width: 40%;
+}
+
+.linea_impar {
+    margin-left: 2%;
+}
+
+.linea_par {
+    margin-left: 5%;
+}
+
+.icono_linea {
+    float: left;
+    width: 20%;
+}
+
+.height_163{
+    height: 163px !important;
+}
+
+.height_190 {
+    height: 190px !important;
+}
+
+.texto_corporativo_bar_pinero {
+    background-color: #f3f3f4 !important;
+    color: #ffffff;
+    float: left;
+    height: 218px;
+    line-height: 17px;
+    padding: 9px 0 9px 17px;
+    width: 69%;
+}
+
+.texto_generico_pinero {
+    background-color: rgba(255, 255, 255, 0.59);
+    color: #2a2a2a !important;
+    font-size: 19px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    top: 416px;
+    width: 914px;
+    display: none;
+}
+
+.precio_spa {
+    background-color: #115E67;
+    color: white;
+    margin-top: -6px;
+    padding: 5px;
+    float:right;
+}
+
+.css_fondo_volver_giardino{
+    background-color: #115E67 !important;
+}
+
+.css_fondo_giardino.active{
+    background-color:  #115E67 !important;
+}
+
+.css_fondo_giardino{
+    background-color: rgba(0,153,182,0.5) !important;
+}
+
+.css_tamano_icono_lista_hab{
+    height: 45px !important;
+    margin: 0px 10px 0px;
+    width: 45px !important;
+}
+
+.css_lista_iconos_habitacion {
+    background-color: #97bf0d;
+    float: left;
+    width: 100%;
+}
+
+.css_caja_lita_icono_hab {
+    float: left;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 17px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.css_tabla_dunasclub {
+    background-color: #f0eded;
+    font-family: OpenSans;
+    width: 1023px;
+}
+
+.css_imagen_tarjeta_club {
+    height: 83px;
+    margin-bottom: 10px;
+    margin-left: 119px;
+    margin-top: 10px;
+    text-align: center;
+    width: 104px;
+}
+
+.css_texto_centrado{
+    text-align: center !important;
+    margin: 10px 0px;
+    font-weight: 700;
+
+}
+
+.css_tabla_dunasclub td {
+    padding: 10px;
+}
+
+.css_texto_weight700{
+    font-weight: 700;
+    color: #115E67;
+}
+
+.css_dunas_premios {
+    background-color: white;
+    display: inline-block;
+    float: left;
+    height: 281px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-top: 20px;
+    width: 30%;
+}
+
+.css_dunas_premios_texto > .css_titulo {
+    color: #115E67;
+    font-family: OpenSans;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.css_dunas_premios_texto > .css_contenido {
+    font-family: OpenSans;
+    padding: 0 10px 10px;
+    text-align: justify;
+}
+
+.css_dunas_maspremios {
+    background-color: transparent;
+    height: 200px;
+    left: 37px;
+    position: absolute;
+    top: 1380px;
+    width: 994px;
+}

@@ -1,0 +1,116 @@
+
+<div id="conoceWrapper"  class="tabs closeWrapper  content_width">
+    <div id="municipioTitle" class="contentHeader">
+        {title}
+    </div>
+
+    <div class="content tabs_ draw_border">
+        <div>
+            <ul>
+                <li class="li-1"><a href="#municipio-contenido-inicio">{lang_inicio}</a></li>
+                <li class="li-2"><a href="#municipio-contenido-hacer">{lang_quehacer}</a></li>
+                <li class="li-4"><a href="#municipio-contenido-fotos">{lang_fotos}</a></li>
+                <li class="li-5"><a href="#municipio-sitios-interes">{lang_interes}</a></li>
+<!--
+                <li class="li-6"><a href="#municipio-contenido-gastronomia">{lang_gastronomia}</a></li>
+-->
+            </ul>
+        </div>
+
+        <div id="conoce_municipio">
+
+            <div id="municipio-contenido-inicio">
+                <!-- START BLOCK : inicio -->
+                <div  class="municipio-contenido scroll">
+                    {contenido}
+                </div>
+                <!-- END BLOCK : inicio -->
+            </div>
+
+            <div id="municipio-contenido-hacer">
+                <!-- START BLOCK : que_hacer -->
+                <div  class="municipio-contenido scroll">
+                    {contenido}
+                </div>
+                <!-- END BLOCK : que_hacer -->
+            </div>
+            <div id="municipio-contenido-fotos">
+                <div  class="municipio-contenido scroll">
+                    <!-- START BLOCK : img -->
+                    <div class="contenedor-imagen-galeria-inferior inline imagen-galeria">
+                        <div class="imagen-galeria-inferior">
+                            <img src="{imgSrc}">
+                        </div>
+                    </div>
+                    <!-- END BLOCK : img -->
+                </div>
+
+            </div>
+
+            <div id="municipio-contenido-cultura">
+                <!-- START BLOCK : cultura -->
+                <div  class="municipio-contenido scroll">
+                    {contenido}
+                </div>
+                <!-- END BLOCK : cultura -->
+            </div>
+
+            <div id="municipio-contenido-gastronomia">
+                <!-- START BLOCK : gastronomia -->
+                <div  class="municipio-contenido scroll">
+                    {contenido}
+                </div>
+                <!-- END BLOCK : gastronomia -->
+            </div>
+            
+            <div id="municipio-sitios-interes">
+                
+                <div  class="municipio-contenido scroll">
+                    <!-- START BLOCK : sitio_interes -->
+                    <div class="comercio comercio_destacado ">
+                        <div class="comercio_content flip">
+                            <div>
+                                <div class="imagen">
+                                    <img src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/{id}/{imagen}">
+                                </div>
+                                <div class="desc">
+                                    <div class="tipo">{tipo_sitio}</div>
+                                    <div class="nombre">{nombre}</div>
+                                    <div class="coordenadas">Lat: <span>{lat}</span>, Long: <span>{long}</span> </div>
+                                    <div class="direccion">{direccion}</div>
+                                </div>
+                                <span class="masInfoWrapper"><span class="masInfo">+</span> {lang_info}</span>
+                            </div>
+                            <div class="displayNone">{descripcion}</div>
+                            <div class="clearAll"></div>
+                        </div>
+                    </div>
+                    <!-- END BLOCK : sitio_interes -->
+                    <!-- START BLOCK : sitio_interes_ruta -->
+                    <div  class="comercio comercio_destacado">
+                        <a class="loadAjax" href="getConoce_rutaDetail&ruta={id}">
+                            <div class="comercio_content">
+                                <div class="imagen">
+                                    <img src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/{id}/{imagen}">
+                                </div>
+                                <div class="desc">
+                                    <div class="tipo">{tipo_sitio}</div>
+                                    <div class="nombre">{nombre}</div>
+                                    <div class="coordenadas">Lat: <span>{lat}</span>, Long: <span>{long}</span> </div>
+                                    <div class="direccion">{direccion}</div>
+                                </div>
+                                <span class="masInfoWrapper"><span class="masInfo">+</span> {lang_info}</span>
+                                <div class="clearAll"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- END BLOCK : sitio_interes_ruta -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="back buttonsLeft">
+        <span class="atrasIcon"></span> {lang_atras}
+    </div>
+</div>
+

@@ -1,0 +1,46 @@
+<div id='cuestionario' class='closeWrapper  content_width'>
+    <div id='cuestionarioHeader2'  class='contentHeader'>
+        {lang_title}
+    </div>
+
+    <div class='formularioPaginasWrapper'>
+        <ul class="formularioPaginas_nav ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" id="cuestionario-nav" role="tablist">
+            <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="cuest20" aria-labelledby="ui-id-3" aria-selected="false"><a href="#cuest20" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">Habitación</a></li>
+            <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="cuest21" aria-labelledby="ui-id-4" aria-selected="false"><a href="#cuest21" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4">Instalación</a></li>
+            <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="cuest22" aria-labelledby="ui-id-5" aria-selected="false"><a href="#cuest22" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-5">Personal</a></li>
+            <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active active" role="tab" tabindex="0" aria-controls="cuest23" aria-labelledby="ui-id-6" aria-selected="true" style="background: none repeat scroll 0% 0% rgb(43, 148, 193);"><a href="#cuest23" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-6">Desayuno y Restaurante</a></li>
+        </ul>
+
+        <div class=" clearAll content">
+            <form id='formulario' method='post' action='index.php?gestion=enviarFormularioHotel&id_cuestionario={id_form}' class='relative formularioPaginas '>	
+                <!-- START BLOCK : pestanas_content -->
+                <div id='cuest{n_id}' class='importante'>	
+                    <div id='medio' class='centro tablas scroll'>
+                        <div class='izquierdo'>		 
+                            <!-- START BLOCK : pregunta -->
+
+                            {codigo}
+
+                            <!-- END BLOCK : pregunta -->
+                        </div>
+                        <div class='derecho'>
+                            <!-- START BLOCK : preDerecho -->
+
+                            {codigo}
+
+                            <!-- END BLOCK : preDerecho -->
+                        </div>
+                    </div>	
+                </div>     
+                <!-- END BLOCK : pestanas_content -->
+                <!--<div style="position: absolute; bottom: -4px; right: 150px; font-size: 110%; font-style: italic;">Proximanente / Coming soon </div>-->
+                <input type='submit' value='Enviar' class='buttonsRight' >
+            </form>        
+        </div>
+        
+
+        <div class="back buttonsLeft">
+            <span class="atrasIcon"></span> {lang_atras}
+        </div>
+    </div> <!-- cierro wrapper general -->
+</div> <!-- cierro cuestionario -->

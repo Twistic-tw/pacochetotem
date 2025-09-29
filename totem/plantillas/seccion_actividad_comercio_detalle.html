@@ -1,0 +1,110 @@
+<!--<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>-->
+
+<div id="detalles_comercio" class="closeWrapper content_width">
+    <div id="comercio_sup">
+        <div class="fondo_comercio_sup">
+            <img src="{fondo_sup}" >
+        </div>        
+        <div id="logo_comercio">
+            <!--<img src="{logo2}">-->
+        </div>
+    </div>
+    <div id="contenido_comercio">        
+        <div id="menu_secciones" style="background-color: {color};" > <!-- Secciones (lista) del menu referente al comercio -->       
+            <div class="elmt back animateBottom boton_atras_quehacer">
+                <span class="atrasIcon"></span><span class="atrasText ">{lang_atras}</span>
+            </div>
+
+            <div id="elto2" class="comercioMenu">
+                <a class="elto" href="#fotos_wrapper">{lang_fotos}</a>
+            </div>
+            <div id="elto1" class="comercioMenu">
+                <a class="elto" href="#quienes_somos_wrapper">{lang_quienes_somos}</a>
+            </div>
+            <!-- START BLOCK : videos -->
+            <div class="comercioMenu">
+                <a class="elto" href="#video_wrapper">{lang_video}</a>
+            </div>
+            <!-- END BLOCK : videos -->
+            <!-- START BLOCK : ofertas -->
+            <div class="comercioMenu">
+                <a class="elto" href="#ofertas_wrapper">{lang_ofertas}</a>
+            </div>
+            <!-- END BLOCK : ofertas -->
+            <!--            <div class="comercioMenu">
+                            <a class="elto" href="#contacto_wrapper">{lang_contacto}</a>
+                        </div> -->
+            <div class="comercioMenu {displayNone}">
+                <a class="elto" href="#como_llegar_wrapper">{lang_como_llegar}</a>
+            </div>           
+        </div>
+        <div class="fondo_comercio">
+            <img src="{fondo_inf}" >
+        </div>
+        <div id="contenidoWrapper">
+            <div id="fotos_wrapper" class="contenido_seccion hidden menuContentWrapper">
+                <h3 class="title_sectionS">{lang_fotos}</h3>
+                {contenido_fotos}
+            </div>
+            <div id="quienes_somos_wrapper" class="contenido_seccion hidden menuContentWrapper ">
+                <h3 class="title_sectionS">{lang_quienes_somos}</h3>
+                {contenido_quienes_somos}
+            </div>
+            <div id="video_wrapper" class="contenido_seccion hidden menuContentWrapper">
+                <h3 class="title_sectionS">{lang_video}</h3>
+                {contenido_video}
+            </div>
+            <div id="ofertas_wrapper" class="contenido_seccion hidden menuContentWrapper">
+                <h3 class="title_sectionS">{lang_ofertas}</h3>
+                {contenido_ofertas}
+            </div>
+            <div id="contacto_wrapper" class="contenido_seccion hidden menuContentWrapper">
+                {contenido_contacto}
+            </div>
+            <div id="como_llegar_wrapper" class="contenido_seccion hidden menuContentWrapper">
+                <h3 class="title_sectionS">{lang_como_llegar}</h3>
+                
+                
+                <div id="fachadaWrapper">
+                    <div id="comercioLatitud" class="displayNone">{latitud}</div>
+                    <div id="comercioLongitud" class="displayNone">{longitud}</div>
+                    <img src="{comercio_fachada}" title="" alt="">
+                </div>
+                <div id="infoWrapper">
+                    
+                    <ul class="lista2">
+                        <li> <strong><span>{lang_telefono}:</span></strong> {telefono}</li>
+                        <li> <strong><span>{lang_horario}:</span></strong> {horario}</li>
+                        <li> <strong><span>{lang_url}:</span></strong> {url}</li>
+                        <li> <strong><span>{lang_email}:</span></strong> {email}</li>
+                    </ul>
+                </div>
+                
+                <!-- START BLOCK : mapa2 -->
+                <div id="map_wrapper_llegar2">
+                    <img src="../../../contenido_proyectos/vistaflor/centro_4/imagenes/mapa_barcelo_aloha.jpg">
+                </div>
+                <!-- END BLOCK : mapa2 -->
+                
+                <!-- START BLOCK : mapa -->
+                <div id="map_wrapper_llegar">
+                    
+                </div>
+                
+                <div id="qrMsg">
+                    {qrMsg}
+                </div>
+                <div id="qrcodeWrapper">
+                    <img src="{qr_ruta}" title="" alt="">
+                </div>
+                <!-- END BLOCK : mapa -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,56 @@
+<div id='informacionWrapper_infoGeneral' class="noTabsWrapper content_width">
+
+    <div id='quehacerTitle' class='contentHeader'> <!-- header, titulo de la secion -->
+        {queHacer_title}
+    </div>
+
+    <div class='content'>
+        <div id="filters_quehacer" class="que_hacer_filtros button-group">
+            <ul>
+                <li class="filtro_boton_quehacer filtro_activo_quehacer setBgColor"  data-filter= "*">{todos_title}</li>
+                <li class="filtro_boton_quehacer setBgColor" data-filter=".filtro_Compras">{compras_title}</li>
+                <li class="filtro_boton_quehacer setBgColor" data-filter=".filtro_Actividades">{act_title}</li>
+                <li class="filtro_boton_quehacer setBgColor" data-filter=".filtro_Ocio_y_Comer">{ocio_title}</li>
+            </ul>
+        </div>
+
+        <div class="paddingLeftRight10 scroll_quehacer ">
+
+            <div class="isotope_que_hacer">
+
+
+                <!-- START BLOCK : contentBlockLink -->
+
+                <div class="tarjeta_nueva destacada {tipo_que_hacer} {filtro_isotope}">
+
+                    <div class="titulo_tarjeta puntos_suspensivos setBgColor"><p>{nombre_categoria}</p></div>
+
+                <span href="{href}" class="loadComercio {loadComercioDetalles}">
+                    
+                    <div class="tarjeta_cuadro">
+                        <img class="{icono_dentro_quehacer}" src="{imagen}">
+                    </div>
+
+                    <div class="tarjeta_contenido">
+                        <!--  <div class="tarjeta_tipo puntos_suspensivos">{nombre_categoria}</div> -->
+                        <div class="tarjeta_titulo puntos_suspensivos">{nombre}</div>
+                        <div class="tarjeta_info">
+                            <div class="puntos_suspensivos">{direccion}</div>
+                            <div class="puntos_suspensivos">{telefono}</div>
+                            <div class="puntos_suspensivos texto_web_quehacer">{web}</div>
+                        </div>
+                    </div>            
+
+                    <div class="tarjeta_masinfo">{info}</div>
+                </span>
+                </div>
+
+
+                <!-- END BLOCK : contentBlockLink -->
+
+            </div>
+
+
+        </div>
+    </div>
+</div>

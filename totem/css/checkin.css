@@ -1,0 +1,711 @@
+#checkin{
+    /*position: relative;*/
+    /*width: 98%;*/
+    /*    padding: 0px 10px;
+        margin-top: 9px;*/
+}
+#checkin a{
+    text-decoration: none;
+}
+
+.ui-datepicker-other-month {
+    opacity: 0.61;
+}
+
+/****************************************
+ *   03.   Calendario
+ ****************************************/
+#checkinCalendario {
+  left: 0;
+  /*padding: 0 0 0 72px;*/
+  padding: 0 0 0 28px; /*Mas grande para añadir foto*/
+/*  position: absolute;*/
+  top: 86px;
+  width: 40%;
+  z-index: 1;
+}
+
+#checkinCalendario .ui-datepicker{
+    font-size: 1.15em;
+    box-shadow: 5px 11px 7px -4px black;
+}
+
+#checkinCalendario .ui-datepicker .ui-widget-header{
+  border: medium none;
+  border-radius: 0px;
+  height: 31px;
+  margin-left: -3px;
+  margin-top: -4px;
+  width: 320px;
+}
+
+#checkinCalendario .ui-datepicker .ui-datepicker-prev,
+#checkinCalendario .ui-datepicker .ui-datepicker-next { top: 0;}
+
+#checkinCalendario .ui-datepicker .ui-datepicker-next{right: 6px;}
+#checkinCalendario .ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/spriteFlechasNav3.svg");
+    background-repeat: no-repeat;
+    background-size: 45px auto;
+    height: 30px;
+    top: 45%;
+    width: 20px;    
+}
+#checkinCalendario .ui-datepicker-prev-hover,
+#checkinCalendario .ui-datepicker-next-hover,
+#checkinCalendario .ui-state-hover {background: none; border: none}
+
+#checkinCalendario .ui-datepicker .ui-datepicker-prev span{ background-position: 0 0;}
+#checkinCalendario .ui-datepicker .ui-datepicker-next span{ background-position: 2px -35px;}
+#checkinCalendario .ui-datepicker .ui-datepicker-prev:hover span,
+#checkinCalendario .ui-datepicker .ui-datepicker-prev:active span{background-position: -25px 0;}
+#checkinCalendario .ui-datepicker .ui-datepicker-next:hover span,
+#checkinCalendario .ui-datepicker .ui-datepicker-next:active span{ background-position: -25px -35px;}
+
+
+
+#checkinCalendario table { color: #FFFFFF;}
+#checkinCalendario table td {
+    /*Antes estaba sin background*/
+    background-color: #565656;
+    /*padding: 1.5px;*/
+    cursor: default !important;
+}
+#checkinCalendario .ui-datepicker tbody td span, 
+#checkinCalendario .ui-datepicker tbody td a{
+    padding: 0.6em;
+    font-size: 105%;
+    cursor: default;
+}
+#checkinCalendario table tbody a.ui-state-default,
+#checkinCalendario table tbody .ui-state-default{
+
+    font-weight: normal;
+    text-align: center;
+}
+
+#checkinCalendario .ui-state-highlight, #checkinCalendario .ui-widget-content .ui-state-highlight, #checkinCalendario .ui-widget-header .ui-state-highlight{
+  background-color: rgba(255,255,255,0.3);
+  color: white !important;
+}
+
+
+#checkinCalendario table tbody a{
+    background: none repeat scroll 0 0 #a3a3a3;
+    color: white;
+    border: none;
+    opacity: 0.7;
+}
+#checkinCalendario table tbody a{
+    /*background: none repeat scroll 0 0 #E77607;*/
+    /*background: none repeat scroll 0 0 #1C1C1C;*/
+    background:white;
+    color: black;
+    opacity: 1;
+    border: none;
+    cursor: default;
+}
+#checkinCalendario table tbody .ui-datepicker-current-day a, 
+#checkinCalendario table tbody .ui-datepicker-current-day a {
+    background: none repeat scroll 0 0 #B71351 !important;
+    color: white;
+    z-index: 1;
+    border: 0px;
+}
+
+
+/****************************************
+ *   04.   checkinFiltros
+ ****************************************/
+#checkinFiltroCategorias {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
+    bottom: 18px;
+    height: 60px;
+    left: 25px;
+    position: absolute;
+    width: 40%;
+}
+
+#checkinFiltroCategorias .listadoCategorias {
+
+}
+
+#checkinFiltroCategorias .listadoCategorias > div{
+    display: inline-block;
+}
+
+
+
+#checkinCalendario .ui-widget-content {
+  background: url("images/ui-bg_highlight-soft_100_eeeeee_1x100.png") repeat-x scroll 50% top #565656;
+  border: 3px solid #B71351;
+ /* border-radius: 10px;*/
+  border-radius: 0px;
+}
+#checkinCalendario .ui-widget-header {
+    background: none;
+    background-color: #1c1c1c !important;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  font-size: 1.2em;
+  font-weight: normal;
+  line-height: 1.4em;
+  margin: 0 2.3em;
+  text-align: center;
+}
+
+/*imagenes puestas en el listado*/
+.imagenes_checkin_listado{
+    float: right;
+    width: 13%;
+    margin-top: 2px;
+    height: 49px;
+}
+
+.imagenes_checkin_listado{
+    overflow: hidden;
+}
+
+.texto_titulo_popup{
+    float: left;
+}
+
+
+
+
+
+/***********************************Esto es lo antiguo*/
+
+
+#checkin{
+    /*background-color: #CF03FB;
+    border-radius: 10px 10px 10px 10px;
+    height: 327px;
+    margin: 30px 12px 0;*/
+}
+.form_tratamiento {
+  display: inline-block;
+  margin-right: 1%;
+  vertical-align: top;
+  width: 10%;
+}
+.form_control {
+  display: inline-block;
+  width: 88%;
+}
+.col input{
+    width: 100% !important;
+    margin-top: 3px;
+}
+.col{float: left; margin-bottom: 20px;}
+.col1 { width: 5%; margin-right: 5%;}
+.col2 { width: 15%; margin-right: 5%;}
+.col3 { width: 25%; margin-right: 5%;}
+.col4 { width: 35%; margin-right: 5%;}
+.col5 { width: 45%; margin-right: 5%;}
+.col6 { width: 55%; margin-right: 5%;}
+.col7 { width: 65%; margin-right: 5%;}
+.col8 { width: 75%; margin-right: 5%;}
+.col9 { width: 85%; margin-right: 5%;}
+.col10 { width: 95%; margin-right: 5%;}
+
+.input_radio_female {
+  background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/cheking/female_color2.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  display: inline-block;
+  height: 32px;
+  margin-top: 7px;
+  width: 32px;
+}
+.input_radio_male {
+  background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/cheking/male_color.svg") no-repeat scroll center center rgba(0, 0, 0, 0);
+  display: inline-block;
+  height: 32px;
+  margin-right: 5px;
+  width: 32px;
+  border-radius: 8px;
+}
+.input_radio_female.active, .input_radio_male.active {
+  box-shadow: 0 0 5px #EE82EE;
+  transform: scale(1.2);
+}
+
+form#form_checkin input[type=text]{     
+    border-radius: 0;
+    margin-top: 17px;
+    padding: 6px;
+    background: #242424; 
+    color: white;
+}
+
+
+form#form_checkin input{     
+    border-radius: 0;
+    margin-top: 17px;
+    padding: 6px;
+    background: #242424; 
+    color: white;
+}
+
+
+form#form_checkin2 input[type=text]{     
+    border-radius: 0;
+    margin-top: 17px;
+    padding: 6px;
+    background: #242424; 
+    color: white;
+    border: 0px;
+}
+
+
+form#form_checkin2 input{     
+    border-radius: 0;
+    margin-top: 17px;
+    padding: 6px;
+    background: #242424; 
+    color: white;
+    border: 0px;
+    width: 90%;
+}
+
+/*form#form_checkin input[placeholder] {
+   font-size: 12px;
+}*/
+
+
+
+form#form_checkin{ height: 100%; padding-bottom: 40px; overflow-y: scroll;}
+/*#checkin .content{
+    padding-top: 35px;
+    position: relative;
+    top: 35px;
+    border-color: #CF03FB;
+}*/
+#checkin .ancho50{
+/*    display: inline-block;*/
+    float: left;
+    width: 48%;
+    padding: 1% 0 0 1%;
+    margin-left: 1%;
+    height: 380px;
+}
+
+#checkin .ancho67{
+    float: left;
+    width: 67%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#checkin .ancho67 input{
+    width: 93%;
+    margin-top: 3px;
+}
+
+#checkin .ancho50_respuesta{
+    float: left;
+    width: 50%;
+    font-size: 100px;
+    text-align: center;
+}
+
+#checkin .ancho50_respuesta img{
+    width: 90px;
+}
+
+#checkin .ancho33{
+    float: left;
+    width: 33%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+#checkin .ancho33 input{
+    width: 90%;
+    margin-top: 3px;
+}
+
+#checkin .ancho30{
+    float: left;
+    width: 25%;
+    margin-bottom: 40px;
+}
+
+#checkin .ancho70{
+    float: left;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+#checkin .ancho70 input{
+    width: 94%;
+    margin-top: 3px;
+}
+
+#checkin #respuesta{
+    margin-top: 3px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    padding: 8px;
+    height: 90%;
+}
+
+.modal_time {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba( 255, 255, 255, .5 ) 
+        url('../img/time.gif') 
+        50% 50% 
+        no-repeat;
+}
+
+
+
+#checkin .content {
+  height: 378px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 115px;
+}
+
+
+.width_50{
+width: 50%;
+float: left;
+}
+
+.boton_derecha_checking {
+  background-color: #242424;
+  border: 2px solid #B71351;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 0.4em 1.9em;
+  text-align: center;
+  text-transform: uppercase;
+  float: left;
+  margin-top: 2%;
+  box-shadow: 3px 6px 3px -4px #000;
+  clear: both;
+  width: 329px;
+  margin-left: 25%;
+}
+
+.boton_derecha_checking_2 {
+  background-color: #242424;
+  border: 2px solid #B71351;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 0.4em 1.9em;
+  text-align: center;
+  text-transform: uppercase;
+  float: left;
+  margin-top: 2%;
+  box-shadow: 3px 6px 3px -4px #000;
+  clear: both;
+  width: 329px;
+  margin-left: 34%;
+}
+
+.tarjeta_checking{
+  width: 320px;
+  height: 312px;
+  background-color: rgb(86,86,86);
+  box-shadow: 5px 11px 7px -4px black;
+  border: 3px solid #B71351;
+  text-align: center;
+}
+
+#checkin2 .content {
+  height: 378px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+.tarjeta_checking_2 {
+    background-color: #565656;
+    border: 3px solid #B71351;
+    box-shadow: 5px 11px 7px -4px #000000;
+    float: left;
+    height: 240px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    width: 48%;
+}
+
+.localizador_titulo{
+    padding-top: 11px;
+  }
+
+
+.tarjeta_checking  img {
+    height: 174px;
+}
+
+.calendario_checkin_titulo{
+width: 326px;
+background-color: #B71351;
+margin-left: 28px;
+/*padding: 9px;*/
+}
+
+.calendario_checkin_titulo > p {
+  margin: 0px;
+  padding-left: 14px;
+  padding-top: 6px;
+  padding-bottom: 3px;
+}
+
+.localizador_checkin_titulo {
+  background-color: #B71351;
+}
+
+.localizador_checkin_titulo > p{
+    margin: 0;
+    padding-bottom: 6px;
+    padding-left: 14px;
+    padding-top: 3px;
+    text-align: left;
+}
+
+
+.input_tercio{
+  display: inline-block;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 30.2%;
+}
+
+.input_tercio_2{
+  display: inline-block;
+    float: left;
+   /* margin-left: 1%;*/
+    margin-right: 1%;
+    width: 62.7%;
+}
+
+.input_tercio:first-child{
+  margin-left: 0;
+}
+
+
+.grupo_de_input{
+  width: 100%;
+  display: block;
+  margin-left: 2%;
+  margin-right: 2%;
+  clear: both;
+}
+
+.input_mitad{
+  width: 48.4%;
+  display: inline-block;
+  float: left;
+}
+
+.margenes_tarjeta_checkin_2{
+  margin-left: 2%;
+  width: 102%;
+
+}
+
+.radio_button_checkin_2{
+  display: inline-block;
+}
+
+.radio_button_tipo_2{
+width: 5%;
+}
+
+
+.genero > input[type=radio]{
+  display:none;
+}
+
+.genero > input[type=radio] + img{
+  cursor:pointer;
+  border:2px solid transparent;
+}
+
+.genero2 > input[type=radio]{
+  display:none;
+}
+
+.genero2 > input[type=radio] + img{
+  cursor:pointer;
+  border:2px solid transparent;
+}
+
+.genero > input[type=radio]:checked + img{
+  background-color:#E08283;
+}
+
+.genero2 > input[type=radio]:checked + img{
+  background-color:#3498DB;
+}
+
+
+/***************************************************************/
+
+.documento > input[type=radio]{
+    display: none;
+    float: left;
+    font-size: 12px;
+    /*padding: 5px;*/
+    box-sizing:border-box;
+  }
+
+.documento2 > input[type=radio]{
+    display: none;
+    float: left;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.documento > input[type=radio]:checked + div{
+  background-color:#B71351;
+}
+
+.documento > input[type=radio] + div{
+  border-right: 3px solid #565656;
+}
+
+
+.documento2 > input[type=radio]:checked + div{
+  background-color:#B71351;
+}
+
+.titulo_tipo_documento_checkin2{
+  display: inline-block;
+   padding: 6px 3px;
+
+}
+
+
+.radio_button_checkin_2_textos{
+  /*border: 1px solid #FFFFFF;*/
+    display: inline-block;
+    margin-top: 17px;
+    background-color:  #242424;
+}
+
+
+.img_radio_button_checkin_2{
+    border-radius: 29px;
+    height: 34px;
+    margin-top: 13px;
+    width: 34px;
+}
+
+
+.bandera_checkin.bandera_active > img {
+    border: 1px solid #000000;
+    border-radius: 6px;
+    box-sizing:border-box;
+}
+
+.bandera_checkin.bandera_active {
+    opacity: 1 !important;
+}
+
+
+.bandera_checkin {
+   float: left;
+    height: 54px;
+    margin-left: 3%;
+    margin-top: 3%;
+    opacity: 0.6;
+    width: 35px;
+} 
+
+.input_cuarto_2{
+  width: 81%;
+    display: inline-block;
+    float: left;
+
+}
+
+.input_cuarto{
+  width: 19%;
+  display: inline-block;
+    float: left;
+}
+
+.bandera_checkin_imagen{
+height: 30px;
+    margin-top: 2%;
+    width: 40px;
+}
+
+.margin_top_menos7{
+margin-top: -7px;
+}
+
+
+.bandera_input_checkin{
+    height: 24px;
+    left: 3px;
+    margin-left: 2%;
+    margin-top: 2%;
+    position: absolute;
+    top: 13px;
+    width: 34px;
+    border-radius: 7px;
+}
+
+.bandera_activa{
+    border: 1px solid black;
+    border-radius: 6px;
+    opacity: 1 !important;
+    transform: scale(1.2, 1.1);
+}
+
+.position_relative{
+  position: relative;
+}
+
+.input_nacionalidad{
+  padding-left: 54px !important;
+  width: 78% !important;
+}
+
+.nacionalidad{
+  position: relative;
+}
+
+.margin_left_11{
+  margin-left: 11px;
+}
+
+.clear_both{
+  clear: both;
+}
+
+.titulo_pass_documento_checkin2{
+    display: inline-block;
+   padding: 6px 3px;
+   margin-left: -4px;
+}
+
+
+.bandera_checkin_texto {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#paises_chekin2{
+  display: none;
+}

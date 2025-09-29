@@ -1,0 +1,270 @@
+<div class="closeWrapper full_screen ruta_detail conoce_wrapper">
+
+    <div class="background_rutas">
+
+        <!--foto de la ruta-->
+        <div class="parte_arriba_rutas" style="background-image:url('{imagen}');">
+            <!-- <div class="parte_arriba_rutas" >
+                <img src="{imagen}"/> -->
+            <div class="tarjeta_imagen_texto">
+                <p>{nombre}</p>
+            </div>
+        </div>
+        <!-- Fin de la foto de portada de ruta-->
+
+        <div class="menu_tiempo">
+            <div class="menu_tiempo_volver ">
+                <div class="menu_tiempo_volver_texto back">
+                    <div class="menu_tiempo_volver_transparencia">
+                        <img class="menu_tiempo_volver_icono" src="img/volver.svg"/>
+
+                        <div class="menu_tiempo_contenido_texto">{cerrar}</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="menu_tiempo_contenido">
+                <div class="menu_ruta_contenido_boton">
+                    <div class="menu_tiempo_contenido_transparencia">
+                        <img class="menu_tiempo_contenido_icono"
+                             src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/icon_rutas.svg"/>
+
+                        <div class="menu_tiempo_contenido_texto">{sitios_label}</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="rutas">
+            <!-- START BLOCK : blq_galeria_full -->
+            <div class="tarjeta_galeria_rutas tarjeta_nueva  tarjeta_large">
+                <div class="iosslider_ruta">
+                    <div class='slider'>
+                        <!-- START BLOCK : blq_foto_full -->
+                        <div class="item" id="{n_item}"><img src="timthumb.php?src={url}&h={h}&w={w}&zc=2&cc=101010"></div>
+                        <!-- END BLOCK : blq_foto_full -->
+                    </div>
+                    <div class='prev'></div>
+                    <div class='next'></div>
+                    <div class='gallery_play'></div>
+                </div>
+            </div>
+            <!-- END BLOCK : blq_galeria_full -->
+
+
+            <!-- START BLOCK : rutas_datos -->
+            <div class="tarjeta_nueva tarjeta_small">
+                <div class="titulo_tarjeta">
+                    <img class="ruta_icono" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/3.svg"/>
+
+                    <div class="tarjeta_subtitulo puntos_suspensivos left"><p>{lang_punto_inicial}</p></div>
+                </div>
+
+                <div class="tarjeta_contenido ">
+                    {punto_inicial}
+                </div>
+
+            </div>
+
+            <div class="tarjeta_nueva  tarjeta_small">
+                <div class="titulo_tarjeta">
+                    <img class="ruta_icono" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/4.svg"/>
+
+                    <div class="tarjeta_subtitulo puntos_suspensivos left"><p>{lang_punto_final}</p></div>
+                </div>
+
+                <div class="tarjeta_contenido ">
+                    {punto_final}
+                </div>
+            </div>
+
+            <div class="tarjeta_nueva  tarjeta_small">
+
+                <div class="titulo_tarjeta">
+                    <img class="ruta_icono" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/2.svg"/>
+
+                    <div class="tarjeta_subtitulo puntos_suspensivos left"><p>{lang_itinerario}</p></div>
+                </div>
+
+                <div class="tarjeta_contenido ">
+                    {itinerario}
+                </div>
+            </div>
+
+            <div class="tarjeta_nueva  tarjeta_full">
+                <div class="titulo_tarjeta">
+                    <img class="ruta_icono" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/1.svg"/>
+
+                    <div class="tarjeta_subtitulo puntos_suspensivos left"><p>{lang_como_llegar}</p></div>
+                </div>
+
+                <div class="tarjeta_contenido ">
+                    {como_llegar}
+                </div>
+            </div>
+
+            <div class="tarjeta_nueva  tarjeta_small">
+                <div class="titulo_tarjeta">
+                    <img class="ruta_icono" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/5.svg"/>
+
+                    <div class="tarjeta_subtitulo puntos_suspensivos left"><p>{lang_observaciones}</p></div>
+                </div>
+
+                <div class="tarjeta_contenido ">
+                    {observaciones}
+                </div>
+            </div>
+
+            <div class="tarjeta_nueva  tarjeta_large">
+                <div class="titulo_tarjeta">
+                    <img class="ruta_icono" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/10.svg"/>
+
+                    <div class="tarjeta_subtitulo puntos_suspensivos left"><p>{lang_caracteristicas}</p></div>
+                </div>
+
+                <div class="caracteristicas_tarjeta_contenido">
+                    <div class="rutas_caracteristicas_datos">
+                        <div>
+                            <img class="ruta_icono_caracteristica" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/6.svg"/>
+                        </div>
+                        <div class="rutas_caracteristicas_datos_tipo">{lang_nivel}</div>
+                        <div class="">{nivel}</div>
+                    </div>
+
+                    <div class="rutas_caracteristicas_datos">
+                        <div>
+                            <img class="ruta_icono_caracteristica" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/7.svg"/>
+                        </div>
+                        <div class="rutas_caracteristicas_datos_tipo">{lang_duracion}</div>
+                        <div class="">{duracion}</div>
+                    </div>
+
+                    <div class="rutas_caracteristicas_datos">
+                        <div>
+                            <img class="ruta_icono_caracteristica" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/8.svg"/>
+                        </div>
+                        <div class="rutas_caracteristicas_datos_tipo">{lang_recorridos}</div>
+                        <div class="">{recorrido}</div>
+                    </div>
+
+                    <div class="rutas_caracteristicas_datos">
+                        <div>
+                            <img class="ruta_icono_caracteristica" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/9.svg"/>
+                        </div>
+                        <div class="rutas_caracteristicas_datos_tipo">{lang_desniveles} (m.)</div>
+                        <div class="">{desniveles}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta_nueva tarjeta_full">
+                <div class="titulo_tarjeta">
+                    <img class="ruta_icono" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/icon_que_descubrir.svg"/>
+
+                    <div class="tarjeta_subtitulo puntos_suspensivos left"><p>{lang_descubrir}</p></div>
+                </div>
+
+                <div class="tarjeta_contenido ">
+                    {que_descubrir}
+                </div>
+            </div>
+
+
+            <!-- START BLOCK : mapa -->
+            <div class="tarjeta_nueva tarjeta_alto_auto tarjeta_full">
+                <div class="titulo_tarjeta">
+                    <img class="ruta_icono" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/icon_mapa.svg"/>
+
+                    <div class="tarjeta_subtitulo puntos_suspensivos left"><p>{lang_mapa}</p></div>
+                </div>
+
+                <div class="tarjeta_contenido  padding_none">
+                    <!--                     <div class="tarjeta_info">
+                                            <div class="tarjeta_descripcion_sitios">{que_descubrir}</div>
+                                        </div> -->
+                    <img class="imagen_mapa" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/{rutaid}/{mapa}"/>
+                </div>
+            </div>
+
+            <!--leyenda del mapa-->
+            <div class="tarjeta_nueva tarjeta_full alto_tarjeta_leyenda">
+                <div class="titulo_tarjeta">
+                    <img class="ruta_icono" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/icon_leyenda.svg"/>
+
+                    <div class="tarjeta_subtitulo puntos_suspensivos left"><p>{lang_leyenda}</p></div>
+                </div>
+
+                <div class="caracteristicas_tarjeta_contenido">
+
+                    <div class="rutas_leyenda_datos">
+                        <div>
+                            <img class="ruta_icono_caracteristica" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/leyenda1.svg"/>
+                        </div>
+                        <div class="rutas_caracteristicas_datos_tipo">{lang_pista_tierra}</div>
+
+                    </div>
+
+                    <div class="rutas_leyenda_datos">
+                        <div>
+                            <img class="ruta_icono_caracteristica" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/leyenda2.svg"/>
+                        </div>
+                        <div class="rutas_caracteristicas_datos_tipo">{lang_sendero_tierra}</div>
+
+                    </div>
+
+                    <div class="rutas_leyenda_datos">
+                        <div>
+                            <img class="ruta_icono_caracteristica" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/leyenda3.svg"/>
+                        </div>
+                        <div class="rutas_caracteristicas_datos_tipo">{lang_ruta_principal}</div>
+
+                    </div>
+
+                    <div class="rutas_leyenda_datos">
+                        <div>
+                            <img class="ruta_icono_caracteristica" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/leyenda4.svg"/>
+                        </div>
+                        <div class="rutas_caracteristicas_datos_tipo">{lang_red_caminos}</div>
+
+                    </div>
+
+                    <div class="rutas_leyenda_datos">
+                        <div>
+                            <img class="ruta_icono_caracteristica" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/leyenda5.svg"/>
+                        </div>
+                        <div class="rutas_caracteristicas_datos_tipo">{lang_otros_caminos}</div>
+
+                    </div>
+
+                    <div class="rutas_leyenda_datos">
+                        <div>
+                            <img class="ruta_icono_caracteristica" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/leyenda6.svg"/>
+                        </div>
+                        <div class="rutas_caracteristicas_datos_tipo">{lang_degollada}</div>
+
+                    </div>
+
+                    <div class="rutas_leyenda_datos">
+                        <div>
+                            <img class="ruta_icono_caracteristica" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/leyenda7.svg"/>
+                        </div>
+                        <div class="rutas_caracteristicas_datos_tipo">{land_mirador}</div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- END BLOCK : mapa -->
+
+            <!-- END BLOCK : rutas_datos -->
+        </div>
+    </div>
+    <!-- rutas -->
+
+    <div class="clearAll"></div>
+
+</div>
+
+

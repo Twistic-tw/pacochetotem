@@ -1,0 +1,175 @@
+<div  id='farmaciasWrapper' class='closeWrapper  content_width'> <!-- header, titulo de la secion -->
+  <script type="text/javascript" src="js/farmacias.js"></script>
+    <div id='farmaciastitle' class='contentHeader'> <!-- header, titulo de la secion -->
+        {farmacias_title}
+    </div>
+
+   <div class="JSON_posicion_farmacia_cercanas displayNone" id="JSON_posicion_farmacia_cercanas"> {JSON_posicion_farmacia_cercanas}</div>
+   <div class="JSON_posicion_farmacia_guardias displayNone" id="JSON_posicion_farmacia_guardias"> {JSON_posicion_farmacia_guardias}</div> 
+
+
+    <div class='content tabs_ draw_border'>
+
+        <ul>
+            <li class="{cercana_display}"> <a class="toggle_farmacias_cercanas" href="#farmacias">{lang_farmacias_text}</a></li>
+            <li class="{guardia_display}"><a class="toggle_farmacias_guardias" href="#farmacias_guardia">{lang_farmacias_guardia_text}</a></li>
+        </ul>
+
+        <div id="farmacias" data-hotel-latitud="{hotel_latitud}" data-hotel-longitud="{hotel_longitud}" data-centro="{centro_id}" data-centro-cod-prov="{centro_cod_prov}">
+
+             <!--Esto es la parte de la izquierDA-->  
+            <div class="listado" id="listado_total">
+
+                <!-- START BLOCK : farmacia_listado_total_cercanas -->
+
+                <div id="farmacia_listado_total_{n_farmacia}" data-id="{n_farmacia}" data-qr="{qr}" data-farmacia-latitud="{farmacia_latitud}" data-farmacia-longitud="{farmacia_longitud}" class="farmacia_listado_cercanas farmacias farmacia_listado"> 
+                   
+                    <span class="direccion-izq">
+                        {farmacia_direccion}
+                    </span>
+
+                </div>
+
+                <div class="farmacia_descripcion">
+                </div>
+
+                <!-- END BLOCK : farmacia_listado_total_cercanas -->
+            </div>
+              <!-- fin DE Esto es la parte de la izquierDA-->  
+
+
+
+
+
+            <div class="fondo_verde"> 
+
+                <div id="detalle_total" class="contenido">
+
+                    <div class="info_direccion"> 
+                        <!--<img src="img/linea_b.png" border=0 alt="" height=3 width=1250 style="display:block;">	-->
+                    </div>
+                    <!--<div class="info_titular">
+                        {farmacia_titular} 
+                    </div>-->
+
+                    <div class="contenido_descripcion">
+                        
+                        <div class="wrapper_detalles icon-svg icon-coche"></div>
+
+                        <div class="contenedor_duracion_farmacias">
+                            <li class="car_total"> </li>
+                            <li class="car_duration"></li>
+                        </div>
+
+                        <div class="wrapper_detalles icon-svg icon-caminar"></div>
+                        
+                        <div class="contenedor_duracion_farmacias">
+                                <li class="walk_total"> </li>
+                                <li class="walk_duration"></li>
+                            
+                        </div>
+
+                        <!-- <span class="tlf">{telefono}</span> <img class="tlf_icono" src="../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/telefono.svg"> -->
+                        <div class="foto"> <img src="../farmacias/{centro_cod_prov}/" alt="" width="550" height="300" ></div> 	
+                    </div>
+
+
+                    <div class="qr" >
+                        <div class="qr_text">
+                            <strong><i>CÓDIGO QR</i></strong><br><br>
+                            {qr_mensaje}
+                        </div>
+                        <img src="../../../contenido_proyectos/vistaflor/centro_{centro_id}/farmacias_qr/{qr}" />
+
+                    </div>
+                </div>
+                <div id="map_canvas_total_cercanas" class="map_canvas">
+
+                </div>
+                <!--<iframe src="http://192.168.251.3/farmacias/"></iframe>-->
+            </div>
+
+
+        </div> <!-- fin farmacias -->
+
+        <!-- ************************************************ Guardias ******************************* -->
+
+        <div id="farmacias_guardia" class="displayNone">
+
+             <!--Esto es la parte de la izquierDA-->  
+            <div class="listado" id="listado_total">
+
+                <!-- START BLOCK : farmacia_listado_total_guardias -->
+
+                <div id="farmacia_listado_total_{n_farmacia}" data-id="{n_farmacia}" data-qr="{qr}" data-farmacia-latitud="{farmacia_latitud}" data-farmacia-longitud="{farmacia_longitud}" class="farmacia_listado_guardias farmacias farmacia_listado"> 
+                   
+                    <span class="direccion-izq">
+                        {farmacia_direccion}
+                    </span>
+
+                </div>
+
+                <div class="farmacia_descripcion">
+                </div>
+
+                <!-- END BLOCK : farmacia_listado_total_guardias -->
+            </div>
+              <!-- fin DE Esto es la parte de la izquierDA-->  
+
+
+
+            <div class="fondo_verde"> 
+
+                <div id="detalle_total" class="contenido">
+
+                    <div class="info_direccion"> </div>
+
+
+                    <div class="contenido_descripcion">
+                        
+                        <div class="wrapper_detalles icon-svg icon-coche"></div>
+
+                        <div class="contenedor_duracion_farmacias">
+                            <li class="car_total"> </li>
+                            <li class="car_duration"></li>
+                        </div>
+
+                        <div class="wrapper_detalles icon-svg icon-caminar"></div>
+                        
+                        <div class="contenedor_duracion_farmacias">
+                                <li class="walk_total"> </li>
+                                <li class="walk_duration"></li>
+                            
+                        </div>
+
+                        <!-- <span class="tlf">{telefono}</span> <img class="tlf_icono" src="../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/telefono.svg"> -->
+
+                        <div class="foto"> <img src="../farmacias/{centro_cod_prov}/" alt="" width="550" height="300" ></div>   
+                    </div>
+
+
+                    <div class="qr" >
+                        <div class="qr_text">
+                            <strong><i>CÓDIGO QR</i></strong><br><br>
+                            {qr_mensaje}
+                        </div>
+                        <img src="../../../contenido_proyectos/vistaflor/centro_{centro_id}/farmacias_qr/{qr}" />
+
+                    </div>
+                </div>
+                <div id="map_canvas_total_guardias" class="map_canvas"></div>
+
+            </div>
+
+
+        </div> <!-- fin farmacias -->
+
+
+        <div class="back buttonsLeft">
+            <span class="atrasIcon"></span>{lang_atras}
+        </div>
+
+    </div>
+</div>
+
+

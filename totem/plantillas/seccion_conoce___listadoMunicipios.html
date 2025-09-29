@@ -1,0 +1,29 @@
+
+<div id="conoce" class='formularioPaginasWrapper noTabsWrapper closeWrapper'>
+    <div id='conoceHeader' class='contentHeader'>
+        {conoce_title}
+    </div>
+    <div class='content draw_border'>
+        <div class=" padding10">
+            <div class="modal_time"></div>
+            <div class="ancho50 left">
+                <ul>
+                    <!-- START BLOCK : listado_municipios -->
+                    <li class="municipio_element" id="{id_municipio}">{nombre_municipio}</li>
+                    <!-- END BLOCK : listado_municipios -->
+                </ul>
+            </div>
+            <div class="ancho50 left">
+                <div id="map_municipio">
+                    <svg height="454" version="1.1" width="454" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative;">
+                </div>
+                <div id="objectActive" class="hidden"></div>
+            </div>
+            <div class='clearAll'></div>
+        </div>
+    </div>
+    
+    <div class="back buttonsLeft">
+        <span class="atrasIcon"></span> {lang_atras}
+    </div>
+</div>

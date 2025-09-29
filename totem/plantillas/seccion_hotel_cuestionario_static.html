@@ -1,0 +1,124 @@
+<div id='cuestionario' class='closeWrapper double_size content_width'>
+    <div id='cuestionarioHeader2'  class='contentHeader'>
+        {lang_title}
+    </div>
+
+    <div class='formularioPaginasWrapper'>
+
+        <div class=" content  ">
+            <form id='formulario' method='post' action='index.php?gestion=enviarFormularioHotel' class='relative formularioPaginas scroll_double_size '>	
+	
+
+
+                   <!-- START BLOCK : bloque_cuestionario -->
+                    <div id='medio' class='tarjeta' >
+
+                        <div class="categoria_cuestionario">
+
+                            <div> 
+                                <div class = "nombre_grupo_cuestionario">{nombre_bloque_cuestionario}</div>
+                                <img class="imagen_cuestionario" src="{bloque_imagen}">
+
+                            </div>
+
+                        </div>
+
+
+                        
+                        <div class="bloque_cuestionario_satisfaccion">
+                            <!-- START BLOCK : linea_cuestionario -->
+                            <div class="linea_cuestionario">
+                                <div class="pregunta_cuestionario">{linea_cuestionario}</div>
+
+                                <div class="rating_cuestionario">
+
+                                        <div class="valoracion_estrellas">
+
+                                            <div class="rating" id="estrellas_rating">
+
+                                                <!-- Se pone el valor por defecto a 0 para que aparezca en el POST la id de la pregunta y el valor (Ayudar a Estadisticas) -->
+                                                <input class="displayNone" type="radio" name="{numero_linea}" value="0" checked>
+                                                
+                                                <input class="hover-star" type="radio" name="{numero_linea}" onclick="toggle(this)" value="1" > 
+
+                                                <input class="hover-star" type="radio" name="{numero_linea}" onclick="toggle(this)" value="2" >
+
+                                                <input class="hover-star" type="radio" name="{numero_linea}" onclick="toggle(this)" value="3" >
+
+                                                <input class="hover-star" type="radio" name="{numero_linea}" onclick="toggle(this)" value="4" >
+
+                                                <input class="hover-star" type="radio" name="{numero_linea}" onclick="toggle(this)" value="5" >
+
+
+                                            </div>
+
+                                        </div>
+                                </div>
+
+                            </div>
+                            <!-- END BLOCK : linea_cuestionario -->
+
+                        <div class="linea_cuestionario {obervaciones_visible}">
+                            <div class="pregunta_cuestionario"> <div id="textArea" draggable="true" > <textarea rows="2" cols="40" class="key texto_cuestionario" name="{observaciones_id}"></textarea> </div> </div>
+                            <div class="rating_cuestionario2">
+                               {observaciones_nombre}
+                            </div>
+
+                        </div>
+
+                    </div>	
+                    
+
+                </div>
+
+                <div class="separador_tarjetas"></div>
+                <!-- END BLOCK : bloque_cuestionario -->
+
+                <input type='submit' value='{lang_enviar}' class='boton_derecha_cuestionario' >
+
+                <div class="mensaje_gracias_cuestionario">{lang_gracias}</div>
+                   
+        
+
+
+
+            
+       
+                <div class="sugerencias_contenido padding_left_30">
+
+
+                    <div class="width_50">
+
+                        <div class="tarjeta_sugerencias">
+                            <div class="localizador_sugerencias_titulo"><p>{lang_sugerencias}</p></div>
+                            <div class="contenido_sugerencia"><p>{texto_sugerencia}</p></div>
+                            <div class="area_texto_sugerencias" id="textArea"> 
+                                <textarea rows="6" class="key texarea_sugerencias" name="texto_sugerencia" id="texto_sugerencia"></textarea> 
+                            </div>
+                        </div>
+                    </div>
+
+                
+
+
+                    <div class="width_50">
+                        <div class="tarjeta_sugerencias_habitacion">
+                            <div class="localizador_sugerencias_titulo"><p>{lang_sugerencias_habitaciones}</p></div>
+                            <img src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/icon_sugerencia.svg">
+                            <div class="localizador_titulo">{lang_sugerencias_num_habitaciones}</div>
+                            <input type="text" class="localizador_input" name="num_habitacion"></input>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+            </form>
+
+            </div>
+
+        <div class="back buttonsLeft">
+            <span class="atrasIcon"></span> {lang_atras}
+        </div>
+    </div> <!-- cierro wrapper general -->
+</div> <!-- cierro cuestionario -->

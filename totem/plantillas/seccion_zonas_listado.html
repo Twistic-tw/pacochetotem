@@ -1,0 +1,113 @@
+
+<div class="closeWrapper full_screen listado_zonas_wrapper">
+    <div class="background_tiempo alineado_izquierda" style="background-image:url('../../../contenido_proyectos/vistaflor/_general/imagenes/{imagen-fondo}');">
+        <div class="imagen_logo_arriba_listado_zonas">
+            <img src="{url_base_hoteles}logo_cabecera_destinos_{idioma}.png">
+        </div>
+
+        <div class="menu_listado_zonas">
+            <div class="menu_tiempo_volver ">
+                <div class="menu_tiempo_volver_texto back">
+                    <div class="menu_tiempo_volver_transparencia">
+                        <img class="menu_tiempo_volver_icono" src="img/volver.svg"/>
+                        <div class="menu_tiempo_contenido_texto">{cerrar}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu_tiempo_contenido">
+
+                <div class="load_ajax_destino listados_zonas_wrapper sub-menu-elmt sin_margenes_derecha active" data-accion="getDestino_listadoPaises&zona=0">
+                    <div class=" menu_tiempo_contenido_transparencia active " >
+                        <img class="menu_zonas_contenido_icono" src="../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/general/icon_destinos.svg"/>
+                        <div class="menu_tiempo_contenido_texto">{info_label}</div>
+                    </div>
+                </div>
+
+                <!-- START BLOCK : zona --> 
+                <div class="load_ajax_destino listados_zonas_wrapper sub-menu-elmt imagenes_fondo sin_margenes_derecha js_destino_menu_click_{href}" data-accion="getDestino_listadoPaises&zona={href}" style="background-image:url('{url_base_hoteles}{imagen}');" >
+                    <div class=" menu_tiempo_contenido_transparencia "  >
+                      <div class="espacio_foto_menu_destinos"></div>
+                      <div class="menu_tiempo_contenido_texto padding_centrado_3">{nombre_zona}</div>
+                        
+                    </div>
+                </div>
+                <!-- END BLOCK : zona -->
+                
+            </div>
+        </div> 
+
+        <div id="destinos-wrapper">
+            <div class="texto_municipio">{selector_mapa}</div>   
+
+            <div class="full_contenido_listado_zona_wrapper">
+            
+                <img src="{url_base_hoteles}mapamundi(marcas).png" width="1080" height="565" usemap="#Map" />
+
+                <map name="Map" id="Map">
+
+                  <!--Coordenadas defininas por zonas-->
+
+    <!--               <area shape="poly" coords="451,220,464,201,474,191,476,186,500,184,501,229" href="marruecos" />
+                  <area class="load_ajax_destino" shape="poly" coords="598,161,569,176,605,199,639,175" href="turquia" />
+                  <area class="load_ajax_destino" shape="poly" coords="592,141,553,150,566,167,594,159" href="europa3" />
+                  <area class="load_ajax_destino" shape="poly" coords="508,104,489,144,532,159,540,125" href="europa2" />
+                  <area class="load_ajax_destino" shape="poly" coords="538,162,505,195,528,222,569,220,580,195" href="tunez" />
+                  <area class="load_ajax_destino" shape="poly" coords="673,362,625,445,736,461,761,369" href="africa" />
+                  <area class="load_ajax_destino" shape="poly" coords="199,220,251,312,335,292,318,198" href="carbe" />
+
+                  <area class="load_ajax_destino" shape="poly" coords="377,164,431,232,458,206,471,184,485,182,508,173,519,163,469,139" href="europa1" />
+                  <area class="load_ajax_destino" shape="poly" coords="88,197,193,220,232,281,242,306,173,353,116,362" href="pacifico" />
+     -->
+          <!-- START BLOCK : zona_mapa -->
+                    <area class="zona_mapa_click" id="{href}" shape="circle" coords="{coordenadas}"  />
+          <!-- END BLOCK : zona_mapa -->
+
+
+                </map>
+            
+            </div>
+      </div>
+
+
+<!-- ESTO ES UN OWL de selector de zonas
+  
+        <div class="contenedor_slider_zonas">
+            <div class="espera_datos_municipio"></div>
+
+            <div class="listado-wrapper">
+                 
+                    <div class="selecionar_municipio">
+                        <div class="texto_municipio">{selector}</div>                
+                    </div>
+
+
+                <div class="owl-carousel listado_wrapper">
+                        < START BLOCK : zona >
+                        <a class="load_ajax_destino" href='getDestino_listadoPaises&zona={href}'>
+                        <div class="zona_element flip_municipio " style="background-image:url('../../../contenido_proyectos/vistaflor/_general/{imagen}');">
+                          <div class=" menu_zonas_contenido_transparencia ">
+                            <div class="texto_slider_zona">{nombre_zona}</div>
+                          </div>
+                           
+                            <div class="carga_municipio"> <img src="../../../contenido_proyectos/vistaflor/_general/imagenes/carga_flat.gif" > </div>
+                        </div>
+                      </a>
+                        <END BLOCK : zona>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+ -->
+
+
+
+    </div>
+
+    <div id="wrapper-paises" class="wrapper-zonas-bg closeWrapper"><div class="cerrar_popup"></div><div class='contenido-listado'></div></div>
+    <div id="wrapper-hotel" class="wrapper-zonas-bg closeWrapper"><div class="cerrar_popup"></div><div class='contenido-listado'></div></div>
+    
+</div>

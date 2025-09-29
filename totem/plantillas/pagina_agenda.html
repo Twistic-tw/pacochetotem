@@ -1,0 +1,37 @@
+
+<div id="owl-agenda_pinero" class="owl-theme2">
+    <!-- START BLOCK : listado_dias -->
+
+        <div class="css_listado_dias_carrusel js_click_dia" id="js_agenda_dia{i}" data-fecha="{fecha}">
+            <div class="css_dias_carrusel_mes"> {mes}</div>
+            <div class="css_dias_carrusel_dia"> {dia_nombre}</div>
+            <div class="css_dias_carrusel_numero"> {dia}</div>
+        </div>
+
+    <!-- END BLOCK :  listado_dias -->
+
+</div><!-- Fin owl -->
+
+
+<div id='agenda' >    
+
+
+    <div id='agendaCalendario'>
+
+    </div>
+
+
+    <div id='agendaActividades'>
+        <div class="css_titulo_agenda"> {agenda_disponible} </div>
+        <ul></ul>
+
+        <div id="actividadesHotel" class='actividades content'>
+            <div class="displayNone fechasActividades ">{fechas_actividades_hotel}</div>
+            <ul class='actividadesList scroll'>
+                {lista_actividades_hotel}
+
+            </ul>
+        </div>
+
+    </div>
+</div>

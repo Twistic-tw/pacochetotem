@@ -1,0 +1,65 @@
+
+<!-- START BLOCK : observaciones -->
+Esto se incluye en el bloque debido de:
+<div class="full_contenido_wrapper"></div>
+<!-- END BLOCK : observaciones -->
+
+<!-- START BLOCK : titulo -->
+<div class="">
+    <h4>{title}</h4>
+</div>
+<!-- END BLOCK : titulo -->
+
+<!-- START BLOCK : card -->
+<div class="card {card_class}">
+    {card_content}
+</div>
+<!-- END BLOCK : card -->
+
+<!-- START BLOCK : blq_galeria -->
+<div class="container-isotope"  >
+<!-- START BLOCK : blq_foto -->
+    <div class="item {size_class}" id="{n_item}"><img src="timthumb.php?src={url}&h={h}&w={w}&zc=1"></div>
+<!-- END BLOCK : blq_foto -->
+</div>
+<!-- END BLOCK : blq_galeria -->
+
+<!-- START BLOCK : blq_galeria_full -->
+<div class="iosslider hidden">
+    <div class = 'slider'>
+    <!-- START BLOCK : blq_foto_full -->
+        <div class="item" id="{n_item}"> <img src="timthumb.php?src={url}&h={h}&w={w}&zc=2&cc=222222"> </div>
+    <!-- END BLOCK : blq_foto_full -->
+    </div>
+    <div class='prev'></div>
+    <div class='next'></div>
+    <div class='gallery_close'></div>
+    <div class='gallery_play'></div>
+</div>
+<!-- END BLOCK : blq_galeria_full -->
+
+
+<!-- START BLOCK : rutas -->
+<div class="tarjeta_nueva destacada {tipo_que_hacer}">
+    <div class="titulo_tarjeta puntos_suspensivos"><p>{tipo}</p></div>
+    <span href="{href}" class="load_municipio card_ruta">
+        <div class="tarjeta_cuadro">
+            <img class="{icono_dentro_quehacer}" src="{imagen}">
+        </div>
+
+        <div class="tarjeta_contenido">
+            <!--  <div class="tarjeta_tipo puntos_suspensivos">{nombre_categoria}</div> -->
+            <div class="tarjeta_titulo puntos_suspensivos">{nombre}</div>
+            <div class="tarjeta_info">
+                <div class="puntos_suspensivos">{direccion}</div>
+                <div class="tarjeta_descripcion_sitios">{descripcion}</div>
+                <!--  <div class="puntos_suspensivos texto_web_quehacer">{itinerario}</div> -->
+            </div>
+        </div>       
+
+        <div class="tarjeta_masinfo">{info}</div>
+    </span>
+</div>
+
+
+ <!-- END BLOCK : rutas -->

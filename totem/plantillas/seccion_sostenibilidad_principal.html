@@ -1,0 +1,88 @@
+
+<div class="closeWrapper full_screen listado_zonas_wrapper">
+    <div class="background_tiempo alineado_izquierda" style="background-image:url('{url_base}fondo_cesped.png');">
+        <div class="imagen_logo_arriba_listado_zonas">
+
+            {video_sensimar}
+            <img src="{url_base}logo_cabecera_sensimar_{idioma}.png">
+            {video_sensimar2}
+
+            {video_riu}
+            <img src="{url_base}logo_cabecera_sosteni_{idioma}.png">
+            {video_riu2}
+
+        </div>
+
+        <div class="menu_listado_zonas">
+            <div class="menu_tiempo_volver ">
+                <div class="menu_tiempo_volver_texto back js_back_lugares_destroy">
+                    <div class="menu_tiempo_volver_transparencia">
+                        <img class="menu_tiempo_volver_icono" src="img/volver.svg"/>
+                        <div class="menu_tiempo_contenido_texto">{cerrar}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu_tiempo_contenido">
+
+                  <div class="load_ajax_sostenibilidad  sub-menu-elmt sin_margenes_derecha active" data-accion="getSostenibilidad_info&tipo=4"style="background-image:url('{url_base}green_human_fondo.png');">
+                    <div class=" menu_tiempo_contenido_transparencia active " >
+                        <img class="menu_zonas_contenido_icono" src="{url_base}icon_sostenibilidad.svg"/>
+                        <div class="menu_tiempo_contenido_texto padding_laterales_3">{green_human_label}</div>
+                    </div>
+                </div>
+
+
+                <div class="load_ajax_sostenibilidad  sub-menu-elmt sin_margenes_derecha" data-accion="getSostenibilidad_info&tipo=1"style="background-image:url('{url_base}medio_ambiente_fondo.png');">
+                    <div class=" menu_tiempo_contenido_transparencia " >
+                        <img class="menu_zonas_contenido_icono" src="{url_base}residuos.svg"/>
+                        <div class="menu_tiempo_contenido_texto padding_laterales_3">{medio_ambiente_label}</div>
+                    </div>
+                </div>
+
+               
+                <div class=" load_ajax_sostenibilidad sub-menu-elmt sin_margenes_derecha " data-accion="getSostenibilidad_info&tipo=2" style="background-image:url('{url_base}compromiso_fondo.png');">
+                    <div class=" menu_tiempo_contenido_transparencia  " >
+                        <img class="menu_zonas_contenido_icono" src="{url_base}accion_social.svg"/>
+                        <div class="menu_tiempo_contenido_texto padding_laterales_3">{compromiso_label}</div>
+                    </div>
+                </div>
+                
+
+                <div class="load_ajax_sostenibilidad  sub-menu-elmt sin_margenes_derecha " data-accion="getSostenibilidad_info&tipo=3" style="background-image:url('{url_base}sostenibilidad_fondo.png');">
+                    <div class=" menu_tiempo_contenido_transparencia  " >
+                        <img class="menu_zonas_contenido_icono" src="{url_base}icon_sostenibilidad2.svg"/>
+                        <div class="menu_tiempo_contenido_texto padding_laterales_3 texto_sostenibilidad_grande">{sostenibilidad_label}</div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div> 
+
+        <div id="sostenibilidad-wrapper">
+
+            <div class="full_contenido_listado_zona_wrapper width_96">
+
+                    <div class="cuadro_video_sostenibilidad">
+                        <video autoplay loop>
+                                {video_sensimar}
+                                    <source src="{url_base}sensimar_{idioma}.webm" type="video/webm">
+                                {video_sensimar2}
+
+                                {video_riu}
+                                    <source src="{url_base}green_human_{idioma}.webm" type="video/webm">
+                                {video_riu2}
+
+                        </video>
+
+                    </div>
+                   <!-- Aqui va el video -->
+
+            </div>
+      </div>
+
+
+    </div>
+    
+</div>

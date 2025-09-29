@@ -1,0 +1,65 @@
+<div id='informacionWrapper_infoGeneral' class="noTabsWrapper closeWrapper  content_width">
+    <div id='informacionTitle_infoGeneral' class='contentHeader'>
+        {title}
+    </div>
+
+    <div class='content'> 
+        <div class='paddingLeftRight10 scroll'>
+            
+            <div id="compras">
+                
+                <!-- START BLOCK : comercio_superdestacado -->
+                <div class="comercio comercio_destacado"> 
+                    <a href="getComercioDetail&comercioId={id}" class="loadComercio">
+                        <div class="destacado-logo {extra_class}">
+                            <!--<img src="../../../contenido_proyectos/vistaflor/_general/iconos/logo-compras.jpg" />-->
+                            <!-- START BLOCK : logo -->
+                            <img src="{comercio_logo}" />
+                            <!-- END BLOCK : logo -->
+                        </div>
+                        <div class="destacado-informacion setBgColor">
+                            <div class="nombre">{comercio_nombre}<br /></div>
+                            <div class="direccion">{comercio_direccion}</div>
+                            <div class="horario"><img src="../../../contenido_proyectos/vistaflor/_general/iconos/icon-hora.png" />{comercio_horario}</div>
+                            <div class="telefono"><img src="../../../contenido_proyectos/vistaflor/_general/iconos/icon-tlf.png" />{comercio_telefono}</div>
+                            <div class="web"><img src="../../../contenido_proyectos/vistaflor/_general/iconos/icon-web.png"/>{comercio_url}</div>
+                            <span class="masInfoWrapper"><span class="masInfo">+</span> {lang_info}</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- END BLOCK : comercio_superdestacado -->
+                
+                <!-- START BLOCK : comercio_destacado -->
+                <div class="comercio comercio_destacado"> 
+                    <div class="destacado-logo {extra_class}">
+                        <!-- START BLOCK : logo2 -->
+                        <img src="{comercio_logo}" />
+                        <!-- END BLOCK : logo2 -->
+                    </div>
+                    <div class="destacado-informacion setBgColor">
+                        <div class="nombre">{comercio_nombre}<br /></div>
+                        <div class="direccion">{comercio_direccion}</div>
+                        <div class="horario"><img src="../../../contenido_proyectos/vistaflor/_general/iconos/icon-hora.png" />{comercio_horario}</div>
+                        <div class="telefono"><img src="../../../contenido_proyectos/vistaflor/_general/iconos/icon-tlf.png" />{comercio_telefono}</div>
+                        <div class="web"><img src="../../../contenido_proyectos/vistaflor/_general/iconos/icon-web.png"/>{comercio_url}</div>
+                    </div>
+                </div>
+                <!-- END BLOCK : comercio_destacado -->
+                
+                <!-- START BLOCK : comercio -->
+                <div class="comercio comercio_normal "> 
+                    <div class='comercio_content flip'>
+                        <div class="nombre ">{comercio_nombre} <span class="masInfoWrapper"><span class="masInfo">+</span> {lang_info}</span></div>
+                        <div class="direccion displayNone">{comercio_direccion}</div>
+                    </div>
+                </div>
+                <!-- END BLOCK : comercio -->
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="back buttonsLeft">
+        <span class="atrasIcon"></span> {lang_atras}
+    </div>
+</div>

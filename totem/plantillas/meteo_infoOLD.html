@@ -1,0 +1,61 @@
+
+<!--
+<div id="meteoInfo_headerWrapper">
+    <div id='meteoInfo_dia'></div>
+    <div id="meteoInfo_isla">{meteo_isla}</div>
+    <div id="meteoInfo_municipio">{meteo_municipio}</div>
+</div>-->
+
+<div id="meteoInfo_resumenWrapper">
+    <div class="meteoInfo_diaActual">
+        {fecha_meteo}
+    </div>
+    
+    <!-- START BLOCK : meteoInfo_resumen -->
+    <div class="meteoInfo_resumen">
+        <div class="resumen_iconNubosidad">
+            <img src="{resumen_iconNubosidadSrc}">
+        </div>
+        <div class="resumen_temperatura">
+            <div class="">{resumen_dia}</div>
+            <div class="resumen_temperaturaValue">
+                <span class="temperatura">{resumen_temperatura}</span>
+                <sup class="sup x-smallEm">ºC</sup>
+            </div>
+        </div>
+        <div class="resumen_vientoHumedad">
+            {lang_viento}: <span class="viento">{resumen_viento}</span> km/h<br>
+            {lang_humedad}: <span class="humedad">{resumen_humedad}</span> %
+        </div>
+    </div>    
+    <!-- END BLOCK : meteoInfo_resumen -->
+</div>
+
+<div id="meteoInfo_char">
+    
+</div>
+<div id="meteoInfo_charValues" class="displayNone">{meteoInfo_charValues}</div>
+<!--<div>
+    <div class="grafica_dia">{lang_hoy}</div>
+    <div class="grafica_dia">{lang_mañana}</div>
+    
+</div>-->
+
+<div id="meteoInfo_estimacionWrapper">
+
+    <!-- START BLOCK : meteoInfo_estimacionDia -->
+    <div class="meteoInfo_estimacionTemp">
+        <span class='fechaTime'></span> (<strong><span class='temps'>{meteoInfo_estimacionTempMax} - {meteoInfo_estimacionTempMin}</span> ºC</strong>)
+    </div>
+    <!-- END BLOCK : meteoInfo_estimacionDia -->
+    
+    <!-- START BLOCK : meteoInfo_estimacion -->
+    <div class="meteoInfo_estimacion">
+        <div class="meteoInfo_estimacionImgWrapper">
+            <img src="{meteoInfo_estimacionImgSrc}">
+        </div>
+        <div class='time'></div>
+    </div> <!-- los cuatros iconos de tempraturas de los dias siguientes -->
+    <!-- END BLOCK : meteoInfo_estimacion -->
+    
+</div>

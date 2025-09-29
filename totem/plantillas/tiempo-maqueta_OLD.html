@@ -1,0 +1,219 @@
+
+<div class="closeWrapper full_screen">
+
+<div class="background_tiempo" style="background-image:url('{imagen-fondo}');">
+
+  <div class="contenedor_tiempo">
+
+<!-- <div class="parte_arriba_error "> -->
+    <div class="parte_arriba ">
+        <div class="tiempo_general">
+               
+               <div class="icono_tiempo_general">
+                <img src="{hoy_icono}">
+               </div>
+
+                <div class="valor_tiempo_general {displayNone} ">
+                <h1>{hoy_maxima}&#176;</h1><h2>/{hoy_minima}&#176;</h2>
+               </div>
+                
+                <div class="texto_tiempo_general">
+                  <!-- <h1>partly cloudy X <span class="no_negrita">h: </span>X&#176; <span class="no_negrita">t: </span>X&#176;</h1> -->
+                  <h1 class='{error_conexion_texto}'>{descripcion_tiempo}<h1>
+
+                  <h2> 
+                    <img class="img_texto_tiempo_general {displayNone}" src="../../../contenido_proyectos/vistaflor/_general/tiempo/icono/HUMEDAD.svg"> <span class="text_near_icono {displayNone}">{humedad}%</span> 
+                    <img class="img_texto_tiempo_general {displayNone}" src="../../../contenido_proyectos/vistaflor/_general/tiempo/icono/VIENTO.svg"> <span class="text_near_icono {displayNone}">{viento_vel}Km/h</span>
+                    <img class="img_texto_tiempo_general {displayNone}" src="../../../contenido_proyectos/vistaflor/_general/tiempo/icono/DIRECCION.svg"> <span class="text_near_icono">{viento_dir}</span>
+                  </h2>
+                  <h3>{municipio}</h3>
+                  <h3> <span class="no_negrita">{fecha}</span></h3>
+
+               </div>
+        </div>
+<!--     </div> -->
+
+  </div>
+
+    <div class="parte_abajo {displayNone}">
+
+  <div class="dias_semana">
+
+    <!-- Mañana -->
+    <div class="dia_actual">
+
+      <!-- Franja Horaria vertical -->
+      <div class="franja_horaria_vertical">
+        <div class="franja_vertical_nombre">{titulo_vertical_12}</div>
+        <div class="franja_vertical_imagen">
+          <img src="{icono12}"/>
+        </div>
+        <div class="franja_vertical_grados">          
+          <div class="franja_vertical_grados_maxima">{hoy12_maxima}&#176;C</div>
+          <!-- <div class="franja_vertical_grados_minimo">XºC</div> -->
+        </div>
+      </div>
+      <!-- Fin Franja Horaria vertical -->
+
+  <!-- Franja Horaria vertical -->
+      <div class="franja_horaria_vertical">
+        <div class="franja_vertical_nombre">{titulo_vertical_18}</div>
+        <div class="franja_vertical_imagen">
+          <img src="{icono18}"/>
+        </div>
+        <div class="franja_vertical_grados">
+          <div class="franja_vertical_grados_maxima">{hoy18_maxima}&#176;C</div>
+          <!-- <div class="franja_vertical_grados_minimo">XºC</div> -->
+        </div>
+      </div>
+      <!-- Fin Franja Horaria vertical -->
+
+
+      <!-- Franja Horaria vertical -->
+      <div class="franja_horaria_vertical">
+        <div class="franja_vertical_nombre">{titulo_vertical_24}</div>
+        <div class="franja_vertical_imagen">
+          <img src="{icono24}"/>
+        </div>
+        <div class="franja_vertical_grados">
+          <div class="franja_vertical_grados_maxima">{hoy24_maxima}&#176;C</div>
+          <!-- <div class="franja_vertical_grados_minimo">XºC</div> -->
+        </div>
+      </div>
+      <!-- Fin Franja Horaria vertical -->
+  </div>
+
+ <div class="dia_siguientes">
+
+      <div class="franja_horaria_horizontal_2">
+        <div class="franja_horizontal_nombre_2">{tomorrow_day}</div>
+        <div class="franja_horizontal_imagen_2">
+          <img src="{tomorrow_icono}"/>
+        </div>
+        <div class="franja_horizontal_grados_2">
+          <div class="franja_horizontal_grados_maxima_2">{tomorrow_maxima}&#176;C</div>
+          <div class="franja_horizontal_grados_minimo_2">{tomorrow_minima}&#176;C</div>
+        </div>
+      </div>
+
+      <div class="franja_horaria_horizontal_2">
+        <div class="franja_horizontal_nombre_2">{pasado_day}</div>
+        <div class="franja_horizontal_imagen_2">
+          <img src="{pasado_icono}"/>
+        </div>
+        <div class="franja_horizontal_grados_2">
+          <div class="franja_horizontal_grados_maxima_2">{pasado_maxima}&#176;C</div>
+          <div class="franja_horizontal_grados_minimo_2">{pasado_minima}&#176;C</div>
+        </div>
+      </div>
+
+     <!-- bloque de 3 dias
+      <div class="franja_horaria_horizontal">
+        <div class="franja_horizontal_nombre">{tomorrow_day}</div>
+        <div class="franja_horizontal_imagen">
+          <img src="{tomorrow_icono}"/>
+        </div>
+        <div class="franja_horizontal_grados">
+          <div class="franja_horizontal_grados_maxima">{tomorrow_maxima}&#176;C</div>
+          <div class="franja_horizontal_grados_minimo">{tomorrow_minima}&#176;C</div>
+        </div>
+      </div>
+   
+      <div class="franja_horaria_horizontal">
+        <div class="franja_horizontal_nombre">{pasado_day}</div>
+        <div class="franja_horizontal_imagen">
+          <img src="{pasado_icono}"/>
+        </div>
+        <div class="franja_horizontal_grados">
+          <div class="franja_horizontal_grados_maxima">{pasado_maxima}&#176;C</div>
+          <div class="franja_horizontal_grados_minimo">{pasado_minima}&#176;C</div>
+        </div>
+      </div>
+     
+      <div class="franja_horaria_horizontal">
+        <div class="franja_horizontal_nombre">{pasado2_day}</div>
+        <div class="franja_horizontal_imagen">
+          <img src="../../../contenido_proyectos/vistaflor/_general/tiempo/icono/despejado.svg"/>
+        </div>
+        <div class="franja_horizontal_grados">
+          <div class="franja_horizontal_grados_maxima">X&#176;C</div>
+          <div class="franja_horizontal_grados_minimo">X&#176;C</div>
+        </div>
+      </div>
+       -->
+  </div>
+
+</div>
+
+
+  </div>
+
+  </div>
+
+    <div class="sin_conexion">
+    <div class="sin_conexion_texto">Sin conexion</div>
+  </div>
+
+<div class="contenedor_slider">
+
+    <div class="espera_datos_municipio"></div>
+
+  <div class="borde_separador_abajo"></div>
+
+<div id="accordion" class="acordeon_tiempo">
+  <h3>  <div class="selecionar_municipio">
+    <div class="texto_municipio">{selector}</div>
+  </div>
+</h3>
+
+
+  <div id="owl-example" class="owl-carousel">
+    <!-- START BLOCK : listado_municipios -->
+   
+    <div> 
+
+      <!-- START BLOCK : b0 -->
+        <div class="slider_tiempo_municipio">
+          <div class="texto_slider"><a class='load_municipio' href="index.php?ajax=getMeteoInfo&municipio={id_municipio}">{nombre_municipio}</a>
+         
+           <div class="carga_municipio"> <img src="../../../contenido_proyectos/vistaflor/_general/imagenes/carga_flat.gif" > </div>
+          </div>
+
+           
+           
+        </div>
+      <!-- END BLOCK : b0 -->
+      
+      <!-- START BLOCK : b1 -->
+          <div class="slider_tiempo_municipio_2">
+            <div class="texto_slider"><a class='load_municipio' href="index.php?ajax=getMeteoInfo&municipio={id_municipio}">{nombre_municipio}</a>
+            
+            <div class="carga_municipio_2"> <img src="../../../contenido_proyectos/vistaflor/_general/imagenes/carga_flat.gif" > </div>
+          </div>
+
+           
+        </div>
+      <!-- END BLOCK : b1 -->
+
+     </div>
+
+    <!-- END BLOCK : listado_municipios -->
+
+  </div>
+
+
+  </div><!-- Fin slider -->
+
+</div><!-- Fin acordion -->
+
+  <div class="borde_separador_abajo_2"></div>
+      <div class="back boton_atras_meteo">
+         {cerrar}
+    </div>
+  </div> <!-- Fin contenedor-->
+
+
+
+
+
+</div>

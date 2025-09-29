@@ -1,0 +1,245 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+
+body {
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+    font-family: OpenSans !important;
+    font-size: 25px !important;
+}
+
+
+#videos {
+    float: left;
+    width: 1428px;
+    height: 804px;
+}
+
+#videos video {
+    position: absolute;
+    width: 1428px;
+    height: 804px;
+    z-index: 1;
+    transition: 2s all;
+}
+
+.videoDestacado {
+    width: 1920px !important;
+    height: 1080px !important;
+    z-index: 999999 !important;
+
+}
+
+#fotos {
+    float: left;
+    width: 491px;
+    height: 804px;
+}
+
+#logo {
+    width: 480px;
+    float: left;
+    background-color: white;
+    height: 276px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    margin: auto;
+    width: 70%;
+}
+
+#animacion {
+    width: 948px;
+    float: left;
+    background-color: #97bf0d;
+    height: 276px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#animacion_icono img {
+    width: 180px;
+}
+
+.programa_animacion {
+    width: 76%;
+    margin-left: 1%;
+    display: none;
+
+}
+
+#contenedorIdiomas {
+    margin-top: 2%;
+}
+
+.texto_animacion, .texto_normas {
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#normas {
+    width: 948px;
+    float: left;
+    background-color: #97bf0d;
+    height: 276px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tiempo {
+    float: left;
+    height: 276px;
+    width: 491px;
+    background-color: #f3ffc9;
+
+}
+
+.divImagenTiempo {
+    text-align: center;
+}
+
+.divImagenTiempo img {
+    width: 15%;
+    margin-top: 7%;
+}
+
+.texto_tiempo {
+    color: #717075;
+    text-align: center;
+}
+
+.texto_valores_tiempo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #717075;
+    text-align: center;
+
+}
+
+.texto_tiempo strong {
+    font-size: 150%;
+}
+
+.slider {
+        width: 491px;
+        height: 804px;
+        display: none;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+}
+
+.css_imagen_cartel{
+    height: 91.3% !important;
+}
+
+#infoShow {
+    background-color: #97bf0d;
+    position: absolute;
+    bottom: 0;
+    width: 491px;
+    height: 50px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    padding: 2%;
+    text-align: center;
+}
+
+#nombreShow {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*footer tiempo*/
+.widget-right--brown {
+
+    background-image: -webkit-linear-gradient(top, #feb020, #ffd05c) !important;
+    background-image: linear-gradient(to bottom, #667e814d, #23ff3d) !important;
+
+}
+
+/*Dimensiones Tiempo*/
+.weather-right--type1:first-of-type {
+    width: 490px !important;
+    min-height: 276px !important;
+
+}
+
+.weather-right__temperature {
+    color: #97bf0d !important;
+    text-align: center !important;
+    margin: auto !important;
+}
+
+.css_fecha_animacion{
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+/*Etiquetas Videos*/
+
+#etiqueta{
+    position: absolute;
+    z-index: 999;
+    color: white;
+    background-color: #97bf0d;
+    padding: 14px;
+    width: 428px;
+    height: 71px;
+    top: 625px;
+    right: 492px;
+    display: flex;
+    align-items: center;
+    line-height: 28px;
+}
+
+#etq_izq{
+    float:left;
+    border-right: 2px solid white;
+    padding-right: 20px;
+    text-align: center;
+    width: 50%;
+    font-size: 25px;
+}
+
+#etq_izq h3{
+    text-transform: uppercase;
+}
+
+#etq_der{
+    float:left;
+    padding: 15px;
+    width: 50%;
+}
+
+#etq_der p {
+    text-align: center;
+}
+

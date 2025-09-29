@@ -1,0 +1,62 @@
+<div id='cuestionario'>
+    <div id='cuestionarioHeader2'  class='contentHeader'>
+        Cuestionario de Calidad
+    </div>
+
+    <div class='formularioPaginasWrapper'>
+        <ul id="cuestionario-nav" class='formularioPaginas_nav'>
+            <!-- START BLOCK : pestanas -->
+            <li><a href='#cuest{n_id}'>{n_pregunta}</a></li>
+            <!-- END BLOCK : pestanas -->
+        </ul>
+        
+        <form id='formulario' method='post' action='index.php?gestion=enviarFormularioHotel&id_cuestionario={id_form}' class='clearAll formularioPaginas content'>
+        
+            <!-- START BLOCK : pregunta0 -->
+            <div id="cuest{n_id}" class="importante colorBg2">
+                <div id='medio' class='centro tablas scroll'>0
+                {contenido}
+                </div>                
+            </div>
+            <!-- END BLOCK : pregunta0 -->
+            
+            <!-- START BLOCK : pregunta1 -->
+            <div id="cuest{n_id}" class="importante colorBg2">
+                <div id='medio' class='centro tablas scroll'>1
+                </div>
+            </div>
+            <!-- END BLOCK : pregunta1 -->
+            
+            <!-- START BLOCK : pregunta2 -->
+            <div id="cuest{n_id}" class="importante colorBg2">
+                <div id='medio' class='centro tablas scroll'>2
+                </div>
+            </div>
+            <!-- END BLOCK : pregunta2 -->
+            
+            <!-- START BLOCK : pregunta3 -->
+            <div id="cuest{n_id}" class="importante colorBg2">
+                <div id='medio' class='centro tablas scroll'>3
+                </div>
+            </div>
+            <!-- END BLOCK : pregunta3 -->
+            
+            <!-- START BLOCK : pregunta4 -->
+            <div id="cuest{n_id}" class="importante colorBg2">
+                <div id='medio' class='centro tablas scroll'>4
+                </div>
+            </div>
+            <!-- END BLOCK : pregunta4 -->
+            
+            <!-- START BLOCK : pregunta5 -->
+            <div id="cuest{n_id}" class="importante colorBg2">
+                <div id='medio' class='centro tablas scroll'>5
+                </div>
+            </div>
+            <!-- END BLOCK : pregunta5 -->
+        
+            <input type='submit' value='Enviar' class='buttons' >
+        </form>
+        
+    </div> <!-- cierro wrapper general -->
+</div> <!-- cierro cuestionario -->

@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<script type="text/javascript" src="../js/plugins/jquery-1.10.1.min.js"></script>
+
+        <script src="../js/plugins/raphael-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/vector-gc.js" type="text/javascript" charset="utf-8"></script>
+<!--<link type="text/css" rel="stylesheet" href="css/fonts/roboto.css">
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <link type='text/css' rel='stylesheet' href="css/ui-lightness/jquery-ui-1.10.3.custom.css">
+        <link type='text/css' rel="stylesheet" href="css/keyboard.css">
+        
+        <link type="text/css" rel="stylesheet" href="css/custom_style.css">
+        <link type='text/css' rel='stylesheet' href="css/agenda.css">
+        <link type='text/css' rel='stylesheet' href="css/checkin.css">
+        <link type='text/css' rel='stylesheet' href="css/cuestionario.css">
+        <link rel="stylesheet" href="../administracion/css/plugins/font_style/font_style.css" />-->
+<style>
+
+#municipio{
+	width:1080px;
+	height:1200px;
+	background-color: #585858;
+}
+#municipio-nombre{
+	background:url('../img/municipio/fondo-nombre-municipio.png') no-repeat scroll 0 0 transparent;
+	height:127px;
+	width:484px;
+	padding-top: 20px;
+	padding-left: 30px;
+	font-size:2em;
+	color:white;
+	float:left;
+}
+#municipio-seccion{
+	color:white;
+	float:right;
+	margin-top: 110px;
+	margin-right:20px;
+	font-size:1.5em;
+}
+#municipio-superior{
+	height:530px;
+	width:1040px;
+	float:left;
+	margin-left:20px;
+	/*box-shadow: 7px 5px 18px #000000;*/
+	position:relative;
+	z-index:2;
+	
+}
+#municipio-superior-cabecera{
+	background:url('../img/municipio/anilla.png') repeat-x scroll 0 0 transparent;
+	height:50px;
+	z-index:2;
+	position:relative;
+}
+#municipio-superior-contenido{
+	background-color: #e1e1e1;
+	width:100%;
+	height:480px;
+	box-shadow:11px 6px 22px #000000;
+	z-index:1;
+	
+}
+
+#municipio-inferior{
+	height:500px;
+	width:1040px;
+	margin-left:20px;
+	background-color: #333;
+	float:left;
+	position:relative;
+	z-index:0;
+}
+#municipio-pestanas-secciones {
+	margin-left: 20%;
+	text-align:center;
+	
+		
+}
+#municipio-pestanas-secciones ul{
+	list-style:none;
+	margin:0 auto 0 auto;
+	
+		
+}
+#municipio-pestanas-secciones ul li{
+	float:left;
+	margin:0 0 0 -5px;
+	
+	/*padding:10px 20px 10px 20px;*/
+	border-radius: 0 0 5px 5px;
+	color:white;
+	box-shadow: 10px 9px 18px #000000;
+	position:relative;
+	z-index:1;
+}
+#municipio-pestanas-secciones ul .li-1{
+	margin:0 0 0 -5px;
+	padding:10px 20px;
+	background-color:#b6c941;
+}
+#municipio-pestanas-secciones ul .li-2{
+	padding:8px 20px;
+	background-color:#dc4711;
+}
+#municipio-pestanas-secciones ul .li-3{
+	padding:15px 20px;
+	background-color:#6fc5fd;
+}
+#municipio-pestanas-secciones ul .li-4{
+	padding:12px 20px;
+	background-color:#da00f9;
+	font-weight:bold;
+}
+#municipio-pestanas-secciones ul .li-5{
+	padding:14px 20px;
+	background-color:#df912f;
+}
+#municipio-pestanas-secciones ul .li-6{
+	padding:10px 20px;
+	background-color:#4674b5;
+}
+#municipio-fotos {
+     float: left;
+	 margin-left:10px;
+	 width:550px;
+}
+#municipio-contenido-fotos {
+     float: left;
+	 margin-top:10px;
+	 margin-left:10px;
+	 width:1000px;
+}
+.contenedor-imagen-galeria-superior{
+	width:150px;
+	height: 190px;
+	background-color:white;
+	padding: 12px 12px 0px 12px;
+	margin-left: 60px;
+	margin-bottom: -10px;
+	margin-top: 20px;
+	float:left;
+	box-shadow: 10px 9px 18px #000000;
+}
+.imagen-galeria-superior{
+     /*transform: rotate(20deg);*/
+	 overflow: hidden;
+	 width:190px;
+}
+
+.imagen-galeria-superior img{
+     /*transform: rotate(20deg);*/
+	 margin: 0 0 0 -50px;
+}
+
+#municipio-contenido{
+	margin-left:20px;
+}
+.contenedor-imagen-galeria-inferior{
+	width:123px;
+	height: 170px;
+	background-color:white;
+	padding: 12px 12px 0px 12px;
+	margin-left: 10px;
+	margin-bottom: -10px;
+	margin-top: 20px;
+	float:left;
+	box-shadow: 10px 9px 18px #000000;
+}
+.imagen-galeria-inferior{
+     /*transform: rotate(20deg);*/
+	 overflow: hidden;
+	 width:190px;
+}
+
+.imagen-galeria-inferior img{
+     /*transform: rotate(20deg);*/
+	 margin: 0 0 0 -50px;
+}
+#imagen-grande{
+	position:absolute;
+	z-index:1000;
+	background-color:rgba(0, 0, 0, 0.6);
+	padding-left:25px;
+	padding-top: 50px;
+	width:1055px;
+	height:1200px;
+	display: none;
+}
+#map_municipio{
+	float: right;
+}
+</style>
+<script>
+$(document).ready(function(e) {
+	$("body").click(function() {
+		if ( $('#imagen-grande').is(':visible') ){
+			$('#imagen-grande').hide();
+		}
+	});
+    $(".imagen-galeria").each(function (index) {
+		grados = 1 + Math.floor(Math.random() * 20);
+		positivo = 1 + Math.floor(Math.random() * 2);
+		if (positivo>1)
+			grados= -1*grados;
+		$(this).css('transform' , 'rotate('+ grados +'deg)');
+	});
+	$(".imagen-galeria").click(function(event) {
+		event.stopPropagation();
+		$('#imagen-grande').show();
+		
+		imagen = $(this).find('img');
+		source= imagen.attr("src");
+		imagen= '<img src="' + source + '" width="1024px" />';
+		
+		$('#imagen-grande').html(imagen);
+		
+
+	});
+});
+	
+	
+</script>
+</head>
+
+<body>
+<div id="municipio">
+	<div id="imagen-grande"></div>
+	<div id="municipio-nombre"> San Bartolomé de Tirajana</div>
+    <div id="municipio-seccion"></div>
+    
+    <div id="municipio-superior">
+    	<div id="municipio-superior-cabecera"></div>
+        <div id="municipio-superior-contenido">
+            <div id="municipio-fotos">
+            	<div class="contenedor-imagen-galeria-superior imagen-galeria"><div class="imagen-galeria-superior"><img src="../img/mapas_imagenes_isla/GranCanaria_cairasco_08.jpg" width="200px" /></div></div>
+                <div class="contenedor-imagen-galeria-superior imagen-galeria"><div class="imagen-galeria-superior"><img src="../img/mapas_imagenes_isla/GranCanaria_cenobio_valeron_01.jpg" width="200px" /></div></div>
+                <div class="contenedor-imagen-galeria-superior imagen-galeria"><div class="imagen-galeria-superior"><img src="../img/mapas_imagenes_isla/GranCanaria_dunasmaspalomas_11.jpg" width="200px" /></div></div>
+                <div class="contenedor-imagen-galeria-superior imagen-galeria"><div class="imagen-galeria-superior"><img src="../img/mapas_imagenes_isla/GranCanaria_las_canteras_01.jpg" width="200px" /></div></div>
+            </div>
+            <div id="map_municipio"></div>
+            <div id="municipio-como-llegar"></div>
+        </div>
+        
+    </div>
+   
+    <div id="municipio-inferior">
+         <div id="municipio-pestanas-secciones">
+        	<ul>
+            	<li class="li-1">Inicio</li>
+                <li class="li-2">Qué hacer</li>
+                <li class="li-3">Fiestas</li>
+                <li class="li-4">Fotos</li>
+                <li class="li-5">Cultura</li>
+                <li class="li-6">Gastronomía</li>
+            </ul>
+        </div>
+        <div id="municipio-contenido">
+            <div id="municipio-contenido-fotos">
+                    <div class="contenedor-imagen-galeria-inferior imagen-galeria"><div class="imagen-galeria-inferior"><img src="../img/mapas_imagenes_isla/GranCanaria_cairasco_08.jpg" width="170px" /></div></div>
+                    <div class="contenedor-imagen-galeria-inferior imagen-galeria"><div class="imagen-galeria-inferior"><img src="../img/mapas_imagenes_isla/GranCanaria_cenobio_valeron_01.jpg" width="170px" /></div></div>
+                    <div class="contenedor-imagen-galeria-inferior imagen-galeria"><div class="imagen-galeria-inferior"><img src="../img/mapas_imagenes_isla/GranCanaria_dunasmaspalomas_11.jpg" width="170px" /></div></div>
+                    <div class="contenedor-imagen-galeria-inferior imagen-galeria"><div class="imagen-galeria-inferior"><img src="../img/mapas_imagenes_isla/GranCanaria_las_canteras_01.jpg" width="170px" /></div></div>
+                    
+                    <div class="contenedor-imagen-galeria-inferior imagen-galeria"><div class="imagen-galeria-inferior"><img src="../img/mapas_imagenes_isla/GranCanaria_las_ninas_01.jpg" width="170px" /></div></div>
+                    <div class="contenedor-imagen-galeria-inferior imagen-galeria"><div class="imagen-galeria-inferior"><img src="../img/mapas_imagenes_isla/GranCanaria_maspalomas_48.jpg" width="170px" /></div></div>
+                    <div class="contenedor-imagen-galeria-inferior imagen-galeria"><div class="imagen-galeria-inferior"><img src="../img/mapas_imagenes_isla/GranCanaria_montanon_negro_01.jpg" width="170px" /></div></div>
+                    <div class="contenedor-imagen-galeria-inferior imagen-galeria"><div class="imagen-galeria-inferior"><img src="../img/mapas_imagenes_isla/GranCanaria_roques_06.jpg" width="170px" /></div></div>
+                    <div class="contenedor-imagen-galeria-inferior imagen-galeria"><div class="imagen-galeria-inferior"><img src="../img/mapas_imagenes_isla/GranCanaria_santa_ana_01.jpg" width="170px" /></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades</title>
+    <script type="text/javascript" src="js/tailwinds.js"></script>
+
+    <link href="css/custom.css?v={version}" rel="stylesheet">
+    <link rel="stylesheet" href="css/tiny-slider.css">
+
+    <script src="js/tiny-slider.js"></script>
+    <script type="text/javascript" src="js/traducciones_{idioma}.js?v={version}"></script>
+    <script type="text/javascript" src="js/custom.js?v={version}"></script>
+
+</head>
+
+<body class="overflow-hidden w-full h-screen">
+
+
+    <!-- START BLOCK : screensaver -->
+    <div id="screensaver"
+        class="hidden opacity-0 w-screen h-screen absolute top-0 left-0 z-50 transition duration-700 ease-in-out"
+        data-espera="{screensaver_espera}" data-duracion="{screensaver_duracion}">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition ease-in-out duration-300"></div>
+        <video class="w-full h-full relative" src="{screensaver}" muted loop></video>
+    </div>
+    <!-- END BLOCK : screensaver -->
+
+
+    <div id="content"
+        class="h-full w-full shadow-xl bg-gray-200 overflow-hidden flex items-center transition ease-in-out duration-500">
+        {menu_lateral}
+        {contenido}
+    </div>
+
+
+    <!-- MODAL -->
+    <div id="modalContent" class="hidden opacity-0 relative z-10 transition ease-in-out duration-500"
+        aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 z-10 overflow-y-auto transition ease-in-out duration-500">
+            <div class="overlayModal fixed inset-0 bg-gray-500 bg-opacity-75 transition ease-in-out duration-300"></div>
+            <div id="modal"
+                class="opacity-0 scale-50 flex flex-wrap min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0 transition ease-in-out duration-500">
+                <div
+                    class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:m-4 sm:w-full sm:max-w-lg">
+                    <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                        <div class="sm:flex sm:items-start">
+
+                            <div class="w-full mt-3 text-center sm:mt-0 sm:text-left">
+                                <div class="flex items-center justify-between mb-4">
+                                    <h3 class="title text-lg leading-6 text-gray-900 font-bold truncate w-5/6 uppercase"
+                                        id="modal-title"></h3>
+                                    <h4 class="title text-base leading-6 text-gray-900 font-medium" id="modal-time">
+                                    </h4>
+                                </div>
+
+                                <div id="modal-body" lass="mt-2 flex flex-col">
+                                    <div id="slider-popup" class="w-full h-auto"></div>
+                                    <div id="description-popup" class="w-full py-2 text-justify"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

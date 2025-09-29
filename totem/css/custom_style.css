@@ -1,0 +1,5639 @@
+
+/****************************************
+ *   01.   Estilos generales
+ ****************************************/
+
+*:focus{
+    outline: medium none;
+}
+.img_overlay {
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+}
+.filterGris{
+    filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); 
+    filter:gray;
+    -webkit-filter:grayscale(100%);
+    transition: 0.5s;
+}
+.filterGris:hover{
+    filter: none;
+    -webkit-filter: none;
+    transition: 0.5s;
+}
+.filter1, .no_disponible .content{    
+    filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'blur\' x=\'-5%\' y=\'-5%\' width=\'110%\' height=\'110%\'><feGaussianBlur in=\'SourceGraphic\' stdDeviation=\'2\'/></filter></svg>#blur");
+    filter: blur;
+    transition: 0.5s;
+}
+
+.ui-tabs .ui-tabs-panel {
+    padding: 5px 8px !important;
+}
+.ui-tabs {
+    padding: 0px;
+}
+iframe#conoce_granCanaria{
+    height: 1221px;
+    margin-left: -4px !important;
+    overflow: hidden;
+    position: absolute;
+    top: 71px;
+    width: 100%;
+    z-index: 100;
+}
+body div.closeIframe {
+    background: none repeat scroll 0 0 white;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 0 2px black;
+    color: #434343;
+    font-family:OpenSans;
+    font-size: 2.4em;
+    left: 41%;
+    padding: 10px 47px;
+    position: absolute;
+    top: 1250px;
+    z-index: 200;
+}
+#pageWrapper{
+    width: 1080px;      
+    height: 1920px;
+    /*height: 1920px;*/
+    position: fixed;
+}
+#page{
+    float: left;
+    position: relative;
+	background-color: #d4e4f6;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 1080px;
+    height: 1920px;
+}
+
+.ancho_50{
+    width: 50%;
+}
+
+.left{
+    float:left;
+}
+.right{
+    float: right;
+}
+.textAlign-center{text-align: center;}
+.textAlign-left{text-align: left;}
+.textAlign-right{text-align: right;}
+.textAlign-justify{text-align: justify;}
+
+.slimScrollDiv .slimScrollBar {
+    /*background-image: url("../img/iconos/arrowdown.png") !important;*/
+    background-repeat: no-repeat  !important;
+    background-position: 0 bottom  !important;
+    background-size: 17px 8px !important;
+}
+.slimScrollBar:before {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    /*background-image: url("../img/iconos/arrowup.png");*/
+    background-origin: padding-box;
+    background-position: 0 5px;
+    background-repeat: no-repeat;
+    background-size: 17px 7px;
+    content: "_";
+    height: 10px;
+    padding-left: 3px;
+    width: 10px;
+}
+.overlayVideoElement{ opacity: 0.01; position: absolute;}
+.close{
+    background: url("../../administracion/css/plugins/font_style/iconos_svg/close.svg") no-repeat scroll center center / 65% 65% #efefef;
+    /*    border: 2px solid #232323;
+        border-radius: 50px 50px 50px 50px;
+        height: 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+    */
+}
+.overlayBackground {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.overlayWrapper {
+    background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+    border: 3px solid #c7c7c7;
+    box-sizing: border-box;
+    left: 0;
+    padding: 15px 35px 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.eventoDetailContent {
+    text-align: justify;
+}
+
+.eventoDetailContent img {
+  float: left;
+  margin: 0 18px 10px 0 !important;
+
+/*  width: 60%;*/ /*imagen de la agenda en full*//
+}
+.eventoDetailTitle {
+    font-size: 1.3em;
+    padding-bottom: 11px;
+    background-color: #115E67;
+    padding-top: 11px;
+    padding-left: 20px;
+    color: white;
+}
+
+.menuContentHidden{ visibility: hidden; }
+
+/*.close {
+    border-color: #E77607;
+    border-image: none;
+    border-left: 0 solid #E77607;
+    border-radius: 57px 58px 50px 50px / 68px 58px 50px 50px;
+    border-right: 3px solid #E77607;
+    border-top: 3px solid #E77607;
+    height: 40px;
+    position: absolute;
+    right: -14px;
+    top: -17px;
+    width: 40px;
+}*/
+/*
+.close, .cerrar_popup {
+    background: white url("../../../../contenido_proyectos/vistaflor/_general/iconos/x(n).png") no-repeat scroll center center / 40% 50%;
+    border: 3px solid #e97f02;
+    border-radius: 30px;
+    height: 30px;
+    position: absolute;
+    right: -19px;
+    top: -20px;
+    width: 30px;
+} */
+
+.close, .cerrar_popup {
+    background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/x(n).png") no-repeat scroll center center / 40% 50%;
+    height: 50px;
+    position: absolute;
+    right: -8px;
+    top: -6px;
+    width: 50px;
+}
+
+/*El close del aviso legal*/
+
+.close2 {
+    background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/x.png") no-repeat scroll center center / 40% 50% #181818;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    height: 30px;
+    position: absolute;
+    right: -13px;
+    top: -13px;
+    width: 30px;
+}
+
+
+
+
+.back{
+    position: absolute;
+}
+.back.buttonsLeft {
+  color: black !important;
+  padding: 0.4em 1.5em 0.4em 2.1em;
+}
+#overlayLoadingContent, .overlayLoadingContent {
+    height: 1928px;
+    position: absolute;
+    margin-top: -24px;
+    width: 1080px;
+    z-index: 1000;
+    background: rgba(0,0,0,0.5);
+}
+
+#overlayLoadingContent .back {
+  color: rgba(255, 70, 70, 1);
+    font-family: OpenSans;
+  font-size: 241%;
+  left: 42%;
+  top: 51%;
+  text-shadow:  1px 1px 7px #232323;
+}
+#overlayLoadingContent #loadingGifWrapper {
+    height: 150px;
+    left: 45%;
+    position: absolute;
+    top: 288px;
+    width: 150px;
+}
+.subcatElement svg {
+    border-radius: 10px;
+    box-shadow: 0 2px 3px -1px #000000;
+    margin-bottom: 2px;
+}
+.masInfo {
+  border: 2px solid #FFFFFF;
+  border-radius: 20px;
+  color: #FFFFFF;
+  display: inline !important;
+  padding: 0 7px;
+  width: 25px;
+}
+.masInfoWrapper .masInfo {
+  background: none repeat scroll 0 0 #434343;
+  border: 2px solid #FFFFFF;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 0 3px;
+  width: 16px;
+  display: inline !important;
+  margin-right: 3px;
+}
+.masInfoWrapper {
+    font-family: OpenSans;
+  font-size: 12px !important;
+  text-transform: uppercase;
+}
+
+.imgOverProximamente {
+    height: 80%;
+    left: 29%;
+    position: absolute;
+    width: 43%;
+    z-index: 1;
+}
+
+
+/****************************************
+ *   02.   Etiquetas html
+ ****************************************/
+html{
+    font-size: 12pt;
+    font-family: OpenSans;
+/*    cursor:none !important;*/
+}
+img{ width: 100%;height: 100%; }
+body { 
+    overflow:hidden;
+
+}
+strong { font-weight: bolder;}
+em{ font-style: italic;}
+iframe {
+    height: 392px;
+    margin-left: 20px;
+    width: 1000px;
+}
+
+/****************************************
+ *   03.   Clases generales
+ ****************************************/
+.color1{ color: #988642; }  /* dorado RIU */
+.color2{ color: #F2F2F2; }  /* blanco */
+.color3{}
+.color4{}
+
+.colorBg1{background: #2f3031;}
+.colorBg2{background: #3A3D3E !important; }
+/*.colorBg3{background: #232323;}*/
+.colorBg3 {
+    background: none repeat scroll 0 0 rgba(46, 47, 48, 0.8);
+}
+
+.colorBg4{}
+
+.padding15{ padding: 15px;}
+.paddingLeftRight10 { padding-left: 10px; padding-right: 15px;}
+.paddingLeftRight50 {padding: 0 50px;}
+.paddingTop15{padding-top: 15px;}
+.cabecera {
+    font-size: 110%;
+    line-height: 1.5em;
+}
+.marginleft10{ margin-left: 10px;}
+
+.ancho50 { width: 48%; }
+.title1,.title2,.title3,.title4,.title5{ font-family: OpenSans;}
+.title1{font-size: 3em;}
+.title2{font-size: 1.5em;}
+.title3{}
+
+.relative{position: relative;}
+.absolute{position: absolute;}
+
+.clearAll{clear: both;}
+.blockWrapper{
+    /*    width: 80%;
+        margin: 0 auto;*/
+    position: relative;
+}
+.imgDefault{
+    width: auto;
+    height: auto;
+}
+.hidden{ display: none;}
+.displayNone { display: none !important;}
+.x-small {font-size: 4pt;}
+.x-smallEm { font-size: 0.2em;}
+
+body .ui-keyboard-space{
+    margin-left: 0.5em !important;
+    margin-right: 0.5em !important;
+}
+
+.buttonsRight {
+/*    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/buttons.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;*/
+    bottom: -14px;
+    right: 30px;
+}
+
+.buttonsLeft {
+    border: 0 none;
+    bottom: 0px;
+    left: 30px;
+}
+
+.buttonsCenter{
+/*    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/buttons.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;*/
+    bottom: 14px;
+    left: 45%
+}
+.width130{width: 130px;}
+.buttonsRight, .buttonsCenter, .buttonsLeft, .buttons {
+    background-color: white;
+    border: 2px solid #97bf0d;
+    /*border-radius: 9px;*/
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 0.4em 1.9em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #115E67;
+}
+.buttonsRight, .buttonsCenter, .buttonsLeft {
+    position: absolute;
+}
+a {
+    text-decoration: none;
+}
+ul.tabs_std1{
+    background: none !important;
+    border: none !important;
+}
+ul.tabs_std1 li{
+}
+ul.tabs_std1 a{
+    padding-bottom: 1px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+ul.tabs_std1 li:hover, ul.tabs_std1 li a:hover{
+    color: inherit
+}
+
+
+/****************************************
+ *    pestañas de cada subseccion
+ ***************************************/
+
+
+/****************************************
+ *   03.1  Clases jqueryUi
+ ****************************************/
+div > ul.ui-tabs-nav li.ui-state-default{
+    background: none repeat scroll 0 0 white;
+    border: medium none;
+    color: #232323;
+}
+
+
+/****************************************
+ *   03.2  Clases sobre listas
+ ****************************************/
+
+ul.lista {
+    width: 100%;
+}
+ul.lista li {
+    padding: 7px 0;
+}
+ul.lista li span {
+    display: inline-block;
+    min-width: 55%;
+}
+ul.lista2 {
+    width: 100%;
+}
+ul.lista2 li {
+    padding: 7px 0;
+}
+ul.lista2 li span {
+    display: inline-block;
+    min-width: 20%;
+}
+
+/****************************************
+ *   04.   formularios
+ ****************************************/
+
+form .hasKeyboardActive {
+    box-shadow: 0 0 10px -1px violet;
+    /*transform: scale(1.01, 1.1);*/ 
+    transform: scale(1.01, 1.01); /*Aythami*/
+}
+
+
+/****************************************
+ *   04.1  formulario clase 1
+ ****************************************/
+form.stdForm1{ font-size: 3em; padding: 0.7em 1em; }
+form.stdForm1 label{width: 30%; float: left; clear: both;}
+form.stdForm1 input{
+    display: block;
+    font-size: 0.6em;
+    margin-bottom: 0.4em;
+    margin-left: 2%;
+    padding: 0.25em 0.1em;
+    width: 50%;
+}
+
+
+
+
+/****************************************
+ *   05.   tablas
+ ****************************************/
+table.std_table{
+    width: 98%;
+}
+table.std_table thead tr{
+    border-bottom: 2px solid;
+}
+
+.vuelos_table{
+    text-align: left;
+}
+table.std_table tr:nth-child(2n+1) {
+    background-color: #cdd4d5;
+}
+table.std_table tr td, table.std_table tr th {
+    padding: 12px 0 12px 4px;
+    color:black;
+}
+#informacionWrapper_infoGuaguas .std_table td {
+    border: 1px solid #666666;
+}
+
+#informacionWrapper_infoGuaguas table.std_table{
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+/****************************************
+ *   06.   pageHeader
+ ****************************************/
+#pageHeaderWrapper {
+    top: 0;
+    height: 79px;
+    width: 100%;
+    line-height: 79px;
+    z-index: 1;
+    background-color: white !important;
+    border-bottom: 5px solid #97bf0d;
+}
+
+#appSlogan{
+/*HD*/
+/*    display: inline-block;
+    height: 64px;
+    margin: 6px 0 0 -54px;
+    position: relative;
+    width: 350px; 
+    z-index: 10;*/
+
+    display: inline-block;
+    margin: 6px 0 0 30px;
+    position: relative;
+    /*width: 116px;*/
+    width: 72px;
+    z-index: 10;
+
+}
+
+.logo_calypso{
+    width: 310px !important;
+}
+
+
+#date {
+    color: #717174 !important;
+    font-size: 2.1em;
+    left: -25px;
+    line-height: inherit;
+    margin-top: 0;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    width: 100%;
+}
+
+#date:first-letter{
+    text-transform: uppercase;
+}
+#time{
+    color: #717174 ;
+    font-size: 3em;
+    line-height: inherit;
+    position: absolute;
+    left: 450px;
+    text-align: center;
+   top: 0px;
+    font-weight: 900;
+}
+
+
+/****************************************
+ *   07.   mainBlockWrapper
+ ****************************************/
+#mainBlockWrapper {
+/*    background-image: url("../../../../contenido_proyectos/vistaflor/_general/imagenes/bg.png");
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;*/
+    position: relative;
+}
+
+
+/****************************************
+ *   08.   pageBanner
+ ****************************************/
+#pageBannerWrapper{
+    height: 608px;
+    overflow: hidden;
+}
+.hotelBanner{
+    height: 100%;
+}
+.hotelBanner video{
+    height: 608px !important;
+}
+.hotelLogo{
+    position: absolute;
+    top: 21%;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+.hotelSlogan{
+    position: absolute;
+}
+
+
+/****************************************
+ *   09.   pageContent
+ ****************************************/          /* dividido en el menu y en el despliegue del menu*/
+#pageContentWrapper{
+    min-height: 695px;
+}
+.noTabsWrapper .content{
+    position: relative;
+    top: 35px; 
+}
+.content_width .content {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+
+/* seccion para los contenidos de los wrappers centrales. */
+
+.blockTitle {
+    color: #FFFFFF;
+    font-family: OpenSans;
+/*    font-size: 110%;*/
+    letter-spacing: 0.2pt;
+    position: absolute;
+/*    right: -4px;*/
+    text-align: center;
+/*    text-shadow: 0 1px 1px #000000;*/
+/*    width: 110%;*/
+    width: 100%;
+    font-size: 14px;
+    top: 74px;
+
+/*    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;*/
+
+}
+
+.onerow { margin-top: 152px;}
+/*.tworow { margin-top: 70px;}*/
+.tworow { margin-top: 68px;}
+.threerow { margin-top: 10px;}
+
+.block{ float: left; position: relative;}
+
+.block_1{ margin-left: 45%;}
+.block_2{ margin-left: 12%;}
+.block_3{ margin-left: 12%;}
+.block_4{ margin-left: 8%;}
+.block_5{ margin-left: 4.5%;}
+.block_6{ margin-left: 4%;}
+.block_7{ margin-left: 1%;}
+
+.block_2:nth-child(1) {
+    margin-left: 33%;
+}
+.block_3:nth-child(1), .block_3:nth-child(4) {
+    margin-left: 22%
+}
+.block_4:nth-child(1),.block_4:nth-child(5){
+    margin-left: 16%;
+}
+/*.block_5:nth-child(1),.block_5:nth-child(6){
+    margin-left: 18%;
+}*/
+
+.block_5:nth-child(1),.block_5:nth-child(6){
+    margin-left: 12%;
+}
+.block_6:nth-child(1),.block_6:nth-child(7){
+    margin-left: 20%;
+}
+
+.block .icon-svg {
+    /*    height: 70px;
+        left: 30px;
+        position: absolute;
+        top: 14px;
+        width: 40px;*/
+    left: 30px;
+    position: absolute;
+    top: 30px;
+    /*cursor: none !important;*/
+}
+
+/****************************************
+ *   09.1  mainMenu
+ ****************************************/
+#mainMenuWrapper {
+    height: 130px;
+    overflow: hidden;
+    background-color: #97bf0d;
+}
+.mainMenuElement{           /* clase wrapper para los elementos del menu */
+    float: left;
+    position: relative;
+    height: 100%;
+    margin-left: 30px;
+    width: 136px;
+    /*background: radial-gradient(closest-side at 45% 94% , black 3%, #131313 54%, transparent) no-repeat scroll 0 0 transparent;*/
+}
+/*.mainMenuElement svg{ overflow: hidden; width: 90px;}*/
+.mainMenuElement svg {
+    margin-top: -6px;
+    overflow: hidden;
+    transform: scale(0.9);
+    width: 90px;
+}
+.mainMenuElement.active{
+    /*añadir sombra activa*/
+    background: radial-gradient(closest-side at 45% 94% , inherit 54%, transparent) no-repeat scroll 0 0 transparent;
+}
+.mainMenuElementLink{
+    display: block;
+    padding: 5px 0 25px;
+/*    cursor: none !important;*/
+}
+
+.mainMenuElementTitle {
+    bottom: 22px;
+    color: white;
+    font-family: OpenSans;
+    font-size: 104%;
+    letter-spacing: 0.2pt;
+    margin-top: 89px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.one_night{ margin: 0 0.8%; }
+.one_eigth{ margin: 0 -0.1%;}            /* 8 elementos */
+.one_seventh{ margin: 0 0.8%; }        /* 7 elementos */
+.one_sixth{ margin: 0 2%; }          /* 6 elementos */
+.one_fith{ margin: 0 3.7%; }
+/*.one_fith{ margin: 0 6.1%; }  */          /* 5 elementos */
+.one_fourth{
+    /*margin: 0 7.4%;*/
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 6%;
+    margin-right: 6%;
+}            /* 4 elementos */
+.two_sixth{ margin: 0 12.6%;}           /* 3 elementos */
+.three_sixth{ margin: 0 20%;}           /* 2 elementos */
+
+.icono {
+    height: 80px;
+    left: 12px;
+    position: absolute;
+    width: 113px;
+    z-index: 1;
+    margin-top: 7px;
+}
+
+
+/*Icono para HD concreto - para el general lleva un 61%*/
+.iconoHotel{ background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/hotel.svg") no-repeat center center / 100% auto; }                /* estas clases definen el background */
+/***********************************/
+.iconoAgenda{ background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/animacion.svg") no-repeat center center / 100% auto; }                /* en funcion de la posicion dentro del*/
+.iconoCheking { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/general/icon_timbre.svg") no-repeat center center / 95% auto; }                /* sprite de imagenes */
+.iconoInformacion { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/info.svg") no-repeat center center / auto 100%; }
+.iconomapa { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/mapa.svg") no-repeat center center / auto 100%; }
+.iconoConoce { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/lugar.svg") no-repeat center center / 95% auto; }
+.iconoOcioComer { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/general/icon_ocio_comer.svg") no-repeat center center / auto 85%;}
+.iconoActividades { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/que_hacer.svg") no-repeat center center / 95% auto; }
+.iconoCompras { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/general/icon_compras.svg") no-repeat center center / 80% auto; }
+.iconoDestinos { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/lugar.svg") no-repeat center center / 100% auto; }
+.iconoEurocopa { background: url("../../../../contenido_proyectos/vistaflor/_general/eurocopa/copa-mundial.svg") no-repeat center center / 100% auto; }
+
+.iconoSpa { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/spa.svg") no-repeat center center / 100% auto; }
+
+.iconogardendirect { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/direct.svg") no-repeat center center / 100% auto; }
+
+.iconogardeneco { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/eco.svg") no-repeat center center / 100% auto; }
+
+.iconosultan { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/icon_sultan.png") no-repeat center center / 100% auto; }
+
+.iconoSostenibilidad { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/general/icon_sostenibilidad.svg") no-repeat center center / 100% auto; }
+.iconogiardino { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/giardino.svg") no-repeat center center / 100% auto; }
+
+.iconogrupodunas { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/dunas_club.svg") no-repeat center center / 100% auto; }
+.iconodunashotel { background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/circulos/dunas_hotel.svg") no-repeat center center / 100% auto; }
+
+/*.iconoCheking {background-position: -7px 0;}*/
+
+
+/****************************************
+ *   09.2  menuContent
+ ****************************************/
+.menuContentWrapper{        /**/
+    /*height: 432px;*/
+}
+
+.menuContentHeader {
+
+  /*  height: 22px;
+    margin-top: 3px;
+    width: 100%; */
+}
+/*.menuContent {
+    height: 515px;
+    width: 98%;
+    position: relative;
+    margin: 0 auto;
+    padding: 9px 10px 0 10px;
+    box-shadow: 0 8px 6px -6px black;
+    border-radius: 0px;
+    border: none;
+    overflow: hidden;
+    color: white;
+    font-family: RalewayRegular;
+    //background: url("../../../../contenido_proyectos/vistaflor/_general/imagenes/background_effect_2.png") no-repeat scroll center top #2F3031;
+    background: no-repeat scroll center top / 100% 100% rgba(46, 47, 48, 0.8);
+    background-size: 100% 100%;
+}*/
+.menuContent {
+    background: rgba(46, 47, 48, 0.8) none no-repeat scroll center top / 100% 100%;
+    border: medium none;
+    border-radius: 0;
+    box-shadow: 0 8px 6px -6px black;
+    color: white;
+    font-family: OpenSans;
+    height: 556px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 9px 10px 0;
+    position: relative;
+    width: 98%;
+}
+
+.menuContent > div{
+    position: relative;
+}
+
+.contentHeader {
+    border-bottom: 2px solid gray;
+    color: #606060;
+    /*font-family: Kalam-Regular;*/
+    font-size: 45px;
+    margin: 20px 11px -30px 30px;
+    padding-bottom: 10px;
+    z-index: 1;
+}
+
+.menuContent .content {
+
+    font-family: OpenSans;
+    height: 453px;
+
+}
+
+.content p {
+    line-height: 1.08em;
+    margin-bottom: 0.5em;
+}
+.content p br {
+    margin-bottom: 0.5em;
+}
+
+.menuContent .content.ui-widget-content {
+    background: none;
+    border: none;
+}
+
+/****************************************
+ *   09.3  Informacion
+ ****************************************/
+
+
+
+
+
+/****************************************
+ *   10.   pageFooter
+ ****************************************/          /* video, slider,... inferior*/
+#pageFooterWrapper{ 
+    height: 482px;
+    position: fixed;
+    position: absolute;
+    overflow:hidden;
+    bottom: 0px;
+}
+
+.footerTitle{
+    position: absolute;
+    left: 30px;
+    top: 40px;
+}
+
+
+/****************************************
+ *   10.1  Slider
+ ****************************************/ 
+
+#footerSlider{
+    width: 200%;
+    height: 482px;
+    overflow: hidden;
+    position: relative;
+}
+#footerSlider .sliderElement{
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+/****************************************
+ *   11.   pageBottom
+ ****************************************/
+.extraDelimiter {
+  bottom: 0;
+  height: 68px;
+  position: relative;
+}
+
+#pageBottomWrapper {
+    background-color: #97bf0d;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    height: 51px;
+}
+
+#meteoWrapper {
+    font-family: OpenSans;
+    font-size: 1.8em;
+    height: 111px;
+    /*margin-top: 4px;*/
+    position: absolute;
+    text-align: center;
+    width: 389px;
+    z-index: 13;
+}
+#meteoWrapper:hover, #langSwitch:hover{
+    /*    background: linear-gradient(#EFEFEF 5%, #CECECE 20%, #AEAEAD 35%, #323232 60%, #323231 80%, #282828 100%) repeat-y scroll 0 0 transparent;
+        background: linear-gradient(#282828 5%, #323231 20%, #323232 35%, #AEAEAD 60%, #CECECE 80%, #EFEFEF 100%) repeat-y scroll 0 0 transparent;*/
+    /*box-shadow: 0 9px 9px -8px #2E9DCC, 0 9px 9px -8px #2E9DCC;*/
+}
+/*#langSwitch:hover{
+    box-shadow: 0 9px 9px -8px #2E9DCC;
+}*/
+
+
+/****************************************
+ *   11.1   Tiempo
+ ****************************************/
+/*#meteoWrapper {*/
+    /*background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/icono_tiempo.svg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 100% auto;*/
+    /*left: 40px;*/
+/*}*/
+#meteoWrapper .text {
+    display: inline;
+    left: 146px;
+    position: absolute;
+    text-align: left;
+    top: -0px;
+    color: white;
+}
+
+.tiempo {
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    height: 43px;       /*10px mas que el height del contenedor*/
+}
+.meteo {
+    position: absolute;
+    top: -460px;
+    left: 0px;
+    height: 430px;
+    width: 975px;
+
+    padding: 0 0 20px;
+    z-index: 2;
+    opacity: 0;
+    display: none;
+}
+.meteoInfo{
+    background: none repeat scroll 0 0 white;
+    bottom: 28px;
+    height: 420px;
+    position: absolute;
+    width: 550px;
+    box-shadow: 4px 3px 10px -3px black;
+    text-shadow: none;
+    color: #AAA;
+    overflow: hidden;
+}
+.meteo img{
+    bottom: 2px;
+    height: 30px;
+    left: 51px;
+    position: absolute;
+    width: 70px;
+}
+.meteoInfo_resumen .resumen_iconNubosidad img {
+    height: auto;
+    left: 13px;
+    text-align: center;
+    top: 17px;
+    vertical-align: middle !important;
+    width: 60px;
+}
+
+#meteoWrapper .overlayMsgError {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.16);
+  color: rgba(255, 95, 95, 0.9);
+  font-size: 120%;
+  left: 0;
+  padding: 196px 0;
+  position: absolute;
+  text-shadow: 1px 1px #232323;
+  top: 29px;
+  width: 100%;
+}
+#meteoWrapper .overlayMsgError .back {
+  left: 35%;
+  top: 141px;
+}
+
+
+.NE_1, .NO_2, .NO_3  {
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+.E_1, .E_2, .O_3 {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+.SE_1, .SE_2, .SO_3 {
+    -ms-transform: rotate(135deg); /* IE 9 */
+    -webkit-transform: rotate(135deg); /* Chrome, Safari, Opera */
+    transform: rotate(135deg);
+}
+.S_1, .S_2, .S_3 {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+.SO_1, .SW_2, .SW_3 {
+    -ms-transform: rotate(225deg); /* IE 9 */
+    -webkit-transform: rotate(225deg); /* Chrome, Safari, Opera */
+    transform: rotate(225deg);
+}
+.O_1, .W_2, .W_3 {
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    transform: rotate(270deg);
+}
+.NO_1, .NW_2, .NW_3 {
+    -ms-transform: rotate(315deg); /* IE 9 */
+    -webkit-transform: rotate(315deg); /* Chrome, Safari, Opera */
+    transform: rotate(315deg);
+}
+.selector_dia {
+    margin-top: 50px;
+    margin-left: 200px;
+    padding-bottom: 50px;
+    height: 200px;
+}
+.selector_dia > div {
+    margin-right: 50px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.25);
+    border-radius: 200px;
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+.selector_dia .selected, .slider_tiempo_municipio .selected {
+    box-shadow:
+    inset 0 0 0 5px rgba(255,255,255,0.8),
+    0 1px 2px rgba(0,0,0,0.1);
+    transition: all 0.4s ease-in-out;
+    /*-webkit-filter: blur(5px);*/
+    /*-moz-filter: blur(5px);*/
+    /*-o-filter: blur(5px);*/
+    /*-ms-filter: blur(5px);*/
+    /*filter: blur(5px);*/
+}
+.selector_dia .icon {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    margin-left: 38%;
+}
+.selector_dia .temperatura {
+    margin-left: 10px;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 10px;
+    font-size: 50px;
+}
+.selector_dia .fecha {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.float_clear {
+    clear: left;
+}
+/****************************************
+ *   11.1.1  MeteoInfo
+ ****************************************/
+#meteoInfo_headerWrapper{
+    height: 30px;
+    position: relative;
+    padding: 0 8px;
+    text-shadow: none;
+    color: #434343;
+}
+#islaLocalidadesWrapper {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 440px;
+    background: white;
+    box-shadow: 6px 3px 10px -4px black;
+}
+#mapWrapper {
+    height: 390px;
+    width: 100%;
+    margin-left: -20px; 
+}
+#map {height: 380px;}
+#map svg {
+    margin-top: -36px;
+    padding-left: 26px;
+    transform: scale(0.86);
+}
+
+#map_municipio svg {
+    margin-top: -36px;
+    padding-left: 55px;
+    transform: scale(0.86);
+}
+
+
+#meteoInfo_isla{float: right; width: 45%;text-align: right;}
+#meteoInfo_municipio{}
+
+#meteoInfo_resumenWrapper{ overflow: hidden;}
+.meteoInfo_resumen{
+    position: relative;
+    margin-top: 8px;
+    float: left;
+    width: 32%;
+    margin-left: 1%;
+    height: 130px;
+    font-size: 0.6em;
+    text-align: left;
+}
+.resumen_iconNubosidad{
+    float: left;
+    height: 85px;
+    width: 50%;
+}
+.resumen_temperatura {
+    float: right;
+    height: 85px;
+    margin-right: 5%;
+    width: 45%;
+}
+.resumen_temperatura > div:first-child {
+    position: absolute;
+    right: 15px;
+    top: 2px;
+}
+.resumen_temperatura .resumen_temperaturaValue{
+    margin-top: 23px;
+    font-size: 3.2em;
+}
+.resumen_temperaturaValue sup{
+    font-size: 0.34em;
+    padding-top: 4px;
+    padding-right: 3px;
+    float: right;
+}
+.resumen_vientoHumedad{
+    clear: both;
+    float: left;
+    margin-top: 5px;
+    padding-left: 16px;
+    width: 90%;
+}
+
+.resumen_vientoHumedad > strong {
+    display: inline-block;
+    width: 50%;
+}
+
+#meteoInfo_char{height: 120px; width: 550px; margin: 12px 0 18px;}
+
+#meteoInfo_estimacionWrapper{ height: 102px; font-size: 0.8em; border-top: 1px solid #676767;}
+.meteoInfo_estimacion {
+    /*background: linear-gradient(#878787 0%, #B7B7B7 3%, #F0F0F0 24%, #FFFFFF 60%) repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+    float: left;
+    font-size: 0.58em;
+    margin-bottom: 8px;
+    padding-top: 4px;
+    width: 25%;
+}
+.meteoInfo_diaActual {
+    background: none repeat scroll 0 0 #676767;
+    color: #FEFEFE;
+    font-size: 0.7em;
+    padding: 5px 0;
+}
+.meteoInfo_estimacionImgWrapper{
+    display: inline-block;
+    height: 44px;
+    text-align: center;
+    width: 94%;
+    position: relative;
+}
+.meteoInfo_estimacionTemp {
+    background: none repeat scroll 0 0 #676767;
+    border: 1px solid #676767;
+    color: #EFEFEF;
+    float: left;
+    font-size: 14px;
+    margin-right: 2px;
+    margin-top: 0;
+    padding: 6px 0;
+    width: 48%;
+}
+.meteoInfo_estimacionImgWrapper .time{
+    margin-top: 2px;
+}
+.meteoInfo_estimacion .meteoInfo_estimacionImgWrapper > img {
+    display: block;
+    height: 100%;
+    left: 0;
+    margin: 0 auto;
+    position: relative !important;
+    top: 0;
+    vertical-align: middle;
+    width: 65px;
+}
+
+.grafica_dia:first-child {
+    left: 135px;
+}
+.grafica_dia:last-child {
+    left: 340px;
+}
+.grafica_dia {
+    font-size: 0.7em;
+    position: absolute;
+    top: 268px;
+}
+
+/****************************************
+ *   11.2   Nav
+ ****************************************/
+#navMenu {
+    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/white-home-icon.png");
+
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 55px;
+    position: absolute;
+    text-align: center;
+    top: -2px;
+    width: 100%;
+    z-index: 0;
+}
+#navMenu a {
+    display: inline-block;
+    height: 100%;
+    /* width: 44px;*/
+    width: 115px;
+}
+
+/****************************************
+ *   11.3   Idiomas
+ ****************************************/
+
+#langSwitch {
+    height: 48px;
+    margin-top: 4px;
+    float: right;
+    text-align: center;
+    width: 290px;
+    z-index: 13;
+}
+
+.gay_bandera {
+    width: 177px !important;
+}
+
+.idioma_icono {
+    color: white;
+    float: left;
+    font-size: 32px;
+    margin-left: 20px;
+    opacity: 0.5;
+    padding-top: 4px;
+    right: 0;
+    width: 38px;
+}
+
+.css_separador_idioma {
+    color: white;
+    font-size: 32px;
+    margin-left: 76px;
+    opacity: 0.5 !important;
+    position: absolute;
+    top: 10px;
+}
+
+.css_separador_idioma2 {
+    color: white;
+    font-size: 32px;
+    margin-left: 151px;
+    opacity: 0.5 !important;
+    position: absolute;
+    top: 9px;
+}
+
+.css_separador_idioma3 {
+    color: white;
+    font-size: 32px;
+    margin-left: 226px;
+    opacity: 0.5 !important;
+    position: absolute;
+    top: 9px;
+}
+
+
+.idioma_actual{
+    opacity:1 !important;
+}
+
+.active{
+	opacity:1 !important;
+
+}
+
+.mainMenuElement.active{
+     background-color: #66902d;
+}
+
+#langSwitch div#idiomaActivo {
+    display: block;
+    float: right;
+    margin-right: -77px;
+    margin-top: -2px;
+    padding-left: 10px;
+    text-align: right;
+    width: 100%;
+    z-index: 4;
+}
+
+#idiomaActivo .text {
+    margin-right: 10px;
+}
+.idiomasLista .text {
+    margin-left: 20px;
+    text-align: left;
+}
+#langSwitch ul.idiomasLista{
+    position: absolute;
+    z-index: 0;
+    bottom: 50px;
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+    /*padding-bottom: 20px;*/
+    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/flecha_down2.svg");
+    background-position: 10px bottom;
+    background-repeat: no-repeat;
+}
+ul.idiomasLista li{
+    position: relative;
+    padding-left: 10px;
+}
+ul.idiomasLista  a{
+    text-decoration: none;
+    color: white;
+
+}
+ul.idiomasLista li:last-child{
+    box-shadow: 17px 25px 5px -23px rgba(0, 0, 0, 0.51)
+}
+ul.idiomasLista li.langActive{
+    display: block;
+}
+
+.text {
+    display: block;
+    line-height: 50px;
+}
+
+
+/****************************************
+ *   12    Salvapantalla
+ ****************************************/
+#screenSaver {
+    background: none repeat scroll 0 0 black;
+    height: 1920px;
+    overflow: hidden;
+    width: 100%;
+    float: left;
+    margin-left: -100%;
+    z-index: 1200000;
+}
+
+#screenSaver video{
+    width: 100%;
+    display: block;
+    z-index: 1200000;
+}
+
+
+/****************************************
+ *   13.   Secciones
+ ****************************************/
+
+
+
+/****************************************
+ *   13.1  Rent a Car
+ ****************************************/
+.rentCar_logo{
+    float: left;
+    max-height: 100px;
+    width: 150px;
+}
+.rentCar_desc{
+    min-height: 110px;
+    margin-left: 200px;
+    padding-right: 10px;
+}
+.rentCar_desc .title2 {
+    display: inline-block;
+    margin-right: 34px;
+}
+.rentCar_descripcion {
+    margin-top: 10px;
+}
+.rentCar_imgWrapper {
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+/****************************************
+ *   13.2  Postales
+ ****************************************/
+form#enviarPostal{ position: relative; width: 80%; margin: 0 auto;}
+form#enviarPostal input[type="text"]{
+    padding: 0.5em 0.2em 0.5em 0.5em;
+    width: 75%;
+}
+form#enviarPostal .buttonsRight{ bottom: 0px !important;}
+#texto #textArea {
+    float: left;
+    height: 300px;
+    width: 45%;
+    color: #1a1a1b;
+}
+#texto h4 {
+    margin-bottom: 0.5em;
+    color: #1a1a1b;
+}
+#texto #textArea textarea {
+    width: 100%;
+    height: 90%;
+}
+#texto #textoEstiloWrapper {
+    float: right;
+    height: 300px;
+    width: 46%;
+    color: #1a1a1b;
+}
+#textoEstilo_size > div {
+    display: inline-block;
+    margin-right: 10px;
+}
+#textoEstilo_size > span.size {
+    font-size: 225%;
+    margin-right: 143px;
+    position: absolute;
+}
+#textoEstilo_size > span.size.mas {
+    left: 590px;
+    top: 265px;
+}
+#textoEstilo_size > span.size.menos {
+    left: 635px;
+    top: 263px;
+}
+#texto .fuente {
+    display: inline-block;
+    font-size: 2em;
+    margin: 15px 0 30px;
+    width: 24%;
+    color:#1a1a1b;
+}
+#texto .orientacion {
+    display: inline-block;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    margin-left: 6%;
+    margin-right: 6%;
+    width: 10%;
+}
+.fuente.active, .orientacion.active {
+    color: #2B94C1;
+    transform: scale(1.3);
+}
+#foto, #fondo {
+    text-align: center;
+    overflow: auto;
+}
+#foto .contenedor-imagen-galeria-inferior2,
+#fondo .contenedor-imagen-galeria-inferior2{
+    float: none !important;
+    display: inline-block;
+}
+.postales_section {
+  height: 340px;
+/*  margin-bottom: 20px;*/
+}
+.fuente1{ font-family: OpenSans;}
+.fuente2{ font-family: OpenSans;}
+.fuente3{ font-family: "OpenSans";}
+.fuente4{ font-family: OpenSans;}
+.fontSize1{ font-size: 150% !important;}
+.fontSize2{ font-size: 175% !important;}
+.fontSize3{ font-size: 200% !important;}
+.fontSize4{ font-size: 230% !important;}
+.fontSize5{ font-size: 250% !important;}
+.fontSize6{ font-size: 280% !important;}
+
+.overlayBannerHeader {
+    /*height: 618px;*/
+    left: 0;
+    position: absolute;
+    /*top: 69px;*/
+    width: 1080px;
+   /* z-index: 2;*/
+   height: 608px;
+   /*top: 79px;*/
+    /*RIU*/
+   top:84px;
+   z-index: 1;
+}
+/*Postales antiguas con la postal abajo*/
+/*#postalesDesignWrapper {
+    left: 0;
+    position: absolute;
+    top: 1439px;
+    z-index: 0;
+    background: none repeat scroll 0 0 #2B94C1;
+    height: 482px;
+    width: 1080px;
+}*/
+/*Postales nuevas con la postal arriba*/
+#postalesDesignWrapper {
+  background: none repeat scroll 0 0 rgba(72, 209, 204, 0.8);
+  height: 545px;
+  left: 0;
+  padding-top: 65px;
+  position: absolute;
+ /* top: 78px;*/
+ /**RIU*/
+ top:84px;
+  width: 1080px;
+  z-index: 0;
+}
+#postalesDesignWrapper #postal {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 452px;
+    margin: 8px auto auto;
+    position: relative;
+    width: 988px;
+    border: 6px solid white;
+}
+#postal #cuño {
+    position: absolute;
+    right: 60px;
+    top: 19px;
+    width: 150px;
+    z-index: 1;
+}
+#postal #sello {
+    height: 110px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 90px;
+    z-index: 1;
+    visibility: hidden;
+}
+#postal #logoCentro {
+        bottom: 10px;
+    max-height: 144px;
+    max-width: 234px;;
+    position: absolute;
+    right: 13px;
+    z-index: 1;
+}
+#postal #logoHotel {
+/*    height: 85px;
+    position: absolute;
+    right: 22px;
+    top: 32px;
+    width: 66px;
+    z-index: 1;*/
+
+    /*Para HD*/
+    /*height: 58px;
+    position: absolute;
+    right: 22px;
+    top: 45px;
+    width: 68px;
+    z-index: 1;*/
+
+    /*PARA RIU*/
+    /*height: 58px;*/
+    position: absolute;
+    right: 13px;
+    top: 40px;
+    /*width: 82px;*/
+    z-index: 1;
+}
+#postal #fondoWrapper {
+    height: 100%;
+    opacity: 0.2;
+    width: 100%;
+    z-index: 0;
+}
+#postal #fotoWrapper {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 95%;
+    left: 1%;
+    position: absolute;
+    top: 2.5%;
+    width: 48%;
+    z-index: 1;
+}
+#postal #division {
+    background: none repeat scroll 0 0 #2B94C1;
+    height: 95%;
+    left: 50%;
+    position: absolute;
+    top: 2.5%;
+    width: 0.2%;
+}
+#postal #textoPostal {
+    left: 53%;
+    line-height: 1.5em;
+    position: absolute;
+    top: 31%;
+    max-width: 446px;
+    max-height: 290px;
+    overflow: hidden;
+}
+#postal #textoPostal p {
+    margin-bottom: 10px;
+}
+
+.contenedor-imagen-galeria-inferior2 {
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 16px -1px #000000;
+  float: left;
+  height: 115px;
+  margin-bottom: -10px;
+  margin-left: 8px;
+  margin-top: 20px;
+  padding: 3px;
+  width: 138px;
+}
+.contenedor-imagen-galeria-inferior2:nth-child(1), .contenedor-imagen-galeria-inferior2:nth-child(6n+1) {
+  margin-left: 0;
+}
+.postal_component_active {
+    box-shadow: 0 3px 18px #2B94C1 !important;
+    transform: scale(1.2);
+}
+textarea{
+    font-size: 120%;
+}
+
+
+.overlayGlobalWrapper.closeWrapper {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+    height: 1920px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1080px;
+    z-index: 100;
+}
+.overlayContent {
+    background: none repeat scroll 0 0 #434343;
+    height: 669px;
+    position: absolute;
+    top: 36%;
+}
+.overlayFondo {
+    width: 1058px;
+}
+.overlayFoto {
+    left: 15px;
+    max-height: 260px;
+    max-width: 400px;
+    position: absolute;
+    top: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.imgDragWrapper {
+    border: 10px solid #EFEFEF;
+    height: 602px;
+    padding: 0;
+}
+.overlayTexto {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.6);
+    border-radius: 10px 10px 10px 10px;
+    font-size: 25px;
+    left: 55%;
+    padding: 10px;
+    position: absolute;
+    top: 350px;
+    width: 400px;
+}
+.back.back2 {
+    bottom: 0%;
+    font-size: 138%;
+}
+
+/****************************************
+ *   13.3  Conoce gran canaria
+ ****************************************/
+#conoce .left {
+    margin-left: 50px;
+}
+#conoce .ancho50 {
+    width: 43%;
+}
+.municipio_element{
+    display: inline-block;
+    margin-bottom: 7px;
+    padding: 7px 0 7px 2%;
+    text-shadow: 0 3px 10px #000000;
+    width: 44%;
+}
+li.municipio_element:nth-child(2n) {
+    margin-left: 5%;
+}
+li.municipio_element.active{
+    background: none repeat scroll 0 0 #A3BE06;
+    border-radius: 5px 5px 5px 5px;
+}
+#conoce_municipio {
+    height: 431px;
+    overflow: hidden;
+}
+#conoceWrapper dl img { width: auto; height: auto;}
+
+
+/****************************************
+ *   13.3.1  Conoce gran canaria. SITIOS_RUTAS
+ ****************************************/
+.general_info {
+  -moz-box-sizing: border-box;
+  background: none repeat scroll 0 0 rgba(150, 150, 150, 0.5);
+  border-radius: 5px;
+  float: right;
+  margin-left: 10px;
+  padding: 5px;
+  width: 300px;
+  margin-right:10px;
+}
+.como_llegar {
+  width: 600px;
+}
+.general {
+  margin-top: 27px;
+  width: 600px;
+}
+.img_cnt_wrapper {
+  clear: right;
+  float: right;
+  margin-right: 10px;
+  margin-top: 13px;
+  width: 300px;
+}
+.img_cnt_wrapper > img {
+  width: 100% !important;
+}
+.como_llegar > div {
+  text-align: justify;
+}
+.general > div {
+  margin-bottom: 27px;
+}
+.municipio-contenido h4 {
+  border-bottom: 1px solid rgba(200, 200, 200, 0.94);
+  margin-bottom: 5px;
+  padding-bottom: 1px;
+  width: 60%;
+}
+.general_info .label {
+  font-size: 90%;
+  display: inline-block;
+  min-width: 100px;
+  text-align: left;
+}
+.municipio-contenido img.mapa_ruta {
+  width: 99% !important;
+}
+.ruta_height_double{overflow-y:auto;height:890px;}
+
+#municipio-contenido-mapa div {
+  float: left;
+}
+.leyenda {
+  width: 39%;
+}
+#municipio-contenido-mapa .municipio-contenido {
+  width: 60%;
+}
+
+/****************************************
+ *   13.4  Comercios
+ ****************************************/
+#compras{
+    font-family: OpenSans;
+    height: 340px;
+}
+.comercio{
+    border-radius: 10px;
+    height:40px;
+    margin-top:7px;
+}
+.comercio:nth-child(2n+1) {
+    clear: left;
+    float: left;
+    width: 49%;
+}
+.comercio:nth-child(2n) {
+    clear: right;
+    float: right;
+    width: 49%;
+}
+.comercio.comercio_normal .comercio_content {
+    background-color: rgba(215, 215, 215, 0.41);
+    border-radius: 10px;
+    height: 40px;
+    overflow: hidden;
+}
+.comercio_normal .nombre{
+    /*    float:left;
+        padding-left:10px;
+        padding-top:10px;*/
+    padding: 10px;
+}
+.nombre > .masInfoWrapper {
+    float: right;
+    font-size: 80%;
+    padding-top: 3px;
+}
+.comercio_normal .direccion {
+    /*    color:#343237;*/
+    font-size: 95%;
+    font-weight: normal;
+    letter-spacing: 0.3pt;
+    padding: 10px;
+}
+.comercio_destacado .masInfoWrapper {
+  float: right;
+  margin-right: 5px;
+  margin-top: -67px;
+}
+.comercio_destacado {
+  border-radius: 20px;
+  height: 135px;
+  margin-top: 5px;
+}
+.comercio_destacado .direccion {
+    font-family: OpenSans;
+  font-size: 16px !important;
+  font-weight: 300;
+  margin: 4px 0 9px !important;
+}
+.destacado-logo {
+  border: 1px solid rgba(200, 200, 200, 0.3);
+  border-radius: 10px;
+  float: left;
+  height: 135px !important;
+  overflow: hidden;
+  width: 135px !important;
+}
+.destacado-logo.icon-svg.icon-restaurante {
+  background-size: 85%;
+}
+
+.destacado-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.destacado-informacion {
+  background-color: #C73A5C;
+  border-radius: 15px;
+  color: #FFFFFF;
+  float: right;
+  height: 92%;
+  margin-top: 0.5%;
+  overflow: hidden;
+  padding: 10px 10px 0 7px;
+  width: 298px;
+}
+
+.destacado-informacion .direccion, .destacado-informacion .horario, .destacado-informacion .telefono, .destacado-informacion .web {
+    font-size: 13px;
+    margin-bottom: 2px;
+    vertical-align: middle;
+}
+.comercio-destacado .nombre {
+    font-size: 110%;
+    margin-bottom: 10px;
+}
+.comercio-destacado .direccion {
+    font-size: 16px !important;
+    font-weight: normal;
+    margin: 4px 0 10px !important;
+}
+.destacado-informacion .direccion img, .destacado-informacion .horario  img, .destacado-informacion .telefono  img, .destacado-informacion .web  img{
+    width: 16px;
+    height: 16px;
+    margin-right:5px;
+}
+
+
+
+/****************************************
+ *   13.5 Comercios detail
+ ****************************************/
+#detalles_comercio{
+    position: relative;
+    height: 1789px;
+    width: 1080px;
+    border: 1px solid black;
+    color: #323232;
+}
+#comercio_sup{  
+    height: 640px;
+    width: 1080px;
+}
+#logo_comercio {
+    position: absolute;
+    right: 10px;
+    top: 45px;
+}
+#logo_comercio > img {
+    max-height: 600px;
+    width: 365px;
+}
+.fondo_comercio {
+    height: 1080px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+#contenido_comercio{
+    height: 1149px;
+    width: 1080px;
+}
+#menu_secciones div {
+    display: inline;
+}
+.elto {
+    border-left: 1px solid white;
+    color: #FFFFFF;
+    display: block;
+    font-size: 120%;
+    margin-top: 5px;
+    padding: 21px 10px;
+    text-decoration: none;
+}
+.elto.active {
+    color: #95226B;
+    color: black;
+}
+.comercioMenu:nth-child(2) .elto {
+    border-left: none;
+}
+#menu_secciones .comercioMenu {
+    font-family: OpenSans;
+    margin-left: 5px;
+    display: inline-block;
+}
+.fondo_comercio > img{
+    height: 100%;
+    width: 100%;
+}
+
+#menu_secciones {  
+    height: 70px;
+    text-shadow: 0 1px 1px #000000;
+    z-index: 1;
+    text-align: right;
+    position: relative;
+    padding-right: 25px;
+}
+.mainMenuElementLink {
+    cursor: default;
+    padding: 5px 0 25px;
+}
+#contenidoWrapper {
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 19px -11px;
+    height: 992px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 30px 25px;
+    position: relative;
+    width: 90%;
+    z-index: 1;
+}
+
+#comercioWrapper {
+    left: 0;
+    position: absolute;
+    top: 78px;
+    z-index: 10;
+}
+#comercioWrapper .atrasIcon {
+  position: static !important;
+}
+.fondo_comercio_sup{
+    height: 641px;
+}
+#menu_secciones .elmt.back {
+    height: 35px;
+    left: 15px;
+    top: 23px;
+}
+.atrasIcon {
+    background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/atras_icono.png") no-repeat scroll 7px 8px / 42% auto #97bf0d;
+    display: inline-block;
+    height: 30px;
+    margin-right: 7px;
+    width: 30px;
+    border-radius: 30px;
+}
+.back .atrasIcon {
+  background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/atras_icono.png") no-repeat scroll 6px 6px / 42% auto #97bf0d;
+  height: 24px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  width: 25px;
+}
+.atrasText {
+    display: inline-block;
+    font-size: 120%;
+    margin-top: 3px;
+    vertical-align: top;
+    color: #111111;
+}
+.columnaLeft {
+    float: left;
+    width: 48%;
+}
+.columnaRight {
+    float: right;
+    width: 48%;
+}
+.contenido_seccion{
+    text-align: justify;
+}
+.contenido_seccion div, .contenido_seccion p {
+    line-height: 1.11em;
+}
+.contenido_seccion ul {
+    line-height: 1.15em;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+h3.title_sectionS {
+    font-family: OpenSans;
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
+}
+span.relevante {
+    display: block;
+    font-weight: bold;
+}
+
+#como_llegar_wrapper #map_wrapper_llegar, #como_llegar_wrapper #map_wrapper_llegar2 {
+    height: 490px;
+    left: 0;
+    position: absolute;
+    top: 90px;
+    width: 1022px;
+    background: #434343;
+    display:block;
+}
+
+#como_llegar_wrapper #fachadaWrapper {
+    position: absolute;
+    top: 600px;
+    width: 45%;
+    height: 400px;
+    background: #535353;
+}
+#como_llegar_wrapper #infoWrapper {
+    /*border: 1px solid #999999;*/
+    border-radius: 5px;
+    height: 400px;
+    position: absolute;
+    right: 25px;
+    top: 600px;
+    width: 45%;
+}
+#como_llegar_wrapper #qrcodeWrapper {
+    /*  background: none repeat scroll 0 0 #535353;*/
+    height: 200px;
+    position: absolute;
+    right: 25px;
+    top: 825px;
+    width: 20%;
+}
+#qrMsg {
+  bottom: 127px;
+  position: absolute;
+  right: 234px;
+  width: 244px;
+}
+
+
+
+
+.municipio-contenido .comercio_content {
+  -moz-box-sizing: border-box;
+  background: none repeat scroll 0 0 rgba(150, 150, 150, 0.6);
+  padding: 0.5em;
+  position: relative;
+  height: 102.4px;
+  border-radius: 10px;
+}
+.municipio-contenido  a {
+    color: white;
+}
+.municipio-contenido .comercio_content .desc {
+  display: inline-block;
+  margin-left: 10px;
+  width: 320px;
+  height: 85px;
+}
+.municipio-contenido .comercio {
+  position:relative;
+  height: auto;
+}
+.municipio-contenido .imagen {
+  float: left;
+  height: 85px;
+  margin-right: 10px;
+  width: 85px;
+}
+.municipio-contenido .comercio_destacado .masInfoWrapper {
+  float: none;
+  margin: 0;
+  position: absolute;
+  right: 26px;
+  top: 10px;
+}
+.municipio-contenido .tipo {
+  opacity: 0.8;
+  margin-bottom: 5px;
+}
+.municipio-contenido .nombre {
+  font-size: 110%;
+  margin-bottom: 10px;
+}
+.municipio-contenido .coordenadas {
+  font-size: 85%;
+}
+.municipio-contenido .comercio .imagen img {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+}
+
+/****************************************
+ *   13.6  Cuestionario satisfaccion
+ ****************************************/
+
+.reservarEspecial {
+  margin-left: 50px;
+  position: relative;
+}
+
+/***********Actualizacion************/
+.actualizacion{
+	font-size: 100px;
+    height: 100%;
+    margin-top: 60%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+
+
+/*************************************
+ *    14.0 disclaimer
+ *************************************/
+ .alert.legal_disclaimer {
+  bottom: 0;
+     position: fixed;
+  position: absolute;
+}
+.alert.legal_disclaimer .alert_content {
+  display: none;
+}
+.alert.legal_disclaimer > div:first-child {
+  background: none repeat scroll 0 0 #434343;
+  border-radius: 0 5px 0 0;
+  color: #efefef;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  font-size:90%;
+}
+
+
+
+
+
+/*************************************
+ *    15.0 notificaciones
+ *************************************/
+.overlayContent2 {
+  -moz-box-sizing: border-box;
+  background: none repeat scroll 0 0 rgba(70, 70, 70, 0.9);
+  border: 1px solid;
+  border-radius: 5px;
+  color: #EFEFEF;
+  left: 200px;
+  padding: 8px;
+  position: absolute;
+  top: 270px;
+  width: 740px;
+}
+.overlayContent2 .overlyaTitle {
+  border-bottom: 1px solid;
+  font-size: 110%;
+  margin-bottom: 14px;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+
+#slideleft {
+    background: url("../img/volver_blanco2.png") no-repeat scroll center center / 188% auto rgba(60, 60, 60, 0.31);
+  height: 472px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
+}
+#slideRight {
+    background: url("../img/siguiente_blanco2.png") no-repeat scroll center center / 188% auto rgba(60, 60, 60, 0.31);
+    height: 490px;
+    left: 1040px;
+    position: absolute;
+    top: 0;
+    width: 40px;
+}
+#slideRight:hover,#slideleft:hover{background-color: rgba(60, 60, 60, 0.81);}
+
+
+
+/*************************************************************/
+.scroll_double_size {
+  height: 96%;
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+}
+
+.tarjeta {
+    margin-top: 0px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 23px;
+    min-height: 180px;
+}
+
+.categoria_cuestionario{
+width: 19%;
+display: inline-block;
+float: left;
+padding-right: 1%;
+}
+
+.bloque_cuestionario_satisfaccion{
+    width: 79%;
+    display: inline-block;
+    padding-left: 1%;
+}
+
+.pregunta_cuestionario{
+    width: 70%;
+/*    float: left;*/
+    float: right;
+    display: inline-block;
+    vertical-align:middle;
+    text-align: justify;
+/*    word-wrap: break-word;
+    -moz-hyphens:auto; 
+    hyphens:auto;*/
+
+}
+
+.pregunta_cuestionario2{
+    width: 70%;
+    float: left;
+/*    float: right;*/
+    display: inline-block;
+    vertical-align:middle;
+    text-align: justify;
+/*    word-wrap: break-word;
+    -moz-hyphens:auto; 
+    hyphens:auto;*/
+
+}
+
+
+.rating_cuestionario {
+  display: inline-block;
+  float: right;
+  overflow: hidden;
+  padding-left: 2%;
+  width: 28%;
+  position: relative;
+  top: -7px;
+}
+
+.rating_cuestionario2 {
+  display: inline-block;
+  float: right;
+  overflow: hidden;
+  padding-left: 2%;
+  padding-top: 11px;
+  position: relative;
+  text-align: center;
+  top: -7px;
+  vertical-align: middle;
+  width: 28%;
+}
+
+.linea_cuestionario {
+  border-bottom: 1px solid #3B3B3B ;
+  display: inline-block;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.linea_cuestionario:last-child {
+    border: 0px !important;
+}
+
+.imagen_cuestionario{
+    width: 100%;
+    height: 100%;
+}
+
+.separador_tarjetas{
+    width: 97%;
+    height: 5px;
+background: #0f435b; /* Old browsers */
+background: -moz-linear-gradient(left,  #0f435b 0%, #186b90 35%, #186b90 65%, #0f435b 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#0f435b), color-stop(35%,#186b90), color-stop(65%,#186b90), color-stop(100%,#0f435b)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #0f435b 0%,#186b90 35%,#186b90 65%,#0f435b 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #0f435b 0%,#186b90 35%,#186b90 65%,#0f435b 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #0f435b 0%,#186b90 35%,#186b90 65%,#0f435b 100%); /* IE10+ */
+background: linear-gradient(to right,  #0f435b 0%,#186b90 35%,#186b90 65%,#0f435b 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f435b', endColorstr='#0f435b',GradientType=1 ); /* IE6-9 */
+margin-bottom: 15px;
+
+}
+
+/*Sin fixed*/
+/*.boton_derecha_cuestionario{
+    color:white;
+  position: absolute;
+  background-color: #242424;
+  border: 2px solid #FFFFFF;
+  border-radius: 9px;
+  font-family: robotocondensed;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 0.4em 1.9em;
+  text-align: center;
+  text-transform: uppercase;
+  right: 30px;
+}*/
+
+
+.boton_derecha_cuestionario {
+  background-color: #242424;
+  border: 2px solid #FFFFFF;
+  border-radius: 9px;
+  bottom: 110px;
+  color: #FFFFFF;
+    font-family: OpenSans;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 0.4em 1.9em;
+  position: fixed;
+  right: 88px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+  display: none;
+}
+
+.nombre_grupo_cuestionario {
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 1px rgba(13, 60, 81, 0.98);
+  text-transform: uppercase;
+  top: 37px;
+}
+
+
+/*.texto_cuestionario {
+  background-color: #2D2D2D !important;
+  border: 0 none;
+  color: #FFFFFF;
+}*/
+
+
+/******************************************************************/
+
+/**Para las estrellas**/
+
+
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+div.star-rating{float:left;width:35px;height:30px;text-indent:-999em;cursor:pointer;display:block;background:transparent;overflow:hidden}
+div.star-rating,div.star-rating a{background:url(images_rating/star.png) no-repeat 0 0px}
+div.star-rating a{display:block;width:30x;height:100%;background-position:0 0px;border:0}
+div.star-rating-on a{background-position:0 -60px!important}
+/*div.star-rating-hover a{background-position:0 -30px}*/
+/*div.star-rating-hover a{background-position:0 -60px}*/
+/* Read Only CSS */
+div.star-rating-readonly a{cursor:default !important}
+/* Partial Star CSS */
+div.star-rating{background:transparent!important;overflow:hidden!important}
+/* END jQuery.Rating Plugin CSS */
+
+
+/****************************************************************************/
+/*Para las sugerencias */
+/*
+.boton_derecha_sugerencias {
+  background-color: #242424;
+  border: 2px solid #FFFFFF;
+  border-radius: 9px;
+  bottom: 110px;
+  color: #FFFFFF;
+  font-family: robotocondensed;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 0.4em 1.9em;
+  text-align: center;
+  text-transform: uppercase;
+  float: right;
+  margin-top: 2%;
+}*/
+
+
+.texto_sugerencias{
+width: 47%;
+display: block;
+float: left;
+text-align: justify;
+}
+
+.gracias_sugerencias{
+    display: none;
+    left: 470px;
+    position: absolute;
+    top: 437px;
+}
+
+
+.area_texto_sugerencias{
+width: 93%;
+display: block;
+float: left;
+margin-left: 3%;
+}
+
+.texarea_sugerencias{
+    width: 100%;
+}
+
+
+#texto_sugerencia{
+    border-radius: 0px !important;
+}
+
+.contenido_sugerencia{
+    text-align: justify;
+    padding: 10px 15px 0;
+}
+
+.sugerencias_contenido {
+    height: 378px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-top: 3px;
+}
+
+.localizador_sugerencias_titulo {
+  /*  background-color: #91B80F;*/
+  background-color: #186B90;
+}
+
+
+.localizador_sugerencias_titulo > p {
+    margin: 0;
+    padding-bottom: 6px;
+    padding-left: 14px;
+    padding-top: 3px;
+    text-align: left;
+}
+
+.localizador_input{
+    border-radius: 0;
+    margin-top: 17px;
+    padding: 6px;
+}
+
+
+.boton_derecha_sugerencias {
+    background-color: #242424;
+    border: 2px solid #91B80F;
+    box-shadow: 3px 6px 3px -4px #000000;
+    clear: both;
+    color: #FFFFFF;
+    float: left;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-left: 25%;
+    margin-top: 2%;
+    padding: 0.4em 1.9em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 329px;
+}
+
+
+.tarjeta_sugerencias {
+    background-color: #565656;
+   /* border: 3px solid #91B80F;*/
+   border: 3px solid #186B90;
+    box-shadow: 5px 11px 7px -4px #000000;
+    height: 345px;
+    text-align: center;
+    width: 400px;
+}
+
+.tarjeta_sugerencias_habitacion {
+    background-color: #565656;
+  /*  border: 3px solid #91B80F;*/
+  /*Color de la demo*/
+    border: 3px solid #186B90;
+    box-shadow: 5px 11px 7px -4px #000000;
+    height: 345px;
+    text-align: center;
+    width: 360px;
+}
+
+.tarjeta_sugerencias_habitacion img {
+    height: 174px;
+}
+
+.mensaje_gracias {
+    left: 325px;
+    position: absolute;
+    top: 430px;
+    display: none;
+}
+
+.mensaje_gracias_cuestionario {
+    bottom: 121px;
+    display: none;
+    left: 360px;
+    position: fixed;
+}
+/********************** Nueva seccion de conoce */
+.menu_tiempo_volver.back {
+  position: static !important;
+}
+.sub-menu-elmt {
+  /*display: inline-block;*/
+  display: inline-table;
+  margin-right: 1px;
+  width: 110px;
+  height: 110px;
+  position: relative;
+}
+.municipio_element {
+/*  background-color: rgba(255, 255, 255, 0.5);*/
+  display: table;
+  height: 155px;
+  margin-bottom: 24px;
+  padding: 0px !important;
+  text-shadow: 0 3px 10px #000000;
+  width: 100%;
+}
+.municipio_element .flip_element{height:125px !important;}
+.sub-menu-icon {
+  background: none repeat scroll 0 0 #FF0000;
+  bottom: 30px;
+  height: 80px;
+  left: 15px;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  width: 80px;
+}
+
+.sub-menu-title {
+  bottom: 10px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.cover-gc #map_municipio {
+  display: inline-block;
+  float: none;
+  height: 10px;
+  margin: 30px auto;
+  transform: scale(1.4);
+  width: 80%;
+}
+.municipio_element > div.element {
+    height: 110px;
+    width: 110px;
+}
+.slider_tiempo_municipio {
+  display: table;
+  float: left;
+  font-weight: 500;
+  margin: 0 5px;
+  text-align: center;
+  width: 125px;
+  background: none !important;
+}
+
+.cover-gc {
+  height: 608px;
+  overflow: hidden;
+}
+.menu_tiempo_volver_texto {
+  color: #FFFFFF;
+}
+.menu_tiempo {
+  height: 110px;
+  left: 140px;
+  margin-bottom: 23px;
+  top: 330px;
+  width: 100%;
+}
+.municipio_wrapper {
+  margin: 0 auto;
+  width: 70% !important;
+}
+.to_flip {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000000;
+  float: right;
+  padding: 5px 12px !important;
+  position: relative;
+  right: 17%;
+  top: -30px;
+  width: 100px;
+}
+.remove_bg{
+    background-color: rgba(255,255,255,0);
+}
+
+/*Procedimiento inverso para que aparezcan primero los mapas sin background*/
+.add_bg{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/***************************************************************************/
+
+/* Que hacer */
+
+.scroll_quehacer{
+    overflow-y: scroll;
+    height: 97%;
+}
+
+.tarjeta_nueva{
+  background-color:rgba(255,255,255,0.75);
+/*  border-radius: 20px;*/
+  height: 140px;
+  width: 47%;
+  float: left;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  opacity: 1;
+  border: 1px solid #949698;
+/*  -webkit-box-shadow: 1px 2px 8px 0px rgba(50, 50, 50, 0.75);
+ -moz-box-shadow:    1px 2px 8px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         1px 2px 8px 0px rgba(50, 50, 50, 0.75);*/
+}
+
+.destacada{
+  background-color:rgba(255,255,255,1);
+}
+
+
+.titulo_tarjeta{
+    background-color: #115E67 !important;
+    height: 29px;
+    padding-left: 1.5%;
+    color: white;  
+    position: relative; 
+
+}
+
+.titulo_tarjeta > p {
+    padding-top: 5px;
+    text-transform:  capitalize; 
+}
+
+.destacada .tarjeta_destacado{
+  background-color:#e8c817;
+/*    background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/general/icon_canoa.svg") no-repeat scroll center center / 95% auto rgba(0, 0, 0, 0);
+*/}
+
+
+.tarjeta_cuadro{
+    float: left;
+    height: 111px;
+    width: 26%;
+    margin-right: 10px;
+    /*background-color:#1E824C;*/
+    background-color: #336E7B;
+
+}
+
+.tarjeta_doble_alto{
+    height: 280px;
+}
+
+.tarjeta_subtitulo{
+    padding-left: 60px;
+    padding-top: 6px; 
+}
+
+.tarjeta_destacado{
+    background-color: #f39c12;
+/*    border-radius: 20px;*/
+    height: 75%;
+    margin: 13%;
+    margin-left: 16%;
+    margin-top: 10%;
+    width: 73%;
+}
+
+.tarjeta_contenido{
+    color: #000000;
+    padding-right: 2%;
+    padding-top: 12px;
+    text-align: justify;
+    padding-left: 12px;
+    height: 45%;
+}
+
+
+.tarjeta_masinfo {
+    bottom: 4px;
+    right: 18px;
+    color: #000;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 11px;
+    }
+
+
+.tarjeta_tipo {
+    font-size: 14px;
+    text-transform:uppercase;
+}
+
+
+.tarjeta_titulo {
+    font-weight: 700;
+}
+
+
+.tarjeta_info {
+    font-size: 14px;
+}
+
+
+
+.icono_dentro_quehacer{
+    width: 70%;
+    height: 70%;
+    padding-left: 15%;
+    padding-top: 15%;
+}
+
+.puntos_suspensivos{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.texto_web_quehacer{
+    font-size: 12px;
+    padding-top: 6px;
+}
+
+.tarjeta_destacado_estrella {
+/*    padding-left: 16%;
+    padding-top: 12%;
+    width: 70%;*/
+}
+
+/*colores de fondo para las tarjetas del nuevo que hacer*/
+/*.color_Ocio_y_Comer{
+    background-color: #efd345;
+
+}
+
+.color_Actividades{
+background-color: #fbcd64;
+}
+
+.color_Compras{
+background-color: #fbc99d;
+}
+
+*/
+
+.full_contenido_wrapper {
+  clear: both;
+  height: 581px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 80%;
+}
+.card-imagen {
+  float: left;
+  width: 33%;
+}
+
+.tarjeta_descripcion_sitios{
+    overflow: hidden;
+    height: 85px;
+}
+
+.width_90{
+    width: 90%;
+}
+
+.width_629{
+    width: 629px !important;
+}
+
+.tarjeta_small{
+    width: 31%;
+}
+
+.tarjeta_large{
+    width: 64%;
+}
+
+.tarjeta_medium{
+    width: 47%;
+}
+
+.tarjeta_full{
+    width: 97%;
+}
+
+.ruta_icono {
+    float: left;
+    height: 34px;
+    left: 5px;
+    position: absolute;
+    top: 6px;
+    width: 54px;
+}
+
+.ruta_icono_mapa {
+    float: left;
+    left: 5px;
+    position: absolute;
+    top: -118px;
+    width: 50px;
+}
+
+
+/* Características */
+
+.rutas_caracteristicas{
+    background-color: #dfd7c9;
+    margin-top: 8%;
+    padding: 5% 12% 2%;
+}
+
+
+.rutas_caracteristicas_datos div {
+    font-size: 12px;
+    padding-top: 9%;
+    width: 156px;
+}
+
+.caracteristicas_tarjeta_contenido{
+    color: #000000;
+    float: left;
+    margin: 0;
+}
+
+.rutas_caracteristicas_datos:last-child{
+  border:none;
+}
+
+.rutas_caracteristicas_datos {
+    float: left;
+    width: 25%;
+}
+
+.rutas_caracteristicas_datos_tipo{
+  font-weight: 600;
+}
+
+/*.ruta_icono_caracteristicas{
+    float: left;
+    left: 8px;
+    position: absolute;
+    top: -56px;
+    width: 50px;
+}*/
+
+.ruta_icono_caracteristica{
+    width: 68px;
+
+}
+
+/**Leyenda************************************/
+
+
+.rutas_leyenda_datos {
+    float: left;
+    width: 14%;
+}
+.rutas_leyenda_datos div {
+    font-size: 12px;
+    padding-left: 38%;
+    padding-top: 9%;
+}
+
+.alto_tarjeta_leyenda{
+    height: 105px;
+}
+
+
+
+
+/********************************************RUTAS*/
+
+.background_rutas{
+  background-image: url('../../../../contenido_proyectos/vistaflor/_general/conoce_sitios/rutas_fondo.png');
+  background-repeat:no-repeat;
+  text-align: center;
+    font-family: OpenSans;
+  margin: 0 auto;
+  height: 100%;
+  margin: 0px auto;
+  height: 1796px;
+  z-index: 1;
+  position: absolute;
+  /*top: 79px;*/
+  /*RIU*/
+  top:84px;
+  left: 0px;
+  width: 100%;
+  background-color: #59ABE3;
+}
+
+/******************************************************/
+
+.parte_arriba_rutas {
+    margin-left: 163px;
+    position: relative;
+    margin-right: 70px;
+    margin-top: 36px;
+    height: 546px;
+    overflow: hidden;
+}
+
+
+.parte_arriba_rutas > img
+{
+/*    margin-left: 370px;*/
+    
+   max-width: 100%;
+   max-height: 546px;
+
+    -webkit-box-shadow: 1px 2px 8px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    1px 2px 8px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         1px 2px 8px 0px rgba(50, 50, 50, 0.75);
+}
+
+.rutas {
+    height: 1010px;
+    overflow-y: auto;
+    padding: 0 5%;
+}
+
+
+.tarjeta_imagen_texto {
+background-color: rgba(0, 0, 0, 0.6);
+bottom: 0px; 
+position: absolute;
+text-align: right;
+width: 100%;
+}
+
+.tarjeta_imagen_texto p {
+margin-right: 3%;
+margin: 16px;
+color: white;
+font-size: 24px;
+}
+
+.menu_ruta_contenido_boton {
+    width: 110px;
+    height: 110px;
+    background-image: url('../../../../contenido_proyectos/vistaflor/_general/conoce_sitios/rutas_icono.png');
+    color: white;
+    vertical-align: middle;
+    background-repeat: none;
+    border-top: 4px solid #1E824C;
+
+}
+
+.imagen_mapa{
+    height: 100%;
+    width: 931px;
+}
+
+.padding_none{
+    padding: 0px !important;
+}
+
+/*Arreglo para el conetenido directo de conoce sitios*/
+
+
+.card.card-4x4 > p {
+    color: #000000;
+    float: left;
+    text-align: justify;
+    width: 70%;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+
+.card.card-4x4 > img {
+    width: 25%;
+    margin-bottom: 15px;
+}
+
+
+.card.card-4x4 > h2 {
+    display: none;
+}
+
+.card.card-4x4 {
+    margin-top: 40px;
+}
+
+
+
+/*CSS del owl galeria*/
+#owl-galeria .owl-item{
+  box-shadow: -26px 0px 20px -14px #000000;
+}
+
+#owl-galeria .owl-item span{
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    height: 800px;
+    opacity: 0.9;
+    width: 100%;
+}
+
+#owl-galeria.owl-carousel{height: 100%;}
+#owl-galeria.owl-carousel > .owl-wrapper-outer{height: 94%;}
+.informacion_wrapper { background-image: url("../../../../contenido_proyectos/vistaflor/_general/conoce_sitios/info_icono.png");}
+.hacer_wrapper { background-image: url("../../../../contenido_proyectos/vistaflor/_general/conoce_sitios/que_hacer_icono.png");}
+.galeria_wrapper { background-image: url("../../../../contenido_proyectos/vistaflor/_general/conoce_sitios/galeria_icono.png");}
+.sitios_wrapper { background-image: url("../../../../contenido_proyectos/vistaflor/_general/conoce_sitios/sitios_icono.png");}
+
+.informacion_wrapper,.hacer_wrapper,.galeria_wrapper,.sitios_wrapper,.listado_zonas_wrapper{display:inline-table;}
+.sub-menu-elmt.active:before {
+  background: none repeat scroll 0 0 #ffffff;
+  top: 0;
+  content: " ";
+  height: 4px;
+  position: absolute;
+  width: 100%;
+}
+
+
+.sub-menu-elmt.active{
+    background-color: rgba(16, 16, 16, 0.13);
+}
+
+.menu_conoce{
+
+  height: 110px;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 23px;
+}
+
+/*Cambios para la leyenda*/
+.tarjeta_alto_auto{
+    height: auto;
+}
+
+.ruta_icono_mapa_foto{
+    width: 50px;
+    float: left;
+    z-index: 999;
+    background-image: url('../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/icon_mapa.svg');
+    height: 50px;
+    background-color: red;
+    left: 5px;
+    position: absolute;
+}
+
+.container-isotope {
+  height: 100% !important;
+}
+
+.container-isotope .item{
+    position: relative;
+    float: left;
+    width: 140px;
+    height: 140px;
+    margin-top: 1px;
+    /*padding: 10px;*/
+    background: #888;
+    color: #262524;
+}
+.item.gigante{
+    width: 425px !important;
+    height: 425px !important;  
+}
+
+.container-isotope .item.width2 {
+    width: 280px;
+/*    margin: 2px;*/
+}
+
+.container-isotope .item.height2 {
+    height: 280px;
+/*    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 2px;
+    margin-bottom: 2px;*/
+}
+
+/* slider container */
+.iosslider {
+    /* required */
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 1080px !important;
+    height: 100% !important;
+}
+
+/* slider */
+.iosslider .slider {
+    /* required */
+/*    width: 1080px;*/
+    height: 100%;
+}
+
+/* slide */
+.iosslider .slider .item {
+    /* required */
+/*    box-shadow: 0 0px 5px #000000;*/
+    float: left;
+    width: 1080px !important;
+    height: 100%;
+}
+
+.item_full_size_gallery{
+    width: 1080px !important;
+}
+
+/*Flechas de iosslider*/
+.iosslider .next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    background: url("../img/siguiente_blanco2.png") no-repeat scroll center center / 20px auto rgba(0, 0, 0, 0.7);
+    border-radius: 70px;
+    padding-bottom: 12px;
+    padding-left: 11px;
+    background-position: center center;
+    background-size: cover;
+}
+.iosslider .prev {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    background: url("../img/volver_blanco2.png")no-repeat scroll center center / 20px auto rgba(0, 0, 0, 0.7);
+    border-radius: 70px;
+    padding-bottom: 12px;
+    padding-left: 11px;
+    background-position: center center;
+    background-size: cover;
+}
+.iosslider .gallery_close {
+    height: 40px;
+    left: 85px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 93%;
+    width: 40px;
+    background:url("../img/x.png") no-repeat scroll center center / 20px auto rgba(0, 0, 0, 0.7);
+    border-radius: 70px;
+    padding-bottom: 12px;
+    padding-left: 11px;
+}
+
+.iosslider .gallery_play {
+    height: 40px;
+    left: -85px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 93%;
+    width: 40px;
+    background: url("../img/play.png") no-repeat scroll center center / 35px auto rgba(0, 0, 0, 0.5);
+    border-radius: 70px;
+    padding-bottom: 12px;
+    padding-left: 11px;
+}
+.iosslider .gallery_play.play{
+    background: url("../img/pause.png") no-repeat scroll center center / 35px auto rgba(0, 0, 0, 0.5) !important;
+}
+/*Desactivar el modo demo*/
+.iosslider i{
+    display: none;
+}
+.full_size_gallery{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100% !important;
+    width: 100% !important;
+}
+.visible {display: block;}
+
+
+/*CSS para los filtros de que hacer*****************************************************/
+
+.que_hacer_filtros{
+    display: none;
+    right: 104px;
+    position: absolute;
+    z-index: 1;
+    top: -40px;
+}
+
+/*.que_hacer_filtros > ul{
+    display: block;
+    float: left;
+}*/
+
+.que_hacer_filtros > ul > li{
+    display: block;
+    float: left;
+    margin-left: 5px;
+    background-color: #1E824C;
+    padding: 10px;
+    text-align: center;
+    opacity: 0.7;
+    margin-top: 3px;
+}
+
+.margin_top_33{
+margin-top: 33px;
+}
+
+.margin_left_13{
+margin-left: 13% !important;
+}
+
+.filtro_activo{
+    opacity: 1 !important;
+    border-top: 3px solid white !important;
+    margin-top: 0px !important;
+}
+.prueba_estilo_icono_flat{
+/*    width: 100px;
+    height: 100px;*/
+    width: 115px;
+    height: 115px;
+    background-color: transparent;
+    box-shadow: 0 2px 3px -1px #000000;
+/*    margin-bottom: 5px;*/
+    margin-bottom: 0px;
+}
+
+.imagen_actividad_agenda {
+    width: 601px;
+    height: 473px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-color: #d4d4d4;
+}
+
+.top_914{
+    top: 914px !important;
+}
+
+.tarjeta_galeria_rutas{
+    height: 458px !important;
+    float: right !important;
+    background-color: transparent !important;
+}
+
+/*Estilo de visor de fotos para rutas*/
+/* slider container */
+.iosslider_ruta {
+    /* required */
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width:100%;
+    height: 100%;
+}
+
+/* slider */
+.iosslider_ruta .slider {
+    /* required */
+/*    width: 1080px;*/
+    height: 100%;
+}
+
+/* slide */
+.iosslider_ruta .slider .item {
+    /* required */
+/*    box-shadow: 0 0px 5px #000000;*/
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+/*Flechas de iosslider*/
+.iosslider_ruta .next {
+    position: absolute;
+    top: 49%;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    /*border: 1px dotted #ddd;*/
+    background: url("../img/siguiente_blanco2.png") repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    border-radius: 70px;
+   padding-bottom: 12px;
+   padding-left: 11px;
+}
+.iosslider_ruta .prev {
+    position: absolute;
+    top: 49%;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    /*border: 1px dotted #ddd;*/
+   background: url("../img/volver_blanco2.png")repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+   border-radius: 70px;
+   padding-bottom: 12px;
+   padding-left: 11px;
+       background-position: center center;
+    background-size: cover;
+
+
+}
+
+.iosslider_ruta .gallery_play {
+    background: url("../img/play.png") rgba(0, 0, 0, 0.7);
+    border-radius: 70px;
+    height: 40px;
+    margin: auto;
+    padding: 5px;
+    position: absolute;
+    right: 7px;
+    top: 87%;
+    width: 40px;
+    background-repeat: no-repeat !important;
+     background-position: center center !important;
+
+}
+
+.iosslider_ruta .gallery_play.play {
+    background: url("../img/pause.png") rgba(0, 0, 0, 0.7) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+/*    border-radius: 70px;
+    height: 40px;
+    margin: auto;
+    padding: 5px;
+    position: absolute;
+    right: 7px;
+    top: 87%;
+    width: 40px;*/
+}
+
+/*Desactivar el modo demo*/
+.iosslider_ruta i{
+    display: none;
+}
+/*Css de las burbujas*/
+@-moz-keyframes an1 { /* Firefox */
+    0%   { top: 1400px; }
+    100% { top: 580px; }
+}
+.bubble{
+    background-image: url("../../../../contenido_proyectos/vistaflor/_general/imagenes/bubble.png");
+    position: absolute;
+    background-size: cover;
+}
+#bubble1{
+    height: 100px;
+    opacity: 0.40;
+    left:100px;
+    width: 100px;
+    -moz-animation: an1 40s ease-in-out infinite;
+}
+#bubble2{
+    height: 150px;
+    opacity: 0.40;
+    left:500px;
+    width: 150px;
+    -moz-animation: an1 100s ease-in infinite; /* Firefox */
+}
+
+#bubble3{
+    height: 120px;
+    opacity: 0.35;
+    left:300px;
+    width: 120px;
+    -moz-animation: an1 60s ease infinite; /* Firefox */
+}
+
+#bubble4{
+    height: 100px;
+    opacity: 0.30;
+    left:900px;
+    width: 100px;
+    -moz-animation: an1 35s ease-in infinite; /* Firefox */
+}
+
+#bubble5{
+    height: 170px;
+    opacity: 0.30;
+    left:650px;
+    width: 170px;
+    -moz-animation: an1 45s ease infinite; /* Firefox */
+}
+#bubble6{
+    height: 90px;
+    opacity: 0.45;
+    left: 200px;
+    width: 90px;
+    -moz-animation: an1 37s ease-in-out infinite; /* Firefox */
+}
+#bubble7{
+    height: 135px;
+    opacity: 0.30;
+    left:700px;
+    width: 135px;
+    -moz-animation: an1 60s ease infinite; /* Firefox */
+}
+/*Fin css burbujas*/
+
+
+
+.map_hotel_numero {
+  color: #ffffff;
+  display: block;
+  font-size: 19px;
+  height: 23px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding-top: 8px;
+  text-align: center;
+  width: 30px;
+}
+
+.width_20 {
+    border-bottom: 2px solid #ffffff;
+    color: black;
+    text-align: left;
+    width: 20%;
+}
+
+.width_1 {
+   
+    border-bottom: 2px solid #FFFFFF;
+    margin-left: 0;
+    padding-top: 10px;
+    width: 1%;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.tabla_numeros_mapa_hotel{
+   color: #FFFFFF;
+    display: block;
+    height: 23px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 8px;
+    text-align: center;
+}
+
+
+.tabla_numeros_mapa_hotel{
+    width:100%;
+    border: 0px;
+    font-family: OpenSans;
+}
+
+.color_fondo_impar{
+   background-color: rgba(1, 1, 1, 0.2);
+}
+
+/******************************/
+#municipio_nombre_wrapper {
+    color: #FFFFFF;
+    font-family: OpenSans;
+    font-size: 2.4em;
+    position: absolute;
+    right: 60px;
+    text-shadow: 0 0 0 #222222;
+    top: 566px;
+}
+
+/*Uno de los parches cabra para la demo (colocacion de las sugerencias al final)*/
+.padding_left_30{
+    padding-left: 30px !important;
+}
+
+.tarjeta_info_general_estilos{
+    border: 2px solid #97bf0d !important;
+    height: 188px !important;
+    width: 26% !important;
+    padding-top: 0px !important;
+}
+
+.tarjeta_info_general_estilos_2{
+    border: 2px solid #115E67!important;
+    height: 188px !important;
+    width: 26% !important;
+    padding-top: 0px !important;
+}
+
+.tarjeta_info_general_telefonos{
+    font-size: 14px;
+    padding-left: 17px;
+    padding-top: 5px;
+    text-align: left;
+    color: #202021;
+}
+
+.tarjeta_info_general_telefonos > table{
+    width: 100%;
+    border-spacing: 0 3px;
+    border-collapse: separate;
+}
+
+.tarjeta_info_general_telefonos > table > tbody > tr{
+    margin-top: 2px;
+}
+
+.tarjeta_info_general_img {
+    padding-left: 32%;
+    padding-top: 11px;
+    width: 34%;
+}
+
+.margin_left_9{
+    margin-left: 9%;
+} 
+
+
+.tarjeta_info_general_titulo {
+    background-color: #97bf0d;
+    color: #FFFFFF;
+    overflow: hidden;
+    padding: 3px;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+/***tarjetas a 2 en pantalla (info general)*****************************************************/
+
+.tarjeta_info_general_estilos_2{
+    border: 2px solid #004D97 !important;
+    height: 188px !important;
+    width: 39.5% !important;
+    padding-top: 0px !important;
+}
+
+.tarjeta_info_general_img_2 {
+    padding-left: 39%;
+    padding-top: 5px;
+    width: 23%;
+}
+
+.tarjeta_info_general_titulo_2 {
+    background-color: #7B9E06;
+    color: #FFFFFF;
+    overflow: hidden;
+    padding: 3px;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.tarjeta_info_general_telefonos_2{
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    padding-left: 2%;
+    padding-top: 5px;
+    text-align: left;
+    width: 47%;
+}
+
+.tarjeta_info_general_telefonos_2 > table{
+    width: 100%;
+    border-spacing: 0 3px;
+    border-collapse: separate;
+}
+
+.tarjeta_info_general_telefonos_2 > table > tbody > tr{
+    margin-top: 2px;
+}
+
+
+
+/**************************************/
+.posicion_hotel_mapa_conoce{
+    left: 538px;
+    position: absolute;
+    top: 499px;
+    z-index: 1;
+}
+
+.posicion_hotel_mapa_conoce > img{
+
+    height: 80px;
+    width: 80px;
+}
+
+
+
+
+/****************************************** seccion demo */
+.demo_wrapper_estilo_1 .text_wrapper {
+    line-height: 1.11em;
+    text-align: justify;
+    width: 48%;
+    float: left;
+}
+
+.demo_wrapper_estilo_1 .galeria {
+    clear: left;
+    float: left;
+    width: 48%;    margin-top: 20px;
+}
+.demo_wrapper_estilo_1 .oferta {
+    float: right;
+    width: 48%;
+}
+.demo_wrapper_estilo_1 .elemento_wrapper {
+    float: right;
+    width: 48%;
+    margin-bottom: 20px;
+}
+.demo_wrapper_estilo_1 .elemento {
+    display: inline-block;
+    margin: 0 2.1%;
+    position: relative;
+    width: 20%;
+    height: 90px;
+}
+.demo_wrapper_estilo_1 .elemento .elemento_nombre {
+    padding: 0 4px;
+    position: absolute;
+    text-align: center;
+    top: 52px;
+    width: 90%;
+    word-wrap: break-word;
+}
+.demo_wrapper_estilo_1 .elemento_como_llegar {
+    float: right;
+    width: 48%;
+}
+
+.demo_wrapper_estilo_1 .elemento > img {
+    height: 35px;
+    position: absolute;
+    width: 35px;
+    left: 27px;
+    top: 10px;
+}
+
+/*.demo_wrapper_estilo_1 .elemento_wrapper.deporte .elemento:nth-child(1) {
+    background: url("../../../../contenido_proyectos/vistaflor/centro_1/imagenes/icon_sp_tenis.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
+}
+.demo_wrapper_estilo_1 .elemento_wrapper.deporte .elemento:nth-child(2) {
+    background: url("../../../../contenido_proyectos/vistaflor/centro_1/imagenes/icon_sp_multideporte.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
+}
+
+.demo_wrapper_estilo_1 .elemento_wrapper.deporte .elemento:nth-child(3) {
+    background: url("../../../../contenido_proyectos/vistaflor/centro_1/imagenes/icon_sp_interior.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
+}
+
+.demo_wrapper_estilo_1 .elemento_wrapper.deporte .elemento:nth-child(4) {
+    background: url("../../../../contenido_proyectos/vistaflor/centro_1/imagenes/icon_sp_exterior.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
+}
+
+.demo_wrapper_estilo_1 .elemento_wrapper.piscina .elemento:nth-child(1) {
+    background: url("../../../../contenido_proyectos/vistaflor/centro_1/imagenes/icon_ps_infantil.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
+}
+.demo_wrapper_estilo_1 .elemento_wrapper.piscina .elemento:nth-child(2) {
+    background: url("../../../../contenido_proyectos/vistaflor/centro_1/imagenes/icon_ps_adulto.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
+}
+*/
+
+.demo_wrapper_estilo_2 .demo_bloque {
+    clear: left;
+    min-height: 330px;
+}
+.demo_wrapper_estilo_2 .demo_bloque:nth-child(n+2) {
+    padding-top: 38px;
+}
+.demo_wrapper_estilo_2 .demo_bloque .demo_imagen {
+    float: left;
+    margin-right: 2%;
+    position: relative;
+    width: 47%;
+}
+.demo_wrapper_estilo_2 .demo_bloque .demo_imagen .text_wrapper {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    margin-top: -3px;
+    min-height: 51px;
+    padding: 12px 0 6px 2%;
+    width: 98%;
+}
+
+.demo_wrapper_estilo_2 .demo_bloque .elemento_reservar {
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+.demo_wrapper_estilo_2 .demo_bloque .elemento_como_llegar, .demo_wrapper_estilo_2 .demo_bloque .demo_imagen2 {
+    display: inline-block;
+    width: 50%;
+}
+.demo_wrapper_estilo_2 .demo_bloque .demo_imagen2 {
+    height: 186px;
+}
+
+.demo_wrapper_estilo_2 .demo_bloque .elemento_como_llegar .text_wrapper {
+    padding: 4px 0;
+}
+.demo_wrapper_estilo_2 .demo_bloque .elemento_como_llegar {
+    display: inline-block;
+    width: 50%;
+}
+.overlayWrapper.popup-element.mapa_popup.closeWrapper {
+    border: 3px solid #115E67;
+    margin-top: 439px !important;
+    max-height: 1414px;
+    min-height: 948px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.overlayWrapper.popup-element.closeWrapper {
+    border: 3px solid #97bf0d;
+    left: 50px !important;
+    margin-top: -44px !important;
+    max-height: 1000px;
+    min-height: 948px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.demo_popup .close {
+    border-color: inherit;
+}
+.demo_popup .eventoDetailTitle {
+    background-color: #97bf0d;
+}
+
+
+/* Agenda rating */
+
+
+
+.rating_informacion{
+    display: none;
+    float: right;
+    width: 40%;
+    position: absolute;
+    right: 7px;
+    top: 263px;
+
+}
+
+
+.rating_informacion_gracias{
+    text-align: center;
+    display: none;
+    float: right;
+    width: 40%;
+    position: absolute;
+    right: 7px;
+    bottom: 20px;
+}
+
+.rating_info {
+    float: left;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.rating_info_icon {
+    height: 20px;
+    width: 26px;
+    float: left;
+}
+
+.rating_info_habitacion input {
+    width: 70% !important;
+    border-radius: 0px !important;
+    padding-left: 5px;
+}
+
+.rating_info_apellidos > input {
+    width: 80% !important ;
+    border-radius: 0px !important;
+    padding-left: 5px;
+}
+
+.rating_valoracion {
+    float: right;
+    width: 40%;
+}
+
+.rating_votacion_grupo {
+    float: left;
+    height: 30px;
+    padding-left: 5%;
+    width: 45%;
+}
+
+.rating_info_habitacion{
+    width: 30%;
+    float: left;
+}
+
+.rating_info_apellidos{
+   float: left;
+    padding-left: 5%;
+    width: 65%; 
+}
+
+
+.rating_votacion_texto {
+    padding-top: 3px;
+}
+
+
+.icono_habitacion{
+ background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/contenido/icon_habitacion_45.svg") no-repeat scroll center center / 85% auto rgba(0, 0, 0, 0);   
+}
+
+.icono_tick{
+ background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/contenido/icon_tick_verde.svg") no-repeat scroll center center / 85% auto rgba(0, 0, 0, 0);   
+}
+
+.icono_cross{
+ background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/contenido/icon_cross_roja.svg") no-repeat scroll center center / 85% auto rgba(0, 0, 0, 0);   
+}
+
+.icono_lapiz{
+ background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/contenido/icon_lapiz.svg") no-repeat scroll center center / 85% auto rgba(0, 0, 0, 0);   
+}
+
+.valorar_agenda{
+    bottom: 67px;
+    position: absolute;
+    right: 180px;
+}
+
+
+.demo_wrapper_estilo_7 .demo_bloque {
+    float: left;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 48%;
+}
+
+.demo_wrapper_estilo_7 .demo_bloque .elemento_texto {
+    text-align: justify;
+}
+
+.elemento_reservar {
+    background-color: rgba(0, 0, 0, 0.9);
+    letter-spacing: -1px;
+    margin-top: 22px;
+    padding: 8px 0 8px 18px;
+    font-size: 88%;
+}
+
+ .elemento_reservar span {
+    background-color: #005F7F;
+    border: 2px solid #0093C6;
+    border-radius: 10px;
+    color: #FFFEB9;
+    font-size: 16px;
+    margin-left: 40px;
+    padding: 3px;
+}
+ .elemento_como_llegar {
+    height: 150px;
+    margin-top: 20px;
+    overflow: hidden;
+    /*width: 48%;*/
+}
+.elemento_como_llegar > img {
+    height: auto;
+    position: relative;
+}
+.elemento_como_llegar .text_wrapper {
+    background-color: #005F7F;
+    font-size: 27px;
+    height: 28px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.demo_wrapper_estilo_7 .demo_bloque_total {
+    display: inline-block;
+    height: 185px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.demo_wrapper_estilo_7 .demo_bloque_total div {
+    float: left;
+    height: 90%;
+    margin: 9px;
+    width: 23%;
+    background-color: #242424;
+    border: 2px solid #186B90;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-align: center;
+}
+.demo_wrapper_estilo_7 .demo_bloque_total div img {
+    height: 71%;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+/************************************************************************/
+/**Listado de hoteles del mundo para RIU*********************************/
+
+.imagen_logo_arriba_listado_zonas{
+    /*position: absolute;*/
+    z-index: 1;
+    height: 610px;
+}
+
+.imagen_logo_arriba_listado_zonas > img{
+
+}
+
+
+.menu_listado_zonas{
+
+  height: 110px;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 23px;
+}
+
+.listados_zonas_wrapper { background-image: url("../../../../contenido_proyectos/vistaflor/_general/conoce_sitios/sitios_icono.png");}
+
+.full_contenido_listado_zona_wrapper {
+    clear: both;
+    height: 982px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.full_contenido_listado_zona_wrapper > img {
+    height: auto;
+}
+
+.zona_element{
+    display: inline-block;
+    margin-bottom: 7px;
+   /* padding: 7px 0 7px 2%;*/
+    text-shadow: 0 3px 10px #000000;
+    width: 80%;
+    background-position: center center;
+    background-size: cover;
+}
+li.zona_element:nth-child(2n) {
+    margin-left: 5%;
+}
+
+li.zona_element.active{
+    background: none repeat scroll 0 0 #A3BE06;
+    border-radius: 5px 5px 5px 5px;
+}
+#conoce_municipio {
+    height: 431px;
+    overflow: hidden;
+}
+
+#conoceWrapper dl img { width: auto; height: auto;}
+
+.listado_wrapper {
+  margin: 0 auto;
+  width: 90% !important;
+}
+
+.listado_wrapper > .owl-controls > .owl-buttons > .owl-prev 
+
+{
+    bottom: 84px;
+    left: -38px;
+}
+
+
+.listado_wrapper > .owl-controls > .owl-buttons > .owl-next
+
+{
+    bottom: 84px;
+/*    right: -60px;*/
+}
+
+
+.contenedor_slider_zonas{
+
+    margin: 70px auto;
+
+}
+
+.texto_slider_zona{
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    color: white;
+    display: table-cell;
+    height: 115px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 121px;
+    padding: 2px;
+    line-height: 24px;
+}
+
+.menu_zonas_contenido_transparencia{
+    background-color: rgba(16, 16, 16, 0.6);
+    height: 111px;
+    width: 111px;
+}
+
+.espacio_foto_menu_destinos{
+    height: 54px;
+    width: 54px;
+}
+
+
+
+.imagenes_fondo
+{
+    background-position: center center;
+    background-size: cover;
+}
+
+.sin_margenes_derecha{
+    margin-right: 0px;
+}
+
+.padding_centrado_3{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.menu_tiempo_contenido_transparencia.active{
+background-color: #115E67 ;
+}
+
+.css_color_spa_menu.active{
+    background-color: #115E67;
+}
+
+.menu_zonas_contenido_icono {
+    color: White;
+    height: 65px;
+    margin-left: 36px;
+    margin-top: 13px;
+    width: 65px;
+}
+/*****************************************************************************/
+
+
+
+
+/****************        Destinos para riu    **************************/
+.wrapper-zonas-bg {
+  background: none repeat scroll 0 0 rgba(2, 2, 2, 0.5);
+  bottom: 450px;
+  height: 600px;
+  position: absolute;
+  width: 43%;
+  z-index: 1;
+  display: none;
+}
+#wrapper-paises {left: 63px;}
+#wrapper-hotel {right: 63px;}
+
+
+.alineado_izquierda{
+text-align: left !important;
+}
+
+/*****************************************************************************/
+
+
+/**********************Pantalla de hoteles de riu en destinos**********************/
+
+.contenedor_tarjeta_destinos_hotel{
+   margin-left: 3%;
+}
+
+.tarjeta_destinos_hotel {
+    background-color: #2f3031;
+    display: inline-block;
+    height: 180px;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 30%;
+      margin-top: 3%;
+}
+
+/*.tarjeta_destinos_hotel:nth-child(n+4) {
+  margin-top: 3%;
+}*/
+
+.imagen_destino_hotel {
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+.cabecera_destinos_hotel {
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.etiqueta_nombre_destinos_hotel {
+    background-color: rgba(2, 2, 2, 0.58);
+    color: white;
+    font-size: 13px;
+    margin-top: -29px;
+    padding: 8px 5px;
+    text-align: left;
+}
+
+.imagen_destino_hotel > img {
+
+    height: 22px;
+    margin-left: 10px;
+    margin-top: 3px;
+    position: relative;
+    text-align: left;
+    width: 100px;
+
+}
+
+.contendor_filtro_pais_destinos_hotel{
+    margin-left: 163px;
+}
+
+
+.filtro_pais_destinos_hotel {
+    background-color: rgba(255, 255, 255, 0.5);
+    clear: both;
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+
+.isotope .tarjeta_destinos_hotel {
+    margin-bottom: 25px;
+}
+
+
+.isotope_contenedor_destinos {
+    margin-left: 3% !important;
+}
+
+.scroll_destinos_hoteles {
+    height: 905px;
+    margin-right: 18px;
+    margin-top: 25px;
+    overflow-x: hidden;
+}
+
+.vista_detalle_hoteles_destino{
+    width: 635px;
+    height: 415px;
+}
+
+.mapa_destino_hotel{
+
+    height: 348px;
+    margin-left: 49%;
+    width: 50%;
+    background-color: rgba(1, 1, 1, 0.7);
+
+}
+
+.height_100{
+
+    height: 100%;
+}
+
+.etiqueta_nombre_detalles_hotel
+{
+    height: 164px;
+    margin-top: -180px;
+    font-size: 20px;
+    background-color: rgba(2, 2, 2, 0.81);
+    font-family: OpenSans;
+
+}
+
+.descripcion_destinos_hotel_bloque1
+{
+    font-size: 13px;
+    width: 40%;
+    display: inline-block;
+    float: left;
+
+}
+
+.descripcion_destinos_hotel_bloque2 {
+  border-left: 3px solid white;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+  max-height: 115px;
+  overflow-x: hidden;
+  padding-left: 10px;
+  padding-right: 12px;
+  /*text-align: justify;*/
+  text-overflow: ellipsis;
+  width: 55%;
+  margin-top: 5px;
+}
+
+.descripcion_destinos_hotel_bloque1 li {
+      overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 8px 5px;
+}
+
+.descripcion_destinos_hotel_bloque1 img {
+    width: 24px;
+}
+
+.descripcion_telefono_hotel_bloque1 {
+  margin-bottom: 10px;
+  margin-left: 29px;
+  margin-top: -18px;
+}
+
+
+
+/******************************************************************************/
+/**Para la foto de la piscina generia**/
+.foto_riu_piscina {
+  height: 400px;
+  width: 100%;
+}
+
+/**Nuestros compromisos riu**/
+.nuestros_compromisos_icono_texto {
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nuestros_compromisos {
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  height: 100px;
+  margin-right: 1%;
+  margin-top: 1%;
+  width: 49%;
+}
+
+.nuestros_compromisos_icono {
+    display: inline-block;
+    float: left;
+    width: 25%;
+}
+
+.nuestros_compromisos_icono > img {
+  margin-top: 10px;
+  padding-left: 25.5%;
+  width: 50%;
+}
+.nuestros_compromisos_icono_texto {
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nuestros_compromisos_texto li {
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+.nuestros_compromisos_texto {
+  display: inline-block;
+  float: left;
+  font-size: 14px;
+  padding: 5px 0;
+  text-align: justify;
+  width: 75%;
+}
+
+.texto_informacion_nuestros_compromisos {
+  font-size: 25px;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.web_nuestros_compromisos {
+  font-size: 55px;
+  margin-top: 12px;
+}
+
+.texto_informacion_nuestros_compromisos img {
+  bottom: 193px;
+  height: 11%;
+  position: absolute;
+  right: 81px;
+  width: 11%;
+}
+
+.imagen_travelife_nuestros_compromisos{
+    float: right;
+    margin-top: 20px;
+    width: 150px;
+}
+
+
+/******************************************************************************/
+/*CSS especifico para la pantalla de lugares**/
+
+.lugar_principal_nombre_zona {
+    color: #97bf0d;
+    /*font-family: Kalam-Regular;*/
+    font-size: 96px;
+    font-weight: 500;
+    margin-top: -100px;
+    position: absolute;
+    right: 14px;
+    text-align: right;
+
+}
+
+
+
+.width_96{
+    width: 96%;
+}
+
+.padding_laterales_3{
+    padding-left: 3px;
+    padding-right: 3px;
+
+}
+
+.tarjeta_lugares_info_general{
+   background-color: rgba(255, 255, 255, 0.9);
+    display: inline-table;
+    height: 170px;
+    margin-left: 4.5%;
+    margin-right: 0;
+    margin-top: 5%;
+    width: 43%;
+}
+
+.tarjeta_lugares_info_general_titulo {
+    background-color: #97bf0d;
+    color: white;
+    font-family: OpenSans;
+    font-weight: 600;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.tarjeta_lugares_info_general_contenido > ul {
+  color: black;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+.tarjeta_lugares_info_general_contenido li {
+  padding-bottom: 10px;
+    font-family: OpenSans;
+}
+
+.tarjeta_lugares_info_general_contenido img {
+    height: 35px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    vertical-align: middle;
+    width: 45px;
+}
+
+.tarjeta_lugares_info_general_info {
+  display: inline-table;
+  vertical-align: middle;
+}
+
+.tarjeta_lugares_info_general_contenido {
+  min-height: 235px;
+}
+
+/**********************************************/
+/** Fix para las tarjetas isotope de lugares **/
+
+.fix_margin_no_estrellas{
+
+    margin-top: -56px !important;
+
+}
+
+.fix_margin_no_estrellas_detalle{
+
+    margin-top: -205px !important;
+    
+}
+
+.imagen_lugar_icono {
+  height: 40px !important;
+  margin-left: 264px !important;
+  margin-top: -22px !important;
+  position: relative !important;
+  width: 40px !important;
+}
+
+.imagen_lugar_icono_grande {
+  height: 60px !important;
+  margin-left: 567px !important;
+  margin-top: -22px !important;
+  position: relative !important;
+  width: 60px !important;
+}
+
+.margen_top_60{
+    margin-top: 60px !important;
+}
+
+.boton_ver_lugar_pais {
+  background-color: black;
+  border: 0 none;
+  bottom: -25px;
+  font-weight: 600;
+  margin-left: -4px;
+  padding: 10px 0;
+  position: absolute;
+  text-align: center;
+  width: 634px;
+  text-transform: uppercase;
+  color: white;
+}
+
+
+.visibility_hidden
+{
+    visibility: hidden;
+}
+
+
+.nombre_hotel_riu_cabecera {
+    color: white;
+    font-size: 1.8em;
+    left: 120px;
+    position: relative;
+    top: -97px;
+    width: 340px;
+    z-index: 10;
+}
+
+/***********************************************/
+.width_48{
+    width: 48% !important;
+}
+
+.width_100{
+    width: 100% !important;
+}
+
+.height_145{
+    height: 145px !important;
+}
+
+.height_125{
+    height: 125px !important;
+}
+
+/************************************SPA************/
+
+.margin_botton_15{
+    margin-bottom: 15px !important;
+}
+
+
+.margin_top_20{
+    margin-top: 20px !important;
+}
+
+
+.imagen_spa_riu {
+    height: 300px;
+}
+
+.imagen_texto_spa_riu {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: -40px;
+  padding: 12px;
+  text-align: right;
+}
+
+.tabla_spa {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 10px;
+  width: 100%;
+  line-height: 20px;
+  border: 1px solid white;
+  margin-bottom: 20px;
+
+}
+
+.tabla_spa tr td {
+    padding: 5px;
+    font-size: 14px;
+    width: 50%;
+      border-left: 1px solid;
+      border-right: 1px solid;
+
+}
+
+.texto_titulo_tabla_spa {
+  background-color: rgba(0,0,0,0.8);
+  font-size: 17px !important;
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.texto_cabeza_tabla_spa {
+    border-top: 1px solid;
+  font-size: 20px !important;
+}
+
+.texto_cabeza_tipo_tabla_spa {
+  font-size: 25px;
+}
+
+/*************************************************************/
+.height_890{
+    height: 890px;
+}
+
+/*RIU CLASS*************************************/
+
+.riu_class_logo {
+    display: inline-block;
+    float: left;
+    width: 32%;
+    margin-right: 3%;
+
+}
+
+.riu_class_texto_principal{
+    width: 63% !important;
+}
+
+.riu_class_texto_principal ul li{
+    line-height: 21px;
+    font-size: 16px;
+}
+.color_fondo_055{
+    background-color: rgba(1, 1, 1, 0.55);
+}
+
+.heigth_125{
+    height: 125px !important;
+}
+
+/*PARA LA PROGRAMCION*************************************************************/
+
+.programacion_bloque_dia{
+    display: inline-block;
+    float: left;
+    width: 93%;
+    margin-left: 3%;
+
+}
+
+.programacion_bloque_fecha {
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 19px;
+  padding: 8px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.programacion_bloque_evento {
+/*    background-position: center center;*/
+    background-size: cover;
+    height: 275px;
+    margin: 10px 0;
+}
+
+.programacion_bloque_texto_evento {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: -36px;
+  padding: 5px;
+}
+
+.programacion_bloque_hora_evento {
+  display: inline-block;
+  text-align: right;
+  width: 14%;
+}
+
+.programacion_bloque_nombre_evento {
+  display: -moz-box;
+  width: 84%;
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tabla_info_general_tui{
+    width: 53%;
+    padding-left: 92px;
+
+}
+
+.programacion_bloque_1{
+   height: 559px;
+}
+
+.programacion_bloque_2{
+    height: 417px;
+}
+
+.programacion_bloque_4{
+    height: 204px;
+}
+
+.margen_right_none {
+    margin-right: 0% !important;
+}
+
+.margin-right_2{
+    margin-right: 2% !important;
+} 
+
+/************************************************Mejora de habitacion*/
+
+.img_icono_estancia > img{
+    padding-top: 3px;
+    width: 42%;
+}
+
+.width_24_estancia{
+    width: 24% !important;
+    height: 130px !important;
+}
+
+/****************************************************************estilos para gym*/
+
+.texto_generico_gym {
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+   margin-top: -12px;
+  padding: 10px;
+  text-align: center;
+}
+
+.margin_left_5{
+    margin-left: 6%; 
+}
+
+/**PARA EL OWL DE ESPECTÁCULOS*************************************************************/
+
+.carousel-programacion > .owl-wrapper-outer{
+    height: 890px !important;
+}
+
+
+.no_animacion {
+    font-size: 22px;
+    margin-top: 120px;
+    text-align: center;
+    color:#96281B;
+}
+
+.fondo_transparente{
+    background: transparent !important;
+}
+
+.margen_centrado_una_sostenibilidad{
+    margin-left: 29% !important;
+}
+
+.texto_sostenibilidad_grande{
+    font-size: 10px !important;
+}
+
+.tarjeta_sostenibilidad {
+  display: inline-table;
+  margin-left: 2.5%;
+  margin-top: 5%;
+}
+
+#textoEstilo_size {
+  margin-top: -20px;
+}
+
+.nueva_carga {
+    left: 362px;
+    position: absolute;
+    top: 847px;
+    width: 373px;
+}
+
+.tarjeta_info_general_estilos2{
+    border: 2px solid #7b9e06 !important;
+    height: 237px !important;
+    margin-left: 7%;
+    padding-top: 0 !important;
+    width: 38% !important;
+}
+
+.restaurante_ficha_tarjeta_img_one {
+    padding-left: 45%;
+    width: 11%;
+}
+
+.css_alinear_dcha_telefonos_interes{
+    padding-right: 8px;
+    text-align: right;
+}
+
+.texto_tipo_oracion{
+    text-transform: capitalize;
+    width: 40%;
+}
+
+.mareas_table{
+    text-align: left;
+}
+
+.icono_mareas_tipo{
+    width: 19px;
+}
+
+.bgBlue-barcelo{
+    background-color:#5a93be;
+}
+
+/*PINERO*******************************************/
+
+.css_pinero_color_p{
+    background-color: white !important;
+}
+
+.css_pinero_color_fondo_g{
+    background-color: white;
+}
+
+.css_pinero_color_letra_p{ color: #115E67!important; }
+
+.nombre_hotel_pinero_cabecera {
+    color: white;
+    font-size: 1.8em;
+    left: 35px;
+    position: relative;
+    top: 5px;
+    width: 147px;
+    z-index: 10;
+}
+/***************************************************/
+
+
+/*  Eurocopa */
+
+.ancho_180{
+    width: 178px !important;
+}
+
+/* Css del iframe para ocultar*/
+
+.menu-principal, .cont-miga, .banner_sup_a, .ftr-sup, .ftr-inf, .billboard, .nav-seccion-menu, footer, .cont-logo-opta, .header-seccion, .nav-seccion,
+.banner_sup, .cont-botones, .tit-decoration2, .desplegable-tit, .ext-info, nav{
+    display: none !important;
+}
+.inline-list{
+    margin-top: 20px !important;
+}
+
+/* fin del css del iframe para ocultar */
+
+/* puntos del iframe */
+
+.cont-modulo .tit-modulo::before{
+    display: none !important;
+}
+
+.bullet-list > li::before, .bullet-list2 > li::before, .bullet-dec::before, .bullet-dec2::before{
+    display: none !important;
+}
+
+/* fin de los puntos del iframe */
+
+/* otros iframe */
+.bg-type-1{
+    border-bottom: red !important;
+}
+body .bg-type-1{
+    padding-top: 0px !important;
+}
+/* Color de fondo del iframe */
+body, .container.content{
+    /*background: #413E3E !important;*/
+    background: none !important;
+}
+
+.menu_zonas_contenido_icono {
+    margin-left: calc(50% - 32.5px) !important;
+}
+
+.nav-seccion + .container.content{
+    margin-top: 0px !important;
+}
+
+/* color de los bordes del iframe */
+.cont-modulo{
+    border: 1px solid white !important;
+}
+.tit-modulo, .resultados .cont-resultados ul .list-resultado{
+    border-bottom: 1px solid white !important;
+}
+.cont-clasificacion thead > tr > th, .cont-clasificacion tbody > tr > th, .cont-clasificacion tfoot > tr > th, .cont-clasificacion thead > tr > td, .cont-clasificacion tbody > tr > td{
+    border-bottom: 1px solid white !important;
+    border-left: 1px solid white !important;
+}
+/* Color de los títulos del iframe */
+.cont-modulo .tit-modulo{
+    background: #2d2c2c !important;
+}
+/* Color del fondo de los marcadores */
+.resultados .no-comenzado, .cont-resultados .no-comenzado::after{
+    background: dimgray !important;
+    border-bottom: 1px solid dimgray !important;
+}
+/* Color de los puntos de los equipos del iframe */
+tbody tr td.destacado{
+    background: #2F2B25 !important;
+}
+thead tr th.destacado{
+    background: black !important;
+}
+/* Tamaño de las fechas y subrayado del iframe */
+.fecha{
+    font-size: 15px !important;
+}
+.resultados .cont-resultados li:last-child span.fecha{
+    border-bottom: 0px solid !important;
+}
+/* Tamaño letra de los equipos del iframe */
+.nombre-equipo{
+    font-size: 15px !important;
+}
+/* Tamaño letra de los títulos del iframe */
+.tit-modulo{
+    font-size: 20px !important;
+}
+/* Color de los equipos */
+.resultado-cruce .equipo{
+    background: #2f2f2f !important;
+}
+/* Color de las líneas que conectan los partidos del iframe */
+.cruces-octavos .oct-izq-con-1, .cruces-octavos .cua-der-con, .cua-izq-con, .cruces-octavos .final-con,
+.cruces-octavos .sem-der-con, .oct-izq-con-2, .cruces-octavos .oct-der-con-1, .cruces-octavos .oct-der-con-2,
+.cruces-octavos .sem-izq-con{
+    border-color: #696969 !important;
+}
+/* Color resultado partidos fuera de los grupos del iframe */
+.resultado-cruce .resultado.no-comenzado{
+    background: dimgray !important;
+}
+/* quitar rayas verticales del iframe */
+.cruces-octavos .fases-cruces{
+    height: 0px !important;
+}
+/* Tamaño de las banderas  del iframe */
+.cont-img-escudo img{
+    width: 30px !important;
+}
+/* Tamaño de la fechas del iframe */
+.cruce .zona-horaria{
+    font-size: 14px !important;
+}
+
+
+
+/* fin del iframe */
+
+/*body{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+}*/
+
+.contenedoriframe{
+    width: 50%;
+    float: left;
+}
+
+.contenedoriframegrande{
+    width: 100%;
+    float: left;
+}
+
+.frametest{
+    width: 100%;
+    margin-left: 0px !important;
+    /*height: 885px;*/
+}
+
+.frametest_grupos{
+    height: 695px;
+}
+
+
+.cargando_eurocopa{
+    width: 100%;
+    height: 1200px;
+    z-index: 1000;
+    background-color: transparent;
+}
+.cargando_eurocopa img{
+    width: auto;
+    height: auto;
+    padding-left: calc(50% - 150px);
+}
+
+.icono_eurocopa{
+    margin-top: 220px;
+    height: 300px !important;
+}
+
+.contenedorgeneral{
+    height: 1035px;
+    overflow: hidden;
+}
+.menueurocopa{
+    width: 100%;
+    height: 70px;
+}
+.submenu{
+    width: 100%;
+}
+.eurocopaicono{
+    width: calc(20% - 4px);
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #252525;
+    color: white;
+    font-size: 30px;
+    float: left;
+    text-align: center;
+}
+
+.octavos{
+    height: 1527px !important;
+}
+.cuartos{
+    height: 1379px !important;
+}
+.semifinal{
+    height: 1305px !important;
+}
+.final{
+    height: 1270px !important;
+}
+
+
+/* Pruebas */
+
+.list-resultado{
+    float: left !important;
+}
+
+.resultados .info-evento-int > ul > li{
+    width: 100% !important;
+}
+
+.resultados .equipo-local, .resultados .equipo-visitante{
+    /*width: 150px !important;*/
+    width: calc(37% - 40px) !important;
+    float: left !important;
+}
+
+.resultados .cont-resultado{
+    width: 80px !important;
+    float: left !important;
+}
+
+.resultados .info-evento{
+    /*width: calc(100% - 380px) !important;*/
+    width: 26% !important;
+    float: left;
+}
+
+.resultados .equipo-local, .resultados .equipo-visitante{
+    border-bottom: none !important;
+}
+
+
+.resultados .cont-resultados ul .list-resultado{
+    border-bottom: 1px solid white !important;
+}
+
+.resultados .cont-resultados ul .list-resultado:last-child{
+    height: 37px !important;
+    margin-bottom: -1px !important;
+    margin-top: 4px !important;
+}
+
+.cont-clasificacion thead > tr > th, .cont-clasificacion tbody > tr > th, .cont-clasificacion tfoot > tr > th, .cont-clasificacion thead > tr > td, .cont-clasificacion tbody > tr > td{
+    border-left: none !important;
+    border-bottom: none !important;
+}
+
+.as-icon-calendario, .as-icon-tv{
+    display: none !important;
+}
+
+.cont-modulo ul li{
+    background: unset !important;
+    /*background-color: rgba(43,95,158, 0.7) !important;*/
+    background-color: unset !important;
+}
+
+.tabla-datos{
+    background-color: rgba(43,95,158, 0.7) !important;
+}
+
+li .cont-fecha{
+    background-color: unset !important;
+}
+
+.cont-resultados{
+    background-color: rgba(43,95,158, 0.7) !important;
+}
+
+.cont-tv {
+    display: none !important;
+}
+
+.resultados .info-evento .fecha {
+    border-bottom: 0px !important;
+
+}
+
+abbr[title] {
+    border-bottom:  0px !important;
+}
+
+.css_euro_imagen_transparente{
+    position: absolute;
+    top: 743px;
+    left: 0px;
+    height: 1047px;
+}
+
+/* Para cuando carga la eurocopa en local */
+.cont-modulo{
+    background: none !important;
+}
+
+.cont-resultados .nombre-equipo{
+    color: white !important;
+}
+
+.cont-clasificacion .cont-nombre-equipo span, .cont-clasificacion .cont-nombre-equipo a{
+    color: white !important;
+}
+
+.resultados .info-evento .fecha{
+    color: white !important;
+}
+
+.cont-clasificacion thead > tr > th, .cont-clasificacion tbody > tr > th, .cont-clasificacion tfoot > tr > th, .cont-clasificacion thead > tr > td, .cont-clasificacion tbody > tr > td{
+    color: white !important;
+}
+
+.cont-modulo .tit-modulo .fecha-evento{
+    color: white !important;
+}
+
+.zona-horaria{
+    color: white !important;
+}
+
+.resultado-cruce{
+    border: 1px solid white !important;
+}
+
+.resultado-cruce .resultado.no-comenzado{
+    border-bottom: 1px solid white !important;
+}
+
+.cruces-octavos .fases-cruces, .cruce .zona-horaria{
+    color: white !important;
+}
+
+.resultado-cruce .equipo .nombre-equipo{
+    color: white !important;
+}
+
+.cruces-octavos .tit-final, .cruces-cuartos .tit-final{
+    font-weight: bold !important;
+}
+
+.vuelosWrapper {
+    height: 910px !important;
+}
+
+.css_selector_tipo_vuelo{
+    position: absolute;
+    right: 80px !important;
+    top: 33px !important;
+}
+
+.css_selector_tipo_vuelo > li {
+    border-radius: 0px !important;
+}
+
+.mensaje_respuesta{
+    color: black !important;
+}
+
+.css_galeria_nuestros_hoteles {
+    margin-left: 22px;
+    margin-top: 25px;
+}
+
+.css_ancho_imagen_galeria_nuestros_hoteles{
+    width: 233px !important;
+}
+
+.css_video_hoteles_dunas {
+    margin-bottom: 30px;
+    margin-left: 31px;
+    margin-top: 30px;
+    width: 600px;
+    background-image: url("../../../../contenido_proyectos/vistaflor/_general/hoteles/fondo_video.jpg");
+}
+
+.css_cuadro_anexo_video{
+    background-color: white;
+    height: 337px;
+    position: absolute;
+    right: 43px;
+    top: 773px;
+    width: 384px;
+}
+
+.css_letras_sin_icono {
+    color: white;
+    font-family: OpenSans !important;
+    font-size: 15px !imporant;
+    font-weight: 500 !important;
+    padding-top: 52px !important;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.css_dunas_registro_foto {
+    background-color: transparent;
+    width: 969px;
+    height: 800px;
+    margin-left: 36px;
+}
+
+.css_letras_negro_icono{
+    color:black;
+    font-family:OpenSans;
+    margin-top: 5px;
+}
+
+.css_info_misas {
+    height: 900px;
+    overflow-y: scroll;
+}
+
+.css_info_misas > img {
+    height: auto;
+}
+
+form#enviarPostal .buttonsRight {
+    bottom: 0px !important;
+    background-color: #B9DCD2;
+    color: #115E67;
+}
+
+.css_logo_derecha {
+    width: 85px;
+    position: absolute;
+    top: 0px;
+    z-index: 9999;
+    right: 17px;
+    height: auto;
+    display:none !important;
+}
+
+.medallero{
+    display: none;
+}
+
+.css_euro_imagen_transparente{
+    display: block;
+}
+
+.calendario{
+    height: 2600px !important;
+}
+
+
+.loadingBg {
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    width: 1080px;
+    height: 1920px;
+    position: absolute;
+    top: 0px;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+
+#overlayLoadingContent2, .overlayLoadingContent2 {
+    height: 622px;
+    position: absolute;
+    width: 1054px;
+    z-index: 1000;
+    overflow-y: hidden;
+    top: 782px;
+}
+
+.sobre_dunas {
+    list-style: circle;
+    margin-left: 15px;
+}
+
+.flex_center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_baseline {
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+}
+
+
+/* Animacion en los click */
+.zoom-in {
+    animation-name: zoom-in;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom-in {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.css_tarjeta_contenido_100{
+    width: 80% !important;
+    height: 128px !important;
+}
+
+.css_tarjeta_contenido_100 > .tarjeta_info_general_img {
+    padding-left: 4%;
+    padding-top: 11px;
+    width: 10%;
+    float: left;
+}
+
+
+.css_tarjeta_contenido_100 > .tarjeta_info_general_telefonos {
+    width: 50%;
+    float: left;
+    margin-top: 37px;
+}
+
+.overlayWrapper2 {
+    background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+    border: 3px solid #c7c7c7;
+    box-sizing: border-box;
+    left: 0;
+    padding: 15px 35px 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    height: 914px;
+    margin-left: 49px;
+}
+
+.eventoDetailContent2 {
+    text-align: justify;
+    height: 817px;
+    width: 885px;
+    overflow: scroll;
+}
+
+.css_click_masinfo2{
+    width: 97%;
+    display: inline-block;
+    margin: 0px !important;
+    padding: 1% !important;
+    background-color:#115E67 !important;
+    font-size:24px;
+    color: white;
+}
+
+.eventoDetailContent2 > img {height: auto !important;}
+
+.css_color_kids{
+    color: #972e69 !important;
+}
+
+
+.content-cartas-descripcion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 10px 10px 10px 10px;
+}
+
+.cartas_principales {
+    width: 13%;
+    height: 35px;
+    height: 120px;
+    text-align: center;
+    color: #97bf0d;
+    border: 3px solid #97bf0d;
+    margin: auto;
+    box-shadow: 2px 3px 10px 0px;
+    padding: 10px;
+    font-weight: bold;
+    flex: 1 1 20%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.content-cartas-descripcion > div {
+    margin: 5px !important;
+    flex: 1 1 35%;
+    color: #ffffff;
+    border-radius: 5px;
+    max-width: 50%;
+    text-transform: uppercase !important;
+    padding: 10px;
+}
+
+.content-cartas-descripcion > .cartas_principales {
+    height: auto !important;
+}
+
+
+/* Vuelos */
+
+.overflow-hidden-new{
+    overflow: hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
+.content-all-aeropuertos{
+    width: 100%;
+    height: 980px;
+    display: none !important;
+}
+
+.content-all-aeropuertos.active{
+    display: block !important;
+}
+
+.content-boton-aeropuerto{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid #97bf0d;
+}
+
+.btn-superior-ae {
+    height: 100%;
+    padding: 0 5px;
+    font-size: 24;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    margin-right: 2px;
+    width: 120px;
+}
+
+.btn-superior-ae.active{
+    background: #97bf0d;
+}
+
+.iframe-vuelos-new{
+    width: 100%;
+    height: 820px;
+    margin-left: 0 !important;
+}
+
+.content-frame-new{
+    display: none !important;
+    width: 100%;
+    height: 825px;
+    position: relative;
+    user-select: none;
+}
+
+.img-fondo-vuelos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content-frame-new.active{
+    display: block !important;
+}
+
+.loader-vuelos {
+    font-size: 10px;
+    margin: 30% auto;
+    text-indent: -9999em;
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    background: #97bf0d;
+    background: -moz-linear-gradient(left, #97bf0d 10%, rgba(255, 255, 255, 0) 42%);
+    background: -webkit-linear-gradient(left, #97bf0d 10%, rgba(255, 255, 255, 0) 42%);
+    background: -o-linear-gradient(left, #97bf0d 10%, rgba(255, 255, 255, 0) 42%);
+    background: -ms-linear-gradient(left, #97bf0d 10%, rgba(255, 255, 255, 0) 42%);
+    background: linear-gradient(to right, #97bf0d 10%, rgba(255, 255, 255, 0) 42%);
+    position: relative;
+    -webkit-animation: load3 1.4s infinite linear;
+    animation: load3 1.4s infinite linear;
+  }
+  .loader-vuelos:before {
+    width: 50%;
+    height: 50%;
+    background: #97bf0d;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+  .loader-vuelos:after {
+    background: #FFFFFF;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  @-webkit-keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }

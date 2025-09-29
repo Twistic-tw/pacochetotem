@@ -1,0 +1,325 @@
+.css_guaguas_titulo_principal{
+    background-color: #242424;
+    border: 1px solid #242424;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 5px;
+    text-align: center;
+    min-height: 38px;
+
+}
+
+.css_guaguas_bloque_principal{
+    
+    width: 31%;
+    /*height: 100px;*/
+    /*background-color: red;*/
+    display: inline-block;
+    float: left;
+    margin-left: 3%;
+}
+
+.css_guaguas_tarjeta_horarios{
+    width: 100%;
+    margin-bottom: 10px ;
+    background-color: #242424;
+    border: 2px solid #115E67 !important;
+    margin-top: 10px;
+    width: 98.5%;
+
+}
+
+.css_guagua_horarios_titulo{
+    text-transform: uppercase;
+    background-color: grey;
+    padding: 10px 5px;
+
+}
+
+.css_guaguas_tarjeta_horarios_contenido{
+    padding: 5px;
+    line-height: 1.6;
+    font-size: 14px;
+    min-height: 70px;
+}
+
+
+.css_guagua_frecuencia_horaria{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/********************linea temporal de paradas****/
+
+.css_guaguas_direccion {
+
+    font-weight: 600;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.imagen_guaguas_arriba{
+    float: left;
+    margin-left: 0;
+    width: 40px;
+}
+
+.css_guaguas_linea_izq{
+display: inline-block;
+float: left;
+width: 49%;
+
+margin-right: 0%;
+font-size: 14px;
+
+}
+
+
+.css_guaguas_linea_izq li {
+    margin-top: 10px;
+    padding: 10px 4px 10px 4px;
+    text-align: right;
+    background-color: #242424;
+    border: 2px solid #115E67;
+    border-right: 0px;
+    min-height: 30px;
+}
+
+.css_guaguas_linea_central{
+    display: inline-block;
+    float: left;
+    width: 2%;
+    height: 780px; /*es para 12 paradas*/
+    background-color: #115E67;
+}
+
+.css_guaguas_linea_dcha{
+
+display: inline-block;
+float: left;
+width: 49%;
+margin-left: 0%;
+font-size: 14px;
+
+}
+
+.css_guaguas_linea_dcha li {
+    margin-top: 10px;
+    padding: 10px 4px 10px 4px;
+    text-align: left;
+     background-color: #242424;
+     border: 2px solid #115E67;
+     border-left: 0px;
+     min-height: 30px;
+}
+
+
+.imagen_guaguas_abajo{
+    float: right;
+    margin-left: 0;
+    width: 40px;
+}
+
+
+/*****************Clases genericas de margenes, etc...***/
+.margin_left_none{
+    margin-left: 0px;
+}
+
+.padding_laterales_none{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.negrita{
+    font-weight: 600;
+}
+
+
+.clear {
+    clear: both;
+}
+
+
+
+.fix_guaguas_2columnas{
+
+    width: 48%;
+}
+
+.fix_css_guaguas_titulo_principal{
+    border: 0 none;
+    font-size: 26px;
+    font-weight: 500;
+    min-height: 20px;
+    padding: 15px 0px;
+}
+
+
+.fix_css_guaguas_tarjeta_horarios{
+
+    width: 99%;
+
+}
+
+.fix_css_guaguas_tarjeta_horarios_contenido{
+    min-height: 32px;
+}
+
+.css_guaguas_tarjeta_informacion_qr{
+    background-color: #242424;
+    border: 2px solid #66902d !important;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 22%;
+    margin-right: 1%;
+    display: inline-block;
+    width: 31.5%;
+    min-height: 150px;
+}
+
+.css_guaguas_tarjeta_informacion_qr_izquierda{
+    width: 60%;
+    display: inline-block;
+    float: left;
+   height: 124px;
+    padding-left: 1%;
+
+}
+
+.css_guaguas_tarjeta_informacion_qr_derecha{
+    width: 38%;
+    display: inline-block;
+    float: left;
+    height: 124px;
+    padding-right: 1%;
+}
+
+.css_guaguas_tarjeta_informacion_qr_titulo{
+    background-color: #66902d;
+    color: #ffffff;
+    overflow: hidden;
+    padding: 3px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.css_titulo_principal_bloques_guaguas{
+    background-color: #66902d;
+    text-align: center;
+    border: 0 none;
+    font-size: 19px;
+    font-weight: 500;
+    min-height: 14px;
+    padding: 6px 0;
+    width: 98.7%;
+    margin-top: 20px;
+}
+
+
+.css_guaguas_tarjeta_informacion_qr_masinfo{
+        background-color: #66902d;
+    color: #ffffff;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.css_guaguas_tarjeta_informacion_qr_contenido{
+ font-size: 14px;
+    line-height: 1.6;
+    min-height: 32px;
+     background-color: white;
+}
+
+
+.css_guaguas_tarjeta_informacion_qr_izquierda > img {
+   margin-left: 54px;
+    margin-top: -49px;
+    width: 39%;
+}
+
+.css_guaguas_numero {
+    font-size: 44px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #66902d;
+}
+
+.css_guaguas_hotel {
+    font-size: 20px;
+    margin-top: 5px;
+    padding-bottom: 26px;
+    text-align: center;
+}
+
+.css_guaguas_letra{
+    font-size: 27px;
+    margin-bottom: 11px;
+    margin-top: -1px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+.css_guaguas_tarjeta_informacion_qr_noinfo{
+    background-color: black;
+    color: #ffffff;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.css_guaguas_tarjeta_masinfo {
+    background-color: #115E67;
+    color: #ffffff;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 45px;
+}
+
+.css_guaguas_tarjeta_informacion_qr_derecha > ul {
+    color: black;
+    font-size: 15px;
+    line-height: 2.5em;
+    padding: 5px;
+    padding-top: 16px;
+}
+
+.css_guaguas_tarjeta_informacion_c {
+    background-color: #242424;
+    border: 2px solid #115E67 !important;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 1%;
+    margin-top: 10px;
+    min-height: 150px;
+    width: 48.2%;
+}
+
+.css_guaguas_tarjeta_informacion_1 {
+    background-color: rgba(0, 0, 0, 0.88);
+    display: inline-block;
+    float: left;
+    height: 124px;
+    padding-left: 1%;
+    width: 60%;
+}
+
+.css_guaguas_tarjeta_informacion_1 > img {
+    margin-left: 99px;
+    margin-top: -49px;
+    width: 28%;
+}

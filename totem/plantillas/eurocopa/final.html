@@ -1,0 +1,24 @@
+<div class="contenedorgeneral"><div class="cargando_eurocopa"><img src="../../../contenido_proyectos/vistaflor/_general/eurocopa/cargando.gif" alt=""/></div>
+    <div class="contenedoriframegrande">
+        <img class="css_euro_imagen_transparente" src="../../../contenido_proyectos/vistaflor/_general/eurocopa/fondotransparenteoctavos.png" alt=""/>
+        <iframe frameborder="0" class="frametest final frametest_total" name="frametest" id="frametest" src="lib/eurocopa.php?url=eliminatorias" ></iframe>
+    </div>
+</div>
+
+<script src="js/eurocopa.js"></script>
+
+<script type="text/javascript">
+    $('.frametest').load(function(){
+
+        var iframe = $('.frametest').contents();
+        iframe.find('.resultados').parent().css("position", "absolute");
+        iframe.find('.resultados').parent().css("top", 0);
+        iframe.find('.resultados').parent().css("width", 992);
+        var alto_div = iframe.find('.resultados').parent().height();
+        iframe.find('.bg-type-1').parent().css("margin-top", alto_div);
+        iframe.find(".container a").click(function(event) {
+            event.preventDefault();
+        });
+
+    });
+</script>

@@ -1,0 +1,20 @@
+# Activar RewriteEngine
+RewriteEngine on
+
+RewriteCond %{SERVER_PORT} 80
+
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+
+#   Reescribir la URL solicitada por el usuario
+
+#   Home
+# RewriteRule ^inicio$ /index.php [L]
+
+#   Producto
+#   Entrada: VISTA/WEEK/
+#   Salida: index.php?page=week
+RewriteRule ^vista/(.*)$  /index.php?page=$1 [L]

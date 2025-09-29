@@ -1,0 +1,136 @@
+<div id="day"
+    class="pl-20 w-full h-full flex items-center justify-center transition duration-700 ease-in-out opacity-0">
+
+    <h1 class="text-3xl font-bold">{sin_actividades}</h1>
+
+    <!-- START BLOCK : content_activities -->
+
+    <div class="w-4/6 h-full flex items-center justify-center">
+
+        <!-- START BLOCK : categorias -->
+
+        <section class="{ancho_dinamico} h-full flex flex-col flex items-center m-auto py-2">
+            <div class="overflow-hidden w-36 h-36 flex items-center justify-center m-auto">
+                <img class="w-[144px] h-[144px]" src="{logo_categoria}">
+            </div>
+
+            <div class="w-full h-4/5 m-auto bg-gray-200 rounded-xl profundidad py-2">
+                <ul class="ul_actividades h-full overflow-x-hidden overflow-y-scroll m-auto scroll_hide relative">
+
+                    <!-- START BLOCK : actividades -->
+                    <li
+                        class="li_actividades open_popup cursor-pointer opacity-0 translate-x-full transition duration-300 ease-in-out {margin_act}">
+                        <div
+                            class="relative p-1/100 flex items-center justify-center rounded-t-xl overflow-hidden bg-white">
+                            <div
+                                class="hora_ini absolute top-0 z-10 right-0 text-white {padding_hora} bg-[{fondo_texto}] text-shadow rounded-bl-xl">
+                                <span class="font-semibold {size_text}">{hora_ini}</span>
+                            </div>
+                            <!-- <img class="w-auto h-full absolute object-cover object-center flex items-center"
+                                src="{img}"> -->
+                            <img class="w-full h-auto absolute object-contain object-center {p_categoria}" src="{img}">
+
+                        </div>
+                        <input type="hidden" value='{info_hidden}'>
+                        <div class="{ocultar_texto} bg-[{fondo_texto}] text-shadow rounded-b-xl text-white px-2 py-1 flex items-center justify-center"
+                            style="min-height: 2rem;">
+                            <div class="font-semibold truncate {text-size} text-sm">{nombre}</div>
+                            <!-- <div class="text-sm truncate">{categoria}</div> -->
+                        </div>
+                    </li>
+                    <!-- END BLOCK : actividades -->
+
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- END BLOCK : categorias -->
+
+    </div>
+
+
+
+    <div class="w-2/6 h-full flex flex-col items-center justify-center bg-gray-200 rounded-xl relative">
+
+        <div
+            class="w-48 h-auto rounded-bl-lg bg-gray-600 flex flex-col text-white shadow-xl py-2 absolute right-0 top-0 px-2">
+            <div class="w-full flex flex-col text-center">
+                <div class="date m-auto font-bold text-2xl"></div>
+                <div class="date2 m-auto font-semibold text-2xl"></div>
+            </div>
+            <div class="w-full flex items-center justify-center pt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <div class="clock text-2xl"></div>
+            </div>
+        </div>
+
+
+        <section class="{ocultar_stage} w-full h-full flex flex-col flex items-center m-auto px-4 py-2">
+            <div class="overflow-hidden w-full h-32 flex items-center justify-center m-auto  {padding-r}">
+                <!-- START BLOCK : logo_party -->
+                <img class="w-[144px] h-[144px] pr-4" src="{logo}" alt="{nombre}" title="{nombre}">
+                <!-- END BLOCK : logo_party -->
+                <img class="w-[144px] h-[144px]" src="{logo_stage}" alt="{nombre}" title="{nombre}">
+            </div>
+
+            <!-- <div class="overflow-hidden w-36 h-36 flex items-center justify-center m-auto">
+            </div> -->
+
+
+
+            <div class="w-full h-4/5 m-auto bg-gray-200 profundidad py-4 px-6 rounded-xl">
+
+                <div id="slider-stage" class="h-full overflow-hidden scroll_hide rounded-t">
+                    <!-- START BLOCK : riu_stage -->
+                    <div class="w-full h-full flex flex-col rounded-t overflow-hidden relative">
+                        <div
+                            class="w-full h-full overflow-hidden m-auto rounded-t-xl bg-cover bg-top bg-no-repeat bg-[url('{img_stage}')]">
+                        </div>
+
+                        <div
+                            class="w-full bg-[{fondo_texto}] text-shadow rounded-b-xl text-white text-lg px-4 py-2 text-center shadow-xl truncate m-auto flex items-center justify-between">
+                            <div class="font-semibold text-base truncate">{nombre}</div>
+                            <div class="text-base">{hora_ini}</div>
+                        </div>
+
+                    </div>
+                    <!-- END BLOCK : riu_stage -->
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+
+    <!-- END BLOCK : content_activities -->
+</div>
+
+<script>
+    //EFFECTO FADE DEL CONTENEDOR
+    setTimeout(() => {
+        document.getElementById('day').classList.remove('opacity-0')
+    }, 100);
+
+    efecto_inicial_vista_diaria();
+
+    if (document.getElementById('slider-stage')) {
+        slider('slider-stage')
+    }
+
+    setTimeout(() => {
+        avanzar_scroll_vista_diaria();
+    }, 1200);
+
+    setInterval(() => {
+        avanzar_scroll_vista_diaria();
+    }, 300000); // CADA 5 MINUTOS
+</script>

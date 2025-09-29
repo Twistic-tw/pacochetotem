@@ -1,0 +1,278 @@
+
+/** Hoja de estilo para la sección de la agenda */
+
+/****************************************
+ *   01.   Agenda
+ ****************************************/
+#agenda{
+    /*position: relative;*/
+    /*width: 98%;*/
+    /*    padding: 0px 10px;
+        margin-top: 9px;*/
+}
+#agenda a{
+    text-decoration: none;
+}
+
+/****************************************
+ *   02.   Header
+ ****************************************/
+
+
+/****************************************
+ *   03.   Calendario
+ ****************************************/
+#agendaCalendario{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 0 0 0 43px;
+    width: 40%;
+    z-index: 1;
+}
+
+#agendaCalendario .ui-datepicker{
+    font-size: 1.15em;
+    box-shadow: 0 11px 7px -4px black;
+}
+
+#agendaCalendario .ui-datepicker .ui-widget-header{
+    background-color: transparent;
+    background-image: url("../../../../contenido_proyectos/vistaflor/_general/imagenes/calendarioHeader.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 31px;
+    border: medium none;
+    margin-top: -15px;
+    box-shadow: 0 17px 5px -16px black;
+}
+#agendaCalendario .ui-datepicker .ui-datepicker-prev,
+#agendaCalendario .ui-datepicker .ui-datepicker-next { top: 0;}
+
+#agendaCalendario .ui-datepicker .ui-datepicker-next{right: 6px;}
+#agendaCalendario .ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/spriteFlechasNav3.svg");
+    background-repeat: no-repeat;
+    background-size: 45px auto;
+    height: 30px;
+    top: 45%;
+    width: 20px;    
+}
+#agendaCalendario .ui-datepicker-prev-hover,
+#agendaCalendario .ui-datepicker-next-hover,
+#agendaCalendario .ui-state-hover {background: none; border: none}
+
+#agendaCalendario .ui-datepicker .ui-datepicker-prev span{ background-position: 0 0;}
+#agendaCalendario .ui-datepicker .ui-datepicker-next span{ background-position: 2px -35px;}
+#agendaCalendario .ui-datepicker .ui-datepicker-prev:hover span,
+#agendaCalendario .ui-datepicker .ui-datepicker-prev:active span{background-position: -25px 0;}
+#agendaCalendario .ui-datepicker .ui-datepicker-next:hover span,
+#agendaCalendario .ui-datepicker .ui-datepicker-next:active span{ background-position: -25px -35px;}
+
+
+
+#agendaCalendario table { color: #333333;}
+#agendaCalendario table td {
+    padding: 1.5px;
+    cursor: default !important;
+}
+#agendaCalendario .ui-datepicker tbody td span, 
+#agendaCalendario .ui-datepicker tbody td a{
+    padding: 0.65em;
+    font-size: 105%;
+    cursor: default;
+}
+#agendaCalendario table tbody a.ui-state-default,
+#agendaCalendario table tbody .ui-state-default{
+    color: #777777;
+    font-weight: normal;
+    text-align: center;
+}
+
+#agendaCalendario table tbody .actividad-inactive a{
+    background: none repeat scroll 0 0 #a3a3a3;
+    color: white;
+    border: none;
+    opacity: 0.7;
+}
+#agendaCalendario table tbody .actividad-active a{
+    background: none repeat scroll 0 0 #E77607;
+    color: white;
+    opacity: 1;
+    border: none;
+    cursor: default;
+}
+#agendaCalendario table tbody .actividad-active.ui-datepicker-current-day a, 
+#agendaCalendario table tbody .actividad-inactive.ui-datepicker-current-day a {
+    background: none repeat scroll 0 0 #EFEFEF;
+    box-shadow: 2px 2px 2px #E77607 inset, -2px -2px 2px #E77607 inset, 1px 1px 0 #434343, -1px -1px 0 #434343;
+    color: #E77607;
+    transform: scale(1.27);
+    z-index: 1;
+}
+
+
+/****************************************
+ *   04.   AgendaFiltros
+ ****************************************/
+#agendaFiltroCategorias {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
+    bottom: 18px;
+    height: 60px;
+    left: 25px;
+    position: absolute;
+    width: 40%;
+}
+
+#agendaFiltroCategorias .listadoCategorias {
+
+}
+
+#agendaFiltroCategorias .listadoCategorias > div{
+    display: inline-block;
+}
+
+
+/****************************************
+ *   05.   Actividades
+ ****************************************/
+#agendaActividades{
+    position: relative;
+}
+
+#agendaActividades > ul{
+    position: relative;
+    padding-left: 65%;
+}
+
+/** sobreescribimos caracteristicas de jqueryUI */
+#agendaActividades .ui-widget-header{
+    background: none;
+    border: none;
+}
+
+#agendaActividades > ul li a{color: inherit;}
+#agendaActividades li.ui-tabs-active { background: #E77607; color: white;}
+#agendaActividades .ui-tabs-nav li a{padding: 0.5em 2.5em 0.1em 2.5em; cursor: default !important}
+
+#agendaActividades .content{
+    border-color: #E77607;
+}
+#agendaActividades .actividades{
+    color: white;
+    padding: 14px 0 0 47% !important;
+    /*    height: 410px;*/
+
+    overflow: hidden;
+}
+.eventDetailsWrapper {
+    background: none repeat scroll 0 0 rgba(66, 66, 66, 0.8);
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 54px;
+    width: 562px;
+    z-index: 100;
+}
+.eventDetails {
+    background: none repeat scroll 0 0 #EFEFEF;
+    border: 3px solid #E77607;
+    border-radius: 10px;
+    box-shadow: 0 3px 18px #131313;
+    max-height: 315px;
+    position: absolute;
+    right: 22px;
+    top: 39px;
+    width: 490px;
+    z-index: 100;
+    padding: 10px;
+    color: #434343;
+
+}
+.eventDetails .header{
+    margin-bottom: 25px;
+}
+.eventDetails .header span{
+    display: inline-block;
+    margin-right: 15px;
+}
+.eventDetails .header span:last-child {
+    font-weight: bold;
+}
+.eventDetails > div:last-child > div:last-child {
+    max-height: 230px;
+    overflow-y: auto;
+    width: 100%;
+}
+.eventDetails > div:last-child > div:last-child img {
+    max-width: 80% !important;
+}
+
+
+
+#agendaActividades ul.actividadesList{
+    overflow: hidden;
+    height: 390px !important;
+}
+#agendaActividades ul.actividadesList li{
+    line-height: 3em;
+    padding-left: 30px;
+    margin: 5px 20px 5px 0;
+    border: 1px solid #666666; /*Prueba de border*/
+}
+.showActividades {
+    background: none repeat scroll 0 0 rgba(143, 143, 143, 0.23);
+    border: medium none !important;
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    margin: 0 0 0 20% !important;
+    padding-left: 0 !important;
+    text-align: center;
+    width: 50%;
+}
+#agendaActividades ul.actividadesList li.active{
+    background: url("../../../../contenido_proyectos/vistaflor/_general/iconos/arrowRight.png") no-repeat scroll 4px 19px transparent;
+    border: 1px solid #e77607;
+}
+
+ul.actividadesList li span{display: inline-block;}
+ul.actividadesList li span a{
+    font-size: 85%;
+    color: white;
+    font-weight: bold;
+    font-style: none;
+}
+
+ul.actividadesList li span.actividadTime{
+    font-weight: bold;
+    width: 70px;
+}
+ul.actividadesList li span.actividadDesc{
+
+}
+ul.actividadesList li span.actividadInfo{
+    float: right;
+    position: relative;
+    margin-right: 10px;
+    text-align: center;
+    clear: right;
+    display: block;
+    height: 49px;
+    overflow: hidden;
+    padding: 0 2px;
+    text-align: center;
+    width: 40px !important;
+    background: #6C6C6C;
+    border-radius: 5px;
+    margin-top: 2px;
+        
+}
+ul.actividadesList li span.actividadInfo .icon-svg {
+    height: 49px;
+}
+.actividadInfo {
+
+}

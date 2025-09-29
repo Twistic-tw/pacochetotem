@@ -1,0 +1,127 @@
+.tit-decoration2{white-space: nowrap;}
+.cont-filtrar{display:block;margin-right:12px;float:left}
+.cont-filtrar img.bandera{float:left;height:19px;width:26px;padding:1px;background:#fff;margin-right:6px;overflow:hidden;border:1px solid #ddd}
+.form-control{font-size:14px;display:inline-block}
+.txt-filtro{display:inline-block;width:auto;font-size:16px;padding-right:2px;font-family:sourcesansbold}
+.caja-desplegable{display:inline-block;margin-right: 10px;}
+.equipo-select{color:#333;font-size:12px;text-transform:uppercase;display:inline-block;white-space:nowrap;max-width:100%}
+.cont-meses{float:right;margin-bottom:10px}
+.cont-meses h3{font-size:20px;font-family:'sourceblack';float:left;line-height:1.6}
+.flechas{float:right;margin-left:10px}
+.flechas nav span{float:left;width:30px;height:30px;position:relative;cursor:pointer;background:#F9A300;margin:0 1px;font-size:20px}
+.flechas span:before{font-family:arial;color:#fff;display:inline-block;text-align:center;width:100%;text-indent:1px}
+.flechas nav span.custom-prev::before{color:#fff;content:"";font-family:as-icons;font-size:16px;opacity:1}
+.flechas nav span.custom-next::before{color:#fff;content:"";font-family:as-icons;font-size:16px;opacity:1}
+.flechas nav span.custom-current{color:#fff;font-size:15px;font-family:'sourcesansbold',arial,helvetica;width:40px;text-align:center;padding:3px}
+.calendario-dias{width:100%;grid-template-columns:repeat(8,1fr);background:#fff;color:#666;font-family:'sourcesans',arial,helvetica;}
+.calendario-dias tr,.calendario-dias tbody{grid-column:1 / -1;display:grid;grid-template-columns:repeat(7,1fr);width:100%}
+caption{text-align:center;grid-column:1 / -1;font-size:130%;font-weight:700;padding:10px 0}
+.calendario-dias a{color:#8e352e;text-decoration:none;display: inline-block;}
+.calendario-dias td,.calendario-dias th{padding:1px 5px 5px;box-sizing:border-box;border:1px solid #ddd;border-right:none;border-bottom:none}
+.calendario-dias .weekdays{background:#f9f9f9}
+.calendario-dias .weekdays th{text-align:center;text-transform:uppercase;line-height:20px;border-bottom:none!important;border-right:none!important;padding:10px 6px;font-size:14px;letter-spacing:2px;font-family:'sourcesansbold';font-weight:400;border-left:none}
+.calendario-dias .weekdays th:first-child{border-left:1px solid #ddd}
+.calendario-dias td:last-child,.calendario-dias th:last-child{border-right:1px solid #ddd!important}
+.calendario-dias td{display:flex;flex-direction:column;text-align:left;}
+.calendario-dias .days li:hover{background:#d3d3d3}
+.calendario-dias .date{text-align:center;margin-bottom:5px;padding:1px 4px 5px 0;color:#333;width:20px;border-radius:50%;flex:0 0 auto;align-self:flex-start;font-size: 22px;}
+.calendario-dias td.today{border:2px solid #f9a300}
+.calendario-dias .weekday-mobile{display:none}
+.calendario-dias .event{flex:0 0 auto;font-size:13px;border-radius:4px;padding:5px;margin-bottom:5px;line-height:14px;background:#e4f2f2;border:1px solid #b5dbdc;color:#009aaf;text-decoration:none}
+.calendario-dias .event-desc{color:#666;margin:3px 0 7px;text-decoration:none}
+.calendario-dias .other-month{background:rgba(245,245,245,0.39);color:#666}
+.calendario-dias .grupo{font-family: 'sourcesans';display: inline;font-size: 13px;}
+.calendario-dias .partido{font-family: 'sourcesans';display: inline-block;font-size: 12px;}
+.calendario-dias .equipo {color: #333;text-transform: uppercase; padding: 4px 3px;display: inline-block;width: 74%;}
+.calendario-dias .equipo:hover,
+.calendario-dias .equipo:hover{color: white; background: #666;}
+.calendario-dias .grupo:before,
+.calendario-dias .partido:before{content: '| '; }
+.calendario-dias .sede{ display: none;}
+.calendario-dias .cont-resultados{margin: 6px 0px;background:#f2f2f2;padding: 2px 3px 0;}
+.calendario-dias .hora{font-family: 'sourcesansbold',arial,helvetica;font-size: 16px;display: inline-block;}
+.calendario-dias abbr.time-zone{font: 9px Arial,Helvetica;border:none;position:relative;}
+.calendario-dias abbr[title]{border: none;}
+.calendario-dias abbr:hover[title]{ cursor: pointer;}
+.calendario-dias .cont-marcador{width:100%;margin:7px 0;display:inline-block;   background: white;}
+.calendario-dias .cont-marcador .col-equipo-local,
+.calendario-dias .cont-marcador .col-equipo-visitante{width:100%;display:block;text-align:left;background:#fff;border-bottom:1px solid #f2f2f2;padding:0 0 1px 3px;white-space: initial;}
+.calendario-dias .cont-marcador .equipo-visitante,
+.calendario-dias .cont-marcador .equipo-local{color:#333;font-size:12px;text-transform:uppercase;display:inline-block;padding:3px 0;white-space:nowrap;text-overflow:ellipsis;max-width:100%}
+.calendario-dias .cont-marcador .marcador{float:right;color:#fff;text-align:center;padding:5px 3px;min-width:30px;font-weight:700;font-size:14px}
+.calendario-dias .cont-marcador .marcador .pen{font-size:11px}
+.calendario-dias .cont-marcador a.marcador:hover{ opacity: .8}
+.calendario-dias .nombre-equipo,
+.calendario-dias .marcador{font: 600 12px arial, helvetica, sans-serif;vertical-align: sub;}
+.calendario-dias .fase{font-family:'sourcesansbold';font-size:12px; margin:-26px 0 3px 22px;text-align:center}
+.calendario-dias img.bandera{float:left;width:22px;padding:1px;margin-right: 2px; background:#fff;overflow:hidden;border:1px solid #ddd;}
+.calendario-dias .equipo:hover img.bandera,
+.calendario-dias .equipo:hover img.bandera{ border: 0 }
+
+
+		.calendario-dias .cont-marcador.pregame {margin: 4px 0; border: 1px solid #cecece;}
+		.calendario-dias .cont-marcador.pregame .col-equipo-local, 
+		.calendario-dias .cont-marcador.pregame .col-equipo-visitante{display:block;width: 50%;float:left;text-align: center;padding: 0;border: 0;}
+		.calendario-dias .cont-marcador.pregame .col-equipo-local{border-right: 1px solid #ccc;}
+		.calendario-dias .cont-marcador.pregame .equipo-visitante, 
+		.calendario-dias .cont-marcador.pregame .equipo-local{ display: block; padding: 0}
+		.calendario-dias .cont-marcador.pregame .equipo{ width: 100%}
+
+
+
+		/* Ajuste Navegadores No Soportados (Display:Grid) */
+		.calendario-dias {width: 980px}
+		.calendario-dias tr,.calendario-dias tbody{ display: block;  width:100%}
+		.calendario-dias .weekdays th{width: 140px}
+		.calendario-dias td{  width: 140px; float: left; height: auto; min-height: 390px;}
+		.calendario-dias.eliminatorias td{ min-height: 195px}
+
+
+	@media(max-width: 768px) {
+		.calendario-dias td, .calendario-dias th{ border-right: 1px solid #ddd !important;}
+		.calendario-dias .weekdays,.calendario-dias .other-month{display:none}
+		.calendario-dias li{height:auto!important;border:1px solid #ededed;width:100%;padding:10px;margin-bottom:-1px}
+		.calendario-dias,.calendario-dias tr,.calendario-dias tbody{grid-template-columns:1fr}
+		.calendario-dias tr{grid-column:1 / 2}
+		.calendario-dias .date{align-self:flex-start;font-size:18px}
+		.calendario-dias .weekday-mobile{display:inline;text-align:left;font-size:14px;padding-left:3px}
+		.cont-resultados{margin-top:10px}
+		.calendario-dias td{text-align:center}
+		.calendario-dias .fase{margin-right:20px}
+		.calendario-dias .cont-marcador .col-equipo-local,.calendario-dias .cont-marcador .col-equipo-visitante{display:inline-block;width:50%;float:left;text-align: center;}
+		.calendario-dias .cont-marcador .col-equipo-visitante{padding-left:1px}
+		.calendario-dias .col-equipo-local .equipo-local{margin-left:10px}
+		.calendario-dias .col-equipo-local .bandera{float:right;margin-left:5px}
+		.calendario-dias .col-equipo-local .nombre-equipo{}
+		.calendario-dias .col-equipo-local .marcador,
+		.calendario-dias .col-equipo-visitante .marcador{ padding-top: 7px ; padding-bottom: 7px}
+		.calendario-dias .col-equipo-local .marcador{clear:both}
+		.calendario-dias .col-equipo-visitante .marcador{float:left;margin-right:10px}
+}
+
+
+@media(max-width: 700px) {
+		.cont-meses{margin-bottom:10px;clear:both;float:left;margin-top:20px}
+		p.txt-filtro{margin-bottom:8px}
+	}
+
+@media(max-width: 513px) {
+.tit-subtitle-info.largo{display: block; padding: 5px 0}
+.tit-subtitle-info.largo:before{display: none;}
+}
+
+@media(max-width: 991px) {
+	/* Ajuste Navegadores No Soportados (Display:Grid) */
+	.calendario-dias {width: 100%}
+	.calendario-dias td{ width: 100%; min-height: 180px;}
+	.calendario-dias .weekdays {width: inherit; }
+	.calendario-dias .weekdays, .calendario-dias .other-month {display: none;}
+	.calendario-dias .weekday-mobile {display: inline; text-align: left; font-size: 14px; padding-left: 3px; }
+	.calendario-dias .equipo,
+	.calendario-dias .cont-marcador.pregame .equipo{padding: 6px 0;width: max-content;}
+	.calendario-dias .nombre-equipo, .calendario-dias .marcador{font-size: 14px;vertical-align: top;}
+	.calendario-dias .cont-marcador .nombre-equipo {display: inline-block; vertical-align: bottom;}
+	.calendario-dias img.bandera{width: 24px; }
+
+
+}

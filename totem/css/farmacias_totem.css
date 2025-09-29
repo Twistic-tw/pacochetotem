@@ -1,0 +1,355 @@
+
+.map_canvas {
+  /*border-radius: 5px 5px 5px 5px;*/
+  float: left;
+  height: 324px;
+  margin-left: 315px;
+  margin-top: 44px;
+  position: absolute;
+  width: 325px;
+}
+.encabezado_titulo {
+    background-color: #6EB168;
+   /* border-radius: 5px 5px 5px 5px;*/
+    color: #FFFFFF;
+
+    font-size: 30px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 760px;
+}
+.encabezado {
+    background-color: #F3F1C5;
+    display: none;
+    height: 60px;
+    margin-top: 0;
+    width: 100%;
+}
+.direccion-izq {
+  display: block;
+  font-size: 17px;
+  margin: 0px 5px;
+  min-height: 47px;
+  text-transform: uppercase;
+  font-family: ralewayregular;
+}
+
+.direccion-urgencias-izq {
+    border-top: 1px solid #6EB168;
+    float: left;
+   font-family: ralewayregular;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-top: 5px;
+    width: 580px;
+}
+.titular-izq {
+    float: left;
+    font-size: 10px;
+    margin-left: 5px;
+    width: 260px;
+}
+.hora {
+  float: left;
+  margin-left: 5px;
+  margin-right: 15px;
+  margin-top: 8px;
+}
+.hora img {
+    width: 30px !important;
+}
+.farmacia_dist{
+    width: 70px !important;
+}
+.car {
+    box-shadow: 2px 2px 2px #777777;
+    float: left;
+    height: 25px;
+    margin-left: 15px;
+    margin-right: 5px;
+    margin-top: 15px;
+    width: 25px;
+}
+.walk {
+    box-shadow: 2px 2px 2px #777777;
+    float: left;
+    height: 25px;
+    margin-right: 5px;
+    margin-top: 15px;
+    width: 25px;
+}
+.icon_t {
+    color: #FFFFFF;
+    float: left;
+   font-family: robotoCondensed;
+    font-size: 11px;
+    height: 50px;
+    margin-right: 0;
+    width: 70px;
+}
+.farmacia_descripcion {
+    background-color: #F3F1C5;
+    float: left;
+    margin-left: 20px;
+    width: 288px;
+}
+.farmacia_descripcion img {
+    border: 4px solid #FFFFFF;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+.icon_24 {
+    float: left;
+    margin-top: 8px;
+}
+.icon_24 img {
+    width: 22px !important;
+}
+.fondo_verde {
+  /*El fondo es azul en HD*/
+    background-color: #66902d;
+    float: left;
+    height: 382px;
+    width: px;
+    padding: 5px;    
+}
+.titulo_farmacia2 {
+    background-color: #009637;
+  /*  border-radius: 5px 5px 5px 5px;*/
+    color: #FFFFFF;
+   font-family: ralewayregular;
+    font-size: 24px;
+    font-style: italic;
+    height: 41px;
+    margin-bottom: 1px;
+    padding-top: 22px;
+    text-indent: 10px;
+}
+.titulo_farmacia {
+    background-color: #009637;
+    color: #FFFFFF;
+    display: none;
+   font-family: ralewayregular;
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 1px;
+    text-indent: 10px;
+}
+.listado {
+    float: left;
+    height: 385px;
+    width: 280px;
+}
+.sos img {
+   /* border-radius: 5px 5px 5px 5px;*/
+    margin-left: 337px;
+    position: absolute;
+    top: 0;
+    width: 252px;
+}
+.urgencias {
+    background-color: #6CAF66;
+   /* border-radius: 5px 5px 5px 5px;*/
+    height: 135px;
+    position: absolute;
+    top: 668px;
+    width: 589px;
+}
+.tlf_urgencias {
+    color: #7D7D7D;
+    float: right;
+    font-size: 40px;
+    height: 50px;
+    margin-top: 5px;
+    width: 300px;
+}
+.contenido {
+/*    display: none;*/
+    float: left;
+    height: 750px;
+    margin-left: 10px;
+    width: 632px;
+}
+.contenido_descripcion {
+  background-color: #749499;
+/*  border-radius: 5px;*/
+  height: 204px;
+  margin-top: 15px;
+  width: 299px;
+}
+.tlf {
+    color: #FFFFFF;
+    float: right;
+    font-size: 20px;
+    margin-right: 56px;
+    margin-top: 3px;
+}
+
+.tlf_icono{
+  height: 26px;
+    margin-top: 39px;
+    width: 26px;
+}
+
+
+.foto img {
+  height: 150px;
+  margin-left: 14px;
+  width: 270px;
+}
+.info {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+}
+.info_actual {
+    display: block;
+    position: absolute;
+    width: 1284px;
+}
+
+.info_direccion {
+    color: #ffffff;
+    font-family: ralewayregular;
+    font-size: 25px;
+    font-weight: bold;
+    overflow: hidden;
+    padding-top: 3px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.info_titular {
+    color: #F3F1C5;
+   font-family: ralewayregular;
+    font-size: 15px;
+    font-weight: bold;
+}
+.qr img {
+/*  border-radius: 5px 5px 5px 5px;*/
+  float: right;
+  height: auto;
+  margin-right: 6px;
+  margin-top: 9px;
+  width: 98px;
+}
+.qr_text {
+  color: white;
+  float: left;
+  font-family: ralewayregular;
+  font-size: 14px;
+  margin-left: 6px;
+  margin-top: 9px;
+  width: 184px;
+  text-align: justify;
+}
+.qr {
+
+/*  border-radius: 5px 5px 5px 5px;*/
+  float: left;
+  height: 116px;
+  margin-top: 6px;
+  width: 300px;
+}
+.farmacia_listado {
+  border: 1px solid #676767;
+  border-right: none;
+  color: black;
+
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+.farmacia_listado_actual {
+  background-color: #66902d;
+  border-color: #66902d;
+  color: white;
+}
+.direccion {
+   font-family: ralewayregular;
+    font-size: 18px;
+    font-weight: bold;
+}
+.titular {
+   font-family: ralewayregular;
+   font-size: 12px;
+}
+.mapa {
+    margin-left: 390px;
+    margin-top: 20px;
+    position: absolute;
+}
+.anuncio-izq {
+    margin-left: 20px;
+    margin-top: 20px;
+    position: absolute;
+}
+.anuncio {
+    background-color: #7D7D7D;
+    height: 190px;
+    margin-top: 819px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    position: absolute;
+    width: 1900px;
+}
+.display_none {
+    display: none;
+}
+.display_block {
+    display: block;
+}
+.wrapper_detalles {
+  color: #FFFFFF;
+  float: left;
+  font-family: ralewayregular;
+  font-size: 14px;
+  margin-top: 4px;
+  padding-bottom: 0;
+  padding-top: 5px;
+
+}
+.wrapper_detalles img {
+    height: 20px !important;
+    width: 20px !important;
+}
+.wrapper_detalles.icon-svg {
+    height: 30px;
+    margin-left: 18px;
+    margin-right: 5px;
+    width: 25px;
+}
+
+.gm-style{
+    height: 150% !important; 
+}
+
+.detalles_duracion{
+  display: inline-block;
+  width: 56px;
+}
+
+.contenedor_duracion_farmacias {
+       display: inline-block;
+    float: left;
+    padding: 7px;
+}
+
+.contenedor_duracion_farmacias > li{
+     font-size: 14px;
+    list-style: none outside none;
+    text-decoration: none;
+}
+
+.css_leyenda_farmacias {
+    background-color: rgba(0, 0, 0, 0.66);
+    margin-bottom: 5px;
+    padding: 3px;
+    text-align: center;
+    width: 926px;
+}

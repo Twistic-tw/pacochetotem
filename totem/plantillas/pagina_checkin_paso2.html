@@ -1,0 +1,208 @@
+<script>
+
+// $(document).ready( function(){
+
+
+//     $(".datepicker2").datepicker2({
+//      viewMode: 'years',
+//      format: 'dd/mm/yyyy'
+//     });
+
+//     $('.datepicker2').on('changeDate', function (ev) {
+//     //close when viewMode='0' (days)
+//     if(ev.viewMode === 'days'){
+//       $('.datepicker2').datepicker2('hide');
+//     }
+// })
+
+// });
+
+</script>
+
+<div id="checkin2" class='formularioPaginasWrapper noTabsWrapper'>
+
+    <div class='contentHeader'>
+        {checkin_title}
+    </div>
+
+    <div class='content'>
+
+        <form action="index.php?gestion=checkinInformacion" id="form_checkin2" name="form_checkin2" class="clearAll relative" method="post">
+
+            <!-- Tarjeta 1 -->
+
+            <div class="tarjeta_checking_2">
+                <div class="localizador_checkin_titulo"><p>Huésped</p></div>
+
+                <div class="grupo_de_input">
+                    <div class="input_cuarto">
+                        <div class="radio_button_checkin_2">
+                            <label class="genero" for="fb1">
+                                <input id="fb1" type="radio" name="dato[$index][nombre]" value="H" />
+                                <img class="img_radio_button_checkin_2" src="../../../contenido_proyectos/vistaflor/_general/cuestionario/woman.svg">
+                            </label>
+
+                            <label class="genero2" for="fb2">
+                                <input id="fb2" type="radio" name="nombre" value="M"/>
+                                <img class="img_radio_button_checkin_2" src="../../../contenido_proyectos/vistaflor/_general/cuestionario/men.svg">
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <div class="razon input_cuarto_2">
+                        <input class="input_razon" type="text" id="razon" name="razon" placeholder="Nombre" value="{razon_huesped_1}">
+                    </div>
+
+                </div>
+                
+                <div class="grupo_de_input">
+                    <div id="1" class="nacionalidad input_tercio_2 margin_top_menos7">
+                        <input class="input_nacionalidad"  id="input_nacionalidad_1" name="nacionalidad" placeholder="nacionalidad" value="{nacionalidad_huesped_1}">
+                        <img class="bandera_input_checkin"  id="bandera_input_checkin_1" src="../../../contenido_proyectos/vistaflor/_general/iconos/iconos-bandera-flat/ESP.png">
+                    </div>
+                    <div class="fecha_nacimiento input_tercio margin_top_menos7">
+                        <input class="input_fecha_nacimiento datepicker2" id="fecha_nacimiento_1" value="02/10/1992" data-date-viewmode="years" data-date-format="dd/mm/yyyy" name="fecha_nacimiento">
+                    </div>
+                </div>
+
+                <div class="grupo_de_input">
+                    <div class="input_tercio">
+                        <div class="radio_button_checkin_2_textos">
+
+                            <label class="documento" for="dni">
+                                <input id="dni" type="radio" name="documento" value="1" />
+                                <!--  <img class="img_radio_button_checkin_2 margin_left_11 clear_both" src="../../../contenido_proyectos/vistaflor/_general/cuestionario/woman.svg"> -->
+                                <div class="titulo_tipo_documento_checkin2">DNI</div>
+                            </label>
+
+                            <label class="documento2" for="pasaporte">
+                                <input id="pasaporte" type="radio" name="documento" value="0"/>
+                                <!--  <img class="img_radio_button_checkin_2 margin_left_11 clear_both" src="../../../contenido_proyectos/vistaflor/_general/cuestionario/men.svg"> -->
+                                <div class="titulo_pass_documento_checkin2">PASAPORTE</div>
+                            </label>
+                        </div>       
+                    </div>
+
+                    <div class="input_tercio">
+                        <input class="input_dni" type="text" id="dni" name="dni" placeholder="Numero documento" value="{dni}">
+                    </div>
+                    <div class="input_tercio">
+                        <input class="input_dni" type="text" id="dni" name="dni" placeholder="Fecha de caducidad" value="{dni}">
+                    </div>
+                </div>
+
+                <div class="email_checking2 margenes_tarjeta_checkin_2">
+                    <input class="input_email" type="text" id="email" name="email" placeholder="email" value="{email_huesped_1}" >
+                </div>
+            </div>
+
+
+            <!-- Tarjeta 2 -->
+
+
+            <div class="tarjeta_checking_2">
+                <div class="localizador_checkin_titulo"><p>Huésped</p></div>
+
+                <div class="grupo_de_input">
+                    <div class="input_cuarto">
+                        <div class="radio_button_checkin_2">
+                            <label class="genero" for="zfb1">
+                                <input id="zfb1" type="radio" name="nombre2" value="H" />
+                                <img class="img_radio_button_checkin_2" src="../../../contenido_proyectos/vistaflor/_general/cuestionario/woman.svg">
+                            </label>
+
+                            <label class="genero2" for="zfb2">
+                                <input id="zfb2" type="radio" name="nombre2" value="M"/>
+                                <img class="img_radio_button_checkin_2" src="../../../contenido_proyectos/vistaflor/_general/cuestionario/men.svg">
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <div class="razon input_cuarto_2">
+                        <input class="input_razon" type="text" id="razon" name="razon" placeholder="Nombre" value="{razon_huesped_1}">
+                    </div>
+
+                </div>
+
+                <div class="grupo_de_input">
+
+                    <div id="2" class="nacionalidad input_tercio_2 margin_top_menos7">
+                        <input class="input_nacionalidad" id="input_nacionalidad_2" name="nacionalidad" placeholder="nacionalidad" value="{nacionalidad_huesped_1}">
+                        <img class="bandera_input_checkin" id="bandera_input_checkin_2" src="../../../contenido_proyectos/vistaflor/_general/iconos/iconos-bandera-flat/ESP.png">
+
+                    </div>
+
+                    <div class="fecha_nacimiento input_tercio margin_top_menos7">
+                        <input class="input_fecha_nacimiento datepicker2"  id="fecha_nacimiento_2" name="fecha_nacimiento2" placeholder="fecha nacimiento">
+
+                    </div>
+                </div>
+
+                <div class="grupo_de_input">
+
+                    <div class="input_tercio">
+
+                        <div class="radio_button_checkin_2_textos">
+
+                            <label class="documento" for="dni2">
+                                <input id="dni2" type="radio" name="documento2" value="1" />
+                                <!--  <img class="img_radio_button_checkin_2 margin_left_11 clear_both" src="../../../contenido_proyectos/vistaflor/_general/cuestionario/woman.svg"> -->
+                                <div class="titulo_tipo_documento_checkin2">DNI</div>
+                            </label>
+
+                            <label class="documento2" for="pasaporte2">
+                                <input id="pasaporte2" type="radio" name="documento2" value="0"/>
+                                <!--  <img class="img_radio_button_checkin_2 margin_left_11 clear_both" src="../../../contenido_proyectos/vistaflor/_general/cuestionario/men.svg"> -->
+                                <div class="titulo_pass_documento_checkin2">PASAPORTE</div>
+                            </label>
+
+                        </div>                                 
+
+                    </div>
+
+                    <div class="input_tercio">
+                        <input class="input_dni" type="text" id="dni" name="dni" placeholder="Numero documento" value="{dni}">
+                    </div>
+
+                    <div class="input_tercio">
+                        <input class="input_dni" type="text" id="dni" name="dni" placeholder="Fecha de caducidad" value="{dni}">
+                    </div>
+
+                </div>
+
+                <div class="email_checking2 margenes_tarjeta_checkin_2">
+                    <input class="input_email" type="text" id="email" name="email" placeholder="email" value="{email_huesped_1}" >
+                </div>
+
+            </div>
+
+
+
+            <div id="paises_chekin2" class="tarjeta_checking_2">
+                <div class="localizador_checkin_titulo"><p>Seleccione su país</p></div>
+                
+                <!-- START BLOCK : nacion -->
+                <div class="bandera_checkin" id="{nacion_label}">
+                    <img class="bandera_checkin_imagen" src="../../../contenido_proyectos/vistaflor/_general/iconos/iconos-bandera-flat/{nacion_label}.png"> 
+                    <div class="bandera_checkin_texto">{nacion_label}</div>
+                    <input type="hidden" class="bandera_checkin_texto_completo" value="{nacion_value}" data-nombre='{nacion_nombre}' />
+                </div>
+                <!-- END BLOCK : nacion -->
+                
+                <div class="bandera_checkin" id="RESTE">
+                    <img class="bandera_checkin_imagen" src="../../../contenido_proyectos/vistaflor/_general/iconos/iconos-bandera-flat/RESTE.png"> 
+                    <div class="bandera_checkin_texto">Other</div>
+                    <input type="hidden" class="bandera_checkin_texto_completo" value="20" />
+                </div>
+            </div>
+
+
+<!--             <input class="boton_derecha_checking_2" type="submit" name="guardar" value="{enviar}"> -->
+        </form>
+
+    </div>
+</div>
+
+

@@ -1,0 +1,115 @@
+
+<div class="closeWrapper full_screen listado_zonas_wrapper">
+    <div class="background_tiempo alineado_izquierda" style="background-image:url('{url_base}fondo_azul.jpg');">
+        <div class="imagen_logo_arriba_listado_zonas">
+
+            {video_sensimar}
+            <img src="{url_base}logo-eurocopa.png">
+            {video_sensimar2}
+
+            {video_riu}
+            <img src="{url_base}logo-eurocopa.png">
+            {video_riu2}
+
+        </div>
+
+        <div class="menu_listado_zonas">
+
+            <div class="menu_tiempo_volver ">
+                <div class="menu_tiempo_volver_texto back js_back_lugares_destroy">
+                    <div class="menu_tiempo_volver_transparencia">
+                        <img class="menu_tiempo_volver_icono" src="img/volver.svg"/>
+                        <div class="menu_tiempo_contenido_texto">{cerrar}</div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="medallero">{medallero} Rio2016</h1>
+
+            <div class="menu_tiempo_contenido">
+
+                <div class="load_ajax_eurocopa  sub-menu-elmt sin_margenes_derecha active ancho_180" data-accion="getEurocopa_info&tipo=1" style="">
+                    <div class=" menu_tiempo_contenido_transparencia active ancho_180" >
+                        <img class="menu_zonas_contenido_icono" src="{url_base}calendario.svg"/>
+                        <div class="menu_tiempo_contenido_texto padding_laterales_3">{calendario_label}</div>
+                    </div>
+                </div>
+
+
+                <div class="load_ajax_eurocopa  sub-menu-elmt sin_margenes_derecha ancho_180" data-accion="getEurocopa_info&tipo=2" style="">
+                    <div class=" menu_tiempo_contenido_transparencia ancho_180" >
+                        <img class="menu_zonas_contenido_icono" src="{url_base}grupos.svg"/>
+                        <div class="menu_tiempo_contenido_texto padding_laterales_3">{grupos_label}</div>
+                    </div>
+                </div>
+
+
+                <div class=" load_ajax_eurocopa sub-menu-elmt sin_margenes_derecha ancho_180" data-accion="getEurocopa_info&tipo=3" style="">
+                    <div class=" menu_tiempo_contenido_transparencia  ancho_180" >
+                        <img class="menu_zonas_contenido_icono" src="{url_base}eliminatorias.svg"/>
+                        <div class="menu_tiempo_contenido_texto padding_laterales_3">{eliminatorias_label}</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="eurocopa-wrapper">
+
+            <!-- <div class="contenedorgeneral">
+                <div class="cargando_eurocopa"><img src="../../../contenido_proyectos/vistaflor/_general/eurocopa/cargando.gif" alt=""/></div>
+
+                <img class="css_euro_imagen_transparente" src="../../../contenido_proyectos/vistaflor/_general/eurocopa/fondotransparenteoctavos.png" alt=""/>
+
+                <div class="contenedoriframe">
+
+                    <iframe frameborder="0" class="frametest frametest_grupos" name="frametest" id="frametest" src="lib/eurocopa.php?url=grupo1" ></iframe>
+                </div>
+                <div class="contenedoriframe">
+
+                    <iframe frameborder="0" class="frametest frametest_grupos frametest_total" name="frametest" id="frametest" src="lib/eurocopa.php?url=grupo2" ></iframe>
+                </div>
+                <div class="contenedoriframe">
+
+                    <iframe frameborder="0" class="frametest frametest_grupos" name="frametest" id="frametest" src="lib/eurocopa.php?url=grupo3" ></iframe>
+                </div>
+                <div class="contenedoriframe">
+
+                    <iframe frameborder="0" class="frametest frametest_grupos" name="frametest" id="frametest" src="lib/eurocopa.php?url=grupo4" ></iframe>
+                </div>
+                <div class="contenedoriframe">
+
+                    <iframe frameborder="0" class="frametest frametest_grupos" name="frametest" id="frametest" src="lib/eurocopa.php?url=grupo5" ></iframe>
+                </div>
+                <div class="contenedoriframe">
+
+                    <iframe frameborder="0" class="frametest frametest_grupos frametest_total" name="frametest" id="frametest" src="lib/eurocopa.php?url=grupo6" ></iframe>
+                </div>
+            </div> -->
+
+            <div class="contenedorgeneral"><div class="cargando_eurocopa"><img src="../../../contenido_proyectos/vistaflor/_general/eurocopa/cargando.gif" alt=""/></div>
+                <div class="contenedoriframegrande">
+                    <img class="css_euro_imagen_transparente" src="../../../contenido_proyectos/vistaflor/_general/eurocopa/fondocalendario.png" alt=""/>
+                    <iframe frameborder="0" class="frametest calendario frametest_total" name="frametest" id="frametest" src="lib/eurocopa.php?url=calendario" ></iframe>
+                </div>
+            </div>
+
+            <script src="js/eurocopa.js"></script>
+
+            <script type="text/javascript">
+                $('.frametest').load(function(){
+
+                    var iframe = $('.frametest').contents();
+                    iframe.find(".container a").click(function(event) {
+                        event.preventDefault();
+                    });
+
+                });
+            </script>
+        </div>
+
+
+    </div>
+
+</div>

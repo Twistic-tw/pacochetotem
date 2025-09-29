@@ -1,0 +1,520 @@
+@media (orientation: landscape) {
+
+    /* estilos generales */
+    .ui-keyboard {
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+        border: medium none;
+        font-size: 1.7em !important;
+        left: 845px !important;
+        padding: 2.55em 108px;
+        position: absolute;
+        top: 691px !important;
+        z-index: 10;
+    }
+    #appSlogan {
+        margin: 15px 0 0 15px;
+        width: 220px;
+        height: 48px;
+    }
+    .content .subTitle {
+        width: 54%;
+    }
+
+    /* estilos globales */
+    .cabecera {
+        font-size: 110%;
+        line-height: 1.5em;
+    }
+
+    #checkin #respuesta {
+        background-color: #FFFFFF;
+        border-radius: 5px 5px 5px 5px;
+        color: #000000;
+        height: 71%;
+        margin-top: 3px;
+        padding: 8px;
+    }
+
+    #pageHeaderWrapper {
+        width: 44%;
+    }
+    #date {
+        font-size: 1.5em;
+    }
+    #time {
+        font-size: 3.2em;
+        right: 15px;
+    }
+
+    #mainBlockWrapper {
+        background-image: url("../../../../contenido_proyectos/vistaflor/_general/imagenes/bg.png");
+        background-position: 0 center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 1001px;
+        position: relative;
+    }
+    #pageBannerWrapper {
+        float: right;
+        height: 610px;
+        overflow: hidden;
+        width: 56%;
+        margin-top: -79px;
+    }
+    /* dividido en el menu y en el despliegue del menu*/
+    #pageContentWrapper {
+        float: left;
+        width: 43%;
+        margin-left: 8px;
+    }
+
+    .one_night{ margin: 0 0.8%; }
+    .one_eigth{ margin: 0;}            /* 8 elementos */
+    .one_seventh{ margin: 0 3.32%; }        /* 7 elementos */
+    .one_sixth{ margin: 0 4.52%; }          /* 6 elementos */
+    .one_fith{ margin: 0 6.1%; }            /* 5 elementos */
+    .one_fourth{ margin: 0 8.4%;}           /* 4 elementos */
+    .two_sixth{ margin: 0 12.6%;}           /* 3 elementos */
+    .three_sixth{ margin: 0 20%;}           /* 2 elementos */
+
+    .onerow { margin-top: 120px;}
+    .tworow { margin-top: 150px;}
+    .threerow { margin-top: 110px;}
+
+    .block{ float: left; position: relative;}
+
+    .block_1{ margin-left: 36%;}
+    .block_2{ margin-left: 26%;}
+    .block_3{ margin-left: 16%;}
+    .block_4, .block_5,
+    .block_6, .block_7{ margin-left: 9%;}
+
+    .onerow.block_5, .onerow.block_6,
+    .onerow.block_7{ margin-top: 150px;}
+    .onerow.block_1, .onerow.block_2,
+    .onerow.block_3, .onerow.block_4 {margin-top: 250px;}
+
+    #mainMenuWrapper {
+        height: 110px;
+        margin-top: 2px;
+        overflow: hidden;
+        padding-left: 10px;
+    }
+    .mainMenuElement {width: 101px;}
+    .mainMenuElement svg {
+        overflow: hidden;
+        transform: scale(0.727);
+        -webkit-transform: scale(0.727) !important;
+        width: 90px;
+        margin-top: -15px;
+    }
+
+    .icono{
+        height: 65px;
+        left: 12px;
+        position: absolute;
+        top: 8px;
+        width: 65px;
+        z-index: 1;
+        /*    background-image: url("../img/iconos/menu/spriteIconosSobreMenuElement.png");
+            background-repeat: no-repeat;*/
+    }
+
+    .iconoHotel{ background: url("../../administracion/css/plugins/font_style/iconos_svg/principales/hotel.svg") no-repeat center center / 51% auto; }                /* estas clases definen el background */
+    .iconoAgenda{ background: url("../../administracion/css/plugins/font_style/iconos_svg/principales/calendario.svg") no-repeat center center / 65% auto; }                /* en funcion de la posicion dentro del*/
+    .iconoCheking { background: url("../../administracion/css/plugins/font_style/iconos_svg/principales/timbre.svg") no-repeat center center / 80% auto; }                /* sprite de imagenes */
+    .iconoInformacion { background: url("../../administracion/css/plugins/font_style/iconos_svg/principales/informacion.svg") no-repeat center center / auto 72%; }
+    .iconoConoce { background: url("../../administracion/css/plugins/font_style/iconos_svg/principales/cartel.svg") no-repeat scroll center 67% / 76% auto rgba(0, 0, 0, 0); }
+    .iconoOcioComer { background: url("../../administracion/css/plugins/font_style/iconos_svg/principales/ocio_comer.svg") no-repeat center center / auto 70%;}
+    .iconoActividades { background: url("../../administracion/css/plugins/font_style/iconos_svg/principales/canoa.svg") no-repeat center 62% / 75% auto; }
+    .iconoCompras { background: url("../../administracion/css/plugins/font_style/iconos_svg/principales/compras.svg") no-repeat center center / 65% auto; }
+    /*.iconoCheking {background-position: -7px 0;}*/
+
+
+    .menuContent {
+        border: medium none;
+        border-radius: 0 0 0 0;
+        box-shadow: 0 8px 6px -6px #000000;
+        color: #FFFFFF;
+        font-family: robotocondensed;
+        height: 770px;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 9px 10px 0;
+        position: relative;
+        width: 95%;
+        background: url("../../../../contenido_proyectos/vistaflor/_general/imagenes/background_effect_horisontal.png") no-repeat scroll center top / 100% auto #2F3031;
+    }
+    .menuContent .content {
+        border-bottom: 6px solid;
+        border-radius: 5px 5px 5px 5px;
+        border-top: 6px solid;
+        height: 690px;
+        padding-top: 15px !important;
+    }
+
+    #pageFooterWrapper {
+        float: right;
+        overflow: hidden;
+        position: relative;
+        width: 56%;
+    }
+
+    #overlayLoadingContent {
+        top: 78px;
+        left: 0px;
+        width: 44%;
+        height: 998px;
+    }
+
+    #pageBottomWrapper {
+        left: 0;
+        position: absolute;
+        bottom: 13px;
+        width: 44%;
+        z-index: 100;
+        bottom: 13px;
+        background: none repeat scroll 0 0 #2F3031;
+    }
+    #navMenu {
+        background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/home_alone.svg");
+        background-size: auto 50%;
+        left: -20px;
+        top: 15px;
+        width: auto;
+    }
+    #meteoWrapper {
+        left: 179px;
+    }
+    .meteo{left:-168px;}
+    .meteo > img {
+        left: 208px;
+        /*top: -26px;*/
+        /*transform: rotate(180deg);*/
+    }
+    #langSwitch {
+
+    }
+    #screenSaver {
+        background: none repeat scroll 0 0 #000000;
+        float: left;
+        height: 1080px;
+        margin-left: -50%;
+        overflow: hidden;
+        width: 50%;
+        z-index: 12;
+    }
+    .content .scroll{
+        height: 680px !important;
+    }
+    .sliderElement > img {
+        height: 100% !important;
+    }
+    #footerSlider {
+        overflow: hidden;
+        position: relative;
+        width: 200%;
+    }
+    #footerSlider .sliderElement {
+        height: 100%;
+    }
+
+    /**************************************************************
+                    agenda.css
+    */
+    #agenda .slimScrollDiv{
+        left: -285px;
+        top: 355px;
+        width: 625px !important;
+    }
+    #agendaActividades .actividades {
+        padding: 14px 0 0 !important;
+    }
+    #agendaActividades ul.actividadesList {
+        display: block;
+        height: 325px !important;
+        margin-top: 356px;
+        overflow: hidden;
+        width: 81%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ui-datepicker table {
+        font-size: 0.8em !important;
+    }
+    #agendaCalendario {
+        left: 200px;
+        position: absolute;
+        top: 70px;
+        width: 40%;
+        z-index: 1;
+        padding-left: 10px;
+    }
+    #agendaActividades > ul {
+        padding-left: 55%;
+        position: relative;  
+    }
+    .eventDetailsWrapper {
+        height: 325px;
+        left: 65px;
+        position: absolute;
+        right: 0;
+        top: 414px;
+        width: 644px;
+    }
+    .eventDetails {
+        background: none repeat scroll 0 0 #EFEFEF;
+        border: 3px solid #E77607;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 3px 18px #131313;
+        color: #434343;
+        max-height: 264px;
+        padding: 10px;
+        position: absolute;
+        right: 6%;
+        top: 39px;
+        width: 550px;
+        z-index: 100;
+    }
+    .eventDetails > div:last-child > div:last-child {
+        overflow: auto;
+        width: 100%;
+    }
+
+    .overlayBannerHeader {
+        left: 845px;
+        top: 0;
+        width: 56%;
+    }
+
+
+    /**************************************************************
+                    postales.css
+    */
+    .contenedor-imagen-galeria-inferior2 {
+        margin-bottom: 0px;
+        width: 205px;
+    }
+    #texto #textArea {
+        height: 240px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    #texto #textoEstiloWrapper {
+        float: none;
+        height: 300px;
+        width: 82%;
+        margin: auto;
+    }
+    form#enviarPostal {
+        bottom: 32px;
+        left: 10%;
+        margin: 0 auto;
+        position: absolute;
+        width: 80%;
+    }
+    form#enviarPostal .buttonsRight {
+        bottom: 0 !important;
+        right: 0;
+    }
+
+    /**************************************************************
+                    cuestionario.css
+    */
+    #checkin .ancho50 {
+        float: left;
+        height: 360px;
+        margin-left: 1%;
+        padding: 1% 0 0 1%;
+        width: 97% !important;
+        margin-bottom: 10px;
+    }
+
+    .desc {
+        bottom: 9px;
+        right: 10px;
+    }
+    form#formulario .buttonsRight {
+        bottom: 1px;
+        right: -2px;
+    }
+
+
+    /**************************************************************
+                    compra_ocio.css
+    */
+    #compras-izq, 
+    #compras-der {
+        width: 100% !important;
+        float: none !important;
+        margin-bottom: 10px;
+    }
+    .destacado-informacion {
+        background-color: #C73A5C;
+        border-radius: 20px 20px 20px 20px;
+        color: #FFFFFF;
+        height: 86%;
+        margin-left: 0;
+        padding: 20px 20px 0 160px !important;
+        width: 76% !important;
+        float: none !important;
+    }
+
+
+    /**************************************************************
+                    vuelos.css
+    */
+
+    #llegadasWrapper, #salidasWrapper {
+        padding: 5px;
+    }
+    .vuelosWrapper{
+        height: 674px !important;
+    }
+
+    /**************************************************************
+                    postales
+    */
+    .contenedor-imagen-galeria-inferior2 {
+        width: 205px !important;
+    }
+    .overlayGlobalWrapper.closeWrapper {
+        height: 1080px !important;
+        width: 1920px !important;
+    }
+    .overlayContent {
+        background: none repeat scroll 0 0 #434343;
+        height: 669px;
+        position: absolute;
+        left: 19% !important;
+        top: 17% !important;
+        box-shadow: 0 0 68px rgba(255, 255, 255, 0.3);
+    }
+
+    /***************************************************************
+                    galeria de fotos
+    */
+
+    #imagen-grande {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding-bottom: 20px;
+        padding-left: 25px;
+        padding-top: 50px;
+        position: fixed;
+        width: 99%;
+    }
+    #imagen-grande img {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        border-color: #FFFFFF;
+        border-image: none;
+        border-style: solid;
+        border-width: 7px 7px 41px;
+        box-shadow: 0 0 68px rgba(255, 255, 255, 0.3);
+        display: block;
+        height: auto;
+        margin: 0 auto;
+        width: 63% !important;
+    }
+    .contenedor-imagen-galeria-inferior {
+        background-color: #FFFFFF;
+        box-shadow: -2px -3px 12px #000000;
+        float: left;
+        height: 160px;
+        margin-bottom: -10px;
+        margin-left: 14px;
+        margin-top: 20px;
+        padding: 5px 5px 3px;
+        width: 123px;
+    }
+    .imagen-galeria-inferior {
+        overflow: hidden;
+        width: 190px;
+    }
+
+    /**       conoce     */
+
+    #conoce .ancho50.left {
+        float: none;
+        width: 100%;
+    }
+    .municipio_element {
+        float: left;
+        margin-bottom: 10px;
+        text-shadow: 0 3px 10px #000000;
+        width: 31%;
+        padding: 6px 0 6px 10px;
+    }
+    li.municipio_element:nth-child(2n) {
+        margin-left: 0px;
+    }
+    #map_municipio {
+        float: none;
+        margin: auto;
+        width: 80%;
+    }
+    #map_municipio svg {
+        margin-top: -8px;
+    }
+    #conoce_municipio {
+        height: auto;
+        overflow: hidden;
+    }
+
+
+    /**    farmacias   */
+    .fondo_verde {
+        height: 376px;
+        padding: 5px;
+        width: 466px;
+    }
+    .contenido {
+        margin-left: 10px;
+        height: auto;
+        width: auto;
+    }
+    .contenido_descripcion {
+        margin: 12px auto 4px;
+    }
+    .qr {
+        margin-top: 6px;
+        width: 447px;
+    }
+    .qr_text {
+        width: 317px;
+    }
+    .map_canvas {
+        bottom: 22px;
+        height: 278px;
+        left: 12px;
+        position: absolute;
+        width: 96.5%;
+        float: none;
+        margin: 0px;
+    }
+
+
+    /** formulario  */
+    .same_typeface {
+        margin-bottom: 33px;
+        width: 100%;
+    }
+    .same_typeface:nth-child(2n+1){
+        float: none;
+    }
+    .valor:nth-of-type(2) {
+        margin-left: 15%;
+    }
+    .valor {
+        margin-right: 7%;
+    }
+    .valor svg {
+        height: 48px;
+    }
+
+}
+
+
+

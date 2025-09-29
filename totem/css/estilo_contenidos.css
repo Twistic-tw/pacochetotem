@@ -1,0 +1,1019 @@
+
+
+/*************************************************     texto con imagen a la izq (modelo 1)   */
+
+.content .element_dinamic ul {
+    margin-left: 20px;
+}
+.content .element_dinamic {
+    margin-bottom: 20px;
+    text-align: justify;
+    padding: 5px 4px 2px 10px;
+}
+.content .element_dinamic:nth-of-type(2n+1) {
+    background: none repeat scroll 0 0 rgba(240, 240, 240, 0.07);
+    border-radius: 5px 3px 3px 5px;
+}
+.content .subTitle {
+    border-bottom: 1px solid;
+    display: inline-block;
+    font-size: 123%;
+    margin-bottom: 20px;
+    width: 60%;
+    padding-top: 8px;
+}
+.content .element_dinamic h5{
+    font-size: 123%;    margin-bottom: 0.5em;
+}
+
+.content .contentImgWrapper.tipo1 {
+    float: right;
+    margin-left: 15px;
+    width: 300px;
+}
+
+.content .contentImgWrapper.tipo2 {
+    float: left;
+    margin-right: 15px;
+    width: 300px;
+}
+
+.margin_top_35{
+margin-top: 35px;
+}
+
+
+.menu_element {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  vertical-align: top;
+  width: 47%;
+}
+.menu_element.left2 {
+  border-left: 1px dotted #FFFFFF;
+  margin-left: 2%;
+  padding-left: 3%;
+}
+
+/*************************************************     texto con imagen a la izq  (modelo 2) */
+.texto_1 {
+    margin-bottom: 40px;
+}
+.texto_1 .titulo_elemento {
+    font-family: Ubuntu-Light;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.texto_1 .contenido_elemento {
+    display: inline-block;
+    margin-right: 4%;
+    width: 60%;
+    text-align: justify;
+}
+.texto_1 .contenido_elemento .contenido_titulo,
+.texto_2 .contenido_elemento .contenido_titulo{
+    font-family: Ubuntu-Light;
+    font-size: 1.2em;
+    margin-bottom: 0.6em;
+    text-transform: uppercase;
+}
+.texto_1 .contenido_elemento p + .contenido_titulo
+.texto_2 .contenido_elemento p + .contenido_titulo{
+    margin-top: 25px;
+}
+.texto_1 .imagen_elemento {
+    width: 36%;
+    margin-right: 0;
+}
+.texto_1 .imagen_elemento img{
+    margin-bottom: 5px;
+}
+.texto_1 > .titulo_elemento + .imagen_elemento {
+    margin-top: -2.8em;
+}
+
+.texto_2 {
+    margin-bottom: 20px;
+}
+.texto_2 .titulo_elemento {
+    font-family: Ubuntu-Light;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+.texto_2 .contenido_elemento {
+    display: inline-block;
+    margin-right: 2%;
+    text-align: justify;
+}
+
+/*************************************************          contenido tabulado (modelo 1)   */
+.tabla_1 *, .tabla_2 *, .tabla_3 *, .tabla_4 {
+    -moz-box-sizing: border-box;
+}
+.tabla_1, .tabla_2, .tabla_3, .tabla_4 {
+    clear: both;
+    margin-bottom: 40px;
+    position: relative;
+}
+.tabla_1 .titulo_elemento,
+.tabla_2 .titulo_elemento, 
+.tabla_3 .titulo_elemento,
+.tabla_4 .titulo_elemento{
+    font-family: Ubuntu-Light;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.tabla_1 .contenido_header .contenido_titulo,
+.tabla_2 .contenido_header .contenido_titulo,
+.tabla_3 .contenido_header .contenido_titulo,
+.tabla_4 .contenido_header .contenido_titulo{
+    position: absolute;
+    font-family: Ubuntu-Light;
+    font-size: 1.2em;
+}
+.tabla_1 .contenido_header .symbol,
+.tabla_2 .contenido_header .symbol,
+.tabla_3 .contenido_header .symbol,
+.tabla_4 .contenido_header .symbol{
+    float: left;
+    line-height: 1.2em;
+    text-align: right;
+    width: 33%;
+}
+.tabla_1 .contenido_header, .tabla_2 .contenido_header, .tabla_3 .contenido_header, .tabla_4 .contenido_header {
+  border-bottom: 1px solid #CCCCCC;
+  height: 1.2em;
+}
+.tabla_1 .contenido_elemento,
+.tabla_2 .contenido_elemento,
+.tabla_3 .contenido_elemento,
+.tabla_4 .contenido_elemento{
+    -moz-box-sizing: border-box;
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 0.3%;
+    overflow: hidden;
+    padding: 6px 3px 4px;
+    width: 33%;
+    
+  transition: all 0.5s ease-in 0s;
+}
+.tabla_1 .contenido_elemento:nth-of-type(2n+1),
+.tabla_2 .contenido_elemento:nth-of-type(2n+1) {
+    background: none repeat scroll 0 0 rgba(250, 250, 250, 0.2);
+}
+.tabla_1 .contenido_elemento .contenido_titulo,
+.tabla_2 .contenido_elemento .contenido_titulo,
+.tabla_3 .contenido_elemento .contenido_titulo,
+.tabla_4 .contenido_elemento .contenido_titulo{
+    /*height: 1.35em;*/
+    padding: 0.1em 0;
+}
+
+/***************** tabla_1 especifico */
+.tabla_1 .contenido_header .symbol{
+    padding-left: 24%;
+}
+.tabla_1 .contenido_col1 {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+}
+.tabla_1 .contenido_col2 {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+}
+.tabla_1 .contenido_elemento {
+    /*height: 48px;*/
+}
+.tabla_1 .contenido_elemento .contenido_subtitulo {
+    display: inline-block;
+    width: 75%;
+}
+.tabla_1 .contenido_elemento .contenido_col1, 
+.tabla_1 .contenido_elemento .contenido_col2 {
+    width: 11%;
+}
+
+/************** tabla_2 especifico */
+.tabla_2 .contenido_header .symbol{
+    padding-left: 19%;
+}
+.tabla_2 .contenido_elemento .contenido_subtitulo {
+    display: inline-block;
+    width: 85%;
+}
+.tabla_2 .contenido_col1 {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+}
+.tabla_2 .contenido_elemento {
+  padding-left: 5px;
+  padding-top: 9px;
+  transition: all 0.7s ease-in 0s;
+}
+.tabla_2 .contenido_elemento .contenido_col1 {
+    width: 11%;
+}
+
+/************** tabla_3 especifico */
+.tabla_3 .contenido_elemento:nth-of-type(2n-1) {
+    background: none repeat scroll 0 0 rgba(250, 250, 250, 0.2);
+}
+.tabla_3 .contenido_header .symbol {
+  padding-left: 29%;
+  width: 49%;
+}
+.tabla_3 .contenido_elemento .contenido_subtitulo {
+    display: inline-block;
+    width: 85%;
+}
+.tabla_3 .contenido_col1 {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+}
+.tabla_3 .contenido_elemento {
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-top: 10px;
+  width: 49%;
+}
+.tabla_3 .contenido_elemento .contenido_col1 {
+    width: 11%;
+}
+
+/************** tabla_4 especifico */
+.tabla_4 .contenido_elemento:nth-of-type(2n-1) {
+    background: none repeat scroll 0 0 rgba(250, 250, 250, 0.2);
+}
+.tabla_4 .contenido_header .symbol {
+    width: 49%;
+}
+.tabla_4 .contenido_col1, .tabla_4 .contenido_col2 {
+  display: inline-block;
+  text-align: center;
+  width: 10%;
+}
+.tabla_4 .contenido_elemento .contenido_subtitulo {
+  display: inline-block;
+  width: 80%;
+}
+.tabla_4 .contenido_elemento {
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-top: 10px;
+  width: 49%;
+}
+.tabla_4 .contenido_elemento .contenido_col1, .tabla_4 .contenido_elemento .contenido_col2 {
+  width: 9%;
+}
+
+
+.margin_right_15{
+  margin-right: 15px;
+}
+
+.premios{
+  width: 180px !important;
+}
+
+
+.element_dinamic li {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.seccion_corporativo_hd{
+  display: inline-block;
+  float: left;
+  margin-bottom: 2%;
+  margin-left: 2.5%;
+  margin-top: 2%;
+  width: 46%;
+}
+
+.imagen_corporativo_hd {
+ background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+
+.texto_corporativo_hd {
+    background-color: #f3f3f4 !important;
+    color: #ffffff;
+    height: 85px;
+    line-height: 17px;
+    padding: 20px 10px 10px;
+}
+
+.border_none{
+  border: 0px !important;
+  margin-bottom: 8px !important;
+}
+
+
+/*para el precio de la seccion todo incluido ****************************************************/
+
+.tarjeta_precio_contenido{
+  width: 20%;
+  float: left;
+  display: inline-block;
+  background-color: #242424;
+  margin-left: 19%;
+  border: 2px solid #91B80F;
+  color: #91B80F;
+}
+
+.tarjeta_precio_img_contenido{
+background-color: #242424;
+width: 100%;
+text-align: center;
+font-size: 60px;
+}
+
+.tarjeta_precio_nombre_contenido{
+color: white;
+width: 100%;
+text-align: center;
+}
+
+.tarjeta_precio_cantidad_contenido{
+    background-color: #242424;
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+
+}
+
+
+/*Para los servicios adicionales dentro de bungalow****************************************************/
+
+.tarjeta_contenido_bungalow{
+    /*background-color: #242424;*/
+    border: 2px solid #186B90;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    height: 149px;
+    margin-right: 1%;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    text-align: center;
+    width: 19%;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.margin_none{
+  margin: 0px !important;
+}
+
+.tarjeta_contenido_bungalow_titulo{
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tarjeta_contenido_bungalow_img{
+    padding-left: 25%;
+    width: 50%;
+}
+
+.tarjeta_contenido_bungalow_texto{
+font-size: 14px;
+text-align: center;
+
+}
+
+.tarjeta_contenido_bungalow_texto_enano {
+    font-size: 9px;
+    margin-top: 5px;
+}
+
+
+
+/***********************************************************/
+
+.tabla_precios_hd {
+    /*background-color: #FF0000;*/
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 7px;
+    width: 65%;
+    text-align: left;
+    border: 3px solid white;
+
+}
+
+.tabla_precios_hd > thead > tr > th {
+  font-weight: 600;
+  padding: 5px 5px 5px 5px;
+  background-color: #242424;
+  border: 1px solid;
+   text-align: left;
+ /* text-align: center;*/
+}
+
+.tabla_precios_hd > tbody > tr > td
+{
+padding: 5px 5px 5px 5px;
+border: 1px solid;
+   text-align: left;
+
+}
+
+
+/* Habitaciones*****************************************************************/
+
+.seccion_habitaciones_hd {
+    box-shadow: 0 1px 3px 0 #5d6363, 0 0 0 1px #d4d4d5;
+    display: inline-block;
+    float: left;
+    margin-bottom: 2%;
+    margin-left: 2.5%;
+    margin-top: 2%;
+    width: 31%;
+}
+
+
+.imagen_habitaciones_hd {
+ background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 210px;
+    width: 100%;
+}
+
+.seccion_habitaciones_parte_abajo{
+width: 100%;
+}
+
+.seccion_habitaciones_abajo_imagen{
+  display: inline-block;
+  float: left;
+  width: 48%;
+  margin-right: 2%;
+}
+
+.seccion_habitaciones_abajo_texto{
+    display: inline-block;
+  float: left;
+  width: 48%;
+  text-align: justify;
+}
+
+
+
+/**************************************************************************************/
+
+/*Nuestros hoteles - tarjetas*/
+
+.tarjeta_contenido_nuestros_hoteles{
+    background-color: #242424;
+    border: 2px solid #186B90;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    height: 149px;
+    margin-right: 1%;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    text-align: center;
+    width: 24%;
+    margin-bottom: 10px;
+}
+
+.tarjeta_contenido_nuestros_hoteles_img {
+    padding-left: 31%;
+    width: 37%;
+}
+
+/**********************************/
+
+
+/**Recepcion - "tabla" de icono mas texto*********/
+.recepcion_servicios {
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    height: 150px;
+    margin-top: 1%;
+    width: 45%;
+}
+
+.recepcion_servicios_icono {
+    text-align: center;
+    width: 100%;
+}
+
+.recepcion_servicios_icono > img {
+    text-align: center;
+    width: 55px;
+}
+
+.recepcion_servicios_icono_texto {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+    text-align: center;
+    color: black;
+}
+
+.recepcion_servicios_texto {
+    display: block;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+.recepcion_servicios_texto li {
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.bgRed{
+  background-color: #ff0000;
+}
+
+.bgblue {
+    background-color: #115E67;
+}
+.bgblue1 {
+    background-color: #275DA7;
+}
+
+.byellow{
+    background-color: #F2CC11;
+}
+
+.bgreen{
+    background-color: #6AA342;
+}
+
+.bpink{
+    background-color: #C4017B;
+}
+
+.recepcion_servicios_2{
+  box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    margin-right: 1%;
+    margin-top: 1%;
+    width: 99%;
+    height: 127px;
+}
+
+.recepcion_servicios_icono_2{
+    display: inline-block;
+    float: left;
+    width: 13%;
+}
+
+.recepcion_servicios_icono_2 > img {
+    margin-top: 10px;
+    padding-left: 15.5%;
+    width: 67%;
+}
+
+.recepcion_servicios_icono_texto_2{
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.recepcion_servicios_texto_2{
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    padding: 5px 0;
+    text-align: justify;
+    width: 85%;
+    line-height: 17px;
+}
+
+
+.recepcion_servicios_texto_2 li {
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.padding_arriba_35 {
+  padding-top: 35px;
+}
+
+
+.padding_arriba_15 {
+  padding-top: 15px;
+}
+
+/*********************************************************/
+
+.margin_left_none{
+  margin-left: 0% !important;
+}
+
+.heigth_50{
+  height: 50px !important;
+}
+
+.width_31_3
+{
+  width: 31.3% !important;
+}
+
+.margin_top_bottom_none{
+  margin-top:  0% !important;
+  margin-bottom: 0% !important;
+}
+.height_110{
+height: 110px !important;
+}
+
+.height_135{
+height: 135px !important;
+}
+
+.height_115{
+height: 115px !important;
+}
+
+
+.font_size_15{
+  font-size: 15px;
+}
+
+
+.padding_10
+{
+  padding-top: 10px !important; 
+}
+
+.heigth_65
+{
+  height: 65px !important;
+}
+
+.heigth_50
+{
+  height: 50px !important;
+}
+/*******************************************************************/
+.titulos_seccion_mejora_estancia{
+  margin: 20px 0px 10px 0px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.caja_texto_mejora_regimen{
+
+  width: 24%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white;
+  border: 2px solid #186B90; 
+  margin-left: 1%;
+  background-color: #242424;
+  display: inline-block;
+  float: left;
+  padding: 20px;
+  -moz-box-sizing: border-box;
+}
+
+/***************************************************************/
+
+.imagenes_corporativo_calidad{
+    display: inline-block;
+    float: left;
+    margin-left: 2.1%;
+    width: 22%;
+    margin-bottom: 2%;
+}
+
+.mejore_su_estancia_precio{
+
+    font-size: 20px;
+    text-align: center;
+
+}
+
+/*Para centrar el mapa de como llegar***********************************/
+.imagen_como_llegar_centrado{
+  overflow: hidden;
+
+}
+
+
+.imagen_como_llegar_centrado > img {
+    margin-top: -130px;
+}
+
+
+/*********************************************************************************/
+/**CSS para la pantalla de restaurantes en RIU*/
+
+.restaurantes_ficha_hotel {
+   box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    margin-right: 1%;
+    margin-top: 1%;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.restaurante_ficha_imagen {
+    display: inline-block;
+    float: left;
+    height: 208px;
+    width: 285px;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.restaurante_ficha_texto{
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    text-align: justify;
+    width: 626px;
+  }
+
+  .restaurante_ficha_texto > ul {
+    padding-left: 2%;
+    padding-right: 1%;
+    padding-top: 2%;
+    text-align: justify;
+}
+
+.restaurante_ficha_texto_titulo {
+    background-color: rgba(1, 1, 1, 0.47);
+    font-weight: 600;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-top: 2%;
+    text-transform: uppercase;
+    width: 617px;
+}
+
+.restaurante_ficha_carta_botton {
+  background-color: rgba(1, 1, 1, 0.9);
+  margin-top: -36px;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.restaurante_ficha_texto li {
+    font-size: 15px;
+   padding-bottom: 5px;
+}
+
+.restaurante_ficha_tarjeta{
+    background-color: rgba(1, 1, 1, 0.47);
+    border: 2px solid #186b90;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    height: 149px;
+    margin-left: 3%;
+    margin-right: 1%;
+    margin-top: 1%;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    text-align: center;
+    width: 45%;
+}
+
+.restaurante_ficha_tarjeta_img{
+    padding-left: 36%;
+    width: 25%;
+}
+
+
+.restaurante_ficha_tarjeta_titulo {
+  color: white;
+  overflow: hidden;
+  padding-bottom: 3px;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.restaurante_ficha_texto_detalles {
+  padding-top: 5px;
+}
+
+.font-size_13{
+  font-size: 13px !important;
+}
+
+.tamano_ficha_sin_icono_restaurante{
+  height: 73px;
+  margin-top: 7%;
+}
+
+/********************************************************************************************/
+/** RIU CLASS **********************************************************/
+
+/*Si nos dan las imagenes de las tarjetas bien las ponemos con las clases comentadas*/
+.tarjeta_riu_class{
+  width: 100%;
+ /* height: 100px;*/
+ height: 90px;
+   margin: 2% 0;
+}
+
+.tarjeta_riu_class_imagen{
+  /*width: 15%;*/
+  float: left;
+  display: inline-block;
+    /*height: 100px;*/
+}
+
+.tarjeta_riu_class_texto{
+ /* width: 85%;*/  
+ width: 100%;
+  float: left;
+  display: inline-block;
+/*    height: 100px;*/
+height: 90px;
+      background-color: rgba(0,0,0,0.55);
+}
+
+.tarjeta_riu_class_titulo {
+    background-color: yellow;
+    color: white;
+    font-weight: 600;
+    padding: 1%;
+    text-transform: uppercase;
+    width: 98%;
+}
+
+.tarjeta_riu_class_contenido {
+    padding: 5px;
+    line-height: 21px;
+}
+
+.color_riu_class_classic{
+background-color: #d2232b !important;
+}
+
+.color_riu_class_corporate{
+    background-color: #000 !important;
+}
+
+.color_riu_class_gold{
+background-color: #ca9d4d !important;
+}
+
+
+.color_riu_class_diamond{
+background-color: #748090 !important;
+}
+
+.texto_center{
+  text-align: center !important;
+}
+
+
+.tabla_riu_class{
+  width: 100%;
+    border-width: 3px;
+  border-spacing: 4px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.75);
+  border-collapse: collapse;
+
+}
+
+
+.tabla_riu_class td {
+    background-color: rgba(0,0,0,0.55);
+    border: 1px solid white;
+    padding: 10px;
+}
+
+
+.margin_marcador_tabla_riu_class {
+    height: 12px;
+    margin-left: 40%;
+    width: 32px;
+
+}
+
+sup {
+vertical-align: super;
+font-size: smaller;
+}
+
+
+.leyenda_tabla_riu_class li {
+    font-size: 13px;
+    padding-top: 9px;
+}
+
+.text-align_derecha{
+  text-align: right;
+} 
+
+.width_100p{
+  width: 100%;
+}
+
+.cuadro_video_sostenibilidad {
+    background-color: transparent;
+    height: 620px;
+    margin-left: 25px;
+    margin-top: 70px;
+    width: 552px;
+}
+
+.vuelos_table > thead > tr {
+  margin-bottom: 10px;
+}
+
+.vuelos_table > tbody > tr {
+  height: 60px;
+}
+
+.vuelos_table > tbody > tr > td {
+  vertical-align: middle;
+  padding: 2px;
+}
+
+.vuelos_table > tbody > tr > td >img {
+
+    height: 55px;
+    width: 100px;
+    padding: 0px 2px;
+    /*background-color: white;*/
+}
+
+table.vuelos_table tr td{
+  padding: 0px !important;
+
+}
+
+.width_98{
+    width:98.7% !important;
+}
+
+.alto_recepcion{
+    height: 230px !important;
+}
+
+.width_28{
+    width:28% !important;
+}
+
+.margin_top_20{
+    margin-top: 20px;
+}
+
+.width_47{
+ width: 47.75% !important;
+}
+
+.js_contenidos_masinfo{
+    background-color: #a28d3d;
+    font-weight: bold;
+    margin-top: 205px;
+}
+
+.css_qr_ttoo {
+    width: 170px;
+    margin-left: 166px;
+    margin-top: 9px;
+}
+
+.css_contenidos_masinfo_jpg{
+
+}

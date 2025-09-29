@@ -1,0 +1,3 @@
+.cont-clasificacion thead > tr > th, .cont-clasificacion tbody > tr > th, .cont-clasificacion tfoot > tr > th, .cont-clasificacion thead > tr > td, .cont-clasificacion tbody > tr > td {
+    border: 0px !important;
+}

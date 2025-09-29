@@ -1,0 +1,800 @@
+
+html, body { margin: 0px; padding: 0px; border: 0px; }
+
+
+.background_tiempo{
+ /* background-image: url('../../../../contenido_proyectos/vistaflor/_general/tiempo/fondo/despejado.jpg');*/
+  background-repeat:no-repeat;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0 auto;
+  height: 100%;
+  margin: 0px auto;
+  height: 1785px;
+  z-index: 1;
+  position: absolute;
+/*  top: 79px;*/
+/*RIU*/
+top:84px;
+  left: 0px;
+  width: 100%;
+  background-color: #59ABE3;
+}
+
+.contenedor_tiempo{
+  margin: 0 auto;
+  width: 450px;
+  margin-top: 100px;
+  border-radius: 230px;
+
+}
+
+
+/***********************************PARTE DE ARRIBA*/
+
+/***********************************PARTE DE ARRIBA*/
+
+.parte_arriba{
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 400px;
+    height: 450px;
+
+}
+
+/*.parte_arriba_error{
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 400px;
+    height: 500px; 
+}*/
+
+.tiempo_general {
+  padding-top: 10px;
+}
+
+.tiempo_general_tercero{
+
+    padding-top: 86px;
+}
+
+.icono_tiempo_general{
+  width: 100%;
+  height: 25%;
+/*margin-left: 100px;*/
+}
+
+.icono_tiempo_general > img{
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+.valor_tiempo_general{
+
+  width: 100%;
+  height: 25%;
+  /*background-color: white;*/
+  text-align: center;
+  vertical-align: middle;
+}
+
+.valor_tiempo_general > h1{ 
+  font-size: 80px;
+  font-weight: 700;
+  display: inline-block;
+  margin: 0;
+}
+
+.valor_tiempo_general > h2{ 
+  font-size: 45px;
+  display: inline-block;
+  font-weight: 100;
+  margin: 0;
+}
+
+.texto_tiempo_general > h3{ 
+  padding: 3px 68px 0px 68px !important; 
+}
+
+.texto_tiempo_general{
+  width: 100%;
+}
+
+.texto_tiempo_general > h1{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  margin: 0;
+}
+
+.no_negrita{
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.texto_tiempo_general > h2{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+.img_texto_tiempo_general{
+width: 20px;
+height: 20px;
+}
+
+.text_near_icono {
+  position: relative;
+  top: -5px;
+  left: 0px;
+  padding-right: 10px;
+}
+
+.texto_tiempo_general > h3{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color:#062884;
+}
+
+
+.carga_municipio{
+  display: none;
+position: absolute;
+left: 57px;
+top: 84px;
+}
+
+.carga_municipio > img {
+  width: 20px;
+  height: 20px
+}
+
+.carga_municipio_2{
+display: none;
+position: absolute;
+left: 57px;
+bottom: 42px;
+}
+
+.carga_municipio_2 > img {
+  width: 20px;
+  height: 20px
+}
+
+/*****************************************************/
+
+
+.parte_abajo{
+  font-family: 'Roboto Condensed', sans-serif;
+  /*margin-left: 16px;*/
+  /*margin-top: 50px;*/
+}
+
+/*
+.dia{
+  display:inline;
+  float:left;
+  background-color: #cccc00;
+  width:160px;
+  width: 155px;
+  text-align: center;
+}*/
+
+
+
+.dia_actual{
+width: 450px;
+}
+
+.dia_siguientes{
+  clear: both;
+  width: 450px;
+
+}
+/**/
+
+.dia_de_hoy{
+  padding-left: 78px;
+  padding-top: 9px;
+}
+
+/* Franja Vertical */
+
+.franja_horaria_vertical{
+margin: 0px 5px;
+font-weight: 500;
+float: left;
+width: 90px;
+/*padding-top: 10px;*/
+ 
+}
+
+.franja_vertical_nombre{
+  padding-top: 5%;
+  text-transform: uppercase;
+}
+
+
+.franja_vertical_grados{
+  padding-bottom: 5%;
+}
+
+.franja_vertical_grados_maxima{
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.franja_vertical_grados_minimo{
+  font-size: 15px;
+/*  position: relative;
+  left:-7px;*/
+}
+
+.franja_vertical_imagen > img{
+  width: 40px;
+  height: 40px;
+}
+
+/***************************************************/
+/* Franja Horizontal */
+
+.franja_horaria_horizontal
+{
+  /*margin: 0px 7px;*/
+  color: white;
+  font-weight: 500;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+  height: 70px;
+  float: left;
+ /* width: 150px;*/
+  padding-bottom: 5px;
+  padding-top: 5px;
+  position: relative;
+  width: 163px;
+}
+
+
+/*Parche para la fecha actual*/
+.texto_fecha_actual{
+font-size: 21px;
+}
+
+
+
+
+.franja_horaria_horizontal_2
+{
+color: #000;
+font-weight: 500;
+text-shadow: 2px 2px 6px #fff;
+height: 40px;
+float: left;
+padding-bottom: 5px;
+/*padding-top: 5px;*/
+position: relative;
+width: 143px;
+background-color: rgba(255, 255, 255, 0.5);
+margin-top: 20px;
+margin-left: 5px;
+margin-right: 5px;
+text-transform: uppercase;
+}
+
+
+.franja_horaria_horizontal_2:first-child{
+  margin-left: 0px !important;
+}
+
+.franja_horaria_horizontal_2:last-child{
+  margin-right: 0px !important;
+}
+
+
+.franja_horizontal_imagen > img{
+  width: 50px;
+  height: 50px;
+
+}
+
+
+.franja_horizontal_imagen_2 > img{
+  width: 50px;
+  height: 50px;
+    float: left;
+  margin-left: 55px;
+}
+
+.franja_horizontal_nombre{
+  float:left;
+  padding-top: 10%;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.franja_horizontal_nombre_2{
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+
+.franja_horizontal_imagen{
+  float:left;
+  width: 80px;
+  height: 60px;
+  padding-top: 4px;
+  padding-bottom: 14px;
+}
+
+.franja_horizontal_grados {
+    float: left;
+    position: absolute;
+    left: 113px;
+}
+
+.franja_horizontal_grados_2 {
+    float: left;
+    position: absolute;
+    left: 113px;
+}
+
+
+
+.franja_horizontal_grados_maxima{
+  padding-top: 2px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.franja_horizontal_grados_maxima_2{
+  padding-top: 12px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.franja_horizontal_grados_minimo{
+  font-size: 12px;
+  position: relative;
+/*  left:-4px;
+  top: -3px;*/
+  left: 1px;
+top: 3px;
+}
+
+.franja_horizontal_grados_minimo_2{
+  font-size: 12px;
+  position: relative;
+/*  left:-4px;
+  top: -3px;*/
+  left: 1px;
+top: 3px;
+}
+
+
+/* Separador */
+
+
+.borde_separador_abajo{
+  padding: 0px;
+  margin-top: 70px;
+  border-top: 4px solid #062884;
+  clear: both;
+  background: transparent;
+  /*width: 475px;*/
+}
+
+.borde_separador_abajo_2{
+  padding: 0px;
+  margin-top: 10px;
+  border-top: 4px solid #062884;
+  clear: both;
+  background: transparent;
+  width: 70%;
+  margin-left: 15%;
+
+}
+
+
+.texto_municipio{
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+  color: white;
+ /* width: 475px;*/
+  text-align: center;
+  margin-top: 10px;
+  background: transparent;
+  padding-bottom: 30px;
+ /* padding-bottom: 60px;*/
+}
+
+.selecionar_municipio{
+  background: transparent;
+}
+
+.select-style {
+    padding: 0;
+    margin: 0;
+/*    border: 1px solid #ccc;*/
+    width: 70%;
+/*    border-radius: 3px;*/
+    overflow: hidden;
+    background-color: #fff;
+    margin-left: 15%;
+    background: #062884 url("../img/selector.png") no-repeat 100% 50%;
+    background-size: 30px 30px;
+    background-repeat:no-repeat;
+    color: white;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    color: white;
+    border-color: white;
+  border: 2px solid;
+  font-weight: 500;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+
+/*Boton de atras*/
+
+.boton_atras_meteo{
+  position: relative !important;
+  z-index: 2;
+  width: 8%;
+  border-radius: 0px;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 43%;
+  margin-top: 20px;
+/*  background-color: rgba(255, 255, 255, 0.5);*/
+  color: black !important;
+  padding: 25px;
+  padding-top: 30px;
+  font-weight: 500;
+  font-size: 14px;
+/*  text-transform: uppercase;*/
+
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+/**Para el slider*/
+
+
+.contenedor_slider{
+  margin: 0 auto;
+/*  margin-top: 160px;*/
+/*  margin-top: 100px;*/
+
+}
+
+.slider_tiempo_municipio{
+    background-color: rgba(255, 255, 255, 0.5);
+    /*background-color: #388bd1 ;*/
+  margin: 0px 5px;
+  font-weight: 500;
+  float: left;
+  height: 135px;
+  width: 225px;
+  /*vertical-align: middle;*/
+  text-align: center;
+  display: table;
+}
+
+
+.slider_tiempo_municipio_2{
+    background-color: rgba(255, 255, 255, 0.5);
+    /*background-color: #388bd1 ;*/
+  margin: 20px 5px;
+  font-weight: 500;
+  float: left;
+  height: 135px;
+  width: 125px;
+  /*vertical-align: middle;*/
+  text-align: center;
+  display: table;
+}
+
+
+
+.slider_tiempo_municipio > img {
+  width: 50px;
+  height: 50px;
+}
+.icono_slider {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    float: left;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+.slider_temp {
+    font-size: 28px;
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.info_slider {
+    padding-top: 20px;
+    color: black;
+
+}
+
+.texto_slider{
+    padding-top: 15px;
+    color: black;
+  text-transform: uppercase;
+  display: table-cell;
+  /*padding: 20px 10px 5px 10px;*/
+  vertical-align: middle;
+  text-shadow: 2px 2px 6px rgba(55, 55, 55, 1);
+
+}
+
+.acordeon_tiempo{
+  width: 70%;
+  margin : 0 auto;
+}
+
+.acordeon_tiempo > * {
+  padding: 0px !important;
+  background: transparent;
+  border:0px;
+  background-image: none;
+  border-radius: 0px;
+}
+
+#ui-accordion-accordion-header-0 > span{
+background-image: none;
+}
+
+a.load_municipio {
+  color: black;
+  text-shadow: 2px 2px 6px rgba(55, 55, 55, 1);
+}
+
+.sin_conexion{
+width: 100%;
+height: 6%;
+/*background-color: rgba(0, 0, 0, 0.7);*/
+position: absolute;
+z-index: 999;
+text-transform: uppercase;
+color: #FFF;
+font-size: 30px;
+font-weight: 500;
+display: table;
+bottom: 515px;
+visibility: hidden;
+}
+
+.sin_conexion_texto{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-shadow:  2px 2px 6px #373737;
+
+}
+
+.displayBlock{
+  display: block;
+}
+
+/*.acordeon_tiempo > .ui-icon {
+  width: 0px;
+  height: 0px;
+  background-image: none;
+}*/
+
+.error_conexion_texto{
+  margin-top: 50px !important;
+}
+
+.espera_datos_municipio{
+width: 70%;
+height: 30%;
+background-color: transparent;
+position: absolute;
+z-index: 999;
+display: none;
+}
+
+.espera_carga_meteo{
+  display: none;
+  background-color: transparent;
+  width: 250px;
+  height: 50px;
+  z-index: 999;
+  position: absolute;
+}
+
+
+/*//////////////////  Menu    //////////////////*/
+
+
+.menu_tiempo{
+
+  height: 110px;
+  width: 100%;
+  /*margin-top: 23px;*/ /*Margin con el señalar el icono*/
+  margin-top: 27px;
+  margin-bottom: 23px;
+}
+
+.menu_tiempo_volver {
+    background-color: rgba(17, 94, 103, 0.9);
+    float: left;
+    text-align: center;
+    width: 13%;
+    margin-right: 2%;
+    height: 100%;
+    display: table;
+   /* margin-top: 4px;*/ /*Señalador del icono*/
+}
+
+.css_menu_volver_azul{
+    background-color: #115E67 ;
+}
+
+
+
+
+.menu_tiempo_contenido {
+    background-color: rgba(255, 255, 255, 0.25);
+
+    display: table;
+    height: 100%;
+    width: 85%;
+    text-align: left;
+/*    margin-left: 150px;*/
+
+}
+
+
+/*.menu_tiempo_volver_texto {
+    background-image: url('../img/fondo_atras.png');
+}*/
+
+.menu_tiempo_contenido_boton {
+    width: 110px;
+    height: 110px;
+    background-image: url('../img/lugar_hotel.png');
+    color: white;
+    vertical-align: middle;
+    background-repeat: none;
+    /*border-top: 4px solid #1E8BC3;*/ /*Señalador del icono*/
+
+}
+
+.menu_tiempo_contenido_transparencia {
+    background-color: rgba(17, 94, 103, 0.6);
+    height: 110px;
+    width: 179px;
+}
+
+.css_color_spa_menu {
+    background-color: rgba(17, 94, 103, 0.6);
+    width: 225px !important;
+}
+
+
+
+.menu_tiempo_volver_transparencia{
+    width: 140px;
+    height: 110px;
+/*    background-color: rgba(16, 16, 16, 0.6);*/
+}
+
+.menu_tiempo_contenido_texto{
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  padding-top: 5px;
+  color: white;
+}
+
+.menu_tiempo_contenido_icono{
+  color: White;
+  width: 50px;
+  height: 50px;
+  padding-left: 30px;
+  padding-top: 20px;
+
+}
+
+.menu_tiempo_volver_icono{
+  color: White;
+  width: 41px;
+  height: 41px;
+  padding-top: 28px;
+}
+
+
+.carousel_redondo > .owl-wrapper-outer {
+border-radius: 200px;
+}
+
+.imagen_slider{
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.cambiar_zona{
+/*  background-color: rgba(255, 255, 255, 0.5);*/
+/*  padding: 6px !important;*/
+/*  color: #000;*/
+  float: right;
+  position: relative;
+  right: 20px;
+  top: -26px;
+  font-weight: 600;
+  color: black;
+  padding: 4px 18px !important;
+  font-size: 14px;
+  background: none repeat scroll 0% 0% #FFF;
+  opacity: 0.5;
+  /*border-radius: 30px;*/
+}
+
+.cambiar_zona_2{
+/*  display: none;*/
+/*  background-color: rgba(255, 255, 255, 0.5);*/
+/*  padding: 6px !important;*/
+/*  color: #000;*/
+  float: right;
+  position: relative;
+  right: 20px;
+  top: -26px;
+  font-weight: 600;
+  color: black;
+  padding: 4px 18px !important;
+  font-size: 14px;
+  background: none repeat scroll 0% 0% #FFF;
+  opacity: 0.5;
+/*  border-radius: 30px;*/
+}
+
+
+.bloqueo_carga {
+    bottom: 729px;
+    height: 286px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    display: none;
+}
+
+.css_icono_tiempo_widget {
+    height: 70px;
+    width: 41px;
+    margin-top: -10px;
+    margin-left: -152px;
+}
+
+.municipio_lugar {
+    font-size: 33px;
+    padding-left: 72px;
+    padding-top: 41px;
+}

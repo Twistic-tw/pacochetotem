@@ -1,0 +1,126 @@
+
+<div class="closeWrapper full_screen conoce_wrapper">
+    <div class="background_tiempo" style="background-image:url('../../../contenido_proyectos/vistaflor/_general/imagenes/{imagen-fondo}');">
+
+<div class="posicion_hotel_mapa_conoce">
+    <img src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/marcador_mapa_RIU_corona.svg">
+</div>
+        
+
+        <div class="cover-gc" >
+            <div id="map_municipio">
+                <svg height="454" version="1.1" width="454" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative;">
+            </div>
+            <div id="objectActive" class="hidden"></div>
+        </div>
+
+        <div id="municipio_nombre_wrapper"></div>
+
+        <div class="menu_conoce">
+            <div class="menu_tiempo_volver ">
+                <div class="menu_tiempo_volver_texto back">
+                    <div class="menu_tiempo_volver_transparencia">
+                        <img class="menu_tiempo_volver_icono" src="img/volver.svg"/>
+                        <div class="menu_tiempo_contenido_texto">{cerrar}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu_tiempo_contenido">
+                <div class="informacion_wrapper sub-menu-elmt {informacion}" data-accion="informacion">
+                    <div class=" menu_tiempo_contenido_transparencia {class_bg} informacion " >
+                        <img class="menu_tiempo_contenido_icono" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/icon_info.svg"/>
+                        <div class="menu_tiempo_contenido_texto">{info_label}</div>
+                    </div>
+                </div>
+                <div class="hacer_wrapper sub-menu-elmt" data-accion="hacer">
+                    <div class="menu_tiempo_contenido_transparencia {class_bg} hacer {hacer}">
+                        <img class="menu_tiempo_contenido_icono" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/icon_que_hacer.svg"/>
+                        <div class="menu_tiempo_contenido_texto">{hacer_label}</div>
+                    </div>
+                </div>
+                <div class="galeria_wrapper sub-menu-elmt" data-accion="galeria">
+                    <div class="menu_tiempo_contenido_transparencia {class_bg} galeria {galeria}">
+                        <img class="menu_tiempo_contenido_icono" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/icon_galeria.svg"/>
+                        <div class="menu_tiempo_contenido_texto">{galeria_label}</div>
+                    </div>
+                </div>
+                <div class="sitios_wrapper sub-menu-elmt" data-accion="sitios">
+                    <div class="menu_tiempo_contenido_transparencia {class_bg} sitios {sitios}">
+                        <img class="menu_tiempo_contenido_icono" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/icon_sitios.svg"/>
+                        <div class="menu_tiempo_contenido_texto">{sitios_label}</div>
+                    </div>
+                </div>
+                <!--                <div class="sub-menu-elmt {class_bg}">
+                                    <div class="sub-menu-icon"><div class="icon"></div></div>
+                                    <div class="sub-menu-title">{</div>
+                                </div>
+                                <div class="sub-menu-elmt {class_bg}">
+                                    <div class="sub-menu-icon"><div class="icon"></div></div>
+                                    <div class="sub-menu-title">Titulo4</div>
+                                </div>-->
+            </div>
+        </div> 
+
+        <div class="sin_conexion">
+            <div class="sin_conexion_texto">Sin conexion</div>
+        </div>
+
+        <div class="contenedor_slider">
+            <div class="espera_datos_municipio"></div>
+
+            <!--   <div class="borde_separador_abajo"></div> -->
+
+            <div class="listado-wrapper">
+                <h3>  
+                    <div class="selecionar_municipio">
+                        <div class="texto_municipio">{selector}</div>                
+                    </div>
+                </h3>
+
+                <div class="owl-carousel municipio_wrapper">
+                    <!-- START BLOCK : listado_municipios -->
+                    <div class="slider_tiempo_municipio">
+                        <!-- START BLOCK : municipio_1 -->
+                        <div id="{id_municipio}" class="municipio_element flip_municipio">
+
+                            <div class="texto_slider flip_element displayNone">{nombre_municipio}</div>
+                            <div class="flip_element "><img src="../../../contenido_proyectos/vistaflor/_general/gc/{id_municipio}.png"></div>
+                            <div class="carga_municipio"> <img src="../../../contenido_proyectos/vistaflor/_general/imagenes/carga_flat.gif" > </div>
+
+                        </div>
+                        <!-- END BLOCK : municipio_1 -->
+
+                        <!-- START BLOCK : municipio_2 -->
+                        <div id="{id_municipio}" class="municipio_element flip_municipio">
+                            <div class="texto_slider flip_element displayNone">{nombre_municipio}</div>
+                            <div class="flip_element "><img src="../../../contenido_proyectos/vistaflor/_general/gc/{id_municipio}.png"></div>
+                            <div class="carga_municipio"> <img src="../../../contenido_proyectos/vistaflor/_general/imagenes/carga_flat.gif" > </div>
+                        </div>
+                        <!-- END BLOCK : municipio_2 -->
+                    </div>
+                    <!-- END BLOCK : listado_municipios -->
+                </div><!-- Fin owl -->
+
+                <span class="to_flip displayNone" id="cambiar_zona">{ver_zona}</span>
+                <span class="to_flip " id="cambiar_zona_2">{ver_nombre}</span>
+            </div><!-- Fin acordion -->
+
+        </div><!-- Fin slider -->
+
+        <div class="full_contenido_wrapper">
+            <!-- START BLOCK : card -->
+            <div class="card {card_class}">
+                {card_content}
+            </div>
+            <!-- END BLOCK : card -->
+        </div>
+
+        <!--   <div class="borde_separador_abajo_2"></div> -->
+        <!--       <div class="back boton_atras_meteo">
+                 {cerrar}
+            </div> -->
+
+    </div> <!-- Fin contenedor-->
+
+</div>

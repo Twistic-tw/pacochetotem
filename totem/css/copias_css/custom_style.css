@@ -1,0 +1,1312 @@
+
+
+/****************************************
+ *   01.   Estilos generales
+ ****************************************/
+.ui-tabs .ui-tabs-panel {
+    padding: 5px 8px !important;
+}
+.ui-tabs {
+    padding: 0px;
+}
+iframe#conoce_granCanaria{
+    height: 1221px;
+    margin-left: -4px !important;
+    overflow: hidden;
+    position: absolute;
+    top: 71px;
+    width: 100%;
+    z-index: 100;
+}
+body div.closeIframe {
+    background: none repeat scroll 0 0 white;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 0 2px black;
+    color: #434343;
+    font-family: robotocondensed;
+    font-size: 2.4em;
+    left: 41%;
+    padding: 10px 47px;
+    position: absolute;
+    top: 1250px;
+    z-index: 200;
+}
+#pageWrapper{
+    width: 200%;
+    height: 1920px;
+    position: relative;
+}
+#page{
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.ancho_50{
+    width: 50%;
+}
+
+.left{
+    float:left;
+}
+.right{
+    float: right;
+}
+.textAlign-center{text-align: center;}
+.textAlign-left{text-align: left;}
+.textAlign-right{text-align: right;}
+.textAlign-justify{text-align: justify;}
+
+.slimScrollDiv .slimScrollBar {
+    /*background-image: url("../img/iconos/arrowdown.png") !important;*/
+    background-repeat: no-repeat  !important;
+    background-position: 0 bottom  !important;
+    background-size: 17px 8px !important;
+}
+.slimScrollBar:before {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    /*background-image: url("../img/iconos/arrowup.png");*/
+    background-origin: padding-box;
+    background-position: 0 5px;
+    background-repeat: no-repeat;
+    background-size: 17px 7px;
+    content: "_";
+    height: 10px;
+    padding-left: 3px;
+    width: 10px;
+}
+.overlayVideoElement{ opacity: 0.01; position: absolute;}
+.close{
+    background: url("../../administracion/css/plugins/font_style/iconos_svg/close.svg") no-repeat scroll center center / 65% 65% #efefef;
+    /*    border: 2px solid #232323;
+        border-radius: 50px 50px 50px 50px;
+        height: 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+    */
+}
+
+.menuContentHidden{ visibility: hidden; }
+
+.overlayBannerHeader {
+    height: 608px;
+    left: 0;
+    position: absolute;
+    top: 79px;
+    width: 1080px;
+    z-index: 2;
+}
+.close {
+    border-color: #E77607;
+    border-image: none;
+    border-left: 0 solid #E77607;
+    border-radius: 57px 58px 50px 50px / 68px 58px 50px 50px;
+    border-right: 3px solid #E77607;
+    border-top: 3px solid #E77607;
+    height: 40px;
+    position: absolute;
+    right: -14px;
+    top: -17px;
+    width: 40px;
+}
+.back{
+    position: absolute;
+}
+#overlayLoadingContent {
+  height: 683px;
+  position: absolute;
+  top: 687px;
+  width: 1080px;
+  z-index: 1000;
+  background: rgba(0,0,0,0.25);
+}
+#overlayLoadingContent #loadingGifWrapper {
+  height: 150px;
+  left: 45%;
+  position: absolute;
+  top: 288px;
+  width: 150px;
+}
+
+/****************************************
+ *   02.   Etiquetas html
+ ****************************************/
+html{
+    font-size: 12pt;
+    font-family: Sans-serif;
+    cursor:default;
+}
+img{ width: 100%;height: 100%; }
+body { 
+    overflow:hidden;
+
+}
+strong { font-weight: bolder;}
+em{ font-style: italic;}
+iframe {
+    height: 392px;
+    margin-left: 20px;
+    width: 1000px;
+}
+
+/****************************************
+ *   03.   Clases generales
+ ****************************************/
+.color1{ color: #2e9dcc; }  /* azul */
+.color2{ color: #F2F2F2; }  /* blanco */
+.color3{}
+.color4{}
+
+.colorBg1{background: #2f3031;}
+.colorBg2 { background: #3A3D3E !important; }
+.colorBg3{}
+.colorBg4{}
+
+.padding15{ padding: 15px;}
+.paddingLeftRight10 { padding-left: 10px; padding-right: 15px;}
+.cabecera {
+    font-size: 110%;
+    line-height: 1.5em;
+}
+.marginleft10{ margin-left: 10px;}
+
+.ancho50 { width: 48%; }
+.title1,.title2,.title3,.title4,.title5{ font-family: RobotoCondensed,Helvetica,Sans-seriff;}
+.title1{font-size: 3em;}
+.title2{font-size: 1.5em;}
+.title3{}
+
+.relative{position: relative;}
+.absolute{position: absolute;}
+
+.clearAll{clear: both;}
+.blockWrapper{
+    /*    width: 80%;
+        margin: 0 auto;*/
+    position: relative;
+}
+.imgDefault{
+    width: auto;
+    height: auto;
+}
+.hidden{ display: none;}
+.displayNone { display: none !important;}
+.x-small {font-size: 4pt;}
+.x-smallEm { font-size: 0.2em;}
+
+body .ui-keyboard-space{
+    margin-left: 0.5em !important;
+    margin-right: 0.5em !important;
+}
+
+.buttonsRight {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/buttons.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 0 none;
+    bottom: -14px;
+    font-family: robotocondensed;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.4em 1.9em;
+    text-align: center;
+    position: absolute;
+    right: 30px;
+}
+.buttonsLeft{
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/buttons.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 0 none;
+    bottom: -11px;
+    font-family: robotocondensed;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.4em 1.9em;
+    text-align: center;
+    position: absolute;
+    left: 30px;
+}
+.buttonsCenter{
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/buttons.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 0 none;
+    bottom: 14px;
+    font-family: robotocondensed;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.4em 1.9em;
+    text-align: center;
+    position: absolute;
+    left: 45%
+}
+
+ul.tabs_std1{
+    background: none !important;
+    border: none !important;
+}
+ul.tabs_std1 li{
+}
+ul.tabs_std1 a{
+    padding-bottom: 1px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+ul.tabs_std1 li:hover, ul.tabs_std1 li a:hover{
+    color: inherit
+}
+
+
+/****************************************
+ *    pestañas de cada subseccion
+ ***************************************/
+
+
+/****************************************
+ *   03.1  Clases jqueryUi
+ ****************************************/
+div > ul.ui-tabs-nav li.ui-state-default{
+    background: none repeat scroll 0 0 white;
+    border: medium none;
+    color: #232323;
+}
+
+
+/****************************************
+ *   03.2  Clases sobre listas
+ ****************************************/
+
+ul.lista {
+    width: 100%;
+}
+ul.lista li {
+    padding: 7px 0;
+}
+ul.lista li span {
+    display: inline-block;
+    min-width: 55%;
+}
+
+/****************************************
+ *   04.   formularios
+ ****************************************/
+
+form .hasKeyboardActive {
+    box-shadow: 0 0 10px -1px violet;
+    transform: scale(1.01, 1.1);
+}
+
+
+/****************************************
+ *   04.1  formulario clase 1
+ ****************************************/
+form.stdForm1{ font-size: 3em; padding: 0.7em 1em; }
+form.stdForm1 label{width: 30%; float: left; clear: both;}
+form.stdForm1 input{
+    display: block;
+    font-size: 0.6em;
+    margin-bottom: 0.4em;
+    margin-left: 2%;
+    padding: 0.25em 0.1em;
+    width: 50%;
+}
+
+
+
+
+/****************************************
+ *   05.   tablas
+ ****************************************/
+table.std_table{
+    width: 98%;
+}
+table.std_table thead tr{
+    border-bottom: 2px solid;
+}
+table.std_table tr:nth-child(2n+1) {
+  background-color: rgba(244, 244, 244, 0.05);
+}
+table.std_table tr td, table.std_table tr th {
+    padding: 12px 0 12px 4px;
+}
+#informacionWrapper_infoGuaguas .std_table td {
+    border: 1px solid #666666;
+}
+
+#informacionWrapper_infoGuaguas table.std_table{
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+/****************************************
+ *   06.   pageHeader
+ ****************************************/
+#pageHeaderWrapper{
+    top: 0;
+    height: 79px;
+    width: 100%;
+    line-height: 79px;
+    z-index: 1;
+}
+
+#appSlogan{
+    display: inline-block;
+    height: 52px;
+    margin: 10px 0 0 25px;
+    position: relative;
+    width: 244px;
+    z-index: 10;
+}
+
+#date{
+    font-size: 2.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: inherit;
+    text-align: center;
+    width: 100%;
+}
+#date:first-letter{
+    text-transform: uppercase;
+}
+#time{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    line-height: inherit;
+    text-align: center;
+    font-size: 5.1em;
+}
+
+
+/****************************************
+ *   07.   mainBlockWrapper
+ ****************************************/
+#mainBlockWrapper {
+    background-image: url("../../../../contenido_proyectos/vistaflor/_general/imagenes/bg.png");
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+
+/****************************************
+ *   08.   pageBanner
+ ****************************************/
+#pageBannerWrapper{
+    height: 608px;
+    overflow: hidden;
+}
+.hotelBanner{
+    height: 100%;
+}
+.hotelBanner video{
+    height: 608px !important;
+}
+.hotelLogo{
+    position: absolute;
+    top: 21%;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+.hotelSlogan{
+    position: absolute;
+}
+
+
+/****************************************
+ *   09.   pageContent
+ ****************************************/          /* dividido en el menu y en el despliegue del menu*/
+#pageContentWrapper{
+    height: 682px;
+}
+.noTabsWrapper .content{
+    position: relative;
+    top: 35px;
+}
+/* seccion para los contenidos de los wrappers centrales. */
+
+.blockTitle {
+  color: #FFFFFF;
+  font-family: RobotoCondensed;
+  font-size: 110%;
+  letter-spacing: 0.2pt;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-shadow: 0 1px 1px #000000;
+  width: 100%;
+}
+.onerow { margin-top: 120px;}
+.tworow { margin-top: 50px;}
+.threerow { margin-top: 10px;}
+
+.block{ float: left; position: relative;}
+
+.block_1{ margin-left: 45%;}
+.block_2{ margin-left: 25%;}
+.block_3{ margin-left: 25%;}
+.block_4{ margin-left: 12%;}
+.block_5{ margin-left: 9%;}
+.block_6{ margin-left: 6%;}
+.block_7{ margin-left: 4%;}
+
+.block .icon-svg {
+    /*    height: 70px;
+        left: 30px;
+        position: absolute;
+        top: 14px;
+        width: 40px;*/
+    left: 39px;
+    position: absolute;
+    top: 37px;
+    transform: scale(2);
+}
+
+/****************************************
+ *   09.1  mainMenu
+ ****************************************/
+#mainMenuWrapper{
+    height: 138px;
+    overflow: hidden;
+}
+.mainMenuElement{           /* clase wrapper para los elementos del menu */
+    float: left;
+    position: relative;
+    height: 100%;
+    margin-left: 30px;
+    width: 102px;
+    background: radial-gradient(closest-side at 45% 94% , black 3%, #131313 54%, #2F3031) no-repeat scroll 0 0 transparent;
+}
+.mainMenuElement svg{ overflow: hidden; width: 90px;}
+.mainMenuElement.active{
+    /*añadir sombra activa*/
+    background: radial-gradient(closest-side at 45% 94% , inherit 54%, #2F3031) no-repeat scroll 0 0 transparent;
+}
+.mainMenuElementLink{
+    display: block;
+    padding: 5px 0 25px;
+    cursor: default;
+}
+.mainMenuElementTitle {
+    position: absolute;
+    bottom: 8px;
+    left: -36%;
+    width: 160%;
+    color: white;
+    font-family: RobotoCondensed;
+    /*font-weight: bold;*/
+    text-align: center;
+    font-size: 110%;
+    letter-spacing: 0.2pt;
+    text-shadow: 0 1px 1px black;
+}
+.one_night{ margin: 0 0.8%; }
+.one_eigth{ margin: 0 1.5%;}            /* 8 elementos */
+.one_seventh{ margin: 0 3.32%; }        /* 7 elementos */
+.one_sixth{ margin: 0 4.52%; }          /* 6 elementos */
+.one_fith{ margin: 0 6.1%; }            /* 5 elementos */
+.one_fourth{ margin: 0 8.4%;}           /* 4 elementos */
+.two_sixth{ margin: 0 12.6%;}           /* 3 elementos */
+.three_sixth{ margin: 0 20%;}           /* 2 elementos */
+
+.icono{
+    position: absolute; 
+    top: 19px; 
+    left: 12px; 
+    width: 65px;
+    height: 65px;
+    /*    background-image: url("../img/iconos/menu/spriteIconosSobreMenuElement.png");
+        background-repeat: no-repeat;*/
+}
+.iconoHotel{ background: url("../../administracion/css/plugins/font_style/iconos_svg/principales/hotel.svg") no-repeat center center / 61% auto; }                /* estas clases definen el background */
+.iconoAgenda{ background: url("../../administracion/css/plugins/font_style/iconos_svg/principales/calendario.svg") no-repeat center center / 85% auto; }                /* en funcion de la posicion dentro del*/
+.iconoCheking { background: url("../../administracion/css/plugins/font_style/iconos_svg/principales/timbre.svg") no-repeat center center / 95% auto; }                /* sprite de imagenes */
+.iconoInformacion { background: url("../../administracion/css/plugins/font_style/iconos_svg/principales/informacion.svg") no-repeat center center / auto 92%; }
+.iconoConoce { background: url("../../administracion/css/plugins/font_style/iconos_svg/principales/cartel.svg") no-repeat center center / 95% auto; }
+.iconoOcioComer { background: url("../../administracion/css/plugins/font_style/iconos_svg/principales/ocio_comer.svg") no-repeat center center / auto 85%;}
+.iconoActividades { background: url("../../administracion/css/plugins/font_style/iconos_svg/principales/canoa.svg") no-repeat center center / 95% auto; }
+.iconoCompras { background: url("../../administracion/css/plugins/font_style/iconos_svg/principales/compras.svg") no-repeat center center / 80% auto; }
+/*.iconoCheking {background-position: -7px 0;}*/
+
+
+/****************************************
+ *   09.2  menuContent
+ ****************************************/
+.menuContentWrapper{        /**/
+    height: 432px;
+}
+.menuContentHeader{                 /* la flecha superior */
+    height: 22px;
+    width: 100%;
+    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/flecha_up2.svg"); 
+    background-repeat: no-repeat;
+    margin-top: 3px;
+}
+.menuContent {
+    height: 483px;
+    width: 98%;
+    position: relative;
+    margin: 0 auto;
+    padding: 9px 10px 0 10px;
+    box-shadow: 0 8px 6px -6px black;
+    border-radius: 0px;
+    border: none;
+    overflow: hidden;
+    color: white;
+    font-family: robotocondensed;
+    background: url("../../../../contenido_proyectos/vistaflor/_general/imagenes/background_effect_2.png") no-repeat scroll center top #2F3031;
+    background-size: 100% auto;
+}
+.menuContent > div{
+    position: relative;
+}
+.contentHeader {
+    position: absolute;
+    top: 3px;
+    font-size: 2em;
+    z-index: 1;
+    color: white;
+}
+.menuContent .content{
+    border-radius: 5px;
+    border-top: 6px solid;
+    border-bottom: 6px solid;
+    height: 403px;
+    padding-top: 15px !important;
+    
+    font-family: RobotoRegular;
+}
+
+.content p {
+    line-height: 1.08em;
+    margin-bottom: 0.5em;
+}
+.content p br {
+    margin-bottom: 0.5em;
+}
+.content .contentImgWrapper.tipo1 {
+    float: right;
+    margin-left: 15px;
+    width: 300px;
+}
+.content .subTitle {
+    border-bottom: 1px solid;
+    display: inline-block;
+    font-size: 123%;
+    margin-bottom: 20px;
+    width: 60%;
+    padding-top: 8px;
+}
+.content .element_dinamic {
+    margin-bottom: 20px;
+    text-align: justify;
+    padding: 5px 4px 2px 10px;
+}
+.content  .element_dinamic.even {
+    background: none repeat scroll 0 0 rgba(240, 240, 240, 0.07);
+    border-radius: 5px 3px 3px 5px;
+}
+
+.menuContent .content.ui-widget-content {
+    background: none;
+}
+
+/****************************************
+ *   09.3  Informacion
+ ****************************************/
+
+
+
+
+
+/****************************************
+ *   10.   pageFooter
+ ****************************************/          /* video, slider,... inferior*/
+#pageFooterWrapper{ 
+    height: 482px;
+    position: relative;
+    overflow:hidden;
+}
+
+.footerTitle{
+    position: absolute;
+    left: 30px;
+    top: 40px;
+}
+
+
+/****************************************
+ *   10.1  Slider
+ ****************************************/ 
+
+#footerSlider{
+    width: 200%;
+    height: 482px;
+    overflow: hidden;
+    position: relative;
+}
+#footerSlider .sliderElement{
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+/****************************************
+ *   11.   pageBottom
+ ****************************************/
+#pageBottomWrapper{
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    height: 68px;
+    z-index: 1;
+    /*background-color: black;*/
+}
+
+#meteoWrapper, #langSwitch{
+    /*    background: linear-gradient(#EFEFEF 5%, #CECECE 20%, #AEAEAD 35%, #323232 60%, #323231 80%, #282828 100%) repeat-y scroll 0 0 transparent;
+        background: linear-gradient(#EFEFEF 5%, #CECECE 15%, #AEAEAD 24%, #323232 55%, #323231 80%, #282828 100%) repeat-y scroll 0 0 transparent;
+        border-radius: 25px;
+        text-shadow: 0px -1px 3px #434343;
+        box-shadow: 0 9px 9px -8px #2E9DCC, 0 9px 9px -8px #2E9DCC;
+        box-shadow: 0 27px 6px -23px #2E9DCC,0 16px 9px -17px #2E9DCC;*/
+
+    position: absolute;
+    width: 190px;
+    height: 48px;
+    margin-top: 8px;
+    font-size: 1.7em;
+    z-index: 13;
+    text-align:center;
+    /*cursor: pointer;*//*No necesario para el panel táctil*/
+
+    font-family: RobotoCondensed;
+
+}
+#meteoWrapper:hover, #langSwitch:hover{
+    /*    background: linear-gradient(#EFEFEF 5%, #CECECE 20%, #AEAEAD 35%, #323232 60%, #323231 80%, #282828 100%) repeat-y scroll 0 0 transparent;
+        background: linear-gradient(#282828 5%, #323231 20%, #323232 35%, #AEAEAD 60%, #CECECE 80%, #EFEFEF 100%) repeat-y scroll 0 0 transparent;*/
+    /*box-shadow: 0 9px 9px -8px #2E9DCC, 0 9px 9px -8px #2E9DCC;*/
+}
+/*#langSwitch:hover{
+    box-shadow: 0 9px 9px -8px #2E9DCC;
+}*/
+
+
+/****************************************
+ *   11.1   Tiempo
+ ****************************************/
+#meteoWrapper {
+    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/icono_tiempo.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    left: 40px;
+}
+#meteoWrapper .text { margin-left: 28px; }
+.tiempo {
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    height: 43px;       /*10px mas que el height del contenedor*/
+}
+.meteo {
+    position: absolute;
+    top: -460px;
+    left: 0px;
+    height: 430px;
+    width: 975px;
+
+    padding: 0 0 20px;
+    z-index: 2;
+    opacity: 0;
+    display: none;
+}
+.meteoInfo{
+    background: none repeat scroll 0 0 white;
+    bottom: 28px;
+    height: 420px;
+    position: absolute;
+    width: 550px;
+    box-shadow: 4px 3px 10px -3px black;
+    text-shadow: none;
+    color: #AAA;
+    overflow: hidden;
+}
+.meteo img{
+    bottom: 2px;
+    height: 30px;
+    left: 51px;
+    position: absolute;
+    width: 70px;
+}
+.meteoInfo_resumen .resumen_iconNubosidad img {
+    height: auto;
+    left: 13px;
+    text-align: center;
+    top: 17px;
+    vertical-align: middle !important;
+    width: 60px;
+}
+
+/****************************************
+ *   11.1.1  MeteoInfo
+ ****************************************/
+#meteoInfo_headerWrapper{
+    height: 30px;
+    position: relative;
+    padding: 0 8px;
+    text-shadow: none;
+    color: #434343;
+}
+#islaLocalidadesWrapper {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 440px;
+    background: white;
+    box-shadow: 6px 3px 10px -4px black;
+}
+#mapWrapper {
+    height: 390px;
+    width: 100%;
+    margin-left: -20px; 
+}
+#map {height: 380px;}
+#map svg {
+    margin-top: -36px;
+    padding-left: 26px;
+    transform: scale(0.86);
+}
+
+#map_municipio svg {
+    margin-top: -36px;
+    padding-left: 55px;
+    transform: scale(0.86);
+}
+
+
+#meteoInfo_isla{float: right; width: 45%;text-align: right;}
+#meteoInfo_municipio{}
+
+#meteoInfo_resumenWrapper{ overflow: hidden;}
+.meteoInfo_resumen{
+    position: relative;
+    margin-top: 8px;
+    float: left;
+    width: 32%;
+    margin-left: 1%;
+    height: 130px;
+    font-size: 0.6em;
+    text-align: left;
+}
+.resumen_iconNubosidad{
+    float: left;
+    height: 85px;
+    width: 50%;
+}
+.resumen_temperatura {
+    float: right;
+    height: 85px;
+    margin-right: 5%;
+    width: 45%;
+}
+.resumen_temperatura > div:first-child {
+    position: absolute;
+    right: 15px;
+    top: 2px;
+}
+.resumen_temperatura .resumen_temperaturaValue{
+    margin-top: 23px;
+    font-size: 3.2em;
+}
+.resumen_temperaturaValue sup{
+    font-size: 0.34em;
+    padding-top: 4px;
+    padding-right: 3px;
+    float: right;
+}
+.resumen_vientoHumedad{
+    clear: both;
+    float: left;
+    margin-top: 5px;
+    padding-left: 16px;
+    width: 90%;
+}
+
+.resumen_vientoHumedad > strong {
+    display: inline-block;
+    width: 50%;
+}
+
+#meteoInfo_char{height: 120px; width: 550px; margin: 12px 0 18px;}
+
+#meteoInfo_estimacionWrapper{ height: 102px; font-size: 0.8em; border-top: 1px solid #676767;}
+.meteoInfo_estimacion {
+    /*background: linear-gradient(#878787 0%, #B7B7B7 3%, #F0F0F0 24%, #FFFFFF 60%) repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+    float: left;
+    font-size: 0.58em;
+    margin-bottom: 8px;
+    padding-top: 4px;
+    width: 25%;
+}
+.meteoInfo_diaActual {
+    background: none repeat scroll 0 0 #676767;
+    color: #FEFEFE;
+    font-size: 0.7em;
+    padding: 5px 0;
+}
+.meteoInfo_estimacionImgWrapper{
+    display: inline-block;
+    height: 44px;
+    text-align: center;
+    width: 94%;
+    position: relative;
+}
+.meteoInfo_estimacionTemp {
+    background: none repeat scroll 0 0 #676767;
+    border: 1px solid #676767;
+    color: #EFEFEF;
+    float: left;
+    font-size: 14px;
+    margin-right: 2px;
+    margin-top: 0;
+    padding: 6px 0;
+    width: 48%;
+}
+.meteoInfo_estimacionImgWrapper .time{
+    margin-top: 2px;
+}
+.meteoInfo_estimacion .meteoInfo_estimacionImgWrapper > img {
+    display: block;
+    height: 100%;
+    left: 0;
+    margin: 0 auto;
+    position: relative !important;
+    top: 0;
+    vertical-align: middle;
+    width: 65px;
+}
+
+.grafica_dia:first-child {
+    left: 135px;
+}
+.grafica_dia:last-child {
+    left: 340px;
+}
+.grafica_dia {
+    font-size: 0.7em;
+    position: absolute;
+    top: 268px;
+}
+
+/****************************************
+ *   11.2   Nav
+ ****************************************/
+#navMenu {
+    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/home.svg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 78px;
+    position: absolute;
+    text-align: center;
+    top: -21px;
+    width: 100%;
+    z-index: 12;
+}
+#navMenu a {
+    display: inline-block;
+    height: 100%;
+    /* width: 44px;*/
+    width: 115px;
+}
+
+/****************************************
+ *   11.3   Idiomas
+ ****************************************/
+
+#langSwitch {
+    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/icono_idioma.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    right: 40px;
+}
+.idioma_icono {
+    height: 35px;
+    padding: 6px 1px;
+    position: absolute;
+    right: 0;
+    width: 35px;
+}
+#langSwitch div#idiomaActivo{
+    display: block;
+    padding-left: 10px;
+    z-index: 4;
+}
+#idiomaActivo .text {
+    margin-right: 10px;
+}
+.idiomasLista .text {
+    margin-left: 20px;
+    text-align: left;
+}
+#langSwitch ul.idiomasLista{
+    position: absolute;
+    z-index: 0;
+    bottom: 50px;
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+    /*padding-bottom: 20px;*/
+    background-image: url("../../../../contenido_proyectos/vistaflor/_general/iconos/flecha_down2.svg");
+    background-position: 10px bottom;
+    background-repeat: no-repeat;
+}
+ul.idiomasLista li{
+    position: relative;
+    padding-left: 10px;
+}
+ul.idiomasLista  a{
+    text-decoration: none;
+    color: white;
+
+}
+ul.idiomasLista li:last-child{
+    box-shadow: 17px 25px 5px -23px rgba(0, 0, 0, 0.51)
+}
+ul.idiomasLista li.langActive{
+    display: block;
+}
+
+.text {
+    display: block;
+    line-height: 50px;
+}
+
+
+/****************************************
+ *   12    Salvapantalla
+ ****************************************/
+#screenSaver {
+    background: none repeat scroll 0 0 black;
+    height: 1920px;
+    overflow: hidden;
+    width: 50%;
+    float: left;
+    margin-left: -50%;
+    z-index: 12;
+}
+
+#screenSaver video{
+    width: 100%;
+    display: block;
+}
+
+
+/****************************************
+ *   13.   Secciones
+ ****************************************/
+
+
+
+/****************************************
+ *   13.1  Rent a Car
+ ****************************************/
+.rentCar_logo{
+    float: left;
+    max-height: 100px;
+    width: 150px;
+}
+.rentCar_desc{
+    min-height: 110px;
+    margin-left: 200px;
+    padding-right: 10px;
+}
+.rentCar_desc .title2 {
+    display: inline-block;
+    margin-right: 34px;
+}
+.rentCar_descripcion {
+    margin-top: 10px;
+}
+.rentCar_imgWrapper {
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+/****************************************
+ *   13.2  Postales
+ ****************************************/
+form#enviarPostal{ position: relative; width: 80%; margin: 0 auto;}
+form#enviarPostal input[type="text"]{
+    padding: 0.5em 0.2em 0.5em 0.5em;
+    width: 77%;
+}
+form#enviarPostal .buttonsRight{ bottom: 0px !important;}
+#texto #textArea {
+    float: left;
+    height: 300px;
+    width: 45%;
+}
+#texto h4 {
+    margin-bottom: 0.5em;
+}
+#texto #textArea textarea {
+    width: 100%;
+    height: 90%;
+}
+#texto #textoEstiloWrapper {
+    float: right;
+    height: 300px;
+    width: 46%;
+}
+#texto .fuente {
+    display: inline-block;
+    font-size: 2em;
+    margin: 15px 0 30px;
+    width: 24%;
+}
+#texto .orientacion {
+    display: inline-block;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    margin-left: 6%;
+    margin-right: 6%;
+    width: 10%;
+}
+.fuente.active, .orientacion.active {
+    color: #2B94C1;
+    transform: scale(1.3);
+}
+#foto, #fondo {
+    text-align: center;
+}
+#foto .contenedor-imagen-galeria-inferior2,
+#fondo .contenedor-imagen-galeria-inferior2{
+    float: none !important;
+    display: inline-block;
+}
+.postales_section {
+    height: 320px;
+}
+.fuente1{ font-family: handWriting;}
+.fuente2{ font-family: Helvetica;}
+.fuente3{ font-family: "Comic Sans MS";}
+.fuente4{ font-family: RobotoCondensed;}
+.fontSize1{ font-size: 150% !important;}
+.fontSize2{ font-size: 175% !important;}
+.fontSize3{ font-size: 200% !important;}
+.fontSize4{ font-size: 230% !important;}
+.fontSize5{ font-size: 250% !important;}
+.fontSize6{ font-size: 280% !important;}
+
+#postalesDesignWrapper {
+    background: none repeat scroll 0 0 #2B94C1;
+    height: 608px;
+    width: 1080px;
+}
+#postalesDesignWrapper #postal {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 580px;
+    margin: 8px auto auto;
+    position: relative;
+    width: 988px;
+    border: 6px solid white;
+}
+#postal #cuño {
+    position: absolute;
+    right: 60px;
+    top: 19px;
+    width: 150px;
+    z-index: 1;
+}
+#postal #sello {
+    height: 110px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 90px;
+    z-index: 1;
+}
+#postal #logoHotel {
+    height: 85px;
+    position: absolute;
+    right: 22px;
+    top: 32px;
+    width: 66px;
+    z-index: 1;
+}
+#postal #fondoWrapper {
+    height: 100%;
+    opacity: 0.4;
+    width: 100%;
+    z-index: 0;
+}
+#postal #fotoWrapper {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 95%;
+    left: 1%;
+    position: absolute;
+    top: 2.5%;
+    width: 48%;
+    z-index: 1;
+}
+#postal #division {
+    background: none repeat scroll 0 0 #2B94C1;
+    height: 95%;
+    left: 50%;
+    position: absolute;
+    top: 2.5%;
+    width: 0.2%;
+}
+#postal #textoPostal {
+    left: 57%;
+    line-height: 1.5em;
+    position: absolute;
+    top: 41%;
+    width: 40%;
+}
+#postal #textoPostal p {
+    margin-bottom: 10px;
+}
+
+
+
+/****************************************
+ *   13.3  Conoce gran canaria
+ ****************************************/
+
+.municipio_element{
+    display: inline-block;
+    margin-bottom: 7px;
+    padding: 7px 0 7px 2%;
+    text-shadow: 0 3px 10px #000000;
+    width: 44%;
+}
+li.municipio_element:nth-child(2n) {
+    margin-left: 5%;
+}
+li.municipio_element.active{
+    background: none repeat scroll 0 0 #A3BE06;
+    border-radius: 5px 5px 5px 5px;
+}
+#conoce_municipio {
+  height: 393px;
+  overflow: hidden;
+}
+#conoceWrapper dl img { width: auto; height: auto;}
+
+
+
+/****************************************
+ *   13.4  Cuestionario satisfaccion
+ ****************************************/
+#compras{
+    font-family:Verdana, Geneva, sans-serif;
+    height: 340px;
+}
+.comercio{
+    border-radius: 10px;
+    height:40px;
+    margin-top:5px;
+}
+.comercio:nth-child(2n+1) {
+    clear: left;
+    float: left;
+    width: 49%;
+}
+.comercio:nth-child(2n) {
+    clear: right;
+    float: right;
+    width: 49%;
+}
+.comercio.comercio_normal .comercio_content {
+    background-color: rgba(215, 215, 215, 0.41);
+    border-radius: 10px;
+    height: 40px;
+    overflow: hidden;
+}
+.comercio_normal .nombre{
+/*    float:left;
+    padding-left:10px;
+    padding-top:10px;*/
+    padding: 10px;
+}
+.nombre > span {
+  float: right;
+  font-size: 80%;
+  padding-top: 3px;
+}
+.comercio_normal .direccion {
+/*    color:#343237;*/
+  font-size: 95%;
+  font-weight: normal;
+  letter-spacing: 0.3pt;
+  padding: 10px;
+}
+.comercio-destacado {
+    border-radius: 20px;
+    height: 145px;
+    margin-top: 5px;
+}
+.destacado-logo {
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+}
+
+.destacado-logo img{
+    border-radius: 20px;
+    height: 145px;
+    width: 145px;;
+}
+
+.destacado-informacion {
+    background-color: #C73A5C;
+    border-radius: 15px;
+    color: #FFFFFF;
+    float: right;
+    height: 92%;
+    padding: 10px 10px 0;
+    width: 333px;
+}
+
+.destacado-informacion .direccion, .destacado-informacion .horario, .destacado-informacion .telefono, .destacado-informacion .web {
+    font-size: 13px;
+    margin-bottom: 2px;
+    vertical-align: middle;
+}
+.comercio-destacado .nombre {
+    font-size: 110%;
+    margin-bottom: 10px;
+}
+.comercio-destacado .direccion {
+    font-size: 16px !important;
+    font-weight: normal;
+    margin: 4px 0 10px !important;
+}
+.destacado-informacion .direccion img, .destacado-informacion .horario  img, .destacado-informacion .telefono  img, .destacado-informacion .web  img{
+    width: 16px;
+    height: 16px;
+    margin-right:5px;
+}
+
+
+
+/****************************************
+ *   13.5  Cuestionario satisfaccion
+ ****************************************/
+

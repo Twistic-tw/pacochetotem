@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+    <!-- START BLOCK : htmlHead -->
+    <head lang="es">
+        <meta charset="{charset}">
+        <title>{page_title}</title>
+        <link type="text/css" rel="stylesheet" href="css/fonts/roboto.css">
+        <link type="text/css" rel="stylesheet" href="css/fonts/raleway.css">
+        <link type="text/css" rel="stylesheet" href="css/extra_fonts.css">
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <link type='text/css' rel='stylesheet' href="css/ui-lightness/jquery-ui-1.10.3.custom.css">
+        <link type='text/css' rel="stylesheet" href="css/keyboard.css">
+        
+
+        <link type="text/css" rel="stylesheet" href="css/custom_style.css?v={version}">
+        {teclado_sistema}
+        <link type='text/css' rel='stylesheet' href="css/agenda.css?v={version}">
+        <link type='text/css' rel='stylesheet' href="css/pinero.css?v={version}">
+<!--        <link rel="stylesheet" href="../administracion/css/plugins/font_style/font_style.css" />-->
+        <link type='text/css' rel="stylesheet" href="../../../contenido_proyectos/vistaflor/_comun/icons.css?v={version}" />
+        <link type='text/css' rel="stylesheet" href="css/galeria.css?v={version}">
+        <link type="text/css" rel="stylesheet" href="css/farmacias_totem.css?v={version}" />
+        <link type="text/css" rel="stylesheet" href="css/estilo_contenidos.css?v={version}" />
+        <link type="text/css" rel="stylesheet" href="css/tiempo.css?v={version}" />
+        <link type="text/css" rel="stylesheet" href="js/plugins/css/datepicker.css?v={version}" />
+        <link type="text/css" rel="stylesheet" href="css/jquery.rating.css?v={version}" />
+
+        <link rel="stylesheet" href="css/carousel/owl.carousel.css">
+        <link rel="stylesheet" href="css/carousel/owl.theme.css">
+
+        <link rel="stylesheet" href="css/guaguas.css">
+
+        <!--<link type="text/css" href="css/estilo_horizontal.css" rel="stylesheet" />-->
+        
+
+        <!--  -->
+        <script type="text/javascript" src="js/plugins/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery-ui-1.10.3.custom.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery.ui.datepicker-es.js"></script>
+        <script type="text/javascript" src="js/plugins/highcharts.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery.keyboard.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery.form.js"></script>
+        <script type='text/javascript' src='js/plugins/html2canvas.js'></script>
+        <script type="text/javascript" src="js/plugins/raphael-min.js"></script>
+        <script type="text/javascript" src="js/plugins/animateLoading.js"></script>
+        <script type="text/javascript" src="js/plugins/isotope.pkgd.js"></script>
+
+       <!-- <script type='text/javascript' src="js/lightbox-2.6.min.js?v={version}"></script> -->
+        
+        <!-- Ratings -->
+        <script src="js/plugins/jquery.rating.js" type="text/javascript"></script>        
+        <script src="js/plugins/funciones_rating.js" type="text/javascript"></script>
+		
+		<!-- iosslider.js -->
+		<!-- iosslider plugin -->
+		<script type = 'text/javascript' src = 'js/plugins/jquery.iosslider.js'></script>
+        
+
+        <script type='text/javascript' src="js/animations.js?v={version}"></script>
+        <script type="text/javascript" src="js/custom.js?v={version}"></script>
+        <!--<script type="text/javascript" src="js/cuestionario.js?v={version}"></script>-->
+        <script type="text/javascript" src="js/checkin.js?v={version}"></script>
+        
+        <script type="text/javascript" src="js/destinos_isotope.js?v={version}"></script>
+        <script type="text/javascript" src="js/que_hacer_isotope.js?v={version}"></script> 
+        <script type="text/javascript" src="js/vector-gc.js?v={version}"></script>        
+        <script type="text/javascript" src="js/galeria.js?v={version}"></script>
+
+        <script src="js/plugins/owl.carousel.js?v={version}"></script>    
+        <!-- Owl independiente del fondo -->
+        <script src="js/plugins/owl.carousel2.js?v={version}"></script> 
+        <!-- datepicker para la fecha de nacimiento-->  
+         <script src="js/plugins/bootstrap-datepicker.js?v={version}"></script>
+
+        <link rel="stylesheet" href="css/slider/flexslider.css" type="text/css" media="screen" />
+
+
+
+
+
+
+        {librerias}
+
+
+
+    </head>
+    <!-- END BLOCK : htmlHead -->
+
+    <!-- START BLOCK : htmlBody -->
+    <body oncontextmenu = "return false"> <!-- Deuvelve falso para el boton derecho-->
+    
+        <div id="centroLatitud" class="displayNone">{centroLatitud}</div>
+        <div id="centroLongitud" class="displayNone">{centroLongitud}</div>
+        <div id="id_centro" class="displayNone">{id_centro}</div>
+        <input type="hidden" id="input_teclado" name="input_teclado" value="{input_teclado}">
+        <div id="imagen-grande"></div>
+        <div id="pageWrapper">
+            <!-- START BLOCK : screenSaver -->
+            <div id="screenSaver" data-screensaver_time ="{screensaver_time}" data-screensaver_time_duration ="{screensaver_time_duration}">
+                <!-- START BLOCK : video -->
+                <video loop="loop" muted>
+                    <source src='{video_source}'>
+                </video>
+                <!-- END BLOCK : video -->
+
+                <!-- START BLOCK : slider_imagenes -->
+                <!-- END BLOCK : slider_imagenes -->
+
+            </div>
+            <!-- END BLOCK : screenSaver -->
+
+            <div id='page'>
+			    <!--<div id="bubble1" class="bubble"></div>-->
+                <!--<div id="bubble2" class="bubble"></div>-->
+                <!--<div id="bubble3" class="bubble"></div>-->
+				<!--<div id="bubble4" class="bubble"></div>-->
+				<!--<div id="bubble5" class="bubble"></div>-->
+				<!--<div id="bubble6" class="bubble"></div>-->
+				<!--<div id="bubble7" class="bubble"></div>-->
+                <!-- START BLOCK : pageHeader -->
+                <div id="pageHeaderWrapper" class="css_pinero_color_p ">        <!-- sección del bloque superior (fecha, hora..) -->
+                    <div class="blockWrapper">
+
+                        <div class="nombre_hotel_pinero_cabecera">
+                                <img src="../../../contenido_proyectos/vistaflor/centro_{id_centro}/logos/logo.jpg">
+                        </div>
+
+                        <div id="time" class=" title1">{time}</div>
+                        <div id="date" class=" css_pinero_color_letra_p title2">{fecha}</div>
+
+                        <img class="css_logo_derecha" src="../../../contenido_proyectos/vistaflor/centro_{id_centro}/logos/logo_right.png">
+
+                    </div>
+
+                </div>
+                <!-- END BLOCK : pageHeader -->
+
+
+                <div id="mainBlockWrapper">
+                    <!-- START BLOCK : pageBanner -->
+                    <div id="pageBannerWrapper">        <!-- sección del video/slider superior -->
+                        <div class="blockWrapper">
+
+                            <!-- START BLOCK : hotelBlock -->
+                            <div id="hotelBannerWrapper" class="{hotelBannerWrapper_class}">
+
+                                <div class="hotelBanner">
+                                    <!-- START BLOCK : hotelBannerSuperiorVideo -->
+                                    <video class="video_principal_totem" loop autoplay muted>
+										<!--  type="video/webm" -->
+                                        <source src="{contenido}" type="video/webm">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <!-- END BLOCK : hotelBannerSuperiorVideo -->
+                                    <!-- START BLOCK : hotelBannerSuperiorImagen -->
+                                    <div class="hotelLogo">
+                                        <img class="imgDefault" src="{contenido}">
+                                    </div>
+                                    <!-- END BLOCK : hotelBannerSuperiorImagen -->
+
+                                    <!-- START BLOCK : hotelBannerSectionHidden_img -->
+                                    <div class='bannerOverlayWrapper img_{img_id}'>
+                                        <img class="imgBannerOverlay" src="{img_section_src}" />
+                                    </div>
+                                    <!-- END BLOCK : hotelBannerSectionHidden_img -->
+
+                                    <!-- START BLOCK : hotelBannerSectionHidden_video -->
+                                    <div class='bannerOverlayWrapper img_{img_id}'>
+                                        <video loop autoplay>
+                                            <source src="{video_section_src}"  type="video/webm">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                    <!-- END BLOCK : hotelBannerSectionHidden_video -->
+
+                                </div>
+
+
+                                <!-- START BLOCK : hotelLogoBlock -->
+                                <!--<div class="hotelLogo">
+                                    <img class="imgDefault" src="img/hotel/{hotel_logo_src}">
+                                </div>-->
+                                <!-- END BLOCK : hotelLogoBlock -->
+
+                                <!-- START BLOCK : hotelSloganBlock -->
+                                <div class="hotelSlogan">{hotel_slogan}</div>
+                                <!-- END BLOCK : hotelSloganBlock -->
+
+
+
+                            </div>
+                            <!-- END BLOCK : hotelBlock -->
+
+
+                            <!-- AQUI PUEDEN E IRAN OTROS BLOQUES -->
+                        </div>
+                    </div>
+                    <!-- END BLOCK : pageBanner -->
+
+
+                    <!-- START BLOCK : pageContent -->
+                    <div id="pageContentWrapper">       <!-- sección del contenido principal -->
+                        <div class="blockWrapper">
+                            <div id="mainMenuWrapper" class="css_pinero_color_fondo_g">
+
+                                <!-- START BLOCK : mainMenu_element -->
+                                <div id="{element_id}" class="mainMenuElement {element_class}" color="{element_color}">
+
+                                    <a href="{element_href}" class="mainMenuElementLink {element_href_class}">
+                                        <div class="icono {element_icono}"></div>
+                                        <!--<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" fill="#309DCD" d="M0.197,44.84c0-24.641,19.973-44.616,44.614-44.616
+                                              c24.642,0,44.617,19.975,44.617,44.616c0,16.455-8.92,30.821-22.175,38.553l-0.228,0.144c-4.271,2.69-11.788,6.269-15.373,9.955
+                                              c-4.938,4.589-6.842,10.639-6.842,10.639s-2.53-6.873-7.003-10.741c-5.106-4.266-12.255-7.649-15.715-10.144
+                                              C8.984,75.475,0.197,61.184,0.197,44.84z"/>
+                                        </svg>-->
+                                        <div class="mainMenuElementTitle">{element_text}</div>
+                                    </a> 
+                                </div>
+                                <!-- END BLOCK : mainMenu_element -->
+                            </div>
+
+                            <!-- START BLOCK : menuContent -->
+                            <div id="{contentWrapper_id}" class="hidden menuContentWrapper {contentWrapper_class}">
+                                <div class="menuContentHeader"></div>
+                                <div class="menuContent css_pinero_color_fondo_g {content_class}">
+                                    {content_contenido}
+                                </div>
+                            </div>   
+                            <!-- END BLOCK : menuContent -->
+
+                        </div>
+                    </div>
+                    <!-- END BLOCK : pageContent -->
+
+
+                    <!-- START BLOCK : pageBottom -->
+                    <div id="pageBottomWrapper" class="css_pinero_color_fondo_g">        <!-- seccion del pie de pagina  -->
+                        <div class="blockWrapper">
+                            <div class="espera_carga_meteo"></div>
+                            <div id="meteoWrapper">
+                                <!--<span class="text link">{lang_tiempo}</span>-->
+                                <img class="css_icono_tiempo_widget" src="{icono_tiempo_widget}">
+                                <div class="text link">{lang_tiempo} {temperatura_tiempo_widget}
+                                </div>
+
+                                <div class="meteo target">
+                                    <div class="meteoInfo">
+                                        {meteoInfo_value}
+                                    </div>
+                                    <img src="../../../contenido_proyectos/vistaflor/_general/iconos/flecha_down.svg">
+
+                                    <!-- informacion sobre la isla y para seleccionar municipio -->
+                                    <div id="islaLocalidadesWrapper">
+                                        <div id="meteoInfo_headerWrapper">
+                                            <div id="meteoInfo_municipio">{meteo_municipio}</div>
+                                        </div>
+                                        <div id="mapWrapper">
+                                            <div id="map"></div>
+                                            <div id="objectActive" class="hidden"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div>{lang_disclaimer}</div>
+                                <div>{fuente}</div>
+                            </div>
+                            <div id="navMenu">
+                                <!--<a href="{menu_prev}" title="{menu_prev_title}"></a>-->
+                                <a href="index.php?idioma={id_idioma_actual}" ></a>
+                            </div>
+                            <div id="langSwitch" class="{gay_bandera}">
+                                <div id='idiomaActivo'>
+
+									<span class="displayNone idiomaActivo">{id_idioma_actual}</span>
+
+
+									<!-- START BLOCK : idioma -->
+									<a href="index.php?idioma={id_idioma}" >
+										<div class="idioma_icono {active}" >
+                                            <img src="{idioma_icono_src}" />
+
+										</div>
+									</a>
+									<!-- END BLOCK : idioma -->
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END BLOCK : pageBottom -->
+                </div> <!-- cierro #mainBlockWrapper-->
+
+                <div class='extraDelimiter'>
+                </div>
+                <!-- START BLOCK : pageFooter -->
+                <div id="pageFooterWrapper" class="{pageFooter_class}">        <!-- seccion para los sliders/videos/imagenes infereiores -->
+                    <div class="blockWrapper">
+
+
+                        {pageFooter_contenido}
+
+                        <div class="footerTitle title2 {pageFooter_text_class}">{pageFooter_text}</div>
+                        <!-- START BLOCK : pageFooter_slider -->
+                        <div id="footerSlider" class="{slider_class}" options="{slider_options}">
+                            <div id="slideleft"></div>
+                            <div id="slideRight"></div>
+                            <!-- START BLOCK : slider_element -->
+                            <div class="sliderElement ">
+                                <a href="{slider_elmement_href}" class="{slider_elmement_class}"  {data_path}>
+                                    <div class="footerTitle title3 {slider_element_title_class}">
+                                        {slider_element_title}
+                                    </div>
+                                    <img src="{slider_img_src}">
+                                </a>
+                            </div>
+                            <!-- END BLOCK : slider_element -->
+
+                        </div>
+                        <!-- END BLOCK : pageFooter_slider -->
+
+                        <!-- START BLOCK : pageFooter_img -->
+                        <img class="{img_class}" src="{img_source}">
+                        <!-- END BLOCK : pageFooter_img -->
+
+                    </div>
+                </div>
+                <!-- END BLOCK : pageFooter -->
+                <div class='alert legal_disclaimer'><div class='alert_title'>{lang_legal_title}</div><div class='alert_content'>{lang_disclaimer}</div></div>
+            </div> <!-- cierro #page -->
+
+        </div> <!-- cierro pageWrapper -->
+
+    <svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='svgBlur' x='-5%' y='-5%' width='110%' height='110%'><feGaussianBlur in='SourceGraphic' stdDeviation='5'/> </filter></svg>
+</body>
+<!-- END BLOCK : htmlBody -->
+<script type="text/javascript"  async  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnDoAAHBj31VFWaJXSqDKyY7I1wKOrTxs&sensor=false&language=es&libraries=places"></script>
+
+</html>
+
+
+

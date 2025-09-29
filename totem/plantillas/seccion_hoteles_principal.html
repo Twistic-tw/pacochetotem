@@ -1,0 +1,69 @@
+
+<div class="closeWrapper full_screen listado_zonas_wrapper">
+    <div class="background_tiempo alineado_izquierda" style="background-image:url('{url_base}fondo.png');">
+        <div class="imagen_logo_arriba_listado_zonas">
+
+            <img src="{url_base}cabeza.png">
+
+
+        </div>
+
+        <div class="menu_listado_zonas">
+            <div class="menu_tiempo_volver css_menu_volver_azul ">
+                <div class="menu_tiempo_volver_texto back js_back_lugares_destroy">
+                    <div class="menu_tiempo_volver_transparencia">
+                        <img class="menu_tiempo_volver_icono" src="img/volver.svg"/>
+                        <div class="menu_tiempo_contenido_texto">{cerrar}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu_tiempo_contenido">
+
+                <div class="load_ajax_hoteles  sub-menu-elmt sin_margenes_derecha active" data-accion="getHoteles_info&tipo=1"style="background-image:url('{url_base}gregory.jpg');">
+                    <div class=" menu_tiempo_contenido_transparencia active css_color_spa_menu" >
+
+                        <div class="menu_tiempo_contenido_texto padding_laterales_3 css_letras_sin_icono">{1_label}</div>
+                    </div>
+                </div>
+
+
+                <div class="load_ajax_hoteles  sub-menu-elmt sin_margenes_derecha" data-accion="getHoteles_info&tipo=2"style="background-image:url('{url_base}maspalomas.jpg');">
+                    <div class=" menu_tiempo_contenido_transparencia css_color_spa_menu" >
+
+                        <div class="menu_tiempo_contenido_texto padding_laterales_3 css_letras_sin_icono">{2_label}</div>
+                    </div>
+                </div>
+
+                <div class="load_ajax_hoteles  sub-menu-elmt sin_margenes_derecha" data-accion="getHoteles_info&tipo=3"style="background-image:url('{url_base}mirador.jpg');">
+                    <div class=" menu_tiempo_contenido_transparencia css_color_spa_menu" >
+
+                        <div class="menu_tiempo_contenido_texto padding_laterales_3 css_letras_sin_icono">{3_label}</div>
+                    </div>
+                </div>
+
+                <div class="load_ajax_hoteles  sub-menu-elmt sin_margenes_derecha" data-accion="getHoteles_info&tipo=4"style="background-image:url('{url_base}villas.jpg');">
+                    <div class=" menu_tiempo_contenido_transparencia css_color_spa_menu" >
+
+                        <div class="menu_tiempo_contenido_texto padding_laterales_3 css_letras_sin_icono">{4_label}</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="hoteles-wrapper">
+
+            <div class="full_contenido_listado_zona_wrapper width_96">
+
+                {content}
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

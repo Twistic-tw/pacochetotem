@@ -1,0 +1,348 @@
+
+<div id="tiempo_full" class="closeWrapper full_screen">
+
+
+
+
+
+    <div class="background_tiempo" style="background-image:url('{imagen-fondo}');">
+
+        <div class="contenedor_tiempo">
+
+            <div class="displayNone" id="fondo_hoy" data-fondo="{imagen-fondo}"></div>
+
+            <div class="displayNone" id="fondo_tomorrow" data-fondo="{imagen-fondo1}"></div>
+
+            <div class="displayNone" id="fondo_pasado" data-fondo="{imagen-fondo2}"></div>
+
+            <div id="owl-tiempo" class="owl-carousel carousel_redondo">
+                <!-- <div class="parte_arriba_error "> -->
+                <div class="parte_arriba ">
+
+                    <div class="tiempo_general">
+
+
+                        <div class="icono_tiempo_general">
+                            <img src="{hoy_icono}">
+                        </div>
+
+                        <div class="valor_tiempo_general {displayNone} ">
+                            <h1>{hoy_maxima}</h1><h2>/{hoy_minima}</h2>
+                        </div>
+
+                        <div class="texto_tiempo_general">
+                            <!-- <h1>partly cloudy X <span class="no_negrita">h: </span>X&#176; <span class="no_negrita">t: </span>X&#176;</h1> -->
+
+
+                            <h2> 
+                                <img class="img_texto_tiempo_general {displayNone}" src="../../../contenido_proyectos/vistaflor/_general/tiempo/icono/HUMEDAD.svg"> <span class="text_near_icono {displayNone}">{humedad}%</span> 
+                                <img class="img_texto_tiempo_general {displayNone}" src="../../../contenido_proyectos/vistaflor/_general/tiempo/icono/VIENTO.svg"> <span class="text_near_icono {displayNone}">{viento_vel}Km/h</span>
+                                <img class="img_texto_tiempo_general {viento_class} {displayNone}" src="../../../contenido_proyectos/vistaflor/_general/tiempo/icono/DIRECCION.svg"> <span class="text_near_icono">{viento_dir}</span>
+                            </h2>
+                            <h3>{municipio}</h3>
+                            <h3> <span class="no_negrita texto_fecha_actual">{fecha}</span></h3>
+
+
+                            <div class="dia_de_hoy">
+                                <!-- Franja Horaria vertical -->
+                                <div class="franja_horaria_vertical">
+                                    <div class="franja_vertical_nombre">{titulo_vertical_12}</div>
+                                    <div class="franja_vertical_imagen">
+                                        <img src="{icono12}"/>
+                                    </div>
+                                    <div class="franja_vertical_grados">          
+                                        <div class="franja_vertical_grados_maxima">{hoy12_maxima}</div>
+                                        <!-- <div class="franja_vertical_grados_minimo">XºC</div> -->
+                                    </div>
+                                </div>
+                                <!-- Fin Franja Horaria vertical -->
+
+                                <!-- Franja Horaria vertical -->
+                                <div class="franja_horaria_vertical">
+                                    <div class="franja_vertical_nombre">{titulo_vertical_18}</div>
+                                    <div class="franja_vertical_imagen">
+                                        <img src="{icono18}"/>
+                                    </div>
+                                    <div class="franja_vertical_grados">
+                                        <div class="franja_vertical_grados_maxima">{hoy18_maxima}</div>
+                                        <!-- <div class="franja_vertical_grados_minimo">XºC</div> -->
+                                    </div>
+                                </div>
+                                <!-- Fin Franja Horaria vertical -->
+
+
+                                <!-- Franja Horaria vertical -->
+                                <div class="franja_horaria_vertical">
+                                    <div class="franja_vertical_nombre">{titulo_vertical_24}</div>
+                                    <div class="franja_vertical_imagen">
+                                        <img src="{icono24}"/>
+                                    </div>
+                                    <div class="franja_vertical_grados">
+                                        <div class="franja_vertical_grados_maxima">{hoy24_maxima} </div>
+                                        <!-- <div class="franja_vertical_grados_minimo">XºC</div> -->
+                                    </div>
+                                </div>
+                                <!-- Fin Franja Horaria vertical -->
+
+                            </div> <!--Dia de hoy-->
+
+                        </div> <!--texto_tiempo_general-->
+                    </div> <!--tiempo_general-->
+
+                </div> <!--parte de arriba-->
+
+                <!--Segundo-->
+                <div class="parte_arriba ">
+
+                    <div class="tiempo_general">
+
+
+                        <div class="icono_tiempo_general">
+                            <img src="{tomorrow_icono}">
+                        </div>
+
+                        <div class="valor_tiempo_general {displayNone}">
+                            <h1>{tomorrow_maxima}</h1><h2>/{tomorrow_minima}</h2>
+                        </div>
+
+                        <div class="texto_tiempo_general">
+                            <!-- <h1>partly cloudy X <span class="no_negrita">h: </span>X&#176; <span class="no_negrita">t: </span>X&#176;</h1> -->
+
+
+                            <h2> 
+                                <img class="img_texto_tiempo_general {displayNone}" src="../../../contenido_proyectos/vistaflor/_general/tiempo/icono/HUMEDAD.svg"> <span class="text_near_icono {displayNone}">{tomorrow_humedad}%</span> 
+                                <img class="img_texto_tiempo_general {displayNone}" src="../../../contenido_proyectos/vistaflor/_general/tiempo/icono/VIENTO.svg"> <span class="text_near_icono {displayNone}">{tomorrow_viento_vel}Km/h</span>
+                                <img class="img_texto_tiempo_general {displayNone}  {tomorrow_viento_class}" src="../../../contenido_proyectos/vistaflor/_general/tiempo/icono/DIRECCION.svg"> <span class="text_near_icono">{tomorrow_viento_dir}</span>
+                            </h2>
+                            <h3>{municipio}</h3>
+                            <h3> <span class="no_negrita texto_fecha_actual">{fecha2}</span></h3>
+
+
+                            <div class="dia_de_hoy">
+                                <!-- Franja Horaria vertical -->
+                                <div class="franja_horaria_vertical">
+                                    <div class="franja_vertical_nombre">{titulo_vertical_12}</div>
+                                    <div class="franja_vertical_imagen">
+                                        <img src="{tomorrowicono12}"/>
+                                    </div>
+                                    <div class="franja_vertical_grados">          
+                                        <div class="franja_vertical_grados_maxima">{tomorrow12_maxima}</div>
+                                        <!-- <div class="franja_vertical_grados_minimo">XºC</div> -->
+                                    </div>
+                                </div>
+                                <!-- Fin Franja Horaria vertical -->
+
+                                <!-- Franja Horaria vertical -->
+                                <div class="franja_horaria_vertical">
+                                    <div class="franja_vertical_nombre">{titulo_vertical_18}</div>
+                                    <div class="franja_vertical_imagen">
+                                        <img src="{tomorrowicono18}"/>
+                                    </div>
+                                    <div class="franja_vertical_grados">
+                                        <div class="franja_vertical_grados_maxima">{tomorrow18_maxima}</div>
+                                        <!-- <div class="franja_vertical_grados_minimo">XºC</div> -->
+                                    </div>
+                                </div>
+                                <!-- Fin Franja Horaria vertical -->
+
+
+                                <!-- Franja Horaria vertical -->
+                                <div class="franja_horaria_vertical">
+                                    <div class="franja_vertical_nombre">{titulo_vertical_24}</div>
+                                    <div class="franja_vertical_imagen">
+                                        <img src="{tomorrowicono24}"/>
+                                    </div>
+                                    <div class="franja_vertical_grados">
+                                        <div class="franja_vertical_grados_maxima">{tomorrow24_maxima}</div>
+                                        <!-- <div class="franja_vertical_grados_minimo">XºC</div> -->
+                                    </div>
+                                </div>
+                                <!-- Fin Franja Horaria vertical -->
+
+                            </div> <!--Dia de hoy-->
+
+                        </div> <!--texto_tiempo_general-->
+                    </div> <!--tiempo_general-->
+
+                </div> <!--parte de arriba-->
+
+                <!--Tercero-->
+
+                <div class="parte_arriba ">
+
+                    <div class="tiempo_general_tercero">
+
+
+                        <div class="icono_tiempo_general">
+                            <img src="{pasado_icono}">
+                        </div>
+
+                        <div class="valor_tiempo_general {displayNone} ">
+                            <h1>{pasado_maxima}</h1>
+                        </div>
+
+                        <div class="texto_tiempo_general">
+                            <!-- <h1>partly cloudy X <span class="no_negrita">h: </span>X&#176; <span class="no_negrita">t: </span>X&#176;</h1> -->
+
+                            <h3>{municipio}</h3>
+                            <h3> <span class="no_negrita texto_fecha_actual">{fecha3}</span></h3>
+
+                        </div> <!--texto_tiempo_general-->
+                    </div> <!--tiempo_general-->
+
+                </div> <!--parte de arriba-->
+
+            </div> <!--cierra el owl carrousel-->
+
+
+        </div>
+
+
+        <div class="menu_tiempo">
+
+            <div class="menu_tiempo_volver ">
+
+                <div class="menu_tiempo_volver_texto back">
+
+                    <div class="menu_tiempo_volver_transparencia">
+                    
+                        <img class="menu_tiempo_volver_icono" src="img/volver.svg"/>
+                             <div class="menu_tiempo_contenido_texto">{cerrar}</div>
+
+                    </div>
+                   
+                </div>
+            </div>
+
+
+            <div class="menu_tiempo_contenido">
+
+                <div class="municipio_lugar">{municipio_lugar}</div>
+
+                <!--<div class="menu_tiempo_contenido_boton" style="background-image:url('{img_sitio_hotel}');">-->
+<!--&lt;!&ndash;                     <div class="menu_tiempo_contenido_transparencia">-->
+
+                        <!--<img class="menu_tiempo_contenido_icono" src="../../../contenido_proyectos/vistaflor/_general/tiempo/icono/nublado_parcial_B.svg"/>-->
+
+                        <!--<div class="menu_tiempo_contenido_texto">el tiempo</div>-->
+                    <!--</div> &ndash;&gt;-->
+
+                <!--</div>-->
+
+            </div>
+
+
+
+        </div> 
+
+
+        <div class="sin_conexion">
+            <div class="sin_conexion_texto">Sin conexion</div>
+        </div>
+
+        <div class="bloqueo_carga"></div>
+
+        <div class="selector_dia">
+            <div class="selected" data-owlid="0">
+                <div class="icon">
+                    <img src="{hoy_icono}">
+                </div>
+                <div class="temperatura">{hoy_maxima}</div>
+                <div class="fecha">{dia_hoy}</div>
+                <div>+ info</div>
+            </div>
+            <div data-owlid="1">
+                <div class="icon">
+                    <img src="{tomorrow_icono}">
+                </div>
+                <div class="temperatura">{tomorrow_maxima}</div>
+                <div class="fecha">{dia_mñn}</div>
+                <div>+ info</div>
+            </div>
+            <div data-owlid="2">
+                <div class="icon">
+                    <img src="{pasado_icono}">
+                </div>
+                <div class="temperatura">{pasado_maxima}</div>
+                <div class="fecha">{dia_pasado}</div>
+                <div>+ info</div>
+            </div>
+        </div>
+
+        <div class="float_clear"></div>
+        <div class="contenedor_slider">
+
+            <div class="espera_datos_municipio"></div>
+
+            <!--   <div class="borde_separador_abajo"></div> -->
+
+
+
+
+            <div  class="acordeon_tiempo">
+                <h3>  
+                    <div class="selecionar_municipio">
+                        <div class="texto_municipio">{selector}</div>                
+                    </div>
+                </h3>
+
+
+                <div id="owl-municipios" class="owl-carousel">
+
+                    <!-- START BLOCK : listado_municipios -->
+                    <div class="slider_tiempo_municipio">
+                         <!-- START BLOCK : b0 -->
+                        <div  class="municipio_element flip_municipio add_bg {selected}">
+                            <a class='load_municipio' href="index.php?ajax=getMeteoInfo&municipio={id_municipio}">
+                                <div class="texto_slider ">{nombre_municipio}</div>
+                                <div class="info_slider">
+                                    <div class="icono_slider"><img src="{icono_lugar}"></div>
+                                    <span class="slider_temp">{temp_lugar}</span>
+                                </div>
+                                <div class="float_clear"></div>
+                                <div>+ info</div>
+                            </a>
+                        </div>
+                        <!-- END BLOCK : b0 -->
+
+                        <!-- START BLOCK : b1 -->
+                        <div  class="municipio_element flip_municipio add_bg {selected}">
+                            <a class='load_municipio' href="index.php?ajax=getMeteoInfo&municipio={id_municipio}">
+                                <div class="texto_slider">{nombre_municipio}</div>
+                                <div class="info_slider">
+                                    <div class="icono_slider"><img src="{icono_lugar}"></div>
+                                    <span class="slider_temp">{temp_lugar}</span>
+                                </div>
+                                <div class="float_clear"></div>
+                                <div>+info</div>
+                            </a>
+                        </div>
+                        <!-- END BLOCK : b1 -->
+                    </div>
+                    <!-- END BLOCK : listado_municipios -->
+
+                </div><!-- Fin owl -->
+
+
+                <!--<span class="cambiar_zona to_flip displayNone" id="cambiar_zona">{ver_zona}</span>-->
+                <!--<span class="cambiar_zona_2 to_flip " id="cambiar_zona_2">{ver_nombre}</span>-->
+            </div><!-- Fin acordion -->
+
+
+
+
+        </div><!-- Fin slider -->
+
+
+        <!--   <div class="borde_separador_abajo_2"></div> -->
+        <!--       <div class="back boton_atras_meteo">
+                 {cerrar}
+            </div> -->
+
+    </div> <!-- Fin contenedor-->
+
+
+
+
+    <script type="text/javascript" src="js/tiempo.js"></script>
+</div>

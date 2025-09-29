@@ -1,0 +1,71 @@
+
+  <div id="filters" class="contendor_filtro_pais_destinos_hotel button-group"> 
+      <ul>
+
+          <!-- START BLOCK : pais_todos -->
+         <li class="filtro_pais_destinos_hotel filtro_boton filtro_activo" data-filter="*">
+             {todo_hoteles}
+          </li> 
+          <!-- END BLOCK : pais_todos -->
+
+
+          <!-- START BLOCK : pais -->
+         <li class="filtro_pais_destinos_hotel filtro_boton" data-filter=".filtro_{id_pais}">
+             {nombre_pais}
+          </li> 
+         <!-- END BLOCK : pais -->
+     </ul>
+  </div>
+
+
+  <div class="clear_all"></div> 
+
+  <div class="scroll_destinos_hoteles">                                  
+
+    <div class="isotope isotope_contenedor_destinos">
+                   <!-- START BLOCK : hotel --> 
+
+        <div class="tarjeta_destinos_hotel {filtro_isotope} ">
+
+          <div class="cabecera_destinos_hotel">
+            {nombre_pais} > {region_hotel} 
+          </div>
+
+          <div class="imagen_destino_hotel" style="background-image:url('{url_base_hoteles}{id_pais}/{imagen_hotel}');" >
+                    
+           <!--  <img class="" src="../../../contenido_proyectos/vistaflor/_general/destinos/star_{categoria_hotel}_b.svg"> -->
+
+<!--             <div class="mapa_destino_hotel displayNone">
+            </div> -->
+
+          </div>
+
+          <div class="etiqueta_nombre_destinos_hotel">
+                        {nombre_hotel} 
+
+                        <div class="descripcion_destinos_hotel displayNone">
+                          <div class="descripcion_destinos_hotel_bloque1">
+                          <ul>
+                            <li> {bloque_telefono} <div class="descripcion_telefono_hotel_bloque1">{telefono_hotel}</div></li>
+                            
+                            <li>{email_hotel}</li>
+                          </ul>
+                           <a href='getLugar&lugar={id_lugar}' class="loadAjax"> <div class="boton_ver_lugar_pais {ocultar_ver_zona}">{ver_lugar}</div></a> 
+                        </div>
+                        <div class="descripcion_destinos_hotel_bloque2">
+                          {informacion_hotel}
+                        </div>
+                      </div>
+          </div>
+
+        </div>
+
+                  <!-- END BLOCK : hotel -->
+
+                  <div style="clear:all;"></div>
+      </div>
+    </div>
+
+
+
+

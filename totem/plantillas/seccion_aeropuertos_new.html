@@ -1,0 +1,49 @@
+<div id='informacionWrapper_infoGuaguas' class="noTabsWrapper closeWrapper {double_size}  content_width">
+    <div id='informacionTitle_infoGuaguas' class='contentHeader'>
+        {title}
+    </div>
+
+    <div class=' content overflow-hidden-new'>
+
+        <div class="loader-vuelos" id="loader-vuelos">Loading...</div>
+
+            <div class="content-all-aeropuertos">
+                
+                <div class="content-boton-aeropuerto">
+                    <div id="#btn-salidas-ae" class="btn-superior-ae active">
+                        {salidas}
+                    </div>
+                    <div id="#btn-llegadas-ae" class="btn-superior-ae">
+                        {llegadas}
+                    </div>
+                </div>
+    
+                <div id="btn-salidas-ae" class="content-frame-new active">
+                    <!-- <img class="img-fondo-vuelos" src="" alt=""> -->
+                    <iframe class="iframe-vuelos-new" src="lib/aeropuertos_new.php?url_aeropuerto={url_salidas}" frameborder="0"></iframe>
+                </div>
+    
+                <div id="btn-llegadas-ae" class="content-frame-new">
+                    <iframe class="iframe-vuelos-new" src="lib/aeropuertos_new.php?url_aeropuerto={url_llegadas}" frameborder="0"></iframe>
+                </div>
+
+            </div>
+
+			
+            <div class="back buttonsLeft">
+                <span class="atrasIcon"></span> {lang_atras}
+            </div>
+
+        </div>
+
+        <script>
+
+            setTimeout(function(){
+                $('#loader-vuelos').remove();
+                $('.content-all-aeropuertos').addClass('active');
+            },2000);
+
+        </script>
+
+    </div>
+</div>

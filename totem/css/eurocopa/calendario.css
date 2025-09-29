@@ -1,0 +1,27 @@
+.nombre-equipo, .hora{
+    color: #c01d1d !important;
+}
+
+strong{
+    color: #ffffff !important;
+    text-transform: uppercase !important;
+}
+
+.cruces-octavos{
+    display: none !important;
+}
+
+.date{
+    text-align: left !important;
+}
+
+.calendario-dias td{
+    display: table-cell !important;
+    float: none !important;
+    vertical-align: top !important;
+    height: 365px;
+}
+
+/*.cont-resultados {
+    height: 100px !important;
+}*/

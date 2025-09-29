@@ -1,0 +1,79 @@
+
+<div class="noTabsWrapper closeWrapper content_width">     <!-- Wrapper interno para el contenido -->
+    <div class='contentHeader'> <!-- header, titulo de la secion -->
+        {lang_title}
+    </div>
+
+
+    <div class='formularioPaginasWrapper'>
+
+
+        <div class='content '>
+
+            <form id='enviarSugerencia' method='post' action='index.php?gestion=enviarSugerencia'>  
+       
+                <div class="sugerencias_contenido">
+
+
+                    <div class="width_50">
+
+                        <div class="tarjeta_sugerencias">
+                            <div class="localizador_sugerencias_titulo"><p>{lang_sugerencias}</p></div>
+                            <div class="contenido_sugerencia"><p>{texto_sugerencia}</p></div>
+                            <div class="area_texto_sugerencias" id="textArea"> 
+                                <textarea rows="6" class="key texarea_sugerencias" name="texto_sugerencia" id="texto_sugerencia"></textarea> 
+                            </div>
+                        </div>
+                    </div>
+
+                
+
+
+                    <div class="width_50">
+                        <div class="tarjeta_sugerencias_habitacion">
+                            <div class="localizador_sugerencias_titulo"><p>{lang_sugerencias_habitaciones}</p></div>
+                            <img src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/icon_sugerencia.svg">
+                            <div class="localizador_titulo">{lang_sugerencias_num_habitaciones}</div>
+                            <input type="text" class="localizador_input" name="num_habitacion"></input>
+                        </div>
+                    </div>
+
+                    <input class="boton_derecha_sugerencias" type="submit" name="guardar" value="{lang_enviar}">
+
+                    <div class="gracias_sugerencias">{lang_sugerencias_gracias}</div>
+
+                </div>
+
+            </form>
+
+
+        </div>
+
+
+
+        <div class="back buttonsLeft">
+            <span class="atrasIcon"></span> {lang_atras}
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<!--                 <div class="texto_sugerencias">
+                    {texto_sugerencia}
+                </div>
+
+                <div class="area_texto_sugerencias" id="textArea"> 
+                    <textarea rows="15" class="key texarea_sugerencias" name="texto_sugerencia" id="texto_sugerencia"></textarea> 
+                </div>
+
+                <input type='submit' value='{lang_enviar}' class='boton_derecha_sugerencias' />
+
+
+                <div class="mensaje_gracias">{lang_gracias}</div> -->

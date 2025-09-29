@@ -1,0 +1,38 @@
+
+<div id="checkin" class='formularioPaginasWrapper noTabsWrapper'>
+
+    <div class='contentHeader'>
+        {checkin_title}
+    </div>
+
+    <div class='content'>
+
+        <form action="index.php?gestion=checkinInformacion" id="form_checkin" name="form_checkin" class="clearAll relative" method="post">
+
+            
+                <div class="width_50">
+                    <div class="calendario_checkin_titulo"><p>{titulo_fecha}</p></div>
+
+                    <div id='checkinCalendario'></div>
+
+                    <input type="hidden" id="fecha_checkin" name="fecha_checkin">
+
+                </div>
+
+                <div class="width_50">
+
+                    <div class="tarjeta_checking">
+                        <div class="localizador_checkin_titulo"><p>{titulo_localizador}</p></div>
+                        <img src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/iconos/icon_leyenda.svg">
+                        <div class="localizador_titulo">{icono_localizador}</div>
+                        <input type="text" class="localizador_input" name="localizador_input"></input>
+                    </div>
+                </div>
+          
+            <input class="boton_derecha_checking" type="submit" name="guardar" value="{enviar}">
+        </form>
+
+    </div>
+</div>
+
+

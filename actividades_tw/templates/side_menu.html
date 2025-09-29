@@ -1,0 +1,53 @@
+<nav class="w-20 absolute top-0 left-0 bg-gray-600 flex flex-col items-center justify-between p-2" style="height: 1080px;">
+
+    <img class="w-full h-auto rounded-full border-4 border-white" src="./assets/logos/logo.jpg">
+
+    <ul class="list-none flex flex-col items-center text-white">
+        <a href="?page=day">
+            <li class="element-menu {active_day} p-4 hover:bg-gray-400 rounded transition duration-500 ease-in-out cursor-pointer my-2"
+                onclick="">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-10 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>
+            </li>
+        </a>
+        <a href="?page=week">
+            <li class="element-menu {active_week} p-4 hover:bg-gray-400 rounded transition duration-500 ease-in-out cursor-pointer my-2"
+                onclick="">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-10 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                </svg>
+            </li>
+        </a>
+        <!-- <li class="element-menu {active_weather} p-4 hover:bg-gray-400 rounded transition duration-500 ease-in-out cursor-pointer my-2"
+            onclick="">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-10 h-10">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
+            </svg>
+        </li> -->
+    </ul>
+
+
+    <ul class="list-none flex flex-col justify-center items-center text-white">
+
+        <!-- START BLOCK : idiomas -->
+        <li class="py-3">
+            <img class="language w-8 h-8 object-cover object-center rounded-full cursor-pointer transition duration-300 ease-in-out {opacity}" data-id="{id_idioma}"
+                src="./assets/langs/{idioma_iso}.svg">
+        </li>
+        <!-- START BLOCK : idiomas -->
+
+    </ul>
+
+
+
+
+</nav>

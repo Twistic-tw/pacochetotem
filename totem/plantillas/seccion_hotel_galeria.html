@@ -1,0 +1,31 @@
+
+<div id='galeriaWrapper' class="closeWrapper  content_width">     <!-- Wrapper interno para el contenido -->
+    <div id='galeriaTitle' class='contentHeader'> <!-- header, titulo de la secion -->
+        {title}
+    </div>
+
+    <div class='content tabs_ draw_border'>
+        <ul>
+            <!-- START BLOCK : galeria_link -->
+            <li><a href="#galeria_{galeria_id}">{galeria_link_text}</a></li>
+            <!-- END BLOCK : galeria_link -->
+        </ul>
+        
+        <!-- START BLOCK : galeria -->
+        <div id="galeria_{galeria_id}" class="scroll paddingLeftRight10">
+            <!-- START BLOCK : galeria_imagen -->
+            <div class="contenedor-imagen-galeria-inferior inline imagen-galeria">
+                <div class="imagen-galeria-inferior">
+                    <img src="{imgSrc}" />
+                </div>
+            </div>
+            <!-- END BLOCK : galeria_imagen -->
+        </div>
+        <!-- END BLOCK : galeria -->
+    </div>
+
+    <div class="back buttonsLeft">
+        <span class="atrasIcon"></span> {lang_atras}
+    </div>
+</div>
+

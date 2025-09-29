@@ -1,0 +1,38 @@
+
+<div id='informacionWrapper_mareas' class="closeWrapper content_width">     <!-- Wrapper interno para el contenido -->
+    <div id='informacionTitle_mareas' class='contentHeader'> <!-- header, titulo de la secion -->
+        {mareas_title}
+    </div>
+
+    <div class='content tabs_ draw_border content_width'>
+
+        <div id="llegadasWrapper" class='actividades'>
+            <div class="vuelosWrapper">
+                <table id="salida_vuelos" class="std_table mareas_table">
+                    <thead>
+                        <tr>
+                            <th>{dia_title}</th>
+                            <th>{hora_title}</th>
+                            <th>{altura_title}</th>
+                            <th>{tipo_title}</th>
+                        </tr>     
+                    </thead>
+                    <tbody>
+                        <!-- START BLOCK : marea -->
+                        <tr>
+                            <td class="texto_tipo_oracion">{dia}</td>
+                            <td>{hora} h.</td>
+                            <td>{altura} m.</td>
+                            <td>{tipo} <img class="icono_mareas_tipo" src="{tipo_icono}"></img></td>
+                        </tr>    
+                        <!-- END BLOCK : marea -->
+                    </tbody> 
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <div class="back buttonsLeft">
+        <span class="atrasIcon"></span> {lang_atras}
+    </div>
+</div>

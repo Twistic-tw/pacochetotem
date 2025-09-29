@@ -1,0 +1,517 @@
+﻿<div id="cuestionario">    
+    <div id="cuestionarioHeader">
+        Cuestionario de Calidad
+    </div>
+    <div>
+        <ul id="cuestionario-nav">
+            <!-- START BLOCK : pestanas -->
+            <li><a href="#cuest{n_id}">{n_pregunta}</a></li>
+            <!-- END BLOCK : pestanas -->
+        </ul>
+        <form id="formulario" method="post" action="guardar.php?id_cuestionario={id_form}" class='clearAll content'>
+            <!-- START BLOCK : pregunta0 -->
+            <div id="cuest{n_id}" class="importante">
+                <div id="medio" class = "centro tablas">     
+                    <label class="label" for="nombre">{0}</label> <input id="1" type="text" name="1" size="42" maxlength="50">
+                    <label class="label" for="apellidos">{1}</label> <input id="2" type="text" name="2" size="42" maxlength="50">
+                    <label class="label" for="n_habitacion">{2}</label> <input id="3" type="number" name="3">
+                    <br/>
+                    <br/>
+                    <label class="label_tittle">{3}</label>
+                    <br/>
+                    <br/>
+                    <label class="label">{4}</label><br/>
+                    <table class="table">
+                        <tr>
+                            <td class="td"></td>
+                        <br/>
+                        <td class="td_respuesta">
+                            <label class="label">{9}<br/>{10}</label>
+                        </td>
+                        <td class="td_respuesta">
+                            <label class="label"><br/>{10}</label>
+                        </td>
+                        <td class="td_respuesta">
+                            <label class="label"><br/>{11}</label>
+                        </td>
+                        <td class="td_respuesta">
+                            <label class="label"><br/>{12}</label>
+                        </td>
+                        <td class="td_respuesta">
+                            <label class="label">{9}<br/>{12}</label>
+                        </td>
+                        </tr>                    
+                        <tr>
+                            <td class="td_otro"><label class="label">{5} __________________________________________________</label></td>
+
+                            <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="6"></td>
+                            <td class="td_pregunta"><input type="radio" value="satisfecho" name="6"></td>
+                            <td class="td_pregunta"><input type="radio" value="neutral" name="6"></td>
+                            <td class="td_pregunta"><input type="radio" value="insatisfecho" name="6"></td>
+                            <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_otro"><label class="label">{6} ___________________________________________</label></td>
+
+                            <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="7"></td>
+                            <td class="td_pregunta"><input type="radio" value="satisfecho" name="7"></td>
+                            <td class="td_pregunta"><input type="radio" value="neutral" name="7"></td>
+                            <td class="td_pregunta"><input type="radio" value="insatisfecho" name="7"></td>
+                            <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="7"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_otro"><label class="label">{7} ___________________________________________________</label></td>
+
+                            <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="8"></td>
+                            <td class="td_pregunta"><input type="radio" value="satisfecho" name="8"></td>
+                            <td class="td_pregunta"><input type="radio" value="neutral" name="8"></td>
+                            <td class="td_pregunta"><input type="radio" value="insatisfecho" name="8"></td>
+                            <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="8"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_otro"><label class="label">{8} _______________________________________</label></td>
+
+                            <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="9"></td>
+                            <td class="td_pregunta"><input type="radio" value="satisfecho" name="9"></td>
+                            <td class="td_pregunta"><input type="radio" value="neutral" name="9"></td>
+                            <td class="td_pregunta"><input type="radio" value="insatisfecho" name="9"></td>
+                            <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="9"></td>                        
+                        </tr>
+                    </table>
+                    <input type="button" class="buttons" name="siguiente" value="Siguiente" onClick="next_poll()">
+                    <br/>
+                </div>
+            </div>
+            <!-- END BLOCK : pregunta0 -->
+
+            <!-- START BLOCK : pregunta1 -->
+            <div id="cuest{n_id}" class="importante">
+                <div id="medio01" class="centro">         
+                    <br><br/>
+                    <div class="tablas">
+                        <label class="label">{6}</label><br><br/>
+                        <table class="table">
+                            <tr>
+                                <td class="td"></td>
+                                <td class="td_respuesta">
+                                    <label class="label">Muy<br/>Satisfecho</label>                        
+                                </td>
+                                <td class="td_respuesta">
+                                    <label class="label"><br/>Satisfecho</label>                            
+                                </td>
+                                <td class="td_respuesta">
+                                    <label class="label"><br/>Neutral</label>    
+                                </td>
+                                <td class="td_respuesta">
+                                    <label class="label"><br/>Insatisfecho</label>    
+                                </td>
+                                <td class="td_respuesta">
+                                    <label class="label">Muy<br/>Insatisfecho</label>    
+                                </td>
+                            </tr>                    
+                            <tr>
+                                <td class="td_otro"><label class="label">{0} ____________________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="14"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="14"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="14"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="14"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="14"></td>
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{1} _____________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="15"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="15"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="15"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="15"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="15"></td>
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{2} ________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="16"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="16"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="16"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="16"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="16"></td>
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{3} ________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="17"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="17"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="17"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="17"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="17"></td>                        
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{4} ___________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="18"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="18"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="18"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="18"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="18"></td>                        
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{5} _______________________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="19"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="19"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="19"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="19"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="19"></td>                        
+                            </tr>
+                        </table>
+                        <input type="button" class="buttons" name="siguiente" value="Siguiente" onClick="next_poll()">    
+                    </div>        
+                    <br/>
+                </div>
+            </div>
+            <!-- END BLOCK : pregunta1 -->
+
+            <!-- START BLOCK : pregunta2 -->
+            <div id="cuest{n_id}" class="importante">
+                <div id="medio01" class="centro">
+                    <br/>
+                    <div class="tablas">
+                        <table class="table">
+                            <tr>
+                                <td class="td">
+                                    <label class="label">{8}</label>
+                                </td>
+                                <td class="td_respuesta">
+                                    <label class="label">Muy<br/>Satisfecho</label>
+                                </td>
+                                <td class="td_respuesta">
+                                    <label class="label"><br/>Satisfecho</label>
+                                </td>
+                                <td class="td_respuesta">
+                                    <label class="label"><br/>Neutral</label>
+                                </td>
+                                <td class="td_respuesta">
+                                    <label class="label"><br/>Insatisfecho</label>
+                                </td>
+                                <td class="td_respuesta">
+                                    <label class="label">Muy<br/>Insatisfecho</label>
+                                </td>
+                            </tr>                    
+                            <tr>
+                                <td class="td_otro"><label class="label">{0} ______________________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="20"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="20"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="20"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="20"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="20"></td>
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{1} ____________________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="21"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="21"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="21"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="21"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="21"></td>
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{2} ___________________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="22"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="22"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="22"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="22"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="22"></td>
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{3} ___________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="23"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="23"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="23"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="23"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="23"></td>                        
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{4} ______________________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="24"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="24"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="24"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="24"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="24"></td>                        
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{5} _______________________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="25"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="25"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="25"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="25"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="25"></td>                        
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{6} ______________________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="26"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="26"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="26"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="26"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="26"></td>                        
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{7} ___________________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="27"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="27"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="27"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="27"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="27"></td>                        
+                            </tr>
+                        </table>
+                        <input type="button" class="buttons" name="siguiente" value="Siguiente" onClick="next_poll()">        
+                    </div>
+                    <br/>
+                </div>
+            </div>    
+            <!-- END BLOCK : pregunta2 -->
+
+            <!-- START BLOCK : pregunta3 -->
+            <div id="cuest{n_id}" class="importante">
+                <div id="medio01" class="centro">
+                    <br/>
+                    <div class="tablas">
+                        <table class="table">
+                            <tr>
+                                <td class="td">
+                                    <label class="label_tittle">{0}</label>
+                                </td>
+                                <td class="td_respuesta">
+                                    <label class="label">Muy<br/>Satisfecho</label>
+                                </td>
+                                <td class="td_respuesta">
+                                    <label class="label"><br/>Satisfecho</label>
+                                </td>
+                                <td class="td_respuesta">
+                                    <label class="label"><br/>Neutral</label>
+                                </td>
+                                <td class="td_respuesta">
+                                    <label class="label"><br/>Insatisfecho</label>
+                                </td>
+                                <td class="td_respuesta">
+                                    <label class="label">Muy<br/>Insatisfecho</label>
+                                </td>
+                            </tr>                    
+                            <tr>
+                                <td class="td_otro"><label class="label">{1} _________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="29"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="29"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="29"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="29"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy_insatisfecho" name="29"></td>
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{2}  ____________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="30"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="30"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="30"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="30"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy_insatisfecho" name="30"></td>
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{3} __________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="31"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="31"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="31"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="31"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="31"></td>
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label_tittle">{4}</label></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{5} ________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="33"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="33"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="33"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="33"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="33"></td>
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{6} ____________________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="34"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="34"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="34"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="34"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="34"></td>
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{7} _____________________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="35"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="35"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="35"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="35"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="35"></td>
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{8} _____________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="36"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="36"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="36"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="36"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="36"></td>
+                            </tr>                    
+                        </table>    
+                        <input type="button" class="buttons" name="siguiente" value="Siguiente" onClick="next_poll()">    
+                    </div>
+                    <br/>
+                </div>
+            </div>    
+            <!-- END BLOCK : pregunta3 -->
+
+            <!-- START BLOCK : pregunta4 -->
+            <div id="cuest{n_id}" class="importante">
+                <div id="medio01" class="centro">         
+                    <br><br/>        
+                    <div class="tablas">
+                        <label class="label">{6}</label><br><br/>
+                        <table class="table">
+                            <tr>
+                                <td class="td"></td>
+                                <td class="td_respuesta">
+                                    <label class="label">Muy<br/>Satisfecho</label>
+                                </td>
+                                <td class="td_respuesta">
+                                    <label class="label"><br/>Satisfecho</label>
+                                </td>
+                                <td class="td_respuesta">
+                                    <label class="label"><br/>Neutral</label>
+                                </td>
+                                <td class="td_respuesta">
+                                    <label class="label"><br/>Insatisfecho</label>
+                                </td>
+                                <td class="td_respuesta">
+                                    <label class="label">Muy<br/>Insatisfecho</label>
+                                </td>
+                            </tr>                    
+                            <tr>
+                                <td class="td_otro"><label class="label">{0} _______________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="37"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="37"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="37"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="37"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="37"></td>
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{1} ____________________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="38"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="38"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="38"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="38"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="38"></td>
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{2} _________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="39"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="39"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="39"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="39"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="39"></td>
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{3} __________________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="40"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="40"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="40"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="40"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="40"></td>                        
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{4} ________________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="41"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="41"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="41"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="41"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="41"></td>                        
+                            </tr>
+                            <tr>
+                                <td class="td_otro"><label class="label">{5} _____________________________________________________</label></td>
+
+                                <td class="td_pregunta"><input type="radio" value="muy satisfecho" name="42"></td>
+                                <td class="td_pregunta"><input type="radio" value="satisfecho" name="42"></td>
+                                <td class="td_pregunta"><input type="radio" value="neutral" name="42"></td>
+                                <td class="td_pregunta"><input type="radio" value="insatisfecho" name="42"></td>
+                                <td class="td_pregunta"><input type="radio" value="muy insatisfecho" name="42"></td>                        
+                            </tr>
+                        </table>
+                        <input type="button" class="buttons" name="siguiente" value="Siguiente" onClick="next_poll()">
+                    </div>
+                    <br/>
+                </div>
+            </div>
+            <!-- END BLOCK : pregunta4 -->
+
+            <!-- START BLOCK : pregunta5 -->
+            <div id="cuest{n_id}" class="importante">
+                <div id="medio01" class="centro"> 
+                    <div class="tablas">
+                        <div id="derecho">
+                            <br/>
+                            <table class="como_conoce">
+                                <tr>
+                                    <td><label class="label">{0}</label>
+                                        <br/>
+                                        <input type="radio" class="ocultar" value="a traves de un guia" name="43"> <label class="label">{1}</label>
+                                        <br/>
+                                        <input type="radio" class="ocultar" value="por un reportaje en revista" name="43"> <label class="label">{2}</label>
+                                        <br/>
+                                        <input type="radio" class="ocultar" value="por anuncios publicitarios" name="43"> <label class="label">{3}</label>
+                                        <br/>
+                                        <input type="radio" class="ocultar" value="por recomendacion de amigo" name="43"> <label class="label">{4}</label>
+                                        <br/>
+                                        <input type="radio" class="ocultar" value="por internet" name="43">  <label class="label">{5}</label>
+                                        <br/>
+                                        <input type="radio" class="ocultar" value="a traves de agencia de viaje" name="43"> <label class="label">{6}</label>
+                                        <br/>
+                                        <input type="radio" id="otra_razon" value="otra via" name="43"> <label class="label">{7}</label>
+                                    </td>
+                                </tr>
+                            </table>
+                            <input type="text" id="otro" name="50" size="35" maxlength="50">
+                            <br><br/>
+                            <br><br/>        
+                            <label class="label">{8}</label><br><br/>
+                            <label class="label">{9} </label><input type="email" name="52" size="53"  maxlength="50">
+                            <div id="izq" class="izq">
+                                <label class="label">{10}</label><br><br/>
+                                <textarea class="at" cols="58" rows="7" name="53" maxlength="200"></textarea><br><br/>
+                                <label class="label">{11}</label>
+                            </div>        
+                        </div>
+                        <input type="submit" class="buttons" value="Enviar">
+                    </div>
+                    <br/>
+                </div>
+            </div>    
+            <!-- END BLOCK : pregunta5 -->
+        </form>
+    </div>
+</div>

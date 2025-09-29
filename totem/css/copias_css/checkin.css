@@ -1,0 +1,101 @@
+#checkin{
+    /*background-color: #CF03FB;
+    border-radius: 10px 10px 10px 10px;
+    height: 327px;
+    margin: 30px 12px 0;*/
+}
+
+form#form_checkin input[type=text]{ padding: 0.5em 0.2em 0.5em 0.5em; }
+form#form_checkin{ height: 95%; }
+/*#checkin .content{
+    padding-top: 35px;
+    position: relative;
+    top: 35px;
+    border-color: #CF03FB;
+}*/
+#checkin .ancho50{
+/*    display: inline-block;*/
+    float: left;
+    width: 48%;
+    padding: 1% 0 0 1%;
+    margin-left: 1%;
+    height: 380px;
+}
+
+#checkin .ancho67{
+    float: left;
+    width: 67%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#checkin .ancho67 input{
+    width: 93%;
+    margin-top: 3px;
+}
+
+#checkin .ancho50_respuesta{
+    float: left;
+    width: 50%;
+    font-size: 100px;
+    text-align: center;
+}
+
+#checkin .ancho50_respuesta img{
+    width: 90px;
+}
+
+#checkin .ancho33{
+    float: left;
+    width: 33%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+#checkin .ancho33 input{
+    width: 90%;
+    margin-top: 3px;
+}
+
+#checkin .ancho30{
+    float: left;
+    width: 25%;
+    margin-bottom: 40px;
+}
+
+#checkin .ancho70{
+    float: left;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+#checkin .ancho70 input{
+    width: 94%;
+    margin-top: 3px;
+}
+
+#checkin #respuesta{
+    margin-top: 3px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    padding: 8px;
+    height: 90%;
+}
+
+.modal_time {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba( 255, 255, 255, .5 ) 
+        url('../img/time.gif') 
+        50% 50% 
+        no-repeat;
+}
+
+
+
+

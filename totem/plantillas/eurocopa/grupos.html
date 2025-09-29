@@ -1,0 +1,50 @@
+<div class="contenedorgeneral"> <div class="cargando_eurocopa"><img src="../../../contenido_proyectos/vistaflor/_general/eurocopa/cargando.gif" alt=""/></div>
+
+    <img class="css_euro_imagen_transparente" src="../../../contenido_proyectos/vistaflor/_general/eurocopa/fondogrupos.png" alt=""/>
+
+    <div class="contenedoriframe">
+
+        <iframe frameborder="0" class="frametest frametest_grupos" name="frametest" id="frametest" src="lib/eurocopa.php?url=grupo1" ></iframe>
+    </div>
+    <div class="contenedoriframe">
+
+        <iframe frameborder="0" class="frametest frametest_grupos frametest_total" name="frametest" id="frametest" src="lib/eurocopa.php?url=grupo2" ></iframe>
+    </div>
+    <div class="contenedoriframe">
+
+        <iframe frameborder="0" class="frametest frametest_grupos" name="frametest" id="frametest" src="lib/eurocopa.php?url=grupo3" ></iframe>
+    </div>
+    <div class="contenedoriframe">
+
+        <iframe frameborder="0" class="frametest frametest_grupos" name="frametest" id="frametest" src="lib/eurocopa.php?url=grupo4" ></iframe>
+    </div>
+    <div class="contenedoriframe">
+
+        <iframe frameborder="0" class="frametest frametest_grupos" name="frametest" id="frametest" src="lib/eurocopa.php?url=grupo5" ></iframe>
+    </div>
+    <div class="contenedoriframe">
+
+        <iframe frameborder="0" class="frametest frametest_grupos" name="frametest" id="frametest" src="lib/eurocopa.php?url=grupo6" ></iframe>
+    </div>
+    <div class="contenedoriframe">
+
+        <iframe frameborder="0" class="frametest frametest_grupos" name="frametest" id="frametest" src="lib/eurocopa.php?url=grupo7" ></iframe>
+    </div>
+    <div class="contenedoriframe">
+
+        <iframe frameborder="0" class="frametest frametest_grupos" name="frametest" id="frametest" src="lib/eurocopa.php?url=grupo8" ></iframe>
+    </div>
+</div>
+
+<script src="js/eurocopa.js"></script>
+
+<script type="text/javascript">
+    $('.frametest').load(function(){
+
+        var iframe = $('.frametest').contents();
+        iframe.find(".container a").click(function(event) {
+            event.preventDefault();
+        });
+
+    });
+</script>

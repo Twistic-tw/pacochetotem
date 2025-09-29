@@ -1,0 +1,74 @@
+<div id="conoceWrapper"  class="tabs closeWrapper  content_width double_size">
+    <div id="municipioTitle" class="contentHeader">
+        {title}
+    </div>
+
+    <div class="content tabs_ draw_border">
+        <div>
+            <ul>
+                <li class="li-1"><a href="#municipio-contenido-datos">{lang_datos}</a></li>
+                <li class="li-2"><a href="#municipio-contenido-descubrir">{lang_descubrir}</a></li>
+                <li class="li-3"><a href="#municipio-contenido-mapa">{lang_mapa}</a></li>
+<!--
+                <li class="li-6"><a href="#municipio-contenido-gastronomia">{lang_gastronomia}</a></li>
+-->
+            </ul>
+        </div>
+
+        <div >
+            <div id="municipio-contenido-datos" class="ruta_height_double">
+                <div  class="municipio-contenido">
+                    <div class="general_info">
+                        <div><span class='label'>{lang_nivel}:</span> {nivel}</div>
+                        <div><span class='label'>{lang_duracion}:</span> {duracion} h</div>
+                        <div><span class='label'>{lang_recorrido}:</span> {recorrido} km</div>
+                        <div><span class='label'>{lang_desniveles}:</span> {desniveles}</div>    
+                        <!-- <div class=""><span>{lat}</span> <span>{long}</span> <span>{id}</span> <span>{id_sitio}</span></div> -->
+                    </div>
+                    <div class="img_cnt_wrapper">
+                        <img src='../../../contenido_proyectos/vistaflor/_general/conoce_sitios/{id_sitio}/{imagen}'>
+                    </div>
+                    <div class='como_llegar'>
+                        <div>
+                            <h4>{lang_comollegar}</h4>{como_llegar}
+                        </div>
+                    </div>
+                    <div class='general'>
+                        <div>
+                            <h4>{lang_itinerario}</h4>
+                            <div>{itinerario}</div>
+                        </div>
+                        <div>
+                            <h4>{lang_punto_inicial}</h4> <div>{punto_inicial}</div>
+                        </div>
+                        <div>
+                            <h4>{lang_punto_final}</h4> <div>{punto_final}</div>
+                        </div>
+                        <div>
+                            <h4>{lang_observaciones}</h4> <div>{observaciones}</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="municipio-contenido-descubrir" class='ruta_height_double'>
+                <div  class="municipio-contenido">
+                    {descubrir_contenido}
+                </div>
+            </div>
+            <div id="municipio-contenido-mapa" class='ruta_height_double'>
+                <div  class="municipio-contenido">
+                    <img class='mapa_ruta' src='../../../contenido_proyectos/vistaflor/_general/conoce_sitios/{id_sitio}/{mapa_contenido}'>
+                </div>
+                <div class="leyenda">
+                    <img class="leyenda_img" src="../../../contenido_proyectos/vistaflor/_general/conoce_sitios/rutas_leyenda.jpg">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="back buttonsLeft">
+        <span class="atrasIcon"></span> {lang_atras}
+    </div>
+</div>

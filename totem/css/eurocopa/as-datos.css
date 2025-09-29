@@ -1,0 +1,2539 @@
+
+/* back to top */
+.back-to-top{position: fixed; width: 35px; height: 35px; bottom: 10px; right: 10px; background: #FFF; z-index: 999;box-shadow: 0px 3px 5px -4px #000; border-radius: 50%; color: #666;margin-top: -1px; opacity: .95;}
+.back-to-top span{display: block; -ms-transform: rotate(-90deg); /* IE 9 */-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */transform: rotate(-90deg);}
+
+.data-table-scroll{overflow-x: auto;}
+
+
+.no-pseudo:after, .no-pseudo:before{display: none;}
+/** actualización datos **/
+.ext-info{padding-bottom: 20px;}
+.info-updated { font:11px/20px arial; color: #999; }
+.info-updated abbr{ text-decoration: none;}
+
+
+/** cabecera breadcrumb y redes sociales **/
+.header-section{position: relative; padding-bottom: 12px;}
+.header-section:after{content: ""; position: absolute; bottom: 15px; left: 10px; right: 10px; height: 1px; border-bottom: 1px dotted #ddd;}
+
+
+.desplegable li span.grupo-tercera { margin-right: 5px; vertical-align: middle; background-image: url("/img/sprite-tercera.png"); display: inline-block; height: 14px; vertical-align: middle; width: 20px; }
+.desplegable span.grupo-I { background-position: -15px 0; }
+.desplegable span.grupo-II { background-position: -50px 0; }
+.desplegable span.grupo-III { background-position: -85px 0; }
+.desplegable span.grupo-IV { background-position: -120px 0; }
+.desplegable span.grupo-V { background-position: -155px 0; }
+.desplegable span.grupo-VI { background-position: -190px 0; }
+.desplegable span.grupo-VII { background-position: -225px 0; }
+.desplegable span.grupo-VIII { background-position: -260px 0; }
+.desplegable span.grupo-IX { background-position: -295px 0; }
+.desplegable span.grupo-X { background-position: -330px 0; }
+.desplegable span.grupo-XI { background-position: -365px 0; }
+.desplegable span.grupo-XII { background-position: -400px 0; }
+.desplegable span.grupo-XIII { background-position: -435px 0; }
+.desplegable span.grupo-XIV { background-position: -470px 0; }
+.desplegable span.grupo-XV { background-position: -505px 0; }
+.desplegable span.grupo-XVI { background-position: -540px 0; }
+.desplegable span.grupo-XVII { background-position: -575px 0; }
+.desplegable span.grupo-XVIII { background-position: -610px 0; }
+
+
+/* Competicion portada  */
+
+.resultados.competicion-home li .equipo-local, 
+.resultados.competicion-home li .equipo-visitante{ width: 33%; /* bordeabajo border-bottom: 1px solid #f2f2f2; */ }
+.resultados li:last-child .equipo-local{border-bottom: 0 none;}
+.resultados li:last-child .cont-resultado{border-bottom: 0 none;}
+.resultados li:last-child .equipo-visitante{border-bottom: 0 none;}
+.resultados li:last-child .info-evento{border-bottom: 0 none;}
+.resultados.competicion-home .info-evento{ width: 25%; }
+
+.lideres-competicion .cont-bloque-izq{ width: 49%; float: left; margin-right: 2%; }
+.lideres-competicion .cont-bloque-der { width: 49%; float: left; }
+.lideres-competicion .txt-lideres-competicion { text-transform: uppercase; color: #666; font-size: 12px; margin-bottom: 6px; padding-bottom: 2px; border-bottom: 1px solid #f2f2f2; margin-left: 10px; }
+.lideres-competicion .txt-lideres-competicion a { color: #666; }
+.lideres-competicion ul li { margin: 0 10px; border-bottom: 1px solid #f2f2f2; height: 64px; }
+.lideres-competicion ul li:last-child{ border-bottom: 0 none; }
+.lideres-competicion ul .cont-img-lideres { float: left; width: auto; }
+.lideres-competicion ul .cont-info-jugador { float: left; line-height: 15px; padding-left: 7px; padding-top: 10px; width: auto; }
+.lideres-competicion ul.cont-bloque-der .cont-info-jugador { padding-top: 20px; }
+.lideres-competicion ul .cont-datos-jugador{ float: right; text-align: center; width: auto; padding-top: 10px; line-height: 15px; }
+.lideres-competicion ul .cont-datos-jugador .txt-datos{ color: #666; font-size: 12px; text-transform: uppercase; }
+.lideres-competicion ul .cont-datos-jugador .txt-datos a { color: #666; }
+.lideres-competicion ul .cont-datos-jugador .dato{ text-align: right; color: #D21300; font: 36px/36px "sourceblack",arial,helvetica; }
+.lideres-competicion .cont-img-lideres .img-lideres img { height: 62px; }
+.lideres-competicion .cont-bloque-der .cont-img-lideres .img-lideres img { height: 50px; margin-top: 5px; }
+.lideres-competicion .cont-info-jugador .equipo { max-width: 98px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: auto; color: #666; display: block; font-size: 12px; }
+.lideres-competicion .cont-info-jugador .nombre { color: #111; display: inline-block; font: bold 20px/20px arial,helvetica, sans-serif; overflow: hidden; white-space: nowrap; width: auto; }
+.lideres-competicion .cont-img-lideres:hover .cont-info-jugador .nombre{color: #ED9C2B;}
+
+.resultados.competicion-home .info-evento-int > ul > li { width: 100%; }
+.resultados.competicion-home .info-evento li .icono { line-height: 30px; }
+.resultados .desplegable-info-evento div {text-align: left;}
+
+/* Ficha equipo portada  */
+
+.data-list-horiz { margin-bottom: 20px; }
+.data-list-horiz ul { border: 1px solid #ddd; }
+.data-list-horiz ul li { overflow: hidden; padding: 15px 10px 0; background: #454545; float: left; height: 125px; position: relative; text-align: center; vertical-align: middle; width: 161px; }
+.data-list-horiz ul li:first-child,
+.data-list-horiz ul li:last-child { position: relative; background: #fff; width: 163px; }
+
+.data-list-horiz ul li:first-child .icono { position: relative; z-index: 1; display: inline-block; font-size: 50px; margin-bottom: 6px; color: #565656; }
+.data-list-horiz ul li:last-child .icono { display: inline-block; font-size: 42px; margin-top: 6px; color: #FFB715; margin-bottom: 10px; }
+
+.data-list-horiz .txt-dato-ppal { position: relative; z-index: 1; font: 44px 'sourceblack', arial, helvetica; color: #FFB713; }
+.data-list-horiz .txt-dato-ppal2 { position: relative; z-index: 1; padding-top: 37px; font: 24px 'sourceblack', arial, helvetica; color: #FFB713; }
+.data-list-horiz .txt-ppal { position: relative; z-index: 1; margin-bottom: 3px; color: #fff; font-size: 13px; }
+.data-list-horiz .txt-secundario { position: relative; z-index: 1; color: #888; font-size: 12px; }
+.data-list-horiz .txt-mas-estadisticas { padding: 0 12px; font-size: 13px; color: #333; line-height: 16px; }
+.data-list-horiz .txt-competicion { font: 15px/15px 'sourceblack', arial, helvetica; color: #454545; }
+.txt-ano-competicion {color: #878787; font-size: 12px;line-height: 22px; }
+.data-list-horiz .link-mas-estadisticas { display: block; }
+
+.data-list-horiz ul li:first-child::before{ z-index: 1; content: ""; position: absolute; right:-16px; margin-top: -5px; top: 50%; bottom: 50%;  border:8px solid transparent; border-left-color: #f6f6f6; }
+.data-list-horiz ul li:last-child a::before{ content: ""; position: absolute; right: 7px; margin-top: -5px; top: 50%; bottom: 50%;  border:6px solid transparent; border-left-color:#FFB715; }
+
+.data-list-horiz ul li::after { border-left: 1px dotted #676767; bottom: 15px; content: ""; left: 0; position: absolute; top: 15px; width: 1pc; }
+.data-list-horiz ul li:nth-child(-n+2)::after,
+.data-list-horiz ul li:last-child::after { border: 0 none; }
+
+.data-list-horiz ul li a:hover .icono,
+.data-list-horiz ul li a:hover .txt-competicion,
+.data-list-horiz ul li a:hover .txt-mas-estadisticas { color: #333; }
+.data-list-horiz ul li:last-child a:hover::before { border-color: transparent transparent transparent #333; }
+
+.data-list-horiz .cnt-copa::before { background: #fff; border-radius: 50%; bottom: 5px; content: " "; height: 54px; left: 50%; margin-left: -27px; position: absolute; right: 50%; width: 54px; z-index: 1; }
+.data-list-horiz .cnt-copa { position: relative; width: 100%; }
+
+.data-list-horiz .icono-bg { bottom: -24px; color: #3b3b3b; font-size: 92px; position: absolute; right: -41px; }
+.data-list-horiz ul li:first-child { overflow: visible; }
+
+/* Ficha jugador portada  */
+
+.data-list-horiz.no-mas-estadisticas .txt-competicion { font: 15px "sourceblack",arial,helvetica; margin-bottom: 3px; }
+.data-list-horiz.no-mas-estadisticas .txt-ano-competicion { color: #878787; font-size: 12px; }
+.data-list-horiz.no-mas-estadisticas ul li:last-child { background: #454545; }
+.data-list-horiz.no-mas-estadisticas ul li:last-child .icono { bottom: -24px; color: #3b3b3b; font-size: 92px; position: absolute; right: -41px; }
+.data-list-horiz.no-mas-estadisticas ul li:last-child::after { border-left: 1px dotted #676767; bottom: 15px; content: ""; left: 0; position: absolute; top: 15px; width: 1pc; }
+
+.int-data-player{position: relative; padding-top: 10px;}
+.int-data-player:after{position: absolute; content: ""; height: 1px; background: #e9e9e9; top: 0px;width: 100%; left: 0px; right: 0px;}
+.int-data-player-image{float: left; width: 33.33%}
+.int-data-player-image .int-data-player-image-media .int-data-player-country{float: left;}
+.int-data-player-image .int-data-player-image-media {height: 29px;margin: 0 4px;width: 41px;display: inline-block;overflow: hidden;border: 1px solid #dbdbdb; float: left;}
+.int-data-player-image .int-data-player-image-media img{float: left;height: auto;margin: 1px 0 0 1px;width: 37px;}
+.int-data-player-country{float: left;margin-left: 5px;font: 18px/36px "sourceblack", Arial, Helvetica, Sans-Serif;}
+.int-data-player-country-link{display: inline-block;}
+.int-data-player-country-link:hover{color: #ffb632;}
+.int-data-player-info{}
+.int-data-player-info .int-data-player-info-element{font: 13px/24px Arial, Helvetica;position: relative;margin-left: 8px;padding-left: 5px; float: left; margin-top: 0px; margin-right: 15px;}
+.int-data-player-info .int-data-player-info-element:after{    position: absolute;content: " ";height: 5px;width: 5px;background: #FFB632;border-radius: 50%;left: -6px;top: 10px;}
+.int-data-player-date{}
+.int-data-player-match{color: #888;font-size: 12px;}
+.int-data-player-stats-link{font-size: 12px;padding-right: 17px; position: relative;text-align: right;width: auto; float: left;margin-top: 9px;}
+.int-data-player-stats-link a{color: #666;}
+.int-data-player-stats-link a:hover{color: #000;}
+.int-data-player-stats-link:after{content: "";position: absolute;right: 0;top: 50%;margin-top: -5px;bottom: 50%;border: 5px solid transparent;border-left-color: #ffb632;}
+
+/*   Fichas   */
+
+.articulo.ficha {padding-top: 0;}
+
+.hdr-ficha {width:100%; background:#323232; padding: 20px 0;border-bottom: 1px solid #5b5b5b;}
+.hdr-ficha-info .escudo img {width: 65px;}
+.hdr-ficha-info .tit-ppal {font: 34px/34px "sourceblack", Arial, Helvetica; color: #FFFFFF;}
+.hdr-ficha-info .tit-ppal a { color: #FFF; }
+.hdr-ficha-info .sub-tit {font: 14px/14px Arial, Helvetica; color: #979797;}
+
+#frm-buscador-ficha {background: #FFFFFF; line-height: 35px; border-radius: 2px; }
+#frm-buscador-ficha fieldset {border: 1px solid #ddd; border-right: 0 none; height: 34px; line-height: 31px; position: relative; width: 100%;}
+#frm-buscador-ficha fieldset #busqueda-ficha {border: none; line-height: 23px; padding: 0 35px 0 5px; box-sizing:border-box; font: italic 12px/20px Arial,Helvetica; color: #666666;}
+#frm-buscador-ficha fieldset .desplegable_temas {background: #FFFFFF; left: 0; top: 33px; border-radius: 0 0 2px 2px; -webkit-box-shadow: 0px 9px 11px 0px rgba(0,0,0,0.23);
+-moz-box-shadow: 0px 9px 11px 0px rgba(0,0,0,0.23); box-shadow: 0px 9px 11px 0px rgba(0,0,0,0.23);}
+#frm-buscador-ficha fieldset .desplegable_temas ul li {padding:10px 0 10px 12px; font: 12px/16px Arial, Helvetica; color: #333333;}
+#frm-buscador-ficha fieldset .desplegable_temas ul li.encima {background: #dbdbdb;}
+#frm-buscador-ficha fieldset .desplegable_temas ul li strong {color: #b80f00;}
+#frm-buscador-ficha .hdr-buscador-buscar2 {background: #C11100; height: 34px; font-size: 20px; line-height: 38px; width: 32px; position: absolute; top: 0; right: 0; text-align: center; }
+#frm-buscador-ficha .hdr-buscador-buscar2 a span {color: #FFFFFF;}
+
+
+
+/* Correccion Buscador */
+.frm-bsc {background: #FFFFFF; line-height: 35px; border-radius: 2px; }
+.frm-bsc form { position: relative; }
+.frm-bsc fieldset { border: 1px solid #ddd; border-radius: 2px; height: 34px; line-height: 34px; position: relative; padding-left: 10px;}
+.frm-bsc fieldset .busqueda-ficha {border: none; width: 270px; line-height: 23px; padding: 0 35px 0 5px; box-sizing:border-box; font: italic 12px/20px Arial,Helvetica; color: #666666;}
+.frm-bsc fieldset .desplegable_temas {background: #FFFFFF; left: 0; top: 33px; border-radius: 0 0 2px 2px; -webkit-box-shadow: 0px 9px 11px 0px rgba(0,0,0,0.23);
+-moz-box-shadow: 0px 9px 11px 0px rgba(0,0,0,0.23); box-shadow: 0px 9px 11px 0px rgba(0,0,0,0.23);}
+.frm-bsc fieldset .desplegable_temas ul li {padding:10px 0 10px 12px; font: 12px/16px Arial, Helvetica; color: #333333;}
+.frm-bsc fieldset .desplegable_temas ul li.encima {background: #dbdbdb;}
+.frm-bsc fieldset .desplegable_temas ul li strong {color: #b80f00;}
+.frm-bsc .hdr-buscador-buscar2 {background: #C11100; height: 34px; font-size: 20px; line-height: 36px; width: 32px; position: absolute; top: -1px; right: -1px;  text-align: center; }
+.frm-bsc .hdr-buscador-buscar2 a span {color: #FFFFFF;}
+/* FIN Correccion Buscador */
+
+/* buscador indice jugadores - comportamiento especial */
+  .frm-bsc-indice{width: 100%;}
+
+
+.nav-seccion ul li.active a {border-bottom: 4px solid #FFB632;}
+.nav-seccion .container .inner {border-bottom: none;}
+.nav-seccion #historico {float: right;}
+
+
+
+.list-ball-yellow li {width: 100%; font: 13px/24px  Arial, Helvetica; position: relative; margin-left: 8px; padding-left: 5px;}
+.list-ball-yellow li:before {position: absolute; content: " "; height: 5px; width: 5px; background: #FFB632; border-radius: 50%; left: -6px; top: 10px;}
+.list-ball-yellow li strong {padding-left: 5px;}
+.list-ball-yellow li a { font-weight: bold; padding-left: 5px; line-height: 12px; position: relative; text-decoration: underline;;}
+.list-ball-yellow li a:hover {text-decoration: underline;}
+.list-ball-yellow li a.localizacion { padding-left: 10px; font-weight: normal; text-decoration: none; margin-left: -10px; margin-top: 7px;}
+.list-ball-yellow li a.localizacion:before { border-color: transparent transparent transparent #636363; border-image: none; border-style: solid; border-width: 3px; content: "";  left: 0; position: absolute; top: 4px;}
+.list-ball-yellow .ico-bandera {height: 19px; width: 26px; padding: 1px; background: #fff; /* margin-right: 6px; */ overflow: hidden; border: 1px solid #ddd; margin-left: 5px;}
+.info-social figure img {width: 100%; margin-top: 10px;}
+.info-social .row {margin-bottom: 20px;}
+
+
+.ficha {background: #F2F2F2;}
+.ficha .info-suplementaria {margin: 0 auto 60px;}
+.ficha .info-suplementaria ul li a .escudo {font-weight: bold;}
+.ficha .info-suplementaria ul li a .escudo img {width: 60px; height: auto; margin:auto;}
+
+.cnt-data {background: #FFFFFF; margin-bottom: 20px; border: 1px solid #dddddd;}
+.cnt-data-black {background: #3b3b3b; margin-bottom: 20px;}
+.cnt-data-big li {padding: 10px 0;}
+.cnt-data-big ul li a, .cnt-data-big ul li span {font: 13px/13px Arial, Helvetica; position: relative; color: #CBCBCB;}
+.cnt-data-big ul li:before {position: absolute; content: " "; border-left: 1px dotted #676767; width: 1px; top:10px; bottom:10px; left: 0;}
+.cnt-data-big ul li:first-child:before {border-left: none;}
+.cnt-data-big ul li strong {font: 44px/44px "sourceblack", Arial, Helvetica; color: #fab215;}
+.cnt-data-big ul li span {line-height: 13px; color: #999999;}
+
+.cnt-est-lideres .cnt-data .cnt-info-p, .cnt-est-lideres .cnt-data div {width: 32%;} 
+.cnt-est-lideres .cnt-data .cnt-info-p a {font: bold 14px/14px Arial, Helvetica; color: #000000;}
+.cnt-est-lideres .cnt-data .cnt-info-p span {font: 14px/14px Arial, Helvetica; color: #666666;}
+.cnt-est-lideres .cnt-data .cnt-info-d { padding: 15px 0; height: 100px; }
+.cnt-est-lideres .cnt-data .cnt-info-d .dato-des {font:13px/13px Arial, Helvetica;  color: #666; display: block; }
+.cnt-est-lideres .cnt-data .cnt-info-d .dato-des strong { font:44px/44px "sourceblack", Arial, Helvetica; margin-bottom: 3px; color:#fab215;}
+.cnt-est-lideres .cnt-data .cnt-info-d .dato-sec {font:12px/13px Arial, Helvetica; color: #999;}
+.cnt-est-lideres figure img { width: 100px; }
+
+.fundido { position:relative}
+.fundido:before { content: " ";height: 80px; opacity: 0.5; position: absolute; bottom: 0; width: 100%; z-index: 1;/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+100&amp;0+0,0.14+100 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(0,0,0,0.14) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.14) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(0,0,0,0.14) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#24000000',GradientType=0 ); /* IE6-9 */}
+
+.ellipsis {display: inline-block; margin-bottom: -4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+.plantilla li figure {background: #FFFFFF;}
+.plantilla li figure img {width: 100px; height: 100px; margin: auto;}
+.plantilla li.cnt-data {padding: 0; margin: 10px;}
+.plantilla li .cnt-data .lnk-figure {position: relative; width: 100%; display: block;}
+.plantilla li .cnt-data .lnk-figure:hover{opacity: 0.85;}
+.plantilla li .cnt-player .color-camiseta {float: left; height: 25px; left: -19px; top: -20px; transform: rotate(-45deg); -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); width: 65px; z-index: 100; border: 1px solid #CCCCCC;}
+.plantilla li .cnt-player .color-camiseta .color-ppal { background: #27ccef; height: 24px; width: 100%;}
+.plantilla li .cnt-player .color-camiseta .color-secun {background: #ffffff; height: 6px; left: 0; position: absolute; top: 12px; width: 100%;}
+.plantilla li .cnt-player .nom-jugador {margin-bottom:-5px; color: #333333; font: bold 14px/24px Arial,Helvetica; position: relative; width: 100%; z-index: 101;}
+.plantilla li .cnt-player .nom-jugador:hover{color: #FFB632;}
+.plantilla li .cnt-info-player {background: #454545; padding: 5px 0;}
+.plantilla li .cnt-info-player .info-team {width: 70%; padding-left: 10px; box-sizing:border-box; font: bold 13px/22px Arial, Helvetica; color: #ffffff;}
+.plantilla li .cnt-info-player .info-team.dorsal {width: 30%; font: 20px/22px "sourceblack", Arial, Helvetica; color: #FFB632;}
+.plantilla li .cnt-info-player .info-pers {padding-left: 16px; font: 12px/12px Arial, Helvetica; color: #CACACA; position: relative;}
+.plantilla li .cnt-info-player .ellipsis.info-pers {display: inline-block; width: 85px; padding-bottom: 2px;}
+.plantilla li .cnt-info-player .info-pers:first-child {padding-left: 10px;}
+.plantilla li .cnt-info-player .info-pers:before {position: absolute; content: " "; background: #FFB632; border-radius: 50%; width: 5px; height: 5px; left: 5px; top: 4px;}
+.plantilla li .cnt-info-player .info-pers:first-child:before {background: none;}
+.plantilla nav ul li {position: relative;}
+.plantilla nav ul li .lesion {position: absolute; left: 11px; top: 0; z-index: 1;}
+.plantilla nav ul li .lesion:before {font-size: 24px;}
+	/*Plantilla equipos sin foto*/
+   .plantilla.sin-foto .cnt-player {background: none; border-bottom: 1px solid #ddd; text-align: left;}
+   .plantilla.sin-foto li .cnt-data {margin-bottom: 15px;border: none;background: none;}
+   .plantilla.sin-foto li .cnt-data .lnk-figure{display: none;}
+   .plantilla.sin-foto li .cnt-info-player{background: none}
+   .plantilla.sin-foto li .cnt-info-player .info-team{padding-left: 0;color: #666; font-weight: normal;}
+   .plantilla.sin-foto li .cnt-info-player .info-team.dorsal{font: 17px "sourcesansbold", Arial, Helvetica;color:#FFB632;text-align: right;}
+   .plantilla.sin-foto li .cnt-info-player .info-pers{ display: none;}
+   .plantilla.sin-foto li .cnt-player .nom-jugador:hover {color: inherit;}
+
+
+.info-palmares .blq-palmares {margin-bottom: 20px; margin-left: -10px; float: left; width: 50%; padding: 0 10px; }
+.info-palmares .blq-palmares.w100, .info-palmares .blq-palmares .cnt-datos-trofeos.w100 {width: 100%;}
+.info-palmares .blq-palmares:nth-child(even){clear: left;}
+.info-palmares .blq-palmares .cnt-copa {width: 20%; position: relative;}
+.info-palmares .blq-palmares .cnt-copa:before {position:absolute; content:" "; background: #FFFFFF; width: 50px; height: 50px; border-radius: 50%; z-index: 1; left: 15px; bottom: -7px;}
+.info-palmares .blq-palmares .cnt-copa img {width: 80px; height: auto; position: relative; z-index: 2;}
+.info-palmares .blq-palmares .cnt-copa .icono {color: #444; font-size: 55px; position: relative; z-index: 1; left: 12px; top: -5px;}
+.info-palmares .blq-palmares .cnt-copa .as-icon-trofeo {font-size: 65px; left: 9px; position: relative; z-index: 2; }
+.info-palmares .blq-palmares .cnt-datos-trofeos {width: 80%;}
+.info-palmares .num-trofeos {font: bold 15px/15px Arial, Helvetica; color: #333333;}
+.info-palmares .num-trofeos strong { color: #e98d13; display: inline-block; font: 32px/32px "sourceblack",Arial,Helvetica; margin-right: 8px; text-align: center; width: 37px; } 
+.info-palmares ul li {position: relative; color: #656565; padding: 0 5px; display: inline-block;}
+.info-palmares ul li:before { position: absolute; content: " "; background: #666666; border-radius: 50%; left: -4px; width: 4px; height: 4px; margin: auto; top: 0; bottom: 0;}
+.info-palmares ul li:first-child {padding-left: 5px}
+.info-palmares .blq-palmares .cnt-datos-trofeos ul li:first-child .palmares-equipo-detalle{margin-left: 8px;}
+.palmares-equipo-detalle img{width: 20px; height: auto;}
+.palmares-team-name{font: bold 12px/20px Arial, Helvetica; color: #555;}
+.palmares-year{padding-left: 30px; padding-top: 14px;}
+.palmares-year span{margin-bottom: 5px;}
+
+.racha .cont-circulo-posesion .in-circle {background: transparent;}
+.racha .cont-circulo-posesion .in-circle img {width: 65%; margin: 19% auto;}
+.racha .txt-racha {font: 12px/12px Arial, Helvetica; color: #666666;}
+.racha .cnt-data-racha div {margin: 10px 20px;}
+.racha .cnt-data-racha div.victorias {margin: 10px 20px 10px 0;}
+.racha .cnt-data-racha div strong {margin: 0 18px; font: 36px/60px "sourceblack", Arial, Helvetica; color: #333;}
+.racha .cnt-data-racha div span {font:13px/18px Arial, Helvetica; color: #646464;}
+.racha .cnt-data-racha .round {width: 60px; height: 60px; background: #FFF; border-radius: 50%; text-align: center; border: 3px solid #CCC;}
+.racha .cnt-data-racha-list ul {margin-top: 5px;}
+.racha .cnt-data-racha-list ul li {width: 8.6%; text-align: center; background: #FFF; border: 1px solid transparent; padding: 0; margin: 0 0px; font: bold 16px/46px Arial, Helvetica; color: #ccc;}
+.racha .cnt-data-racha .victorias {background: #FFF; border: 3px solid #FAB215;}
+.racha .cnt-data-racha-list .victorias {background: #FFF; color: #FAB215;}
+.racha .cnt-data-racha .derrotas {background: #FFF; border: 3px solid #CE0000;}
+.racha .cnt-data-racha-list .derrotas {background: #FFF;color: #CE0000;}
+
+.cnt-comp-equipos {height: 175px; position: relative;}
+.cnt-comp-equipos .rival a { padding: 10px 0; border:1px solid #ddd; background: #fff;}
+.cnt-comp-equipos .rival figure {}
+.cnt-comp-equipos .rival img {width: 80px;}
+.racha form {margin-left: 10px; margin-top: -8px; width: 300px;}
+.racha form input {height: 30px; width: 100%; box-sizing: border-box; border: none;}
+
+/*.cnt-ficha table tr td {text-align: left; vertical-align: top;}
+.cnt-ficha table tr td a {color: #666666;}
+.cnt-ficha table tr td a:hover {color: #ffb632;}
+.cnt-ficha table .t-6 {width: 6%;}
+.cnt-ficha table .t-10 {width: 10%;}
+.cnt-ficha table .t-12 {width: 12%;}
+.cnt-ficha table .t-15 {width: 15%;}
+.cnt-ficha table .t-20 {width: 20%;}*/
+
+.lesion {font: 12px/12px Arial, Helvetica; color: #666666; padding: 10px 10px 10px 25px; position: relative;}
+.lesion:before {color: #ff0000; content: " + "; font-size: 18px; left: 9px; line-height: 32px; position: absolute; top: 0; font-weight: bold;}
+
+.campo-alineacion {background: none;}
+.campo-alineacion .bg-campo-fut {height: 252px;}
+.campo-alineacion .camiseta-jugador {border-radius: 30px; height: 26px; border: 1px solid #ffffff;}
+.campo-alineacion .camiseta-jugador > p {line-height: 18px;}
+.campo-alineacion .cnt-tactica {width: 100%;}
+.campo-alineacion .tactica {background: #fcfcfc; /* Old browsers */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #c1c1c1)); /* Chrome,Safari4+ */
+  background: linear-gradient(to bottom, #fcfcfc 0%, #c1c1c1 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#c1c1c1', GradientType=0 ); /* IE6-9 */
+    font: 24px/34px "sourceblack", Arial, Helvetica; color: #333333; width: 200px; border-radius: 4px 4px 0 0; display: inline-block;}
+.campo-alineacion .camiseta-jugador {background: #bf0411;}
+.campo-alineacion .camiseta-jugador > p strong {color: #FFFFFF;}
+
+
+
+/*   portadas deportes y deporte   */
+
+.sub-title a{font-family: Arial, Helvetica, sans-serif;font-size: 14px;font-weight: bold;color: #666;}
+.list-item{padding-left: 9px; margin-bottom: 3px; margin-left: 16px;}
+.list-item a{font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-weight: normal;color: #999;}
+.portada-text{min-height: 50px; margin-bottom: 10px;}
+.sub-title{margin-bottom: 5px; padding-left: 7px;}
+.content{margin-bottom: 15px;}
+.list{margin-bottom: 10px;min-height: 120px;}
+.equipos-inferior{margin-bottom: 20px;}
+.equipos-inferior img{width: 60px;height: auto;margin: auto;}
+.equipos-inferior li{font-weight: bold;}
+.mod-info-equipo{padding-top: 10px;padding-bottom: 10px;}
+.content-info-mod-equipo li{text-align: left;margin-bottom: 9px;font-size: 12px;font-family: "Lucida Grande", Arial, Helvetica;color: #666;font-weight: bold; height: 18px;}
+.content-info-mod-equipo li:last-child{margin-bottom: 0;}
+.content-info-mod-equipo li a{color:#666;}
+.content-info-mod-equipo{border: 1px solid #ddd;padding-top: 10px;padding-bottom: 10px;width: 100%;background: #fff; height: 130px;}
+.content-info-mod-equipo .escudo{margin-top: 2px;}
+.content-info-mod-equipo .pais{font-family: Arial, Helvetica, sans-serif;font-size: 12px;color:#666;font-weight: normal;margin-top: -4px;}
+.content-info-mod-equipo .escudo{display: block;margin-bottom: -5px;}
+.content-info-mod-equipo a:hover .escudo{color}
+.content-links-equipo{padding-top: 3px;position: relative;}
+.content-links-equipo:after{content: "";position: absolute;width: 1px;height: 90%;top: 5%;left: 0px;background: #f2f2f2;}
+.jugadores-inferior li figure {background: #FFFFFF;}
+.jugadores-inferior li figure img {width: 100px; height: auto; margin: auto;}
+.jugadores-inferior li.cnt-data {padding: 0; margin: 10px;}
+.jugadores-inferior li .cnt-data .lnk-figure {position: relative; width: 100%; display: block;}
+.jugadores-inferior li .cnt-player .color-camiseta {float: left; height: 25px; left: -19px; top: -20px; transform: rotate(-45deg); -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); width: 65px; z-index: 100; border: 1px solid #CCCCCC;}
+.jugadores-inferior li .cnt-player .color-camiseta .color-ppal { background: #27ccef; height: 24px; width: 100%;}
+.jugadores-inferior li .cnt-player .color-camiseta .color-secun {background: #ffffff; height: 6px; left: 0; position: absolute; top: 12px; width: 100%;}
+.jugadores-inferior li .cnt-player .nom-jugador {margin-bottom:-5px; color: #333333; font: bold 14px/24px Arial,Helvetica; position: relative; width: 100%; z-index: 101;}
+.jugadores-inferior li .cnt-info-player {background: #f2f2f2; padding: 5px 0;}
+.jugadores-inferior li .cnt-info-player .info-team {width: 70%; padding-left: 10px; box-sizing:border-box; font: bold 13px/22px Arial, Helvetica; color: #ffffff;}
+.jugadores-inferior li .cnt-info-player .info-team.dorsal {width: 30%; font: 20px/22px "sourceblack", Arial, Helvetica; color: #FFB632;}
+.jugadores-inferior li .cnt-info-player .info-pers {padding-left: 16px; font: 12px/12px Arial, Helvetica; color: #CACACA; position: relative;}
+.jugadores-inferior li .cnt-info-player .ellipsis.info-pers {display: inline-block; width: 85px; padding-bottom: 2px;}
+.jugadores-inferior li .cnt-info-player .info-pers:first-child {padding-left: 10px;}
+.jugadores-inferior li .cnt-info-player .info-pers:before {position: absolute; content: " "; background: #FFB632; border-radius: 50%; width: 5px; height: 5px; left: 5px; top: 4px;}
+.jugadores-inferior li .cnt-info-player .info-pers:first-child:before {background: none;}
+.jugadores-inferior .content-link-jugador{padding-left: 8px; padding-top: 6px;background: #fff; border-top: 1px solid #f2f2f2; }
+.jugadores-inferior .content-link-jugador li{text-align: left;margin-bottom: 9px;font-size: 12px;font-family: "Lucida Grande", Arial, Helvetica; font-weight: bold; float: left; margin-right: 9px;}
+.jugadores-inferior .content-link-jugador li a{color: #666;}
+h4.inter-asdatos-title a{font-family: Arial, Helvetica, sans-serif;font-size: 14px;font-weight: bold;color: #666;}
+li.inter-list-item{padding-left: 9px;}
+li.inter-list-item a{font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-weight: normal;color: #999;}
+.inter-content{margin-bottom: 15px; }
+.inter-list{margin-bottom: 10px;}
+
+
+/* índice jugadores */
+.navigation-chars ul{display: flex; justify-content: space-between;}
+.navigation-chars li{align-self: flex-start;}
+.link-an-navegacion{font: 20px/20px "sourceblack",arial,helvetica;padding: 12px 0px;width: 30px;text-align: center;background: #fff;display: inline-block;margin-bottom: 6px;}
+.link-an-navegacion:hover{background: #393939 none repeat scroll 0% 0%;color: #FFF; }
+.indice-main-name-main-content{background: #fff;}
+.indice-main-name-content{background: #fff;position: relative;}
+.indice-main-name-content:before{content: "";background: #ddd;position: absolute;width: 100%;height: 1px;top: 0px;left: 0px;}
+.indice-main-name-char-content{margin-right: 10px;position: relative;}
+.indice-main-name-char-content:before{content: "";width: 100%;height: 3px;background: #ffb632;position: absolute;top: 0px;
+left: 0px;z-index: 99;}
+.indice-main-name-name-content{padding-top: 15px;}
+.indice-main-name-char-content .indice-main-name-char{font: 36px/36px "sourceblack",arial,helvetica;padding: 5px 15px;}
+.indice-main-name-name{width: 25%;float: left;}
+.indice-main-name-name a, .indice-main-name-name span{font: 13px/13px Arial, helvetica, sans-serif;margin-bottom: 10px;border-bottom: 1px dotted #bbb;padding-bottom: 3px;display: inline-block; min-height: 20px;}
+.indice-main-name-name span{border-bottom: none;}
+.indice-main-name-name a:hover { color: #ED9C2B; border-bottom: 1px solid #bbb;}
+
+
+/* estadísticas */
+
+.data-table thead > tr > th,
+.data-table tbody > tr > th, 
+.data-table tfoot > tr > th, 
+.data-table thead > tr > td, 
+.data-table tbody > tr > td, 
+.data-table tfoot > tr > td { /* border-bottom: 1px solid #f2f2f2;*/ border-bottom: 1px solid #ebebeb; }
+.data-table tbody > tr > td.destacado { border-bottom: 1px solid #3b3b3b; position: relative;}
+.data-table tbody > tr > td.destacado:after {     content: "";position: absolute;left: -1px;top: -1px;bottom: 0px;background: #3B3B3B;width: 1px;height: auto; z-index: 999;}
+.data-table tbody > tr > td.destacado:before {     content: "";position: absolute;right: -1px;top: -1px;bottom: 0px;background: #3B3B3B;width: 1px;height: auto; z-index: 999;}
+.data-table tbody > tr:last-child > td.destacado { border: 0 none; }
+.data-table{margin-top: -7px;}
+.tabla-navigation{margin-bottom: 15px;}
+.tabla-navigation a{margin-bottom: 14px;}
+.data-table thead tr th{font: 11px/18px "Lucida Sans Unicode", "Lucida Grande", Sans-Serif; font-weight: 600;}
+.data-table .table-estadisticas-team { text-align: left; }
+.data-table .table-estadisticas-team .team-inline{font: bold 12px/32px Arial, Helvetica, Sans-Serif; margin-left: 8px; width: auto; }
+.data-table .table-estadisticas-team a{display: block;}
+.data-table .table-estadisticas-team a:hover{opacity: .9; color: #EB9114;}
+.data-table .table-estadisticas-team .escudo-inline{ display: inline-block; vertical-align: middle;}
+.data-table .table-estadisticas-team .escudo-inline img{width: 23px; height: auto;}
+.data-table thead tr th {height: 40px; position: relative; /* cursor: pointer; padding-right: 14px;*/}
+/* .data-table thead tr th:hover{color: #666;} */
+.data-table thead tr th:after{ border-bottom-color: #333;}
+.data-table thead tr th:before{ border-top-color: #333;}
+.data-table thead tr .destacado:after{ border-bottom-color: #fff;}
+.data-table thead tr .destacado:before{ border-top-color: #fff;}
+.data-table tbody tr th:first-child{ border-left: none;}
+.data-table tbody tr:last-child th{ border-bottom: none;}
+.data-table thead th:last-child{ border-left: 1px solid #f2f2f2} 
+.data-table tbody tr th:nth-child(1){ text-align: left; padding-left: 10px;}
+.data-table tbody th.pos, .data-table tbody td.pos{ width: 60px;border-right: 1px solid #f2f2f2}
+
+
+/* tabla estadisticas : tabla-stats */
+.table-stats thead tr th:first-child, .table-stats tbody tr td:first-child{padding-left: 10px; text-align: left; width: 60%;}
+.table-stats tbody tr td{border: none;}
+.table-stats tbody{margin-top: 10px;}
+.table-stats thead tr th{border-left: none; border-right: none;}
+.table-stats-data{font: bold 30px/40px "sourceblack",Arial, Helvetica, Sans-Serif; color: #E98D13; padding-bottom: 0px; padding-top: 0px;}
+.table-stats-tipo{font: 14px/22px Arial, Helvetica, Sans-Serif; color: #333; padding-top: 0px; padding-bottom: 0px;}
+.table-stats-info{font: bold 14px/45px Arial, Helvetica, Sans-Serif; color: #DDD;}
+
+
+/* estadísticas jugador */
+
+.data-rosco{text-align: center; font: 26px/94px "sourceblack", Arial, Helvetica, Sans-Serif; color: #111;background: #f2f2f2;border-radius: 50%;width: 94px;height: 94px;position: absolute;left: 13px;top: 13px;z-index: 1;}
+.info-header-ficha{margin: 10px auto;}
+.info-header-ficha .title{font: bold 12px/20px Arial, helvetica, Sans-Serif; color: #333;}
+.info-header-ficha .data{font: 28px/32px "sourceblack", Arial, Helvetica, Sans-Serif; color: #E98D13;}
+.info-header-ficha .average{font: 12px/16px Arial, Helvetica, Sans-Serif; color: #666;}
+.info-header-ficha .average .average-data{font-weight: bold;}
+.info-header-ficha .position{font: 12px/16px Arial, Helvetica, Sans-Serif; color:#666;}
+.copa-medium{ font-size: 75px;}
+.comp-header-area{padding-bottom: 15px; position: relative; border-bottom: 1px dotted #DDD;}
+.comp-header-area:before{content: ""; position: absolute; bottom: 0px; left: 10px; right: 10px; height: 1px; background: #f2f2f2; }
+.info-comp-header {margin-top: 20px;}
+.info-comp-header .comp{ font: 24px/24px "sourceblack", Arial, Helvetica, Sans-Serif; color: #333;}
+.info-comp-header .comp-year{font: 18px/18px "sourceblack", Arial, Helvetica, Sans-Serif; color: #929292; display: block;}
+
+.data-table .table-estadisticas-player {width: 190px;}
+.data-table .table-estadisticas-player .player-img-inline{float: left;/* margin-top: 9px; */}
+.data-table .table-estadisticas-player .player-inline {font: bold 13px/23px Arial, Helvetica, Sans-Serif;margin-left: 3px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: auto;float: left;max-width: 60%;margin-top: 6px;}
+.data-table .table-estadisticas-player .player-img-inline img {width: 35px;height: auto;}
+
+.table-estadisticas-player a:hover{color: #ED9C2B;}
+
+.content-info-piechart{display: inline-block;}
+.content-info-piechart ul li {text-align: left; font: 12px/38px "Lucida Grande",Tahoma,Verdana,Arial,Helvetica,sans-serif; color: #333; position: relative; width: 150px; clear: left;}
+  .content-info-piechart ul li:before {position: absolute; content: " "; right: 0; top: 0; border-top: 1px solid #ddd; width: 100%;}
+  .content-info-piechart ul li:first-child:before {border-top: none;}
+  .content-info-piechart .txt-cnt-info-piechart {padding-left: 20px; position: relative;}
+  .content-info-piechart .txt-cnt-info-piechart:before {position: absolute; content: " "; background: #FF0000; border-radius: 50px; left: 0px; top: 2px; width: 12px; height: 12px;}
+  .content-info-piechart .pie1.txt-cnt-info-piechart:before {background: #ca0305;}
+  .content-info-piechart .pie2.txt-cnt-info-piechart:before {background: #ffb632;}
+  .content-info-piechart .pie3.txt-cnt-info-piechart:before {background: #d4800e;}
+  .content-info-piechart .pie4.txt-cnt-info-piechart:before {background: #999;}
+  .content-info-piechart .pie5.txt-cnt-info-piechart:before {background: #777;}
+  .content-info-piechart .pie6.txt-cnt-info-piechart:before {background: #555;}
+
+  .txt-second-title{color: #555;font-size: 14px;font-weight: bold;line-height: 30px;width: 100%;text-transform: uppercase;border-bottom: 1px dotted #ddd;}
+
+/* repetidos */
+  .tabla-navigation{ border-bottom: 1px solid #ddd; }
+
+  /************ cabecera jugador ****************/
+
+.hdr-ficha-player {background: #323232;  padding: 0px 0 0px; width: 100%; }
+.hdr-ficha-player .hdr-ficha-player-info .player{position: relative; overflow: hidden; margin-right: 20px;}
+.hdr-ficha-player .hdr-ficha-player-info .player:before{background: #444;border-radius: 50%;top: 30px;content: " ";width:100px;height: 100px;left: 0;;position: absolute;right: 50%;z-index: 1;}
+.hdr-ficha-player .hdr-ficha-player-info .player img{width: 100px; height: 100px; position: relative; z-index: 1;}
+.hdr-ficha-player .hdr-ficha-player-info .tit-ppal{font: 35px/40px "sourceblack", Arial, Helvetica, Sans-Serif; color: #FFF;}
+.hdr-ficha-player .hdr-ficha-player-info .sub-tit{font: 13px/25px Arial, Helvetica, Sans-Serif; color: #AAA; margin-top: -5px; margin-left: 2px;}
+.hdr-ficha-player .hdr-ficha-player-info:hover .tit-ppal{color: #ffb632;}
+.hdr-ficha-player .hdr-ficha-player-info:hover .sub-tit{color: #FFF;}
+.hdr-ficha-player .hdr-ficha-player-info:hover .player img{opacity: .85;}
+
+.hdr-ficha-player .hdr-ficha-player-info-team{margin-top: 37px; margin-left: 15px; padding-left: 30px; position: relative;}
+.hdr-ficha-player .hdr-ficha-player-info-team:after{content: ""; width: 1px; height: 50px; background: #454545;position: absolute; left: 10px;top: -11px;}
+.hdr-ficha-player .hdr-ficha-player-info-team img{width: 30px; height: auto;}
+.hdr-ficha-player .hdr-ficha-player-info-team .hdr-ficha-player-info-team-name{font: 20px/20px "sourceblack", Arial, Helvetica, Sans-Serif; color: #DDD;}
+.hdr-ficha-player .hdr-ficha-player-info-team:hover a .hdr-ficha-player-info-team-name{color: #ffb632;}
+.hdr-ficha-player .hdr-ficha-player-info-team:hover a img{opacity: .8;}
+
+.nav-hdr-ficha-player{ background: #FFF; margin-bottom: 20px; box-shadow: 0px 0px 4px #eee;}
+.nav-hdr-ficha-player ul li{float: left; padding: 0px 10px;}
+.nav-hdr-ficha-player ul li a{display: block;color: #333;font: 13px/32px 'lucida sans', arial, helvetica;height: 34px;}
+.nav-hdr-ficha-player ul li.active a {border-bottom: 3px solid #FFB632;}
+.nav-hdr-ficha-player ul li.active a{color: #111;}
+
+.nav-hdr-ficha-team{ background: #FFF; margin-bottom: 20px; box-shadow: 0px 0px 4px #eee;}
+.nav-hdr-ficha-team ul li{float: left; padding: 0px 10px;}
+.nav-hdr-ficha-team ul li a{display: block;color: #333;font: 13px/32px 'lucida sans', arial, helvetica;height: 34px;}
+.nav-hdr-ficha-team ul li.active a {border-bottom: 3px solid #FFB632;}
+.nav-hdr-ficha-team ul li.active a{color: #111;}
+
+
+/* Subnavegación inferior fichas */
+.cnt-ficha .nav-aux ul{ float: left;}
+.cnt-ficha .nav-aux li{min-width: auto;text-align: right;}
+.cnt-ficha .nav-aux li a{ padding: 10px 10px }
+.cnt-ficha .nav-aux .cont-desplegable-tit { float: right; margin-top: 0; margin-bottom: 0; padding-bottom: 7px; padding-top: 7px;} 
+.cnt-ficha .nav-aux .cont-desplegable-tit .txt-filtro { font: 13px 'lucida sans', arial, helvetica; color: #333 }
+.cnt-ficha .nav-aux .cont-desplegable-tit .form-control {display: inline-block; padding-top: 1px; padding-bottom: 2px; vertical-align: middle;border: none; font: 13px 'lucida sans', arial, helvetica; color: #333}
+.cnt-ficha .nav-aux .cont-desplegable-tit ul.desplegable{position: absolute; top: 35px; height: inherit; border: none; right: 15px;}
+.cnt-ficha .nav-aux .cont-desplegable-tit ul.desplegable li a {padding: initial ;   padding-left: 0px;}
+.cnt-ficha .nav-aux .cont-desplegable-tit .desplegable-tit {margin-top: 0; min-width: inherit; text-align: right;height: inherit; line-height: inherit;}
+.cnt-ficha .nav-aux .cont-desplegable-tit .desplegable-tit .label-filtro {padding-right: 5px}
+.cnt-ficha .nav-aux .desplegable-tit.arrow-desplegable.active::after {top: inherit; }
+
+/*************** ficha jugador estadísticas ***************/
+
+.cont-circulo-posesion.cont-circulo-tipo2 .content-piechart{display: block; margin: auto;}
+.content-info-piechart.piechart-tipo2 {width: 100%; padding-right: 25px; }
+.content-info-piechart.piechart-tipo2 ul{width: 100%;}
+.content-info-piechart.piechart-tipo2 ul li{width: 100%}
+.adi-info-est{margin: 0px 15px 10px; border-bottom: 1px dotted #DDD;}
+.adi-info-est p{font:bold 12px/34px Arial,Helvetica, Sans-Serif; color: #666;position: relative;}
+.adi-info-est .tipo-adi-info{margin: 0px 8px 3px;}
+.adi-info-est .rank-position-adi-info{margin: 0px 8px 1px;}
+.adi-info-est .tipo-adi-info:before{content: ""; position: absolute; bottom: -2px; left: 0px; right: 0px; height: 1px; background: #DDD;}
+.adi-info-est .tipo-adi-info span{float: right; font: bold 22px/34px "sourceblack",Arial, Helvetica, Sans-Serif; background: #f5f5f5; width: 50px; text-align: center; color: #D21300;}
+.adi-info-est .rank-position-adi-info span{float: right; font: bold 22px/34px "sourceblack",Arial, Helvetica, Sans-Serif; background: #f5f5f5; width: 50px; text-align: center; color: #D21300;}
+
+.cont-flex{-ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+  }
+.cont-flex > div{/*-webkit-flex: 3 2 2; flex: 3 2 2;*/ min-width: 31%; max-width: 47%; margin-right: 10px; margin-left: 10px;flex-shrink:0;}
+.cont-flex > div:nth-child(2){-webkit-flex: 2 3; flex: 2 3;}
+.cont-flex > div:nth-child(3){-webkit-flex: 3; flex: 3;}
+.cont-flex > div:nth-child(1){-webkit-flex: 2 3; flex: 2 3; flex-grow: 1;}
+.cont-flex > div:nth-child(4){-webkit-flex: 2 3; flex: 2 3;}
+
+
+/* Ficha jugador portada */
+
+.data-table.strong-border .table-estadisticas-team,
+.data-table.strong-border .table-estadisticas-player { width: auto; padding-bottom: 0px; padding-top: 0px;}
+.data-table.strong-border .table-estadisticas-player a{ display: block; width: auto;}
+.data-table.strong-border thead tr th { border-bottom: 1px solid #D6D6D6; }
+.data-table.strong-border thead tr th.destacado { border-bottom: 1px solid #333; border-right: 1px solid #EB9114;}
+.data-table.strong-border thead tr th.destacado:after{content: ""; position: absolute; left: -1px; top: 0px; bottom: 0px; background: #EB9114; width: 1px; height: auto;}
+.data-table.strong-border thead tr th,
+.data-table.strong-border tbody tr th,
+.data-table.strong-border tbody tr td { border-right: 1px solid #D6D6D6; }
+.data-table.strong-border thead tr th:last-child,
+.data-table.strong-border tbody tr td:last-child { border-right: 0 none; }
+
+.datos-ficha-jugador { width: 33.3%; float: left; padding-right: 10px; }
+.datos-ficha-jugador:last-child { padding-right: 0; }
+
+
+  /*** Lista definición horizontal ***/
+.inl-list-def dl, .inl-list-def dt, .inl-list-def dd {display: inline-block; font: 16px/22px "sourcesans", Arial, Helvetica; color: #CCCCCC;}
+.inl-list-def dl {padding: 0 20px 10px 0; position: relative;}
+.inl-list-def dt {padding: 0 10px 0 0;}
+.inl-list-def + .txt-linea {padding: 10px 0;}
+
+.arrow-dec-right:before {content: ""; position: absolute; transition:.2s;  right:0px; top:50%; bottom: 50%; border:5px solid transparent; border-left-color:#636363; margin-top: -2.5px;}
+.sbtit-lnk-arrow-r .arrow-dec-right:before {border-width: 4px; margin-top: -2px; top: 40%; bottom: 40%; border-left-color:#FFB632;}
+.sbtit-lnk-arrow-r {margin-top: -8px; margin-bottom: 6px; font: 12px/16px Arial, Helvetica; color: #666666;}
+.arrow-dec-right {padding-right: 18px; position: relative;}
+
+
+
+/*  Cruces  */
+
+.cruce { width: 215px; margin-bottom: 20px; position: absolute; }
+.cruce .zona-horaria { margin-bottom: 0; color: #666; }
+.cruce .zona-horaria a { font-size: 11px; color: #666; }
+.cruce .info-evento { background: #fff; }
+
+.resultado-cruce thead tr { display: none; }
+
+.resultado-cruce .equipo { background: #fff; text-align: left; }
+.resultado-cruce .equipo .eliminado .nombre-equipo{ opacity: 0.4; }
+.resultado-cruce .equipo a,
+.resultado-cruce .equipo span { position: relative; float: left; }
+.resultado-cruce .equipo .clasificado::before,
+.resultado-cruce .equipo .clasificado::before { content: ""; left: -7px; top: 0; bottom: 0; background: #FFB632; width: 2px; position: absolute; }
+.resultado-cruce .equipo a:hover { color: #666; }
+.resultado-cruce .resultado { background: #333; border-bottom: 1px solid #555; min-width: 34px; }
+.resultado-cruce .resultado.comenzado { background: #d90000; border-bottom: 1px solid #B70505; }
+.resultado-cruce .resultado.no-comenzado { background: #eb9114; border-bottom: 1px solid #D1831D; }
+.resultado-cruce tr:last-child .resultado { border-bottom: 0 none }
+.resultado-cruce .resultado a,
+.resultado-cruce .resultado span { color: #fff; font-size: 22px; font-weight: bold; }
+.resultado-cruce .equipo img { float: left; width: 32px; }
+.resultado-cruce .equipo img.equipo-escudo { float: left; width: 32px; }
+.resultado-cruce .equipo img.equipo-bandera { float: left; width: 32px; border: 1px solid #ddd; margin-top: 5px; padding: 1px 0; }
+.resultado-cruce .resultado .pen { font-size: 12px; }
+
+.resultado-cruce .info-evento li .icono { color: #666; font-size: 18px; line-height: 28px; margin-right: 5px; vertical-align: middle; }
+.resultado-cruce .info-evento .cont-tv li { float: left; }
+.resultado-cruce .info-evento .cont-tv img { display: inline-block; height: 20px; vertical-align: middle; width: auto; }
+.resultado-cruce .equipo .nombre-equipo { float: left; line-height: 32px; vertical-align: middle; padding-left: 5px; font-weight: bold; font-size: 13px;  max-width: 95px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }  
+
+.cruce .info-evento { width: 171px; padding: 0 5px; border-top: 1px solid #f2f2f2; }
+.cruce .info-evento .info-tv > li { float: left; width: 100%; }
+.cruce .info-evento .info-tv > li .icono { float: left; font-size: 17px; line-height: 30px; margin-right: 8px; }
+.cruce .info-evento .info-tv .cont-tv { display: block; margin-top: 4px;}
+.cruce .info-evento .cont-tv img { width: auto; float: left; }
+.cruce .info-evento .info-tv .cont-tv li { display: inline-block; padding-left: 5px; }
+.cruce .info-evento .bullet-list > li::before, .bullet-dec::before { background: 0 none; }
+
+
+/*Cruces desde semis*/
+.cruces-semifinal { border:1px solid #d9d9d9; border-top:0; position: relative; height: 368px;}
+
+.cruces-semifinal .sem-izq {top: 103px; left: 100px;}
+.cruces-semifinal .sem-izq-con {position: absolute; width: 210px; top: 149px; height: 1px; border-bottom: 8px solid #cecece; left: 195px;}
+
+.cruces-semifinal .sem-der {top:103px; right: 100px;}
+.cruces-semifinal .sem-der-con {position: absolute; width: 210px; top: 149px; height: 1px; border-bottom: 8px solid #cecece; right: 195px}
+
+.cruces-semifinal .tit-final {position: absolute; top:70px; left:464px; font: 20px/24px 'sourceblack',Arial,Helvetica; color: #5f5f5f }
+.cruces-semifinal .partido-final {top: 98px; width: 188px; left: 390px}
+
+/*Cruces cuartos*/
+.cruces-cuartos { border-bottom: 1px solid #ddd; height: 640px; margin-bottom: 25px; margin-top: 40px; position: relative;}
+.cruces-cuartos .cua-izq-1 {top:12px; left: 0;}
+.cruces-cuartos .cua-izq-2 {top:368px; left: 0;}
+.cruces-cuartos .cua-izq-con {position :absolute; left: 180px; height: 364px; width: 80px; border:8px solid #cecece; border-left:0; top:72px; }
+
+.cruces-cuartos .cua-der-1 {top: 12px; right: 0;}
+.cruces-cuartos .cua-der-2 {top: 368px; right: 0;}
+.cruces-cuartos .cua-der-con {position :absolute; right: 180px; height: 364px; width: 80px; border:8px solid #cecece; border-right:0; top:72px; }
+
+.cruces-cuartos .sem-izq {top: 190px; left: 115px;}
+.cruces-cuartos .sem-izq-con {position: absolute; width: 210px; top: 250px; height: 1px; border-bottom: 8px solid #cecece; left: 304px;}
+
+.cruces-cuartos .sem-der {top:190px; right: 115px;}
+.cruces-cuartos .sem-der-con {position: absolute; width: 210px; top: 250px; height: 1px; border-bottom: 8px solid #cecece; right: 304px}
+
+.cruces-cuartos .partido-final {top: 156px; left: 378px}
+.cruces-cuartos .partido-3y4 {top: 447px; left: 378px}
+.cruces-cuartos .final-con {border-left:8px solid #cecece; height: 92px; left: 483px; position: absolute; top: 336px; }
+.cruces-cuartos .final-3y4-con {display: none; }
+.cruces-cuartos .tit-final {position: absolute; top:120px; left:464px; font: 20px/24px 'sourceblack',Arial,Helvetica; color: #5f5f5f }
+.cruces-cuartos .tit-3y4 {position: absolute; top:280px; width: 110px; left:440px; font: 16px/20px 'sourceblack',Arial,Helvetica; color: #5f5f5f }
+
+.cruces-cuartos.partido-doble .oct-izq-con-1, .cruces-cuartos.partido-doble .oct-izq-con-2 {left: 168px;}
+.cruces-cuartos.partido-doble .oct-der-con-1, .cruces-cuartos.partido-doble .oct-der-con-2 {right: 168px;}
+.cruces-cuartos.partido-doble .cua-izq-con {left: 252px;}
+.cruces-cuartos.partido-doble .cua-der-con {right: 252px;}
+
+
+/*Cruces octavos*/
+.cruces-octavos { margin-top: 40px; border-bottom: 1px solid #ddd; height: 1072px; margin-bottom: 25px; position: relative; }
+
+.cruces-octavos .oct-izq-1{ top: 12px; left:0;}
+.cruces-octavos .oct-izq-2{ top: 361px; left:0;}
+.cruces-octavos .oct-izq-3{ top: 553px; left:0;}
+.cruces-octavos .oct-izq-4{ top: 898px; left:0;}
+.cruces-octavos .oct-izq-con-1{position :absolute; left: 215px; height: 356px; width: 84px; border:8px solid #ccc; border-left:0; top:72px; }
+.cruces-octavos .oct-izq-con-2{ position :absolute; left: 215px; height: 353px; width: 84px; border:8px solid #ccc; border-left:0; top:613px; }
+
+.cruces-octavos .oct-der-1{ top: 12px; right:0;}
+.cruces-octavos .oct-der-2{ top: 361px; right:0;}
+.cruces-octavos .oct-der-3{ top: 553px; right:0;}
+.cruces-octavos .oct-der-4{ top: 898px; right:0;}
+.cruces-octavos .oct-der-con-1{ position :absolute; right: 215px; height: 356px; width: 84px; border:8px solid #ccc; border-right:0; top:72px; }
+.cruces-octavos .oct-der-con-2{ position :absolute; right: 215px; height: 353px; width: 84px; border:8px solid #ccc; border-right:0; top:613px;  }
+
+.cruces-octavos .cua-izq-1 {top:188px; left: 100px;}
+.cruces-octavos .cua-izq-2 {top:725px; left: 100px;}
+.cruces-octavos .cua-izq-con {position :absolute; left: 315px; height: 545px; width: 84px; border:8px solid #ccc; border-left:0; top:248px; }
+
+.cruces-octavos .cua-der-1 {top: 188px; right: 100px;}
+.cruces-octavos .cua-der-2 {top: 725px; right: 100px;}
+.cruces-octavos .cua-der-con {position :absolute; right: 315px; height: 545px; width: 84px; border:8px solid #ccc; border-right:0; top:248px; }
+
+.cruces-octavos .sem-izq {top: 456px; left: 243px;}
+.cruces-octavos .sem-izq-con {border-bottom: 8px solid #ccc; height: 1px; left: 264px; position: absolute; top: 515px; width: 246px;}
+
+.cruces-octavos .sem-der {top:456px; right: 243px;}
+.cruces-octavos .sem-der-con {border-bottom: 8px solid #ccc; height: 1px; position: absolute; right: 275px; top: 515px; width: 231px;}
+
+.cruces-octavos .partido-final {top: 30px; left: 379px;}
+.cruces-octavos .partido-3y4 {bottom: 47px; left: 379px;}
+.cruces-octavos .final-con {border-left: 8px solid #ccc; height: 346px; left: 483px; position: absolute; top: 175px;}
+.cruces-octavos .final-3y4-con {position: absolute; height: 100px; top:315px; left:483px; border-left:8px solid #cecece; }
+
+.cruces-octavos .tit-final,
+.cruces-cuartos .tit-final {font: 20px/24px 'sourceblack',Arial,Helvetica;  background: #f2f2f2; color: #111; display: inline-block; left: 0; padding: 0 10px; position: relative; text-transform: uppercase; top: 0; }
+.cruces-octavos .cont-tit-final::before,
+.cruces-cuartos .cont-tit-final::before  { background: #111; bottom: 0; content: ""; height: 1px; left: 0; position: absolute; top: 11px; width: 100%; }
+.cont-tit-final { text-align: center; margin-bottom: 10px; }
+.cruces-octavos .tit-3y4 {position: absolute; top:418px; width: 110px; left:440px; font: 16px/20px 'sourceblack',Arial,Helvetica; color: #5f5f5f }
+
+.cruces-octavos.partido-doble .oct-izq-con-1, .cruces-octavos.partido-doble .oct-izq-con-2 {left: 168px;}
+.cruces-octavos.partido-doble .oct-der-con-1, .cruces-octavos.partido-doble .oct-der-con-2 {right: 168px;}
+.cruces-octavos.partido-doble .cua-izq-con {left: 252px;}
+.cruces-octavos.partido-doble .cua-der-con {right: 252px;}
+ 
+.cruces-octavos .fases-cruces  { margin-bottom: 20px; color: #666; text-transform: uppercase; font: bold 12px Arial,Helvetica; position: absolute; left: 0; top: -20px; width: 138px; z-index: 0; text-align: center; }
+.cruces-cuartos .fases-cruces { margin-bottom: 20px; color: #666; text-transform: uppercase; font: bold 12px Arial,Helvetica; position: absolute; left: 0; top: -20px; width: 138px; z-index: 0; text-align: center; }
+
+.cruces-octavos p.fases-cruces::before { left: 0; border-left: 1px dotted #dbdbdb; content: ""; position: absolute; top: -10px; height: 35px; }
+.cruces-octavos p.txt-semifinal-izq::before { border-right: 1px dotted #dbdbdb; right: 0; }
+.cruces-octavos p.txt-octavos-der::before { border-right: 1px dotted #dbdbdb; right: 0; }
+.cruces-octavos p.txt-final { display: none; }
+.cruces-octavos p.txt-octavos-izq { left: 0; }
+.cruces-octavos p.txt-cuartos-izq { left: 138px; }
+.cruces-octavos p.txt-semifinal-izq { left: 276px; }
+.cruces-octavos p.txt-semifinal-der { right: 276px; left: auto;  }
+.cruces-octavos p.txt-cuartos-der { right: 138px; left: auto;  }
+.cruces-octavos p.txt-octavos-der { right: 0; left: auto; }
+
+.cruces-cuartos p.fases-cruces::before { left: 0; border-left: 1px dotted #dbdbdb; bottom: 0; content: ""; position: absolute; top: -10px; height: 35px;  }
+.cruces-cuartos p.txt-semifinal-izq::before { border-right: 1px dotted #dbdbdb; right: 0; }
+.cruces-cuartos p.txt-cuartos-der::before { border-right: 1px dotted #dbdbdb; right: 0; }
+.cruces-cuartos p.txt-final { display: none; }
+.cruces-cuartos p.txt-cuartos-izq { left: 0; }
+.cruces-cuartos p.txt-semifinal-izq { left: 170px; }
+.cruces-cuartos p.txt-semifinal-der { right: 170px; left: auto;  }
+.cruces-cuartos p.txt-cuartos-der { right: 0; left: auto;  }
+
+/* Doble partido */
+
+/* .doble-partido .cruce tr td:last-child,
+.doble-partido .cruce tr td:last-child { border-left: 1px solid #555; } */
+.doble-partido .cruce .zona-horaria { width: auto; float: left; background: #F2F2F2; }
+.doble-partido .cruce .zona-horaria.vuelta { float: right; }
+.doble-partido  .resultado-cruce td.resultado { border-left: 1px solid #333; border-top: 1px solid #555; }
+.doble-partido  .resultado-cruce tr:first-child td.resultado { border-top: 0 none; }
+.doble-partido  .resultado-cruce td.resultado.comenzado { border-left: 0 none; }
+.doble-partido .resultado-cruce tr:nth-child(2) td.resultado.comenzado {  border-bottom: 1px solid #555;  } 
+
+.doble-partido .cruce .txt-ida,
+.doble-partido .cruce .txt-vuelta { background: #555; color: #aaa; font-size: 11px; }
+
+.doble-partido  .cruce .info-evento .info-tv .cont-tv,
+.partido-unico  .cruce .info-evento .info-tv .cont-tv { display: block; margin-top: 4px; vertical-align: middle; width: auto; }
+.doble-partido .resultado-cruce tr td:nth-child(2) { border-right: 1px solid #555; }
+
+/* Cruce baloncesto */  
+
+.oct-der-1 .drop-partidos, .oct-der-2 .drop-partidos, .oct-der-3 .drop-partidos, .oct-der-4 .drop-partidos,
+.cua-der-1 .drop-partidos, .cua-der-2 .drop-partidos,
+.sem-der .drop-partidos { right: 0; }
+
+/* Deplegable partidosCruces Balocnesto */
+.resultado a.info {position: relative; font-size: 10px; color: #fff; display: block; padding: 7px 20px 7px 6px; background: #3B3B3B;}
+.resultado.info { padding: 0; }
+.resultado .info:hover , .resultado .info:active {  background: #111111;}
+.resultado a.info::after { content: ""; position: absolute; right:6%; top: 44%; border: 5px solid transparent; border-top-color: #fff; }
+.resultado a.info.active::after{ content: ""; position: absolute; right:6%; top: 23%; border: 5px solid transparent; border-bottom-color: #fff; }
+.drop-partidos { border: 1px solid #efefef; position: absolute; z-index: 4 ; padding: 0px; background:#ffffff; margin-top: -1px;}
+.drop-partidos .partido{  font-weight: bold; font-size: 13px; }
+.drop-partidos .partido:last-child  { margin-bottom: 0 }
+.drop-partidos .partido .directo { display: flex ; }
+.drop-partidos .partido .directo:hover { opacity: .8; }
+.drop-partidos .partido .nombre-equipo {width: 110px; padding: 0 7px; height: 30px;line-height: 30px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.drop-partidos .partido .nombre-equipo:first-child{ text-align: right;} 
+.drop-partidos .partido .resultado {  padding: 0 7px;height: 30px;line-height: 30px; min-width: 40px; background:#333; color: #fff; text-align: center;border-bottom: 1px solid #555; border-right: 1px dotted #555; }
+.drop-partidos .partido .eliminado {    }
+.drop-partidos .resultado.no-comenzado {background: #eb9114; border-bottom: 1px solid #D1831D; }
+.drop-partidos .resultado.comenzado {background:#d90000; border-bottom: 1px solid #d90000;  }
+.drop-partidos .partido .fecha {font-size: 11px; font-weight: normal; min-width: 105px; border-left: 1px dotted #ddd; text-align: center; line-height: 29px;}
+.drop-partidos .partido .time-zone {font-size: 8px; margin-left: 4px; }
+
+
+/* FIN Cruces */
+
+
+/* CSS especifica Table-sorted */
+.tablesaw-sortable-head::before { content: ""; position: absolute; margin-top: 2.5px; top: 50%; bottom: 50%; right: 4px; border: 4px solid transparent; border-top-color:#000; }
+.tablesaw-sortable-head::after { content: ""; position: absolute; margin-top: -10px; top: 50%; bottom: 50%; right: 4px; border: 4px solid transparent; border-bottom-color:#000; }
+.tablesaw-sortable-head.tablesaw-sortable-ascending::after { margin-top: -8px; }
+.tablesaw-sortable-head.tablesaw-sortable-ascending::before { border: 0 none; } 
+.tablesaw-sortable-head.tablesaw-sortable-descending::before { margin-top: -1px; }
+.tablesaw-sortable-head.tablesaw-sortable-descending::after { border: 0 none; }
+
+.tablesaw-swipe th.tablesaw-cell-hidden, 
+.tablesaw-swipe td.tablesaw-cell-hidden { display: none; }
+
+/* Column navigation buttons for swipe and columntoggle tables */
+
+.tablesaw-advance .btn { -webkit-appearance: none; -moz-appearance: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; text-shadow: 0 1px 0 #fff; border-radius: .25em; }
+.tablesaw-advance .btn.btn-micro { font-size: .8125em; padding: .3em .7em .25em .7em; }
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn { display: inline-block; overflow: hidden; width: 2.2em; height: 2.2em; background-position: 50% 50%; margin-left: .5em; position: relative; background: #fff; border: 1px solid #808080; margin-top: .5em;}
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.left:before,
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.right:before,
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.down:before,
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.up:before { content: "\0020"; overflow: hidden; width: 0; height: 0; position: absolute; }
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.down:before { left: .5em; top: .65em; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #808080; }
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.up:before { left: .5em; top: .65em; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 5px solid #808080; }
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.left:before,
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.right:before { top: .55em; border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.left:before { left: .7em; border-right: 5px solid #808080; }
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.right:before { left: .8em; border-left: 5px solid #808080; }
+.tablesaw-advance a.tablesaw-nav-btn.disabled { opacity: .25; filter: alpha(opacity=25); cursor: default; pointer-events: none; }
+.tablesaw-advance { float: right; line-height: 44px; }
+.tablesaw-advance.minimap { margin-right: .4em; line-height: 18px; }
+.tablesaw-advance-dots { float: left; margin: 0; padding: 0; list-style: none; }
+.tablesaw-advance-dots li { display: table-cell; margin: 0; padding: .4em .2em; }
+.tablesaw-advance-dots li i { width: .4em; height: .4em; background: #555; border-radius: 100%; display: inline-block; }
+.tablesaw-advance-dots-hide { opacity: .25; filter: alpha(opacity=25); cursor: default; pointer-events: none; }
+.tablesaw-bar.mode-swipe { padding-right: 10px; width: 100%; height: 40px; background: #f9f9f9; border-bottom: 1px solid #DDD; }
+
+/* FIN  CSS especifica Table-sorted */
+
+
+/* Calendario de Especiales */
+
+	.e-fase {background: #cccccc none repeat scroll 0 0; display: inline-block; font: 16px/60px "sourceblack",Arial,Helvetica; padding-left: 20px; width: 100%; color: #FFFFFF;}
+	.resultados.cont-modulo .cnt-e-calendar .tit-modulo {font:14px/30px "sourcesans", Arial, Helvetica; padding-right: 20px; background: #CCCCCC; color: #FFFFFF; text-align: right;}
+	.resultados.cont-modulo .cnt-e-calendar .tit-modulo:before {border:none;}
+	.resultados.cont-modulo .cnt-e-calendar .tit-modulo .ronda {color: #FFFFFF; text-transform: uppercase;}
+	.resultados.cont-modulo .cnt-e-calendar .tit-modulo .fecha {margin-left: 10px;}
+	.resultados .cnt-e-calendar .cont-resultados ul {margin-top: 1px;}
+	.resultados .cnt-e-calendar .cont-resultados .grupo {width: 7%;}
+	.resultados .cnt-e-calendar .cont-resultados .grupo, .cnt-e-calendar .cont-resultados .estadio {float: left;}
+	.resultados .cnt-e-calendar .equipo-local, .resultados .cnt-e-calendar .equipo-visitante {width: 17%;}
+	.resultados .cnt-e-calendar .cont-resultados .nombre-equipo {font: 13px/36px "sourceblack", Arial, Helvetica;}
+	.resultados .cnt-e-calendar .info-evento {width: 28%;}
+	.resultados .cnt-e-calendar .cont-resultados .grupo, .resultados .cnt-e-calendar .cont-resultados .estadio {font:12px/36px "sourcesans", Arial, Helvetica; padding: 0 10px;}
+	.resultados .cnt-e-calendar .cont-resultados .grupo {background: #CCCCCC; position: relative; color: #FFFFFF; position: relative;}
+	/*.resultados .cnt-e-calendar .cont-resultados .grupo:after {position: absolute; content: " "; right: -20px; top: 0; width: 0; height: 0; border-top: 37px solid #CCCCCC; border-right: 20px solid transparent; }*/
+	.resultados .cnt-e-calendar .cont-resultados ul li {margin-bottom: 1px;}
+	.resultados .cnt-e-calendar .cont-resultados .estadio {padding: 0 10px 0 20px; width: 20%;} 
+	.resultados .cnt-e-calendar .cont-resultados .info-evento-int .cont-tv {width: 65%;}
+	.resultados .cnt-e-calendar .cont-resultados .info-evento-int .cont-fecha {width: 35%; float: right; text-align: right;}
+	.resultados .cnt-e-calendar .cont-resultados .bullet-list > li.cont-fecha:before {left: 10px;}
+
+	/* Calendario */
+	#capaCalendario .navegacion {margin-top: 15px;}
+	#capaCalendario .navegacion a {color: #FFFFFF;}
+	#capaCalendario .navegacion .anyoymes {margin: 0; font: 20px/34px "sourceblack",arial,helvetica; width: 60%; text-align: center; float: left;}
+	#capaCalendario .contenedor_calendario table tr th {text-align: center; font: 16px/32px "sourcesans", Arial, Helvetica; background: #EEEEEE;}
+	#capaCalendario .contenedor_calendario table tr th abbr {border-bottom: none;}
+	#capaCalendario .contenedor_calendario table tr td {cursor: pointer; font-size: 16px; background: #FFFFFF;}
+	#capaCalendario .contenedor_calendario table tr td .activo, #capaCalendario .contenedor_calendario table tr td a {color: #666666; background: #FFFFFF;}	
+	#capaCalendario .contenedor_calendario table tr td:hover {background: #eb9114; margin: 2px;}
+	#capaCalendario .contenedor_calendario table tr td.vacio {color: #dadada; background: #FFFFFF;}
+	#capaCalendario .contenedor_calendario table tr td:hover a {color: #FFFFFF; float: left; width: 100%; background: none;}
+	#capaCalendario .contenedor_calendario table th, #capaCalendario .contenedor_calendario table td, #capaCalendario .contenedor_calendario table tr {border: 1px solid #dddddd;}
+
+/* FIN Calendario de Especiales */
+
+/* Palmarés especiales */
+	.table-palmares-campeon a {text-transform: uppercase;}
+	.data-table .table-estadisticas-team.table-palmares-subcampeon .team-inline {font-weight: normal;}
+	.table-palmares-resultado {color: #e98d13; font: 18px/20px "sourceblack",Arial,Helvetica;}
+    
+    /* Revisión de tablas de palmarés */
+
+    .palmares .ficha { background: transparent; }
+
+    .palmares thead > tr > th,
+    .palmares tbody > tr > td { text-align: initial; }
+    .palmares thead > tr > th.s-tcenter,
+    .palmares tbody > tr > td.s-tcenter { text-align: center; }
+    .palmares thead > tr > th.s-tright,
+    .palmares tbody > tr > td.s-tright { text-align: right; }
+
+    .palmares thead > tr > th, 
+    .palmares tbody > tr > th,
+    .palmares tfoot > tr > th,
+    .palmares thead > tr > td,
+    .palmares tbody > tr > td,
+    .palmares tfoot > tr > td {  padding: 10px; font-size: 14px; }
+
+    .palmares thead > tr > th a,
+    .palmares tbody > tr > td a { border-bottom: 1px dotted #bbb; padding-bottom: 3px; }
+
+    .palmares thead > tr > td a:hover,
+    .palmares tbody > tr > td a:hover { color: #E68C12; border-bottom: 1px solid #bbb; } 
+
+    .palmares .data-table thead tr th { text-transform: uppercase; color: #E68C12; font-size: 11px; }
+    
+    .palmares .table-hover > tbody > tr:hover { background-color: #EFECE3; }
+    .palmares thead > tr > th[colspan], .palmares tbody > tr > td[colspan] { text-align: center; }
+
+    .palmares .data-table .txt-ext { color: #7c7c7c; font-size: 12px; }
+
+    .palmares .nota-pie { padding: 10px; padding-top: 18px; font: 13px/17px sans-serif;  border-top: 1px solid #ebebeb; position: relative; }
+    
+    .palmares .nota-pie .txt-nota-pie {
+        margin-bottom: 8px; }
+    
+    .palmares .nota { vertical-align: super; font-size: 12px; margin-left: 3px; font-weight: bold; color:#7c7c7c;}
+    .palmares .volver { margin-right: 5px; font-weight: bold; color:#7c7c7c; }
+    .palmares a.volver { border-bottom: 1px dotted #bbb; }
+    .palmares .ancla { position: absolute; top: -40px; }
+    .palmares .data-table .tit2-table {  
+        background: #fff; padding: 12px; font-weight: bold; }
+    .palmares .data-table .destacada { background: #e2e2e2;}
+    .palmares .data-table td img { 
+        float: left; height: 17px; width: auto; margin-right: 6px; margin-top: 3px; border: 1px solid #ddd; padding: 1px; } 
+
+/******* ciclismo *******/
+
+.ciclismo .cont-clasificacion .data-table { margin-top: 0; }
+.ciclismo .nombre .bandera { float: left; height: 19px; width: 26px; padding: 1px; background: #fff; margin-right: 6px; overflow: hidden; border: 1px solid #ddd;}
+.ciclismo .nombre .pais { color: #666; margin-left: 5px; margin-bottom: 5px; }
+
+.ciclismo .cont-recorrido { margin: 20px; }
+.ciclismo .data-calendar-first-info { font: 14px/16px Arial,Helvetica,sans-serif; }
+.ciclismo .data-calendar-specs-info .m-data-box { background: none; border: 0 none; display: inline-block; margin-top: -4px; vertical-align: middle; }
+.ciclismo .data-calendar-box .perfil-etapa { position: absolute; bottom: 0; left: 0; z-index: 3; }
+.ciclismo .cont-grafico { width: 70%; float: left; }
+.ciclismo .cont-info { width: 30%; float: left;}
+.ciclismo .cont-mallots { border-top: 1px solid #E6E7E8; float: left; padding-top: 20px; width: 100%; margin-top: 20px; }
+.ciclismo .mallots { width: 25%; float: left; }
+.ciclismo .mallots span { margin-right: 5px; }
+.ciclismo .cont-mallots .tipo-mallot { font: 18px/20px arial,helvetica; color: #444; text-transform: uppercase; }
+.ciclismo .cont-mallots .color-mallot { font: 17px arial,helvetica; color: #FFB800; }
+
+.ciclismo .cont-grafico-datos { color: #333; font-size: 13px; line-height: 20px; margin-top: 20px; }
+.ciclismo .cont-grafico-datos > li { border-bottom: 1px solid #e6e7e8; margin-bottom: 8px; padding-bottom: 8px; }
+.ciclismo .cont-grafico-datos .datos-name { float: left; font-weight: bold; }
+.ciclismo .cont-grafico-datos .datos-value { float: right; }
+.ciclismo .m-data-box { background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #535353 0%, #363636 100%) repeat scroll 0 0; border: 1px solid #a1a1a1; border-radius: 50%; color: #ffffff; font: bold 20px/38px Arial,Helvetica; margin-right: 7px; }
+.ciclismo .cont-info .tit-salida,
+.ciclismo .cont-info .tit-llegada { font: bold 18px/38px arial,helvetica; color: #FFB800; vertical-align: middle; }
+.ciclismo .cont-info .cont-salida-llegada { margin-bottom: 10px; }
+.ciclismo .cont-info .tit-etapas { font: bold 16px arial,helvetica; color: #000; text-transform: uppercase; margin-top: 30px; margin-bottom: -5px; }
+
+.ciclismo .cont-grafico-datos.etapas .ico-m-contrarreloj.ico-S { background-position: -23px -17px; background-size: 750% auto; }
+.ciclismo .cont-grafico-datos.etapas .ico-m-llana.ico-S { background-position: 1px -17px; background-size: 750% auto; }
+.ciclismo .cont-grafico-datos.etapas .ico-m-media-montana.ico-S { background-position: -50px -17px; background-size: 750% auto; }
+.ciclismo .cont-grafico-datos.etapas .ico-m-montana.ico-S { background-position: -77px -16px; background-size: 750% auto; }
+.ciclismo .cont-grafico-datos.etapas li { line-height: 26px; vertical-align: middle; }
+.ciclismo .cont-info .etapas-totales { background: #F9F9F9; font: bold 14px arial,helvetica; color: #000; margin-top: 25px; text-transform: uppercase; padding: 7px 5px; }
+.ciclismo .cont-info .etapas-totales .num { font: bold 18px/15px arial,helvetica; color: #EB9114; float: right; }
+.ciclismo .data-calendar-box::before { background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(189, 177, 145, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%) repeat scroll 0 0; bottom: 0; content: ""; height: 50%; left: 0; opacity: 0.85; position: absolute; width: 100%; z-index: 2; }
+.ciclismo .info-palmares .inline-list { margin-left: 40px}
+.ciclismo .data-calendar-main-name { min-height: 48px; }
+
+.ciclismo .container-team{margin-bottom: 10px; min-height: 430px; background: #FFF; padding: 10px; position: relative;}
+.ciclismo .name-data-team{font: 13px Arial, Helvetica, Sans-Serif; color: #333;}
+.ciclismo .name-data-team:last-child .team-name { margin-bottom: 0; }
+.ciclismo .team-name{ display: inline-block; max-width: 95%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: bold 13px Arial, Helvetica, Sans-Serif; color: #333; display: block; margin-left: 10px; margin-top: 5px; margin-bottom: 10px;}
+.ciclismo .team-name .team-data-name-number{margin-right: 5px; font-size: 16px;}
+.ciclismo .team-name img{width: 20px; display: inline-block; margin-right: 10px; margin-top: 2px;}
+.ciclismo .team-resource{position: absolute; top: 0px; right: 10px;}
+.ciclismo .team-resource img{width: 120px; height: auto;}
+.ciclismo .cont-equipos { display: flex; flex-wrap: wrap; }
+.ciclismo .cont-clasificacion .cont-btn-clasificacion { padding-left: 10px; padding-right: 10px; }
+.ciclismo .utiles-narracion-clasificacion{width: 100%; margin-top: 10px;}
+.ciclismo .utiles-narracion-clasificacion .tabs{width: 100%; margin-left: -2px;}
+.ciclismo .cont-clasificacion .tabla-navigation a{margin-bottom: 10px;}
+.ciclismo .link-mas-info { float: none; }
+.ciclismo img.maillot { width: 100px; height: auto; }
+.ciclismo .main-name-in-row.nombre {border: 0; }
+
+	/*Calendario UCI*/
+	.cont-calendario-uci .cont-modulo {border-top: 3px solid #ffb635; padding: 10px; font-family: "sourcesansbold", Arial, Helvetica, Sans-serif; font-size: 16px;}
+	.cont-calendario-uci .bandera {display: inline-block; margin-right: 4px; vertical-align: middle; width: 40px; border: 1px solid #ddd; padding: 1px; margin-bottom: 4px; margin-left: -1px;}
+	.cont-calendario-uci .tit-info-detalle {border-bottom: 1px solid #ddd; font-size: 20px; line-height: 23px; min-height: 52px;}
+	.cont-calendario-uci .tit-info-detalle a, .cont-calendario-uci .tit-info-detalle span {display: block; min-height: inherit;}
+	.cont-calendario-uci .tit-info-detalle a:hover {color: #E68C12;}
+	.cont-calendario-uci .fecha {font-family: "sourcesans", Arial, Helvetica, Sans-serif; color: #666; }
+
+
+
+/*** Imagenes ***/
+.sprite-ciclismo {background: url("/img/especiales/ciclismo/sprite-ciclismo.png") 0 0 no-repeat transparent;}
+.sprite-ciclismo-directo { background: transparent url("/img/especiales/ciclismo/sprite-ciclismo-directo_1.png") no-repeat scroll 0 0; }
+
+.ico-S { height: 25px; width: 25px; }
+.ico-M {width: 38px; height: 38px;}
+.ico-m-llana {background-position:0 -27px;}
+.ico-m-bici {background-position:-247px -26px;}
+.ico-m-meta {background-position:-203px -25px;}
+.ico-m-pivote {background-position:-164px -23px;}
+.ico-m-contrarreloj {background-position:-38px -28px;}
+.ico-m-montana {background-position:-124px -28px;}
+.ico-m-media-montana {background-position: -80px -28px;}
+
+
+.ico-bicicleta {background-position: 0 8px;}
+.ico-s-ciclismo {width: 20px; height: 20px;}
+.ico-s-llana {background-position: -8px -5px; }
+.ico-s-contrarreloj {background-position: -47px -5px;}
+.ico-s-media-montana {background-position: -92px -4px;}
+.ico-s-montana {background-position: -133px -4px;}
+.ico-s-avion {background-position:-169px -2px;}
+
+.ico-m-maillot-lider { background-position: -9px -111px; }
+.ico-m-maillot-montana { background-position: -64px -111px; }
+.ico-m-maillot-regularidad { background-position: -171px -111px; }
+.ico-m-maillot-joven { background-position: -119px -111px; }
+
+
+/******* motor *******/
+
+/* calendario */
+.data-calendar-box{position: relative; background: #FFF;}
+.data-calendar-box img{-webkit-transition: all 1s; /* Safari */transition: all 1s; margin: auto; width: 100%}
+.data-player-box{width: 175px; margin: auto;}
+.data-calendar-number{color: #FFF; background: #FFB713; border-radius: 50%; position: absolute; left: 8px; top: 8px; width: 35px; height: 35px; text-align: center; font: 20px/35px "sourceblack", Arial, Helvetica, Sans-Serif;}
+.data-calendar-info{background: #333; padding: 10px; position: relative;}
+.data-calendar-first-info{ margin-bottom: 3px; font: 14px/16px Arial, Helvetica, Sans-Serif; color: #FFF; position: relative; z-index: 3; font-weight: bold;}
+.data-calendar-second-info{color: #999; position: relative; z-index: 3; font-weight: normal; clear: both;}
+.data-calendar-main-name{ color: #FFB713; font: 22px/24px "sourceblack", Arial, Helvetica, Sans-Serif;-webkit-transition: color 1s; /* Safari */transition: color 1s; position: relative; z-index: 3;}
+.data-calendar-specs-info{font: 18px/22px Arial, Helvetica, Sans-Serif; color: #FFF; position: relative; z-index: 3; }
+.data-calendar-specs-type-info{color: #666; font-size: 13px;}
+.data-calendar-flag-content{position: absolute;right: 0px; top: 0px;width: 125px; height: 100%; overflow: hidden;}
+.data-calendar-flag-gradient{width: 80px; height: 100%; position: absolute; left: 0px; top: 0px; z-index: 1;
+    background: rgba(51,51,51,1);
+background: -moz-linear-gradient(left, rgba(51,51,51,1) 0%, rgba(51,51,51,1) 32%, rgba(51,51,51,0) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(51,51,51,1)), color-stop(32%, rgba(51,51,51,1)), color-stop(100%, rgba(51,51,51,0)));
+background: -webkit-linear-gradient(left, rgba(51,51,51,1) 0%, rgba(51,51,51,1) 32%, rgba(51,51,51,0) 100%);
+background: -o-linear-gradient(left, rgba(51,51,51,1) 0%, rgba(51,51,51,1) 32%, rgba(51,51,51,0) 100%);
+background: -ms-linear-gradient(left, rgba(51,51,51,1) 0%, rgba(51,51,51,1) 32%, rgba(51,51,51,0) 100%);
+background: linear-gradient(to right, rgba(51,51,51,1) 0%, rgba(51,51,51,1) 32%, rgba(51,51,51,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#333333', GradientType=1 );}
+.data-calendar-flag{height: 100%; position: absolute;right: -22px;top: 0px; z-index: 0; opacity: .4;}
+a:hover .data-calendar-box img{-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */filter: grayscale(100%); -webkit-transition: all 1s; /* Safari */transition: all 1s;} 
+a:hover .data-calendar-main-name{-webkit-transition: color 1s; /* Safari */transition: color 1s; color: #FFF;}
+
+.cal-title{font: 50px/50px "sourceblack", Arial, Helvetica; color: #FFB713; margin-left: 50px; text-transform: uppercase; position: relative;z-index: 9;}
+.cal-title:after{content: " "; height: 150px; position: absolute; left: -50px; right: 0px; bottom: 0px; z-index: -1;
+background: rgba(0,0,0,0);
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.9) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(35%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.9)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.9) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.9) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.9) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.9) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );}
+.cal-country{font: 18px/22px Arial, Helvetica; color: #FFF; margin-left: 50px; margin-top: -72px; text-transform: uppercase; position: relative; z-index: 10;}
+.cal-country .cal-title-date{color: #BBB; margin-left: 5px;}
+
+/*  Ficha circuito  */
+.info-ficha-motor {  }
+.info-ficha-motor .img-ficha-motor { margin-top: -7px; width: 100% }
+.info-ficha-motor .info-carrera { width: 100%; text-align: center; }
+.info-ficha-motor .info-carrera li { display: inline-block; text-align: left; padding: 20px; }
+
+    .info-ficha-motor .info-carrera .ico-calificacion, .info-ficha-motor .info-carrera .ico-carrera { position: relative; }
+    .info-ficha-motor .info-carrera .ico-calificacion:after, .info-ficha-motor .info-carrera .ico-carrera:after { position: absolute; top: -2px; left: -20px; font-family: 'as-icons'; }
+    .info-ficha-motor .info-carrera .ico-calificacion:after { content: "\e61f"; }
+    .info-ficha-motor .info-carrera .ico-carrera:after { content: "\e604"; } 
+    
+    .info-ficha-motor .info-carrera .title { position: relative; }
+    .info-ficha-motor .info-carrera .dato { font-size: 13px; }
+    .info-ficha-motor .info-carrera .ver-mas { position: relative; transition:color .25s; }
+      .info-ficha-motor .info-carrera .ver-mas:hover { color:#F9A300;}
+      .info-ficha-motor .info-carrera .ver-mas:after { content: ""; display: inline-block; top: 50%; margin-top: -2px; margin-left: 5px; border: 5px solid transparent; border-left-color: #F9A300; }
+
+    .info-ficha-motor .cont-grafico img { width: 100%; height: auto; padding: 10px 20px 10px 10px;    margin: 20px 10px 0px 10px; }
+    .info-ficha-motor.mundial-resistencia .cont-grafico img { width: 60%; margin: auto; padding: 0;}
+
+
+
+     .info-ficha-motor .cont-grafico-leyenda { background: #EFECE3; padding: 10px; margin:10px; font-size: 12px; color:#464646;}
+        .info-ficha-motor .cont-grafico-leyenda li { margin-bottom: 10px; position: relative; padding-top:2px; padding-left: 25px; }
+        .info-ficha-motor .cont-grafico-leyenda li:last-child { margin-bottom: 0; }
+
+        .info-ficha-motor .cont-grafico-leyenda [class^="ico-"]:before { content:''; position: absolute; top:0; left: 0; vertical-align: middle; background: url(/img/motor/comunes/sprite_icons_motor.svg) no-repeat; height: 19px; }
+          
+          .info-ficha-motor .cont-grafico-leyenda .ico-crono { padding-left: 36px; }
+          .info-ficha-motor .cont-grafico-leyenda .ico-crono:before { background-position: -1px -1px; width: 30px; }
+          .info-ficha-motor .cont-grafico-leyenda .ico-cambio { padding-left: 36px; }
+          .info-ficha-motor .cont-grafico-leyenda .ico-cambio:before { background-position: -33px -1px; width: 30px; }
+          .info-ficha-motor .cont-grafico-leyenda .ico-kmh { padding-left: 53px;}
+          .info-ficha-motor .cont-grafico-leyenda .ico-kmh:before { background-position: -1px -21px; width: 47px; }
+          .info-ficha-motor .cont-grafico-leyenda .ico-drs:before { background-position: -1px -41px; width: 19px; }
+          .info-ficha-motor .cont-grafico-leyenda .ico-drs1:before { background-position: -21px -41px; width: 19px; }
+          .info-ficha-motor .cont-grafico-leyenda .ico-drs2:before { background-position: -41px -41px; width: 19px; }
+          .info-ficha-motor .cont-grafico-leyenda .ico-crv-dcha:before { background-position: -42px -61px; width: 19px; }
+          .info-ficha-motor .cont-grafico-leyenda .ico-crv-izq:before { background-position: -22px -61px; width: 19px; }
+          .info-ficha-motor .cont-grafico-leyenda .ico-cron-motos:before { background-position: -22px -109px; width: 19px; }
+          .info-ficha-motor .cont-grafico-leyenda .ico-maxvel-motos:before { background-position: -2px -109px; width: 19px; }
+          .info-ficha-motor .cont-grafico-leyenda .ico-linea-motos:before { background-position: -42px -109px; width: 19px; }
+
+          .info-ficha-motor .cont-grafico-leyenda .ico-linea:before { background-position: -1px -61px; width: 19px; }
+          .info-ficha-motor .cont-grafico-leyenda .ico-curva { padding-left: 28px; }
+          .info-ficha-motor .cont-grafico-leyenda .ico-curva:before { background-position: -1px -81px; width: 28px; height: 27px; left: -3px; top: -4px; }
+
+      .info-ficha-motor .cont-grafico-datos { padding: 10px; margin:10px; color: #333; font-size: 13px; line-height: 20px; }
+        .info-ficha-motor .cont-grafico-datos>li { margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #E6E7E8;}
+        .info-ficha-motor .cont-grafico-datos>li:last-child { border-bottom: none; }
+        .info-ficha-motor .cont-grafico-datos .datos-name { float: left; font-weight: bold; }
+        .info-ficha-motor .cont-grafico-datos .datos-value { float: right; }
+          .info-ficha-motor .cont-grafico-datos p.datos-name { float: none; }
+          .info-ficha-motor .cont-grafico-datos p.datos-value { float: none; }
+
+/* escuderías y pilotos*/
+.motor-team{background: #FFF; padding: 20px 20px 10px 20px; border: 1px solid #ddd;}
+.motor-team .motor-team-info{margin-bottom: 32px; position: relative;}
+.motor-team  .motor-team-info .motor-team-info-name{display: inline-block; font: 40px/50px "sourceblack", Arial, Helvetica; vertical-align: top; margin-top: 5px; text-shadow: 1px 1px 3px #BBB; color: #333;}
+.motor-team .motor-team-info img{display: inline-block;}
+.motor-team .motor-team-model{position: relative;}
+.motor-team .motor-team-model img{position: relative; z-index: 3; -webkit-transition: all 1s; transition: all 1s;}
+.motor-team .motor-team-model:after{content: "";background: #F4F4F4;position: absolute;bottom: -10px;left: -20px;right: -20px;width: auto;height: 75px;z-index: 0;}
+.motor-team .motor-team-model .motor-team-model-name{position: absolute; right: 0px; top: 0px; font: 16px/16px "sourceblack", Arial, Helvetica; color: #FFB713; z-index: 3;}
+.motor-team-goto{font-size: 12px;color: #666;margin-bottom: 15px;margin-top: -10px;padding-right: 17px;text-align: left; display: inline-block; position: absolute;left: 69px;top: 58px;}
+.motor-team-goto:after{content: "";position: absolute;right: 0;top: 50%;margin-top: -5px;bottom: 50%;border: 5px solid transparent;border-left-color: #ffb632;}
+.motor-rider-goto{font-size: 12px;color: #999;margin-top: -10px;margin-left: 17px;padding-right: 17px;text-align: left; display: inline-block; position: relative; z-index: 3;}
+.motor-rider-goto:after{content: "";position: absolute;right: 0;top: 50%;margin-top: -5px;bottom: 50%;border: 5px solid transparent;border-left-color: #ffb632;}
+.motor-team:hover .motor-team-info .motor-team-goto{color: #000;}
+.motor-team:hover .motor-team-info .motor-team-info-name{color: #000;}
+.motor-team:hover .motor-team-model img{-webkit-transition: all 1s; transition: all 1s; -webkit-filter: grayscale(100%);filter: grayscale(100%);}
+
+.motor-rider-img{ padding-left: 10px; padding-right: 10px;}
+.motor-rider-name{font: 18px/18px "sourceblack", Arial, Helvetica; color: #FFB713; margin-left: 17px;}
+.rider-content-box{border: 1px solid #ddd;}
+.rider-info-box{margin-bottom: -1px; margin-left: -1px; margin-right: -1px; min-height: 76px;}
+.rider-info-box i{color: #FFF; font-size: 11px; margin-top: 2px;}
+
+
+/*** Clasificaciones motor ***/
+
+
+			.cont-clasificacion.formula1 thead > tr > th, .cont-clasificacion.formula1 tbody > tr > th, .cont-clasificacion.formula1 tfoot > tr > th, .cont-clasificacion.formula1 thead > tr > td, .cont-clasificacion.formula1 tbody > tr > td{padding: 4px}
+
+
+			.cont-clasificacion.formula1 thead tr th{ font-size: 10px; padding: 6px;}
+			.cont-clasificacion tr .main-name-in-table{width: 250px; border-top: 0 none; border-left: 0 none; position: relative; overflow: hidden;}			.main-name-in-row{margin-left: 5px;color: #101010;float: left;max-width: 57%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: auto; border-left: 0 none;}
+
+			.cont-clasificacion tr .main-name-in-table .sube{color: #2DB200;font-weight: bold;padding-left: 10px;position: relative;font-size: 12px; margin-right: 5px;}
+			.cont-clasificacion tr .main-name-in-table .sube::before {top: 4px;border-color: transparent transparent #2DB200;border-style: solid;border-width: 5px;content: " ";left: 12px;margin-left: -14px;position: absolute;}
+			.cont-clasificacion tr .main-name-in-table .baja{color: #D90000;font-weight: bold;padding-left: 10px;position: relative;font-size: 12px; margin-right: 5px;}
+			.cont-clasificacion tr .main-name-in-table .baja::before {top: 9px;border-color: #D90000 transparent transparent;border-style: solid;border-width: 5px;content: " ";left: 12px;margin-left: -14px;position: absolute;}
+
+			/* colores en la tabla por posición */
+			.main-name-in-table:before{ content: "";left: 0;position: absolute;top: -1px; bottom:-1px; width: 5px;}
+			.cont-clasificacion .primer-clas{position: relative;}
+			.cont-clasificacion .primer-clas:before{background: #CB0000;}
+			.cont-clasificacion .second-clas:before{background: #EB9114;}
+			.cont-clasificacion .third-clas:before{background: #FFBC23;}
+
+			/* colores en leyenda */
+			/* .leyenda-clasificacion .primer-clas span:before{background: #CB0000;content: "";height: 20px;left: 0;position: absolute;top: -2px;width: 5px;}
+			.leyenda-clasificacion .second-clas span:before{background: #F9A302;content: "";height: 20px;left: 0;position: absolute;top: -2px;width: 5px;}
+			.leyenda-clasificacion .third-clas span:before{background: #FFB713;content: "";height: 20px;left: 0;position: absolute;top: -2px;width: 5px;}
+			*/
+
+			.leyendaf1 li{padding-left: 0px;}
+
+			.cont-clasificacion tr .main-name-in-table .pos {color: #B2B2B2;float: left;margin-right: 3px;text-align: right;width: 16px;}
+			.cont-clasificacion .main-name-in-table span, .cont-clasificacion .main-name-in-table a {line-height: 21px;vertical-align: middle;} 
+
+			/* puntos en la tabla */
+			.table-refer-position{background: #666;color: #fff;font-weight: bold; padding: 4px 5px 5px;border-radius: 50%;}
+			.table-refer-winner{background: #CB0000;}
+			.table-refer-second{background: #E89700;}
+			.table-refer-third{background: #FFB713;}
+
+			.clasi-spa, .clasi-esp{position: absolute; background: #C60000;right: -9px;top: -4px;width: 22px;height: 13px;-ms-transform: rotate(45deg); /* IE 9 */-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */transform: rotate(45deg);}
+			.clasi-spa:after, .clasi-esp:after{content: ""; position: absolute; top: 7px; right: 0px; background: #F7EF00; width: 20px; height: 3px;}
+
+
+/* Leyendas */
+
+.leyendas .data-calendar-main-name { bottom: 3px; left: 10px; position: absolute; color: #fff; text-transform: uppercase; }
+.leyendas .data-calendar-box::before { background: rgba(189,177,145,0);
+		background: -moz-linear-gradient(top, rgba(189,177,145,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(189,177,145,0)), color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,1)));
+		background: -webkit-linear-gradient(top, rgba(189,177,145,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		background: -o-linear-gradient(top, rgba(189,177,145,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		background: -ms-linear-gradient(top, rgba(189,177,145,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		background: linear-gradient(to bottom, rgba(189,177,145,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdb191', endColorstr='#000000', GradientType=0 );
+
+		opacity: 0.85; bottom: 0; content: ""; height: 50%; left: 0; position: absolute; width: 100%; z-index: 2; }
+
+.leyendas .data-calendar-info { padding-bottom: 0; }
+.leyendas .cont-titulos { float: left; line-height: 50px; padding-left: 38px; position: relative; width: 40%; z-index: 10; }
+.leyendas .cont-carreras { float: left; line-height: 50px; padding-left: 38px; position: relative; width: 53%; margin-left: 7%; z-index: 10; }
+.leyendas .txt-titulos,
+.leyendas .txt-carreras { color: #FFB713; font: bold 18px "sourcesans",Arial,Helvetica; }
+.leyendas .num-titulos,
+.leyendas .num-carreras { color: #ffF; font: bold 23px "sourcesans",Arial,Helvetica; }
+.leyendas .data-calendar-first-info { color: #fff; font: bold 16px/16px Arial,Helvetica,sans-serif; position: relative; z-index: 3; }
+.leyendas .data-calendar-number { left: 0; font: 20px/32px "sourceblack",Arial,Helvetica,sans-serif; height: 33px; width: 33px; }
+.leyendas .data-calendar-number .icono { font-size: 23px; vertical-align: middle; }
+
+
+/*** Ficha Leyendas Motor ***/
+   .motor .ficha-leyenda .container-hdr-art{position:relative}
+
+   .motor .ficha-leyenda .img-dest-art:before{content:" ";height:150px;width:988px;position:absolute;left:0 ;bottom:0;z-index:1;background:rgba(0,0,0,0);background:-moz-linear-gradient(top,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 35%,rgba(0,0,0,0.9) 100%);background:-webkit-gradient(left top,left bottom,color-stop(0%,rgba(0,0,0,0)),color-stop(35%,rgba(0,0,0,0)),color-stop(100%,rgba(0,0,0,0.9)));background:-webkit-linear-gradient(top,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 35%,rgba(0,0,0,0.9) 100%);background:-o-linear-gradient(top,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 35%,rgba(0,0,0,0.9) 100%);background:-ms-linear-gradient(top,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 35%,rgba(0,0,0,0.9) 100%);background:linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 35%,rgba(0,0,0,0.9) 100%)}
+   .motor .ficha-leyenda .info-ficha-motor .img-ficha-motor{  margin-top: 0}
+   .motor .ficha-leyenda .img-dest-art{overflow:hidden}
+   .motor .ficha-leyenda .img-ficha-motor{width:100%}
+   .motor .ficha-leyenda .cont-modulo { padding-top: 1px}
+   .motor .ficha-leyenda .datos-ficha-jugador {width: inherit;}
+   .motor .ficha-leyenda .nombre-piloto{font:50px/50px sourceblack,Arial,Helvetica;color:#FFB713;text-transform:uppercase;position:absolute;z-index:9;bottom:7px;left:21px}
+   .motor .ficha-leyenda .cnt-datos-trofeos-motor {margin-left: 0;}
+   .motor .ficha-leyenda .info-palmares {  position: relative;}
+   .motor .ficha-leyenda .blq-palmares-motor {margin-bottom: 20px;}
+   .motor .ficha-leyenda .int-data-motor-stats-link{ position: absolute;right: 0}
+   .motor .ficha-leyenda .int-data-motor-stats-link.no-link {     right: 25px; padding-right: 1px;}
+   .motor .ficha-leyenda .int-data-motor-stats-link.no-link:after {display: none;}
+   .motor .ficha-leyenda .blq-palmares-motor .cnt-datos-trofeos-motor ul.s-left { margin-right: 20px;}
+   .motor .ficha-leyenda .list-ball-yellow li { margin-bottom: 10px; margin-right: 15px;   }
+   .motor .ficha-leyenda .int-data-player-image2.s-inb{ vertical-align: top;}
+   .motor .ficha-leyenda .yellow {font: 20px/36px "sourceblack", Arial, Helvetica, Sans-Serif;color: #FFB714; margin-right: 10px; position: relative; }
+   .motor .ficha-leyenda .grey {font: bold 14px  Arial, Helvetica, Sans-Serif;color: #535353;}
+   .motor .ficha-leyenda .yellow::after { content: ""; position: absolute; left: 45px; top: 50%; margin-top: -5px; bottom: 50%; border: 5px solid transparent; border-left-color: #ffb632; }
+   .motor .ficha-leyenda .data-list-horiz { position: relative; } 
+   .motor .ficha-leyenda .data-list-horiz ul {border: none; } 
+   .motor .ficha-leyenda .data-list-horiz ul li:first-child, .motor .ficha-leyenda .data-list-horiz .cnt-copa::before{ background: #f2f2f2;}
+   .motor .ficha-leyenda .data-list-horiz ul li.gris{ background: #555555}
+   .motor .ficha-leyenda .data-list-horiz.no-mas-estadisticas .txt-competicion {margin-bottom: 0; }
+   .motor .ficha-leyenda .data-list-horiz.no-mas-estadisticas .txt-ano-competicion {font-size: 16px; }
+   .data-list-horiz .txt-secundario { color: #CCC;}
+   .motor .ficha-leyenda .text-asdatos h2, .motor .ficha-leyenda .text-asdatos  h3, .motor .ficha-leyenda .text-asdatos  h4{  color: #666666;}
+   .motor .ficha-leyenda .text-asdatos h2 {font-size: 18px; border-bottom: 1px dotted #CCCCCC; margin-bottom: 10px;  }
+   .motor .ficha-leyenda .text-asdatos h3 {font-size: 26px;    margin-bottom: 5px; }
+   .motor .ficha-leyenda .text-asdatos h4 {font-size: 14px; background: #FFB713; color: white; display: inline-block; margin-bottom: 10px; padding: 0 10px; border-radius: 0 15px 13px 0;}
+   .motor .ficha-leyenda .text-asdatos p{ margin-bottom: 10px}
+   .motor .ficha-leyenda .text-asdatos .content-photo-dest-ficha{ margin-top: 0}
+ 
+
+
+/* FIN Leyendas */
+
+
+	
+/* Ciclismo Favoritos*/
+.ciclismo .leyendas .cont-titulos, .leyendas .cont-carreras{ width: inherit; float: none; margin-left: inherit;}
+.ciclismo .leyendas .favorito .cont-titulos  { display: inline-block; width: 45%; float: left;margin-left: inherit;}
+.ciclismo .leyendas .favorito .cont-carreras { display: inline-block;   }
+.ciclismo .leyendas .favorito .data-calendar-box{ height: inherit;max-height: 278px;}
+.ciclismo .leyendas .data-calendar-flag{ height: 60px; right: -5px; opacity: .5;}
+.ciclismo .leyendas .data-calendar-flag-gradient{ height: 60px;left: 20px; }
+.ciclismo .leyendas .list-ball-yellow {width: 60%; }
+.ciclismo .leyendas .list-ball-yellow li { color: #fff; font-family: sourcesans, arial, sans-serif;font-size: 15px; white-space: nowrap}
+.ciclismo .leyendas .data-calendar-info { padding-bottom: 10px; }
+.ciclismo .leyendas .data-calendar-box{height: 210px ; overflow: hidden; }
+.ciclismo .leyendas .data-calendar-box img.transform-more{ transform: scale(1.5);transform-origin: top;width: auto;  }
+.ciclismo .leyendas .maillot{position: absolute; width: 90px; bottom: 0; right: 0;}
+.ciclismo .leyendas .num-titulos, .leyendas .num-carreras{font-size: 18px}
+.ciclismo .leyendas .data-calendar-main-name {min-height: initial; }
+.ciclismo .leyendas .texto-editorial{ color: #fff; font-size:13px;    position: relative; z-index: 1;}
+
+
+
+/* ficha piloto */
+.blq-palmares-motor{    margin-bottom: 40px;
+    margin-left: -10px;
+    float: left;
+    width: 100%;
+    padding: 0 10px;}
+.blq-palmares-motor{position: relative;}
+.cnt-copa-motor{margin-right: 12px;}
+.cnt-datos-trofeos-motor{margin-left: 10px; float: none;}
+.num-trofeos-motor{font: bold 15px/15px Arial, Helvetica;color: #333333;}
+.num-trofeos-motor strong{color: #e98d13;display: inline-block;font: 32px/32px "sourceblack",Arial,Helvetica;margin-right: 8px;text-align: center;width: 35px;}
+.blq-palmares-motor .cnt-datos-trofeos-motor ul li{position: relative;font: 11px/11px Arial, Helvetica;color: #656565;padding: 0 3px;display: block;}
+.palmares-detalle-motor{margin-left: 8px;}
+.palmares-detalle-motor img{width: 20px;height: auto;}
+.blq-palmares-motor .cnt-copa-motor:before {position: absolute;content: " ";background: #FFFFFF;width: 50px;height: 50px;border-radius: 50%;z-index: 1;left: 23px;top: 12px;}
+.blq-palmares-motor .cnt-copa-motor .icono {color: #444;font-size: 55px;position: relative;z-index: 1;left: 12px;top: -5px;}
+.palmares-year-motor{margin-top: 26px; margin-left: 32px;}
+.palmares-year-motor span{display: inline-block; margin-right: 3px; margin-bottom: 5px;}
+
+/* palmares y pilotos: tablas */
+.cont-palmares { margin-top: -8px; }
+.cont-palmares .data-table { margin-top: 0; }
+
+
+/*.palmares-year-motor span:nth-child(odd){margin-right: 8px;}
+.palmares-year-motor span:nth-child(even){margin-right: 0px;}*/
+
+.stats-number-motor{display: inline-block; margin-bottom: 10px;}
+.stats-big-number{font: 34px "sourceblack", Arial, Helvetica; color: #FFB713; display: inline-block; text-align: center; background: #454545; width: 100px; height: 100px; border-radius: 50%; padding-top: 24px;}
+.stats-big-number span{font-size: 18px; clear: left; display: block; margin-top: -6px;}
+
+.cont-circulo-posesion-single{margin-bottom: 10px;}
+.cont-circulo-posesion-single .content-piechart-single {width: 100px;height: 100px;position: relative;display: inline-block;vertical-align: middle;border-radius: 50%;background-color: #DDD;}
+.cont-circulo-posesion-single .in-circle-single {background: #f2f2f2;border-radius: 50%;width: 80px;height: 80px;position: absolute;left: 10px;top: 10px;z-index: 1;color: #D21300;font: 26px/16px 'sourceblack', arial, helvetica; text-align: center; padding-top: 24px;}
+.cont-circulo-posesion-single .in-circle-single .in-circle-single-info{color: #D21300;font: 14px/16px 'sourceblack', arial, helvetica; display: block;}
+.cont-circulo-posesion-single .in-circle-single.second{color: #D4800E;}
+.cont-circulo-posesion-single .in-circle-single.third{color: #FFB632;}
+.cont-circulo-posesion-single .in-circle-single .in-circle-single-info.second{color: #D4800E;}
+.cont-circulo-posesion-single .in-circle-single .in-circle-single-info.third{color: #FFB632;}
+.cont-circulo-posesion-single .piechart-quart-single {position: absolute;top: 0px;left: 0px;width: 100px;height: 100px;border-radius: 50%;clip: rect(0px, 100px, 100px, 50px);transform: rotate(0deg);-ms-transform: rotate(0deg);-webkit-transform: rotate(0deg);}
+.cont-circulo-posesion-single .int-piechart-quart-single {background-color: #ca0305;position: absolute;top: 0px;left: 0px;width: 100px;height: 100px;border-radius: 50%;clip: rect(0px, 50px, 100px, 0px);transform: rotate(90deg);-ms-transform: rotate(90deg);-webkit-transform: rotate(90deg);}
+.cont-circulo-posesion-single .int-piechart-quart-single.second {background-color: #D4800E;}
+.cont-circulo-posesion-single .int-piechart-quart-single.third {background-color: #FFB632;}
+
+
+.int-data-player-image2{}
+.int-data-player-image2 .int-data-player-image-media .int-data-player-country{float: left;}
+.int-data-player-image2 .int-data-player-image-media {height: 29px;margin: 0 4px;width: 41px;display: inline-block;overflow: hidden;border: 1px solid #dbdbdb;float: left;}
+.int-data-player-image2 .int-data-player-image-media img{float: left;height: auto;margin: 1px 0 0 1px;width: 37px;}
+.int-data-player-country{float: left;margin-left: 5px;font: 18px/36px "sourceblack", Arial, Helvetica, Sans-Serif;}
+.int-data-player-country-link{display: inline-block;}
+.int-data-player-country-link:hover{color: #ffb632;}
+
+
+.content-photo-dest-ficha{float: right; margin-top: -152px; margin-left: 15px; border: 1px solid #dbdbdb; padding: 1px; margin-bottom: 10px;}
+
+
+.year-select-background{background: url('/plantillas/as-responsive/includes/as_datos/motor/resultados_bg.jpg'); padding-top: 50px; padding-bottom: 17px; padding-left: 15px; background-repeat: no-repeat; padding-right: 15px; background-position: center center;}
+
+/* Moto GP */
+.pilotos.motoGP thead > tr > th:nth-child(2),
+.pilotos.motoGP .col-deportista { text-align: left; }
+.pilotos .col-deportista .pais { height: 22px; display: inline; padding-right: 6px; vertical-align: middle; } 
+.leyendas.motoGP .champion { border-top: 1px solid #999; padding-bottom: 10px; }
+.leyendas.motoGP .champion ul { display: inline; } 
+.leyendas.motoGP .champion li { display: inline-block; color: #c7c7c7; margin-right: 6px; font-family: "sourcesans", sans-serif; font-size: 15px; line-height: 26px; }
+.leyendas.motoGP .champion .data-champion { font: 16px "sourcesansbold", sans-serif; padding: 0 8px; background-color: #FFB713; border-radius: 20px; color: #333; }
+.leyendas.motoGP .flexible .col-md-4 { display: -ms-flexbox;
+    display: -webkit-flex; display: flex; -webkit-flex-direction:column; flex-direction: column;  }
+.leyendas.motoGP .flexible .col-md-4 .champion { flex: 1 auto;}
+.leyendas.motoGP .data-calendar-number .icono { font-size: 20px; }
+
+/*info articulo*/
+.art-info {border-top: 1px solid #ddd; padding-top: 5px; margin-bottom: 12px;}
+.art-info .deco-bullet { position: relative; margin-left: 10px; }
+.art-info .deco-bullet:before { content: ""; position:absolute; top: 5px; left: -9px; background: #ccc; width: 4px; height: 4px; border-radius: 50%;}
+
+.art-info>.deco-bullet:first-child , .art-info :first-child .deco-bullet:first-child { margin-left: 0;}
+.art-info>.deco-bullet:first-child:before , .art-info :first-child .deco-bullet:first-child:before { width: 0; height:0; }
+
+.art-info .art-loc, .art-info .art-author{ font: bold 11px arial; color:#666; transition: color .2s;}
+.art-info .art-author:hover{ color:#ED9E15;}
+.art-info .art-date{ font:  11px arial; color:#999; }
+.art-info .art-date:hover{ color:#666; border-bottom: 1px dotted #666;}
+.art-info .art-hour{ font: bold 11px arial; color:#E68C12;}
+.art-info .art-hour abbr{ text-decoration: none; border-bottom: 0;}
+
+.int-data-motor-stats-link {font-size: 12px;padding-right: 17px;position: relative;text-align: right;width: auto;float: left;margin-top: 9px;margin-left: 13px;}
+.int-data-motor-stats-link a {color: #666;}
+.int-data-motor-stats-link a:hover {color: #000;}
+.int-data-motor-stats-link:after {content: "";position: absolute;right: 0;top: 50%;margin-top: -5px;bottom: 50%;border: 5px solid transparent;border-left-color: #ffb632;}
+
+
+
+/* código antiguo en subida a producción - provisional */
+.info-detalle-deco{padding-left: 30px; padding-right: 30px;}
+.tit-info-detalle{margin-bottom: 5px; color: #333; font: 18px/18px "sourceblack", Arial, Helvetica, Sans-Serif;}
+.lst-info-detalle{display: block; clear: left;}
+.lst-info-detalle li{color: #FFB632;}
+.lst-info-detalle li strong{font-size: 16px;}
+.lst-info-detalle li strong a{color: #FFB632;}
+
+.def-detalle{color: #333;
+    font-size: 16px;
+    /* font-weight: bold; */
+    margin-right: 10px;}
+
+
+
+/*Calendario - Resultados TENIS*/
+
+.cal-res-tenis .tit-modulo + .cont-resultados, .tit-modulo + .cont-clasificacion {margin-top: -8px; }
+.cal-res-tenis .cont-clasificacion tbody > tr > td{padding-top:5px;padding-bottom:5px; width: 40px;}
+.cal-res-tenis .cont-clasificacion tbody > tr > td.destacado { }
+.cal-res-tenis .cont-clasificacion .data-table tbody > tr:last-child{border-bottom:1px solid #f2f2f2}
+.cal-res-tenis .cont-clasificacion .nombre .bandera, .ico-bandera{display:inline-block;margin-right:4px;vertical-align:middle;width:20px}
+.cal-res-tenis .cont-resultado { width: 12%; }
+.cal-res-tenis .cont-resultado .resultado{ font:16px/36px sourceblack,Arial,Helvetica}
+.cal-res-tenis .cont-resultado .info-up .hora {font-family: 'sourceblack',Arial,Helvetica; color: #fff; text-align: center; display: block; font-size: 14px; white-space: nowrap; }
+.cal-res-tenis .cont-resultado .info-up .hora-timezone {font: 11px/20px Arial,Helvetica; padding-left: 5px; border: none; position: relative; display: none; }
+.cal-res-tenis .cont-resultado .info-up .txt {background: #c97a00; font: 10px/20px Arial,Helvetica; height: 18px; text-align: center; text-transform: uppercase; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cal-res-tenis .fases-cruces .fecha-fase{ text-transform: lowercase; font-weight: 500; }
+.cal-res-tenis .cont-clasificacion .sbtit-lnk-arrow-r{position:relative;margin-top:0;margin-bottom:10px;font:12px/16px Arial,Helvetica;color:#666;display:block;text-align:right;padding-right:13px;left:-8px}
+.cal-res-tenis .cont-clasificacion .sbtit-lnk-arrow-r::before{content:"";position:absolute;transition:.2s;right:0;margin-top:-5px;top:50%;bottom:50%;border:5px solid transparent;border-left-color:#ffb632}
+.cal-res-tenis .flex-container-x6 {display:flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-content: flex-start; align-items: flex-start; } 
+.cal-res-tenis .flex-container-x6 > div{flex-grow: 0; flex-shrink: 0; flex-basis: 100%; }
+.cal-res-tenis .flex-container-x12 {display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-content: flex-start; align-items: flex-start; }
+.cal-res-tenis .flex-container-x12 > div{flex-basis: 50%;border-bottom: 1px solid #ddd;}
+.cal-res-tenis .flex-container-x12 > div:last-child{ border-bottom: none;}
+.cal-res-tenis .flex-container-x12 > div .pntc-marcador{margin-bottom: 3px;padding-bottom: 1px;position: relative;}
+.cal-res-tenis .flex-container-x12 > div .pntc-marcador:after{background: #ddd;content: "";position: absolute;height: 1px;width: 102%;left: 0;right: 0;bottom: -1px;}
+.cal-res-tenis .flex-container-x12.impar > div:nth-last-child(2) {border-bottom: 1px solid #ddd; } 
+.cal-res-tenis .evento.pntc-marcador .marcador.marcador-num.tenis.comenzado::after{ display: none;}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis{position: relative;display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-between;align-content: flex-start;align-items: flex-start;height: 59px;}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .players {padding: 3px 0 2px 6px;background: #fff;flex-grow: 1; height: 100%;}
+.cal-res-tenis .cruce .evento.pntc-marcador .marcador-num.tenis .players {flex-basis: 100px; }
+.cont-tit-final .players{text-align: left;}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .info{ position: absolute; right: 0;background: #F29400; height: 100%; border-left: 8px solid #fff; }
+.cal-res-tenis .flex-container-x6 .evento.pntc-marcador .marcador-num.tenis .info{flex-grow: 0}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .player{padding: 3px 0 3px 0;position: relative;overflow: hidden;}
+.player.ganador{ font-weight: bold;}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .player.pos:before{content:"\e607";font-family:'as-icons';color:#FCA400;position:absolute;right: -14px; top: -6px;}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .player:last-child{border-bottom:none} 
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .player .ico-bandera{float:left;height:19px; width:26px;padding:1px;background:#fff;margin-right:6px;overflow:hidden;border: 1px solid #ddd;}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .player .ico-bandera img{width:22px;height:15px;margin-top:0;margin-left:0}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .player .player-nom, .cal-res-tenis .cont-clasificacion .cont-nombre-equipo span, .cal-res-tenis .cont-clasificacion .cont-nombre-equipo a{width: auto;max-width: 315px;height:20px;line-height: 22px; font-size: 13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;}
+.cal-res-tenis .cruce .evento.pntc-marcador .marcador-num.tenis .player .player-nom { max-width: 140px}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .player a:hover .player-nom{color: #666;}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .info .txt { font-size: 10px;padding-left: 5px;display: inline-block;  vertical-align: middle; text-transform: uppercase; color: #fff; max-width: 75px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .info .hora { font-family: 'sourcesansbold',Arial,Helvetica;font-size: 18px;color: #fff;text-align: center;display: block; width: 90px ;height: 100%; line-height: 54px; }
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .info .hora.tv { line-height: 34px; }
+.cal-res-tenis .info .txt-info {font: bold 12px arial, helvetica, sans-serif; color: #fff; text-align: center; display: inline-block; margin-top: 14px;}
+.cal-res-tenis .info .hora.tv .txt-info{ margin-top: 4px }
+.cal-res-tenis .as-icon-tv:before {top: 1px; position: relative; }
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .cont-tv { position: absolute;left: 0;right: 0; bottom: 0;width: initial;overflow: inherit;display: block;height: 23px; line-height: 23px;  color: #fff; font-size: 12px; text-align: center;background: #c97a00;}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis.comenzado .cont-tv { background: #AE0000;}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .cont-tv img { display: inline-block; height: 20px; vertical-align: middle; width: auto;}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .info abbr.time-zone { font: 11px/20px Arial,Helvetica;  border: none; position: relative; }
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis.comenzado .info .patrocinio,.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis.finalizado .info .patrocinio{text-align:right;padding-right:5px;background: #333; }
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis.finalizado::after { display: none;}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis.finalizado .info{background: #333; }
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis.comenzado .info{ background: #CE0000}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis.comenzado .info .info-do,.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis.comenzado .info .info-up
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis.finalizado .info .info-do,.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis.finalizado .info .info-up{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .puntos{font:16px/28px 'sourceblack',Arial,Helvetica;height:29px; }
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .puntos .num{color:#ADADAD;float:left;width:30px;text-align:center;border-right: 1px solid #484848;border-bottom: 1px dotted #484848;font-size: 16px;}
+.cal-res-tenis .cruces-octavos .evento.pntc-marcador .marcador-num.tenis .puntos .num{width:22px}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .puntos .num.win{color:#fff}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .puntos .num.actual{color:#fff;background:#DE0000;border-bottom:1px dotted #AE0000;border-right: 1px dotted #AE0000;}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .puntos:last-child .num.actual{border-bottom:1px solid #E84D4D}
+.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .puntos .num:last-child{border-right:none}
+.cal-res-tenis .cont-clasificacion tr .cont-nombre-equipo{ width: 70%;}
+.cal-res-tenis .cont-clasificacion th { font-weight:normal;}
+.cal-res-tenis .cont-clasificacion tr:nth-child(1) .player-nom, .cal-res-tenis .cont-clasificacion tr:nth-child(2) .player-nom{ font-weight: bold;}
+.cal-res-tenis .cont-clasificacion .cont-img-escudo img{  height: 19px; width: 26px; border: 1px solid #ddd; padding: 1px}
+.total { font: 16px 'sourcesans', arial, helvetica, sans-serif; margin-top: -15px; padding-left: 5px;color: #444}
+
+
+ /*Cruces Calendario - Resultados Tenis*/
+.cal-res-tenis p.fases-cruces:before, .cal-res-tenis p.fases-cruces:after{display: none;}
+.cal-res-tenis .fases-cruces{width: inherit;}
+.cal-res-tenis .cruce .pntc-marcador{ width: 100%}
+.cal-res-tenis .cruces-cuartos {border-bottom: none;margin-bottom: 0;height: 350px;}
+.cal-res-tenis .cruces-cuartos.tipo-semi {height: 150px;}
+.cal-res-tenis .cruces-cuartos .partido-final {top: -22px;margin-left: auto; margin-right: auto; left: 0; right: 0; }
+.cal-res-tenis .cruces-cuartos .sem-izq, .cal-res-tenis .cruces-cuartos .sem-der {top: 111px;}
+.cal-res-tenis .cruces-cuartos .cua-izq-2, .cal-res-tenis .cruces-cuartos .cua-der-2  {top: 207px;}
+.cal-res-tenis .cruces-cuartos .cua-izq-con {position: absolute; left: 186px; height: 200px; width: 103px; border: 3px solid #cecece; border-left: 0; top: 53px;}
+.cal-res-tenis .cruces-cuartos .cua-der-con {position: absolute; right: 180px; height: 200px; width: 103px; border: 3px solid #cecece; border-right: 0; top: 53px; }
+.cal-res-tenis .cruces-cuartos .sem-horz-con {top: 43px; width: 53% ;   border-bottom: 3px solid #cecece; position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;}
+.cal-res-tenis .cruces-cuartos .final-con {border-left: 3px solid #cecece; height: 90px; position: absolute; top: 67px; margin-left: auto; margin-right: auto; left: 0; right: 0; width: 3px;}
+.cal-res-tenis .cruces-cuartos.tipo-semi .sem-izq {left:0; top: 0}
+.cal-res-tenis .cruces-cuartos.tipo-semi .sem-der {right:0; top: 0 }
+.cal-res-tenis .cruces-cuartos.tipo-semi .partido-final { top: -34px;}
+.cal-res-tenis .cruces-cuartos.tipo-semi .sem-horz-con {}
+.cal-res-tenis .cruces-cuartos.tipo-semi .final-con { visibility: hidden;}
+.cal-res-tenis .cruces-cuartos.tipo-semi .txt-semifinal-izq{ left:0 } 
+.cal-res-tenis .cruces-cuartos.tipo-semi .txt-semifinal-der{ right: 0} 
+.cal-res-tenis .cruces-cuartos.tipo-semi .fases-cruces {top: -31px; }
+.cal-res-tenis .cruces-cuartos.tipo-semi p.fases-cruces::before{display: none;}
+.cal-res-tenis .cruces-octavos {border-bottom: none;height: 750px;}
+.cal-res-tenis .cruces-octavos .cruce, .cal-res-tenis .tipo-semi .cruce {width: 244px;}
+.cal-res-tenis .cruce.oct-der-1 .zona-horaria, .cal-res-tenis .cruce.oct-der-2 .zona-horaria, .cal-res-tenis .cruce.oct-der-3 .zona-horaria, .cal-res-tenis .cruce.oct-der-4 .zona-horaria, .cal-res-tenis .cruce.cua-der-1 .zona-horaria, .cal-res-tenis .cruce.cua-der-2 .zona-horaria, .cal-res-tenis .cruce.sem-der .zona-horaria{ text-align: right; }
+.cal-res-tenis .cruces-octavos .pntc-marcador .marcador-num.tenis .info, .cal-res-tenis .tipo-semi .pntc-marcador .marcador-num.tenis .info {flex-grow: 1;}
+.cal-res-tenis .cruces-octavos .partido-final {margin-left: auto;margin-right: auto;left: 0;right: 0;top: 0	;}
+.cal-res-tenis .cruces-octavos .partido-3y4 {margin-left: auto;margin-right: auto;left: 0;right: 0;top: 623px;}
+.cal-res-tenis .cruces-octavos .cua-izq-1{top: 122px;left: 90px;}
+.cal-res-tenis .cruces-octavos .oct-izq-2 {top: 228px;}
+.cal-res-tenis .cruces-octavos .oct-izq-3 {top: 450px;}
+.cal-res-tenis .cruces-octavos .cua-izq-2 {top: 555px;left: 90px;}
+.cal-res-tenis .cruces-octavos .oct-izq-4 {top: 665px;}
+.cal-res-tenis .cruces-octavos .sem-izq {top: 344px;left: 226px;}
+.cal-res-tenis .cruces-octavos .cua-der-1 {top: 122px;right: 90px;}
+.cal-res-tenis .cruces-octavos .oct-der-2 {top: 228px;}
+.cal-res-tenis .cruces-octavos .oct-der-3 {top: 450px;}
+.cal-res-tenis .cruces-octavos .cua-der-2 {top: 555px;right: 90px;}
+.cal-res-tenis .cruces-octavos .oct-der-4 {top: 665px;}
+.cal-res-tenis .cruces-octavos .sem-der {top: 344px;right: 226px;}
+.cal-res-tenis .cruces-octavos .oct-izq-con-1 {top: 54px;left: 234px;height: 216px;width: 37px;border-width: 3px;border-left: 0;}
+.cal-res-tenis .cruces-octavos .oct-izq-con-1::after{content: "";position: absolute;top: 132px;right: -36px;border-right: 35px solid #cccccc;height: 3px;}
+.cal-res-tenis .cruces-octavos .oct-izq-con-2{top: 494px;left: 234px;height: 216px;width: 37px;border-width: 3px;border-left: 0;}
+.cal-res-tenis .cruces-octavos .oct-izq-con-2::after{content: "";position: absolute;top: 75px;right: -36px;border-right: 35px solid #cccccc;height: 3px;}
+.cal-res-tenis .cruces-octavos .oct-der-con-1 {top: 67px;right: 234px;height: 216px;width: 37px;border-width: 3px;border-right: 0;}
+.cal-res-tenis .cruces-octavos .oct-der-con-1::after{content: "";position: absolute;top: 70px;left: -36px;border-right: 35px solid #cccccc;height: 3px;}
+.cal-res-tenis .cruces-octavos .oct-der-con-2 {top: 494px;right: 234px;height: 216px;width: 37px;border-width: 3px;border-right: 0;}
+.cal-res-tenis .cruces-octavos .oct-der-con-2::after{content: "";position: absolute;top: 85px;left: -36px;border-right: 35px solid #cccccc;height: 3px;}
+.cal-res-tenis .cruces-octavos .cua-izq-con{border-width: 3px;top: 164px;left: 281px;height: 441px;}
+.cal-res-tenis .cruces-octavos .cua-der-con{border-width: 3px;top: 164px;right: 281px;height: 441px;}
+.cal-res-tenis .cruces-octavos .sem-horz-con {top: 387px;width: 30%;border-bottom: 3px solid #cecece;position: absolute;margin-left: auto;margin-right: auto;left: 0;right: 0;}
+.cal-res-tenis .cruces-octavos .sem-izq-con{    height: 216px; left: 562px; top: 435px; border: 3px solid #ccc; border-left: 0; border-top: 0;}
+.cal-res-tenis .cruces-octavos .sem-der-con{height: 82px; height: 162px; left: 605px; top: 197px; border: 3px solid #ccc; border-left: 0; border-bottom: 0;}
+.cal-res-tenis .cruces-octavos .final-con {border-width: 3px;margin-left: auto;margin-right: auto;left: 0;right: 0;width: 3px;top: 105px;height: 282px;}
+
+/*  Adaptacion responsive chorro TAGS  */ 
+
+.tag { padding-bottom: 6px; }
+.tag .tit-iframe .tit-module-neutral { background: #f9f9f9; border-bottom: 1px solid #f2f2f2; color: #111; font: 18px/29px "sourceblack",arial,helvetica; height: auto; margin-bottom: 8px; margin-top: 1px; min-height: 30px; padding-left: 20px; position: relative; }
+.tag .tit-iframe .tit-module-neutral::before { border: 2px solid #ec9f23; border-radius: 5px; content: ""; height: 10px; left: 5px; position: absolute; top: 9px; width: 10px; }
+.tag .article { border-bottom: 1px dotted #ccc; margin-bottom: 12px; margin-left: 10px; margin-right: 10px; overflow: hidden; padding: 0 190px 13px 0; position: relative; }
+.tag .ordenacion { font: 11px "Lucida Grande",Tahoma,Verdana,Arial,Helvetica,sans-serif; margin-bottom: 7px; }
+.tag .ordenacion .contenido { color: #666; font: 11px/11px Arial,Helvetica,sans-serif; text-transform: uppercase; }
+.tag .ordenacion .contenido a { color: #666; }
+.tag .ordenacion a.fecha { border-bottom: 1px dotted #cfcfcf; font-weight: normal; color: #999; font: 11px arial; }
+.tag .hora, .tag .tipo { border-left: 1px solid #cecece; margin-left: 6px; padding-left: 6px; position: relative; color: #e68c12; font: bold 11px arial; }
+.tag .hora::before, .tag .tipo::before { -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; border-color: transparent transparent transparent #cecece; border-image: none; border-style: solid; border-width: 3px; content: ""; height: 0; left: -1px; position: absolute; top: 22%; width: 0; }
+.tag .hora::after, .tag .tipo::after { -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; border-color: transparent transparent transparent #fff; border-image: none; border-style: solid; border-width: 3px; content: ""; height: 0; left: -2px; position: absolute; top: 22%; width: 0; }
+.tag abbr { display: none; }
+.tag .tipo strong { background: #848484; border-radius: 2px; color: #ffffff; font-size: 10px; line-height: 10px; padding: 1px 5px; }
+.tag .article h2 { font: 26px/26px "ascombold",Arial,Helvetica; margin-bottom: 8px; margin-right: 60px; }
+.tag .miniatura { margin: 0 0 0 8px; position: absolute; right: 0; top: 0; width: auto; }
+.tag .miniatura img { display: block; height: 100px; margin: 0; padding: 0; width: auto; }
+.tag .article p { border-bottom: 0 none; color: #333; font: 15px "sourcesans"; padding-bottom: 0; }
+.tag .firma_comentarios { font: 11px "Lucida Grande",Tahoma,Verdana,Arial,Helvetica,sans-serif; margin-bottom: 5px; }
+.tag .autor { text-transform: uppercase; }
+.tag .autor a { color: #666; font: bold 11px arial; transition: color 0.2s ease 0s; }
+.tag .autor a:hover { color: #ed9e15; }
+.tag .article h2 a:hover { color: #e68c12; text-decoration: none; transition: color 0.2s ease 0s; }
+.tag .tit-module-cierre .btn { background: #e99100; }
+.tag .tit-module-cierre .btn:hover { background: #393939; }
+.tag .article .foto { width: 140px; }
+.tag .article .foto .img-info { bottom: 36px; left: 0; position: relative; background: #ca0305; color: #fff; float: left; font-size: 24px; height: 36px; line-height: 36px; padding-left: 3px; text-align: center; width: 36px; }
+.tag .article .foto .img-info::before { content: ""; position: absolute; transition:.2s;  margin-top: 9px; margin-left: -4px; border:9px solid transparent; border-left-color:#fff; }
+.tag .article .foto .img-info a { display: block; overflow: hidden; text-indent: -999999px; }
+.tag .miniatura .foto:hover .img-info { background: #333; transition: all 0.2s ease 0s; }
+
+
+/* FIN Adaptacion responsive chorro TAGS  */
+
+/* Agenda */
+
+.agenda .cont-resultados table {display: inherit; }
+.agenda .cont-modulo .tit-modulo.agenda::before {border: 0 none;}
+.agenda .cont-modulo .bullet-list > li::before{display:none}
+.agenda .cont-modulo .tit-modulo.agenda { padding-left: 0; background: #f9f9f9; border-bottom: 1px solid #f2f2f2; color: #111; font: 18px/29px "sourceblack",arial,helvetica; height: auto; margin-bottom: 8px; margin-top: 1px; min-height: 57px; position: relative; }
+.agenda .cont-modulo .tit-modulo.agenda .txt-competicion { font: 13px/26px arial, helvetica; color: #F8A300; }
+.agenda .cont-modulo .tit-modulo.agenda .txt-jornada { line-height: 20px; color: #414141; }
+.agenda .cont-calendario { display: inline-block;float: right; }
+.agenda .cont-calendario .arrow-desplegable{    height: inherit; line-height: 13px; padding-top: 7px;}
+.agenda .cont-calendario .arrow-desplegable span.icono.as-icon-calendario{font-size: 22px}
+.agenda .cont-filtrar { display: inline-block; width: 175px; margin-right: 12px; }
+.agenda .cont-competiciones { display: inline-block; width: 300px; }
+.agenda .cont-calendario .caja-desplegable,
+.agenda .cont-filtrar .caja-desplegable,
+.agenda .cont-competiciones .caja-desplegable { position: relative; }
+.agenda .cont-calendario .icono { font-size: 15px; }
+.agenda .cont-filtrar .form-control {  font-weight: bold; }
+.agenda .slider-calendario { background: #fff; display: inline-block; width: 90%; position: relative; }
+/*.agenda .slider-calendario .flechas .slick-prev { top: 0; bottom: 0; position: absolute; left: 0; background: #F9A300; width: 33px; height: 100%; }*/
+.agenda .slider-calendario .flechas .slick-prev { top: 0; bottom: 0; position: absolute; left: 0; background: #F9A300; width: 33px; height: 100%; text-align: center; line-height: 36px;}
+/*.agenda .slider-calendario .flechas .slick-next { top: 0; bottom: 0; position: absolute; right: 0; background: #F9A300; width: 33px; height: 100%; }*/
+.agenda .slider-calendario .flechas .slick-next { top: 0; bottom: 0; position: absolute; right: 0; background: #F9A300; width: 33px; height: 100%; text-align: center; line-height: 36px;}
+.agenda .slider-calendario .flechas .slick-prev.slick-disabled, 
+.agenda .slider-calendario .flechas .slick-next.slick-disabled { opacity: 0.25; }
+.agenda .slider-calendario .flechas .slick-prev:hover, 
+.agenda .slider-calendario .flechas .slick-next:hover { background: #424242; }
+.agenda .slider-calendario .cont-dias { padding: 0 33px; }
+.agenda .slider-calendario .flechas .slick-next::before { color: #fff; content: ""; font-family: "as-icons"; font-size: 16px; opacity: 1; }
+.agenda .slider-calendario .flechas .slick-prev::before { color: #fff; content: ""; font-family: "as-icons"; font-size: 16px; opacity: 1; }
+.agenda .slider-calendario .cont-dias ul li { float: left; width: 30%; text-align: center; border-right: 1px solid #f2f2f2; ;white-space: nowrap;
+    overflow: hidden;}
+.agenda .slider-calendario .cont-dias ul li.activo { width: 40%; border-bottom: 1px solid #F9A300; }
+.agenda .slider-calendario .cont-dias ul li .dia { color: #686868; font-size: 14px; text-transform: capitalize; }
+.agenda .slider-calendario .cont-dias ul li .fecha { color: #686868; font-size: 12px; }
+.agenda .slider-calendario .cont-dias ul li a { display: block; }
+
+/*Ajuste Anchos resultado*/
+.agenda .resultados .cont-resultado { width: 11%}
+
+/*Motor*/
+.agenda .cont-modulo.motor .cont-resultados .cont-elementos{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;flex-flow:row wrap}
+.agenda .cont-modulo.motor .cont-resultados .cont-elementos .elemento{width:100%;padding-left:10px;padding-right:5px;border-bottom:1px solid #f2f2f2}
+.agenda .cont-modulo.motor .cont-resultados .cont-elementos .elemento-pie{display:-webkit-flex;display:flex;-webkit-flex-flow:row wrap;flex-flow:row wrap;justify-content:space-around;align-items:center;align-content:center;width:100%}
+.agenda .cont-modulo.motor .cont-resultados .cont-elementos .elemento-pie>div{text-align:center;flex-grow:0;flex-shrink:1;flex-basis:auto;align-self:center;color:#424242}
+.agenda .cont-modulo.motor .cont-resultados .cont-elementos .elemento-pie>div a{display:block;padding:10px}
+.agenda .cont-modulo.motor .cont-resultados .cont-elementos .elemento-pie>div a:hover{opacity:.7}
+.agenda .cont-modulo.motor .cont-resultados .cont-elementos .elemento-pie>div .nombre-evento{font-size:12px;color:#424242}
+.agenda .elemento-pie span.icono.as-icon-clasificacion,.agenda .elemento-pie span.icono.as-icon-calendario{font-size:22px;display:block}
+.agenda .cont-modulo.motor .evento{float:left;line-height:33px;min-height:36px}
+.agenda .cont-modulo.motor .evento .nombre-evento{font-size:12px;font-weight:700}
+.agenda .cont-modulo.motor .info-evento{float:right;width:initial}
+.agenda .cont-modulo.motor .info-evento-int {width:initial}
+.agenda .resultados .info-evento-int > ul > li{width:inherit}
+.agenda .resultados .info-evento .cont-tv{width: initial; overflow: inherit; display: inline-block;}
+.agenda .resultados .cont-tv > li{padding-left:0}
+.agenda .cont-modulo.motor .cont-clasificacion{margin-top:0;margin-top:0}
+.agenda .cont-modulo.motor .cont-clasificacion table colgroup col.deportista{width:100%}
+.agenda .cont-modulo.motor .cont-clasificacion thead tr th,.agenda .cont-modulo.motor .cont-clasificacion tbody tr td{padding:7px}
+.agenda .cont-modulo.motor .cont-clasificacion tbody tr td{position:relative;overflow:hidden;white-space:nowrap}
+.agenda .cont-modulo.motor .cont-clasificacion thead tr th{display:table-cell;border-right:1px solid #f2f2f2}
+.agenda .cont-modulo.motor .cont-clasificacion thead tr th:nth-child(2){text-align:left}
+.agenda .cont-modulo.motor .cont-clasificacion thead tr th:last-child{border-right:none}
+.agenda .cont-modulo.motor .cont-clasificacion .pais-piloto{float:right;color:#B2B2B2}
+
+/*Tenis*/
+.agenda .evento.pntc-marcador{width:100%;border-bottom:3px solid #f2f2f2}
+.agenda .evento.pntc-marcador .marcador-num.tenis .players{float:left;padding:5px 0 0;background:#fff;width:inherit;min-width: 45%;}
+.agenda .evento.pntc-marcador .marcador-num.tenis .player{padding-bottom:3px;padding-left:9px;margin-bottom:3px;position:relative}
+.agenda .evento.pntc-marcador .marcador-num.tenis .player.ganador{font-weight:700}
+.agenda .evento.pntc-marcador .marcador-num.tenis .player.ganador::before{content:"";left:0;position:absolute;top:-1px;bottom:-1px;width:5px;background:#FFBC23}
+.agenda .evento.pntc-marcador .marcador-num.tenis .player.pos:before{content:"\e607";font-family:'as-icons';color:#FCA400;position:absolute;right:-14px;top:-6px}
+.agenda .evento.pntc-marcador .marcador-num.tenis .player:last-child{border-bottom:none}
+.agenda .evento.pntc-marcador .marcador-num.tenis .player .ico-bandera{float:left;height:25px;border:none;width:26px;padding:1px;background:#fff;margin-right:6px;overflow:hidden}
+.agenda .evento.pntc-marcador .marcador-num.tenis .player .ico-bandera img{width:22px;height:15px;margin-top:0;margin-left:0}
+.agenda .evento.pntc-marcador .marcador-num.tenis .player .player-nom{font-size:13px;line-height:20px;height:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}
+.agenda .cont-resultados .finalizado:after, .agenda .cont-resultados .comenzado:after {display:none}
+.agenda .evento.pntc-marcador .marcador-num.tenis.comenzado.sets-3 .players,.agenda .evento.pntc-marcador .marcador-num.tenis.finalizado.sets-3 .players{width:73%}
+.agenda .evento.pntc-marcador .marcador-num.tenis .info{width:27%;background:#333;float:right}
+.agenda .evento.pntc-marcador .marcador-num.tenis.sets-3 .info {width:17% }
+.agenda .evento.pntc-marcador .marcador-num.tenis.comenzado .info .patrocinio,.agenda .evento.pntc-marcador .marcador-num.tenis.finalizado .info .patrocinio{text-align:right;padding-right:5px}
+.agenda .evento.pntc-marcador .marcador-num.tenis.comenzado .info{width:27%;background:#CE0000}
+.agenda .evento.pntc-marcador .marcador-num.tenis.comenzado.sets-3 .info,.agenda .evento.pntc-marcador .marcador-num.tenis.finalizado.sets-3 .info{width:27%}
+.agenda .evento.pntc-marcador .marcador-num.tenis.comenzado .info .info-do,.agenda .evento.pntc-marcador .marcador-num.tenis.comenzado .info .info-up
+.agenda .evento.pntc-marcador .marcador-num.tenis.finalizado .info .info-do,.agenda .evento.pntc-marcador .marcador-num.tenis.finalizado .info .info-up{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+.agenda .evento.pntc-marcador .marcador-num.tenis .puntos{font:17px/28px sourceblack,Arial,Helvetica;height:29px;width:100%}
+.agenda .evento.pntc-marcador .marcador-num.tenis .puntos .num{color:#ADADAD;float:left;width:20%;text-align:center;border-right:1px solid #484848;border-bottom:1px dotted #484848}
+.agenda .evento.pntc-marcador .marcador-num.tenis .puntos .num.win{color:#fff}
+.agenda .evento.pntc-marcador .marcador-num.tenis .puntos .num.actual{color:#fff;background:#DE0000;border-bottom:1px dotted #AE0000}
+.agenda .evento.pntc-marcador .marcador-num.tenis .puntos:last-child .num.actual{border-bottom:1px solid #E84D4D}
+.agenda .evento.pntc-marcador .marcador-num.tenis.sets-3 .puntos .num{width:33.3%}
+
+.agenda .evento.pntc-marcador .marcador-num.tenis .puntos .num:last-child{border-right:none}
+
+/* Sprite logo competiciones */
+.agenda .icon-compet {background: transparent url("/img/sprite-competiciones.png") no-repeat scroll 0 0; float: left; height: 65px; margin-left: -10px; margin-top: -8px; overflow: hidden;text-indent: -9999px;width: 80px; transform: scale(0.7); -ms-transform: scale(0.7); -webkit-transform: scale(0.5);  }
+.agenda .ico-futbol-primera { background-position: 0 -83px; }
+.agenda .ico-futbol-segunda { background-position: 0 -160px; }
+.agenda .ico-futbol-copa_del_rey { background-position: 0 -240px; }
+.agenda .ico-futbol-supercopa { background-position: 0 -320px; }
+.agenda .ico-futbol-champions { background-position: 0 -400px; }
+.agenda .ico-futbol-europa_league { background-position: 0 -480px; }
+.agenda .ico-futbol-inglaterra { background-position: 0 -560px; }
+.agenda .ico-futbol-italia { background-position: 0 -640px; }
+.agenda .ico-futbol-alemania { background-position: 0 -720px; }
+.agenda .ico-futbol-francia { background-position: 0 -800px; }
+.agenda .ico-futbol-eurocopa, 
+.agenda .ico-futbol-clasificacion_eurocopa { background-position: 0 -880px; }
+.agenda .ico-futbol-chile_apertura, 
+.agenda .ico-futbol-chile_clausura { background-position: 0 -960px; }
+.agenda .ico-futbol-supercopa_europa { background-position: 0 -1040px; }
+.agenda .ico-baloncesto-euroliga { background-position: 0 -1120px; }
+.agenda .ico-baloncesto-eurocup { background-position: 0 -1200px; }
+.agenda .ico-baloncesto-acb { background-position: 0 -1280px; }
+.agenda .ico-baloncesto-copa_del_rey { background-position: 0 -1360px; }
+.agenda .ico-tenis-us_open { background-position: 0 -1440px; }
+.agenda .ico-tenis-open_australia { background-position: 0 -1520px; }
+.agenda .ico-tenis-wimbledon { background-position: 0 -1600px; }
+.agenda .ico-tenis-roland_garros { background-position: 0 -1680px; }
+.agenda .ico-tenis-final_atp { background-position: 0 -1760px; }
+.agenda .ico-motor-formula_1 { background-position: 0 -1840px; }
+.agenda .ico-motor-motogp, 
+.agenda .ico-motor-moto2, 
+.agenda .ico-motor-moto3 { background-position: 0 -1920px; }
+.agenda .ico-ciclismo-giro_italia { background-position: 0 -2000px; }
+.agenda .ico-ciclismo-tour_francia { background-position: 0 -2080px; }
+.agenda .ico-ciclismo-vuelta_espana { background-position: 0 -2083px; }
+.agenda .ico-futbol-generico, 
+.agenda .ico-futbol-amistosos, 
+.agenda .ico-futbol-segunda_b, 
+.agenda .ico-futbol-international_champions_cup, 
+.agenda .ico-futbol-amistosos_clubes, 
+.agenda .ico-futbol-trofeo_joan_gamper { background-position: 0 -2240px; }
+.agenda .ico-baloncesto-generico, .ico-baloncesto-mundial { background-position: 0 -2320px; }
+.agenda .ico-tenis-generico { background-position: 0 -2400px; }
+
+/* FIN Agenda */
+
+/*Quiniela*/
+.cont-quiniela .data-table{background:#fff; margin-top: 0}
+.cont-quiniela h2{font: 15px/32px "sourcesans",arial,helvetica;color:#474747;padding-bottom:0;padding-left:12px;border-bottom:1px solid #f2f2f2;}
+.cont-quiniela .cnt-bloque-resultados{padding:15px 7px 0;border-top:3px solid #ddd;margin-bottom:15px;background:#f2f2f2}
+.cont-quiniela .cont-modulo .tit-modulo{margin-bottom:0}
+.cont-quiniela .leyenda{float:right;display:inline-block;width:auto;margin-bottom:10px}
+.cont-quiniela .leyenda li{margin-left:11px;float:left;position:relative;padding-left:22px;font:bold 12px/33px arial}
+.cont-quiniela .leyenda li::before{background:#000;content:"";height:18px;left:0;position:absolute;top:7px;width:18px}
+.cont-quiniela .leyenda li.en-juego::before{background:#d90000}
+.cont-quiniela .todos-los-resultados{width:205px;float:right;background:#fff;margin-left:20px;display:inline-block}
+.cont-quiniela .todos-los-resultados:hover{opacity:.7}
+.cont-quiniela .info-extra{margin-bottom: 0; text-align: left;}
+.cont-quiniela .data-table thead tr th{font: bold 12px arial, helvetica, sans-serif; }
+.resultados-quiniela .cont-partido{border-bottom: 1px solid #f2f2f2;display: block;width: 100%;line-height: 35px;}
+.resultados-quiniela .cont-partido:nth-of-type(even){background-color:#f9f9f9;}
+.resultados-quiniela .cont-partido:hover, .resultados-quiniela .cont-partido:nth-of-type(even):hover{background-color: rgba(242, 242, 242, 0.91);}
+.resultados-quiniela .directo{display:block; }
+.resultados-quiniela .local, .resultados-quiniela .visitante{position: relative;}
+.resultados-quiniela .local:after {content: "-"; padding-left: 5px; }
+.resultados-quiniela span{display:inline-block; clear: right; }
+.resultados-quiniela .nombre-equipo:hover{opacity: .7}
+.resultados-quiniela .pos{text-align: center;font-family: 'sourcesansbold',arial,helvetica;font-size: 16px;/* padding-left: 10px; *//* padding-right: 10px; */border-right: 1px solid #f2f2f2;width: 40px;}
+.resultados-quiniela .cont-img-escudo {vertical-align: middle;width: auto;padding-left: 3px;padding-right: 3px;display: none;}
+.resultados-quiniela .local .cont-img-escudo {padding-left: 6px;}
+.resultados-quiniela .cont-img-escudo img {width: 23px; height: 23px; }
+.resultados-quiniela .cont-pronosticos{float:right;}
+.resultados-quiniela .cont-pronosticos .pronostico{font-family:'sourceblack',arial,helvetica;font-size:20px;float:left;padding: 1px 12px 0px 12px;background:#EEE;border-right: 1px solid #fff;border-bottom: 1px solid #fff;}
+.resultados-quiniela .pleno-15 .cont-pronosticos .pronostico{padding-top: 0; }
+.resultados-quiniela .cont-pronosticos span.pronostico:last-child{border-right: none;}
+.resultados-quiniela .cont-pronosticos .pronostico.en-juego{background:#d90000;color:#fff}
+.resultados-quiniela .cont-pronosticos .pronostico.finalizado{background:#000;color:#fff; border-bottom: 1px solid #666; border-right: 1px solid #666;}
+.resultados-quiniela .cont-fecha{float:right;border-right:none;margin-left: 25px;margin-right: 25px;}
+.resultados-quiniela .fecha:hover{color: #111;}
+.resultados-quiniela .icono{margin-right:5px;color:#666;font-size:18px;vertical-align:middle;}
+.resultados-quiniela .fecha{color:#666;font-size: 11px;border-right: 0;}
+.resultados-quiniela .cont-partido.pleno-15{background-color:#f9f9f9;}
+.resultados-quiniela .cont-partido.pleno-15 .pos{line-height: 70px;display:block;float:left;margin-right: 5px;}
+.resultados-quiniela .cont-partido.pleno-15 .partido{display:inline-block;width: 50%;border-bottom: 1px solid #f2f2f2;}
+.resultados-quiniela .cont-partido.pleno-15 .cont-fecha{line-height: 70px;}
+.resultados-quiniela td:nth-child(3n+1),.resultados-quiniela th:nth-child(3n+1){text-align:left;padding-left:15px}
+.resultados-quiniela td:nth-child(3n+3),.resultados-quiniela th:nth-child(3n+3){text-align:right;padding-right:15px}
+/*FIN Quiniela*/
+
+
+/* Ajuste TAGs responsive en fichas */
+
+.tag { margin-left:10px; margin-right:10px; }
+.tag .row.flexible { margin-left: 0; margin-right: 0; }
+
+
+/*---------- MEDIA QUERIES ---------*/
+
+
+@media (max-width: 375px) {
+
+/*Quiniela*/
+.resultados-quiniela .partido{width: 62%;}
+.resultados-quiniela .local, .resultados-quiniela .visitante{width: 48%;display: inline-block;}
+.resultados-quiniela .pleno-15 .local, .resultados-quiniela .pleno-15 .visitante{width: 100%}
+.resultados-quiniela .local {border-right: 1px solid #f2f2f2; }
+.resultados-quiniela .visitante { padding-left: 5px}
+.resultados-quiniela .local:after { display: none;}
+.resultados-quiniela .nombre-equipo{text-overflow: ellipsis;overflow: hidden;vertical-align: middle;width: calc(100% - 0px);white-space: nowrap;}
+
+/*Ajuste curces ancho nombre equipos*/
+.resultado-cruce .equipo .nombre-equipo{max-width: 170px}
+
+/*Ajuste tabla ranking UCI*/
+.ciclismo td.main-name-in-row {max-width: 150px; }
+}
+
+@media (max-width: 420px) {
+    
+    .hdr-ficha-player .hdr-ficha-player-info hgroup { max-width: 62%; }
+}
+
+@media (max-width: 480px) {
+
+	
+    /* Competicion portada */
+    .lideres-competicion ul .cont-datos-jugador { max-width: 42%; text-align: right; }
+    
+     /* Moto GP*/
+     .pilotos.motoGP thead > tr > th, .palmares thead > tr > th { padding-right: 10px; padding-left: 10px;}
+    
+    /* Fórmula 1 */
+    .motor-team  .motor-team-info .motor-team-info-name { font-size: 28px; }
+
+	/*Ciclismo Leyendas*/ 
+	.ciclismo .leyendas .favorito .cont-titulos, .leyendas .favorito .cont-carreras { width: inherit; float: none; margin-left: inherit; display: block;}
+
+    /* Cruce baloncesto */  
+    .drop-partidos .partido .nombre-equipo{max-width: 115px}
+
+    /* Tenis   */      
+
+	.cal-res-tenis .cont-clasificacion .cont-img-escudo {display: block; }
+	.cal-res-tenis .cont-clasificacion tr .cont-nombre-equipo .pos {margin-right: 5px;}
+	.cal-res-tenis .flex-container-x12.impar > div:nth-last-child(2) {border-bottom-color:#eee; }
+	.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .player .player-nom, .cal-res-tenis .cont-clasificacion .cont-nombre-equipo span, .cal-res-tenis .cont-clasificacion .cont-nombre-equipo a{}
+	.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .puntos .num{width: 25.7px}
+	.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .info .hora{ width: 77px; font-size: 15px;}
+
+
+}
+
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+	/* Clasificacion */
+	.cont-clasificacion-detalle .tabla-resultados .col-resultado { width: 15%; }
+	.cont-clasificacion-detalle .tabla-resultados .col-equipo-local, 
+	.cont-clasificacion-detalle .tabla-resultados .col-equipo-visitante { width: 40%; }
+	/*Ciclismo Leyendas*/   
+	.ciclismo .leyendas .cont-titulos  { width: 45%; float: left; margin-left: inherit;}
+	.ciclismo .leyendas .cont-carreras{ display: inline-block;}
+	/* Tenis  */ 
+	.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .player .player-nom, .cal-res-tenis .cont-clasificacion .cont-nombre-equipo span, .cal-res-tenis .cont-clasificacion .cont-nombre-equipo a{max-width:200px}
+
+}
+
+
+@media (max-width: 767px) { 
+
+	.cont-desplegable .caja-desplegable.partidos-entre {width: 45%; float: left;}
+
+
+	/*.resultados .info-evento-int > ul > li { float: none; width: 100%; position: relative; text-align: left; }*/
+
+
+	/* Fichas */
+	#frm-buscador-ficha fieldset #busqueda-ficha {width: 100%;}
+
+	/* Subnavegación inferior fichas */
+	.cnt-ficha .nav-aux .cont-desplegable-tit .desplegable-tit{text-align: center;     }
+ 	.cnt-ficha .nav-aux ul{ float: none;height: 35px; margin-bottom: 5px;box-shadow: 0px -1px 7px rgba(0, 0, 0, .2); } 
+ 	.cnt-ficha .nav-aux li a{ padding: 9px 10px;} 	
+	.cnt-ficha .nav-aux .cont-desplegable-tit {margin-left: auto; margin-right: auto; left: 0; right: 0;  float: none;  }
+	.cnt-ficha .nav-aux .cont-desplegable-tit ul.desplegable{width: inherit; top: 37px;   margin-left: auto; margin-right: auto; left: 0; right: 0;    box-shadow: 0px 3px 7px rgba(0, 0, 0, .2);}
+	.cnt-ficha .nav-aux .cont-desplegable-tit ul.desplegable li a{text-align: center;}
+
+	/* Correccion Buscador */
+	.frm-bsc fieldset .busqueda-ficha {width: 100%;}
+	.cnt-ficha .frm-bsc {display: none; }
+	/* FIN Correccion Buscador */
+
+
+	.info-social .col-xs-12 {margin-bottom: 20px;}
+
+	.cnt-data-big ul li {padding-top: 10px; margin-top: 10px;}
+	.cnt-data-big ul li:first-child {padding-top: 0px; margin-top: 0px;}
+	.cnt-data-big ul li:before {position: absolute; content: " "; border-top: 1px dotted #676767; border-left: none; width: auto; height: 1px; left: 10px; right:10px; top: 0;}
+	.cnt-data-big ul li:first-child:before {border-top: none;}
+
+	.ficha ul li { margin-top: 0px;}
+	.ficha ul li:first-child {padding-top: 0; }
+	.ficha ul.inline-list li:first-child { margin-bottom: 0;}
+
+	.ficha ul.list-ball-yellow li { margin-top: 0px;}
+	.ficha ul.list-ball-yellow li:first-child {margin-top: 0; }
+	.ficha ul.list-ball-yellow.inline-list li:first-child {padding-top: 10px; margin-bottom: 0;}
+
+
+	.ficha.cnt-data-racha-list ul li:first-child {padding-top: 0;}
+
+	.info-palmares .blq-palmares .cnt-copa:before {width: 30px; height: 30px; bottom:-3px;}
+	.info-palmares .blq-palmares .cnt-copa img {width: 50px;}
+	.info-palmares .blq-palmares .cnt-copa .icono {font-size: 50px;}
+	.info-palmares .blq-palmares .cnt-copa .as-icon-trofeo {font-size: 34px;}
+	.info-palmares .blq-palmares .cnt-datos-trofeos ul li {font-size: 13px;}
+
+	.info-estadistica .racha {margin-bottom: 20px;}
+	.info-estadistica .racha article {text-align: center; margin-top: 10px;}
+	.info-estadistica .racha .cnt-data-racha-list {margin-top: 30px;}
+	.info-estadistica .racha .cont-circulo-posesion {float: inherit; margin: auto; width: 90px;}
+	.info-estadistica .racha .cont-circulo-posesion .in-circle img {margin: 4px auto auto; width: 90%;}
+
+	.info-estadistica .cnt-comp-equipos {height: auto;}
+	.info-estadistica .cnt-comp-equipos .rival .versus {padding: 5px;}
+	.info-estadistica .cnt-comp-equipos .rival img {width: 60px;}
+	.info-estadistica .cnt-comp-equipos .rival strong{font-size: 100%; text-align: center; white-space: nowrap; }
+	.info-estadistica .racha .txt-racha {margin: 20px 0 5px;}
+	.info-estadistica .racha form {margin-top: 0; margin-left: 0; width: 100%;}
+	.info-estadistica .racha form input {height: 30px;}
+	.info-estadistica .racha .cnt-data-racha {display: inline-block;}
+
+	.info-estadistica .racha section article {margin: 10px auto; text-align: center; width: 100%;}
+	.info-estadistica .racha .txt-racha {display: block;}
+	.info-estadistica .racha .cnt-data-racha {display: inline-block;}
+
+	.frm-bsc {background: #FFFFFF; line-height: 35px; border-radius: 2px; }
+	.frm-bsc fieldset .busqueda-ficha {border: none; width: 100%;}
+
+	.inl-list-def dl:before {top: 6px;}
+	.inl-list-def dt {margin-bottom: 5px;}
+	.inl-list-def dd strong {line-height: 20px;}
+
+
+	/* portadas deportes y deporte */
+
+
+    .list-item{margin-bottom: 9px;}
+    .sub-title{margin-bottom: 9px;}
+
+    /* Competicion portada  */
+    .lideres-competicion .cont-bloque-izq { margin-right: 0; width: 100%; }
+	.lideres-competicion .cont-bloque-der { width: 100%; margin-top: 15px; }
+
+	/* índice jugadores */
+    .indice-main-name-name{width: 50%;float: left;padding-left: 20px;}
+	.indice-main-name-char-content .indice-main-name-char{padding-left: 0px;}
+
+	/* Calendario */
+	.cont-desplegable .as-icon-cambio{display: block;     margin-bottom: 10px;
+    margin-top: 10px;}
+	.cont-desplegable .as-icon-cambio:before{width: 100%; height: 20px; -ms-transform: rotate(90deg); /* IE 9 */-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */transform: rotate(90deg); text-align: center; display: inline;}
+
+	/* Ficha equipo portada  */
+	.data-list-horiz ul li { width: 50%; }
+	.data-list-horiz ul li:first-child,
+	.data-list-horiz ul li:last-child { width: 100%; }
+	.data-list-horiz ul li { min-height: 125px; }
+	.data-list-horiz ul li::before { border-bottom: 1px dotted #676767;bottom: 0;content: "";height: 1px;left: 15px;position: absolute;right: 15px;width: auto; }
+	
+	.data-list-horiz ul li:nth-child(n+4)::before { border: 0 none;}
+	.data-list-horiz.no-mas-estadisticas ul li:nth-child(n+4)::before { border-bottom: 1px dotted #676767; bottom: 0; content: ""; height: 1px; left: 15px; position: absolute; right: 15px; width: auto; }
+
+	.data-list-horiz ul li:last-child::before { left: auto; }
+	.data-list-horiz .txt-dato-ppal { font: 36px "sourceblack",arial,helvetica; }
+	.data-list-horiz .txt-ppal { margin-bottom: 0; }
+
+	.info-estadistica .racha .cont-circulo-posesion .in-circle{left: 22px; top: 20px;}
+
+	.table-stats-info{display: none;}
+	.table-stats-tipo{font: 14px/16px Arial, Helvetica, Sans-Serif; padding-bottom: 0px; padding-top: 0px;}
+	.table-stats-data{padding-top: 10px; padding-bottom: 10px; font: bold 22px/22px "sourceblack",Arial, Helvetica, Sans-Serif;}
+
+
+
+	/* Cruces */
+	.cruce .zona-horaria{ text-align: left; }
+
+	/* Bordes cruces */
+	.cruces-octavos .oct-izq-con-1,
+	.cruces-octavos .oct-izq-con-2,
+	.cruces-octavos .oct-der-con-1,
+	.cruces-octavos .oct-der-con-2,
+	.cruces-octavos .cua-izq-con,
+	.cruces-octavos .cua-der-con,
+	.cruces-octavos .sem-izq-con,
+	.cruces-octavos .sem-der-con,
+	.cruces-octavos .final-con{ display: none; }
+
+	.cruces-cuartos .cua-izq-con,
+	.cruces-cuartos .cua-der-con,
+	.cruces-cuartos .sem-izq-con,
+	.cruces-cuartos .sem-der-con,
+	.cruces-cuartos .final-con{ display: none; }
+
+	/*Cruces */
+	.cruces-octavos { height: 3005px; }
+
+	.cruces-octavos .oct-izq-1{top: 0;left: 0;}
+	.cruces-octavos .oct-izq-2{ top: 160px; left: 0;}
+	.cruces-octavos .oct-izq-3{ top: 320px; left: 0;}
+	.cruces-octavos .oct-izq-4{ top: 480px; left: 0;}
+	.cruces-octavos .oct-der-1{ top: 640px; right:auto; left: 0;}
+	.cruces-octavos .oct-der-2{ top: 800px; right:auto; left: 0;}
+	.cruces-octavos .oct-der-3{ top: 960px; right:auto; left: 0;}
+	.cruces-octavos .oct-der-4{ top: 1120px; right:auto; left: 0;}
+
+	.cruces-octavos .cua-izq-1 { top: 1280px; left: 0; }
+	.cruces-octavos .cua-izq-2 { top: 1440px; left: 0; }
+	.cruces-octavos .cua-der-1 { top: 1600px; left: 0; right: auto; }
+	.cruces-octavos .cua-der-2 { top: 1760px; left: 0; right: auto; }
+
+	.cruces-octavos .sem-izq {top:1920px; left: 0;}
+	.cruces-octavos .sem-der {top:2080px; right: auto; left: 0;}
+
+	.cruces-octavos .partido-final {top: 2240px; left: 0;}
+	.cruces-octavos .partido-3y4 { top: 2400px; bottom: auto; left: 0; }
+	.cruces-octavos.doble-partido .partido-3y4 { margin-bottom: 67px; }
+
+	.fases-cruces { text-align: left; left: 0; position: relative; top: 5px; width: 100%; z-index: 0; height: auto; }
+	.cruce { margin-bottom: 15px; position: static; width: 215px; }
+	.cruces-octavos { margin-top: 0; } 
+	.cruces-octavos p.txt-semifinal-der,
+	.cruces-octavos p.txt-cuartos-der,
+	.cruces-octavos p.txt-octavos-der { display: none; }
+
+	.cruces-cuartos p.txt-semifinal-der,
+	.cruces-cuartos p.txt-cuartos-der { display: none; }
+
+
+	.cruces-octavos p.fases-cruces::before { border-bottom: 1px dotted #dbdbdb; width: 100%; }
+	.cruces-octavos p.txt-octavos-izq ,
+	.cruces-octavos p.txt-cuartos-izq,
+	.cruces-octavos p.txt-semifinal-izq { left: 0; }
+
+	.cruces-octavos .fases-cruces,
+	.cruces-cuartos .fases-cruces { height: auto; position: relative; text-align: left; top: 0; width: 100%; }
+	.cruces-cuartos { height: 1575px; margin-top: 0; }
+	.cruces-cuartos p.fases-cruces::before { border-bottom: 1px dotted #dbdbdb; width: 100%; }
+	.cruces-cuartos p.txt-cuartos-izq,
+	.cruces-cuartos p.txt-semifinal-izq { left: 0; }
+
+	.cruces-octavos .fases-cruces,
+	.cruces-cuartos .fases-cruces { font: bold 14px Arial,Helvetica; }
+
+	/* Ficha jugador portada */
+	.datos-ficha-jugador { width: 100%; margin-bottom: 20px; }
+
+	.info-palmares .cnt-datos-trofeos ul { display: none; }
+	.info-palmares .blq-palmares { float: left; width: 100%; margin-bottom: 20px; margin-left: 0; position: relative; background: #fff; padding: 7px; } 
+	.info-palmares .blq-palmares::after { content: ""; position: absolute; top: 38px; bottom: 50%; margin:auto; right: 9px; border: 5px solid transparent; border-top-color:#ffb632; }
+	.info-palmares .blq-palmares.active::after { border-bottom-color:#ffb632; border-top-color: transparent; top: 31px; }
+	.info-palmares .blq-palmares .cnt-copa .icono { font-size: 38px; }
+	.info-palmares .blq-palmares .cnt-copa { width: auto; margin-right: 10px; }
+	.info-palmares .blq-palmares .cnt-datos-trofeos { }
+	.info-palmares .blq-palmares .cnt-copa .as-icon-trofeo { left: 0; }
+
+	.int-data-player-stats-link{margin-top: -10px; margin-left: 13px;}
+  	.int-data-player-image{width: 100%;}
+
+
+	/** subtítulo del título de sección **/
+	.tit-decoration2{border-bottom: none; z-index: 3; position: relative;}
+	.tit-decoration2:before{content: ""; position: absolute; left: 0px; right: 0px; height: 1px; background: #DDD; top: 33px; z-index: 1;}
+	/*.tit-subtitle-info:before{display:none;}/*
+	.tit-subtitle-info{display: block; border: none; font: 16px/33px "sourceblack",arial,helvetica;padding-left: 0;padding-top: 3px;}*/
+
+	/** actualizado y log opta **/
+	.ext-info{padding-bottom: 10px;}
+	.info-updated{width: 100%; display: block; text-align: left;}
+	.cont-logo-opta{width: 100%;text-align: left;display: block;float: none;}
+	.cont-logo-opta a{display: inline-block;}
+
+
+	/* Lideres */
+	.lideres-competicion .cont-info-jugador .nombre { font: bold 16px/20px arial,helvetica,sans-serif; max-width: 98px; }
+	.lideres-competicion ul .cont-datos-jugador .dato { font: 24px/24px "sourceblack",arial,helvetica; }
+	.lideres-competicion ul .cont-datos-jugador { max-width: 40%; padding-top: 7px; }
+	.lideres-competicion ul .cont-datos-jugador .txt-datos { font-size: 11px; }
+
+	/* Fichas */
+	.frm-bsc {width: 100%; margin-left: 0; margin-top: 10px; margin-bottom: 0px;}
+	.hdr-ficha .container .hdr-ficha-info { width: 100%; }
+
+	/* Calendario de Especiales */
+	.resultados .cnt-e-calendar .cont-resultados .grupo {width: 20%; border-top: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD;}
+	.resultados .cnt-e-calendar .cont-resultados .estadio {width: 80%; border-top: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD; padding: 0 10px;}
+	.resultados .cnt-e-calendar .equipo-local, .resultados .cnt-e-calendar .equipo-visitante {width: 40%;}
+	.resultados .cnt-e-calendar .cont-resultados .nombre-equipo {font: 12px/36px "sourceblack",Arial,Helvetica;}
+	.resultados .cnt-e-calendar .cont-resultado {width: 20%;}
+	.resultados .cnt-e-calendar .info-evento {width: 100%;}
+	.resultados .cnt-e-calendar .cont-resultados .info-evento-int .cont-tv {float: left;}
+	.resultados .cnt-e-calendar .cont-resultados .info-evento-int .cont-fecha {float: right; padding-right: 10px;}
+	.resultados .cnt-e-calendar .cont-resultados .info-evento-int .cont-fecha:before {background: none;}
+	.resultados .cnt-e-calendar .info-evento {background: #F0F0F0;}
+	.resultados.cont-modulo .cnt-e-calendar .tit-modulo {text-align: center;}
+
+
+	/*** motor ***/
+	.cal-title{font: 30px/30px "sourceblack", Arial, Helvetica; color: #FFB713; margin-left: 10px;}
+	.cal-title:after{height: 95px; left: -10px; right: 0px; }
+	.cal-country{margin-left: 10px; font: 12px/12px Arial, Helvetica;margin-top: -42px;}
+	/* ficha piloto */
+	.content-photo-dest-ficha{float: right; margin-top: 0px; margin-left: 0px; display: inline-block;}
+
+	.datos-ficha-jugador.datos-ficha-motor{width: 50%;}
+	.datos-ficha-jugador.datos-ficha-motor ul li{font:12px/20px Arial, Helvetica;}
+	.datos-ficha-jugador.datos-ficha-motor ul li strong{display: block;}
+
+	.blq-palmares-motor .cnt-datos-trofeos-motor ul{clear: both; margin-left: 10px; margin-top: 15px;}
+	.num-trofeos-motor{display: block; margin-top: 15px;}
+
+
+	.stats-big-number{font: 22px "sourceblack", Arial, Helvetica; width: 80px; height: 80px; padding-top: 20px;}
+	.stats-big-number span{font-size: 16px;}
+	.cont-circulo-posesion-single .content-piechart-single{width: 80px; height: 80px;}
+	.cont-circulo-posesion-single .int-piechart-quart-single{width: 80px; height: 80px;}
+	.cont-circulo-posesion-single .piechart-quart-single{width: 80px; height: 80px;}
+	.cont-circulo-posesion-single .in-circle-single{width: 65px; height: 65px; left: 8px; top: 8px; padding-top: 20px; line-height: 12px;}
+	.cont-circulo-posesion-single .in-circle-single .in-circle-single-info {font: 13px/22px 'sourceblack', arial, helvetica;}
+
+	/* Leyendas */
+	.leyendas .txt-titulos, 
+	.leyendas .txt-carreras { font: bold 17px "sourcesans",Arial,Helvetica; }
+	.leyendas .num-titulos, 
+	.leyendas .num-carreras { font: bold 22px "sourcesans",Arial,Helvetica; }
+
+	/*  Ciclismo */
+	.ciclismo .mallots { width: 100%; margin-bottom: 20px; }
+	.ciclismo .mallots:last-child { margin-bottom: 0; }
+	.ciclismo .container-team{ min-height: auto; }
+	.ciclismo .cont-clasificacion tbody > tr > td { padding: 7px 2px; font-size: 11px; }
+	.ciclismo .cont-clasificacion .nombre .pais { display: none; }
+
+	/*  Ciclismo Leyendas*/
+	.ciclismo .leyendas .data-calendar-box img{ transform: scale(1.4);transform-origin: top; }
+	
+	/*Ciclismo Calendario UCI*/
+	.cont-calendario-uci .tit-info-detalle {min-height: 100%; padding-bottom: 3px}
+
+
+
+	/*Motor Leyendas*/ 
+   .motor .ficha-leyenda .num-trofeos-motor { margin-top: 0; }
+   .motor .ficha-leyenda .data-list-horiz ul li:last-child {width: 50%; }
+   .motor .ficha-leyenda .hdr-ficha-player .hdr-ficha-player-info hgroup {margin-top: 0;}
+   .motor .ficha-leyenda .blq-palmares-motor .cnt-datos-trofeos-motor ul{ margin-left: 0}
+   .motor .ficha-leyenda .list-ball-yellow li:before{left: -4px; top: 8px;  }
+   .motor .ficha-leyenda .int-data-motor-stats-link{ margin: 0; font-size: 10px; bottom: -16px; }
+   .motor .ficha-leyenda .int-data-motor-stats-link.no-link {right: 0; padding-right: 0; }
+   .motor .ficha-leyenda .text-asdatos .content-photo-dest-ficha{ float: none;}
+   .motor .ficha-leyenda .nombre-piloto{font:30px/30px sourceblack,Arial,Helvetica;color:#FFB713;margin-left:0;padding-bottom:5px;left:10px;bottom:0}
+   .motor .ficha-leyenda .img-dest-art:after{bottom:0}
+	
+	/*Calendario - Resultados Tenis*/
+	.cal-res-tenis .flex-container-x12 > div{flex-basis: 100%; }
+	.cal-res-tenis .cruces-cuartos{height: 900px;}
+
+
+   /*  Adaptacion responsive chorro TAGS  */ 
+   .tag .article { padding-right: 0; padding-left: 0; margin: 0 10px 15px; }
+   .tag .ordenacion { padding-top: 112px; }
+   .tag .article h2 { width: 100%; }
+   .tag .miniatura { width: 100%; }
+   .tag .foto a::after { border: 0 none; }
+   /* FIN  Adaptacion responsive chorro TAGS  */ 
+
+	.cruce { width: 100% }
+	.resultado-cruce td:nth-child(1) {width: 75%;}
+	.resultado-cruce td:nth-child(2) {width: 25%;}
+	.drop-partidos{ width: 100% ;  }
+	.drop-partidos .partido .nombre-equipo {max-width: inherit; width: 200px; }
+	.drop-partidos .partido .fecha{display: none;}
+ 
+
+	/* Agenda */
+
+	.agenda .cont-calendario,
+    .agenda .cont-filtrar,
+    .agenda .cont-competiciones { width: 100%; }
+    .agenda .evento.pntc-marcador .marcador-num.tenis .info {width: 42%;}
+    .agenda .slider-calendario { width: 100%}    	
+	.agenda .evento.pntc-marcador .marcador-num.tenis.sets-3 .info{ width: 30%;}
+	.agenda .icon-compet {transform: scale(0.6);}
+	.agenda .cont-modulo .tit-modulo.agenda{height: inherit; padding-bottom: 10px;}
+	.agenda .cont-modulo .tit-modulo.agenda .txt-competicion { display: inline-block;line-height: 33px;margin-right: 14px;position: relative; }
+	.agenda .cont-modulo .tit-modulo .icon-compet {height: 66px; margin-top: -10px; width: 72px;}
+	.agenda .cont-modulo .tit-modulo.agenda .txt-jornada{line-height: 10px;font-size: 16px;}
+	.agenda .resultados .info-evento{width: 100%;}
+	.agenda .resultados .info-evento-int{padding-left: 0;}
+	.agenda .resultados .info-evento-int > ul > li{text-align: center;float: left;padding-left: 0;width: 50%;}
+	.agenda .cont-modulo ul.bullet-list {width: 45%;margin: auto;}
+	/*Ajuste ancho resultados*/
+	.agenda .resultados .cont-resultado { width: 20%}
+	.agenda .resultados .cont-resultado .resultado{ font-size: 13px}
+	
+	/*Calendario Resultados Tenis*/
+	.cal-res-tenis .flex-container-x12 > div{border-bottom-color: #eee;}
+	.cal-res-tenis .cruces-octavos .cruce, .cal-res-tenis .cruces-cuartos .cruce, .cal-res-tenis .tipo-semi .cruce {width: 100%; }
+	.cal-res-tenis .cruces-octavos{height: 1490px}
+	.cal-res-tenis .cruces-cuartos.tipo-semi {height: 400px; }
+	.cal-res-tenis .cruce .evento.pntc-marcador .marcador-num.tenis .players{flex-basis: 60%;}
+	.cal-res-tenis .tipo-semi p.txt-cuartos-der { display: block; }
+	.cal-res-tenis .tipo-semi .sem-horz-con { display: none; }
+	.cal-res-tenis .cruce.oct-der-1 .zona-horaria, .cal-res-tenis .cruce.oct-der-2 .zona-horaria, .cal-res-tenis .cruce.oct-der-3 .zona-horaria, .cal-res-tenis .cruce.oct-der-4 .zona-horaria, .cal-res-tenis .cruce.cua-der-1 .zona-horaria, .cal-res-tenis .cruce.cua-der-2 .zona-horaria, .cal-res-tenis .cruce.sem-der .zona-horaria{ text-align: left; }
+	.cal-res-tenis .cruces-cuartos.tipo-semi .fases-cruces{top:0;}
+
+	/*Quiniela*/
+	.resultados-quiniela .pos{width: 30px}
+	.resultados-quiniela .nombre-equipo {font-size: 13px;}
+	.resultados-quiniela .cont-pronosticos .pronostico{font-size: 16px;padding-left: 8px;padding-right: 8px;}
+
+	/*Ajuste tabla*/
+	.data-table tbody th.pos, .data-table tbody td.pos{ width: inherit;}
+
+    
+    /* PALMARES Revisión */
+    .palmares thead > tr > th, 
+    .palmares tbody > tr > th,    
+    .palmares tfoot > tr > th,    
+    .palmares thead > tr > td, 
+    .palmares tbody > tr > td, 
+    .palmares tfoot > tr > td {
+        font-size: 13px; } 
+
+	/*Ajuste trazado circuito*/
+    .info-ficha-motor .cont-grafico img {padding-right: 30px ; margin-top: 10px ; }
+    .info-ficha-motor.mundial-resistencia .cont-grafico img {width: 100%; }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+
+	/*   Buscador   */
+	.frm-bsc fieldset .busqueda-ficha { width: 100%; }
+
+	/*   Fichas   */
+	.info-estadistica .racha {margin-bottom: 20px;}
+	.info-estadistica .racha article {text-align: center; margin-top: 10px; width: 100%; margin-left: 0px;}
+	.info-estadistica .racha .cnt-data-racha-list {margin-top: 30px;}
+	.info-estadistica .racha .cont-circulo-posesion {float: inherit; margin: auto; width: 90px;}
+	.info-estadistica .racha .cont-circulo-posesion .in-circle img {margin: 4px auto auto; width: 80px;}
+
+	.info-estadistica .racha .txt-racha {font: 12px/44px Arial, Helvetica; color: #666666;}
+	.info-estadistica .cnt-comp-equipos {height: 120px;}
+	.info-estadistica .racha form {margin-left: 0; margin-top: -8px; width: 300px;}
+	.info-estadistica .racha .cnt-data-racha {display: inline-block;}
+
+	.cnt-est-lideres .cnt-data .cnt-info-p span { font-size: 11px; }
+	.cnt-est-lideres .cnt-data .cnt-info-d .dato-des { font-size: 12px;}
+	.cnt-est-lideres .cnt-data .cnt-info-d .dato-des strong {font-size: 26px; line-height: 26px;}
+	.cnt-est-lideres figure img {width: 80px;}
+	.cnt-est-lideres .cnt-data .cnt-info-d {height: 80px;  padding: 10px 0;}
+	.cnt-est-lideres .cnt-data .cnt-info-d .dato-des {}
+	.cnt-est-lideres .cnt-data .cnt-info-d .dato-sec {white-space: nowrap; font-size: 9px;}
+	.cnt-est-lideres .cnt-data .cnt-info-p, .cnt-est-lideres .cnt-data div {width: 30%;}
+	.cnt-est-lideres .cnt-data .cnt-info-d  {margin: 0 -1px 0 0;}
+
+	.info-palmares .blq-palmares .cnt-copa .icono {font-size: 60px;}
+	.info-palmares .blq-palmares .cnt-copa:before {height: 50px; width: 50px; left:5px; bottom:-3px;}
+	.info-palmares .blq-palmares .cnt-copa .as-icon-trofeo {font-size: 44px;}
+
+	.ficha-int .info-palmares .blq-palmares .cnt-copa:before {width: 65px; height: 65px;}
+	.ficha-int .info-palmares .blq-palmares .cnt-copa img {width: 70px; }
+
+	/* portadas deportes y deporte */
+	.content .list:nth-child(8) { clear: left; }
+
+	/* Competicion portada  */
+	.resultados.competicion-home .cont-resultado { width: 12%; }
+	.resultados.competicion-home li .equipo-local, .resultados.competicion-home li .equipo-visitante {width: 44%;}
+
+	/* índice jugadores */
+	.indice-main-name-char-content .indice-main-name-char{padding-left: 8px;} 
+
+	/* Ficha equipo portada  */
+	.data-list-horiz ul li { width: 25%; }
+	.data-list-horiz ul li:first-child,
+	.data-list-horiz ul li:last-child { width: 100%; }
+	.info-estadistica .racha .cont-circulo-posesion .in-circle{left: 4px; top: 8px;}
+
+	/* Cruces */
+	.cruce .zona-horaria{ text-align: left; }
+
+	/* Bordes cruces */
+	.cruces-octavos .oct-izq-con-1 {height: 345px; left: 215px; top: 60px; width: 81px; }
+	.cruces-octavos .oct-izq-con-2 {height: 345px; left: 215px; top: 645px; width: 81px; }
+	.cruces-octavos .oct-der-con-1 { left: 215px; right: auto; height: 345px; width: 81px; border:8px solid #ccc; border-left:0; top:1164px; }
+	.cruces-octavos .oct-der-con-2 { left: 215px; right: auto; height: 345px; width: 81px; border:8px solid #ccc; border-left:0; top:1750px;  }
+	.cruces-octavos .cua-izq-con { height: 594px; left: 312px; top: 228px; width: 81px; }
+	.cruces-octavos .cua-der-con { right: auto; left: 312px; height: 593px; width: 81px; border:8px solid #ccc; border-left:0; top:1332px; }
+	.cruces-octavos .final-con { display: none; }
+	.cruces-octavos .sem-der-con { height: 350px; left: 467px; position: absolute; right: auto; top: 533px; width: 41px; border:8px solid #ccc; border-left:0; border-bottom: 0; }
+	.cruces-octavos .sem-izq-con { height: 338px; left: 424px; position: absolute; right: auto; top: 1308px; width: 84px; border:8px solid #ccc; border-left:0; border-top: 0; }
+
+	/*Cruces */
+	.cruces-octavos { height: 2210px; }
+	.cruces-octavos .fases-cruces { top: -33px;  }
+	
+	.cruces-octavos .oct-izq-1{ top: 0; left: 0;}
+	.cruces-octavos .oct-izq-2{ top: 337px; left: 0;}
+	.cruces-octavos .oct-izq-3{ top: 585px; left: 0;}
+	.cruces-octavos .oct-izq-4{ top: 922px; left: 0;}
+	.cruces-octavos .oct-der-1{ top: 1105px; right:auto; left: 0;}
+	.cruces-octavos .oct-der-2{ top: 1442px; right:auto; left: 0;}
+	.cruces-octavos .oct-der-3{ top: 1690px; right:auto; left: 0;}
+	.cruces-octavos .oct-der-4{ top: 2027px; right:auto; left: 0;}
+
+	.cruces-octavos .cua-izq-1 { left: 97px; top: 168px; }
+	.cruces-octavos .cua-izq-2 { left: 97px; top: 754px; }
+	.cruces-octavos .cua-der-1 { top: 1273px; left: 97px; right: auto; }
+	.cruces-octavos .cua-der-2 { top: 1858px; left: 97px; right: auto; }
+
+	.cruces-octavos .sem-izq {left: 252px; top: 473px;}
+	.cruces-octavos .sem-der {top:1578px; right: auto; left: 252px;}
+
+	.cruces-octavos .partido-final {left: 399px; top: 905px;}
+	.cruces-octavos .partido-3y4 {top: 1103px; bottom: auto; left: 399px;}
+
+	.cruces-octavos .fases-cruces { }
+	.fases-cruces { top: -32px; }
+	.cruces-octavos { margin-top: 55px; }
+	.cruces-octavos p.txt-octavos-izq { left: 0; }
+	.cruces-octavos p.txt-cuartos-izq { left: 138px; }
+	.cruces-octavos p.txt-semifinal-izq { left: 276px; }
+	.cruces-octavos p.txt-final { left: 414px; display: block; }
+	.cruces-octavos p.txt-semifinal-der,
+	.cruces-octavos p.txt-cuartos-der,
+	.cruces-octavos p.txt-octavos-der { display: none; }
+
+	.cruces-cuartos .fases-cruces { height: 1100px; }
+	.cruces-cuartos { height: 1092px; }
+
+	.cruces-cuartos p.txt-semifinal-der,
+	.cruces-cuartos p.txt-cuartos-der{ display: none; }
+	.cruces-cuartos p.txt-final { left: 340px; display: block; }
+
+	.cruces-cuartos .cua-izq-1{ top: 13px; left: 0;}
+	.cruces-cuartos .cua-izq-2{ top: 369px; left: 0;}
+	.cruces-cuartos .cua-der-1{ top: 563px; right:auto; left: 0;}
+	.cruces-cuartos .cua-der-2{ top: 915px; right:auto; left: 0;}
+
+	.cruces-cuartos .sem-izq { left: 97px; top: 191px; }
+	.cruces-cuartos .sem-der { top: 738px; left: 97px; right: auto; }
+
+	.cruces-cuartos .partido-final { left: 378px; top: 350px; }
+	.cruces-cuartos .partido-3y4 { left: 378px; top: 560px; }
+
+	.cruces-cuartos .cua-der-con { left: 215px; right: auto; height: 361px; width: 81px; border:8px solid #ccc; border-left:0; top:621px; }
+	.cruces-cuartos .cua-izq-con {position :absolute; left: 215px; height: 364px; width: 81px; border:8px solid #cecece; border-left:0; top:72px; }
+
+	.cruces-cuartos .sem-der-con { height: 82px; left: 311px; position: absolute; right: auto; top: 249px; width: 177px; border:8px solid #ccc; border-left:0; border-bottom: 0; }
+	.cruces-cuartos .sem-izq-con { height: 53px; left: 306px; position: absolute; right: auto; top: 752px; width: 182px; border:8px solid #ccc; border-left:0; border-top: 0; }
+
+	.cruces-cuartos .final-con { display: none; }
+	.cruces-octavos p.txt-semifinal-izq::before,
+	.cruces-cuartos p.txt-semifinal-izq::before { border-right: 0 none; }
+
+	/* Ficha jugador portada  */
+	.data-list-horiz.no-mas-estadisticas ul li:nth-child(2),
+	.data-list-horiz.no-mas-estadisticas ul li:nth-child(3),
+	.data-list-horiz.no-mas-estadisticas ul li:nth-child(4) { width: 33.3%; }
+
+	.data-list-horiz.no-mas-estadisticas ul li:nth-child(2)::before,
+	.data-list-horiz.no-mas-estadisticas ul li:nth-child(3)::before,
+	.data-list-horiz.no-mas-estadisticas ul li:nth-child(4)::before { border-bottom: 1px dotted #676767; bottom: 0; content: ""; height: 1px; left: 15px; position: absolute; right: 15px; width: auto; }
+
+	.data-list-horiz.no-mas-estadisticas ul li:nth-child(5),
+	.data-list-horiz.no-mas-estadisticas ul li:nth-child(6) { width: 50%; }
+
+	/*Calendario - Resultados Tenis*/
+	.cal-res-tenis .evento.pntc-marcador .marcador-num.tenis .player .player-nom, .cal-res-tenis .cont-clasificacion .cont-nombre-equipo span, .cal-res-tenis .cont-clasificacion .cont-nombre-equipo a{max-width: 190px}
+	.cal-res-tenis .cruces-octavos .cruce .zona-horaria {background: #f2f2f2;width: 47%;}
+	.cal-res-tenis .cruces-cuartos {height: 600px}
+	.cal-res-tenis .cruces-cuartos.tipo-semi {height: 150px;}
+	.cal-res-tenis .cruces-cuartos p.txt-semifinal-izq{left: 285px}
+	.cal-res-tenis .cruces-cuartos .cua-izq-2{top: 207px;}
+	.cal-res-tenis .cruces-cuartos .cua-der-1 {top: 494px}
+	.cal-res-tenis .cruces-cuartos .cua-der-2 {top:307px; }
+	.cal-res-tenis .cruces-cuartos .sem-izq, .cal-res-tenis .cruces-cuartos .sem-der {left: 30%; }
+	.cal-res-tenis .cruces-cuartos .sem-der-con {height: 82px; left: 427px; top: 151px; border: 3px solid #ccc; border-left: 0; border-bottom: 0; }
+	.cal-res-tenis .cruces-cuartos .sem-izq-con { height: 116px; left: 427px; top: 335px; border: 3px solid #ccc; border-left: 0; border-top: 0;} 
+	.cal-res-tenis .cruces-cuartos .sem-der {top: 404px;}
+	.cal-res-tenis .cruces-cuartos .partido-final {top: 227px; margin-left: inherit; margin-right: inherit; left: inherit; right: 0;} 
+	.cal-res-tenis .cruces-cuartos.tipo-semi .cua-der-1 {left: inherit;top: 13px; right: 0;}
+	.cal-res-tenis .cruces-cuartos .cua-der-con {position: absolute; left: 186px; height: 200px; width: 103px; border: 3px solid #cecece; border-left: 0; top: 350px; }
+	.cal-res-tenis .cruces-cuartos .cruce .zona-horaria{ background: #f2f2f2}
+	.cal-res-tenis .cruces-cuartos.tipo-semi .cruce{ width: 235px}
+	.cal-res-tenis .cruces-cuartos.tipo-semi p.txt-cuartos-der{ display: block;} 
+	.cal-res-tenis .cruces-cuartos.tipo-semi .sem-der{ left: inherit;} 
+	.cal-res-tenis .cruces-cuartos.tipo-semi .partido-final{ margin-left: auto; margin-right: auto; left: 0; right: 0;} 
+	.cal-res-tenis .cruces-cuartos.tipo-semi .sem-der-con, .cal-res-tenis .cruces-cuartos.tipo-semi .sem-izq-con{ display: none;} 
+	.cal-res-tenis .cruces-octavos {height: 1030px;}
+	.cal-res-tenis .cruces-octavos .cua-der-1 {top: 54px; left: 180px;}
+	.cal-res-tenis .cruces-octavos p.txt-cuartos-izq{left: 259px}
+	.cal-res-tenis .cruces-cuartos p.txt-semifinal-der{ display: block;}
+	.cal-res-tenis .cruces-octavos p.txt-semifinal-izq {left: 457px; }
+	.cal-res-tenis .cruces-octavos .cua-izq-1 {left: 200px; }
+	.cal-res-tenis .cruces-octavos .cua-izq-2{left: 200px; }
+	.cal-res-tenis .cruces-octavos .cua-der-1{ top:500px; left: 200px}
+	.cal-res-tenis .cruces-octavos .cua-der-2{ top:700px; left: 200px}
+	.cal-res-tenis .cruces-octavos .cua-der-1 {top: 54px; left: 180px;}
+	.cal-res-tenis .cruces-octavos .cua-izq-1 {left: 265px;top: 52px;}
+	.cal-res-tenis .cruces-octavos .cua-izq-2{left: 265px;top: 350px;}
+	.cal-res-tenis .cruces-octavos .cua-der-1{top: 600px;left: 265px;}
+	.cal-res-tenis .cruces-octavos .cua-der-2{top: 900px;left: 265px;}
+	.cal-res-tenis .cruces-octavos .sem-izq{left: 415px;top: 200px;}
+	.cal-res-tenis .cruces-octavos .sem-der {top: 745px;left: 415px;}
+	.cal-res-tenis .cruces-octavos .partido-final {top: 440px;margin-left: inherit;margin-right: inherit;left: inherit;right: 0;}
+	.cal-res-tenis .cruces-octavos .oct-izq-2{top: 0;}
+	.cal-res-tenis .cruces-octavos .oct-izq-2{top: 100px;}
+	.cal-res-tenis .cruces-octavos .oct-izq-3{top: 300px;}
+	.cal-res-tenis .cruces-octavos .oct-izq-4{top: 400px;}
+	.cal-res-tenis .cruces-octavos .oct-der-1{top: 540px;} 
+	.cal-res-tenis .cruces-octavos .oct-der-2{top: 650px;}
+	.cal-res-tenis .cruces-octavos .oct-der-3{top: 850px;}
+	.cal-res-tenis .cruces-octavos .oct-der-4{ top: 950px}
+	.cal-res-tenis .cruces-octavos .partido-3y4 {top: 1000px;margin-left: inherit;margin-right: inherit;left: inherit;right: 0;}
+	.cal-res-tenis .cruces-octavos .oct-izq-con-1 {left: 239px;top: 46px;height: 99px;}
+	.cal-res-tenis .cruces-octavos .oct-izq-con-1::after{top: 27px;}
+	.cal-res-tenis .cruces-octavos .oct-izq-con-2{left: 239px;height: 99px;top: 345px;}
+	.cal-res-tenis .cruces-octavos .oct-izq-con-2::after{top: 24px;}
+	.cal-res-tenis .cruces-octavos .oct-der-con-1 {left: 239px;height: 99px;top: 590px;border-right: 3px solid #ddd;}
+	.cal-res-tenis .cruces-octavos .oct-der-con-1::after{ border-left-width: 35px ;right: -36px; }
+	.cal-res-tenis .cruces-octavos .oct-der-con-2 {left: 239px;height: 99px;top: 892px;border-right: 3px solid #ddd;}
+	.cal-res-tenis .cruces-octavos .oct-der-con-2::after{border-left-width: 35px; }
+	.cal-res-tenis .cruces-octavos .cua-izq-con{left: 462px;top: 96px;height: 300px;}
+	.cal-res-tenis .cruces-octavos .cua-der-con{left: 462px;top: 645px;height: 300px;}
+	.cal-res-tenis .cruces-octavos .sem-der-con{top: 236px; left: 650px; height: 216px; }
+	.cal-res-tenis .cruces-octavos .sem-izq-con{top: 546px;left: 607px;height: 246px;}
+	.cal-res-tenis .flex-container-x12 > div:nth-last-child(2){border-bottom: none;}
+
+
+
+	/*ficha jugador estadisticas */
+	.cont-flex > div{min-width: 50%;}
+
+	/* CSS especifica Table-sorted */
+	.tablesaw-sortable-head .tablesaw-sortable-btn { padding-right: 20px; }
+
+	/* Nombre de equipos en clasificaciones */
+	.cont-clasificacion tr .cont-nombre-equipo{width: 250px;}
+
+	/* Fichas */
+	.frm-bsc {width: 260px; margin-bottom: 20px;}
+	.info-estadistica .racha .cont-circulo-posesion .in-circle{top: 13px; left: 15px; height: 80px; width: 80px;}
+
+	.int-data-player-match {color: #888;font-size: 12px;clear: left;display: block;margin-top: -8px;}
+
+	/* Calendario de Especiales */
+	.resultados.cont-modulo .cnt-e-calendar .tit-modulo {border-bottom: 1px solid #DDDDDD;}
+	.resultados .cnt-e-calendar .cont-resultados .estadio {width: 23%; padding: 0 10px;}
+	.resultados .cnt-e-calendar .cont-resultados .nombre-equipo {font: 12px/36px "sourceblack",Arial,Helvetica;}
+	.resultados .cnt-e-calendar .cont-resultados .info-evento-int .cont-fecha {padding-right: 10px;}
+	.resultados .cnt-e-calendar .cont-resultados .info-evento-int .cont-fecha:before {background: none;}
+	.resultados .cnt-e-calendar .info-evento {width: 100%; border-top: 1px solid #f2f2f2; border-bottom: 1px solid #DDDDDD; background: #F0F0F0;}
+	.resultados .cnt-e-calendar .equipo-local, .resultados .cnt-e-calendar .equipo-visitante {border-bottom: none; width: 22%;}
+	.resultados .cnt-e-calendar .cont-resultados .grupo {margin-right: 12%; text-align: center; width: 10%;}
+	.resultados.cont-modulo .cnt-e-calendar .tit-modulo {text-align: center;}
+	.resultados .cnt-e-calendar .cont-resultados .estadio {float: right; padding: 0 10px; text-align: right; width: 22%;}
+
+	/* resultados eliminatoria */
+	  .resultados li .equipo-local, .resultados li .equipo-visitante{border-bottom:1px solid #f2f2f2}
+	  .resultados li:last-child .equipo-local, .resultados li:last-child .equipo-visitante {border-bottom: 0 none;}
+	  .resultados li:first-child .equipo-local, .resultados li:first-child .equipo-visitante {border-bottom: 1px solid #f2f2f2;}
+	  /*elimino bordes de la página de resultados */
+	  .resultados li.list-resultado .equipo-local, .resultados li.list-resultado .equipo-visitante{border-bottom:0 none;}
+
+	/*** motor ***/
+	.cal-title{margin-left: 20px;}
+    .cal-title:after{left: -20px; }
+    .cal-country{margin-left: 20px;}
+		/* escuderías y pilotos */
+		.motor-team .motor-team-info {margin-bottom: 16px;}
+		/* ficha piloto */
+		.info-palmares div:nth-child(5){clear: inherit;}
+	/*Motor Leyendas*/	
+ 	.motor .ficha-leyenda .data-list-horiz ul li:first-child {width: 100%; }
+   .data-list-horiz.no-mas-estadisticas ul li:nth-child(9), .data-list-horiz.no-mas-estadisticas ul li:nth-child(8), .data-list-horiz.no-mas-estadisticas ul li:nth-child(7){ width: 33.3%}
+   .motor .ficha-leyenda .hdr-ficha-player .hdr-ficha-player-info hgroup {margin-top: 20px;}
+	.motor .ficha-leyenda .data-list-horiz ul li:nth-last-child(-n+3):after { border-top: 1px dotted #676767 ;    bottom: 0; content: ""; height: 1px; left: 15px; position: absolute; right: 15px; width: auto;}
+	.motor .ficha-leyenda .data-list-horiz ul li:nth-last-child(-n+3):before {border-left: 1px dotted #676767; border-left-width: 1px; border-left-style: dotted; border-left-color: rgb(103, 103, 103); bottom: 15px; content: ""; left: 0; position: absolute; top: 15px; width: 1px;}
+        
+	/*  Ciclismo */
+	.ciclismo .mallots { width: 50%; }
+	.ciclismo .mallots:nth-child(-n+2) { margin-bottom: 20px; }
+
+		/*Calendario UCI*/
+		.cont-calendario-uci .tit-info-detalle {min-height: 75px;}
+
+	 
+ 
+}
+
+
+@media (max-width: 991px) { 
+
+	/* Navegación superior - scroll horizontal */
+	.tabla-navigation{overflow-x: auto; height: 44px; overflow-y: hidden; white-space: nowrap;position: relative; padding-right: 1px; margin-right: 5px;}
+	.cont-botones{overflow-x: auto; overflow-y: hidden; white-space: nowrap;position: relative; padding-right: 1px; margin-right: 5px;}
+	.break-navigation{width: 10px; height: 28px; right: 10px; top: 0px; content: ""; position: absolute; z-index: 9;
+	background: rgba(242,242,242,0);
+	background: -moz-linear-gradient(left, rgba(242,242,242,0) 0%, rgba(242,242,242,0.99) 68%, rgba(242,242,242,1) 69%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242,242,242,0)), color-stop(68%, rgba(242,242,242,0.99)), color-stop(69%, rgba(242,242,242,1)));
+	background: -webkit-linear-gradient(left, rgba(242,242,242,0) 0%, rgba(242,242,242,0.99) 68%, rgba(242,242,242,1) 69%);
+	background: -o-linear-gradient(left, rgba(242,242,242,0) 0%, rgba(242,242,242,0.99) 68%, rgba(242,242,242,1) 69%);
+	background: -ms-linear-gradient(left, rgba(242,242,242,0) 0%, rgba(242,242,242,0.99) 68%, rgba(242,242,242,1) 69%);
+	background: linear-gradient(to right, rgba(242,242,242,0) 0%, rgba(242,242,242,0.99) 68%, rgba(242,242,242,1) 69%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#f2f2f2', GradientType=1 );}
+
+	/* Competicion portada  */
+	.resultados.competicion-home .info-evento{ width: 100%; }
+
+	/* índice jugadores */
+	.navigation-chars ul{display: block;}
+	.navigation-chars li{display: inline-block;margin-right: 10px;margin-bottom: 6px;}
+
+	/* Ficha equipo portada  */
+
+	.data-list-horiz ul li:first-child::before { border-color: #f6f6f6 transparent transparent; border-image: none; border-style: solid; border-width: 8px; bottom: -16px; content: ""; left: 50%; top: auto; margin-left: -7px; position: absolute; right: 50%; z-index: 1; }
+	.data-list-horiz ul li:last-child a::before { margin-right: -105px; right: 50%; }
+	.data-list-horiz ul li:first-child,
+	.data-list-horiz ul li:last-child { padding-top: 22px; }
+	/* Ficha jugador portada  */
+	.data-list-horiz.no-mas-estadisticas .txt-competicion { margin-bottom: 0; }
+
+	.info-palmares .blq-palmares .cnt-copa .icono{top: 0px; left: 0px;}
+
+
+	/* ficha jugador */
+    
+       /* ajustes para jugadores con nombre largo*/
+      
+    .hdr-ficha-player .hdr-ficha-player-info-team{margin-top: -38px; margin-left: 93px; clear: both; }
+  .hdr-ficha-player .hdr-ficha-player-info-team img{width: 22px; margin-top: 4px;}
+  .hdr-ficha-player .hdr-ficha-player-info-team .hdr-ficha-player-info-team-name{font: 16px/20px "sourceblack", Arial, Helvetica, Sans-Serif; margin-left: 3px;}
+  .hdr-ficha-player .hdr-ficha-player-info .tit-ppal{font: 24px/24px "sourceblack", Arial, Helvetica, Sans-Serif;}
+  .hdr-ficha-player .hdr-ficha-player-info .sub-tit{font: 12px/16px Arial, Helvetica, Sans-Serif; padding-top: 6px; }
+  .hdr-ficha-player .hdr-ficha-player-info-team:after{display: none;}
+  .hdr-ficha-player .hdr-ficha-player-info hgroup { margin-top: -30px; }
+
+
+
+  /* buscador indice jugadores - comportamiento especial */
+  .frm-bsc-indice{width: 100%;}
+
+  /*motor*/
+  /*ficha circuito*/
+
+  .info-ficha-motor .info-carrera { padding: 10px; }
+  	.info-ficha-motor .info-carrera li { display: block; padding: 8px 20px 8px 0px; border-bottom: 1px solid #E6E7E8; }
+    .info-ficha-motor .info-carrera li:last-child { border-bottom: none; }
+    	.info-ficha-motor .info-carrera .title { float: left; }
+        .info-ficha-motor .info-carrera .dato { float: right; }
+        .info-ficha-motor .info-carrera .ver-mas:after { content: ""; position: absolute; margin-left: 10px; top:5px; border: 5px solid transparent; border-left-color: #F9A300; }
+
+        .info-ficha-motor .info-carrera .ico-calificacion, .info-ficha-motor .info-carrera .ico-carrera { display: none; }
+		.info-ficha-motor ul.cont-grafico-datos {padding: 10px 0;}
+
+	/*  Ciclismo */
+	.ciclismo .cont-grafico, 
+	.ciclismo .cont-info {width: 100%; }
+	.ciclismo .cont-grafico img { width: 100%; }
+	.ciclismo .cont-grafico { margin-bottom: 30px; }
+	.ciclismo .team-resource img { height: auto; width: 90px; }
+	
+	/*Ciclismo Leyendas*/ 
+	.ciclismo .leyendas .favorito .cont-titulos  { float: none; margin-left: inherit; }
+	.ciclismo .leyendas .favorito .cont-carreras { display: inline-block;}
+	.ciclismo .leyendas section:nth-child(3) { clear:  none; }
+    
+    /*Motor Leyendas*/  
+   .motor .ficha-leyenda .cont-modulo {background: none; border: none; }
+   .motor .ficha-leyenda .data-list-horiz.no-mas-estadisticas ul li:nth-child(5), .motor .ficha-leyenda .data-list-horiz.no-mas-estadisticas ul li:nth-child(6){    width: 49.9%;}
+   .motor .ficha-leyenda .data-list-horiz ul li.gris{ background: #454545;}
+    
+    /* PALMARES revisado */
+    
+    .palmares div.table-wrapper div.scrollable { border-right: 0; margin-left: 119px; } /*table-responsive con tabuladores */
+    .palmares .pinned table, .palmares .pinned { width: 120px; } 
+
+}
+
+@media (min-width: 992px) { 
+
+	.hdr-ficha-player .frm-bsc { margin-top: 30px; }
+
+	/* CSS especifica Table-sorted */
+	.tablesaw-sortable-head .tablesaw-sortable-btn { padding-right: 0px; }
+	
+	/*Motor Leyendas*/  
+	.motor .ficha-leyenda .data-list-horiz ul li {padding-left: 19px; padding-right: 19px; width: inherit; }
+	.motor .ficha-leyenda .data-list-horiz.largo ul li {  padding-left: 18px; padding-right: 18px; }
+
+	/*Calendario Resultados Tenis*/  
+	.cal-res-tenis .flex-container-x12 > div:nth-last-child(2){border-bottom: none;}
+    
+    .ciclismo .cont-recorrido .cont-grafico img { max-width: calc(100% - 30px); height: auto; }
+}

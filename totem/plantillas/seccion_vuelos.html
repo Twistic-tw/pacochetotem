@@ -1,0 +1,75 @@
+ 
+<div id='informacionWrapper_vuelos' class="closeWrapper content_width double_size">     <!-- Wrapper interno para el contenido -->
+    <div id='informacionTitle_vuelos' class='contentHeader' style="font-size: 38px !important;"> <!-- header, titulo de la secion -->
+        {vuelos_title}
+    </div>
+
+    <div class='content tabs_ draw_border content_width'>
+        <ul class="css_selector_tipo_vuelo">
+            <li><a href="#llegadasWrapper">{lang_llegadasText}</a></li>
+            <li><a href="#salidasWrapper">{lang_salidasText}</a></li>
+        </ul>
+
+        <div id="llegadasWrapper" class='actividades'>
+            <div class="vuelosWrapper">
+                <table id="salida_vuelos" class="std_table vuelos_table">
+                    <thead>
+                        <tr>
+                            <th>{lang_hora}</th>
+                            <th></th>
+                            <th>{lang_vuelo}</th>
+                            <th>{lang_origen}</th>
+                            <th>{lang_compañía}</th>
+                            <th>{lang_estado}</th>
+                        </tr>     
+                    </thead>
+                    <tbody>
+                        <!-- START BLOCK : llegadas -->
+                        <tr>
+                            <td>{hora}</td>
+                            <td><img src="{imagen}"></td>
+                            <td>{vuelo}</td>
+                            <td>{trayecto}</td>
+                            <td>{company}</td>
+                            <td>{estado}</td>
+                        </tr>    
+                        <!-- END BLOCK : llegadas -->
+                    </tbody> 
+                </table>
+            </div>
+        </div>
+
+        <div id="salidasWrapper"  class='actividades'>
+            <div class="vuelosWrapper">
+                <table id="llegada_vuelos" class="std_table vuelos_table">
+                    <thead>
+                        <tr>
+                            <th>{lang_hora}</th>
+                            <th></th>
+                            <th>{lang_vuelo}</th>
+                            <th>{lang_destino}</th>
+                            <th>{lang_compañía}</th>
+                            <th>{lang_estado}</th>
+                        </tr>     
+                    </thead>
+                    <tbody>
+                        <!-- START BLOCK : salidas -->
+                        <tr> 
+                            <td>{hora}</td>
+                            <td><img src="{imagen}"></td>
+                            <td>{vuelo}</td>
+                            <td>{trayecto}</td>
+                            <td>{company}</td>
+                            <td>{estado}</td>
+                        </tr>     
+                        <!-- END BLOCK : salidas -->
+                    </tbody> 
+                </table>
+            </div>
+        </div>
+        
+    </div>
+    <div class="back buttonsLeft">
+        <span class="atrasIcon"></span> {lang_atras}
+    </div>
+</div>

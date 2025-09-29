@@ -1,0 +1,59 @@
+<div class="no_animacion {displayNone}" xmlns="http://www.w3.org/1999/html">{LANG_AGENDA_NO}</div>
+
+<!-- START BLOCK : actividades_lista -->
+<li class="{actividad_class}">
+
+    <div class='actividadTime'>
+        <img class="css_actividades_reloj_pinero" src="../../../contenido_proyectos/vistaflor/_general/iconos/iconos_svg/{icono_actividad}">
+
+        <span class="css_actividades_hora "><strong>{actividad_time}</strong> - {actividad_time_fin} </span>
+
+    </div>
+    <div class='actividadDesc'>
+        <div class="css_actividadDesc_titulo" style="height:27px;margin-top: -6px;"> {actividad_desc}</div>
+
+        <div class="{css_color_kids}" style="margin-top: 14px"> <strong>{tipo}</strong> <span class="css_letra_mayusculas"> {tipo_contenido} </span> </div>
+    </div>
+
+        <span class='actividadDetails displayNone'>
+            <img class='imagen_actividad_agenda' style="background-image:url('../../../contenido_proyectos/vistaflor/centro_{centro_id}/imagenes/agenda/{actividad_imagen}');" />
+             <span>{actividad_detail}</span>
+
+        </span>
+    <span class='actividadTimeFin displayNone'> <span class="texto_titulo_popup"> {actividad_desc} </span> </span>
+
+
+</li>
+<!-- END BLOCK : actividades_lista -->
+
+<div class="css_bloque_show_destacado {css_imagen_show_destacado_thumbs}">
+
+    <!-- START BLOCK : actividad_destacada -->
+    <div id="evento_{id_evento}" class="{js_visible_destacado} js_show_destacado">
+        <div class="css_imagen_show_destacado {css_imagen_show_destacado_thumbs}" style="background-image:url('{imagen_destacada}');"></div>
+        <div class="css_titulo_evento_destacado">{destacado_hora} | {destacado_nombre}</div>
+    </div>
+
+    <!-- END BLOCK : actividad_destacada -->
+
+
+    <div class="css_bloque_show_thumbs {css_oculta_thumbs}">
+
+        <!-- START BLOCK : actividad_destacada_thumbs -->
+        <div id="tevento_{id_evento}" class="css_bloque_thumb {css_thumb_active} js_show_destacado_thumb">
+        <div class="css_imagen_show_destacado_t " style="background-image:url('{imagen_destacada}');"></div>
+        <div class="css_titulo_evento_destacado_t">{destacado_hora}</div>
+        </div>
+
+        <!-- END BLOCK : actividad_destacada_tumbs -->
+
+    </div>
+
+</div>
+
+
+
+
+
+
+

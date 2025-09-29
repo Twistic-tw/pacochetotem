@@ -1,0 +1,30 @@
+<div id='programacionWrapper' class="noTabsWrapper double_size ">     <!-- Wrapper interno para el contenido -->
+    <div id='programacionWrapper' class='contentHeader'> <!-- header, titulo de la secion -->
+        {titulo_pagina}
+    </div>
+
+
+   <div class='content'>
+    
+        <div id="owl-animacion" class="owl-carousel2 carousel-programacion"> 
+        
+            <!-- START BLOCK : dia -->
+            <div class="programacion_bloque_dia">
+                <div class="programacion_bloque_fecha"> {fecha} </div>
+                    <!-- START BLOCK : evento -->
+                    <div class="programacion_bloque_evento {tamano_tarjeta}" style="background-image:url('{foto_evento}');"></div>
+                        <div class="programacion_bloque_texto_evento">
+                            <div class="programacion_bloque_nombre_evento"> {titulo} </div>
+                            <div class="programacion_bloque_hora_evento"> {hora} </div>
+                        </div>
+                    
+                    <!-- END BLOCK : evento -->
+            </div>
+            <!-- END BLOCK : dia -->
+
+        </div>
+
+		<div class="no_animacion {displayNone}">{LANG_AGENDA_NO}</div>
+    </div>
+
+</div>

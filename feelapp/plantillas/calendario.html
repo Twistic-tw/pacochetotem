@@ -1,0 +1,84 @@
+
+	<!-- Inicio popup de las actividades -->
+	<div class="pop-actividades-content">
+
+	</div>
+	<!-- Fin del popup de las actividades-->
+
+	<div id="page-content2" class="page-content"  >
+		<div id="page-content-scroll" class="header-clear"><!--Enables this element to be scrolled --> 
+
+			<div class="heading-strip css_fondo_calendario css_foto_fondo_centro">
+				<!-- <h3 class="css_titulo_seccion_con_fondo">Entretenimiento</h3> -->
+				<!-- <p>Comienze hoy a disfrutar una experiencia única con servicios y descuentos especiales</p> -->
+				
+				<div class="overlay light-overlay"></div>
+				<div class="titulo-secciones">{titulo_seccion}</div>
+			</div>
+
+			<div class="decoration decoration-margins"></div>
+
+			<div class="content-fullscreen no-bottom content">    
+				<div class="one-half-responsive">
+					<h3 id="fecha_actual_calendario" class="page-blog-title">{fecha_actual}</h3>
+					<div class="calendar-titles">
+
+						<!-- START BLOCK : letras-fechas -->
+							<a href="#">{dia_semana}</a>
+						<!-- END BLOCK : letras-fechas -->
+
+						<!-- <a href="#">L</a>
+						<a href="#">M</a>
+						<a href="#">X</a>
+						<a href="#">J</a>
+						<a href="#">V</a>
+						<a class="light-titles" href="#">S</a>
+						<a class="light-titles" href="#">D</a> -->
+					</div>
+					<div class="decoration half-bottom"></div>
+					<div class="calendar-days">
+						<!-- &nbsp adds a space for the single numbers, this way they can be centered in boxes -->
+
+						<!-- START BLOCK : numero-fechas -->
+							<a data-fecha_texto="{fecha_texto_calendario}" id="#actividades_{fecha_semana}" class="dia-semana-actividades {active}" href="#"><i class="ion-record"></i>{dia_semana}</a>
+						<!-- END BLOCK : numero-fechas -->
+
+						<!-- <a class="clear-day" href="#"><i class="ion-record"></i>4</a>
+						<a class="clear-day" href="#"><i class="ion-record"></i>5</a>
+						<a class="clear-day" href="#"><i class="ion-record"></i>6</a>
+						<a class="clear-day" href="#"><i class="ion-record"></i>7</a>
+						<a class="taken-day" href="#"><i class="ion-record"></i>&nbsp8</a>
+						<a class="light-day" href="#"><i class="ion-record"></i>9</a>
+						<a class="light-day" href="#"><i class="ion-record"></i>10</a>-->
+						
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="one-half-responsive last-column">
+
+					<!-- START BLOCK : contenedor_actividades -->
+
+						<div id="actividades_{fecha_contenedor_actividades}" class="calendar-hours {displaynone}">
+
+							<!-- START BLOCK : actividades -->
+
+								<a id="#act-{id_actividad}" href="#" class="calendar-hour calendar-hour-taken actividad-popup">
+									<strong class="cal-from">{hora_inicio_actividad}</strong>
+									<strong class="cal-to">{hora_fin_actividad}</strong>
+									<h4>{nombre_actividad}</h4>
+									<em>{nombre_lugar} - {nombre_categoria}</em>
+								</a>
+
+							<!-- END BLOCK : actividades -->
+
+						</div>
+
+					<!-- END BLOCK : contenedor_actividades -->
+
+				</div>
+			</div>
+			
+			<div class="decoration decoration-margins"></div>
+
+		</div>  
+	</div>
