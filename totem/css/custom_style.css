@@ -384,7 +384,7 @@ body .ui-keyboard-space{
 .width130{width: 130px;}
 .buttonsRight, .buttonsCenter, .buttonsLeft, .buttons {
     background-color: white;
-    border: 2px solid #97bf0d;
+    border: 2px solid #002b49;
     /*border-radius: 9px;*/
     font-family: OpenSans;
     font-size: 16px;
@@ -523,7 +523,7 @@ table.std_table tr td, table.std_table tr th {
     line-height: 79px;
     z-index: 1;
     background-color: white !important;
-    border-bottom: 5px solid #97bf0d;
+    border-bottom: 5px solid #002b49;
 }
 
 #appSlogan{
@@ -703,7 +703,7 @@ table.std_table tr td, table.std_table tr th {
 #mainMenuWrapper {
     height: 130px;
     overflow: hidden;
-    background-color: #97bf0d;
+    background-color: #002b49;
 }
 .mainMenuElement{           /* clase wrapper para los elementos del menu */
     float: left;
@@ -928,7 +928,7 @@ table.std_table tr td, table.std_table tr th {
 }
 
 #pageBottomWrapper {
-    background-color: #97bf0d;
+    background-color: #002b49;
     position: absolute;
     width: 100%;
     z-index: 2;
@@ -2064,7 +2064,7 @@ li.municipio_element.active{
     top: 23px;
 }
 .atrasIcon {
-    background: url("../../../../contenido_proyectos/pacoche/_general/iconos/atras_icono.png") no-repeat scroll 7px 8px / 42% auto #97bf0d;
+    background: url("../../../../contenido_proyectos/pacoche/_general/iconos/atras_icono.png") no-repeat scroll 7px 8px / 42% auto #002b49;
     display: inline-block;
     height: 30px;
     margin-right: 7px;
@@ -2072,7 +2072,7 @@ li.municipio_element.active{
     border-radius: 30px;
 }
 .back .atrasIcon {
-  background: url("../../../../contenido_proyectos/pacoche/_general/iconos/atras_icono.png") no-repeat scroll 6px 6px / 42% auto #97bf0d;
+  background: url("../../../../contenido_proyectos/pacoche/_general/iconos/atras_icono.png") no-repeat scroll 6px 6px / 42% auto #002b49;
   height: 24px;
   left: 3px;
   position: absolute;
@@ -3614,7 +3614,7 @@ margin-left: 13% !important;
 }
 
 .tarjeta_info_general_estilos{
-    border: 2px solid #97bf0d !important;
+    border: 2px solid #002b49 !important;
     height: 188px !important;
     width: 26% !important;
     padding-top: 0px !important;
@@ -3657,7 +3657,7 @@ margin-left: 13% !important;
 
 
 .tarjeta_info_general_titulo {
-    background-color: #97bf0d;
+    background-color: #002b49;
     color: #FFFFFF;
     overflow: hidden;
     padding: 3px;
@@ -3858,7 +3858,7 @@ margin-left: 13% !important;
 }
 
 .overlayWrapper.popup-element.closeWrapper {
-    border: 3px solid #97bf0d;
+    border: 3px solid #002b49;
     left: 50px !important;
     margin-top: -44px !important;
     max-height: 1000px;
@@ -3871,7 +3871,7 @@ margin-left: 13% !important;
     border-color: inherit;
 }
 .demo_popup .eventoDetailTitle {
-    background-color: #97bf0d;
+    background-color: #002b49;
 }
 
 
@@ -4463,7 +4463,7 @@ text-align: left !important;
 /*CSS especifico para la pantalla de lugares**/
 
 .lugar_principal_nombre_zona {
-    color: #97bf0d;
+    color: #002b49;
     /*font-family: Kalam-Regular;*/
     font-size: 96px;
     font-weight: 500;
@@ -4497,7 +4497,7 @@ text-align: left !important;
 }
 
 .tarjeta_lugares_info_general_titulo {
-    background-color: #97bf0d;
+    background-color: #002b49;
     color: white;
     font-family: OpenSans;
     font-weight: 600;
@@ -5478,8 +5478,8 @@ form#enviarPostal .buttonsRight {
     height: 35px;
     height: 120px;
     text-align: center;
-    color: #97bf0d;
-    border: 3px solid #97bf0d;
+    color: #002b49;
+    border: 3px solid #002b49;
     margin: auto;
     box-shadow: 2px 3px 10px 0px;
     padding: 10px;
@@ -5531,7 +5531,7 @@ form#enviarPostal .buttonsRight {
     justify-content: left;
     height: 50px;
     width: 100%;
-    border-bottom: 2px solid #97bf0d;
+    border-bottom: 2px solid #002b49;
 }
 
 .btn-superior-ae {
@@ -5548,7 +5548,7 @@ form#enviarPostal .buttonsRight {
 }
 
 .btn-superior-ae.active{
-    background: #97bf0d;
+    background: #002b49;
 }
 
 .iframe-vuelos-new{
@@ -5584,12 +5584,12 @@ form#enviarPostal .buttonsRight {
     width: 11em;
     height: 11em;
     border-radius: 50%;
-    background: #97bf0d;
-    background: -moz-linear-gradient(left, #97bf0d 10%, rgba(255, 255, 255, 0) 42%);
-    background: -webkit-linear-gradient(left, #97bf0d 10%, rgba(255, 255, 255, 0) 42%);
-    background: -o-linear-gradient(left, #97bf0d 10%, rgba(255, 255, 255, 0) 42%);
-    background: -ms-linear-gradient(left, #97bf0d 10%, rgba(255, 255, 255, 0) 42%);
-    background: linear-gradient(to right, #97bf0d 10%, rgba(255, 255, 255, 0) 42%);
+    background: #002b49;
+    background: -moz-linear-gradient(left, #002b49 10%, rgba(255, 255, 255, 0) 42%);
+    background: -webkit-linear-gradient(left, #002b49 10%, rgba(255, 255, 255, 0) 42%);
+    background: -o-linear-gradient(left, #002b49 10%, rgba(255, 255, 255, 0) 42%);
+    background: -ms-linear-gradient(left, #002b49 10%, rgba(255, 255, 255, 0) 42%);
+    background: linear-gradient(to right, #002b49 10%, rgba(255, 255, 255, 0) 42%);
     position: relative;
     -webkit-animation: load3 1.4s infinite linear;
     animation: load3 1.4s infinite linear;
@@ -5597,7 +5597,7 @@ form#enviarPostal .buttonsRight {
   .loader-vuelos:before {
     width: 50%;
     height: 50%;
-    background: #97bf0d;
+    background: #002b49;
     border-radius: 100% 0 0 0;
     position: absolute;
     top: 0;

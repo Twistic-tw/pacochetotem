@@ -15,19 +15,19 @@ $id_lugar = $_SESSION['id_lugar'];
 /** para establecer los colores de los iconos del menu */
 //Colores
 $_mainMenuIconColors = array(
-    "agenda" => "#97bf0d",              //#CB4F24
-    "hotel" => "#97bf0d",               //#4570b4
-    "check-in" => "#97bf0d",            //#B71351
-    "informacion" => "#97bf0d",         //#56A099
-    "conoce" => "#97bf0d",              //#68AB6A
-    "ocio" => "#97bf0d",                //#c7362f
-    "actividades" => "#97bf0d",         //#e7b142
-    "comer" => "#97bf0d",               //#80217e
-    "que_hacer" => "#97bf0d",            //#80217e
-    "destinos" =>"#97bf0d",
-    "lugares" =>"#97bf0d",
-    "sostenibilidad"=> "#97bf0d",
-    "eurocopa" => "#97bf0d"
+    "agenda" => "#002b49",              //#CB4F24
+    "hotel" => "#002b49",               //#4570b4
+    "check-in" => "#002b49",            //#B71351
+    "informacion" => "#002b49",         //#56A099
+    "conoce" => "#002b49",              //#68AB6A
+    "ocio" => "#002b49",                //#c7362f
+    "actividades" => "#002b49",         //#e7b142
+    "comer" => "#002b49",               //#80217e
+    "que_hacer" => "#002b49",            //#80217e
+    "destinos" =>"#002b49",
+    "lugares" =>"#002b49",
+    "sostenibilidad"=> "#002b49",
+    "eurocopa" => "#002b49"
 );
 
 

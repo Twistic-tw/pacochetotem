@@ -12,7 +12,7 @@
 
 .letra_azul_pinero
 {
-    color: #97bf0d !important;
+    color: #002b49 !important;
 }
 
 .letra_gris_pinero
@@ -26,7 +26,7 @@
     /*font-style: italic;*/
     margin-bottom: 20px;
     margin-top: 14px;
-    color: #97bf0d;
+    color: #002b49;
 
 }
 
@@ -123,7 +123,7 @@
 }
 
 .linea_icono {
-    border-top: 1px solid #97bf0d;
+    border-top: 1px solid #002b49;
     float: left;
     height: 29px;
     margin-top: 34px;
@@ -200,7 +200,7 @@
 }
 
 .css_lista_iconos_habitacion {
-    background-color: #97bf0d;
+    background-color: #002b49;
     float: left;
     width: 100%;
 }

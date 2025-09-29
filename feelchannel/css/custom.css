@@ -63,7 +63,7 @@ body {
 #animacion {
     width: 948px;
     float: left;
-    background-color: #97bf0d;
+    background-color: #002b49;
     height: 276px;
     display: flex;
     justify-content: center;
@@ -96,7 +96,7 @@ body {
 #normas {
     width: 948px;
     float: left;
-    background-color: #97bf0d;
+    background-color: #002b49;
     height: 276px;
 
     display: flex;
@@ -155,7 +155,7 @@ body {
 }
 
 #infoShow {
-    background-color: #97bf0d;
+    background-color: #002b49;
     position: absolute;
     bottom: 0;
     width: 491px;
@@ -193,7 +193,7 @@ body {
 }
 
 .weather-right__temperature {
-    color: #97bf0d !important;
+    color: #002b49 !important;
     text-align: center !important;
     margin: auto !important;
 }
@@ -209,7 +209,7 @@ body {
     position: absolute;
     z-index: 999;
     color: white;
-    background-color: #97bf0d;
+    background-color: #002b49;
     padding: 14px;
     width: 428px;
     height: 71px;
