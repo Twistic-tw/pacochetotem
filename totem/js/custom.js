@@ -2214,6 +2214,26 @@ $("body").on("click", ".js_destroy_isotope", function(event) {
                     lockForAnimation = false;
                     removeOverlayContentLoadingGif();
                     try { console.error("[DEBUG] JSON.parse error in loadAjax response", e, { url: urlAjaxRequest, preview: String(data).slice(0,300) }); } catch(_e) {}
+                    // Retry once with debug=1 if response is empty to help diagnose server issues
+                    try {
+                        var isEmpty = !data || String(data).trim().length === 0;
+                        var hasDebug = /[?&]debug=1(?:&|$)/.test(urlAjaxRequest);
+                        if (isEmpty && !hasDebug) {
+                            var retryUrl = urlAjaxRequest + "&debug=1";
+                            console.warn("[DEBUG] Empty response. Retrying once with:", retryUrl);
+                            $.get(retryUrl, function(resp2){
+                                try { console.log("[DEBUG] Retry response preview:", String(resp2).slice(0,300)); } catch(__e) {}
+                            }).always(function(){
+                                $("body").append("<div id='overlayLoadingContent' class='loadingBg closeWrapper back'><span class='back'>Sin conexión</span></div>");
+                                setTimeout(function(){
+                                    $("#overlayLoadingContent").fadeOut("200", function(){
+                                        $(this).find(".back").click();
+                                    });
+                                }, 2000);
+                            });
+                            return;
+                        }
+                    } catch(__e) {}
                     $("body").append("<div id='overlayLoadingContent' class='loadingBg closeWrapper back'><span class='back'>Sin conexión</span></div>");
 
                     setTimeout(function() {

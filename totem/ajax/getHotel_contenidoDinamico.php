@@ -1,4 +1,24 @@
 <?php
+// Log fatal errors on shutdown to understand empty outputs
+register_shutdown_function(function(){
+    $e = error_get_last();
+    if ($e && in_array($e['type'], array(E_ERROR, E_PARSE, E_CORE_ERROR, E_COMPILE_ERROR))) {
+        error_log('[getHotel_contenidoDinamico][FATAL] '. $e['message'] .' in '. $e['file'] .':'. $e['line']);
+    }
+});
+
+// Capture warnings/notices to include in debug payload when requested
+$__ghcd_errors = array();
+set_error_handler(function($severity, $message, $file, $line) use (&$__ghcd_errors) {
+    // Respect @ operator
+    if (!(error_reporting() & $severity)) {
+        return false;
+    }
+    $entry = '['. $severity .'] '. $message .' in '. $file .':'. $line;
+    $GLOBALS['__ghcd_errors'][] = $entry;
+    error_log('[getHotel_contenidoDinamico][PHP] '. $entry);
+    return false; // allow normal handling too
+});
 // Debug no intrusivo: activar con &debug=1 para registrar sin romper JSON
 if (isset($_GET['debug']) && $_GET['debug']) {
     error_log("[getHotel_contenidoDinamico] params=".json_encode($_GET));
@@ -154,7 +174,31 @@ if ($contenidoId) {
 
     $resultado['datos'] = $tpl_hotel_contenido_dinamico->getOutputContent();
     
+    if (isset($_GET['debug']) && $_GET['debug']) {
+        $resultado['debug'] = array(
+            'contenido_count' => is_array($contenido) ? count($contenido) : 0,
+            'force' => (int)$forceDisplay,
+            'id_centro' => isset($_SESSION['id_centro']) ? $_SESSION['id_centro'] : null,
+            'idioma' => isset($_SESSION['idioma']) ? $_SESSION['idioma'] : null,
+            'php_errors' => isset($GLOBALS['__ghcd_errors']) ? $GLOBALS['__ghcd_errors'] : array(),
+        );
+    }
+    $jsonOut = json_encode($resultado);
+    if (isset($_GET['debug']) && $_GET['debug']) {
+        error_log('[getHotel_contenidoDinamico] JSON length='.strlen($jsonOut).' preview='.substr($jsonOut,0,300));
+    }
+    header('Content-Type: application/json; charset=utf-8');
+    echo $jsonOut;
+    exit;
+}
+else {
+    $resultado = array('error' => true, 'mensaje' => 'contenidoId requerido');
+    if (isset($_GET['debug']) && $_GET['debug']) {
+        $resultado['debug'] = array('php_errors' => isset($GLOBALS['__ghcd_errors']) ? $GLOBALS['__ghcd_errors'] : array());
+        error_log('[getHotel_contenidoDinamico] falta contenidoId');
+    }
     header('Content-Type: application/json; charset=utf-8');
     echo json_encode($resultado);
+    exit;
 }
 ?>
