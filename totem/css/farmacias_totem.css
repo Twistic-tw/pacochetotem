@@ -111,7 +111,7 @@
 }
 .fondo_verde {
   /*El fondo es azul en HD*/
-    background-color: #66902d;
+    background-color: #c37b52;
     float: left;
     height: 382px;
     width: px;
@@ -265,8 +265,8 @@
   padding: 10px 0;
 }
 .farmacia_listado_actual {
-  background-color: #66902d;
-  border-color: #66902d;
+  background-color: #c37b52;
+  border-color: #c37b52;
   color: white;
 }
 .direccion {

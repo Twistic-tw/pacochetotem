@@ -170,7 +170,7 @@ font-size: 14px;
 
 .css_guaguas_tarjeta_informacion_qr{
     background-color: #242424;
-    border: 2px solid #66902d !important;
+    border: 2px solid #c37b52 !important;
     margin-bottom: 10px;
     margin-top: 10px;
     width: 22%;
@@ -198,7 +198,7 @@ font-size: 14px;
 }
 
 .css_guaguas_tarjeta_informacion_qr_titulo{
-    background-color: #66902d;
+    background-color: #c37b52;
     color: #ffffff;
     overflow: hidden;
     padding: 3px;
@@ -208,7 +208,7 @@ font-size: 14px;
 }
 
 .css_titulo_principal_bloques_guaguas{
-    background-color: #66902d;
+    background-color: #c37b52;
     text-align: center;
     border: 0 none;
     font-size: 19px;
@@ -221,7 +221,7 @@ font-size: 14px;
 
 
 .css_guaguas_tarjeta_informacion_qr_masinfo{
-        background-color: #66902d;
+        background-color: #c37b52;
     color: #ffffff;
     overflow: hidden;
     padding: 10px;
@@ -250,7 +250,7 @@ font-size: 14px;
     margin-top: -10px;
     padding-bottom: 10px;
     text-align: center;
-    color: #66902d;
+    color: #c37b52;
 }
 
 .css_guaguas_hotel {
