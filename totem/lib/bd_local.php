@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-error_reporting(0);
+require_once __DIR__ . '/error_logging.php';
 
 
 $config = parse_ini_file('../../../../config/config.ini', true);
