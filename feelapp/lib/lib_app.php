@@ -7,7 +7,7 @@ function get_hotel($id_hotel)
 
     $query = "SELECT t1.*, t2.proyect_name FROM bd_twistic_sat.clients_centers AS t1 
     INNER JOIN bd_twistic_sat.clients AS t2 ON t1.id_client = t2.id 
-    WHERE t1.id = '" . $id_hotel . "' AND t1.id_client = '190' AND t1.active IN (1,-1)";
+    WHERE t1.id = '" . $id_hotel . "' AND t1.active IN (1,-1)";
 
     $result = $db->consulta($query);
 
