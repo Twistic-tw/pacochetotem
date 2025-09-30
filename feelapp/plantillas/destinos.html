@@ -1,0 +1,63 @@
+<div id="page-content2" class="page-content"  >
+    <div id="page-content-scroll" class="header-clear"><!--Enables this element to be scrolled -->
+
+        <div class="heading-strip css_fondo_bar css_foto_fondo_centro">
+            <!-- <h3 class="css_titulo_seccion_con_fondo">Restaurantes</h3> -->
+            <!-- <p>Comienze hoy a disfrutar una experiencia única con servicios y descuentos especiales</p> -->
+
+            <div class="overlay light-overlay"></div>
+            <div class="titulo-secciones">{titulo_seccion}</div>
+        </div>
+
+        <div class="decoration decoration-margins"></div>
+
+        <div class="content-absolute">
+
+            <div class="btn-atras-destinos">{volver_destinos}</div>
+
+            <!-- START BLOCK : destinos -->
+            <div class="content-destinos" id="#destino_{id_destino}" style="background-image: url('../../contenido_proyectos/comun/destinos/hoteles/2/{imagen_destino}') ">
+                <div class="content-fondo-nombre-destino">
+                    {nombre_destino}
+                </div>
+            </div>
+            <div id="destino_{id_destino}" class="content-paises">
+
+                <!-- START BLOCK : paises -->
+                <div id="pais_{id_pais}">
+                    <!-- {nombre_pais}  -->
+
+                    <div class="content-hoteles">
+
+                        <!-- START BLOCK : hoteles -->
+
+                        <div class="content-hotel" id="hotel_{id_hotel}">
+
+                            <div class="destinos-imagen-hotel" style="background-image: url('{imagen_hotel}')">
+                                <div class="destinos-nombre-pais">{nombre_pais_hotel}</div>
+                                <div class="destinos-nombre-hotel"> {nombre_hotel} </div>
+                            </div>
+                            <div class="content-datos-hotel">
+                                <div> {email_hotel} </div>
+                                <div> {telefono_hotel} </div>
+
+                                <div> {informacion_hotel} </div>
+                            </div>
+
+                        </div>
+
+                        <!-- END BLOCK : hoteles -->
+
+                    </div>
+
+                </div>
+                <!-- END BLOCK : paises -->
+            </div>
+            <!-- END BLOCK : destinos -->
+
+        </div>
+
+        <!-- <div class="decoration decoration-margins"></div> -->
+
+    </div>
+</div>

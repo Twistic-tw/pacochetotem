@@ -1,0 +1,222 @@
+.content_cartas_detalle {
+    width: 100%;
+    background: #0000df;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_cartas_detalle > .content_carta_izquierda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    width: 100%;
+    border-left: 1px solid;
+    font-size: 3vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 2px 5px 2px;
+}
+
+.content_carta_izquierda:first-child {
+    border-left: 0px !important;
+}
+
+.content_carta_izquierda.active{
+    background: #242424 !important;
+}
+
+.img-popup-carta{
+    display: none;
+    /*transition: all 0.5s ease-out;*/
+}
+
+.img-popup-carta.active{
+    display: block;
+}
+
+.displayBlock{
+    display: block !important;
+}
+
+.displayNone_Baobab{
+    display: none !important;
+}
+
+/* DivTable.com */
+.divTable{
+    display: table;
+    width: 98%;
+    margin-left: 1%;
+}
+.divTableRow {
+    display: table-row;
+}
+.divTableHeading {
+    background-color: #EEE;
+    display: table-header-group;
+}
+
+.divTableCell, .divTableHead {
+    display: block;
+    color: black;
+    line-height: 23px;
+    float: left;
+    margin: 10px 1%;
+}
+
+.divTableHeading {
+    background-color: #EEE;
+    display: table-header-group;
+    font-weight: bold;
+}
+.divTableFoot {
+    background-color: #EEE;
+    display: table-footer-group;
+    font-weight: bold;
+}
+.divTableBody {
+    display: table-row-group;
+}
+
+.css_menu_titulo {
+    font-size: 15px;
+    font-weight: bold;
+    float: left;
+    display: block;
+    width: 100%;
+    line-height: 21px;
+}
+
+.css_menu_subtitulo {
+    font-size: 13px;
+    text-align: justify;
+    width: auto;
+    float: left;
+    line-height: 13px;
+    margin-top: 5px;
+}
+
+
+.css_menu_cantidad {
+    font-size: 12px;
+    color: #8a9c96;
+    font-weight: 700;
+}
+
+.css_menu_precio {
+    text-align: right;
+    font-size: 12px;
+    /* width: 14%; */
+    width: auto;
+}
+
+.css_menu_precio2{
+    text-align: right;
+    /* font-size: 14px; */
+    font-size: 10px;
+    color:#9596a4;
+}
+
+.css_menu_contenido {
+    margin-bottom: 10px;
+    padding: 0px 5px;
+    color: #115E67;
+    line-height: 20px;
+}
+
+.accordion-new {
+    width: 100%;
+    color: #115E67;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: 0.4s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    text-transform: uppercase;
+    position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+    top: 0px;
+    z-index: 1;
+}
+.accordion-new.active{
+    color: white;
+    background-color: #115E67;
+}
+
+.panel {
+    margin: 10px 0px;
+    display: none;
+    overflow: hidden;
+}
+
+
+.css_separador_cartas {
+    height: 1px;
+    width: 80%;
+    background-color: rgba(0,0,0,0.1);
+    margin: 0px auto 5px auto;
+}
+
+/* .css_menu_tamano_fijo{width: 66%;} */
+.css_menu_tamano_fijo{width: 64%;}
+
+
+.btn-carta-restaurante{
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    background: #0000df;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 2px 5px;
+}
+
+.css_menu_precio > div {
+
+}
+
+.subcategoria_cartas {
+    width: 96%;
+    margin-left: 2%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #115E67;
+    border-bottom: 2px solid #115E67;
+    margin-top: 9px;
+    margin-bottom: 2px;
+
+}
+
+.css_menu_precio_descuento{
+    color: black;
+    margin-left: 5px;
+}
+
+.css_menu_precio_capacidad {
+    color: #115E67;
+    margin-right: 5px;
+}
+
+.texto_cabecera_carta{
+    width: 100%;
+    padding: 10px;
+    color: #115E67;
+    font-size: 18px;
+    text-align: center;
+}
+
+.color-v-dunas{
+    color: #096670 !important;
+}

@@ -1,0 +1,40 @@
+<div id="page-content2" class="page-content"  >
+    <div id="page-content-scroll" class="header-clear"><!--Enables this element to be scrolled -->
+
+        <div class="heading-strip css_fondo_calendario css_foto_fondo_centro">
+            <!-- <h3 class="css_titulo_seccion_con_fondo">Entretenimiento</h3> -->
+            <!-- <p>Comienze hoy a disfrutar una experiencia única con servicios y descuentos especiales</p> -->
+
+            <div class="overlay light-overlay"></div>
+            <div class="titulo-secciones">{titulo_seccion}</div>
+        </div>
+
+        <div class="decoration decoration-margins"></div>
+
+        <div class="content-fullscreen no-bottom content content-fullscreen-padding">
+
+
+            <form id="formulario_panel_usuario" name="formulario_panel_usuario" method="post" action="index.php?pagina=panel_usuario_formulario" enctype="multipart/form-data">
+
+                <div class="css_info_guest">{guest_explica}</div>
+
+                <div class="content_info_input">
+                    <div class="content_input">
+                        <input type="text" name="numero_habitacion" id="numero_habitacion" placeholder="{numero_habitacion}" value="" required oninvalid="setCustomValidity('{campo_requerido}')" oninput="setCustomValidity('')">
+                    </div>
+                </div>
+
+                <div class="content_info_input">
+                    <div class="content_input">
+                        <input type="text" name="documento_identidad" id="documento_identidad" placeholder="{documento_identidad}" value="" required oninvalid="setCustomValidity('{campo_requerido}')" oninput="setCustomValidity('')">
+                    </div>
+                </div>
+
+                <input type="submit" class="btn_formulario input_send" id="btn_formulario" name="btn_formulario" value="{enviar}">
+
+            </form>
+
+        </div>
+
+    </div>
+</div>

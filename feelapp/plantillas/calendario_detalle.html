@@ -1,0 +1,55 @@
+<div class="fondo_detalle_actividades">
+
+    <div class="content_detalle_actividades">
+
+        <img class="cerrar_detalle_actividad" src="https://view.twisticdigital.com/contenido_proyectos/dunas/_general/iconos/cancel.png">
+
+        <div class="titulo_actividad_detalle">
+            {titulo_actividad}
+        </div>
+
+        <div class="content_imagen_actividad_detalle {ocultar_imagen}">
+            <img src="{url_imagen}" alt="">
+        </div>
+
+        <div class="content_video_actividad_detalle {ocultar_video}">
+            <video autoplay loop poster="{url_imagen}">
+                <source src="{url_video}" type="video/webm">
+            </video>
+        </div>
+
+        <div class="content_actividad_horario_detalle">
+            {hora_ini} {hora_fin} | {nombre_categoria} {nombre_lugar}
+        </div>
+
+        <div class="descripcion_actividad_detalle {ocultar_descripcion}">
+             {descripcion}
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+    (function($) {
+        $.fn.hasScrollBar = function() {
+            return this.get(0).scrollHeight > this.height();
+        }
+    })(jQuery);
+
+    if($('.content_detalle_actividades').hasScrollBar()){
+        $('.content_detalle_actividades').append('<div class="icono_scroll_buffet"><img src="https://view.twisticdigital.com/contenido_proyectos/dunas/_general/iconos/mas_scroll.png"></div>');
+    }
+
+    jQuery(function($) {
+        $('.content_detalle_actividades').on('scroll', function() {
+            if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+                $('.icono_scroll_buffet').addClass('displayNone');
+            }else{
+                $('.icono_scroll_buffet').removeClass('displayNone');
+            }
+        })
+    });
+
+</script>

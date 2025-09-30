@@ -1,0 +1,98 @@
+<div id="page-content2" class="page-content"  >
+    <div id="page-content-scroll" class="header-clear"><!--Enables this element to be scrolled -->
+
+        <div class="heading-strip css_fondo_calendario css_foto_fondo_centro">
+            <!-- <h3 class="css_titulo_seccion_con_fondo">Entretenimiento</h3> -->
+            <!-- <p>Comienze hoy a disfrutar una experiencia única con servicios y descuentos especiales</p> -->
+
+            <div class="overlay light-overlay"></div>
+            <div class="titulo-secciones">{titulo_seccion}</div>
+        </div>
+
+        <div class="decoration decoration-margins"></div>
+
+        <div class="content-fullscreen no-bottom content content-fullscreen-padding">
+
+            <div class="css_bienvenida_guest_card {css_bienvenida}">
+                {mensaje_bienvenida1}<span class="css_nombre_usuario"> {nombre_usuario},</span> <br><br>
+
+                {mensaje_bienvenida2}
+            </div>
+
+            <div class="css_bienvenida_guest_card {css_despedida}">
+                {mensaje_despedida1}
+
+                <div class="css_despedida_iconos">
+                    <a href="{url_trip}" target="_blank" >
+                        <div class="css_despedida_iconos_img"><img src="images/iconos/trip.svg"></div>
+                    </a>
+                    {mensaje_despedida2}
+
+                </div>
+            </div>
+
+            <div class="css_titulo_guest"> Guest Card </div>
+
+            <div class="css_contenedor_guest">
+
+                <div class="content_info_niveles {ocultar_niveles}">
+                    <img src="{url_img_nivel}" alt="">
+                </div>
+
+                <div class="content_informacion_reserva_nombre">
+                    <div class="titulo_informacion_usuario">{nombre_titulo}</div>
+                    <div class="titulo_informacion_usuario_datos"><span class="css_nombre_usuario">{nombre_usuario} {apellidos_usuario}</span></div>
+                </div>
+
+                <div class="content_informacion_reserva">
+                    <div class="titulo_informacion_usuario">{numero_habitacion}</div>
+                    <div class="titulo_informacion_usuario_datos">{dato_numero_habitacion}</div>
+
+                    <div class="titulo_informacion_usuario">{fecha_salida}</div>
+                    <div class="titulo_informacion_usuario_datos">{dato_fecha_salida}</div>
+                </div>
+
+                <div class="content_informacion_reserva">
+
+                    <div class="titulo_informacion_usuario">{regimen_habitacion}</div>
+                    <div class="titulo_informacion_usuario_datos">{dato_regimen_habitacion}</div>
+
+               </div>
+
+                <div class="css_informacion_barcode displayNone"><img src="https://chart.googleapis.com/chart?cht=qr&chs=200x200&chl={identificador_usuario}" /></div>
+
+                <div class="css_informacion_reserva_logo displayNone"><img src="{logo_hotel}"></div>
+
+            </div>
+
+            <!-- START BLOCK : reserva_restaurante -->
+                <div class="content_guest_reservas">
+                    <div class="titulo_guest_reservas">{titulo_reserva_restaurates}</div>
+                    <!-- START BLOCK : reservas_restaurantes -->
+                        <div id="contet-r-rest_{id}" class="content_guest_reserva">
+                            <p class="titulo_restaurante_guest">{nombre_restaurante}</p>
+                            <span class="css_nombre_franja_reserva"> {nombre_franja} </span> <span class="css_hora_franja_reserva">{fecha_formateada} </span> <span class="css_hora_franja_reserva horas_reserva_rest">{hora_inicio} - {hora_fin} </span>
+                            {editar}
+                            {cancelar}
+                        </div>
+                    <!-- END BLOCK : reservas_restaurantes -->
+                </div>
+            <!-- END BLOCK : reserva_restaurante -->
+
+            <a class="css_boton_flex" href="index.php">
+                <div class="css_boton_cerrar_guess"> {salir} </div>
+            </a>
+
+
+            <a id="cerrar_sesion" href="#">
+               <div class="css_boton_cerrar_guess css_rojo"> {cerrar_sesion} </div>
+            </a>
+
+
+
+            <!--<a id="cerrar_sesion" href="#"> <img src="https://view.twisticdigital.com/twistic/contenido/_general/feelapp/iconos/logout.svg" alt=""> {cerrar_sesion}</a>-->
+
+        </div>
+
+    </div>
+</div>

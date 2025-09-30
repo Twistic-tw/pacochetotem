@@ -1,0 +1,90 @@
+.fondo_detalle_actividades{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cerrar_detalle_actividad{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    /*top: calc(5% - 15px);*/
+    margin-top: -20px;
+    right: calc(5% - 15px);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.icono_scroll_buffet{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: calc(5% + 5px);
+    right: calc(5% + 5px);
+    z-index: 1;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.icono_scroll_buffet > img{
+    width: 100%;
+    height: 100%;
+}
+
+.content_detalle_actividades{
+    width: 90%;
+    max-height: 90%;
+    border: 2px solid #115E67;
+    color: black;
+    background: #ffffff;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.titulo_actividad_detalle{
+    padding: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #115E67;
+}
+
+.content_imagen_actividad_detalle{
+    width: 100%;
+    height: auto;
+}
+
+.content_imagen_actividad_detalle > img{
+    width: 100%;
+    height: auto;
+}
+
+.content_vieo_actividad_detalle{
+    width: 100%;
+    height: auto;
+}
+
+.content_video_actividad_detalle > video{
+    width: 100%;
+    height: auto;
+    background: #0b0b0b;
+}
+
+.descripcion_actividad_detalle{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.content_actividad_horario_detalle{
+    padding: 10px;
+}

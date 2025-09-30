@@ -1,0 +1,153 @@
+<div class="fondo_popup">
+    <div class="content_popup">
+        <img class="close_popup" src="https://view.twisticdigital.com/contenido_proyectos/dunas/_general/iconos/cancel.png" alt="">
+
+        <div class="titulo_popup_reserva">{nombre_restaurante}</div>
+
+        <input id="id_restaurante_global" type="hidden" value="{id_restaurante_global}">
+        <input id="id_texto_seleccionar_turno" type="hidden" value="{texto_seleccionar_turno}">
+
+        <div class="content_popup_scroll content_popup_scroll_restaurante">
+
+            <div class="imagen_popup_reserva_restaurante displayNone" style="background-image: url('{imagen}')"></div>
+
+            <div class="mensaje-superior-reserva">{mensaje_superior}</div>
+
+            <div class="content-select-reserva-restaurante">
+
+                {no_fechas_disponibles}
+
+                <div class="titulo_seleccion_dia {ocultar_selector}">{texto_fecha}</div>
+
+                <select id="select_fecha_reserva_restaurantes" class="{ocultar_selector}">
+                    <!-- START BLOCK : fechas_reservas -->
+                    <option value="{fecha}" {selected}>{fecha_formateada}</option>
+                    <!-- END BLOCK : fechas_reservas -->
+                </select>
+
+                <div data-seleccionar="{seleccionar_general}" data-cancelar="{cancelar_general}" id="textos_reservas" class="displayNone"></div>
+
+            </div>
+
+            <!-- START BLOCK : fechas_reservas_content -->
+
+            <div data-fecha_reserva="{fecha_reserva_id}" id="reserva_restaurante_{fecha_reserva_id}"
+                 class="content_dia_reserva_restaurante {ocultar_dia_restaurante}" style="{ocultar_fecha_reserva}">
+
+                <form id="formulario_reserva_restaurante_{fecha_reserva_id}" class="formulario_reserva_restaurante"
+                      name="formulario_reserva_restaurante_{fecha_reserva_id}" method="post"
+                      action="index.php?pagina=restaurantes_tratamiento_datos" enctype="multipart/form-data">
+
+
+                    <input type="hidden" id="id_restaurante" name="id_restaurante" value="{id_restaurante}">
+                    <input type="hidden" id="fecha_global" name="fecha_global" value="{fecha_reserva_id}">
+
+
+                    <div class="titulo_reserva_restaurante_turno">{seleccionar_turno}</div>
+
+                    <!-- START BLOCK : turnos_restaurantes -->
+                    <div class="content_reserva_turnos_restaurantes">
+                        <div class="content_reserva_turno_titulo">{nombre_turno}</div>
+                        <!-- START BLOCK : horario_turnos -->
+
+                        <div class="content_turno_franja">
+                            <!--<div data-fecha_horario="{name_input}" data-id_horario="{id_horario}" data-horario_hora="{hora_inicio}" class="restaurante_reserva_horario {activate_hora} {active_global} {class_desactivado}">{hora_inicio} - {hora_fin} <br> {existe_reserva}</div>-->
+
+                            <input class="res_fecha_franja" data-fecha_horario="{name_input}"
+                                   name="franjas[{name_input}]" type="hidden" value="">
+
+
+                            <div id="{turno}" class="content_chart grafica_aforo_restaurantes" style="width: 200px; height: 250px;"></div>
+
+
+                            <div class="content_info_reserva">
+                                <div class="content_hora_restaurante">
+                                    <div class="restaurante_reserva_horario">{hora_inicio} - {hora_fin}</div>
+                                    <div class="mensaje_reserva_hora {class_color_rojo}">{existe_reserva}</div>
+                                </div>
+
+                                <div data-fecha_horario="{name_input}" data-id_horario="{id_horario}"
+                                     data-horario_hora="{hora_inicio}"
+                                     class="btn_reservar_turno {activate_hora} {active_global} {class_desactivado} {ocultar_btn_reserva} {class_oculto}">
+                                    {seleccionar_general}
+                                </div>
+
+                                {btn_cancelar}
+
+                            </div>
+
+
+                        </div>
+
+                        <!--<div style="width: 90%; height: 1px; background: green; margin: auto; margin-bottom: 1rem"></div>-->
+
+
+                        <!-- END BLOCK : horario_turnos -->
+                    </div>
+
+                    <!-- END BLOCK : turnos_restaurantes -->
+
+                    <div class="content-nueva-habitacion content_habitacion_{fecha_reserva_id} {ocultar_add_habitacion}">
+                        <div data-id_fecha="{fecha_reserva_id}" class="open-new-habitacion">{texto_agregar_habitacion}</div>
+                        <div class="formulario-agregar-habitacion">
+                            {input_reserva}
+                            <!-- <p class="eliminar_habitacion_reserva_restaurante" id="texto_comensales_2022-04-29_3689-2022"><i class="icon-door"></i>522, <span id="3689-2022" class="span-cancelar-habitacion"> Cancelar </span></p> -->
+                            <div class="eliminar_habitacion_reserva_restaurante">
+                                <div class="content-habitacion-r t-r-habitacion"><i class="icon-door"></i>{numero_habitacion_r}</div>
+                                <div class="content-comensales-r t-r-comensal"><i class="icon-person"></i>{numero_comensales_r}</div>
+                                <div class="content-habitacion-r t-r-cancelar"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-datos-extras-reservas">
+
+                        <textarea placeholder="{observaciones_texto}" name="observaciones_reserva" cols="30" rows="6"></textarea>
+                        <!-- <textarea placeholder="{alergenos_texto}" name="alergenos_reserva" cols="30" rows="6"></textarea> -->
+
+                        <p class="titulo-seleccionar-alergenos">{seleccionar_alergenos}</p>
+
+                        <div class="content-iconos-alergenos">
+
+                            <!-- START BLOCK : alergenos -->
+                            <div data-id_alergeno="{identificador}" class="content-reserva-alergeno r_alergeno_{identificador}">
+                                <img src="{img}" alt="">
+                                <div class="nombre-alergeno-r">{nombre}</div>
+                                <input type="hidden" name="alergenos[{identificador}]" class="input_alergeno_{identificador}" value="0">
+                            </div>
+                            <!-- END BLOCK : alergenos -->
+                        </div>
+
+                        <div id="content-tronas-{fecha_reserva_id}" class="content-checkbox">
+                          
+                          <!-- START BLOCK : tronas -->
+                          <label class="container_checkbox trona-{id_reserva_gerenal}">{solicitar_trona}
+                            <input name="tronas[]" value="1" type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                          <!-- END BLOCK : tronas -->
+
+                        </div>
+
+                        <!-- <input class="input_numero_comensales"  placeholder="{numero_comensales_texto}" min="0" type="number" name="numero_comensales_reserva" value=""> -->
+
+                    </div>
+
+                    <input type="submit" class="btn_formulario" id="btn_formulario" name="btn_formulario"
+                           value="{reservar}">
+
+                </form>
+
+            </div>
+
+            <!-- END BLOCK : fechas_reservas_content -->
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--Load the AJAX API-->
+
+

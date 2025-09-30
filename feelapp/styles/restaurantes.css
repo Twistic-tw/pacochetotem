@@ -1,0 +1,952 @@
+/************ Restaurantes ************/
+
+:root {
+    /*--color-principal:#ffffff;*/
+    /*--color-verde:#79dea8;*/
+    --color-verde: #115E67;
+}
+
+.content_popup_scroll_restaurante {
+    padding: 0px !important;
+}
+
+.content_restaurante {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.content_restaurante_imagen {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.titulo_restaurante {
+    width: 100%;
+    height: auto;
+    padding: 3px 10px 3px 10px;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: var(--color-verde);
+    text-align: center;
+}
+
+.content_restaurante_contenido {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 10px;
+    background: #d5d5d5;
+}
+
+.restaurante_subtitulo {
+    font-size: 16px;
+    color: var(--color-verde);
+}
+
+.restaurante_descripcion {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.restaurante_descripcion > p {
+    color: #2c2c2c;
+}
+
+.restaurante_observaciones {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.restaurante_observaciones > p {
+    color: #000;
+    font-weight: bold;
+}
+
+.content_restaurante_horarios {
+
+}
+
+.content_restaurante_horario {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.restaurante_horario_imagen {
+    width: auto;
+    height: auto;
+    padding: 5px 5px 5px 0px;
+}
+
+.restaurante_horario_imagen > img {
+    width: 30px;
+    height: auto;
+}
+
+.restaurante_horario_nombre {
+    padding: 5px 5px 5px 0px;
+    width: 85px;
+}
+
+.restaurante_horario_horas {
+    padding: 5px 5px 5px 0px;
+}
+
+.btn_reserva_restaurante {
+    display: table;
+    width: auto;
+    height: auto;
+    margin: 30px auto 15px auto;
+    padding: 5px 10px 5px 10px;
+    font-size: 17px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: var(--color-verde);
+    border-radius: 3px;
+    text-align: center;
+}
+
+.titulo_reserva_restaurante_turno, .titulo_reserva_restaurante_comensales {
+    font-size: 20px;
+    color: var(--color-verde);
+    margin-bottom: 5px;
+}
+
+.titulo_reserva_restaurante_comensales {
+    margin-top: 25px;
+}
+
+.content_reserva_turnos_restaurantes {
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    margin-bottom: 1.5rem;
+}
+
+.content_reserva_turno_titulo {
+    font-size: 15px;
+    background-color: var(--color-verde);
+    color: white;
+    font-weight: bold;
+    padding: 1% 1% 1% 3%;
+}
+
+.content_turno_franja {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content_turno_franja.active {
+    background: #14ff0057;
+}
+
+.grafica_aforo_restaurantes {
+    /*width: 65px;*/
+    /*height: 65px;*/
+    /*background: blue;*/
+    /*border-radius: 5px;*/
+    display: inline-block;
+    margin: 0 auto !important;
+    text-align: center;
+    color: black;
+}
+
+.mensaje_reserva_hora {
+    color: black;
+    text-align: center;
+}
+
+.mensaje_reserva_hora.class_color_rojo {
+    color: #ff4f00;
+}
+
+.btn_reservar_turno {
+    background: #115E67;
+    height: 35px;
+    padding: 1% 3% 1% 3%;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cancelar_turno_reserva_restaurate {
+    background: #ff410b;
+    height: 35px;
+    padding: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.content_hora_restaurante {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*margin: auto;*/
+    width: 100%;
+}
+
+.restaurante_reserva_horario {
+    padding: 1% 2% 1% 2%;
+    border-radius: 6px;
+    background: #e3e3e3;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    color: #2f2f2f;
+}
+
+.restaurante_reserva_horario.active {
+    background: var(--color-verde);
+}
+
+/********** Sugerencias Restaurantes *************/
+
+.mensaje_sugerencia {
+    font-size: 18px;
+    color: var(--color-verde);
+    margin-bottom: 30px;
+}
+
+.sugerencia_error {
+    color: #ff4a2d !important;
+}
+
+.content_restaurante_sugerencia {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 175px;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo_restaurante_sugerencia {
+    position: absolute;
+    width: 100%;
+    padding: 2px 10px 2px 10px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    background: var(--color-verde);
+    color: #ffffff;
+}
+
+.btn_restaurante_sugerencia {
+    position: absolute;
+    width: auto;
+    padding: 2px 10px 2px 10px;
+    text-transform: uppercase;
+    bottom: 0;
+    right: 0;
+    background: var(--color-verde);
+    color: #ffffff;
+}
+
+.content_productos_reserva {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.content_producto_reserva {
+    position: relative;
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-bottom: 20px;
+    background: #eaeaea;
+}
+
+.imagen_producto {
+    width: 120px;
+    height: 80px;
+    float: left;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenido_producto {
+    width: calc(100% - 140px);
+    height: auto;
+    float: left;
+    margin-left: 10px;
+}
+
+.nombre_producto {
+    width: 100%;
+    height: auto;
+    float: left;
+    background: var(--color-verde);
+    padding: 0px 5px 0px 5px;
+    font-size: 12px;
+    color: white;
+}
+
+.precio_producto {
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 15px;
+    margin: 3px 0px 3px 0px;
+}
+
+.cantidad_producto {
+    width: 100%;
+    height: 35px;
+    margin-top: 0px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.cantidad_producto > div > img {
+    width: auto;
+    height: auto;
+}
+
+.sumar_cantidad, .restar_cantidad, .sumar_cantidad_r, .restar_cantidad_r {
+    width: 30px;
+    height: 30px;
+    float: left;
+    background-color: var(--color-verde);
+    padding: 8px;
+}
+
+.total_articulos {
+    width: 39px;
+    height: auto;
+    float: left;
+    font-size: 22px;
+    margin: 0px 10px 0px 10px;
+}
+
+.total_articulos > input {
+    width: 100% !important;
+    padding: 1px;
+    text-align: center;
+}
+
+.precio_total_producto {
+    font-size: 22px;
+    float: left;
+    margin-top: 10px;
+}
+
+.formulario_reserva_restaurante #btn_formulario {
+    background: var(--color-verde);
+}
+
+#formulario_reserva_restaurante {
+    /*margin-top: 240px;*/
+}
+
+/*********** Popup*********/
+.fondo_popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondo_popup > .content_popup {
+    width: 90%;
+    height: auto;
+    max-height: 90%;
+    padding: 15px;
+    background: #ffffff;
+}
+
+.content_popup {
+    display: flex;
+    padding: 0px !important;
+}
+
+.content_popup_scroll {
+    max-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+.close_popup {
+    width: 40px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: #ffffff;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.titulo_popup {
+    text-align: center;
+    font-size: 20px;
+    color: var(--color-verde);
+}
+
+.titulo_popup_reserva {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--color-verde);
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5px 15px 5px 15px;
+    width: 100%;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.imagen_popup_reserva {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 220px;
+    z-index: 1;
+}
+
+.imagen_popup_reserva_restaurante {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 220px;
+    z-index: 1;
+}
+
+.content_dia_reserva_restaurante {
+    padding: 15px;
+}
+
+.titulo_seleccion_dia {
+    font-size: 18px;
+    color: var(--color-verde);
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content-select-reserva-restaurante {
+    padding: 15px;
+}
+
+#select_fecha_reserva_restaurantes {
+    width: 100%;
+    background-color: #dfdfdf;
+    padding: 0.6em;
+    border-radius: 9999px;
+}
+
+.xdsoft_datetimepicker {
+    z-index: 99999999 !important;
+}
+
+.mensaje_correcto_checkin {
+    font-size: 20px;
+    color: var(--color-verde);
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.class_desactivado {
+    background: #ff6e60 !important;
+    pointer-events: none !important;
+}
+
+.mensaje_error_checkin,.mensaje_error_checkin_reserva {
+    font-size: 20px;
+    color: #ff3324;
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mensaje_error_checkin_reserva{
+    padding: 5px !important;
+}
+
+.content_chart {
+    width: 50%;
+    height: auto;
+}
+
+.content_info_reserva {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    padding: 3%;
+}
+
+#legend_div {
+    text-align: center;
+    width: 320px;
+}
+
+.legend-marker {
+    display: inline-block;
+    padding: 16px 4px 8px 4px;
+}
+
+.legend-marker-color {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+}
+
+.content_guest_reservas{
+
+}
+
+.titulo_guest_reservas {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    background-color: #115E67;
+    color: white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.content_guest_reserva {
+    background: #b0c9c6;
+    padding: 10px;
+    border-left: 1px solid #115E67;
+    border-right: 1px solid #115E67;
+    border-bottom: 1px solid #115E67;
+    font-size: 16px ;
+    display: inline-block;
+}
+
+.cancelar_turno_reserva_restaurate_panel {
+    background: red;
+    text-align: center;
+    border-radius: 4px;
+    width: 50%;
+    margin: 10px auto;
+    color: white;
+}
+
+.editar_turno_reserva_restaurate_panel{
+    background: #0079c1;
+    text-align: center;
+    border-radius: 4px;
+    width: 50%;
+    margin: 10px auto;
+    color: white;
+}
+
+.css_nombre_franja_reserva {
+    color: #115E67;
+    text-transform: uppercase;
+}
+
+.css_hora_franja_reserva{
+
+    width: auto;
+    margin-left: 5px;
+    margin-right: 2%;
+    padding: 0px 5px;
+    text-align: left;
+    color: black;
+    background-color: #7da9b4;
+    border-radius: 3px;
+
+}
+
+.content-datos-extras-reservas{
+    display: block;
+}
+
+.content-datos-extras-reservas textarea{
+    border: 1px solid #115E67;
+    border-radius: 10px !important;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.content-checkbox{
+    width: 100%;
+    height: auto;
+    margin: 20px 0 20px 0;
+}
+
+ /* Customize the label (the container) */
+ .container_checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container_checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container_checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container_checkbox input:checked ~ .checkmark {
+    background-color: #115E67;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container_checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container_checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  } 
+
+  .input_numero_comensales,.new-numero-habitacion{
+    font-size: 16px;
+    padding: 5px;
+    height: 50px;
+    border: 1px solid #115E67;;
+    border-radius: 10px !important;
+    background: #ececec;
+    margin: 20xp 0 20px 0;
+  }
+
+  .content-nueva-habitacion{
+
+  }
+  
+  .open-new-habitacion,.agregar-habitacion{
+        width: 80%;
+        margin: auto;
+        border-radius: 4px !important;
+        padding: 5px;
+        color: #ffffff;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        background: var(--color-verde);
+        font-size: 15px;
+  }
+
+  .agregar-habitacion{
+        width: 150px;
+        margin-left: calc(50% - 75px) !important;
+  }
+
+  .formulario-agregar-habitacion{
+
+  }
+
+
+
+  .fondo-popup-formulario{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999999999;
+  }
+
+  .content-popup-formulario{
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+
+  .input-numero-habitacion{
+    font-size: 16px;
+    border: 1px solid var(--color-verde);
+    background: #ece8e8;
+    border-radius: 6px !important;
+    padding: 10px;
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .botones-formulario-popup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .agregar-habitacion{
+    background: var(--color-verde);
+    color: #ffffff;
+    border-radius: 10px;
+    margin: 10px;
+    width: auto;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  .cancelar-habitacion{
+    border: 1px solid var(--color-verde);
+    background: #ffffff;
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+    width: auto;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  .formulario-agregar-habitacion{
+      margin-bottom: 22px;
+  }
+
+  .eliminar_habitacion_reserva_restaurante{
+        font-size: 25px;
+        color: black;
+        font-weight: 600;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+  }
+
+  .eliminar_habitacion_reserva_restaurante > div{
+      width: 100%;
+  }
+
+  .eliminar_habitacion_reserva_restaurante:nth-of-type(2n+1)  { background: #81b999 }
+  .eliminar_habitacion_reserva_restaurante:nth-of-type(2n)  { background: #e6e3e3}
+
+  .eliminar_habitacion_reserva_restaurante:first-child,.eliminar_habitacion_reserva_restaurante:first-of-type{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .eliminar_habitacion_reserva_restaurante:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .t-r-habitacion{
+    padding-left: 5px;
+    min-width: 40%;
+  }
+
+  .t-r-comensal{
+    min-width: 40%;
+  }
+
+  .t-r-cancelar{
+    text-align: right;
+  }
+
+  .eliminar_habitacion_reserva_restaurante span{
+    font-size: 18px;
+    color: #d12a32;
+    font-weight: 600;
+  }
+
+  .titulo_restaurante_guest{
+    color: black;
+    font-size: 17px;
+  }
+
+  .mensaje-superior-reserva{
+      background: var(--color-verde);
+      width: 100%;
+      height: auto;
+      padding: 5px 15px;
+      color: #ffffff;
+      font-size: 15px;
+      margin: 50px auto 5px auto;
+  }
+
+  .content-iconos-alergenos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+  }
+
+  .content-reserva-alergeno{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+    border-radius: 10px;
+    background: #847f7f;;
+    margin: 10px;
+    padding: 10px 5px;
+  }
+
+  .content-reserva-alergeno.active{
+    background: var(--color-principal);
+  }
+
+  .content-reserva-alergeno img{
+    width: 65%;
+    height: auto;
+  }
+
+  .titulo-seleccionar-alergenos{
+      font-size: 20px;
+      color: var(--color-principal);
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  .nombre-alergeno-r{
+      font-size: 11px;
+      color: #ffffff;
+      line-height: 14px;
+      text-align: center;
+  }
+
+.content-div-editar-reserva{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.content-div-editar-reserva:nth-child(odd) { background: #e1e1e1}
+
+.mensaje_editar_reserva{
+    width: 100%;
+    font-size: 20px;
+    color: var(--color-verde);
+    padding: 10px;
+    height: 100%;
+    text-align: center;
+}
+
+.content-horarios-editar-reserva{
+    width: 100%;
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.content-btn-editar-reserva{
+    width: 100%;
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seleccionar_turno_reserva_restaurate{
+    background: #0079c1;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px auto;
+    color: white;
+    padding: 2px 5px;
+    font-size: 15px;
+}
+
+.titulo-editar-panel{
+    text-transform: uppercase;
+}
+
+.fecha-editar-panel{
+    color: black;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.btn-cancelar-t{
+    float: left;
+    width: 48%;
+    margin: 10px 1% !important;
+}
+
+.btn-editar-t{
+    display: inline-block;
+    width: 48%;
+    margin: 10px 1% !important;
+}

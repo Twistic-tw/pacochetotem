@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'Antonio-Light';
+    src: url('../fonts/Antonio-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Antonio-Regular';
+    src: url('../fonts/Antonio-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Bold';
+    src: url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Italic';
+    src: url('../fonts/PlayfairDisplay-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+@font-face {
+    font-family: 'friz-quadrata';
+    src: url('../fonts/friz-quadrata-std-medium.otf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'frutiger-45-light';
+    src: url('../fonts/frutiger-lt-std-45-light.otf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'frutiger-47-light-condensed';
+    src: url('../fonts/frutiger-lt-std-47-light-condensed.otf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'frutiger-55-roman';
+    src: url('../fonts/frutiger-lt-std-55-roman.otf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'frutiger-65-bold';
+    src: url('../fonts/frutiger-lt-std-65-bold.otf') format('truetype');
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: 'Teko-Medium';
+    src: url('../fonts/Teko-Medium.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Teko-Light';
+    src: url('../fonts/Teko-Light.ttf') format('truetype');
+}
+
+
+
+.content-general-carta-dinamica{
+    /*background-size: cover !important;*/
+    /*background-position: center !important;*/
+    background-size: 100% !important;
+    background-position: top center !important;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.logo_cabecera_carta{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 5px 10px;
+}
+
+.logo_cabecera_carta > img{
+    width: auto;
+    height: 100%;
+}
+
+.carta-nombre-superior:empty,.carta-nombre-inferior:empty,.carta-precio-dinamico:empty{
+    display: none !important;
+}
+
+.suplementos_carta_dinamica{
+    font-size: 12px;
+    text-align: center;
+    color: black;
+}
+
+.content-general-plato-carta {
+    width: 96%;
+    height: auto;
+    text-align: justify;
+    margin-left: 2%;
+}
+
+.carta-nombre-superior {
+    font-size: 18px;
+    color: black;
+    line-height: 19px;
+    margin-bottom: 7px;
+}
+
+.carta-nombre-inferior {
+    font-size: 16px;
+    color: #504e4e;
+    line-height: 19px;
+}
+
+.carta-precio-dinamico{
+    font-size: 16px;
+    color: #5daa7e;
+
+}
+
+.PlayfairDisplay-Italic{
+    font-family: 'PlayfairDisplay-Italic';
+    font-style: italic;
+}
+
+.PlayfairDisplay-Bold{
+    font-family: 'PlayfairDisplay-Bold';
+    font-weight: bold;
+}
+
+/* Alpendre */
+
+.friz-quadrata{
+    font-family: 'friz-quadrata';
+}
+.frutiger-45-light{
+    font-family: 'frutiger-45-light';
+}
+.frutiger-47-light-condensed{
+    font-family: 'frutiger-47-light-condensed';
+}
+.frutiger-55-roman{
+    font-family: 'frutiger-55-roman';
+}
+.frutiger-65-bold{
+    font-family: 'frutiger-65-bold';
+    font-weight: bold;
+}
+
+/**CARTA EL CHARRO*/
+
+.css_nombre_carta_elcharro {
+    font-family: 'Teko-Medium';
+    color: #332b26;
+    text-align: left;
+    float: left;
+    margin-right: 4px;
+    font-size: 26px;
+}
+.css_descripcion_carta_elcharro {
+    font-family: 'Teko-Light';
+    color: #968445;
+    text-align: left;
+    font-size: 20px;
+}
+
+.css_accordion_elcharro{
+    font-family: 'Teko-Medium';
+    color: #332b26;
+    font-size: 24px;
+}
+
+.css_accordion_elcharro.active{
+    font-family: 'Teko-Medium';
+    background-color: #332b26;
+    color: #968445;
+}
+
+/********************/
+
+
+/**CSS CARTAS QUE TIENEN PRECIO Y DENOMINACION DE ORIGEN***/
+
+.css_carta_nombre_condenominacion, .css_carta_descripcion_condenominacion, .css_carta_demominacion_condenominacion{
+    width: 65%;
+    float: left;
+    margin-right: 2%;
+    text-align: left;
+}
+
+.css_carta_demominacion_condenominacion {
+    font-size: 12px;
+    color: #115E67;
+    line-height: 12px;
+    margin: 7px 0px;
+}
+
+.css_carta_precio_condenominacion {
+    text-align: right;
+    font-size: 13px;
+    line-height: 12px;
+    top: 0px;
+    right: 0px;
+    margin: 5px 0px;
+}
+
+.css_carta_descripcion_condenominacion{
+    margin: 5px 0px 10px 0px;
+}
+
+/***************************************************************/
+/*carta con solo nombre de plato*/
+.css_carta_solo_nombre {
+
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.css_carta_solo_nombre_descripcion{
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #115E67;
+
+}
+
+/*****************************************************************/

@@ -1,0 +1,33 @@
+<div class="content_popup">
+    <img class="close_popup" src="https://view.twisticdigital.com/twistic/contenido/_general/iconos/cancel.png" alt="">
+
+    <div class="content_popup_scroll">
+
+        <input type="hidden" id="total_comensales" name="total_comensales" value="{total_comensales}">
+        <input type="hidden" id="fecha_activa" name="fecha_activa" value="{fecha_activa}">
+        <input type="hidden" id="horario_hora" name="horario_hora" value="{horario_hora}">
+
+        <div class="mensaje_sugerencia sugerencia_error">{no_hay_cupo}</div>
+        <div class="mensaje_sugerencia">{si_hay_cupo}</div>
+
+        <!--        <div class="content_restaurante_sugerencia" style="background-image: url('https://view.twisticdigital.com/twistic/contenido/centro_1/imagenes/contenidos/r1.jpg')">-->
+        <!--            <div class="titulo_restaurante_sugerencia">{restaurante_1}</div>-->
+        <!--            <div data-id_restaurante="1" class="btn_restaurante_sugerencia">{btn_reservar}</div>-->
+        <!--        </div>-->
+
+        <!--        <div class="content_restaurante_sugerencia" style="background-image: url('https://view.twisticdigital.com/twistic/contenido/centro_1/imagenes/contenidos/r2.jpg')">-->
+        <!--            <div class="titulo_restaurante_sugerencia">{restaurante_2}</div>-->
+        <!--            <div data-id_restaurante="2" class="btn_restaurante_sugerencia">{btn_reservar}</div>-->
+        <!--        </div>-->
+
+        <!-- START BLOCK : lista_restaurantes_disponibles -->
+        <div class="content_restaurante_sugerencia" style="background-image: url('https://view.twisticdigital.com/twistic/contenido/centro_1/imagenes/contenidos/{imagen}')">
+            <div class="titulo_restaurante_sugerencia">{nombre_restaurante}</div>
+            <div data-id_restaurante="{id_restaurante}" class="btn_restaurante_sugerencia">{btn_reservar}</div>
+        </div>
+        <!-- END BLOCK : lista_restaurantes_disponibles -->
+
+    </div>
+
+</div>
+

@@ -1,0 +1,103 @@
+/* Add your own PUSHTech form style overrides in your site stylesheet or in this style block.*/
+#HVRpNpw .checkbox label {padding-left: 35px; margin-bottom: 0px;}
+#HVRpNpw .checkbox {margin: 0 0 0 20px;}
+#HVRpNpw .jCaptchaText {margin: 0 0 -3px 5px;}
+
+.btn-info {
+    color: #b5dbd2;
+    background-color: #115e67 !important;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+}
+
+.rendered-form{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.css_checkbox_dunas{
+    background-color: red;
+    border-radius: 100%;
+}
+
+.form-group .formbuilder-required {
+    display: none;
+}
+
+.css_href_dunas{
+    color: #115e67;
+}
+
+.ThankYouMessage {
+    width: 90%;
+    text-align: center;
+    background-color: #115e67;
+    position: absolute;
+    color: #115e67;
+    margin-left: 5%;
+    text-transform: uppercase;
+    color: #b5dbd2;
+}
+
+/****************** Checkbox ******************/
+
+.formbuilder-checkbox input {
+    opacity: 1;
+    width: 5px;
+    height: 5px;
+    margin-left: -5px !important;
+    margin-top: 5px !important;
+}
+
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: -20px;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    z-index: 9;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider.active:before{
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.slider.active{
+    background-color: #115E67;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

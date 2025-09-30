@@ -1,0 +1,35 @@
+# Activar RewriteEngine
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-l
+    RewriteCond %{DOCUMENT_ROOT}/$1 -f
+    RewriteRule ^[^/]+/([^.]+\.(?:js|css|jpe?g|png|gif))$ /$1 [L,R=301,NC]
+
+    RewriteRule ^receta/(.*)$  /index.php?pagina=recetas&url_puntos=1&id_receta=$1 [L]
+    RewriteRule ^buffet/(.*)$  /index.php?pagina=buffet&url_puntos=1 [L]
+    RewriteRule ^buffet  /index.php?pagina=buffet [L]
+    RewriteRule ^restaurantes/(.*)$  /index.php?pagina=seccion&id_cont=78 [L]
+    RewriteRule ^restaurantes  /index.php?pagina=seccion&id_cont=78 [L]
+    RewriteRule ^menu/(.*)$  /index.php?pagina=seccion&id_cont=78 [L]
+    RewriteRule ^menu  /index.php?pagina=seccion&id_cont=78 [L]
+    RewriteRule ^gregs /index.php?pagina=get_cartas_dinamicas_fondo&id_carta=7 [L]
+
+    RewriteRule ^dunasclub /index.php?pagina=seccion&id_cont=122 [L,QSA]
+
+    RewriteRule ^medidascovid /index.php?pagina=seccion&id_cont=209 [L,QSA]
+
+    RewriteRule ^checkin index.php?pagina=seccion&id_checkin=1 [L,QSA]
+
+    RewriteRule ^guesscard index.php?pagina=seccion&id_guesscard=1 [L,QSA]
+
+    RewriteRule ^newsletter index.php?pagina=seccion&id_newsletter=1 [L,QSA]
+
+    RewriteRule ^rutas/([^/]+)/?$ index.php?pagina=seccion&id_ruta=ruta-$1 [L,QSA]
+
+    ErrorDocument 404 /index.php?pagina=error
+
+</IfModule>

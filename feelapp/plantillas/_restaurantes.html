@@ -1,0 +1,70 @@
+
+<!-- Inicio popup de las actividades -->
+<div class="pop-actividades-content">
+
+</div>
+<!-- Fin del popup de las actividades-->
+
+<div id="page-content2" class="page-content"  >
+    <div id="page-content-scroll" class="header-clear"><!--Enables this element to be scrolled -->
+
+        <div class="heading-strip css_fondo_calendario css_foto_fondo_centro">
+            <!-- <h3 class="css_titulo_seccion_con_fondo">Entretenimiento</h3> -->
+            <!-- <p>Comienze hoy a disfrutar una experiencia única con servicios y descuentos especiales</p> -->
+
+            <div class="overlay light-overlay"></div>
+            <div class="titulo-secciones">{titulo_seccion}</div>
+        </div>
+
+        <div class="decoration decoration-margins"></div>
+
+        <div class="content-fullscreen no-bottom content">
+
+
+            <!-- START BLOCK : restaurantes -->
+
+            <div class="content_restaurante">
+
+                <!--                {id_restaurante} -->
+                <!--                {release} -->
+
+                <div class="content_restaurante_imagen" style="background-image: url('{imagen}')"></div>
+                <div class="titulo_restaurante">{nombre}</div>
+
+                <div class="content_restaurante_contenido">
+                    <div class="restaurante_subtitulo">{subtitulo}</div>
+                    <div class="restaurante_descripcion">{descripcion}</div>
+
+                    <div class="content_restaurante_horarios">
+
+                        <!-- START BLOCK : turnos_restaurantes -->
+
+                        <div class="content_restaurante_horario">
+                            <!--                            {id_restaurante_turno}-->
+                            <div class="restaurante_horario_imagen"><img src="{icono}" alt=""></div>
+                            <div class="restaurante_horario_nombre">{nombre_turno}</div>
+                            <div class="restaurante_horario_horas">{texto_horario_turno}</div>
+
+                        </div>
+                        <!-- END BLOCK : turnos_restaurantes -->
+
+                    </div>
+
+                    <div class="restaurante_observaciones">{observaciones}</div>
+
+                    {btn_reserva}
+
+                </div>
+
+            </div>
+
+            <!-- END BLOCK : restaurantes -->
+
+
+
+        </div>
+
+        <div class="decoration decoration-margins"></div>
+
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="fondo_popup">
+    <div class="content_popup">
+        <img class="close_popup" src="https://view.twisticdigital.com/twistic/contenido/_general/iconos/cancel.png" alt="">
+
+        <div class="content_popup_scroll">
+
+            <div class="titulo_popup">{titulo}</div>
+
+            <form id="formulario_panel_usuario" name="formulario_panel_usuario" method="post" action="index.php?pagina=panel_usuario_formulario" enctype="multipart/form-data">
+
+                <!--<div class="css_info_guest">{guest_explica}</div>-->
+
+                <div class="content_info_input">
+                    <div class="content_input">
+                        <input type="text" name="numero_habitacion" id="numero_habitacion" placeholder="{numero_habitacion}" value="" required oninvalid="setCustomValidity('{campo_requerido}')" oninput="setCustomValidity('')">
+                    </div>
+                </div>
+
+                <div class="content_info_input">
+                    <div class="content_input">
+                        <input type="text" name="documento_identidad" id="documento_identidad" placeholder="{documento_identidad}" value="" required oninvalid="setCustomValidity('{campo_requerido}')" oninput="setCustomValidity('')">
+                    </div>
+                </div>
+
+                <input type="hidden" name="reserva_res" value="1">
+
+                <input type="submit" class="btn_formulario input_send" id="btn_formulario" name="btn_formulario" value="{enviar}">
+
+            </form>
+
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,7 @@
+.oferta_oculta{
+    display: table-cell;
+}
+
+.precio_sin_oferta{
+    display: none;
+}

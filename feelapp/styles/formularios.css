@@ -1,0 +1,1126 @@
+.content-fullscreen-padding{
+    padding: 10px;
+}
+
+.btn_formulario{
+    width: 140px;
+    margin-left: calc(50% - 70px);
+    border-radius: 4px !important;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background: #115E67;
+}
+
+.input_send{
+    background: #115E67;
+}
+
+.content_formularios{
+    /*width: 90%;*/
+    width: 100%;
+    margin: auto;
+    /*padding-top: 30px;*/
+}
+
+.content_usuario{
+    background-color: rgba(6,72,81,0.1) !important;
+    padding: 20px;
+    margin-bottom: 50px;
+    float: left;
+}
+
+.content_info_input {
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.titulo_input{
+    width: 100%;
+    color: var(--color-principal);
+    font-size: 18px;
+    /*text-transform: uppercase;*/
+    text-align: left;
+}
+
+.content_input{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.content_input > input[type=text], input[type=date], input[type=time]{
+    width: 100%;
+    /*border: 2px solid var(--color-principal);
+    /*border-radius: 5px !important;*/
+    font-size: 15px;
+    padding: 7px;
+    border-bottom: 1px solid gray;
+    background: transparent;
+}
+
+.content_input > input[type=text]:hover{
+    border-bottom: 2px solid var(--color-principal) !important;
+}
+
+input[type="date"]:not(.has-value):before{
+    color: var(--color-principal);
+    content: attr(placeholder);
+    padding-bottom: 15px;
+}
+
+input[type="time"]:not(.has-value):before{
+    color: var(--color-principal);
+    content: attr(placeholder);
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--color-principal);
+    opacity: 1; /* Firefox */
+}
+
+
+/* popup */
+.fondo_general_cargando,.fondo_general_popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999999999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gif_cargando{
+    width: auto;
+    height: auto;
+    max-width: 210px;
+    max-height: 210px;
+}
+
+.content_informacion_reserva {
+    width: 100%;
+    height: auto;
+    margin: 3px 0px;
+    display: block;
+    float: left;
+}
+
+.titulo_informacion_usuario {
+    width: auto;
+    float: left;
+    padding-right: 3px;
+}
+
+.titulo_informacion_usuario_datos {
+    width: auto;
+    margin-left: 5px;
+    float: left;
+    margin-right: 2%;
+    padding: 0px 1%;
+    text-align: left;
+    color: black;
+    background-color: #7da9b4;
+    border-radius: 3px;
+}
+
+a#cerrar_sesion,a#checkout_express{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 25px;
+}
+
+a#cerrar_sesion > img, a#checkout_express > img{
+    height: 20px;
+    width: auto;
+    margin-right: 15px;
+}
+
+.icon-datos_usuario {
+    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/usuario.svg") no-repeat scroll center center / 90% auto;
+}
+
+.css_informacion_reserva_logo {
+    width: 100%;
+    height: auto;
+    margin-top: 11px;
+    display: inline-block;
+}
+
+.css_informacion_reserva_logo > img {
+    height: auto;
+    width: 10%;
+    margin: auto;
+}
+
+.content_informacion_reserva_nombre{
+    width: 100%;
+    float: left;
+}
+
+.content_info_niveles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.content_info_niveles > img{
+    width: 70%;
+    height: auto;
+    max-width: 350px;
+}
+
+/************* texto_add_screen ***********/
+
+.texto_add_screen{
+    padding: 20px;
+    font-size: 18px;
+    display: block;
+}
+
+.texto_add_screen > img{
+    height: 20px;
+    width: auto;
+    display: inline;
+    margin: 0px 7px 0px 7px;
+}
+
+/* Formulario reserva restaurante ifrane */
+.content_iframe_restaurantes{
+    height: 90% !important;
+}
+
+.iframe-reserva-restaurante{
+    width: 100%;
+    height: 100%;
+}
+
+/******************************************/
+
+/*input { -webkit-appearance: none; -moz-appearance: none; appearance: none; }*/
+
+/*#formulario_chickin{*/
+/*    padding: 20px;*/
+/*    !*margin-top: 150px;*!*/
+/*}*/
+
+/*.error_formulario{*/
+/*    width: 100%;*/
+/*    !*position: absolute;*!*/
+/*    !*top: 0;*!*/
+/*    background: #ff363b;*/
+/*    color: white;*/
+/*    padding: 5px 10px 5px 10px;*/
+/*    font-size: 15px;*/
+/*    border-radius: 4px;*/
+/*    margin-top: 15px;*/
+/*}*/
+
+/*.error_formulario_absolute{*/
+/*    width: 90%;*/
+/*    position: absolute;*/
+/*    top: 65px;*/
+/*    background: #ff363b;*/
+/*    color: white;*/
+/*    padding: 5px 10px 5px 10px;*/
+/*    font-size: 15px;*/
+/*    border-radius: 4px;*/
+/*    margin-left: 5%;*/
+/*}*/
+
+/*.error_formulario_padding{*/
+/*    margin: 20px;*/
+/*    width: calc(100% - 40px);*/
+/*}*/
+
+/*.separacion_usuarios_formulario{*/
+/*    width: 100%;*/
+/*    border-bottom: 1px solid var(--color-principal);*/
+/*    color: var(--color-principal);*/
+/*    margin: 10px 0px -10px 0px;*/
+/*    font-size: 18px;*/
+/*    !*text-transform: uppercase;*!*/
+/*    line-height: 20px;*/
+/*}*/
+
+/*.add_nuevo_usuario{*/
+/*    width: 100%;*/
+/*    margin-top: 35px;*/
+/*    font-size: 15px;*/
+/*    text-transform: uppercase;*/
+/*    color: var(--color-principal);*/
+/*    padding: 20px;*/
+/*    float: left;*/
+/*}*/
+
+/*.add_nuevo_usuario > img{*/
+/*    height: 14px;*/
+/*    width: auto;*/
+/*    padding-right: 10px;*/
+/*    display: inline;*/
+/*}*/
+
+/*!*.MultiFile-title{*!*/
+/*!*    display: none;*!*/
+/*!*}*!*/
+
+/*div.MultiFile-label{*/
+/*    padding: 10px;*/
+/*    background-color: rgba(0,0,0,0.1);*/
+/*    margin-top: 10px;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.MultiFile-remove > img{*/
+/*    width: 20px;*/
+/*    float: right;*/
+/*}*/
+
+/*.input_file{*/
+/*    color: transparent !important;*/
+/*}*/
+
+/*.delete_usuario_form{*/
+/*    width: 20px;*/
+/*    float: right;*/
+/*}*/
+
+/*.mensaje_correcto_checkin{*/
+/*    font-size: 20px;*/
+/*    color: var(--color-principal);*/
+/*    padding: 40px;*/
+/*    height: 100%;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.mensaje_error_checkin{*/
+/*    font-size: 20px;*/
+/*    color: #ff3324;*/
+/*    padding: 40px;*/
+/*    height: 100%;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    text-align: center;*/
+/*}*/
+
+
+/*!****** Panel Usuario ******!*/
+
+/*.content_control_usuario{*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    border-bottom: 1px solid var(--color-principal);*/
+/*}*/
+
+/*.content_control_usuario > div{*/
+/*    width: 100%;*/
+/*    height: 50px;*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: left;*/
+/*}*/
+
+/*.content_control_usuario > div > img{*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    margin: auto 22px auto 24px;*/
+/*}*/
+
+/*.fondo_popup{*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    position: fixed;*/
+/*    z-index: 999999;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    background: rgba(0,0,0,0.6);*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.fondo_popup > .content_popup{*/
+/*    width: 90%;*/
+/*    height: auto;*/
+/*    max-height: 90%;*/
+/*    padding: 15px;*/
+/*    background: #ffffff;*/
+/*}*/
+
+/*.close_popup{*/
+/*    width: 40px;*/
+/*    position: absolute;*/
+/*    top: -15px;*/
+/*    right: -15px;*/
+/*    background: #ffffff;*/
+/*    border-radius: 50%;*/
+/*    z-index: 10;*/
+/*}*/
+
+/*.titulo_popup{*/
+/*    text-align: center;*/
+/*    font-size: 20px;*/
+/*    color: var(--color-principal);*/
+/*}*/
+
+/*.content_panel_usuario{*/
+/*    position: relative;*/
+/*    padding: 15px;*/
+/*    font-size: 18px;*/
+/*}*/
+
+/*.panel_nombre_usuario{*/
+/*    width: 100%;*/
+/*    font-size: 20px;*/
+/*    text-align: left;*/
+/*    color: var(--color-principal);*/
+/*    margin-bottom: 30px;*/
+/*}*/
+
+/*.panel_titulo_reservas{*/
+/*    width: 100%;*/
+/*    font-size: 18px;*/
+/*    text-align: left;*/
+/*    text-transform: uppercase;*/
+/*    color: var(--color-principal);*/
+/*    margin-bottom: 15px;*/
+/*    border-bottom: 1px solid var(--color-principal);*/
+/*}*/
+
+/*a#cerrar_sesion,a#checkout_express{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: left;*/
+/*    margin-top: 25px;*/
+/*}*/
+
+/*a#cerrar_sesion > img, a#checkout_express > img{*/
+/*    height: 20px;*/
+/*    width: auto;*/
+/*    margin-right: 15px;*/
+/*}*/
+
+/*!************* Servicios ****************!*/
+/*.content_servicios{*/
+/*    width: 100%;*/
+/*    height: 230px;*/
+/*    position: relative;*/
+/*    background-position: center center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    margin-bottom: 50px;*/
+/*}*/
+
+/*.titulo_servicio{*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    width: 100%;*/
+/*    padding: 5px 10px 5px 10px;*/
+/*    font-size: 18px;*/
+/*    color: #ffffff;*/
+/*    background: var(--color-principal);*/
+/*}*/
+
+/*.servicio_reserva{*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    right: 0;*/
+/*    width: auto;*/
+/*    padding: 5px 10px 5px 10px;*/
+/*    font-size: 16px;*/
+/*    color: #ffffff;*/
+/*    background: var(--color-principal);*/
+/*    text-transform: uppercase;*/
+/*}*/
+
+/*.titulo_popup_reserva{*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    background: var(--color-principal);*/
+/*    color: #ffffff;*/
+/*    font-size: 18px;*/
+/*    padding: 5px 15px 5px 15px;*/
+/*    width: 100%;*/
+/*    text-transform: uppercase;*/
+/*    z-index: 2;*/
+/*}*/
+
+/*.imagen_popup_reserva{*/
+/*    background-position: center center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    height: 220px;*/
+/*    z-index: 1;*/
+/*}*/
+
+/*#formulario_reserva_servicio,#formulario_reserva_restaurante{*/
+/*    margin-top: 240px;*/
+/*}*/
+
+/*.xdsoft_datetimepicker{*/
+/*    z-index: 99999999 !important;*/
+/*}*/
+
+/*.content_productos_reserva{*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    float: left;*/
+/*}*/
+
+/*.content_producto_reserva{*/
+/*    position: relative;*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    float: left;*/
+/*    margin-bottom: 20px;*/
+/*    background: #eaeaea;*/
+/*}*/
+
+/*.imagen_producto{*/
+/*    width: 120px;*/
+/*    height: 80px;*/
+/*    float: left;*/
+/*    background-position: center center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    display: none;*/
+/*}*/
+
+/*.contenido_producto{*/
+/*    width: calc(100% - 18px);*/
+/*    height: auto;*/
+/*    float: left;*/
+/*    margin-left: 10px;*/
+/*}*/
+
+/*.nombre_producto{*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    float: left;*/
+/*    background: var(--color-principal);*/
+/*    padding: 0px 5px 0px 5px;*/
+/*    font-size: 12px;*/
+/*    color: white;*/
+/*}*/
+
+/*.precio_producto{*/
+/*    width: calc(100% - 145px);*/
+/*    height: auto;*/
+/*    float: left;*/
+/*    font-size: 15px;*/
+/*    margin: 3px 0px 3px 0px;*/
+/*}*/
+
+/*.cantidad_producto{*/
+/*    width: 130px;*/
+/*    height: 35px;*/
+/*    margin-top: 0px;*/
+/*    float: left;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: left;*/
+/*    margin-left: 10px;*/
+/*}*/
+
+/*.cantidad_producto > div > img{*/
+/*    width: auto;*/
+/*    height: auto;*/
+/*}*/
+
+/*.sumar_cantidad,.restar_cantidad,.sumar_cantidad_r,.restar_cantidad_r{*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    float: left;*/
+/*    background-color: var(--color-principal);*/
+/*    padding: 8px;*/
+/*}*/
+
+/*.total_articulos {*/
+/*    width: 39px;*/
+/*    height: auto;*/
+/*    float: left;*/
+/*    font-size: 22px;*/
+/*    margin: 0px 10px 0px 10px;*/
+/*}*/
+
+/*.total_articulos > input{*/
+/*    width: 100% !important;*/
+/*    padding: 1px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.precio_total_producto{*/
+/*    font-size: 22px;*/
+/*    float: left;*/
+/*    margin-top: 10px;*/
+/*}*/
+
+/*!*.dateclass{*!*/
+/*!*    width:100%;*!*/
+/*!*}*!*/
+
+/*!*.dateclass.placeholderclass::before{*!*/
+/*!*    width:100%;*!*/
+/*!*    content:attr(placeholder);*!*/
+/*!*}*!*/
+
+/*!*.dateclass.placeholderclass:hover::before{*!*/
+/*!*    width:0%;*!*/
+/*!*    content:"";*!*/
+/*!*}*!*/
+
+
+
+
+/*input[type="date"]:not(.has-value):before{*/
+/*    color: var(--color-principal);*/
+/*    content: attr(placeholder);*/
+/*    padding-bottom: 15px;*/
+/*}*/
+
+/*input[type="time"]:not(.has-value):before{*/
+/*    color: var(--color-principal);*/
+/*    content: attr(placeholder);*/
+/*}*/
+
+/*input::placeholder { !* Chrome, Firefox, Opera, Safari 10.1+ *!*/
+/*    color: var(--color-principal);*/
+/*    opacity: 1; !* Firefox *!*/
+/*}*/
+
+/*!*input:required::placeholder { !* Chrome, Firefox, Opera, Safari 10.1+ *!*!*/
+/*!*    color: #ff4e42;*!*/
+/*!*    opacity: 1; !* Firefox *!*!*/
+/*!*}*!*/
+
+
+/*input { -webkit-appearance: none; -moz-appearance: none; appearance: none; }*/
+
+/*!***** Panel de usuario *****!*/
+/*.content_panel_reserva{*/
+/*    background-color: #e0fde8;*/
+/*    padding: 10px;*/
+/*}*/
+
+/*.content_panel_reserva:nth-child(2n+0){*/
+/*    background: #ffffff;*/
+/*}*/
+
+/*.content_panel_titulo_reserva{*/
+
+/*}*/
+
+/*.content_panel_contenido_reserva{*/
+
+/*}*/
+
+
+
+
+
+/*!************ Restaurantes ************!*/
+/*.content_restaurante{*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    position: relative;*/
+/*    margin-bottom: 25px;*/
+/*}*/
+
+/*.content_restaurante_imagen{*/
+/*    background-position: center center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    width: 100%;*/
+/*    height: 200px;*/
+/*}*/
+
+/*.titulo_restaurante{*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    padding: 3px 10px 3px 10px;*/
+/*    color: #ffffff;*/
+/*    font-size: 16px;*/
+/*    background-color: var(--color-principal);*/
+/*    text-align: center;*/
+/*}*/
+
+/*.content_restaurante_contenido{*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    position: relative;*/
+/*    padding: 10px;*/
+/*    background: #d5d5d5;*/
+/*}*/
+
+/*.restaurante_subtitulo{*/
+/*    font-size: 16px;*/
+/*    color: var(--color-principal);*/
+/*}*/
+
+/*.restaurante_descripcion{*/
+/*    font-size: 14px;*/
+/*    margin-top: 10px;*/
+/*}*/
+
+/*.restaurante_descripcion > p{*/
+/*    color: #2c2c2c;*/
+/*}*/
+
+/*.restaurante_observaciones{*/
+/*    font-size: 14px;*/
+/*    margin-top: 10px;*/
+/*}*/
+
+/*.restaurante_observaciones > p{*/
+/*    color: #000;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.content_restaurante_horarios{*/
+
+/*}*/
+
+/*.content_restaurante_horario{*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: left;*/
+/*}*/
+
+/*.restaurante_horario_imagen{*/
+/*    width: auto;*/
+/*    height: auto;*/
+/*    padding: 5px 5px 5px 0px;*/
+/*}*/
+
+/*.restaurante_horario_imagen > img{*/
+/*    width: 30px;*/
+/*    height: auto;*/
+/*}*/
+
+/*.restaurante_horario_nombre{*/
+/*    padding: 5px 5px 5px 0px;*/
+/*    width: 85px;*/
+/*}*/
+
+/*.restaurante_horario_horas{*/
+/*    padding: 5px 5px 5px 0px;*/
+/*}*/
+
+/*!*.btn_reserva_restaurante{*!*/
+/*!*    display: table;*!*/
+/*!*    width: auto;*!*/
+/*!*    height: auto;*!*/
+/*!*    margin: 30px auto 15px auto;*!*/
+/*!*    padding: 5px 10px 5px 10px;*!*/
+/*!*    font-size: 17px;*!*/
+/*!*    color: #ffffff;*!*/
+/*!*    text-transform: uppercase;*!*/
+/*!*    background: var(--color-principal);*!*/
+/*!*    border-radius: 3px;*!*/
+/*!*    text-align: center;*!*/
+/*!*}*!*/
+
+/*.titulo_reserva_restaurante_turno,.titulo_reserva_restaurante_comensales{*/
+/*    font-size: 20px;*/
+/*    color: var(--color-principal);*/
+/*    margin-bottom: 5px;*/
+/*}*/
+
+/*.titulo_reserva_restaurante_comensales{*/
+/*    margin-top: 25px;*/
+/*}*/
+
+/*.content_reserva_turnos_restaurantes{*/
+
+/*}*/
+
+/*.content_reserva_turno_titulo{*/
+/*    font-size: 13px;*/
+/*    color: var(--color-principal);*/
+/*}*/
+
+/*.restaurante_reserva_horario{*/
+/*    display: inline-table;*/
+/*    width: 75px;*/
+/*    background: #cbcbcb;*/
+/*    text-align: center;*/
+/*    color: #ffffff;*/
+/*    font-size: 14px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.restaurante_reserva_horario.active{*/
+/*    background: var(--color-principal);*/
+/*}*/
+
+/*!********** Sugerencias Restaurantes *************!*/
+
+/*.mensaje_sugerencia{*/
+/*    font-size: 18px;*/
+/*    color: var(--color-principal);*/
+/*    margin-bottom: 30px;*/
+/*}*/
+
+/*.sugerencia_error{*/
+/*    color: #ff4a2d !important;*/
+/*}*/
+
+/*.content_restaurante_sugerencia{*/
+/*    margin-bottom: 30px;*/
+/*    width: 100%;*/
+/*    height: 175px;*/
+/*    position: relative;*/
+/*    background-position: center center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+
+/*.titulo_restaurante_sugerencia{*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    padding: 2px 10px 2px 10px;*/
+/*    text-transform: uppercase;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    background: var(--color-principal);*/
+/*    color: #ffffff;*/
+/*}*/
+
+/*.btn_restaurante_sugerencia{*/
+/*    position: absolute;*/
+/*    width: auto;*/
+/*    padding: 2px 10px 2px 10px;*/
+/*    text-transform: uppercase;*/
+/*    bottom: 0;*/
+/*    right: 0;*/
+/*    background: var(--color-principal);*/
+/*    color: #ffffff;*/
+/*}*/
+
+/*!********** Pruebas **********!*/
+/*.content_popup{*/
+/*    display: flex;*/
+/*    padding: 0px !important;*/
+/*}*/
+
+/*.content_popup_scroll{*/
+/*    max-height: 100%;*/
+/*    width: 100%;*/
+/*    overflow-x: hidden;*/
+/*    overflow-y: auto;*/
+/*    padding: 15px;*/
+/*}*/
+
+/*!************* texto_add_screen ***********!*/
+
+/*.texto_add_screen{*/
+/*    padding: 20px;*/
+/*    font-size: 18px;*/
+/*    display: block;*/
+/*}*/
+
+/*.texto_add_screen > img{*/
+/*    height: 20px;*/
+/*    width: auto;*/
+/*    display: inline;*/
+/*    margin: 0px 7px 0px 7px;*/
+/*}*/
+
+/*!* Formulario reserva restaurante ifrane *!*/
+/*.content_iframe_restaurantes{*/
+/*    height: 90% !important;*/
+/*}*/
+
+/*.iframe-reserva-restaurante{*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
+
+/*!******************************************!*/
+
+/*.content_franja_room_service {*/
+/*    background: #ffffff;*/
+/*    color: var(--color-principal);*/
+/*    width: auto;*/
+/*    padding: 2px 6px 2px 6px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    flex: 1 1 35%;*/
+/*    border: 3px solid #6d6058;*/
+/*    box-shadow: 2px 3px 10px 0px;*/
+/*    font-weight: bold;*/
+/*    margin: 20px 2px 20px 3px;*/
+/*    height: 70px;*/
+/*}*/
+
+/*.content-rs{*/
+/*    padding-top: 50px;*/
+/*}*/
+
+/*.select_formularios {*/
+/*    width: 100%;*/
+/*    font-size: 16px;*/
+/*    padding: 10px 5px 10px 5px;*/
+/*    background: var(--color-principal);*/
+/*    color: #ffffff;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.room_service_top{*/
+/*    background: #ffffff;*/
+/*    color: var(--color-principal);*/
+/*    text-align: center;*/
+/*}*/
+
+/*.room_service_top > .precio_total_producto {*/
+/*    font-size: 18px;*/
+/*    float: left;*/
+/*    margin-top: 10px;*/
+/*    background: #ffffff;*/
+/*    color: var(--color-principal);*/
+/*    padding: 5px;*/
+/*    width: 90%;*/
+/*    margin-left: 5%;*/
+/*    text-align: center;*/
+/*    border: 3px solid #6d6058;*/
+/*    box-shadow: 2px 3px 10px 0px;*/
+/*    font-weight: bold;*/
+/*    margin-bottom: 5px;*/
+/*}*/
+
+/*.imagen_header_room_service {*/
+/*    top: 25px;*/
+/*    height: 220px;*/
+/*}*/
+
+/*.titulo_resumen_cesta{*/
+/*    margin-top: 110px;*/
+/*    margin-bottom: -215px;*/
+/*    width: 100%;*/
+/*    text-align: center;*/
+/*    font-size: 18px;*/
+/*    text-transform: uppercase;*/
+/*    font-weight: bold;*/
+/*    color: var(--color-principal);*/
+/*}*/
+
+/*.content-botones-formularios{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.content-botones-formularios > .btn_formulario{*/
+/*    width: 125px;*/
+/*    margin-left: 20px;*/
+/*}*/
+
+/*.btn_atras_room_service{*/
+/*    width: 125px;*/
+/*    border-radius: 4px !important;*/
+/*    padding: 6px;*/
+/*    color: #ffffff;*/
+/*    text-align: center;*/
+/*    text-transform: uppercase;*/
+/*    font-size: 18px;*/
+/*    background: var(--color-principal);*/
+/*    margin-top: 40px;*/
+/*    margin-bottom: 20px;*/
+/*    display: inline-block;*/
+/*}*/
+
+/*.textarea_descripcion_room_service{*/
+/*    width: 100%;*/
+/*    height: 80px;*/
+/*    border: 1px solid var(--color-principal);*/
+/*    border-radius: 4px;*/
+/*    padding: 10px;*/
+/*}*/
+
+/*.fondo_cargando{*/
+/*    position: fixed;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    background: rgba(0,0,0,0.6);*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    z-index: 99999999999;*/
+/*}*/
+
+/*.fondo_cargando > img{*/
+/*    width: auto;*/
+/*    height: 100%;*/
+/*    max-height: 250px;*/
+/*}*/
+
+/*.fondo_error{*/
+/*    position: fixed;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    background: rgba(0,0,0,0.6);*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    z-index: 99999999999;*/
+/*}*/
+
+/*.fondo_error > .mensaje_error{*/
+/*    width: 90%;*/
+/*    height: auto;*/
+/*    padding: 10px;*/
+/*    background: #ffffff;*/
+/*    border: 3px solid var(--color-principal);*/
+/*    border-radius: 5px;*/
+/*    color: var(--color-principal);*/
+/*    font-size: 16px;*/
+/*    color: #ff5741;*/
+/*}*/
+
+/*.fondo_error > .mensaje_correcto{*/
+/*    width: 90%;*/
+/*    height: auto;*/
+/*    padding: 10px;*/
+/*    background: #ffffff;*/
+/*    border: 3px solid var(--color-principal);*/
+/*    color: var(--color-principal);*/
+/*    font-size: 16px;*/
+/*    border-radius: 5px;*/
+/*    overflow: auto;*/
+/*    max-height: 90%;*/
+/*}*/
+
+/*.content_datos_reserva_actividad{*/
+/*    width: 100%;*/
+/*    padding: 10px;*/
+/*    border-bottom: 1px solid var(--color-principal);*/
+/*}*/
+
+/*.datos_titulo_reserva_actividad{*/
+/*    width: 100%;*/
+/*    font-size: 16px;*/
+/*    color: var(--color-principal);*/
+/*}*/
+
+/*.datos_opciones_reserva_actividad{*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: right;*/
+/*}*/
+
+/*.datos_opciones_reserva_actividad > a{*/
+/*    margin-left: 15px;*/
+/*    text-decoration: none;*/
+/*    background-position: left center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: 15px;*/
+/*    padding-left: 20px;*/
+/*}*/
+
+/*.fecha_reserva_actividad{*/
+/*    font-size: 12px;*/
+/*}*/
+
+/*.numero_plazas{*/
+/*    font-size: 14px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.cancelar_reserva_actividad{*/
+/*    color: #f53434;*/
+/*    background-image: url("https://view.twisticdigital.com/lopesan/contenido/_general/feelapp/iconos/borrar.svg");*/
+/*}*/
+
+/*.modificar_reserva_actividad{*/
+/*    color: var(--color-principal);*/
+/*    background-image: url("https://view.twisticdigital.com/lopesan/contenido/_general/feelapp/iconos/editar.svg");*/
+/*}*/
+
+/*.fondo_eliminar{*/
+/*    position: fixed;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    background: rgba(0,0,0,0.6);*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    z-index: 99999999999;*/
+/*}*/
+
+/*.fondo_eliminar > .mensaje_correcto {*/
+/*    width: 90%;*/
+/*    height: auto;*/
+/*    padding: 10px;*/
+/*    background: #ffffff;*/
+/*    border: 3px solid var(--color-principal);*/
+/*    color: var(--color-principal);*/
+/*    font-size: 16px;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*.content_eliminar_reserva{*/
+
+/*}*/
+
+/*.content_eliminar_reserva > .titulo{*/
+/*    font-size: 16px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.content_eliminar_reserva > .fecha{*/
+/*    font-size: 13px;*/
+/*}*/
+
+/*.confirmacion_borrado{*/
+/*    font-size: 13px;*/
+/*}*/
+
+/*.content_botones_eliminar_reserva{*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.content_botones_eliminar_reserva > div{*/
+/*    width: 60px;*/
+/*    padding: 10px 20px 10px 20px;*/
+/*    font-size: 14px;*/
+/*    text-transform: uppercase;*/
+/*    text-align: center;*/
+/*    margin: 15px;*/
+/*    background: var(--color-principal);*/
+/*    color: #ffffff;*/
+/*}*/

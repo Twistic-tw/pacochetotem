@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+    {google_analytics}
+    {tags_head}
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=3.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="shortcut icon" href="/favicon.ico?v={id_cache}" type="image/x-icon"/>
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png?v={id_cache}"/>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png?v={id_cache}"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png?v={id_cache}"/>
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png?v={id_cache}"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png?v={id_cache}"/>
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png?v={id_cache}"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png?v={id_cache}"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png?v={id_cache}"/>
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="apple-touch-icon-180x180.png?v={id_cache}"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png?v={id_cache}">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v={id_cache}">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png?v={id_cache}">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v={id_cache}">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v={id_cache}" color="#ffffff">
+
+    <title>{nombre_hotel_menu}</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/style.css?v={id_cache}">
+    <link rel="stylesheet" type="text/css" href="styles/skin.css">
+    <link rel="stylesheet" type="text/css" href="styles/framework.css">
+    <link rel="stylesheet" type="text/css" href="styles/ionicons.min.css">
+
+    <link rel="stylesheet" type="text/css" href="styles/menu.css?v={id_cache}">
+
+    <link rel="stylesheet" type="text/css" href="styles/dunas.css?v={id_cache}">
+    <link rel="stylesheet" type="text/css" href="styles/actividades.css?v={id_cache}">
+    <link rel="stylesheet" type="text/css" href="styles/formularios.css?v={id_cache}">
+
+    <link rel="stylesheet" type="text/css" href="styles/restaurantes.css?v={id_cache}">
+    <link rel="stylesheet" type="text/css" href="styles/cartas_dinamicas.css?v={id_cache}">
+    <link rel="stylesheet" type="text/css" href="styles/cartas.css?v={id_cache}">
+
+
+    {css_ofertas}
+
+    <!-- CSS Slider -->
+    <link rel="stylesheet" href="styles/swiper.min.css?v={id_cache}">
+
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/plugins.js"></script>
+    <script type="text/javascript" src="scripts/custom.js?v={id_cache}"></script>
+    <script type="text/javascript" src="scripts/app.js?v={id_cache}"></script>
+    <script type="text/javascript" src="scripts/actividades.js?v={id_cache}"></script>
+    <script type="text/javascript" src="scripts/formularios.js?v={id_cache}"></script>
+
+    <!--GRAFICAS-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="scripts/restaurantes.js?v={id_cache}"></script>
+
+    <script type="text/javascript" src="scripts/cartas_dinamicas.js?v={id_cache}"></script>
+
+    <!-- Swiper JS -->
+    <script src="scripts/swiper.min.js"></script>
+
+</head>
+
+<body>
+
+{tags_body}
+
+{popup_portada}
+
+<input type="hidden" id="id_centro_global" name="id_centro_global" value="{id_centro_global}">
+
+<input type="hidden" id="url_web_input" name="url_web_input" value="{url_web_input}">
+<input type="hidden" id="id_analytics" name="id_analytics" value="{id_analytics}">
+<input type="hidden" id="nombre_hotel" name="nombre_hotel" value="{nombre_hotel_menu}">
+
+<div id="page-transitions">
+    <div class="sidebars sidebars-light">
+        <div class="sidebar sidebar-left">
+
+            <div class="content-superior-menu-lateral"><!-- Inicio del div para separar los idiomas -->
+
+                <div class="sidebar-header sidebar-header-image bg-2 css_foto_fondo_centro"
+                     style="background-image: url('{fondo_secundario}')">
+
+                    <div class="overlay light-overlay"></div>
+
+                    <a href="#" class="sidebar-logo" style="background-image: url('{logo}')"><!-- {logo} -->
+
+                    </a>
+                </div>
+
+                <div class="nombre-centro-hotel">
+                    {nombre_hotel_menu}
+                </div>
+
+                <div class="content-redes-sociales">
+
+                    <!-- START BLOCK : redes_sociales -->
+                    <a class="content-redes-sociales" target="_blank" alt="{redes_sociales_nombre}"
+                       href="{redes_sociales_url}">
+                        <img class="img-red-social"
+                             src="https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/{redes_sociales_img}"
+                             alt="">
+                    </a>
+                    <!-- END BLOCK : redes_sociales -->
+                </div>
+
+                <div class="menu-options icon-background no-submenu-numbers sidebar-menu">
+
+                    <a data-url="add-acceso-directo" data-titulo="Añadir acceso directo" class="add-button" href="#"><i class="css_icon_menu_izq icon-add-screen"></i><span>{add_screen_texto}</span><i class="ion-record"></i></a>
+
+                    {prueba_restaurante}
+
+                    {texto_checkin}
+
+                    {datos_usuario}
+
+                    {programa_navidad}
+
+                    {fin_ano}
+
+                    {enlace_newsletter}
+
+                    <!--						<a {clase_apertura} class="" target="_blank" href="https://www.hotelesdunas.com/es/dunas-club/"><i class="css_icon_menu_izq icon-destinos"></i><span>Dunas Club</span><i class="ion-record"></i></a>-->
+
+                    <!--						<a {clase_apertura} class="enlace-pagina {displaynone} " data-enlace="calendario" href="#"><i class="css_icon_menu_izq icon-entretenimiento"></i><span>{nombre_entretenimiento}</span><i class="ion-record"></i></a>-->
+
+                    {secciones}
+
+                    {enlace_rutas}
+
+
+                    <!-- START BLOCK : menu_lateral_content -->
+
+                    <!-- START BLOCK : menu_lateral_manual -->
+                    {seccion_manual}
+                    <!-- END BLOCK : menu_lateral_manual -->
+
+                    <!-- START BLOCK : menu_lateral -->
+
+                    <a {clase_apertura} data-url="{url_categoria}" data-titulo="{titulo_categoria}" class="enlace-pagina {displaynone} {ocultar_categoria_menu}"
+                       data-enlace="{id_categoria}" href="#"><i class="css_icon_menu_izq {class_icon}"></i><span>{nombre_categoria}</span><i
+                            class="ion-record"></i></a>
+
+                    <!-- <a data-sub="sidebar-sub-1" href="#"><i class="css_icon_menu_izq css_icon_gastronomia"></i><span>Gastronomía</span><strong class="plushide-animated"></strong></a> -->
+
+                    <!-- START BLOCK : contenedor_subcategorias -->
+                    <div class="submenu" id="sidebar-sub-{id_categoria_bloque}">
+                        <!-- START BLOCK : menu_lateral_sub -->
+                        <a data-url="{url_categoria}" data-titulo="{titulo_categoria}" class="enlace-pagina" data-enlace="{id_categoria}"
+                           href="#"><span>{nombre_categoria}</span></a>
+                        <!-- END BLOCK : menu_lateral_sub -->
+                    </div>
+                    <!-- END BLOCK : contenedor_subcategorias -->
+
+                    <!-- END BLOCK : menu_lateral -->
+
+                    <!-- END BLOCK : menu_lateral_content -->
+
+
+                    <!--						<a {clase_apertura} class="enlace-pagina {displaynone} {ocultar_excu}" data-enlace="categoria-115" href="#"><i class="css_icon_menu_izq icon-excursiones"></i><span>{nombre_excursiones}</span><i class="ion-record"></i></a>-->
+
+                    <a {clase_apertura} class="" target="_blank" href="https://www.hotelesdunas.com/es/"><i
+                            class="css_icon_menu_izq icon-sostenibilidad"></i><span>{nuestros_hoteles}</span><i
+                            class="ion-record"></i></a>
+
+
+                </div>
+
+            </div><!-- Fin del div para separar los idiomas -->
+
+            <div class="content-idiomas">
+
+                <!-- START BLOCK : idiomas -->
+                <div data-hotel="{id_hotel_idioma}" id="idioma_{id_idioma}" class="content-idioma {ancho_idioma}">
+                    <img class="{active}" src="{idioma_icono_src}" alt="">
+                    <div class="nombre_idioma {active}">{nombre_idioma}</div>
+                </div>
+                <!-- END BLOCK : idiomas -->
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="header header-logo-center header-light">
+        <a href="#" class="header-icon header-icon-1 hamburger-animated open-sidebar-left"></a>
+        <a href="#" class="header-logo" style="background-image: url('{logo}')"></a>
+        <a class="volver-index" href="#">
+            <div class="volver-index"><img src="https://view.twisticdigital.com/dunas/feelapp/images/iconos/home1.svg"
+                                           alt=""></div>
+        </a>
+    </div>
+
+    <div id="content-general">
+

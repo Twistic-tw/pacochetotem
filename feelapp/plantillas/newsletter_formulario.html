@@ -1,0 +1,74 @@
+<!-- PUSHTech form start -->
+<style>
+
+
+
+</style>
+
+<link rel="stylesheet" href="styles/newsletter.css?v={id_cache}">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src='https://cdn-manager.pushtech.com/sdk/web/form-builder/form-builder.1.0.0.min.js'></script>
+<script src='https://cdn-manager.pushtech.com/sdk/web/2.0/PUSHTECHWebSDK.2.5.0.min.js'></script>
+
+<script type="text/javascript" src="scripts/newsletter.js?v={id_cache}"></script>
+
+<form id="HVRpNpw" href="#" >
+    <div class="fb-render">
+    </div>
+
+
+    <div class="ThankYouMessage">
+    </div>
+</form>
+<script type="application/javascript">
+
+
+    $(function() {
+        $("#HVRpNpw").find('.fb-render').formRender({dataType: 'json',formData: [{"type":"header","subtype":"h3","label":"{titulo_seccion}","className":"css_href_dunas"},{"type":"text","subtype":"email","required":true,"placeholder":"{escribe_mail}","className":"form-control","name":"text-1600765618762","push_field":"email","internal_field_type":"email"},{"type":"button","label":"{enviar}","subtype":"button","className":"btn btn-info","name":"psh-send-button-form","thank_you":"{correcto}","internal_field_type":"button_send","redirect_url_landing":"1","send_campaign":"1","style":"info"},{"type":"checkbox","required":true,"label":"<p class=\"MsoNormal\" style=\"margin-bottom:0cm;margin-bottom:.0001pt;line-height:\nnormal;mso-layout-grid-align:none;text-autospace:none\"><br></p>","className":"css_checkbox_dunas","name":"checkbox-1600765719497","push_field":"gdpr_marketing_consent","internal_field_type":"gdpr_marketing_consent","values":[{"label":"{acepto}{adicional}","value":"Al marcar esta casilla, desea recibir más información sobre nuestros productos / servicios, eventos, noticias y ofertas."}]},{"type":"hidden","name":"hidden-1600765771041","internal_field_type":"subscription_list","subscription_list":"a_0%_%5f69bfc68968bd47bab8dcc8"}]})
+        HTMLFormElement.prototype.reportValidity = function() {
+            if (this.checkValidity()) return true;
+            var btn = document.createElement('button');
+            this.appendChild(btn);
+            btn.click();
+            this.removeChild(btn);
+            return false;
+        }
+        $("#HVRpNpw").on('keydown', function (e) {
+            if (e.which == 13) {
+                $("#HVRpNpw").find('#psh-send-button-form').trigger('click');
+                return false;
+            }
+        });
+        $("#HVRpNpw").find('#psh-send-button-form').on('click', function (e) {
+            var form = document.getElementById("HVRpNpw")
+            if(form.reportValidity()){
+                var app_id = '5f69be05d11520317ef9cfaa';
+                var app_secret = '47e66b63310f9ccb19d25ab17325c21d';
+                var user_id = $("#pshUserId").length > 0 ? $("#pshUserId").text() : null;
+                var sdk = new PUSHTechSDK(app_id, app_secret,user_id);
+                sdk.init().then(function(){
+                    sdk.createEmailMetric($('#text-1600765618762').val());
+                    sdk.createMarketingConsent($("input[name='checkbox-1600765719497']").is(':checked'));
+                    sdk.createSubscriptionToListMetric("5f69bfc68968bd47bab8dcc8");
+                    sdk.createSendFormMetric("11d7bdf6-6f90-4b84-bb7e-d46bf1b0bd25");
+                    sdk.sendMetrics(function(){
+                        $("#HVRpNpw").find(".ThankYouMessage").text("Se ha registrado con éxito.")
+
+                    });
+
+                }).catch(function(){
+                    console.log("NO REGISTERED IN PUSH");
+                });
+            }
+            form.addEventListener("submit", function (event) {event.preventDefault();return false},false);
+
+        });
+
+        $('input.css_checkbox_dunas').parent().prepend('<span class="slider round"></span>');
+        $('.formbuilder-checkbox > input').prop('checked', false);
+
+    });
+
+</script>
+<!-- PUSHTech form end -->

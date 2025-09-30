@@ -1,0 +1,110 @@
+
+<!-- START BLOCK : cabecera -->
+
+
+
+<div class="fondo-popup-zoom">
+
+    <div class="content-popup content-img-zoom">
+
+        <!-- END BLOCK : cabecera-->
+
+        <div class="content-general-carta-dinamica" style="background-image: url({fondo_carta})">
+
+            <!-- START BLOCK : botones_cartas -->
+
+                <div class="content-btn-superior-carta-rest">
+
+                    <!-- START BLOCK : btn_carta -->
+
+                        <div id="#content-carta-{id_carta}" class="contet-general-btn-cartas-popup {active}">{nombre_carta}</div>
+
+                    <!-- END BLOCK : btn_carta -->
+
+                </div>
+
+            <!-- END BLOCK : botones_cartas -->
+
+            <!-- START BLOCK : cartas -->
+
+                <!-- START BLOCK : cabecera_panel -->
+                <div id="content-carta-{id_carta}" class="contet-general-contenido-cartas-popup {active}">
+                <!-- END BLOCK : cabecera_panel -->
+
+                <!-- START BLOCK : categorias -->
+
+                    <button id="" class="{class_accordion} {accordion_active}">{nombre_categoria}</button>
+                    <div class="panel" {display_block}>
+
+                        <!-- START BLOCK : subcategorias -->
+
+                            <div class="subcategoria_cartas">{nombre_subcategoria}</div>
+
+                        <!-- END BLOCK : subcategorias -->
+
+                        <!-- START BLOCK : articulos -->
+
+                            <div class="divTable">
+                                <div class="divTableRow">
+
+                                    <div class="content-general-plato-carta">
+
+                                        <div data-id_articulo="{id_articulo}" class="{class_nombre} "> {logo_infantil} {nombre_articulo} {denominacion_origen}</div>
+
+                                        <div class="carta-nombre-inferior {nombre_descripcion}">
+                                            {descripcion}
+                                        </div>
+
+                                        <!-- START BLOCK : capacidad_precio -->
+
+                                            <div class="carta-precio-dinamico {class_capacidad_precio}">
+                                                {capacidad} {contenido_precio_final}
+                                            </div>
+
+                                        <!-- END BLOCK : capacidad_precio -->
+
+                                    </div>
+
+                                    <!-- START BLOCK : suplementos -->
+
+                                        <div class="suplementos_carta_dinamica {class_suplemento}">
+                                            * {nombre_suplemento} {descripcion_suplemento}
+                                        </div>
+
+                                        <div class="suplementos_carta_dinamica {class_suplemento}">
+                                            {capacidad} {precio}
+                                        </div>
+
+                                    <!-- END BLOCK : suplementos -->
+
+                                </div>
+                            </div>
+
+                            <div style="width: 100%">
+                                <div class="css_separador_cartas"></div>
+                            </div>
+
+                        <!-- END BLOCK : articulos -->
+
+                    </div>
+
+                <!-- END BLOCK : categorias -->
+
+                <!-- START BLOCK : footer_panel -->
+                </div>
+                <!-- END BLOCK : footer_panel -->
+
+            <!-- END BLOCK : cartas -->
+
+        </div>
+
+
+        <!-- START BLOCK : footer -->
+
+    </div>
+
+    <div class="back-popup"><img src="https://view.twisticdigital.com/lopesan/contenido/_general/feelapp/iconos/back.svg" alt=""></div>
+
+</div>
+
+<!-- END BLOCK : footer -->
