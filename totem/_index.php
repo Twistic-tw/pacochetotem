@@ -12,8 +12,7 @@
   */
 header('Content-Type: text/html; charset=UTF-8'); 
 session_start();
-// Inicializar logging centralizado
-require_once __DIR__ . '/lib/error_logging.php';
+error_reporting(0);
 ///setlocale(LC_ALL,"es_ES.UTF-8");
 
 
