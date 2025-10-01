@@ -84,7 +84,7 @@ $tpl_informacion->assign("element_class","$rowsClass $blockClass");
 $tpl_informacion->assign("element_href","getInfo_aeropuertos_new");
 $tpl_informacion->assign("element_href_class"," loadAjax");
 $tpl_informacion->assign("element_icono","icon-vuelos");
-$tpl_informacion->assign("aeropuerto_doble",strtoupper($aeropuertos[0]['cod']));
+$tpl_informacion->assign("aeropuerto_doble","RMU");
 $tpl_informacion->assign("element_text", LANG_INFO_VUELOS_TITLE);
 $tpl_informacion->assign("index", "informacion".$blokeIndex++);
 

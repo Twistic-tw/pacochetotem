@@ -46,8 +46,8 @@ $cod_ae = $_GET['aeropuerto_doble'];
 
 if(($datos_aeropuertos = $array_idiomas_ae[$_SESSION['idioma']])){
 
-    $url_salidas = $datos_aeropuertos['url'] . $datos_aeropuertos['nombre'] . '/LPA/' . $datos_aeropuertos['salidas'];
-    $url_llegadas = $datos_aeropuertos['url'] . $datos_aeropuertos['nombre'] . '/LPA/' . $datos_aeropuertos['llegadas'];
+    $url_salidas = $datos_aeropuertos['url'] . $datos_aeropuertos['nombre'] . '/RMU/' . $datos_aeropuertos['salidas'];
+    $url_llegadas = $datos_aeropuertos['url'] . $datos_aeropuertos['nombre'] . '/RMU/' . $datos_aeropuertos['llegadas'];
 
     $tplVuelos->assign('url_salidas',$url_salidas);
     $tplVuelos->assign('url_llegadas',$url_llegadas);
@@ -56,7 +56,7 @@ if(($datos_aeropuertos = $array_idiomas_ae[$_SESSION['idioma']])){
 
 $datos = get_nombre_aeropuerto($cod_ae);
 
-if(($datos['cod'] == "LPA" && $_SESSION['id_lugar'] != 47) || $datos['nombre'] == ""){
+if(($datos['cod'] == "RMU" && $_SESSION['id_lugar'] != 47) || $datos['nombre'] == ""){
     $nombre_aero = LANG_INFO_VUELOS_TITLE;
 }else{
     $nombre_aero = $datos['nombre'];
