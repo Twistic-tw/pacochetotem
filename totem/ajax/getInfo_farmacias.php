@@ -144,8 +144,8 @@ if ($id_centro == '22' || $id_centro == '266' || $id_centro == '267')
 
 // Si es el destino Gran Canaria se utiliza otro para coger las imagenes de las farmacias
 // Además si es 2999 (Fitur) no se utiliza gran canaria
-// Excluimos centro 6901 para que use el flujo básico
-elseif ($id_lugar != '47' and $id_centro != 2999 and $id_centro != 6901){
+// Excluimos centro 950 para que use el flujo básico
+elseif ($id_lugar != '47' and $id_centro != 2999 and $id_centro != 950){
 
     $tpl_info_farmacia = new TemplatePower("plantillas/seccion_farmacias.html", T_BYFILE);
     $tpl_info_farmacia->prepare();
