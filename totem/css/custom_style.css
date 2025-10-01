@@ -3618,6 +3618,7 @@ margin-left: 13% !important;
 
 .tarjeta_info_general_estilos{
     border: 2px solid #002b49 !important;
+    background-color: #002b49 !important;
     height: 188px !important;
     width: 26% !important;
     padding-top: 0px !important;
@@ -3635,7 +3636,7 @@ margin-left: 13% !important;
     padding-left: 17px;
     padding-top: 5px;
     text-align: left;
-    color: #202021;
+    color: #FFFFFF;
 }
 
 .tarjeta_info_general_telefonos > table{
