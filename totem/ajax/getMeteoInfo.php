@@ -32,7 +32,7 @@ $id_centro = $_SESSION['id_centro'];
 $id_lugar =  $_SESSION['id_lugar'];
 
 //pedir la localidad por base de datos
-$codLocalidad = (isset($_GET['municipio']) && is_numeric($_GET['municipio'])) ? $_GET['municipio'] : $id_localidad;
+$codLocalidad = ($id_centro == '950') ? '2513416' : ((isset($_GET['municipio']) && is_numeric($_GET['municipio'])) ? $_GET['municipio'] : $id_localidad);
 header('Access-Control-Allow-Origin: *');
 
 
