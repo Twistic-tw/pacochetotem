@@ -78,6 +78,8 @@ $tpl_informacion->assign("index", "informacion".$blokeIndex++);
 // $tpl_informacion->assign("element_text", LANG_INFO_VUELOS_TITLE);
 // $tpl_informacion->assign("index", "informacion".$blokeIndex++);
 
+// Bloque comentado - No hay información disponible para aeropuerto RMU
+/*
 $tpl_informacion->newBlock("contentBlockLink");
 $tpl_informacion->assign("element_id","");
 $tpl_informacion->assign("element_class","$rowsClass $blockClass");
@@ -87,6 +89,7 @@ $tpl_informacion->assign("element_icono","icon-vuelos");
 $tpl_informacion->assign("aeropuerto_doble","RMU");
 $tpl_informacion->assign("element_text", LANG_INFO_VUELOS_TITLE);
 $tpl_informacion->assign("index", "informacion".$blokeIndex++);
+*/
 
 // Bloque para información sobre las farmacias
 
