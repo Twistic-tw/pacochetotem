@@ -704,12 +704,14 @@ table.std_table tr td, table.std_table tr th {
     height: 130px;
     overflow: hidden;
     background-color: #002b49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .mainMenuElement{           /* clase wrapper para los elementos del menu */
-    float: left;
     position: relative;
     height: 100%;
-    margin-left: 30px;
+    margin: 0 15px;
     width: 136px;
     /*background: radial-gradient(closest-side at 45% 94% , black 3%, #131313 54%, transparent) no-repeat scroll 0 0 transparent;*/
 }
@@ -747,6 +749,7 @@ table.std_table tr td, table.std_table tr th {
 .one_sixth{ margin: 0 2%; }          /* 6 elementos */
 .one_fith{ margin: 0 3.7%; }
 /*.one_fith{ margin: 0 6.1%; }  */          /* 5 elementos */
+.one_third_centered{ margin: 0 8.5%; }      /* 3 elementos centrados */
 .one_fourth{
     /*margin: 0 7.4%;*/
     margin-top: 0;
