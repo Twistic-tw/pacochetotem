@@ -143,6 +143,8 @@ $tpl_informacion->assign("element_text", LANG_INFO_MAREAS_TITLE);
 $tpl_informacion->assign("index", "informacion".$blokeIndex++);
 }
 
+    // Bloque comentado - Botón consulados oculto
+    /*
     $tpl_informacion->newBlock("contentBlockLink");
     $tpl_informacion->assign("element_id","");
     $tpl_informacion->assign("element_class","$rowsClass $blockClass");
@@ -151,6 +153,7 @@ $tpl_informacion->assign("index", "informacion".$blokeIndex++);
     $tpl_informacion->assign("element_icono","icon-consulados");
     $tpl_informacion->assign("element_text", LANG_INFO_CONSULADOS_TITLE);
     $tpl_informacion->assign("index", "informacion".$blokeIndex++);
+    */
 
 
 $tpl_index->assign("content_contenido", $tpl_informacion->getOutputContent());
