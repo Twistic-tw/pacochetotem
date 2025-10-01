@@ -71,7 +71,6 @@ $tpl_lugar->assign("info_label", LANG_LUGARES_INFO_GENERAL);
 $tpl_lugar->assign("interes_label", LANG_LUGARES_SITIOS_INTERES);
 $tpl_lugar->assign("galeria_label", LANG_CONOCE_GALERIA);
 $tpl_lugar->assign("que_hacer_label", LANG_CONOCE_QUEHACER);
-$tpl_lugar->assign("mercadillos_label", LANG_CONOCE_MERCADILLOS);
 
 $tpl_lugar->assign("datos_pais", LANG_LUGARES_PAIS);
 $tpl_lugar->assign("demografia", LANG_LUGARES_DEMOGRAFIA);
