@@ -238,18 +238,6 @@ $tpl_index->assign("contentWrapper_class", "");                       //para asi
 
 include "pagina/pagina_informacion.php";
 
-/////////////////////////          mapa
-$tpl_index->newBlock("mainMenu_element");
-$tpl_index->assign("element_id", "");
-$tpl_index->assign("element_href_class", " foto_banner_vertical");
-$tpl_index->assign("element_icono", "iconomapa");
-$tpl_index->assign("element_color", $_mainMenuIconColors['informacion']);
-$tpl_index->assign("element_href", "mapa");
-$tpl_index->assign("element_text", LANG_MAPA_TITLE);
-
-$tpl_index->newBlock("menuContent");
-$tpl_index->assign("contentWrapper_id", "");        //para asignarle un id al bloque de contenido. MISMO ID QUE EL element_href del bloque superior
-$tpl_index->assign("contentWrapper_class", "");                       //para asignarle una clase al wrapper de contenido
 
 
 
