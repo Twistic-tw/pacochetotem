@@ -133,7 +133,6 @@ if ($datos_array==null )
     }
 }
 
-
 $tiempo['extra'] = $datos_array;
 $tiempo['fuente'] = "local";
 //echo "<pre>";
@@ -655,7 +654,12 @@ $tiempo["meteoHTML"] = $tpl_meteoHtml->getOutputContent();
 
 //$tiempo["meteoHTML"] = utf8_encode($tiempo["meteoHTML"]);
 
-echo ( json_encode($tiempo, TRUE) );
+//echo ( json_encode($tiempo, TRUE) );
 
+if (isset($tiempo["meteoHTML"])) {
+    $tiempo["meteoHTML"] = mb_convert_encoding($tiempo["meteoHTML"], 'UTF-8', 'auto');
+}
+
+echo json_encode($tiempo, JSON_UNESCAPED_UNICODE | JSON_PARTIAL_OUTPUT_ON_ERROR);
 ?>
 
