@@ -247,7 +247,7 @@ $tpl_index->assign('id_centro_global', $_SESSION['id_centro']);
 $tpl_index->assignGlobal('id_cache', date('YmdHis'));
 
 
-$tpl_index->assign('logo', 'https://view.twisticdigital.com/contenido_proyectos/pacoche/centro_950/logos/logo.jpg');
+$tpl_index->assign('logo', 'https://view.twisticdigital.com/contenido_proyectos/pacoche/centro_950/logos/logo-alpha.jpg');
 //$tpl_index->assign('logo', 'https://view.twisticdigital.com//contenido_proyectos/dunas/_general/logo_arriba2.png');
 
 $tpl_index->assign('fondo_secundario', 'https://view.twisticdigital.com/contenido_proyectos/dunas/centro_' . $_SESSION['id_centro'] . '/feelapp/fondo2.jpg');
