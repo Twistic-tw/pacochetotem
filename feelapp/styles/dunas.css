@@ -67,6 +67,15 @@
     background-size: 207px;
 }
 
+/* Fondo naranja para el área del logo del sidebar */
+.sidebar-header.sidebar-header-image.bg-2 {
+    background: #c37b52 !important;
+}
+
+.sidebar-header .overlay.light-overlay {
+    display: none !important;
+}
+
 .header-logo {
     background-size: auto 35px;
     width: 197px;
@@ -102,6 +111,7 @@
 
 .bg-2{
     /*background: url('https://view.twisticdigital.com/contenido_proyectos/pacoche/centro_1901/feelapp/fondo2.jpg');*/
+    background: #c37b52 !important;
     background-size: cover;
     background-position: center;
 }
