@@ -31,12 +31,12 @@ if($_SESSION['id_centro'] == 19010){
 }else{
 
     if($_SESSION['id_centro'] != 19029){
-        $iconos_portada .= '<a data-url="actividades" data-titulo="Calendario de actividades" data-enlace="calendario" href="#" class="menu-item item-2 enlace-pagina"> <img class="css_imagen_menu_hexagono css_png_portada" src="https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/animacion_calendario.svg"> <div class="css_titulo_menu_hexagono"> '.LANG_FEELAPP_ENTRETENIMIENTO.'</div>  </a>';
+        // $iconos_portada .= '<a data-url="actividades" data-titulo="Calendario de actividades" data-enlace="calendario" href="#" class="menu-item item-2 enlace-pagina"> <img class="css_imagen_menu_hexagono css_png_portada" src="https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/animacion_calendario.svg"> <div class="css_titulo_menu_hexagono"> '.LANG_FEELAPP_ENTRETENIMIENTO.'</div>  </a>';
     } else {
         $iconos_portada .= '<a data-url="upgrade" data-titulo="Upgrade" data-enlace="categoria-113" href="#" class="menu-item item-2 enlace-pagina"> <img class="css_imagen_menu_hexagono" src="https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/icon_tabaqueria_45.png"> <div class="css_titulo_menu_hexagono"> Bike Center</div>  </a>';
     }
     $iconos_portada .= '<a data-url="gastronomia" data-titulo="Gastronomía" data-enlace="categoria-78" href="#" class="menu-item item-2 enlace-pagina"> <img class="css_imagen_menu_hexagono" src="https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/res.svg"> <div class="css_titulo_menu_hexagono"> '.LANG_FEELAPP_GASTRONOMIA.'</div>  </a>';
-    $iconos_portada .= '<a data-url="dunas-club" data-titulo="Dunas Club" target="_blank" href="https://www.hotelesdunas.com/es/dunas-club/" class="menu-item item-2"> <img style="width: 70%;margin-left: 12%;margin-top: 11%;" class="css_imagen_menu_hexagono" src="https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/dunas_club.png"> <div class="css_titulo_menu_hexagono"> '.LANG_VENTAJAS_EXCLUSIVAS.'</div>  </a>';
+    // $iconos_portada .= '<a data-url="dunas-club" data-titulo="Dunas Club" target="_blank" href="https://www.hotelesdunas.com/es/dunas-club/" class="menu-item item-2"> <img style="width: 70%;margin-left: 12%;margin-top: 11%;" class="css_imagen_menu_hexagono" src="https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/dunas_club.png"> <div class="css_titulo_menu_hexagono"> '.LANG_VENTAJAS_EXCLUSIVAS.'</div>  </a>';
     if($_SESSION['id_centro'] != 19029){
         $iconos_portada .= '<a data-url="upgrade" data-titulo="Upgrade" data-enlace="categoria-52" href="#" class="menu-item item-2 enlace-pagina"> <img class="css_imagen_menu_hexagono" src="https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/star.png"> <div class="css_titulo_menu_hexagono"> '.LANG_FEELAPP_UPGRADE.'</div>  </a>';
     } else {
@@ -44,7 +44,7 @@ if($_SESSION['id_centro'] == 19010){
     }
     // $iconos_portada .= '<a data-url="nuestros-hoteles" data-titulo="Nuestros hoteles" target="_blank" href="https://www.hotelesdunas.com/es/" class="menu-item item-2"> <img class="css_imagen_menu_hexagono" src="https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/dunas_hotel.png"> <div class="css_titulo_menu_hexagono"> '.LANG_FEELAPP_NUESTROS_HOTELES.'</div>  </a>';
     $iconos_portada .= '<a data-url="nuestros-hoteles" data-titulo="Nuestras habitaciones" data-enlace="categoria-77" href="#" class="menu-item item-2 enlace-pagina"> <img style="width: 40%;margin-left: 30%;" class="css_imagen_menu_hexagono" src="https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/cama.png"> <div class="css_titulo_menu_hexagono"> '.LANG_NUESTRAS_HABITACIONES.'</div>  </a>';
-    $iconos_portada .= '<a data-url="mapa" data-titulo="Mapa" data-enlace="mapa" href="#" class="menu-item item-2 enlace-pagina"> <img class="css_imagen_menu_hexagono" src="https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/icon_mapahotel_45.png"> <div class="css_titulo_menu_hexagono"> '.LANG_FEELAPP_MAPA_HOTEL.'</div>  </a>';
+    // $iconos_portada .= '<a data-url="mapa" data-titulo="Mapa" data-enlace="mapa" href="#" class="menu-item item-2 enlace-pagina"> <img class="css_imagen_menu_hexagono" src="https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/icon_mapahotel_45.png"> <div class="css_titulo_menu_hexagono"> '.LANG_FEELAPP_MAPA_HOTEL.'</div>  </a>';
 
 }
 
