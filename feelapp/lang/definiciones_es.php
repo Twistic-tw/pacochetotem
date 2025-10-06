@@ -23,6 +23,7 @@ define('LANG_FEELAPP_SERVICIOS', "Servicios");
 define('LANG_FEELAPP_HABITACIONES', "Habitaciones");
 define('LANG_FEELAPP_PISCINAS', "Piscinas");
 define('LANG_FEELAPP_UPGRADE', "Mejore su estancia");
+define('LANG_FEELAPP_EVENTOS', "Eventos y reuniones");
 
 define('LANG_FEELAPP_LOCATION', "Ubicación");
 
