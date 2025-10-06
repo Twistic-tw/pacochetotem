@@ -106,6 +106,9 @@ $url_online = $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI];
 
 $require_https = 0;
 $maintenance = false;
+
+//TODO: Remover los subdominios que no son de este proyecto
+
 if (strstr($url_online, 'dongregory.hotelesdunas')) {
     $require_https = 1;
     $_SESSION['id_centro'] = 1901;
@@ -140,6 +143,11 @@ if (strstr($url_online, 'dongregory.twistic')) {
 } elseif (strstr($url_online, 'maspalomasvillas.twistic')) {
     $require_https = 1;
     $_SESSION['id_centro'] = 19029;
+}
+
+if (strstr($url_online, 'pacoche.twistic')) {
+    $require_https = 1;
+    $_SESSION['id_centro'] = 950;
 }
 
 
