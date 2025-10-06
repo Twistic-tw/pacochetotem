@@ -278,7 +278,7 @@ if ($_SESSION['id_centro'] == 1902) {
 
 
 /*     $tpl_index->assignGlobal('texto_checkin', '<a {clase_apertura} data-url="pre-checkin-in" data-titulo="Pre Check-In" class="enlace-pagina {displaynone} " data-enlace="iframe" href="#"><i class="css_icon_menu_izq icon-check-in"></i><span>Pre Check-In</span><i class="ion-record"></i></a>');
- */    $tpl_index->assign('datos_usuario', '<a data-url="guest-card" data-titulo="Guest Card" class="enlace-datos-reserva " data-enlace="panel_usuario_formulario" href="#"><i class="css_icon_menu_izq icon-datos_usuario "></i><span>' . LANG_DATOS_HUESPED . '</span><i class="ion-record"></i></a>');
+ */    // $tpl_index->assign('datos_usuario', '<a data-url="guest-card" data-titulo="Guest Card" class="enlace-datos-reserva " data-enlace="panel_usuario_formulario" href="#"><i class="css_icon_menu_izq icon-datos_usuario "></i><span>' . LANG_DATOS_HUESPED . '</span><i class="ion-record"></i></a>');
 
 
 
@@ -305,7 +305,7 @@ if ($_SESSION['id_centro'] != 1901) {
 $datos_hotel = datos_hotel();
 
 $tpl_index->assign('nombre_hotel_menu', $datos_hotel['nombre']);
-$tpl_index->assign('enlace_newsletter', '<a data-url="newsletter" data-titulo="Newsletter" class="enlace-pagina" data-enlace="newsletter" href="#"><i class="css_icon_menu_izq icon-boletin"></i><span class="menu_lateral_doble">' . LANG_NEWSLETTER . '</span><i class="ion-record menu_lateral_doble"></i></a>');
+// $tpl_index->assign('enlace_newsletter', '<a data-url="newsletter" data-titulo="Newsletter" class="enlace-pagina" data-enlace="newsletter" href="#"><i class="css_icon_menu_izq icon-boletin"></i><span class="menu_lateral_doble">' . LANG_NEWSLETTER . '</span><i class="ion-record menu_lateral_doble"></i></a>');
 
 //creamos la sita de las redes sociales por hoteles
 switch ($id_hotel){
