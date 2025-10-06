@@ -1629,6 +1629,7 @@ html, body, #page-transitions, #content-general, #page-content2, #page-content-s
 
 .titulo_hotel {
     font-size: 22px;
+    color: #002b49; /* Para volver a blanco usar: color: white; */
 }
 
 .descripcion_hotel {
@@ -1639,7 +1640,7 @@ html, body, #page-transitions, #content-general, #page-content2, #page-content-s
     text-transform: uppercase;
     text-align: center;
     width: 100%;
-    color: white;
+    color: #002b49; /* Para volver a blanco usar: color: white; */
     font-size: 14px;
 }
 
