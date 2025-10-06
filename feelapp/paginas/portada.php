@@ -3,7 +3,7 @@
 $tpl_portada = new TemplatePower("plantillas/portada.html", T_BYFILE);
 $tpl_portada->prepare();
 
-$tpl_portada->assign('fondo_principal','https://view.twisticdigital.com/contenido_proyectos/dunas/centro_'.$_SESSION['id_centro'].'/feelapp/fondo.jpg');
+$tpl_portada->assign('fondo_principal','https://view.twisticdigital.com/contenido_proyectos/pacoche/centro_'.$_SESSION['id_centro'].'/feelapp/fondo.jpg');
 
 $tpl_portada->assign('nombre_sostenibilidad',LANG_FEELAPP_SOSTENIBILIDAD);
 $tpl_portada->assign('nombre_destinos',LANG_FEELAPP_DESTINOS);
