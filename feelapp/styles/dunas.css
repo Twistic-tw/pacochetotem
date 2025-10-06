@@ -40,7 +40,7 @@
 }
 
 :root {
-    --color-principal:#D2691E;
+    --color-principal:#c37b52;
 }
 
 *{
@@ -52,7 +52,7 @@
 }
 
 .header{
-    background: #D2691E;
+    background: #c37b52;
     border-bottom: 2px solid white;
 }
 
@@ -199,7 +199,7 @@
 }
 
 .recepcion_servicios_icono_texto, recepcion_servicios_icono_texto_2 {
-    color: #D2691E;
+    color: #002b49;
     padding-left: 0px !important;
     text-align: center;
     background: transparent !important;
@@ -244,7 +244,7 @@
 }
 
 .texto_generico_pinero {
-    background-color: #D2691E;
+    background-color: #c37b52;
     text-align: center;
     color: white;
     line-height: 19px;
@@ -254,7 +254,7 @@
 .texto_generico_gym{
     width: 90%;
     margin-left: 5%;
-    background: #D2691E !important;
+    background: #c37b52 !important;
     color: white;
     margin-top: -10px;
     text-align: center;
@@ -308,7 +308,7 @@
 
 .menu-item{
     background-color: white;
-    color: #D2691E;
+    color: #002b49;
     text-shadow: none !important;
     /*font-family: 'Foco';*/
 }
@@ -316,7 +316,7 @@
 
 
 .lines {
-    background: #D2691E;
+    background: #c37b52;
 }
 
 
@@ -340,17 +340,17 @@
 
 .menu-item:hover{
     background-color: white;
-    color: #D2691E;
+    color: #002b49;
 }
 
 
 strong {
     font-weight: bolder;
-    color: #D2691E;
+    color: #002b49;
 }
 
 .nombre-centro-hotel{
-    background: #D2691E;
+    background: #c37b52;
 }
 
 
@@ -367,12 +367,12 @@ strong {
 
 
 .page-blog-title {
-    background-color: #D2691E !important;
+    background-color: #c37b52 !important;
 }
 
 .taken-day i {
     /*color: #e4002b;*/
-    color: #D2691E;
+    color: #002b49;
 }
 
 
@@ -399,7 +399,7 @@ strong {
     position: relative;
     float: left;
     max-height: 175px;
-    background-color: #D2691E !important;
+    background-color: #c37b52 !important;
     height: 104px !important;
 }
 
@@ -440,7 +440,7 @@ strong {
 .width_1, .width_1:hover {
     width: 10%;
     font-size: 15px;
-    background-color: #D2691E;
+    background-color: #c37b52;
     color: white;
     clear: both;
     display: block;
@@ -663,7 +663,7 @@ strong {
 
 /* Idiomas */
 .content-idiomas{
-    background: #D2691E;
+    background: #c37b52;
 }
 
 .active_idioma {
@@ -683,7 +683,7 @@ strong {
 .titulo_pinero,
 .titulo_pinero_fondo_relleno,
 .css_titulo_karisma {
-    background: #D2691E;
+    background: #c37b52;
     color: white;
     padding-left: 0px;
     text-align: center;
@@ -736,7 +736,7 @@ strong {
 }
 
 .li_icono_restaurante {
-    color: #D2691E;
+    color: #002b49;
     padding-top: 7px;
 }
 
@@ -849,12 +849,12 @@ ul {
 
 .tabla_riu_class > tbody > tr > th{
     color: white;
-    background-color: #D2691E !important;
+    background-color: #c37b52 !important;
 }
 
 
 .recepcion_servicios_icono_3 {
-    background: #D2691E;
+    background: #c37b52;
     margin-top: 10px;
     height: 60px;
     float: left;
@@ -870,7 +870,7 @@ ul {
 }
 
 .recepcion_servicios_altamar.color_fondo_impar {
-    background: #D2691E;
+    background: #c37b52;
     height: 207px;
     width: 90%;
     margin-left: 5%;
@@ -939,7 +939,7 @@ ul {
 
 .titulo-excursion{
     color: #ffffff;
-    background: #D2691E;
+    background: #c37b52;
     text-align: center;
     font-size: 28px;
     text-transform: uppercase;
@@ -947,7 +947,7 @@ ul {
 }
 
 .excursiones-destacado{
-    background: #D2691E !important;
+    background: #c37b52 !important;
 }
 
 .excursiones-centrado{
@@ -968,7 +968,7 @@ ul {
 }
 
 .excursiones-descripcion > p{
-    color: #D2691E;
+    color: #002b49;
     font-size: 15px;
 }
 
@@ -978,8 +978,8 @@ ul {
 }
 
 .excursiones-descripcion-titulo{
-    color: #D2691E;
-    border-bottom: 2px solid #D2691E;
+    color: #002b49;
+    border-bottom: 2px solid #002b49;
     font-size: 26px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -992,7 +992,7 @@ ul {
     font-size: 16px;
     text-transform: uppercase;
     color: #ffffff;
-    background: #D2691E;
+    background: #c37b52;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -1009,7 +1009,7 @@ ul {
 .imagen-principal-excursiones-titulo{
     text-transform: uppercase;
     /*background-color: rgba(9,42,94,0.7);*/
-    background: #D2691E;
+    background: #c37b52;
     position: absolute;
     color: #ffffff;
     bottom: 0;
@@ -1027,7 +1027,7 @@ ul {
     height: 59px;
     width: 100%;
     z-index: 100;
-    border-top: 1px solid #D2691E;
+    border-top: 1px solid #002b49;
     display: none;
 }
 
@@ -1041,7 +1041,7 @@ ul {
 .btn-cerrar-popup{
     width: 200px;
     margin: 0 auto;
-    background: #D2691E;
+    background: #c37b52;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
@@ -1054,7 +1054,7 @@ ul {
     width: 60%;
     margin-left: 20%;
     margin-top: 10px;
-    border: 2px solid #D2691E;
+    border: 2px solid #002b49;
     text-align: center;
 }
 
@@ -1065,7 +1065,7 @@ ul {
 /* Formulario */
 
 .categoria-formulario{
-    color: #D2691E;
+    color: #002b49;
     font-size: 18px;
     float: left;
 }
@@ -1081,7 +1081,7 @@ ul {
 }
 
 .formulario-reserva-titulo{
-    color: #D2691E;
+    color: #002b49;
     font-size: 22px;
     text-align: center;
     text-transform: uppercase;
@@ -1093,7 +1093,7 @@ ul {
     width: 200px;
     margin: 0 auto;
     margin-top: 0px;
-    background: #D2691E;
+    background: #c37b52;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
@@ -1107,7 +1107,7 @@ ul {
     height: auto;
     margin-left: 5%;
     padding: 15px;
-    color: #D2691E;
+    color: #002b49;
     text-align: center;
     /*background: #bfd4b9;*/
     background-color: rgba(175, 203, 163, 0.9);
@@ -1143,7 +1143,7 @@ ul {
 }
 
 .datos-guia{
-    background-color: #D2691E;
+    background-color: #c37b52;
     width: 100%;
     height: auto;
     position: absolute;
@@ -1160,7 +1160,7 @@ ul {
 .descripcion-guia{
     width: 90%;
     margin-left: 5%;
-    color: #D2691E;
+    color: #002b49;
     text-align: justify;
     font-size: 16px;
     margin-top: 20px;
@@ -1360,7 +1360,7 @@ ul {
     display: inline-block;
     margin: 9px 0px;
     padding: 2% !important;
-    background-color: #D2691E !important;
+    background-color: #c37b52 !important;
     font-size: 24px;
     color: white;
     text-align: center;
@@ -1369,7 +1369,7 @@ ul {
 .eventoDetailContent2 > img {height: auto !important;}
 
 .overlayWrapper.popup-element.mapa_popup.closeWrapper {
-    border: 3px solid #D2691E;
+    border: 3px solid #002b49;
     margin-top: -407px !important;
     max-height: 1414px;
     min-height: 948px;
@@ -1381,7 +1381,7 @@ ul {
     border-color: inherit;
 }
 .demo_popup .eventoDetailTitle {
-    background-color: #D2691E;
+    background-color: #c37b52;
 }
 
 /*******************************************************/
@@ -1410,7 +1410,7 @@ ul {
 .back-popup{
     width: 100%;
     height: 7%;
-    background: #D2691E;
+    background: #c37b52;
     color: #ffffff;
     position: fixed;
     bottom: 0;
@@ -1502,7 +1502,7 @@ ul {
 
 .accordion {
     width: 100%;
-    color: #D2691E;
+    color: #002b49;
     padding: 10px;
     font-weight: 700;
     font-family: Ubuntu;
@@ -1517,7 +1517,7 @@ ul {
 
 .accordion.active{
     color: white;
-    background-color: #D2691E;
+    background-color: #c37b52;
 }
 
 .panel {
@@ -1542,7 +1542,7 @@ ul {
 /*/ css div tabla/*/
 
 .css_boton_cartas {
-    background-color: #D2691E;
+    background-color: #c37b52;
     color: white;
     text-align: center;
     padding: 5px;
@@ -1562,7 +1562,7 @@ ul {
     font-size: 20px;
     padding: 10px 0px;
     font-family: Ubuntu;
-    background-color: #D2691E;
+    background-color: #c37b52;
     color: white;
 }
 
@@ -1582,7 +1582,7 @@ ul {
 }
 
 .nombre_piscina{
-    background: #D2691E;
+    background: #c37b52;
     color: #ffffff;
     padding: 2px 10px 2px 10px;
     text-align: center;
@@ -1642,15 +1642,15 @@ i.menu_lateral_doble{
 .css_contenedor_guest {
     background-color: #b0c9c6;
     padding: 10px 5px;
-    border: 1px solid #D2691E;
-    color: #D2691E;
+    border: 1px solid #002b49;
+    color: #002b49;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     display: inline-block;
 }
 
 .css_titulo_guest {
-    background: #D2691E;
+    background: #c37b52;
     color: white;
     padding-left: 0px;
     text-align: center;
@@ -1671,7 +1671,7 @@ i.menu_lateral_doble{
 }
 
 .css_boton_cerrar_guess {
-    background-color: #D2691E;
+    background-color: #c37b52;
     width: 60%;
     margin: auto;
     text-align: center;
@@ -1726,7 +1726,7 @@ i.menu_lateral_doble{
 }
 
 .titulo-ruta{
-    color: #D2691E;
+    color: #002b49;
     font-size: 15px;
 }
 
@@ -1740,7 +1740,7 @@ i.menu_lateral_doble{
 }
 
 .separacion-ruta{
-    border-top: 1px solid #D2691E;
+    border-top: 1px solid #002b49;
     margin-bottom: 15px;
 }
 
@@ -1763,7 +1763,7 @@ i.menu_lateral_doble{
 .content-redes-sociales {
     width: 100%;
     height: 61px;
-    background: #D2691E;
+    background: #c37b52;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1878,7 +1878,7 @@ i.menu_lateral_doble{
     position: absolute;
     right: 0;
     bottom: 0;
-    background: #D2691E;
+    background: #c37b52;
     color: white;
     padding: 3px 10px;
     font-size: 15px;
