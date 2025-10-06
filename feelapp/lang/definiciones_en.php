@@ -17,6 +17,7 @@ define('LANG_FEELAPP_LOCATION', "Location");
 define('LANG_FEELAPP_SERVICIOS', "Services");
 define('LANG_FEELAPP_HABITACIONES', "Rooms");
 define('LANG_FEELAPP_PISCINAS', "Pools");
+define('LANG_FEELAPP_UPGRADE', "Enhance your stay");
 
 define('LANG_FEELAPP_SULTAN', "Sultán");
 define('LANG_FEELAPP_EXCURSIONES', "Excursions");
