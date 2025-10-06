@@ -22,7 +22,7 @@ define('LANG_FEELAPP_SPA', "Spa");
 
 define('LANG_FEELAPP_GASTRONOMIA', "Gastronomie");
 define('LANG_FEELAPP_NUESTROS_HOTELES', "Unsere hotels");
-define('LANG_FEELAPP_UPGRADE', "Verbessern Sie Ihren Aufenthalt");
+define('LANG_FEELAPP_UPGRADE', "Upgrade");
 
 define('LANG_FEELAPP_NUESTROS_EXCURSIONES', "Exkursionen");
 
