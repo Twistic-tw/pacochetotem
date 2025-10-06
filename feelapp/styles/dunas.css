@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Foco';
-    src: url('https://view.twisticdigital.com/dunas/feelapp/fonts/Foco.ttf') format('truetype');
+    src: url('https://view.twisticdigital.com/pacoche/feelapp/fonts/Foco.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -11,14 +11,14 @@
 
 @font-face {
     font-family: 'FocoBlack';
-    src: url('https://view.twisticdigital.com/dunas/feelapp/fonts/FocoBlack.ttf') format('truetype');
+    src: url('https://view.twisticdigital.com/pacoche/feelapp/fonts/FocoBlack.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'FocoBold';
-    src: url('https://view.twisticdigital.com/dunas/feelapp/fonts/FocoBold.ttf') format('truetype');
+    src: url('https://view.twisticdigital.com/pacoche/feelapp/fonts/FocoBold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -95,13 +95,13 @@
 
 #page-content{
     /*background: url('../images/fondo.jpg');*/
-    /*background: url('https://view.twisticdigital.com/contenido_proyectos/dunas/centro_1901/feelapp/fondo.jpg');*/
+    /*background: url('https://view.twisticdigital.com/contenido_proyectos/pacoche/centro_1901/feelapp/fondo.jpg');*/
     background-size: cover;
     background-position: center;
 }
 
 .bg-2{
-    /*background: url('https://view.twisticdigital.com/contenido_proyectos/dunas/centro_1901/feelapp/fondo2.jpg');*/
+    /*background: url('https://view.twisticdigital.com/contenido_proyectos/pacoche/centro_1901/feelapp/fondo2.jpg');*/
     background-size: cover;
     background-position: center;
 }
@@ -503,158 +503,158 @@ strong {
 /********CSS ICONOS LATERAL********************/
 
 .icon-entretenimiento{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/animacion_calendario.svg") no-repeat scroll center center / 130% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/animacion_calendario.svg") no-repeat scroll center center / 130% auto;
 }
 
 .icon-door{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/door_new.svg") no-repeat scroll center center / 100% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/door_new.svg") no-repeat scroll center center / 100% auto;
     padding: 15px;
     margin-right: 5px;
 }
 
 .icon-person{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/comensal.svg") no-repeat scroll center center / 100% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/comensal.svg") no-repeat scroll center center / 100% auto;
     padding: 15px;
     margin-right: 5px;
 }
 
 .icon-cancel{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/cancel.svg") no-repeat scroll center center / 100% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/cancel.svg") no-repeat scroll center center / 100% auto;
     padding: 15px;
     margin-right: 5px;
 }
 
 .icon-rutas{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/senderismo.svg") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/senderismo.svg") no-repeat scroll center center / 80% auto;
 }
 
 .icon-boletin{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/boletin.svg") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/boletin.svg") no-repeat scroll center center / 80% auto;
 }
 
 .icon-quad{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/bicicleta.svg") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/bicicleta.svg") no-repeat scroll center center / 80% auto;
 }
 
 .icon-excursiones{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/ex.svg") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/ex.svg") no-repeat scroll center center / 80% auto;
 }
 
 .icon-finano{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/finano.svg") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/finano.svg") no-repeat scroll center center / 80% auto;
 }
 
 .icon-star{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/star.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/star.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-servicios{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/campana.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/campana.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-building{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/building.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/building.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-front-desk{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/front-desk.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/front-desk.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-masaje{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/spa.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/spa.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-premios {
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/premios.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/premios.png") no-repeat scroll center center / 80% auto;
 }
 
  .icon-destinos{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/dunas_club.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/pacoche_club.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-shuffleboard {
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/golf_dunas.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/golf_pacoche.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-sostenibilidad{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/dunas_hotel.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/pacoche_hotel.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-mapahotel{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/icon_mapahotel_45.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/icon_mapahotel_45.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-programa_navidad{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/arbol_navidad.svg") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/arbol_navidad.svg") no-repeat scroll center center / 80% auto;
 }
 
 .icon-bingo{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/logo.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/logo.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-juegos{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/icon_juegos_45.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/icon_juegos_45.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-tabaqueria{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/icon_tabaqueria_45.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/icon_tabaqueria_45.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-check-in {
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/recepcion.svg") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/recepcion.svg") no-repeat scroll center center / 80% auto;
 }
 
 .icon-restaurantes {
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/res.svg") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/res.svg") no-repeat scroll center center / 80% auto;
 }
 
 .icon-add-screen {
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/add_screen.svg") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/add_screen.svg") no-repeat scroll center center / 80% auto;
 }
 
 
 .icon-information {
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/iconos/iconos_svg/blancos/information_v.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/iconos/iconos_svg/blancos/information_v.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-tarifaespecial {
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/iconos/iconos_svg/blancos/TarifaEspecial_v.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/iconos/iconos_svg/blancos/TarifaEspecial_v.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-ducha {
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/iconos/iconos_svg/blancos/DuchaPlato_v.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/iconos/iconos_svg/blancos/DuchaPlato_v.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-regalo {
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/iconos/iconos_svg/blancos/Bienvenida_v.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/iconos/iconos_svg/blancos/Bienvenida_v.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-cobertura {
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/iconos/iconos_svg/blancos/Cobertura_v.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/iconos/iconos_svg/blancos/Cobertura_v.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-albornoz {
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/iconos/iconos_svg/blancos/AlbornozZapatillas_v.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/iconos/iconos_svg/blancos/AlbornozZapatillas_v.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-almohadas {
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/iconos/iconos_svg/blancos/CartaAlmohadas_v.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/iconos/iconos_svg/blancos/CartaAlmohadas_v.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-espejo {
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/iconos/iconos_svg/blancos/espejo_v.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/iconos/iconos_svg/blancos/espejo_v.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-aseopremium {
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/iconos/iconos_svg/blancos/TratoVIP_v.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/iconos/iconos_svg/blancos/TratoVIP_v.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-teycafe {
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/iconos/iconos_svg/blancos/CoffeeCorner_v.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/iconos/iconos_svg/blancos/CoffeeCorner_v.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-toallapiscina {
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/iconos/iconos_svg/blancos/ToallaPiscina_v.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/iconos/iconos_svg/blancos/ToallaPiscina_v.png") no-repeat scroll center center / 80% auto;
 }
 
 .boton-alta{
@@ -836,11 +836,11 @@ ul {
 }
 
 .icon-svg.icon-sombrero {
-    background: url("https://view.twisticdigital.com/dunas/feelapp/images/iconos/icon_sombrero.svg") no-repeat scroll center center / 100% auto;
+    background: url("https://view.twisticdigital.com/pacoche/feelapp/images/iconos/icon_sombrero.svg") no-repeat scroll center center / 100% auto;
 }
 
 .icon-svg.icon-dollar {
-    background: url("https://view.twisticdigital.com/dunas/feelapp/images/iconos/dollar.png") no-repeat scroll center center / 100% auto;
+    background: url("https://view.twisticdigital.com/pacoche/feelapp/images/iconos/dollar.png") no-repeat scroll center center / 100% auto;
 }
 
 .tabla_riu_class{
@@ -1290,19 +1290,19 @@ ul {
 }
 
 .icon-logo{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/logo.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/logo.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-CoffeeCorner{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/iconos/iconos_svg/azules/CoffeeCorner.png") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/iconos/iconos_svg/azules/CoffeeCorner.png") no-repeat scroll center center / 80% auto;
 }
 
 .icon-casino{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/mascarilla.svg") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/mascarilla.svg") no-repeat scroll center center / 80% auto;
 }
 
 .icon-medico{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/medico.svg") no-repeat scroll center center / 80% auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/medico.svg") no-repeat scroll center center / 80% auto;
 }
 
 .volver-index{
@@ -1731,7 +1731,7 @@ i.menu_lateral_doble{
 }
 
 .enlace-ruta{
-    background: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/senderismo.svg") no-repeat scroll center left / 15px auto;
+    background: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/senderismo.svg") no-repeat scroll center left / 15px auto;
 }
 
 .enlace-ruta > a{
@@ -1781,7 +1781,7 @@ i.menu_lateral_doble{
 .icono_carta_copa{
     width: 15px;
     height: 15px;
-    background-image: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/copa.svg");
+    background-image: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/copa.svg");
     background-size: cover;
     background-size: 15px 15px;
     background-repeat: no-repeat;
@@ -1792,7 +1792,7 @@ i.menu_lateral_doble{
 .icono_carta_botella{
     width: 15px;
     height: 15px;
-    background-image: url("https://view.twisticdigital.com/contenido_proyectos/dunas/_general/feelapp/iconos/botella.svg");
+    background-image: url("https://view.twisticdigital.com/contenido_proyectos/pacoche/_general/feelapp/iconos/botella.svg");
     background-size: cover;
     background-size: 15px 15px;
     background-repeat: no-repeat;
@@ -1834,7 +1834,7 @@ i.menu_lateral_doble{
 }
 
 .imagen_certificacion {
-    background-image: url('https://view.twisticdigital.com/contenido_proyectos/dunas/centro_1901/imagenes/contenidos/Certification.jpg');
+    background-image: url('https://view.twisticdigital.com/contenido_proyectos/pacoche/centro_1901/imagenes/contenidos/Certification.jpg');
     width: 246px !important;
     margin: 20px auto 0 auto;
     bottom: 14px;
