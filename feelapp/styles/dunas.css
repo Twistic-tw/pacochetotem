@@ -219,7 +219,11 @@
 .texto_corporativo_hd{
     margin-bottom: 20px;
     line-height: 23px;
-    overflow-y: auto; /* Scroll vertical para texto largo */
+    min-height: 120px;
+    height: auto !important;
+    max-height: none;
+    flex-grow: 1;
+    padding: 15px 0;
 }
 
 .texto_corporativo_hd > br{
@@ -240,10 +244,11 @@
 /* Salud y belleza */
 
 .imagen_spa_riu, .foto_riu_piscina, .imagen_habitaciones_hd {
-    height: 200px !important;
+    height: 180px !important;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    flex-shrink: 0;
 }
 .contentImgWrapper.tipo1{
     width: 90%;
@@ -689,6 +694,9 @@ strong {
     height: auto;
     margin-top: 20px;
     clear: both;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
 }
 
 .titulo_pinero,
