@@ -219,6 +219,7 @@
 .texto_corporativo_hd{
     margin-bottom: 20px;
     line-height: 23px;
+    overflow-y: auto; /* Scroll vertical para texto largo */
 }
 
 .texto_corporativo_hd > br{
