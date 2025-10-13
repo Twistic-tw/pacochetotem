@@ -76,7 +76,7 @@ $(document).ready(function() {
                         '<img src="' + galeriaImagenes[index] + '" />' +
                         '<div id="galeria-counter">' + (index + 1) + ' / ' + galeriaImagenes.length + '</div>';
 
-        $('#imagen-grande').html(imagenHTML).show();
+        $('#imagen-grande').html(imagenHTML).css('display', 'flex').show();
     }
 
     $(".tabs").tabs();

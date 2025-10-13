@@ -196,23 +196,28 @@
 #imagen-grande {
   background-color: rgba(0, 0, 0, 0.96);
   display: none;
-  height: 100%;
-  /* Este padding deberia de ser calculado conforme al tamaño de la imagen*/
-  padding: 380px 0 18px;
+  height: 100vh;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 1000;
   top: 0;
   left: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 #imagen-grande img {
   border-color: #FFFFFF;
   border-style: solid;
   border-width: 1px 1px 50px;
+  max-height: 90vh;
+  max-width: 90vw;
+  width: auto;
   height: auto;
-  width: 99.8% !important;
   display: block;
-  margin: 0 auto;
+  margin: auto;
+  object-fit: contain;
 }
 
 /* Botón cerrar (X) */
