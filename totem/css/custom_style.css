@@ -929,7 +929,8 @@ table.std_table tr td, table.std_table tr th {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
 }
 
 /****************************************
