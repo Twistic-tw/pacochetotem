@@ -202,6 +202,8 @@
   position: fixed;
   width: 100%;
   z-index: 1000;
+  top: 0;
+  left: 0;
 }
 #imagen-grande img {
   border-color: #FFFFFF;
@@ -209,6 +211,89 @@
   border-width: 1px 1px 50px;
   height: auto;
   width: 99.8% !important;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Botón cerrar (X) */
+#galeria-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 60px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+#galeria-close:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Botón anterior */
+#galeria-prev {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 80px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+  width: 60px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  user-select: none;
+}
+#galeria-prev:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Botón siguiente */
+#galeria-next {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 80px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+  width: 60px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  user-select: none;
+}
+#galeria-next:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Contador de imágenes */
+#galeria-counter {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 20px;
+  z-index: 1001;
 }
 #map_municipio{
     float: right;

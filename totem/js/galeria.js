@@ -1,35 +1,84 @@
 $(document).ready(function() {
-    $("body").click(function() {
-        if ($('#imagen-grande').is(':visible')) {
+    var galeriaImagenes = [];
+    var currentImageIndex = 0;
+
+    // Cerrar galería al hacer click en el fondo
+    $("body").on("click", "#imagen-grande", function(event) {
+        if (event.target.id === 'imagen-grande') {
             $('#imagen-grande').hide();
         }
     });
 
+    // Cerrar galería con botón X
+    $("body").on("click", "#galeria-close", function(event) {
+        event.stopPropagation();
+        $('#imagen-grande').hide();
+    });
+
+    // Abrir imagen en grande
     $("body").on("click", ".imagen-galeria", function(event) {
         event.stopPropagation();
         event.preventDefault();
-        
-        if ( $(this).hasClass("imagen-element") ) {
-            $('#imagen-grande').show();
 
-            source = $(this).data("url");
-            imagen = '<img src="' + source + '" width="1024px" />';
-            $('#imagen-grande').html(imagen);
+        // Obtener todas las imágenes de la galería activa
+        var galeriaActiva = $(this).closest('.scroll');
+        galeriaImagenes = [];
+
+        galeriaActiva.find('.imagen-galeria img').each(function() {
+            galeriaImagenes.push($(this).attr('src'));
+        });
+
+        // Encontrar el índice de la imagen clickeada
+        var imagenClickeada;
+        if ($(this).hasClass("imagen-element")) {
+            imagenClickeada = $(this).data("url");
+        } else {
+            imagenClickeada = $(this).find('img').attr("src");
         }
-        else {
-            $('#imagen-grande').show();
 
-            imagen = $(this).find('img');
-            source = imagen.attr("src");
-            imagen = '<img src="' + source + '" width="1024px" />';
+        currentImageIndex = galeriaImagenes.indexOf(imagenClickeada);
 
-            $('#imagen-grande').html(imagen);
-        }
-        
-
+        // Mostrar la galería
+        mostrarImagenGrande(currentImageIndex);
     });
-//                $(".tabs").tabs({
-//                });
+
+    // Navegación anterior
+    $("body").on("click", "#galeria-prev", function(event) {
+        event.stopPropagation();
+        currentImageIndex = (currentImageIndex - 1 + galeriaImagenes.length) % galeriaImagenes.length;
+        mostrarImagenGrande(currentImageIndex);
+    });
+
+    // Navegación siguiente
+    $("body").on("click", "#galeria-next", function(event) {
+        event.stopPropagation();
+        currentImageIndex = (currentImageIndex + 1) % galeriaImagenes.length;
+        mostrarImagenGrande(currentImageIndex);
+    });
+
+    // Navegación con teclado
+    $(document).on("keydown", function(e) {
+        if ($('#imagen-grande').is(':visible')) {
+            if (e.keyCode === 37) { // Flecha izquierda
+                $('#galeria-prev').click();
+            } else if (e.keyCode === 39) { // Flecha derecha
+                $('#galeria-next').click();
+            } else if (e.keyCode === 27) { // ESC
+                $('#imagen-grande').hide();
+            }
+        }
+    });
+
+    function mostrarImagenGrande(index) {
+        var imagenHTML = '<div id="galeria-close">✕</div>' +
+                        '<div id="galeria-prev">‹</div>' +
+                        '<div id="galeria-next">›</div>' +
+                        '<img src="' + galeriaImagenes[index] + '" />' +
+                        '<div id="galeria-counter">' + (index + 1) + ' / ' + galeriaImagenes.length + '</div>';
+
+        $('#imagen-grande').html(imagenHTML).show();
+    }
+
     $(".tabs").tabs();
 });
 
