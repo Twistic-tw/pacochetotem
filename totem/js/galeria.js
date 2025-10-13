@@ -20,13 +20,22 @@ $(document).ready(function() {
         event.stopPropagation();
         event.preventDefault();
 
-        // Obtener todas las imágenes de la galería activa
-        var galeriaActiva = $(this).closest('.scroll');
+        // Obtener todas las imágenes de la galería activa (pestaña visible)
+        var galeriaActiva = $(this).closest('[id^="galeria_"]');
         galeriaImagenes = [];
 
-        galeriaActiva.find('.imagen-galeria img').each(function() {
-            galeriaImagenes.push($(this).attr('src'));
+        console.log('Galería activa:', galeriaActiva.attr('id'));
+
+        galeriaActiva.find('.imagen-galeria').each(function() {
+            var imgSrc = $(this).find('img').attr('src');
+            console.log('Imagen encontrada:', imgSrc);
+            if (imgSrc) {
+                galeriaImagenes.push(imgSrc);
+            }
         });
+
+        console.log('Total imágenes:', galeriaImagenes.length);
+        console.log('Array de imágenes:', galeriaImagenes);
 
         // Encontrar el índice de la imagen clickeada
         var imagenClickeada;
@@ -36,7 +45,12 @@ $(document).ready(function() {
             imagenClickeada = $(this).find('img').attr("src");
         }
 
+        console.log('Imagen clickeada:', imagenClickeada);
+
         currentImageIndex = galeriaImagenes.indexOf(imagenClickeada);
+        if (currentImageIndex === -1) currentImageIndex = 0; // Fallback a la primera imagen
+
+        console.log('Índice actual:', currentImageIndex);
 
         // Mostrar la galería
         mostrarImagenGrande(currentImageIndex);
@@ -70,6 +84,15 @@ $(document).ready(function() {
     });
 
     function mostrarImagenGrande(index) {
+        if (!galeriaImagenes || galeriaImagenes.length === 0) {
+            console.error('No hay imágenes en la galería');
+            return;
+        }
+
+        if (index < 0 || index >= galeriaImagenes.length) {
+            index = 0;
+        }
+
         var imagenHTML = '<div id="galeria-close">✕</div>' +
                         '<div id="galeria-prev">‹</div>' +
                         '<div id="galeria-next">›</div>' +
