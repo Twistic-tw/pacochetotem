@@ -914,6 +914,7 @@ table.std_table tr td, table.std_table tr th {
     height: 482px;
     overflow: hidden;
     position: relative;
+    background-color: #002B49;
 }
 #footerSlider .sliderElement{
     display: inline-block;
