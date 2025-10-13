@@ -919,6 +919,14 @@ table.std_table tr td, table.std_table tr th {
     display: inline-block;
     width: 50%;
     float: left;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+#footerSlider .sliderElement img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /****************************************
@@ -2287,18 +2295,22 @@ span.relevante {
 #slideleft {
     background: url("../img/volver_blanco2.png") no-repeat scroll center center / 188% auto rgba(60, 60, 60, 0.31);
   height: 472px;
-  left: 0;
+  left: 10px;
   position: absolute;
   top: 0;
   width: 40px;
+  z-index: 10;
+  cursor: pointer;
 }
 #slideRight {
     background: url("../img/siguiente_blanco2.png") no-repeat scroll center center / 188% auto rgba(60, 60, 60, 0.31);
     height: 490px;
-    left: 1040px;
+    left: 1030px;
     position: absolute;
     top: 0;
     width: 40px;
+    z-index: 10;
+    cursor: pointer;
 }
 #slideRight:hover,#slideleft:hover{background-color: rgba(60, 60, 60, 0.81);}
 
