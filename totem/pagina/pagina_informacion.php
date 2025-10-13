@@ -21,7 +21,7 @@ if($id_centro=='247'){$numeroSecciones = 4;}else{$numeroSecciones = 3;}
 if ($configuracion_totem['farmacia'] == '1') $numeroSecciones++;
 if ($configuracion_totem['cajero'] == '1') $numeroSecciones++;
 if ($configuracion_totem['gaolinera'] == '1') $numeroSecciones++;
-if ($configuracion_totem['mareas'] == '1') $numeroSecciones++;
+// if ($configuracion_totem['mareas'] == '1') $numeroSecciones++; // MAREAS OCULTO
 $blokeIndex = 1;
 
 // echo $numeroSecciones;
@@ -132,6 +132,8 @@ if ($configuracion_totem['gasolinera'] == '1') {
 	$tpl_informacion->assign("index", "informacion".$blokeIndex++);
 }
 
+// MAREAS - OCULTO
+/*
 if ($configuracion_totem['mareas'] == '1') {
 $tpl_informacion->newBlock("contentBlockLink");
 $tpl_informacion->assign("element_id","");
@@ -142,6 +144,7 @@ $tpl_informacion->assign("element_icono","icon-mareas");
 $tpl_informacion->assign("element_text", LANG_INFO_MAREAS_TITLE);
 $tpl_informacion->assign("index", "informacion".$blokeIndex++);
 }
+*/
 
     // Bloque comentado - Botón consulados oculto
     /*
