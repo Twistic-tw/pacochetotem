@@ -299,7 +299,7 @@ function getFechaActual()
             define("CHARSET", "UTF-8");
 
             setlocale(LC_TIME, 'spanish');
-            $fecha = strftime("%A %d/%m/%Y");
+            $fecha = utf8_encode(strftime("%A %d/%m/%Y"));
             break;
 
         case 2:
