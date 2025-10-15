@@ -36,8 +36,11 @@ $context  = stream_context_create($opts);
 //esto es para local
 //$url = "http://localhost/twistic/contenido_proyectos/riucanarias/totem/gestion/enviarPostalFinal.php";
 
-//esto es para alemania
-$url = "https://visor.twisticdigital.com/pacoche/totem/gestion/enviarPostalFinal.php";
+//esto es para alemania - OLD (servidor roto)
+//$url = "https://visor.twisticdigital.com/pacoche/totem/gestion/enviarPostalFinal.php";
+
+//Nuevo endpoint actualizado
+$url = "https://postales.twisticdigital.com/postales.php";
 
 
 $result = file_get_contents($url,false,$context);

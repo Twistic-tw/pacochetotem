@@ -24,18 +24,12 @@ $(document).ready(function() {
         var galeriaActiva = $(this).closest('[id^="galeria_"]');
         galeriaImagenes = [];
 
-        console.log('Galería activa:', galeriaActiva.attr('id'));
-
         galeriaActiva.find('.imagen-galeria').each(function() {
             var imgSrc = $(this).find('img').attr('src');
-            console.log('Imagen encontrada:', imgSrc);
             if (imgSrc) {
                 galeriaImagenes.push(imgSrc);
             }
         });
-
-        console.log('Total imágenes:', galeriaImagenes.length);
-        console.log('Array de imágenes:', galeriaImagenes);
 
         // Encontrar el índice de la imagen clickeada
         var imagenClickeada;
@@ -45,12 +39,8 @@ $(document).ready(function() {
             imagenClickeada = $(this).find('img').attr("src");
         }
 
-        console.log('Imagen clickeada:', imagenClickeada);
-
         currentImageIndex = galeriaImagenes.indexOf(imagenClickeada);
         if (currentImageIndex === -1) currentImageIndex = 0; // Fallback a la primera imagen
-
-        console.log('Índice actual:', currentImageIndex);
 
         // Mostrar la galería
         mostrarImagenGrande(currentImageIndex);
