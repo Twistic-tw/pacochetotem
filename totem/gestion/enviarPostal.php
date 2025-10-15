@@ -42,8 +42,14 @@ $context  = stream_context_create($opts);
 //Nuevo endpoint actualizado
 $url = "https://postales.twisticdigital.com/postales.php";
 
+// Activar manejo de errores
+$result = @file_get_contents($url, false, $context);
 
-$result = file_get_contents($url,false,$context);
+// Capturar información del error HTTP
+$http_response = "";
+if (isset($http_response_header)) {
+    $http_response = $http_response_header[0];
+}
 
 
 /*
@@ -67,7 +73,18 @@ $error = curl_error($ch);
 curl_close($ch);
 
 */
-echo $result . " -fichero enviar postal- " . $error;
+
+// Mostrar resultado con información de diagnóstico
+if ($result === false) {
+    echo "ERROR: No se pudo conectar al servidor de postales. ";
+    echo "HTTP Response: " . $http_response . " ";
+    echo "URL: " . $url;
+} else if (empty($result)) {
+    echo "ERROR: El servidor de postales no devolvió respuesta. ";
+    echo "HTTP Response: " . $http_response;
+} else {
+    echo $result;
+}
 
 exit();
 
