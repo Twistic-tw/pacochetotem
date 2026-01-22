@@ -528,8 +528,7 @@ if ($array_contenidos_insertados) {
 if ($_SESSION['proyecto'] == 'oasis') {
     $array_idiomas = array(1 => "español", 2 => "english");
 } else {
-    //$array_idiomasx = array(1 => "es", 2 => "en", 3 => "de", 4 => "fr");
-    $array_idiomasx = array(1 => "es", 2 => "en");
+    $array_idiomasx = array(1 => "es", 2 => "en", 3 => "de", 4 => "fr");
 }
 $total_idiomas = count($array_idiomas);
 
