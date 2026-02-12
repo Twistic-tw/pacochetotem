@@ -156,36 +156,36 @@ a { color: inherit; }
 .menu-open:checked ~ .menu-item:nth-child(3) {
   transition-duration: 180ms;
   -webkit-transition-duration: 180ms;
-  -webkit-transform: translate3d(0.08361px, -104.99997px, 0);
-  transform: translate3d(0.08361px, -104.99997px, 0);
+  -webkit-transform: translate3d(0px, -105px, 0);
+  transform: translate3d(0px, -105px, 0);
 }
 
 .menu-open:checked ~ .menu-item:nth-child(4) {
   transition-duration: 280ms;
   -webkit-transition-duration: 280ms;
-  -webkit-transform: translate3d(90.9466px, -52.47586px, 0);
-  transform: translate3d(90.9466px, -52.47586px, 0);
+  -webkit-transform: translate3d(100px, -32px, 0);
+  transform: translate3d(100px, -32px, 0);
 }
 
 .menu-open:checked ~ .menu-item:nth-child(5) {
   transition-duration: 380ms;
   -webkit-transition-duration: 380ms;
-  -webkit-transform: translate3d(90.9466px, 52.47586px, 0);
-  transform: translate3d(90.9466px, 52.47586px, 0);
+  -webkit-transform: translate3d(62px, 85px, 0);
+  transform: translate3d(62px, 85px, 0);
 }
 
 .menu-open:checked ~ .menu-item:nth-child(6) {
   transition-duration: 480ms;
   -webkit-transition-duration: 480ms;
-  -webkit-transform: translate3d(0.08361px, 104.99997px, 0);
-  transform: translate3d(0.08361px, 104.99997px, 0);
+  -webkit-transform: translate3d(-62px, 85px, 0);
+  transform: translate3d(-62px, 85px, 0);
 }
 
 .menu-open:checked ~ .menu-item:nth-child(7) {
   transition-duration: 580ms;
   -webkit-transition-duration: 580ms;
-  -webkit-transform: translate3d(-90.86291px, 52.62064px, 0);
-  transform: translate3d(-90.86291px, 52.62064px, 0);
+  -webkit-transform: translate3d(-100px, -32px, 0);
+  transform: translate3d(-100px, -32px, 0);
 }
 
 .menu-open:checked ~ .menu-item:nth-child(8) {
